@@ -39,8 +39,6 @@ As respostas são preservadas no próprio dispositivo mesmo sem conexão. O proj
 - produzir um relatório consolidado para a tarefa diária do GPT;
 - autenticar a sincronização no servidor, sem publicar credenciais no GitHub Pages.
 
-O endpoint público `/api/adaptive-report` entrega somente os dados mínimos para seleção pedagógica: totais, eixos, categorias, revisões vencidas e itens frágeis. Ele remove nome, dispositivo, alternativa escolhida, gabarito e tentativas brutas. O relatório completo `/api/report` continua protegido por sessão ou `REPORT_READ_TOKEN`.
-
 Enquanto `data/config.json` estiver com `enabled: false`, o portal continua integralmente funcional em modo local. A sincronização só é ativada depois que o Worker, o D1 e os segredos forem configurados.
 
 ### Ativação do Worker

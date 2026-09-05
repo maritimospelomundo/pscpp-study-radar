@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { aggregateAttempts, createSessionToken, sanitizeLatestReport, validateSyncPayload, verifySessionToken } from "../src/index.js";
+import { aggregateAttempts, createSessionToken, validateSyncPayload, verifySessionToken } from "../src/index.js";
 
 test("token de sessão é válido e rejeita adulteração ou expiração", async () => {
   const now = Date.UTC(2026, 8, 5);
@@ -26,20 +26,4 @@ test("agregação calcula acurácia, revisões e fraquezas", () => {
   assert.equal(result.dueReviews.length, 1);
   assert.equal(result.weakest[0].questionId, "q2");
   assert.equal(result.byErrorCause.content, 1);
-});
-
-test("relatório adaptativo remove identidade e tentativas brutas", () => {
-  const result = sanitizeLatestReport({
-    student: "Nome privado",
-    roundId: "r1",
-    generatedAt: "2026-09-05T12:00:00.000Z",
-    currentPath: "Eixo I",
-    mode: "study",
-    attempts: [{ selected: "b", answer: "a" }],
-    summary: { answered: 10, correct: 8, wrong: 2, dueReviews: 2, byCategory: { review: { answered: 4, correct: 3 } } }
-  });
-  assert.equal(result.roundId, "r1");
-  assert.equal(result.summary.wrong, 2);
-  assert.equal("student" in result, false);
-  assert.equal("attempts" in result, false);
 });
