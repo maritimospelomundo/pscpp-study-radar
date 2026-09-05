@@ -3,6 +3,8 @@ import { Rating, createEmptyCard, fsrs } from "ts-fsrs";
 
 const PASSWORD_HASH="ea197173a22ff3031e920007f63d59a5e324a02db220109f82cec16a69195cfe";
 const AUTH_KEY="pscpp-study-radar-auth";
+const API_TOKEN_KEY="pscpp-study-radar-api-token";
+const DEVICE_ID_KEY="pscpp-study-radar-device-id";
 const STORAGE_KEY="pscpp-study-radar-v3";
 const LEGACY_STORAGE_KEYS=["pscpp-study-radar-v2","pscpp-study-radar-v1"];
 const scheduler=fsrs({enable_fuzz:false,enable_short_term:false});
@@ -12,13 +14,23 @@ const letter=i=>String.fromCharCode(97+i);
 const escapeHtml=value=>String(value).replace(/[&<>'"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[c]));
 let round,syllabus,currentIndex=0,questionShownAt=Date.now();
 let state={attempts:{},startedAt:new Date().toISOString(),mode:"study",simulationSelections:{},simulationSubmitted:false,roundId:null};
+let apiConfig={enabled:false,apiBase:""},syncState="local",syncTimer;
 
 async function sha256(value){const bytes=new TextEncoder().encode(value),digest=await crypto.subtle.digest("SHA-256",bytes);return Array.from(new Uint8Array(digest),byte=>byte.toString(16).padStart(2,"0")).join("")}
+async function loadApiConfig(){try{const response=await fetch("data/config.json",{cache:"no-store"});if(response.ok)apiConfig={...apiConfig,...await response.json()}}catch{apiConfig={enabled:false,apiBase:""}}}
+function apiUrl(path){return `${String(apiConfig.apiBase||"").replace(/\/$/,"")}${path}`}
+function apiToken(){return localStorage.getItem(API_TOKEN_KEY)}
+function deviceId(){let id=localStorage.getItem(DEVICE_ID_KEY);if(!id){id=crypto.randomUUID();localStorage.setItem(DEVICE_ID_KEY,id)}return id}
+async function remoteLogin(password){
+  if(!apiConfig.enabled||!apiConfig.apiBase)return true;
+  try{const response=await fetch(apiUrl("/api/session"),{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({password})});if(!response.ok)throw new Error("login remoto recusado");const data=await response.json();localStorage.setItem(API_TOKEN_KEY,data.token);syncState="ready";return true}catch(error){console.warn("Sincronização indisponível; o modo offline continua ativo.",error);syncState="pending";return false}
+}
 async function boot(){
+  await loadApiConfig();
   const form=document.getElementById("login-form"),input=document.getElementById("access-password"),error=document.getElementById("login-error");
   const unlock=async()=>{document.body.classList.remove("locked");document.getElementById("login-screen").hidden=true;await init()};
   if(sessionStorage.getItem(AUTH_KEY)==="granted"){await unlock();return}
-  form.addEventListener("submit",async event=>{event.preventDefault();error.hidden=true;const hash=await sha256(input.value);if(hash===PASSWORD_HASH){sessionStorage.setItem(AUTH_KEY,"granted");input.value="";await unlock()}else{error.hidden=false;input.select()}});
+  form.addEventListener("submit",async event=>{event.preventDefault();error.hidden=true;const password=input.value,hash=await sha256(password);if(hash===PASSWORD_HASH){sessionStorage.setItem(AUTH_KEY,"granted");await remoteLogin(password);input.value="";await unlock()}else{error.hidden=false;input.select()}});
 }
 
 async function loadState(){
@@ -30,19 +42,39 @@ async function loadState(){
   try{const saved=localStorage.getItem(STORAGE_KEY)||LEGACY_STORAGE_KEYS.map(key=>localStorage.getItem(key)).find(Boolean);return{...state,...(JSON.parse(saved)||{})}}catch{return state}
 }
 async function saveState(questionId){
+  const updatedAt=new Date().toISOString();
+  if(questionId&&state.attempts[questionId])state.attempts[questionId].updatedAt=updatedAt;
   localStorage.setItem(STORAGE_KEY,JSON.stringify(state));
   try{
-    await database.table("settings").put({key:"session",startedAt:state.startedAt,updatedAt:new Date().toISOString(),mode:state.mode,simulationSelections:state.simulationSelections,simulationSubmitted:state.simulationSubmitted,roundId:state.roundId});
+    await database.table("settings").put({key:"session",startedAt:state.startedAt,updatedAt,mode:state.mode,simulationSelections:state.simulationSelections,simulationSubmitted:state.simulationSubmitted,roundId:state.roundId});
     if(questionId)await database.table("attempts").put({...state.attempts[questionId],questionId});
     else await database.table("attempts").bulkPut(Object.entries(state.attempts).map(([id,attempt])=>({...attempt,questionId:id})));
   }catch(error){console.warn("Falha ao salvar no IndexedDB; cópia local preservada.",error)}
+  queueSync();
 }
 function attemptFor(id){return state.attempts[id]}
+
+function mergeCloudAttempts(rows=[]){
+  let changed=false;
+  rows.forEach(row=>{if(!row?.questionId||!row.payload)return;const local=state.attempts[row.questionId],remoteDate=new Date(row.payload.updatedAt||row.updatedAt||0),localDate=new Date(local?.updatedAt||local?.answeredAt||0);if(!local||remoteDate>localDate){state.attempts[row.questionId]=row.payload;changed=true}});
+  return changed;
+}
+async function pullCloudState(){
+  if(!apiConfig.enabled||!apiToken())return;
+  try{const response=await fetch(apiUrl("/api/state"),{headers:{Authorization:`Bearer ${apiToken()}`}});if(response.status===401){localStorage.removeItem(API_TOKEN_KEY);syncState="auth";return}if(!response.ok)throw new Error("leitura remota falhou");const data=await response.json();if(mergeCloudAttempts(data.attempts)){localStorage.setItem(STORAGE_KEY,JSON.stringify(state));await database.table("attempts").bulkPut(Object.entries(state.attempts).map(([id,attempt])=>({...attempt,questionId:id})))}syncState="synced"}catch(error){console.warn("Histórico remoto temporariamente indisponível.",error);syncState="pending"}
+}
+function queueSync(){if(!round||!apiConfig.enabled||!apiToken())return;clearTimeout(syncTimer);syncTimer=setTimeout(performSync,900)}
+async function performSync(){
+  const token=apiToken();if(!token||!round)return;syncState="syncing";updateConnectionStatus();
+  const rawAttempts=Object.fromEntries(round.questions.filter(q=>attemptFor(q.id)).map(q=>[q.id,attemptFor(q.id)]));
+  try{const response=await fetch(apiUrl("/api/sync"),{method:"POST",headers:{Authorization:`Bearer ${token}`,"Content-Type":"application/json"},body:JSON.stringify({deviceId:deviceId(),report:buildReport(),rawAttempts})});if(response.status===401){localStorage.removeItem(API_TOKEN_KEY);syncState="auth";throw new Error("sessão remota expirada")}if(!response.ok)throw new Error(`sincronização falhou (${response.status})`);syncState="synced"}catch(error){console.warn("A cópia local foi preservada para nova tentativa.",error);if(syncState!=="auth")syncState="pending"}updateConnectionStatus()
+}
 
 async function init(){
   state=await loadState();
   try{[round,syllabus]=await Promise.all([fetch("data/questions.json").then(r=>{if(!r.ok)throw new Error();return r.json()}),fetch("data/syllabus.json").then(r=>{if(!r.ok)throw new Error();return r.json()})])}
   catch{document.querySelector("main").innerHTML='<div class="empty">Não foi possível carregar os dados da rodada. Atualize a página.</div>';return}
+  await pullCloudState();
   if(state.roundId!==round.roundId){state.roundId=round.roundId;state.mode="study";state.simulationSelections={};state.simulationSubmitted=false;await saveState()}
   document.getElementById("today-label").textContent=new Intl.DateTimeFormat("pt-BR",{dateStyle:"long"}).format(new Date());
   document.querySelector(".context-strip div:nth-child(1) strong").textContent=round.label||"Intercalada";
@@ -50,10 +82,13 @@ async function init(){
   document.querySelector(".context-strip div:nth-child(3) strong").textContent=round.method||"4–3–2–1";
   updateConnectionStatus();
   window.addEventListener("online",updateConnectionStatus);window.addEventListener("offline",updateConnectionStatus);
-  bindTabs();bindActions();renderAll();
+  bindTabs();bindActions();renderAll();queueSync();
 }
 
-function updateConnectionStatus(){const online=navigator.onLine;document.getElementById("connection-status").textContent=online?"Online · dados locais ativos":"Offline · respostas preservadas";document.getElementById("connection-dot").classList.toggle("offline",!online)}
+function updateConnectionStatus(){
+  const online=navigator.onLine,labels={synced:"Online · sincronizado",syncing:"Online · sincronizando…",pending:"Online · sincronização pendente",auth:"Online · novo login para sincronizar",ready:"Online · nuvem conectada",local:"Online · dados locais ativos"};
+  document.getElementById("connection-status").textContent=online?(apiConfig.enabled?labels[syncState]||labels.local:labels.local):"Offline · respostas preservadas";document.getElementById("connection-dot").classList.toggle("offline",!online||syncState==="pending"||syncState==="auth")
+}
 
 function bindTabs(){document.querySelectorAll(".tab").forEach(button=>button.addEventListener("click",()=>{document.querySelectorAll(".tab").forEach(b=>{b.classList.toggle("active",b===button);b.setAttribute("aria-selected",b===button)});document.querySelectorAll(".view").forEach(v=>v.classList.remove("active"));document.getElementById(`view-${button.dataset.view}`).classList.add("active");if(button.dataset.view==="performance")renderPerformance()}))}
 function bindActions(){
@@ -62,7 +97,7 @@ function bindActions(){
   document.getElementById("next-question").addEventListener("click",()=>showQuestion(Math.min(round.questions.length-1,currentIndex+1)));
   document.getElementById("copy-report").addEventListener("click",async e=>{await navigator.clipboard.writeText(JSON.stringify(buildReport(),null,2));e.currentTarget.textContent="Copiado";setTimeout(()=>e.currentTarget.textContent="Copiar",1200)});
   document.getElementById("download-report").addEventListener("click",downloadReport);
-  document.getElementById("logout-button").addEventListener("click",()=>{sessionStorage.removeItem(AUTH_KEY);location.reload()});
+  document.getElementById("logout-button").addEventListener("click",()=>{sessionStorage.removeItem(AUTH_KEY);localStorage.removeItem(API_TOKEN_KEY);location.reload()});
   document.querySelectorAll("[data-mode]").forEach(button=>button.addEventListener("click",()=>setMode(button.dataset.mode)));
 }
 function currentQuestions(){return new Set(round.questions.map(q=>q.id))}
@@ -108,7 +143,7 @@ function submitAnswer(){
 function elapsedSeconds(){return Math.max(1,Math.round((Date.now()-questionShownAt)/1000))}
 function finalizeSimulation(){
   const answeredAt=new Date();
-  round.questions.forEach(q=>{const selection=state.simulationSelections[q.id],correct=selection.selected===q.correct,base={selected:selection.selected,correct,mastery:correct?null:0,answeredAt:answeredAt.toISOString(),responseTimeSeconds:selection.responseTimeSeconds,mode:"simulation",fsrsCard:createEmptyCard(answeredAt)};state.attempts[q.id]=correct?{...base,nextReview:null}:{...base,...scheduleCard(base.fsrsCard,Rating.Again,answeredAt)}});
+  round.questions.forEach(q=>{const selection=state.simulationSelections[q.id],correct=selection.selected===q.correct,base={selected:selection.selected,correct,mastery:correct?null:0,answeredAt:answeredAt.toISOString(),updatedAt:answeredAt.toISOString(),responseTimeSeconds:selection.responseTimeSeconds,mode:"simulation",fsrsCard:createEmptyCard(answeredAt)};state.attempts[q.id]=correct?{...base,nextReview:null}:{...base,...scheduleCard(base.fsrsCard,Rating.Again,answeredAt)}});
   state.simulationSubmitted=true;saveState();renderAll();showQuestion(currentIndex);
 }
 function renderFeedback(q,attempt){
@@ -143,7 +178,7 @@ function renderPerformance(){
   document.getElementById("mastery-bars").innerHTML=labels.map((label,score)=>`<div class="mastery-row"><span>${label}</span><div class="progress-track"><div class="progress-fill" data-score="${score}" style="width:${answered?counts[score]/answered*100:0}%"></div></div><strong>${counts[score]}</strong></div>`).join("");document.getElementById("report-json").textContent=JSON.stringify(buildReport(),null,2);
 }
 function buildReport(){
-  const records=round.questions.filter(q=>attemptFor(q.id)).map(q=>{const a=attemptFor(q.id);return{questionId:q.id,category:q.category,axis:q.axis,kind:q.kind,reference:q.reference.section,correct:a.correct,selected:letter(a.selected),answer:letter(q.correct),mastery:a.mastery,errorCause:a.errorCause||null,responseTimeSeconds:a.responseTimeSeconds||null,mode:a.mode||state.mode,answeredAt:a.answeredAt,nextReview:a.nextReview}});
+  const records=round.questions.filter(q=>attemptFor(q.id)).map(q=>{const a=attemptFor(q.id);return{questionId:q.id,category:q.category,axis:q.axis,kind:q.kind,reference:q.reference.section,correct:a.correct,selected:letter(a.selected),answer:letter(q.correct),mastery:a.mastery,errorCause:a.errorCause||null,responseTimeSeconds:a.responseTimeSeconds||null,mode:a.mode||state.mode,answeredAt:a.answeredAt,updatedAt:a.updatedAt||a.answeredAt,nextReview:a.nextReview}});
   const byCategory=Object.fromEntries(["review","current","rotation","official"].map(category=>{const rows=records.filter(r=>r.category===category);return[category,{answered:rows.length,correct:rows.filter(r=>r.correct).length}]}));
   return{schema:"pscpp-study-report/v3",generatedAt:new Date().toISOString(),student:"Gustavo Ponzi Seibel",scheduler:"FSRS 6 via ts-fsrs",storage:"IndexedDB via Dexie, com contingência em localStorage",method:{name:"progressão em espiral intercalada e adaptativa",dailyMix:{review:4,current:3,rotation:2,official:1},selectionWeights:{reviewUrgency:40,personalWeakness:25,historicalIncidence:20,coverageGap:10,normativeRecency:5}},currentPath:`${round.title} — ${round.path}`,roundId:round.roundId,mode:state.mode,baseline:syllabus.baseline,summary:{answered:records.length,correct:records.filter(r=>r.correct).length,wrong:records.filter(r=>!r.correct).length,dueReviews:dueAttempts().length,byCategory},attempts:records,instructionForNextRound:"Gerar exatamente 10 questões no mix 4 revisões FSRS, 3 do tema principal, 2 de matérias alternadas e 1 questão oficial histórica. Selecionar por 40% urgência, 25% fraqueza pessoal, 20% incidência histórica, 10% lacuna de cobertura e 5% atualidade normativa. Priorizar notas 0 e 1, causas de erro e revisões vencidas; intercalar eixos; citar publicação, edição, seção e item do conteúdo programático; não revelar o parágrafo que denuncia a resposta antes da correção."}
 }

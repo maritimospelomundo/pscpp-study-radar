@@ -1,0 +1,9 @@
+{
+  "name": "pscpp-study-sync-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "config": "node scripts/create-wrangler-config.mjs"
+  }
+}

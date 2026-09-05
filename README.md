@@ -29,7 +29,24 @@ Painel interativo de estudo e revisão adaptativa para o Processo Seletivo à Ca
 
 ## Persistência e sincronização
 
-As respostas são preservadas no próprio dispositivo mesmo sem conexão. A próxima etapa conectará o painel ao Cloudflare Worker + D1 para sincronização entre dispositivos e leitura automática pela tarefa diária.
+As respostas são preservadas no próprio dispositivo mesmo sem conexão. O projeto inclui uma API separada em Cloudflare Worker + D1 para:
+
+- sincronizar tentativas entre celular e computador;
+- conservar o histórico fora do navegador;
+- produzir um relatório consolidado para a tarefa diária do GPT;
+- autenticar a sincronização no servidor, sem publicar credenciais no GitHub Pages.
+
+Enquanto `data/config.json` estiver com `enabled: false`, o portal continua integralmente funcional em modo local. A sincronização só é ativada depois que o Worker, o D1 e os segredos forem configurados.
+
+### Ativação do Worker
+
+1. Crie no Cloudflare o banco D1 `pscpp-study-radar-db`.
+2. Cadastre no repositório os segredos de Actions `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` e `CLOUDFLARE_D1_DATABASE_ID`.
+3. Execute manualmente o workflow `Deploy Study Sync Worker`.
+4. No Worker `pscpp-study-sync`, cadastre os segredos `PASSWORD_HASH`, `SESSION_SECRET` e `REPORT_READ_TOKEN`.
+5. Confirme `GET /health` e altere `data/config.json` para `enabled: true`.
+
+O token da API do Cloudflare precisa somente de permissões de edição de Workers Scripts e D1. Tokens e segredos nunca devem ser incluídos em commits.
 
 O bloqueio de acesso é deliberadamente simples e executado no navegador. Como o código do GitHub Pages é público, ele reduz acessos casuais, mas não constitui autenticação segura de servidor.
 
