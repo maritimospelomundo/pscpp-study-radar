@@ -8,13 +8,26 @@
   <title>PSCPP Study Radar</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="locked">
+  <section id="login-screen" class="login-screen" aria-labelledby="login-title">
+    <form id="login-form" class="login-card">
+      <span class="brand-mark login-mark" aria-hidden="true">P</span>
+      <span class="eyebrow">Acesso pessoal</span>
+      <h1 id="login-title">PSCPP Study Radar</h1>
+      <p>Digite sua senha para abrir o painel de estudos.</p>
+      <label for="access-password">Senha</label>
+      <input id="access-password" name="password" type="password" autocomplete="current-password" required autofocus>
+      <p id="login-error" class="login-error" role="alert" hidden>Senha incorreta. Tente novamente.</p>
+      <button class="primary login-button" type="submit">Entrar</button>
+      <small>Controle de acesso simples para uso pessoal.</small>
+    </form>
+  </section>
   <header class="topbar">
     <div class="brand">
       <span class="brand-mark" aria-hidden="true">P</span>
       <div><h1>PSCPP Study Radar</h1><p>Preparação orientada pela bibliografia oficial da DPC</p></div>
     </div>
-    <div class="header-status"><span id="connection-dot" class="live-dot" aria-hidden="true"></span><span id="connection-status">Carregando…</span><span aria-hidden="true">·</span><span id="today-label">Rodada atual</span></div>
+    <div class="header-status"><span id="connection-dot" class="live-dot" aria-hidden="true"></span><span id="connection-status">Carregando…</span><span aria-hidden="true">·</span><span id="today-label">Rodada atual</span><button id="logout-button" class="logout-button" type="button">Sair</button></div>
   </header>
   <nav class="tabs" aria-label="Seções do painel">
     <button class="tab active" data-view="questions" aria-selected="true">Questões do dia</button>

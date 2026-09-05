@@ -13,6 +13,7 @@ Painel interativo de estudo e revisão adaptativa para o Processo Seletivo à Ca
 - relatório JSON exportável para leitura pelo GPT;
 - histórico offline em IndexedDB (`Dexie.js`), com contingência em `localStorage`;
 - PWA instalável e operacional offline (`vite-plugin-pwa`);
+- tela de acesso pessoal com senha validada por hash e sessão temporária;
 - publicação automática no GitHub Pages.
 
 ## Estado inicial importado
@@ -26,6 +27,8 @@ Painel interativo de estudo e revisão adaptativa para o Processo Seletivo à Ca
 ## Persistência e sincronização
 
 As respostas são preservadas no próprio dispositivo mesmo sem conexão. A próxima etapa conectará o painel ao Cloudflare Worker + D1 para sincronização entre dispositivos e leitura automática pela tarefa diária.
+
+O bloqueio de acesso é deliberadamente simples e executado no navegador. Como o código do GitHub Pages é público, ele reduz acessos casuais, mas não constitui autenticação segura de servidor.
 
 ## Publicação
 

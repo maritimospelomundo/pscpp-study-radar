@@ -1,6 +1,8 @@
 import Dexie from "dexie";
 import { Rating, createEmptyCard, fsrs } from "ts-fsrs";
 
+const PASSWORD_HASH="ea197173a22ff3031e920007f63d59a5e324a02db220109f82cec16a69195cfe";
+const AUTH_KEY="pscpp-study-radar-auth";
 const STORAGE_KEY="pscpp-study-radar-v2";
 const LEGACY_STORAGE_KEY="pscpp-study-radar-v1";
 const scheduler=fsrs({enable_fuzz:false,enable_short_term:false});
@@ -9,6 +11,14 @@ database.version(1).stores({settings:"key",attempts:"questionId,answeredAt,nextR
 const letter=i=>String.fromCharCode(97+i);
 const escapeHtml=value=>String(value).replace(/[&<>'"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[c]));
 let round,syllabus,currentIndex=0,state={attempts:{},startedAt:new Date().toISOString()};
+
+async function sha256(value){const bytes=new TextEncoder().encode(value),digest=await crypto.subtle.digest("SHA-256",bytes);return Array.from(new Uint8Array(digest),byte=>byte.toString(16).padStart(2,"0")).join("")}
+async function boot(){
+  const form=document.getElementById("login-form"),input=document.getElementById("access-password"),error=document.getElementById("login-error");
+  const unlock=async()=>{document.body.classList.remove("locked");document.getElementById("login-screen").hidden=true;await init()};
+  if(sessionStorage.getItem(AUTH_KEY)==="granted"){await unlock();return}
+  form.addEventListener("submit",async event=>{event.preventDefault();error.hidden=true;const hash=await sha256(input.value);if(hash===PASSWORD_HASH){sessionStorage.setItem(AUTH_KEY,"granted");input.value="";await unlock()}else{error.hidden=false;input.select()}});
+}
 
 async function loadState(){
   try{
@@ -49,6 +59,7 @@ function bindActions(){
   document.getElementById("next-question").addEventListener("click",()=>showQuestion(Math.min(round.questions.length-1,currentIndex+1)));
   document.getElementById("copy-report").addEventListener("click",async e=>{await navigator.clipboard.writeText(JSON.stringify(buildReport(),null,2));e.currentTarget.textContent="Copiado";setTimeout(()=>e.currentTarget.textContent="Copiar",1200)});
   document.getElementById("download-report").addEventListener("click",downloadReport);
+  document.getElementById("logout-button").addEventListener("click",()=>{sessionStorage.removeItem(AUTH_KEY);location.reload()});
 }
 function renderAll(){renderIndex();showQuestion(currentIndex);renderReviews();renderSyllabus();renderPerformance();updateSummary()}
 
@@ -103,4 +114,4 @@ function buildReport(){
   return{schema:"pscpp-study-report/v2",generatedAt:new Date().toISOString(),student:"Gustavo Ponzi Seibel",scheduler:"FSRS 6 via ts-fsrs",storage:"IndexedDB via Dexie, com contingência em localStorage",currentPath:`${round.publication} — ${round.path||round.title}`,roundId:round.roundId,baseline:syllabus.baseline,summary:{answered:records.length,correct:records.filter(r=>r.correct).length,wrong:records.filter(r=>!r.correct).length,dueReviews:dueAttempts().length},attempts:records,instructionForNextRound:"Priorizar notas 0 e 1 e revisões vencidas; manter revisão cumulativa; avançar somente após domínio do ponto atual; citar publicação, edição, seção e item do conteúdo programático."}
 }
 function downloadReport(){const blob=new Blob([JSON.stringify(buildReport(),null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=`pscpp-study-report-${new Date().toISOString().slice(0,10)}.json`;a.click();URL.revokeObjectURL(url)}
-init();
+boot();
