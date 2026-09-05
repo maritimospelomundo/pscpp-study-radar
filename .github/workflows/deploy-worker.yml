@@ -23,13 +23,18 @@ jobs:
         env:
           CLOUDFLARE_D1_DATABASE_ID: ${{ secrets.CLOUDFLARE_D1_DATABASE_ID }}
         run: npm run config
+      - name: Verify Cloudflare credentials
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4.129.0 whoami
       - name: Apply D1 migrations
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: npx --yes wrangler@4.32.0 d1 migrations apply pscpp-study-radar-db --remote --config wrangler.generated.jsonc
+        run: npx --yes wrangler@4.129.0 d1 migrations apply pscpp-study-radar-db --remote --config wrangler.generated.jsonc
       - name: Deploy Worker
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: npx --yes wrangler@4.32.0 deploy --config wrangler.generated.jsonc
+        run: npx --yes wrangler@4.129.0 deploy --config wrangler.generated.jsonc
