@@ -1,111 +1,91 @@
 {
-  "roundId": "spiral-msc137-2026-09-05",
-  "label": "Intercalada",
-  "title": "Controlabilidade e revisão multieixos",
+  "roundId": "spiral-msc137-criteria-2026-09-05",
+  "label": "Simulado adaptativo",
+  "title": "Critérios de manobrabilidade e reforço dos três erros",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "MSC.137(76) · início",
+  "path": "MSC.137(76) · critérios do §5.3",
   "method": "4–3–2–1",
   "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
   "questions": [
     {
-      "id": "spiral-r1-a601-61",
-      "category": "review", "axis": "I", "kind": "Revisão FSRS",
-      "stem": "No Manoeuvring Booklet, qual conjunto integra as características de manobra em baixa velocidade do §6.1?",
-      "options": ["Mínima rotação operacional da máquina principal e velocidade correspondente do navio.", "Mínima velocidade de governo e máximo ângulo de leme.", "Rotação crítica da máquina e tempo para atravessá-la.", "Menor ordem de telégrafo e empuxo transversal correspondente."],
-      "correct": 0,
-      "explanation": "O §6.1 associa diretamente a mínima rotação operacional da máquina principal à velocidade correspondente do navio.",
-      "comments": ["Correta: são exatamente as duas grandezas exigidas.", "A velocidade mínima de manutenção do rumo após parar as máquinas pertence ao §6.2.", "Rotações críticas não são o objeto do §6.1.", "O item não relaciona ordem de telégrafo a empuxo transversal."],
-      "reference": {"referenceId": "I-11", "evidence": "O §6.1 associa a mínima rotação operacional à velocidade correspondente.", "base": "IMO — Resolution A.601(15)", "publication": "IMO — Provision and Display of Manoeuvring Information on Board Ships", "edition": "Resolução A.601(15), adotada em 19 de novembro de 1987", "section": "Apêndice 3, seção 6, §6.1", "syllabus": "Eixo I — Manobrabilidade · item 8.13.10", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.601(15).pdf"}
+      "id": "adapt-r1-smcp-numbers", "category": "review", "axis": "VI", "kind": "Revisão do erro · Comunicações",
+      "stem": "Segundo a IMO SMCP, como deve ser transmitido por radiotelefonia o rumo 105°?",
+      "options": ["one-zero-five degrees", "one hundred and five degrees", "one-oh-five degrees", "one-five degrees"], "correct": 0,
+      "explanation": "A IMO SMCP determina que cada algarismo seja pronunciado separadamente; assim, 105 é one-zero-five.",
+      "comments": ["Correta: os três algarismos são pronunciados separadamente, e 0 é zero.", "A leitura cardinal comum não segue a convenção padronizada.", "A palavra padronizada para o algarismo 0 é zero, não oh.", "A alternativa omite o algarismo 0."],
+      "reference": {"referenceId": "VI-01", "evidence": "A seção 2.2 determina a pronúncia separada dos algarismos e padroniza 0 como zero.", "base": "IMO — Standard Marine Communication Phrases", "publication": "IMO Standard Marine Communication Phrases (IMO SMCP)", "edition": "Resolução A.918(22), adotada em 29 de novembro de 2001", "section": "General, §2.2 — Spelling of digits and numbers", "syllabus": "Eixo VI — Comunicações · IMO SMCP", "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"}
     },
     {
-      "id": "spiral-r2-a601-62",
-      "category": "review", "axis": "I", "kind": "Revisão FSRS",
-      "stem": "A velocidade mínima tratada no §6.2 da Resolução IMO A.601(15) é observada quando o navio:",
-      "options": ["mantém o rumo com seguimento a vante depois de parar as máquinas.", "elimina o seguimento após dar toda força a ré.", "governa com a máquina principal em mínima rotação operacional.", "mantém posição somente com propulsores laterais."],
-      "correct": 0,
-      "explanation": "O §6.2 examina o limite mínimo no qual o navio ainda mantém o rumo e o seguimento a vante após a parada das máquinas.",
-      "comments": ["Correta: reúne estado da máquina, capacidade de governo e seguimento residual.", "O cenário não inclui ordem de máquina a ré.", "Máquina ainda operando em rotação mínima corresponde ao §6.1.", "O requisito não trata de manutenção de posição."],
-      "reference": {"referenceId": "I-11", "evidence": "O §6.2 define o limite de manutenção do rumo com seguimento residual após parar as máquinas.", "base": "IMO — Resolution A.601(15)", "publication": "IMO — Provision and Display of Manoeuvring Information on Board Ships", "edition": "Resolução A.601(15), adotada em 19 de novembro de 1987", "section": "Apêndice 3, seção 6, §6.2", "syllabus": "Eixo I — Manobrabilidade · item 8.13", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.601(15).pdf"}
+      "id": "adapt-r2-msc137-compliance", "category": "review", "axis": "I", "kind": "Revisão do erro · Manobrabilidade",
+      "stem": "Na fase de projeto, a conformidade com os padrões da MSC.137(76) pode ser inicialmente avaliada por:",
+      "options": ["declaração do estaleiro baseada apenas nas dimensões principais.", "simulação computacional definitiva, sem validação posterior.", "ensaios em modelo e/ou previsões computacionais, com validação posterior por provas em escala real.", "prova de mar em outro navio da mesma classe."], "correct": 2,
+      "explanation": "O §2.1.1 admite ensaios em modelo e previsões computacionais durante o projeto, mas exige provas em escala real para validação.",
+      "comments": ["As dimensões, isoladamente, não demonstram conformidade.", "A previsão computacional não dispensa a validação em escala real.", "Correta: reúne a avaliação de projeto e a validação posterior.", "A validação deve corresponder ao próprio navio."],
+      "reference": {"referenceId": "I-07", "evidence": "O §2.1.1 admite previsão por modelo ou cálculo e determina validação por provas em escala real.", "base": "IMO — Resolution MSC.137(76)", "publication": "IMO — Standards for Ship Manoeuvrability", "edition": "Resolução MSC.137(76), adotada em 4 de dezembro de 2002", "section": "Anexo, seção 2, §2.1.1", "syllabus": "Eixo I — Manobrabilidade · critérios IMO de controlabilidade", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"}
     },
     {
-      "id": "spiral-r3-a601-wind",
-      "category": "review", "axis": "I", "kind": "Revisão cumulativa",
-      "stem": "Assinale a associação correta entre as informações sobre influência do vento no Manoeuvring Booklet:",
-      "options": ["§5.1 — deriva sem potência; §5.2 — forças de atracação; §5.3 — manutenção do rumo.", "§5.1 — forças e momentos para atracação; §5.2 — manutenção do rumo; §5.3 — deriva sem potência disponível.", "§5.1 — manutenção do rumo; §5.2 — deriva em lastro; §5.3 — forças de atracação.", "§5.1 — efeito da corrente; §5.2 — vento transversal; §5.3 — mínima rotação operacional."],
-      "correct": 1,
-      "explanation": "As três subseções se distinguem pela finalidade: atracação, manutenção do rumo e deriva sem potência da máquina disponível.",
-      "comments": ["Os conteúdos das três subseções estão deslocados.", "Correta: preserva a finalidade e a condição propulsiva de cada item.", "Inverte as subseções e acrescenta limitação inexistente.", "Corrente e mínima rotação não integram essa sequência dos §§5.1–5.3."],
-      "reference": {"referenceId": "I-11", "evidence": "Os §§5.1 a 5.3 separam forças para atracação, manutenção do rumo e deriva sem potência.", "base": "IMO — Resolution A.601(15)", "publication": "IMO — Provision and Display of Manoeuvring Information on Board Ships", "edition": "Resolução A.601(15), adotada em 19 de novembro de 1987", "section": "Apêndice 3, §§5.1–5.3.1", "syllabus": "Eixo I — Manobrabilidade · item 8.10.1", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.601(15).pdf"}
+      "id": "adapt-r3-colreg-underway", "category": "review", "axis": "III/IV", "kind": "Revisão do erro · RIPEAM",
+      "stem": "Para a Regra 3 do COLREG, uma embarcação pode estar 'em movimento' mesmo estando parada e sem seguimento?",
+      "options": ["Não; em movimento exige velocidade sobre o fundo.", "Sim; basta não estar fundeada, amarrada à terra ou encalhada.", "Somente quando estiver usando propulsão mecânica.", "Somente em visibilidade restrita."], "correct": 1,
+      "explanation": "Underway é definido por exclusão: a embarcação não está fundeada, amarrada à terra nem encalhada. A definição não exige seguimento.",
+      "comments": ["Seguimento e condição de underway são conceitos distintos.", "Correta: reproduz os três estados excluídos pela Regra 3(i).", "O conceito também alcança embarcações que não estejam usando máquina.", "A definição independe da condição de visibilidade."],
+      "reference": {"referenceId": "III-16", "evidence": "A Regra 3(i) define underway sem exigir velocidade ou seguimento.", "base": "COLREG 1972 / RIPEAM", "publication": "Convention on the International Regulations for Preventing Collisions at Sea, 1972", "edition": "COLREG 1972, conforme emendado", "section": "Parte A, Regra 3(i) — Definição de underway", "syllabus": "Eixos III e IV · itens III-16 e IV-13", "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"}
     },
     {
-      "id": "spiral-r4-a601-additional",
-      "category": "review", "axis": "I", "kind": "Revisão cumulativa",
-      "stem": "A seção 7 do Apêndice 3 da Resolução IMO A.601(15) permite acrescentar ao Manoeuvring Booklet:",
-      "options": ["somente resultados obtidos em provas oficiais.", "qualquer informação adicional relevante, especialmente sobre a operação dos controles de manobra do passadiço.", "apenas dados já exibidos no Wheelhouse Poster.", "informações administrativas de solicitação de praticagem."],
-      "correct": 1,
-      "explanation": "O §7.1 abre espaço para outras informações relevantes e destaca particularmente a operação dos controles de manobra do passadiço.",
-      "comments": ["O item não limita a inclusão a resultados de prova.", "Correta: reproduz o alcance e a ênfase do §7.1.", "O Manoeuvring Booklet não fica limitado ao Wheelhouse Poster.", "Procedimentos administrativos de praticagem não são o foco do item."],
-      "reference": {"referenceId": "I-11", "evidence": "O §7.1 permite informações adicionais relevantes e destaca os controles de manobra do passadiço.", "base": "IMO — Resolution A.601(15)", "publication": "IMO — Provision and Display of Manoeuvring Information on Board Ships", "edition": "Resolução A.601(15), adotada em 19 de novembro de 1987", "section": "Apêndice 3, seção 7, §7.1", "syllabus": "Eixo I — Manobrabilidade · item 8.18", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.601(15).pdf"}
+      "id": "adapt-r4-smcp-response", "category": "review", "axis": "VI", "kind": "Revisão associada · Comunicações",
+      "stem": "Ao responder afirmativamente a uma instrução ou conselho na IMO SMCP, o marítimo deve usar:",
+      "options": ["Yes, understood, omitindo a frase recebida.", "Roger, seguido apenas do indicativo do navio.", "Stand by, sem indicação de tempo.", "I will... ou I can..., seguido da frase integral recebida."], "correct": 3,
+      "explanation": "A SMCP padroniza a resposta afirmativa com I will/I can e a repetição integral da frase recebida.",
+      "comments": ["A confirmação isolada não atende ao padrão indicado.", "Roger não substitui a forma prescrita para aceitar instrução ou conselho.", "Stand by deve ser usado para aguardar e acompanhado de intervalo de tempo.", "Correta: confirma a capacidade ou intenção e repete o conteúdo integral."],
+      "reference": {"referenceId": "VI-01", "evidence": "A seção de respostas determina I will/I can e a repetição integral da frase para resposta afirmativa.", "base": "IMO — Standard Marine Communication Phrases", "publication": "IMO Standard Marine Communication Phrases (IMO SMCP)", "edition": "Resolução A.918(22), adotada em 29 de novembro de 2001", "section": "General, §1.3 — Responses", "syllabus": "Eixo VI — Comunicações · procedimentos de resposta", "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"}
     },
     {
-      "id": "spiral-c1-msc137-application",
-      "category": "current", "axis": "I", "kind": "Tema principal · nova",
-      "stem": "Segundo a Resolução MSC.137(76), os padrões de manobrabilidade devem ser aplicados:",
-      "options": ["apenas a navios de carga com 150 m ou mais.", "a navios de todos os tipos de leme e propulsão com 100 m ou mais, e a navios-tanque químicos e gaseiros independentemente do comprimento.", "a todos os navios SOLAS, sem exceções de tipo ou comprimento.", "somente a navios com propulsão e leme convencionais."],
-      "correct": 1,
-      "explanation": "O §3.1 fixa o corte geral de 100 m e inclui navios-tanque químicos e gaseiros qualquer que seja o comprimento.",
-      "comments": ["O padrão não adota corte de 150 m nem se restringe a navios de carga.", "Correta: corresponde ao campo de aplicação do §3.1.", "Há delimitações e exclusão expressa das embarcações de alta velocidade no §3.4.", "Os padrões foram desenvolvidos a partir de sistemas tradicionais, mas o §3.1 prevê aplicação a todos os tipos de leme e propulsão."],
-      "reference": {"referenceId": "I-07", "evidence": "Os §§3.1 e 3.4 delimitam tipos, comprimento e exceções do campo de aplicação.", "base": "IMO — Resolution MSC.137(76)", "publication": "IMO — Standards for Ship Manoeuvrability", "edition": "Resolução MSC.137(76), adotada em 4 de dezembro de 2002", "section": "Anexo, seção 3, §§3.1 e 3.4", "syllabus": "Eixo I — Manobrabilidade · critérios IMO de controlabilidade", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"}
+      "id": "adapt-c1-msc137-initial-turning", "category": "current", "axis": "I", "kind": "Tema principal · critério numérico",
+      "stem": "No ensaio de capacidade inicial de giro com 10° de leme, a distância percorrida até a proa alterar 10° em relação ao rumo original não deve exceder:",
+      "options": ["4,5L", "2,5L", "5L", "15L"], "correct": 1,
+      "explanation": "O §5.3.2 limita a distância a 2,5 comprimentos do navio quando a proa tiver alterado 10° com 10° de leme para qualquer bordo.",
+      "comments": ["4,5L é o limite do avanço no círculo de giro.", "Correta: distância máxima de 2,5L.", "5L é o limite do diâmetro tático.", "15L é o limite geral de track reach na parada."],
+      "reference": {"referenceId": "I-07", "evidence": "O §5.3.2 fixa distância máxima de 2,5L para mudança de proa de 10° com 10° de leme.", "base": "IMO — Resolution MSC.137(76)", "publication": "IMO — Standards for Ship Manoeuvrability", "edition": "Resolução MSC.137(76), adotada em 4 de dezembro de 2002", "section": "Anexo, §5.3.2 — Initial turning ability", "syllabus": "Eixo I — Manobrabilidade · capacidade inicial de giro", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"}
     },
     {
-      "id": "spiral-c2-msc137-compliance",
-      "category": "current", "axis": "I", "kind": "Tema principal · nova",
-      "stem": "Qual alternativa descreve corretamente uma forma de demonstrar conformidade com a MSC.137(76) ainda na fase de projeto?",
-      "options": ["Somente prova em escala real, sem previsão anterior.", "Ensaios em modelo de escala e/ou previsões computacionais com modelos matemáticos, seguidos de provas em escala real para validação.", "Apenas simulação computacional homologada, dispensando prova em escala real.", "Declaração do construtor baseada nas dimensões principais do navio."],
-      "correct": 1,
-      "explanation": "O §2.1.1 admite ensaios em modelo e/ou previsões computacionais no projeto, mas determina provas em escala real para validar os resultados.",
-      "comments": ["Provas em escala real constituem outra via de demonstração, mas a alternativa não descreve a previsão na fase de projeto.", "Correta: contém previsão e validação na sequência indicada.", "A validação em escala real não é dispensada por esse método.", "As dimensões principais, isoladamente, não demonstram conformidade."],
-      "reference": {"referenceId": "I-07", "evidence": "O §2.1.1 admite previsões no projeto e exige validação posterior em escala real.", "base": "IMO — Resolution MSC.137(76)", "publication": "IMO — Standards for Ship Manoeuvrability", "edition": "Resolução MSC.137(76), adotada em 4 de dezembro de 2002", "section": "Anexo, seção 2, §2.1.1", "syllabus": "Eixo I — Manobrabilidade · critérios IMO de controlabilidade", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"}
+      "id": "adapt-c2-msc137-overshoot", "category": "current", "axis": "I", "kind": "Tema principal · aplicação de fórmula",
+      "stem": "Em uma manobra de zig-zag 10°/10°, se L/V = 26 s, quais são os limites máximos do primeiro e do segundo ângulos de overshoot?",
+      "options": ["10° e 25°", "20° e 40°", "18° e 37°", "25° e 40°"], "correct": 2,
+      "explanation": "Para 10 s ≤ L/V < 30 s: primeiro = 5 + 0,5(L/V) = 18°; segundo = 17,5 + 0,75(L/V) = 37°.",
+      "comments": ["Esses valores pertencem aos limites de outras faixas ou testes.", "São os tetos da faixa L/V ≥ 30 s, não de 26 s.", "Correta: aplicação direta das duas fórmulas resulta em 18° e 37°.", "25° é o limite do primeiro overshoot no zig-zag 20°/20°."],
+      "reference": {"referenceId": "I-07", "evidence": "Os §§5.3.3.1 e 5.3.3.2 fornecem fórmulas interpoladas para 10 s ≤ L/V < 30 s.", "base": "IMO — Resolution MSC.137(76)", "publication": "IMO — Standards for Ship Manoeuvrability", "edition": "Resolução MSC.137(76), adotada em 4 de dezembro de 2002", "section": "Anexo, §§5.3.3.1–5.3.3.2 — Zig-zag 10°/10°", "syllabus": "Eixo I — Manobrabilidade · yaw-checking e course-keeping", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"}
     },
     {
-      "id": "spiral-c3-msc137-turning",
-      "category": "current", "axis": "I", "kind": "Tema principal · contraste numérico",
-      "stem": "Na manobra de círculo de giro, a capacidade de giro é considerada satisfatória quando:",
-      "options": ["o avanço não excede 5L e o diâmetro tático não excede 4,5L.", "o avanço não excede 4,5L e o diâmetro tático não excede 5L.", "o avanço e o diâmetro tático não excedem 4L.", "o avanço não excede 2,5L e o diâmetro tático não excede 15L."],
-      "correct": 1,
-      "explanation": "A MSC.137(76) limita o avanço a 4,5 comprimentos do navio e o diâmetro tático a 5 comprimentos.",
-      "comments": ["Inverte os limites de avanço e diâmetro tático.", "Correta: avanço ≤ 4,5L e diâmetro tático ≤ 5L.", "O limite uniforme de 4L não consta do critério.", "2,5L pertence à capacidade inicial de giro; 15L é o limite geral de track reach na parada."],
-      "reference": {"referenceId": "I-07", "evidence": "O §5.3.1 fixa avanço máximo de 4,5L e diâmetro tático máximo de 5L.", "base": "IMO — Resolution MSC.137(76)", "publication": "IMO — Standards for Ship Manoeuvrability", "edition": "Resolução MSC.137(76), adotada em 4 de dezembro de 2002", "section": "Anexo, seção 5, §5.3.1", "syllabus": "Eixo I — Manobrabilidade · manobra de giro e critérios IMO", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"}
+      "id": "adapt-c3-msc137-stopping", "category": "current", "axis": "I", "kind": "Tema principal · contraste numérico",
+      "stem": "Na prova de parada com toda força a ré, qual associação de limites está correta na MSC.137(76)?",
+      "options": ["Track reach normalmente ≤ 15L; eventual modificação da Administração nunca pode exceder 20L.", "Track reach ≤ 20L em todos os casos, sem limite geral de 15L.", "Head reach ≤ 15L e lateral deviation ≤ 20L.", "Track reach ≤ 5L e diâmetro tático ≤ 15L."], "correct": 0,
+      "explanation": "O padrão geral é track reach não superior a 15L. Para navios de grande deslocamento, a Administração pode modificar o valor, sem ultrapassar 20L.",
+      "comments": ["Correta: distingue o critério geral da exceção administrativa limitada.", "20L é teto absoluto da modificação, não o padrão geral.", "O critério expresso é track reach, não essa combinação.", "5L pertence ao diâmetro tático do círculo de giro."],
+      "reference": {"referenceId": "I-07", "evidence": "O §5.3.4 fixa 15L como regra e 20L como teto para modificação pela Administração.", "base": "IMO — Resolution MSC.137(76)", "publication": "IMO — Standards for Ship Manoeuvrability", "edition": "Resolução MSC.137(76), adotada em 4 de dezembro de 2002", "section": "Anexo, §5.3.4 — Stopping ability", "syllabus": "Eixo I — Manobrabilidade · prova de parada", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"}
     },
     {
-      "id": "spiral-x1-smcp-numbers",
-      "category": "rotation", "axis": "VI", "kind": "Matéria alternada · Comunicações",
-      "stem": "De acordo com as convenções da IMO SMCP para a transmissão de números, qual frase informa corretamente uma velocidade atual de 10 nós?",
-      "options": ["My present speed is ten knots.", "My present speed is one-zero knots.", "My present speed is one-nought knots.", "My present speed is one hundred knots."],
-      "correct": 1,
-      "explanation": "Nas comunicações padronizadas, cada algarismo deve ser pronunciado separadamente; portanto, 10 é transmitido como one-zero.",
-      "comments": ["A pronúncia cardinal comum não segue a convenção numérica da SMCP.", "Correta: os algarismos são pronunciados separadamente.", "A palavra padronizada para o algarismo 0 é zero.", "A expressão corresponderia a outro valor e não separa os algarismos de 10."],
-      "reference": {"referenceId": "VI-01", "evidence": "A seção geral determina a pronúncia separada de cada algarismo.", "base": "IMO — Standard Marine Communication Phrases", "publication": "IMO Standard Marine Communication Phrases (IMO SMCP)", "edition": "Resolução A.918(22), adotada em 29 de novembro de 2001", "section": "General, seção 1 — Procedure / Spelling of numbers", "syllabus": "Eixo VI — Comunicações · IMO SMCP", "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"}
+      "id": "adapt-x1-a1045-pilot-ladder", "category": "rotation", "axis": "II", "kind": "Matéria alternada · Praticagem",
+      "stem": "Segundo a Resolução IMO A.1045(27), o espaçamento entre os degraus de uma escada de prático deve ser:",
+      "options": ["entre 250 mm e 300 mm.", "exatamente 300 mm.", "entre 310 mm e 350 mm.", "entre 350 mm e 400 mm."], "correct": 2,
+      "explanation": "A recomendação exige degraus igualmente espaçados, com distância entre 310 mm e 350 mm.",
+      "comments": ["A faixa é inferior à prevista.", "A resolução estabelece uma faixa, não um valor único.", "Correta: 310 mm a 350 mm.", "A faixa começa acima do máximo admitido."],
+      "reference": {"referenceId": "II-06", "evidence": "O §2.1.2.5 determina espaçamento uniforme não inferior a 310 mm nem superior a 350 mm.", "base": "IMO — Resolution A.1045(27)", "publication": "IMO — Pilot Transfer Arrangements", "edition": "Resolução A.1045(27), adotada em 30 de novembro de 2011", "section": "Anexo, §2.1.2.5 — Pilot ladders", "syllabus": "Eixo II — Praticagem · dispositivos de transferência de prático", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.1045(27).pdf"}
     },
     {
-      "id": "spiral-x2-voyage-planning",
-      "category": "rotation", "axis": "III", "kind": "Matéria alternada · Navegação",
-      "stem": "As Diretrizes da IMO para o planejamento de viagem organizam o processo em quatro componentes. Qual sequência está correta?",
-      "options": ["Avaliação, planejamento, execução e monitoramento.", "Preparação, praticagem, atracação e relatório.", "Planejamento, despacho, execução e auditoria.", "Avaliação, fundeio, pilotagem e encerramento."],
-      "correct": 0,
-      "explanation": "A Resolução A.893(21) estrutura o planejamento da viagem em appraisal, planning, execution e monitoring.",
-      "comments": ["Correta: reúne as quatro etapas das diretrizes.", "Praticagem e atracação podem integrar a viagem, mas não são os quatro componentes estruturais.", "Despacho e auditoria não substituem avaliação e monitoramento.", "Fundeio e pilotagem não constituem a sequência metodológica geral."],
-      "reference": {"referenceId": "III-01", "evidence": "O processo de planejamento é organizado em appraisal, planning, execution e monitoring.", "base": "IMO — Resolution A.893(21)", "publication": "IMO — Guidelines for Voyage Planning", "edition": "Resolução A.893(21), adotada em 25 de novembro de 1999", "section": "Anexo, §§1–4", "syllabus": "Eixo III — Navegação em Águas Restritas · planejamento e monitoramento da viagem", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.893(21).pdf"}
+      "id": "adapt-x2-miguens-buys-ballot", "category": "rotation", "axis": "V", "kind": "Matéria alternada · Meteorologia",
+      "stem": "Pela lei de Buys-Ballot, no Hemisfério Sul, um observador de frente para a direção de onde sopra o vento verdadeiro terá a baixa pressão aproximadamente:",
+      "options": ["à direita, a cerca de 110°.", "à esquerda, a cerca de 110°.", "diretamente à frente.", "diretamente atrás."], "correct": 1,
+      "explanation": "De frente para a origem do vento verdadeiro, a baixa pressão fica à esquerda no Hemisfério Sul e à direita no Hemisfério Norte, aproximadamente 110° afastada.",
+      "comments": ["À direita corresponde ao Hemisfério Norte.", "Correta: no Hemisfério Sul, a baixa fica à esquerda.", "A baixa não fica alinhada diretamente com a origem do vento.", "A relação angular indicada não corresponde à regra."],
+      "reference": {"referenceId": "V-01", "evidence": "O capítulo 45 apresenta a lei de Buys-Ballot e inverte o lado da baixa entre os hemisférios.", "base": "Miguens — Navegação: A Ciência e a Arte", "publication": "Navegação: A Ciência e a Arte, Volume III", "edition": "Diretoria de Hidrografia e Navegação", "section": "Capítulo 45 — Elementos meteorológicos e lei de Buys-Ballot", "syllabus": "Eixo V — Meteorologia e Oceanografia", "url": "https://www.marinha.mil.br/dhn/"}
     },
     {
-      "id": "spiral-o1-pscpp2012-q13",
-      "category": "official", "axis": "III/IV", "kind": "Questão oficial histórica",
-      "stem": "De acordo com a Regra 3 do COLREG, que trata das definições gerais:",
-      "options": ["Duas embarcações são consideradas ‘no visual’ quando não presente condição de visibilidade restrita.", "Uma ‘embarcação sem governo’ é uma ‘embarcação com capacidade de manobra restrita’.", "O termo ‘em movimento’ também se aplica à embarcação sob máquinas, mas parada e sem seguimento.", "Uma embarcação de pesca deve ser sempre considerada como ‘com capacidade de manobra restrita’.", "Uma ‘embarcação à vela’ deve ser sempre considerada como ‘embarcação sem propulsão mecânica’."],
-      "correct": 2,
-      "explanation": "No COLREG, embarcação em movimento é aquela que não está fundeada, amarrada à terra nem encalhada; portanto, pode estar parada e sem seguimento.",
-      "comments": ["‘No visual’ exige que uma embarcação possa ser observada visualmente pela outra.", "Sem governo e capacidade de manobra restrita são definições distintas.", "Correta: estar em movimento não significa necessariamente possuir seguimento.", "Embarcação de pesca possui definição própria e não é automaticamente RAM.", "Uma embarcação à vela pode possuir propulsão mecânica instalada; será considerada à vela quando navegar a vela sem usar a máquina."],
-      "reference": {"referenceId": "III-16", "evidence": "A Regra 3(i) define underway por exclusão de fundeio, amarração e encalhe, sem exigir seguimento.", "base": "COLREG 1972 / RIPEAM", "publication": "Convention on the International Regulations for Preventing Collisions at Sea, 1972", "edition": "COLREG 1972, conforme emendado", "section": "Parte A, Regra 3 — Definições gerais", "syllabus": "Eixos III e IV · itens III-16 e IV-13", "origin": "PSCPP 2012 — Prova Rosa, questão 13, gabarito definitivo C", "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"}
+      "id": "adapt-o1-pscpp2011-q2", "category": "official", "axis": "II", "kind": "Questão oficial histórica · PSCPP 2011",
+      "stem": "De acordo com o contido no livro Arte Naval (Maurílio M. Fonseca, 7ª edição, 2005), para que um navio tenha equilíbrio estável é necessário que:",
+      "options": ["o centro de gravidade (G) esteja acima do metacentro (M).", "o centro de gravidade (G) esteja abaixo do metacentro (M).", "o centro de gravidade (G) esteja sobre o metacentro (M).", "a reserva de flutuabilidade seja positiva, não importando a posição de G em relação a M.", "G esteja sobre M e a reserva de flutuabilidade seja positiva."], "correct": 1,
+      "explanation": "No equilíbrio estável inicial, o metacentro fica acima do centro de gravidade, produzindo altura metacêntrica positiva e momento restaurador.",
+      "comments": ["Com G acima de M, a altura metacêntrica é negativa e o equilíbrio é instável.", "Correta: M acima de G implica altura metacêntrica positiva.", "Com G coincidente com M, o equilíbrio inicial é indiferente.", "Reserva de flutuabilidade não substitui o critério de estabilidade inicial.", "A coincidência de G e M não produz altura metacêntrica positiva."],
+      "reference": {"referenceId": "II-01", "evidence": "A condição de estabilidade inicial exige metacentro acima do centro de gravidade.", "base": "Fonseca — Arte Naval", "publication": "Arte Naval, Volume I", "edition": "8ª ed., Marinha do Brasil, 2019; questão original citava a 7ª ed., 2005", "section": "Geometria e estabilidade inicial do navio — centro de gravidade e metacentro", "syllabus": "Eixo II — Praticagem · conhecimentos de Arte Naval", "origin": "PSCPP 2011 — Prova Amarela, questão 2", "url": "https://www.marinha.mil.br/dhn/"}
     }
   ]
 }
