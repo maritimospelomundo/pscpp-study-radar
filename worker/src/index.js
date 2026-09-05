@@ -183,6 +183,37 @@ async function reportFromDb(env, subject) {
     latestRound: latest ? JSON.parse(latest.payload_json) : null, summary: aggregateAttempts(attempts.results || []) };
 }
 
+export function sanitizeLatestReport(report) {
+  if (!report || typeof report !== "object") return null;
+  return {
+    roundId: report.roundId || null,
+    generatedAt: report.generatedAt || null,
+    currentPath: report.currentPath || null,
+    mode: report.mode || null,
+    baseline: report.baseline || null,
+    summary: report.summary ? {
+      answered: report.summary.answered ?? 0,
+      correct: report.summary.correct ?? 0,
+      wrong: report.summary.wrong ?? 0,
+      dueReviews: report.summary.dueReviews ?? 0,
+      byCategory: report.summary.byCategory || {}
+    } : null
+  };
+}
+
+async function adaptiveReportFromDb(env, subject) {
+  const attempts = await env.DB.prepare("SELECT * FROM attempts WHERE student_id = ? ORDER BY updated_at DESC LIMIT 5000").bind(subject).all();
+  const latest = await env.DB.prepare("SELECT updated_at, payload_json FROM reports WHERE student_id = ? ORDER BY updated_at DESC LIMIT 1").bind(subject).first();
+  const summary = aggregateAttempts(attempts.results || []);
+  return {
+    schema: "pscpp-adaptive-report/v1",
+    generatedAt: new Date().toISOString(),
+    lastSyncAt: latest?.updated_at || null,
+    latestRound: latest ? sanitizeLatestReport(JSON.parse(latest.payload_json)) : null,
+    summary
+  };
+}
+
 async function reportAuthorized(request, env) {
   if (env.SESSION_SECRET && await verifySessionToken(bearer(request), env.SESSION_SECRET)) return true;
   const supplied = request.headers.get("X-Report-Token") || new URL(request.url).searchParams.get("token") || "";
@@ -202,6 +233,9 @@ async function handle(request, env, origin) {
       reportReadToken: Boolean(env.REPORT_READ_TOKEN)
     }
   }, 200, origin);
+  if (url.pathname === "/api/adaptive-report" && request.method === "GET") {
+    return json(await adaptiveReportFromDb(env, env.STUDENT_ID || "student"), 200, origin);
+  }
   if (url.pathname === "/api/session" && request.method === "POST") {
     if (!env.PASSWORD_HASH || !env.SESSION_SECRET) throw new HttpError(503, "Sincronização ainda não configurada.");
     const body = await readJson(request);
