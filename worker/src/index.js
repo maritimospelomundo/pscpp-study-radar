@@ -192,7 +192,16 @@ async function reportAuthorized(request, env) {
 async function handle(request, env, origin) {
   const url = new URL(request.url);
   if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: corsHeaders(origin) });
-  if (url.pathname === "/health" && request.method === "GET") return json({ ok: true, service: "pscpp-study-sync", storage: Boolean(env.DB) }, 200, origin);
+  if (url.pathname === "/health" && request.method === "GET") return json({
+    ok: true,
+    service: "pscpp-study-sync",
+    storage: Boolean(env.DB),
+    configuration: {
+      passwordHash: Boolean(env.PASSWORD_HASH),
+      sessionSecret: Boolean(env.SESSION_SECRET),
+      reportReadToken: Boolean(env.REPORT_READ_TOKEN)
+    }
+  }, 200, origin);
   if (url.pathname === "/api/session" && request.method === "POST") {
     if (!env.PASSWORD_HASH || !env.SESSION_SECRET) throw new HttpError(503, "Sincronização ainda não configurada.");
     const body = await readJson(request);
