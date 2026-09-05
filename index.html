@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071622">
+  <meta name="description" content="Painel interativo de estudos e revisão adaptativa para o PSCPP/DPC.">
+  <title>PSCPP Study Radar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">P</span>
+      <div><h1>PSCPP Study Radar</h1><p>Preparação orientada pela bibliografia oficial da DPC</p></div>
+    </div>
+    <div class="header-status"><span id="connection-dot" class="live-dot" aria-hidden="true"></span><span id="connection-status">Carregando…</span><span aria-hidden="true">·</span><span id="today-label">Rodada atual</span></div>
+  </header>
+  <nav class="tabs" aria-label="Seções do painel">
+    <button class="tab active" data-view="questions" aria-selected="true">Questões do dia</button>
+    <button class="tab" data-view="reviews" aria-selected="false">Revisões <span id="review-badge" class="badge">0</span></button>
+    <button class="tab" data-view="syllabus" aria-selected="false">Conteúdo programático</button>
+    <button class="tab" data-view="performance" aria-selected="false">Desempenho</button>
+  </nav>
+  <main>
+    <section id="view-questions" class="view active">
+      <div class="context-strip">
+        <div><span>Publicação atual</span><strong>IMO A.601(15)</strong></div>
+        <div><span>Ponto do percurso</span><strong>Apêndice 3 · §6</strong></div>
+        <div><span>Foco</span><strong>Baixa velocidade</strong></div>
+        <div><span>Rodada</span><strong id="round-score">0/10 respondidas</strong></div>
+      </div>
+      <div class="question-layout">
+        <aside class="question-nav" aria-label="Navegação entre questões">
+          <div class="aside-heading"><span>Questões</span><strong id="correct-counter">0 acertos</strong></div>
+          <div id="question-index" class="question-index"></div>
+          <div class="legend"><span><i class="dot current"></i>Atual</span><span><i class="dot right"></i>Certa</span><span><i class="dot wrong"></i>Errada</span></div>
+        </aside>
+        <article class="question-card" aria-live="polite">
+          <div class="question-meta"><span id="question-kind" class="eyebrow">Questão</span><span id="question-number">1 de 10</span></div>
+          <p id="question-source" class="source-line"></p>
+          <h2 id="question-stem"></h2>
+          <form id="answers" class="answers"></form>
+          <button id="submit-answer" class="primary" disabled>Confirmar resposta</button>
+          <div id="feedback" class="feedback" hidden></div>
+          <div class="question-actions"><button id="previous-question" class="secondary">Anterior</button><button id="next-question" class="secondary">Próxima</button></div>
+        </article>
+      </div>
+    </section>
+    <section id="view-reviews" class="view">
+      <div class="section-heading"><div><span class="eyebrow">Repetição espaçada</span><h2>Fila de revisões</h2></div><p>Erros retornam primeiro; acertos seguros recebem intervalos progressivamente maiores.</p></div>
+      <div id="review-list" class="card-grid"></div>
+    </section>
+    <section id="view-syllabus" class="view">
+      <div class="section-heading"><div><span class="eyebrow">Anexos 2-A e 2-B</span><h2>Mapa do conteúdo oficial</h2></div><p>85 referências numeradas, consolidadas em 78 títulos e sete eixos.</p></div>
+      <div class="syllabus-summary"><div class="stat"><strong>7</strong><span>eixos oficiais</span></div><div class="stat"><strong>85</strong><span>referências</span></div><div class="stat"><strong>78</strong><span>títulos distintos</span></div><div class="stat"><strong>77</strong><span>unidades práticas</span></div></div>
+      <div id="syllabus-list" class="syllabus-list"></div>
+    </section>
+    <section id="view-performance" class="view">
+      <div class="section-heading"><div><span class="eyebrow">Diagnóstico adaptativo</span><h2>Desempenho</h2></div><p>O domínio combina correção objetiva e esforço percebido.</p></div>
+      <div id="performance-cards" class="syllabus-summary"></div>
+      <div class="performance-grid">
+        <article class="panel"><h3>Domínio por classificação</h3><div id="mastery-bars"></div></article>
+        <article class="panel report-panel"><div class="panel-title-row"><h3>Relatório para o GPT</h3><button id="copy-report" class="secondary small">Copiar</button></div><pre id="report-json"></pre><button id="download-report" class="primary">Baixar relatório JSON</button></article>
+      </div>
+    </section>
+  </main>
+  <footer><span>Fonte de controle: conteúdo programático e bibliografia recomendada pela DPC.</span><span>Dados desta versão salvos neste navegador.</span></footer>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
