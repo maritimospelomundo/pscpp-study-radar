@@ -1,9 +1,16 @@
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
+import { cpSync } from "node:fs";
 
 export default defineConfig({
   base: "/pscpp-study-radar/",
   plugins: [
+    {
+      name: "copy-study-data",
+      writeBundle() {
+        cpSync("data", "dist/data", { recursive: true });
+      }
+    },
     VitePWA({
       registerType: "autoUpdate",
       includeAssets: ["radar-icon.svg"],
