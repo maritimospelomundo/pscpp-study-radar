@@ -39,6 +39,10 @@ As respostas são preservadas no próprio dispositivo mesmo sem conexão. O proj
 - produzir um relatório consolidado para a tarefa diária do GPT;
 - autenticar a sincronização no servidor, sem publicar credenciais no GitHub Pages.
 
+### Relatório para a automação diária
+
+O endpoint `/api/automation-report` disponibiliza publicamente o relatório completo de progresso para a tarefa diária do GPT. Essa publicação foi autorizada pelo proprietário do projeto e não contém senha, token de sessão, `REPORT_READ_TOKEN` nem credenciais do Cloudflare. O endpoint `/api/report` permanece autenticado para compatibilidade administrativa.
+
 Enquanto `data/config.json` estiver com `enabled: false`, o portal continua integralmente funcional em modo local. A sincronização só é ativada depois que o Worker, o D1 e os segredos forem configurados.
 
 ### Ativação do Worker

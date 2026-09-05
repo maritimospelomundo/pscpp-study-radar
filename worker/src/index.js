@@ -202,6 +202,9 @@ async function handle(request, env, origin) {
       reportReadToken: Boolean(env.REPORT_READ_TOKEN)
     }
   }, 200, origin);
+  if (url.pathname === "/api/automation-report" && request.method === "GET") {
+    return json(await reportFromDb(env, env.STUDENT_ID || "student"), 200, origin);
+  }
   if (url.pathname === "/api/session" && request.method === "POST") {
     if (!env.PASSWORD_HASH || !env.SESSION_SECRET) throw new HttpError(503, "Sincronização ainda não configurada.");
     const body = await readJson(request);
