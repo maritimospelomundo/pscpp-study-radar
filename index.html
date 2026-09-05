@@ -38,11 +38,26 @@
   <main>
     <section id="view-questions" class="view active">
       <div class="context-strip">
-        <div><span>Publicação atual</span><strong>IMO A.601(15)</strong></div>
-        <div><span>Ponto do percurso</span><strong>Apêndice 3 · §6</strong></div>
-        <div><span>Foco</span><strong>Baixa velocidade</strong></div>
+        <div><span>Rodada</span><strong>Intercalada</strong></div>
+        <div><span>Ponto principal</span><strong>MSC.137(76)</strong></div>
+        <div><span>Método</span><strong>4–3–2–1</strong></div>
         <div><span>Rodada</span><strong id="round-score">0/10 respondidas</strong></div>
       </div>
+      <section class="study-toolbar" aria-label="Configuração da rodada">
+        <div class="mode-block">
+          <span class="eyebrow">Modo de resolução</span>
+          <div class="mode-switch" role="group" aria-label="Modo de resolução">
+            <button class="mode-button active" type="button" data-mode="study" aria-pressed="true">Estudo</button>
+            <button class="mode-button" type="button" data-mode="simulation" aria-pressed="false">Simulado</button>
+          </div>
+          <p id="mode-description">Correção e comentário aparecem logo após cada resposta.</p>
+        </div>
+        <div class="mix-block">
+          <span class="eyebrow">Composição adaptativa</span>
+          <div id="mix-summary" class="mix-summary"></div>
+        </div>
+      </section>
+      <div id="simulation-summary" class="simulation-summary" hidden></div>
       <div class="question-layout">
         <aside class="question-nav" aria-label="Navegação entre questões">
           <div class="aside-heading"><span>Questões</span><strong id="correct-counter">0 acertos</strong></div>

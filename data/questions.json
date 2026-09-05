@@ -1,18 +1,111 @@
 {
-  "roundId": "a601-low-speed-01",
-  "title": "Características de manobra em baixa velocidade",
-  "publication": "IMO A.601(15)",
-  "path": "Apêndice 3 · §6",
+  "roundId": "spiral-msc137-2026-09-05",
+  "label": "Intercalada",
+  "title": "Controlabilidade e revisão multieixos",
+  "publication": "Bibliografia oficial PSCPP/DPC",
+  "path": "MSC.137(76) · início",
+  "method": "4–3–2–1",
+  "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
   "questions": [
-    {"id":"a601-5-1-class","kind":"Revisão cumulativa","stem":"As informações sobre forças e momentos do vento constantes do Manoeuvring Booklet são classificadas como:","options":["resultados obrigatoriamente obtidos em prova.","informações estimadas.","resultados de prova ou estimados.","informações da condição operacional atual."],"correct":1,"explanation":"O §5.1 classifica expressamente as forças e os momentos do vento como informações estimadas.","comments":["Não há exigência de obtenção obrigatória por prova.","Correta: é a classificação expressa da rubrica do §5.1.","Essa é a classificação adotada na seção 6, não no §5.1.","A condição operacional atual é apresentada no Pilot Card."],"reference":{"publication":"IMO — Provision and Display of Manoeuvring Information on Board Ships","edition":"Resolução A.601(15), 1987","section":"Apêndice 3, §5.1","syllabus":"I — Manobrabilidade · 8.18 Documentos de manobrabilidade"}},
-    {"id":"a601-5-1-5-2","kind":"Revisão cumulativa","stem":"Qual associação está correta?","options":["§5.1 — manutenção do rumo; §5.2 — forças para atracação.","§5.1 — deriva sem propulsão; §5.2 — manutenção do rumo.","§5.1 — forças para atracação; §5.2 — deriva sem propulsão.","§5.1 — forças e momentos para atracação; §5.2 — manutenção do rumo."],"correct":3,"explanation":"O §5.1 auxilia as operações de atracação; o §5.2 mostra o efeito do vento sobre a manutenção do rumo.","comments":["Inverte os conteúdos dos §§5.1 e 5.2.","A deriva sem potência pertence ao §5.3.","O §5.2 trata da manutenção do rumo, não da deriva.","Correta: preserva a finalidade própria de cada subseção."],"reference":{"publication":"IMO — Provision and Display of Manoeuvring Information on Board Ships","edition":"Resolução A.601(15), 1987","section":"Apêndice 3, §§5.1.1–5.2.1","syllabus":"I — Manobrabilidade · 8.10.1 Ventos"}},
-    {"id":"a601-5-3-power","kind":"Revisão de 1 dia","stem":"A informação sobre deriva sob influência do vento considera o navio:","options":["sem potência da máquina disponível.","com a máquina em mínima rotação operacional.","com a máquina parada, porém disponível para emprego imediato.","com o propulsor parado e os propulsores laterais operando."],"correct":0,"explanation":"A ausência de potência da máquina disponível é a condição propulsiva expressamente definida para a deriva.","comments":["Correta: corresponde ao cenário prescrito no §5.3.1.","Mínima rotação operacional pertence ao §6.1.","O requisito não pressupõe potência prontamente disponível.","O item não prevê o emprego de propulsores laterais."],"reference":{"publication":"IMO — Provision and Display of Manoeuvring Information on Board Ships","edition":"Resolução A.601(15), 1987","section":"Apêndice 3, §5.3.1","syllabus":"I — Manobrabilidade · 8.10.1 Ventos"}},
-    {"id":"a601-5-3-not-required","kind":"Revisão de 1 dia","stem":"Qual elemento não é expressamente exigido para a informação do §5.3.1?","options":["Comportamento de deriva do navio.","Influência do vento sobre a deriva.","Apresentação separada em plena carga e lastro.","Ausência de potência da máquina disponível."],"correct":2,"explanation":"O §5.3.1 não determina expressamente apresentação separada em plena carga e lastro; essas condições aparecem nos §§5.1.1 e 5.2.1.","comments":["É o objeto principal do item.","Integra expressamente o cenário.","Correta: essa separação não aparece no requisito específico do §5.3.1.","É condição obrigatória do item."],"reference":{"publication":"IMO — Provision and Display of Manoeuvring Information on Board Ships","edition":"Resolução A.601(15), 1987","section":"Apêndice 3, §§5.1.1–5.3.1","syllabus":"I — Manobrabilidade · 8.10.1 Ventos"}},
-    {"id":"a601-6-class","kind":"Nova","stem":"As características de manobra em baixa velocidade previstas na seção 6 são classificadas como:","options":["informações exclusivamente estimadas.","resultados de prova ou estimados.","resultados obrigatoriamente obtidos em prova.","informações da condição operacional atual."],"correct":1,"explanation":"A rubrica da seção 6 admite as duas formas de obtenção: resultados de prova ou estimados.","comments":["A seção não restringe os dados a estimativas.","Correta: é a classificação geral expressa da seção 6.","Também não exige que sejam necessariamente obtidos em prova.","Informação da condição atual caracteriza o Pilot Card."],"reference":{"publication":"IMO — Provision and Display of Manoeuvring Information on Board Ships","edition":"Resolução A.601(15), 1987","section":"Apêndice 3, §6","syllabus":"I — Manobrabilidade · 8.13 Manobras especiais"}},
-    {"id":"a601-6-1","kind":"Nova · revisão prioritária","stem":"Segundo o §6.1, qual conjunto deve ser informado?","options":["Mínima rotação operacional da máquina principal e velocidade correspondente do navio.","Mínima velocidade de governo e ângulo correspondente do leme.","Rotação crítica da máquina principal e tempo necessário para atravessá-la.","Máxima rotação de manobra e empuxo correspondente do propulsor."],"correct":0,"explanation":"O §6.1 associa diretamente a mínima rotação operacional da máquina principal à velocidade correspondente do navio.","comments":["Correta: reúne exatamente as duas grandezas prescritas.","O item não relaciona a velocidade mínima a um ângulo de leme.","Rotações críticas não constituem o conteúdo do §6.1.","O requisito trata da rotação mínima, não da máxima."],"reference":{"publication":"IMO — Provision and Display of Manoeuvring Information on Board Ships","edition":"Resolução A.601(15), 1987","section":"Apêndice 3, §6.1","syllabus":"I — Manobrabilidade · 8.13.10 Manobra teste de RPM mínima"}},
-    {"id":"a601-6-2-condition","kind":"Nova","stem":"A informação prescrita pelo §6.2 refere-se ao comportamento do navio:","options":["após ser dada máquina a ré, até eliminar o seguimento a vante.","durante a manutenção do rumo com a máquina em mínima rotação.","após reduzir de devagar adiante para muito devagar adiante.","após parar as máquinas, enquanto ainda mantém seguimento a vante."],"correct":3,"explanation":"O §6.2 examina o período de desaceleração natural após a parada das máquinas, antes de desaparecer o seguimento a vante.","comments":["Não há ordem de máquina a ré nesse cenário.","Mínima rotação com a máquina funcionando pertence ao §6.1.","Reduções entre ordens de telégrafo pertencem à desaceleração da seção 3.2.","Correta: máquina parada, ainda com seguimento a vante."],"reference":{"publication":"IMO — Provision and Display of Manoeuvring Information on Board Ships","edition":"Resolução A.601(15), 1987","section":"Apêndice 3, §6.2","syllabus":"I — Manobrabilidade · 8.13 Manobras especiais"}},
-    {"id":"a601-6-2-capacity","kind":"Nova","stem":"Qual capacidade deve ser considerada para determinar a velocidade mínima do §6.2?","options":["Parar dentro da menor distância possível.","Guinhar com o máximo ângulo de leme.","Manter o rumo enquanto conserva seguimento a vante.","Manter posição usando somente os propulsores laterais."],"correct":2,"explanation":"A velocidade procurada é o limite mínimo em que coexistem manutenção do rumo e seguimento a vante após parar as máquinas.","comments":["Distância de parada pertence à seção 3.1.","A capacidade de guinada não define esse limite.","Correta: reúne a capacidade e a condição cinemática prescritas.","O requisito não envolve manutenção de posição nem propulsores laterais."],"reference":{"publication":"IMO — Provision and Display of Manoeuvring Information on Board Ships","edition":"Resolução A.601(15), 1987","section":"Apêndice 3, §6.2","syllabus":"I — Manobrabilidade · 8.13 Manobras especiais"}},
-    {"id":"a601-6-2-full","kind":"Nova","stem":"Qual informação pertence especificamente ao §6.2?","options":["Velocidade mínima na qual o navio mantém o rumo, ainda com seguimento a vante, após parar as máquinas.","Rotação operacional mínima da máquina principal e velocidade correspondente.","Efeito do vento na manutenção do rumo em plena carga e lastro.","Comportamento de deriva sob vento sem potência da máquina disponível."],"correct":0,"explanation":"A alternativa correta reúne todos os elementos expressos no §6.2.","comments":["Correta: máquina parada, seguimento a vante, manutenção do rumo e velocidade mínima.","Descreve o conteúdo do §6.1.","Descreve a limitação sob vento do §5.2.1.","Descreve a deriva sem potência do §5.3.1."],"reference":{"publication":"IMO — Provision and Display of Manoeuvring Information on Board Ships","edition":"Resolução A.601(15), 1987","section":"Apêndice 3, §§5.2.1–6.2","syllabus":"I — Manobrabilidade · 8.13 Manobras especiais"}},
-    {"id":"a601-6-contrast","kind":"Contraste · pegadinha DPC","stem":"Assinale a distinção correta entre os §§6.1 e 6.2:","options":["O §6.1 trata da velocidade após parar as máquinas; o §6.2, da mínima rotação operacional.","O §6.1 relaciona mínima rotação operacional e velocidade correspondente; o §6.2 trata da mínima velocidade de manutenção do rumo após parar as máquinas.","O §6.1 exige dados exclusivamente de prova; o §6.2 admite apenas informações estimadas.","O §6.1 trata da mínima velocidade de governo a ré; o §6.2, da distância necessária para parar."],"correct":1,"explanation":"O §6.1 considera a máquina principal operando no mínimo; o §6.2 considera o navio ainda com seguimento após sua parada.","comments":["Troca os conteúdos dos dois parágrafos.","Correta: distingue os estados da máquina e as grandezas examinadas.","Toda a seção 6 é classificada como prova ou estimado.","O §6.2 não trata de governo a ré nem de distância de parada."],"reference":{"publication":"IMO — Provision and Display of Manoeuvring Information on Board Ships","edition":"Resolução A.601(15), 1987","section":"Apêndice 3, §§6–6.2","syllabus":"I — Manobrabilidade · 8.13.10 Manobra teste de RPM mínima"}}
+    {
+      "id": "spiral-r1-a601-61",
+      "category": "review", "axis": "I", "kind": "Revisão FSRS",
+      "stem": "No Manoeuvring Booklet, qual conjunto integra as características de manobra em baixa velocidade do §6.1?",
+      "options": ["Mínima rotação operacional da máquina principal e velocidade correspondente do navio.", "Mínima velocidade de governo e máximo ângulo de leme.", "Rotação crítica da máquina e tempo para atravessá-la.", "Menor ordem de telégrafo e empuxo transversal correspondente."],
+      "correct": 0,
+      "explanation": "O §6.1 associa diretamente a mínima rotação operacional da máquina principal à velocidade correspondente do navio.",
+      "comments": ["Correta: são exatamente as duas grandezas exigidas.", "A velocidade mínima de manutenção do rumo após parar as máquinas pertence ao §6.2.", "Rotações críticas não são o objeto do §6.1.", "O item não relaciona ordem de telégrafo a empuxo transversal."],
+      "reference": {"base": "IMO — Resolution A.601(15)", "publication": "IMO — Provision and Display of Manoeuvring Information on Board Ships", "edition": "Resolução A.601(15), adotada em 19 de novembro de 1987", "section": "Apêndice 3, seção 6, §6.1", "syllabus": "Eixo I — Manobrabilidade · item 8.13.10", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.601(15).pdf"}
+    },
+    {
+      "id": "spiral-r2-a601-62",
+      "category": "review", "axis": "I", "kind": "Revisão FSRS",
+      "stem": "A velocidade mínima tratada no §6.2 da Resolução IMO A.601(15) é observada quando o navio:",
+      "options": ["mantém o rumo com seguimento a vante depois de parar as máquinas.", "elimina o seguimento após dar toda força a ré.", "governa com a máquina principal em mínima rotação operacional.", "mantém posição somente com propulsores laterais."],
+      "correct": 0,
+      "explanation": "O §6.2 examina o limite mínimo no qual o navio ainda mantém o rumo e o seguimento a vante após a parada das máquinas.",
+      "comments": ["Correta: reúne estado da máquina, capacidade de governo e seguimento residual.", "O cenário não inclui ordem de máquina a ré.", "Máquina ainda operando em rotação mínima corresponde ao §6.1.", "O requisito não trata de manutenção de posição."],
+      "reference": {"base": "IMO — Resolution A.601(15)", "publication": "IMO — Provision and Display of Manoeuvring Information on Board Ships", "edition": "Resolução A.601(15), adotada em 19 de novembro de 1987", "section": "Apêndice 3, seção 6, §6.2", "syllabus": "Eixo I — Manobrabilidade · item 8.13", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.601(15).pdf"}
+    },
+    {
+      "id": "spiral-r3-a601-wind",
+      "category": "review", "axis": "I", "kind": "Revisão cumulativa",
+      "stem": "Assinale a associação correta entre as informações sobre influência do vento no Manoeuvring Booklet:",
+      "options": ["§5.1 — deriva sem potência; §5.2 — forças de atracação; §5.3 — manutenção do rumo.", "§5.1 — forças e momentos para atracação; §5.2 — manutenção do rumo; §5.3 — deriva sem potência disponível.", "§5.1 — manutenção do rumo; §5.2 — deriva em lastro; §5.3 — forças de atracação.", "§5.1 — efeito da corrente; §5.2 — vento transversal; §5.3 — mínima rotação operacional."],
+      "correct": 1,
+      "explanation": "As três subseções se distinguem pela finalidade: atracação, manutenção do rumo e deriva sem potência da máquina disponível.",
+      "comments": ["Os conteúdos das três subseções estão deslocados.", "Correta: preserva a finalidade e a condição propulsiva de cada item.", "Inverte as subseções e acrescenta limitação inexistente.", "Corrente e mínima rotação não integram essa sequência dos §§5.1–5.3."],
+      "reference": {"base": "IMO — Resolution A.601(15)", "publication": "IMO — Provision and Display of Manoeuvring Information on Board Ships", "edition": "Resolução A.601(15), adotada em 19 de novembro de 1987", "section": "Apêndice 3, §§5.1–5.3.1", "syllabus": "Eixo I — Manobrabilidade · item 8.10.1", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.601(15).pdf"}
+    },
+    {
+      "id": "spiral-r4-a601-additional",
+      "category": "review", "axis": "I", "kind": "Revisão cumulativa",
+      "stem": "A seção 7 do Apêndice 3 da Resolução IMO A.601(15) permite acrescentar ao Manoeuvring Booklet:",
+      "options": ["somente resultados obtidos em provas oficiais.", "qualquer informação adicional relevante, especialmente sobre a operação dos controles de manobra do passadiço.", "apenas dados já exibidos no Wheelhouse Poster.", "informações administrativas de solicitação de praticagem."],
+      "correct": 1,
+      "explanation": "O §7.1 abre espaço para outras informações relevantes e destaca particularmente a operação dos controles de manobra do passadiço.",
+      "comments": ["O item não limita a inclusão a resultados de prova.", "Correta: reproduz o alcance e a ênfase do §7.1.", "O Manoeuvring Booklet não fica limitado ao Wheelhouse Poster.", "Procedimentos administrativos de praticagem não são o foco do item."],
+      "reference": {"base": "IMO — Resolution A.601(15)", "publication": "IMO — Provision and Display of Manoeuvring Information on Board Ships", "edition": "Resolução A.601(15), adotada em 19 de novembro de 1987", "section": "Apêndice 3, seção 7, §7.1", "syllabus": "Eixo I — Manobrabilidade · item 8.18", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.601(15).pdf"}
+    },
+    {
+      "id": "spiral-c1-msc137-application",
+      "category": "current", "axis": "I", "kind": "Tema principal · nova",
+      "stem": "Segundo a Resolução MSC.137(76), os padrões de manobrabilidade devem ser aplicados:",
+      "options": ["apenas a navios de carga com 150 m ou mais.", "a navios de todos os tipos de leme e propulsão com 100 m ou mais, e a navios-tanque químicos e gaseiros independentemente do comprimento.", "a todos os navios SOLAS, sem exceções de tipo ou comprimento.", "somente a navios com propulsão e leme convencionais."],
+      "correct": 1,
+      "explanation": "O §3.1 fixa o corte geral de 100 m e inclui navios-tanque químicos e gaseiros qualquer que seja o comprimento.",
+      "comments": ["O padrão não adota corte de 150 m nem se restringe a navios de carga.", "Correta: corresponde ao campo de aplicação do §3.1.", "Há delimitações e exclusão expressa das embarcações de alta velocidade no §3.4.", "Os padrões foram desenvolvidos a partir de sistemas tradicionais, mas o §3.1 prevê aplicação a todos os tipos de leme e propulsão."],
+      "reference": {"base": "IMO — Resolution MSC.137(76)", "publication": "IMO — Standards for Ship Manoeuvrability", "edition": "Resolução MSC.137(76), adotada em 4 de dezembro de 2002", "section": "Anexo, seção 3, §§3.1 e 3.4", "syllabus": "Eixo I — Manobrabilidade · critérios IMO de controlabilidade", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"}
+    },
+    {
+      "id": "spiral-c2-msc137-compliance",
+      "category": "current", "axis": "I", "kind": "Tema principal · nova",
+      "stem": "Qual alternativa descreve corretamente uma forma de demonstrar conformidade com a MSC.137(76) ainda na fase de projeto?",
+      "options": ["Somente prova em escala real, sem previsão anterior.", "Ensaios em modelo de escala e/ou previsões computacionais com modelos matemáticos, seguidos de provas em escala real para validação.", "Apenas simulação computacional homologada, dispensando prova em escala real.", "Declaração do construtor baseada nas dimensões principais do navio."],
+      "correct": 1,
+      "explanation": "O §2.1.1 admite ensaios em modelo e/ou previsões computacionais no projeto, mas determina provas em escala real para validar os resultados.",
+      "comments": ["Provas em escala real constituem outra via de demonstração, mas a alternativa não descreve a previsão na fase de projeto.", "Correta: contém previsão e validação na sequência indicada.", "A validação em escala real não é dispensada por esse método.", "As dimensões principais, isoladamente, não demonstram conformidade."],
+      "reference": {"base": "IMO — Resolution MSC.137(76)", "publication": "IMO — Standards for Ship Manoeuvrability", "edition": "Resolução MSC.137(76), adotada em 4 de dezembro de 2002", "section": "Anexo, seção 2, §2.1.1", "syllabus": "Eixo I — Manobrabilidade · critérios IMO de controlabilidade", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"}
+    },
+    {
+      "id": "spiral-c3-msc137-turning",
+      "category": "current", "axis": "I", "kind": "Tema principal · contraste numérico",
+      "stem": "Na manobra de círculo de giro, a capacidade de giro é considerada satisfatória quando:",
+      "options": ["o avanço não excede 5L e o diâmetro tático não excede 4,5L.", "o avanço não excede 4,5L e o diâmetro tático não excede 5L.", "o avanço e o diâmetro tático não excedem 4L.", "o avanço não excede 2,5L e o diâmetro tático não excede 15L."],
+      "correct": 1,
+      "explanation": "A MSC.137(76) limita o avanço a 4,5 comprimentos do navio e o diâmetro tático a 5 comprimentos.",
+      "comments": ["Inverte os limites de avanço e diâmetro tático.", "Correta: avanço ≤ 4,5L e diâmetro tático ≤ 5L.", "O limite uniforme de 4L não consta do critério.", "2,5L pertence à capacidade inicial de giro; 15L é o limite geral de track reach na parada."],
+      "reference": {"base": "IMO — Resolution MSC.137(76)", "publication": "IMO — Standards for Ship Manoeuvrability", "edition": "Resolução MSC.137(76), adotada em 4 de dezembro de 2002", "section": "Anexo, seção 5, §5.3.1", "syllabus": "Eixo I — Manobrabilidade · manobra de giro e critérios IMO", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"}
+    },
+    {
+      "id": "spiral-x1-smcp-numbers",
+      "category": "rotation", "axis": "VI", "kind": "Matéria alternada · Comunicações",
+      "stem": "De acordo com as convenções da IMO SMCP para a transmissão de números, qual frase informa corretamente uma velocidade atual de 10 nós?",
+      "options": ["My present speed is ten knots.", "My present speed is one-zero knots.", "My present speed is one-nought knots.", "My present speed is one hundred knots."],
+      "correct": 1,
+      "explanation": "Nas comunicações padronizadas, cada algarismo deve ser pronunciado separadamente; portanto, 10 é transmitido como one-zero.",
+      "comments": ["A pronúncia cardinal comum não segue a convenção numérica da SMCP.", "Correta: os algarismos são pronunciados separadamente.", "A palavra padronizada para o algarismo 0 é zero.", "A expressão corresponderia a outro valor e não separa os algarismos de 10."],
+      "reference": {"base": "IMO — Standard Marine Communication Phrases", "publication": "IMO Standard Marine Communication Phrases (IMO SMCP)", "edition": "Resolução A.918(22), adotada em 29 de novembro de 2001", "section": "General, seção 1 — Procedure / Spelling of numbers", "syllabus": "Eixo VI — Comunicações · IMO SMCP", "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"}
+    },
+    {
+      "id": "spiral-x2-voyage-planning",
+      "category": "rotation", "axis": "III", "kind": "Matéria alternada · Navegação",
+      "stem": "As Diretrizes da IMO para o planejamento de viagem organizam o processo em quatro componentes. Qual sequência está correta?",
+      "options": ["Avaliação, planejamento, execução e monitoramento.", "Preparação, praticagem, atracação e relatório.", "Planejamento, despacho, execução e auditoria.", "Avaliação, fundeio, pilotagem e encerramento."],
+      "correct": 0,
+      "explanation": "A Resolução A.893(21) estrutura o planejamento da viagem em appraisal, planning, execution e monitoring.",
+      "comments": ["Correta: reúne as quatro etapas das diretrizes.", "Praticagem e atracação podem integrar a viagem, mas não são os quatro componentes estruturais.", "Despacho e auditoria não substituem avaliação e monitoramento.", "Fundeio e pilotagem não constituem a sequência metodológica geral."],
+      "reference": {"base": "IMO — Resolution A.893(21)", "publication": "IMO — Guidelines for Voyage Planning", "edition": "Resolução A.893(21), adotada em 25 de novembro de 1999", "section": "Anexo, §§1–4", "syllabus": "Eixo III — Navegação em Águas Restritas · planejamento e monitoramento da viagem", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.893(21).pdf"}
+    },
+    {
+      "id": "spiral-o1-pscpp2012-q13",
+      "category": "official", "axis": "III/IV", "kind": "Questão oficial histórica",
+      "stem": "De acordo com a Regra 3 do COLREG, que trata das definições gerais:",
+      "options": ["Duas embarcações são consideradas ‘no visual’ quando não presente condição de visibilidade restrita.", "Uma ‘embarcação sem governo’ é uma ‘embarcação com capacidade de manobra restrita’.", "O termo ‘em movimento’ também se aplica à embarcação sob máquinas, mas parada e sem seguimento.", "Uma embarcação de pesca deve ser sempre considerada como ‘com capacidade de manobra restrita’.", "Uma ‘embarcação à vela’ deve ser sempre considerada como ‘embarcação sem propulsão mecânica’."],
+      "correct": 2,
+      "explanation": "No COLREG, embarcação em movimento é aquela que não está fundeada, amarrada à terra nem encalhada; portanto, pode estar parada e sem seguimento.",
+      "comments": ["‘No visual’ exige que uma embarcação possa ser observada visualmente pela outra.", "Sem governo e capacidade de manobra restrita são definições distintas.", "Correta: estar em movimento não significa necessariamente possuir seguimento.", "Embarcação de pesca possui definição própria e não é automaticamente RAM.", "Uma embarcação à vela pode possuir propulsão mecânica instalada; será considerada à vela quando navegar a vela sem usar a máquina."],
+      "reference": {"base": "COLREG 1972 / RIPEAM", "publication": "Convention on the International Regulations for Preventing Collisions at Sea, 1972", "edition": "COLREG 1972, conforme emendado", "section": "Parte A, Regra 3 — Definições gerais", "syllabus": "Eixos III e IV · itens III-16 e IV-13", "origin": "PSCPP 2012 — Prova Rosa, questão 13, gabarito definitivo C", "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"}
+    }
   ]
 }
