@@ -29,7 +29,7 @@ async function boot(){
   await loadApiConfig();
   const form=document.getElementById("login-form"),input=document.getElementById("access-password"),error=document.getElementById("login-error");
   const unlock=async()=>{document.body.classList.remove("locked");document.getElementById("login-screen").hidden=true;await init()};
-  if(sessionStorage.getItem(AUTH_KEY)==="granted"){await unlock();return}
+  if(sessionStorage.getItem(AUTH_KEY)==="granted"&&(!apiConfig.enabled||apiToken())){await unlock();return}
   form.addEventListener("submit",async event=>{event.preventDefault();error.hidden=true;const password=input.value,hash=await sha256(password);if(hash===PASSWORD_HASH){sessionStorage.setItem(AUTH_KEY,"granted");await remoteLogin(password);input.value="";await unlock()}else{error.hidden=false;input.select()}});
 }
 

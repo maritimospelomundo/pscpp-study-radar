@@ -1,4 +1,4 @@
 {
-  "enabled": false,
+  "enabled": true,
   "apiBase": "https://pscpp-study-sync.maritimospelomundo.workers.dev"
 }
