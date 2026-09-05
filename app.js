@@ -12,7 +12,7 @@ const database=new Dexie("pscpp-study-radar");
 database.version(1).stores({settings:"key",attempts:"questionId,answeredAt,nextReview,mastery"});
 const letter=i=>String.fromCharCode(97+i);
 const escapeHtml=value=>String(value).replace(/[&<>'"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[c]));
-let round,syllabus,currentIndex=0,questionShownAt=Date.now();
+let round,syllabus,bibliography,currentIndex=0,questionShownAt=Date.now();
 let state={attempts:{},startedAt:new Date().toISOString(),mode:"study",simulationSelections:{},simulationSubmitted:false,roundId:null};
 let apiConfig={enabled:false,apiBase:""},syncState="local",syncTimer;
 
@@ -72,7 +72,7 @@ async function performSync(){
 
 async function init(){
   state=await loadState();
-  try{[round,syllabus]=await Promise.all([fetch("data/questions.json").then(r=>{if(!r.ok)throw new Error();return r.json()}),fetch("data/syllabus.json").then(r=>{if(!r.ok)throw new Error();return r.json()})])}
+  try{[round,syllabus,bibliography]=await Promise.all([fetch("data/questions.json").then(r=>{if(!r.ok)throw new Error();return r.json()}),fetch("data/syllabus.json").then(r=>{if(!r.ok)throw new Error();return r.json()}),fetch("data/bibliography.json").then(r=>{if(!r.ok)throw new Error();return r.json()})])}
   catch{document.querySelector("main").innerHTML='<div class="empty">Não foi possível carregar os dados da rodada. Atualize a página.</div>';return}
   await pullCloudState();
   if(state.roundId!==round.roundId){state.roundId=round.roundId;state.mode="study";state.simulationSelections={};state.simulationSubmitted=false;await saveState()}
@@ -80,6 +80,7 @@ async function init(){
   document.querySelector(".context-strip div:nth-child(1) strong").textContent=round.label||"Intercalada";
   document.querySelector(".context-strip div:nth-child(2) strong").textContent=round.path||round.title;
   document.querySelector(".context-strip div:nth-child(3) strong").textContent=round.method||"4–3–2–1";
+  populateLibraryFilters();
   updateConnectionStatus();
   window.addEventListener("online",updateConnectionStatus);window.addEventListener("offline",updateConnectionStatus);
   bindTabs();bindActions();renderAll();queueSync();
@@ -99,6 +100,7 @@ function bindActions(){
   document.getElementById("download-report").addEventListener("click",downloadReport);
   document.getElementById("logout-button").addEventListener("click",()=>{sessionStorage.removeItem(AUTH_KEY);localStorage.removeItem(API_TOKEN_KEY);location.reload()});
   document.querySelectorAll("[data-mode]").forEach(button=>button.addEventListener("click",()=>setMode(button.dataset.mode)));
+  ["library-search","library-axis","library-priority"].forEach(id=>document.getElementById(id).addEventListener("input",renderLibrary));
 }
 function currentQuestions(){return new Set(round.questions.map(q=>q.id))}
 function roundAttempts(){const ids=currentQuestions();return Object.entries(state.attempts).filter(([id])=>ids.has(id)).map(([,attempt])=>attempt)}
@@ -113,7 +115,7 @@ function renderMix(){
   const counts=round.questions.reduce((acc,q)=>(acc[q.category]=(acc[q.category]||0)+1,acc),{});
   document.getElementById("mix-summary").innerHTML=Object.entries(labels).map(([key,label])=>`<span class="mix-chip ${key}"><strong>${counts[key]||0}</strong>${label}</span>`).join("");
 }
-function renderAll(){renderMode();renderMix();renderIndex();showQuestion(currentIndex);renderReviews();renderSyllabus();renderPerformance();updateSummary();renderSimulationSummary()}
+function renderAll(){renderMode();renderMix();renderIndex();showQuestion(currentIndex);renderReviews();renderSyllabus();renderLibrary();renderPerformance();updateSummary();renderSimulationSummary()}
 
 function renderIndex(){
   const container=document.getElementById("question-index");
@@ -148,7 +150,8 @@ function finalizeSimulation(){
 }
 function renderFeedback(q,attempt){
   const box=document.getElementById("feedback");if(!attempt){box.hidden=true;box.innerHTML="";return}box.hidden=false;
-  box.innerHTML=`<h3 class="${attempt.correct?"result-right":"result-wrong"}">${attempt.correct?"Resposta correta":`Resposta incorreta · correta: ${letter(q.correct)})`}</h3><p>${escapeHtml(q.explanation)}</p><div class="option-analysis">${q.comments.map((c,i)=>`<p><strong>${letter(i)})</strong> ${escapeHtml(c)}</p>`).join("")}</div><div class="reference-box"><strong>${escapeHtml(q.reference.publication)}</strong><span>${escapeHtml(q.reference.edition)}</span><span>${escapeHtml(q.reference.section)}</span><span>${escapeHtml(q.reference.syllabus)}</span>${q.reference.origin?`<span>${escapeHtml(q.reference.origin)}</span>`:""}${q.reference.url?`<a href="${escapeHtml(q.reference.url)}" target="_blank" rel="noopener noreferrer">Abrir fonte oficial</a>`:""}</div>${attempt.correct?masteryMarkup(attempt.mastery):errorCauseMarkup(attempt.errorCause)}`;
+  const catalog=q.reference.referenceId?bibliography.references.find(item=>item.id===q.reference.referenceId):null;
+  box.innerHTML=`<h3 class="${attempt.correct?"result-right":"result-wrong"}">${attempt.correct?"Resposta correta":`Resposta incorreta · correta: ${letter(q.correct)})`}</h3><p>${escapeHtml(q.explanation)}</p><div class="option-analysis">${q.comments.map((c,i)=>`<p><strong>${letter(i)})</strong> ${escapeHtml(c)}</p>`).join("")}</div><div class="reference-box"><div class="validation-stamp">✓ Fonte validada${q.reference.referenceId?` · ${escapeHtml(q.reference.referenceId)}`:""}</div><strong>${escapeHtml(q.reference.publication)}</strong><span>${escapeHtml(q.reference.edition)}</span><span>${escapeHtml(q.reference.section)}</span><span>${escapeHtml(q.reference.syllabus)}</span>${q.reference.evidence?`<span><strong>Evidência:</strong> ${escapeHtml(q.reference.evidence)}</span>`:""}${catalog?`<span><strong>Recorte oficial:</strong> ${escapeHtml(catalog.scope)}</span>`:""}${q.reference.origin?`<span>${escapeHtml(q.reference.origin)}</span>`:""}${q.reference.url?`<a href="${escapeHtml(q.reference.url)}" target="_blank" rel="noopener noreferrer">Abrir fonte oficial</a>`:""}</div>${attempt.correct?masteryMarkup(attempt.mastery):errorCauseMarkup(attempt.errorCause)}`;
   box.querySelectorAll("[data-mastery]").forEach(button=>button.addEventListener("click",()=>setMastery(q.id,Number(button.dataset.mastery))));
   box.querySelectorAll("[data-error-cause]").forEach(button=>button.addEventListener("click",()=>setErrorCause(q.id,button.dataset.errorCause)));
 }
@@ -171,6 +174,19 @@ function renderSyllabus(){
   const container=document.getElementById("syllabus-list");container.innerHTML=syllabus.axes.map(axis=>`<article class="syllabus-item"><button class="syllabus-button" aria-expanded="false"><div class="syllabus-title"><strong>${axis.id} — ${escapeHtml(axis.title)}</strong><span>${axis.references} referências · ${axis.share.toFixed(1)}% da lista</span></div><div class="syllabus-description"><div class="progress-track"><div class="progress-fill" style="width:${axis.progress}%"></div></div><span>${escapeHtml(axis.description)}</span></div><span class="syllabus-status">${escapeHtml(axis.status)} · ${axis.progress}%</span></button><div class="syllabus-details"><p><strong>Fontes-âncora e recortes:</strong></p><ul>${axis.anchors.map(a=>`<li>${escapeHtml(a)}</li>`).join("")}</ul></div></article>`).join("");
   container.querySelectorAll(".syllabus-button").forEach(button=>button.addEventListener("click",()=>{const item=button.closest(".syllabus-item");item.classList.toggle("open");button.setAttribute("aria-expanded",item.classList.contains("open"))}));
 }
+function populateLibraryFilters(){
+  const select=document.getElementById("library-axis");
+  select.innerHTML='<option value="">Todos os eixos</option>'+bibliography.axes.map(axis=>`<option value="${axis.id}">${axis.id} · ${escapeHtml(axis.title)}</option>`).join("");
+}
+function renderLibrary(){
+  if(!bibliography)return;
+  const totals=bibliography.totals;
+  document.getElementById("library-summary").innerHTML=`<div class="stat"><strong>${totals.numberedReferences}</strong><span>referências oficiais</span></div><div class="stat"><strong>${totals.distinctTitles}</strong><span>títulos distintos</span></div><div class="stat"><strong>${totals.studyUnits}</strong><span>unidades de estudo</span></div><div class="stat"><strong>${totals.driveDocumentsApprox}+</strong><span>arquivos catalogados</span></div>`;
+  const query=document.getElementById("library-search")?.value.trim().toLocaleLowerCase("pt-BR")||"",axis=document.getElementById("library-axis")?.value||"",priority=document.getElementById("library-priority")?.value||"";
+  const rows=bibliography.references.filter(item=>(!axis||item.axis===axis)&&(!priority||item.priority===priority)&&(!query||[item.id,item.author,item.publication,item.edition,item.scope].join(" ").toLocaleLowerCase("pt-BR").includes(query)));
+  document.getElementById("library-count").textContent=`${rows.length} de ${totals.numberedReferences} referências exibidas`;
+  document.getElementById("library-list").innerHTML=rows.length?rows.map(item=>`<article class="library-card"><div class="library-card-head"><span class="reference-id">${item.id}</span><span class="priority priority-${item.priority.toLowerCase()}">Prioridade ${item.priority}</span></div><h3>${escapeHtml(item.publication)}</h3><p class="library-author">${escapeHtml(item.author)} · ${escapeHtml(item.edition)}</p><details><summary>Ver recorte exigido</summary><p>${escapeHtml(item.scope)}</p>${item.note?`<p class="library-note">${escapeHtml(item.note)}</p>`:""}</details><div class="library-flags"><span>✓ Catalogada</span>${item.duplicated?'<span>↔ Unidade compartilhada</span>':""}<span>${item.studyStatus==="consolidado"?"Consolidado":item.studyStatus==="em_estudo"?"Em estudo":"A programar"}</span></div></article>`).join(""):'<div class="empty">Nenhuma referência corresponde aos filtros.</div>';
+}
 function renderPerformance(){
   const attempts=roundAttempts(),answered=attempts.length,correct=attempts.filter(a=>a.correct).length,rated=attempts.filter(a=>a.mastery!==null&&a.mastery!==undefined),masteryAverage=rated.length?rated.reduce((sum,a)=>sum+a.mastery,0)/rated.length:0,accuracy=answered?Math.round(correct/answered*100):0,averageTime=answered?Math.round(attempts.reduce((sum,a)=>sum+(a.responseTimeSeconds||0),0)/answered):0;
   document.getElementById("performance-cards").innerHTML=`<div class="stat"><strong>${accuracy}%</strong><span>acerto nesta rodada</span></div><div class="stat"><strong>${masteryAverage.toFixed(1)}</strong><span>domínio médio (0–3)</span></div><div class="stat"><strong>${averageTime}s</strong><span>tempo médio por questão</span></div><div class="stat"><strong>${syllabus.baseline.score}/${syllabus.baseline.maximum}</strong><span>última rodada registrada</span></div>`;
@@ -178,9 +194,9 @@ function renderPerformance(){
   document.getElementById("mastery-bars").innerHTML=labels.map((label,score)=>`<div class="mastery-row"><span>${label}</span><div class="progress-track"><div class="progress-fill" data-score="${score}" style="width:${answered?counts[score]/answered*100:0}%"></div></div><strong>${counts[score]}</strong></div>`).join("");document.getElementById("report-json").textContent=JSON.stringify(buildReport(),null,2);
 }
 function buildReport(){
-  const records=round.questions.filter(q=>attemptFor(q.id)).map(q=>{const a=attemptFor(q.id);return{questionId:q.id,category:q.category,axis:q.axis,kind:q.kind,reference:q.reference.section,correct:a.correct,selected:letter(a.selected),answer:letter(q.correct),mastery:a.mastery,errorCause:a.errorCause||null,responseTimeSeconds:a.responseTimeSeconds||null,mode:a.mode||state.mode,answeredAt:a.answeredAt,updatedAt:a.updatedAt||a.answeredAt,nextReview:a.nextReview}});
+  const records=round.questions.filter(q=>attemptFor(q.id)).map(q=>{const a=attemptFor(q.id);return{questionId:q.id,category:q.category,axis:q.axis,kind:q.kind,referenceId:q.reference.referenceId||null,reference:q.reference.section,correct:a.correct,selected:letter(a.selected),answer:letter(q.correct),mastery:a.mastery,errorCause:a.errorCause||null,responseTimeSeconds:a.responseTimeSeconds||null,mode:a.mode||state.mode,answeredAt:a.answeredAt,updatedAt:a.updatedAt||a.answeredAt,nextReview:a.nextReview}});
   const byCategory=Object.fromEntries(["review","current","rotation","official"].map(category=>{const rows=records.filter(r=>r.category===category);return[category,{answered:rows.length,correct:rows.filter(r=>r.correct).length}]}));
-  return{schema:"pscpp-study-report/v3",generatedAt:new Date().toISOString(),student:"Gustavo Ponzi Seibel",scheduler:"FSRS 6 via ts-fsrs",storage:"IndexedDB via Dexie, com contingência em localStorage",method:{name:"progressão em espiral intercalada e adaptativa",dailyMix:{review:4,current:3,rotation:2,official:1},selectionWeights:{reviewUrgency:40,personalWeakness:25,historicalIncidence:20,coverageGap:10,normativeRecency:5}},currentPath:`${round.title} — ${round.path}`,roundId:round.roundId,mode:state.mode,baseline:syllabus.baseline,summary:{answered:records.length,correct:records.filter(r=>r.correct).length,wrong:records.filter(r=>!r.correct).length,dueReviews:dueAttempts().length,byCategory},attempts:records,instructionForNextRound:"Gerar exatamente 10 questões no mix 4 revisões FSRS, 3 do tema principal, 2 de matérias alternadas e 1 questão oficial histórica. Selecionar por 40% urgência, 25% fraqueza pessoal, 20% incidência histórica, 10% lacuna de cobertura e 5% atualidade normativa. Priorizar notas 0 e 1, causas de erro e revisões vencidas; intercalar eixos; citar publicação, edição, seção e item do conteúdo programático; não revelar o parágrafo que denuncia a resposta antes da correção."}
+  return{schema:"pscpp-study-report/v3",generatedAt:new Date().toISOString(),student:"Gustavo Ponzi Seibel",scheduler:"FSRS 6 via ts-fsrs",storage:"IndexedDB via Dexie, com contingência em localStorage",bibliography:{schema:bibliography.schema,referenceCount:bibliography.totals.numberedReferences,validationRequired:true},method:{name:"progressão em espiral intercalada e adaptativa",dailyMix:{review:4,current:3,rotation:2,official:1},selectionWeights:{reviewUrgency:40,personalWeakness:25,historicalIncidence:20,coverageGap:10,normativeRecency:5}},currentPath:`${round.title} — ${round.path}`,roundId:round.roundId,mode:state.mode,baseline:syllabus.baseline,summary:{answered:records.length,correct:records.filter(r=>r.correct).length,wrong:records.filter(r=>!r.correct).length,dueReviews:dueAttempts().length,byCategory},attempts:records,instructionForNextRound:"Gerar exatamente 10 questões no mix 4 revisões FSRS, 3 do tema principal, 2 de matérias alternadas e 1 questão oficial histórica. Antes de publicar, localizar cada referenceId em data/bibliography.json, abrir a obra correspondente no Drive e validar enunciado, resposta, distratores e evidência no recorte oficial. Selecionar por 40% urgência, 25% fraqueza pessoal, 20% incidência histórica, 10% lacuna de cobertura e 5% atualidade normativa. Priorizar notas 0 e 1, causas de erro e revisões vencidas; intercalar eixos; citar publicação, edição, seção e item do conteúdo programático; não revelar o parágrafo que denuncia a resposta antes da correção."}
 }
 function downloadReport(){const blob=new Blob([JSON.stringify(buildReport(),null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=`pscpp-study-report-${new Date().toISOString().slice(0,10)}.json`;a.click();URL.revokeObjectURL(url)}
 boot();

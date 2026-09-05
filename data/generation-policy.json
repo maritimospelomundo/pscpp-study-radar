@@ -1,0 +1,22 @@
+{
+  "schema": "pscpp-generation-policy/v1",
+  "dailyQuestionCount": 10,
+  "dailyMix": {"review": 4, "current": 3, "rotation": 2, "official": 1},
+  "selectionWeights": {"reviewUrgency": 40, "personalWeakness": 25, "historicalIncidence": 20, "coverageGap": 10, "normativeRecency": 5},
+  "rotation": {
+    "activeAxes": 3,
+    "rule": "Manter um eixo principal, um eixo de consolidação e um eixo alternado; trocar o alternado diariamente e preservar revisões vencidas de qualquer eixo.",
+    "weeklyCoverage": ["I", "II", "III", "IV", "V", "VI", "VII"]
+  },
+  "sourceProtocol": [
+    "Ler o relatório de desempenho sincronizado.",
+    "Escolher referenceIds em data/bibliography.json conforme urgência, fraqueza e cobertura.",
+    "Localizar no Google Drive as publicações pelos títulos catalogados.",
+    "Ler somente os recortes oficiais indicados no catálogo.",
+    "Redigir resposta e distratores com evidência textual verificável.",
+    "Usar provas históricas apenas para linguagem, incidência e armadilhas.",
+    "Executar npm run validate antes da publicação."
+  ],
+  "requiredQuestionFields": ["id", "category", "axis", "kind", "stem", "options", "correct", "explanation", "comments", "reference.referenceId", "reference.publication", "reference.edition", "reference.section", "reference.syllabus", "reference.evidence"],
+  "privacy": "Os arquivos permanecem no Drive conectado; o GitHub recebe metadados e questões, não cópias da bibliografia."
+}

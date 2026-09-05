@@ -33,6 +33,7 @@
     <button class="tab active" data-view="questions" aria-selected="true">Questões do dia</button>
     <button class="tab" data-view="reviews" aria-selected="false">Revisões <span id="review-badge" class="badge">0</span></button>
     <button class="tab" data-view="syllabus" aria-selected="false">Conteúdo programático</button>
+    <button class="tab" data-view="library" aria-selected="false">Biblioteca</button>
     <button class="tab" data-view="performance" aria-selected="false">Desempenho</button>
   </nav>
   <main>
@@ -84,6 +85,22 @@
       <div class="syllabus-summary"><div class="stat"><strong>7</strong><span>eixos oficiais</span></div><div class="stat"><strong>85</strong><span>referências</span></div><div class="stat"><strong>78</strong><span>títulos distintos</span></div><div class="stat"><strong>77</strong><span>unidades práticas</span></div></div>
       <div id="syllabus-list" class="syllabus-list"></div>
     </section>
+    <section id="view-library" class="view">
+      <div class="section-heading"><div><span class="eyebrow">Registro de fontes PSCPP</span><h2>Biblioteca e cobertura</h2></div><p>Catálogo dos recortes oficiais usados pela IA. Os documentos permanecem no Drive; o portal publica apenas metadados.</p></div>
+      <div id="library-summary" class="syllabus-summary"></div>
+      <article class="source-gate panel">
+        <div><span class="eyebrow">Regra de publicação</span><h3>Questão com lastro verificável</h3></div>
+        <ol><li>Selecionar o item do conteúdo.</li><li>Abrir a publicação indicada.</li><li>Validar resposta e distratores no recorte.</li><li>Exibir a referência completa na correção.</li></ol>
+        <a class="secondary drive-link" href="https://drive.google.com/drive/folders/199NBgxkx8Goq9usSGfwZhg8slQ9K9xQ6" target="_blank" rel="noopener noreferrer">Abrir pasta de fontes</a>
+      </article>
+      <div class="library-toolbar" aria-label="Filtros da biblioteca">
+        <label><span>Buscar</span><input id="library-search" type="search" placeholder="Título, autor, ato ou capítulo"></label>
+        <label><span>Eixo</span><select id="library-axis"><option value="">Todos os eixos</option></select></label>
+        <label><span>Prioridade</span><select id="library-priority"><option value="">Todas</option><option value="A">A · núcleo</option><option value="B">B · aprofundamento</option><option value="C">C · complementar</option></select></label>
+      </div>
+      <p id="library-count" class="library-count"></p>
+      <div id="library-list" class="library-list"></div>
+    </section>
     <section id="view-performance" class="view">
       <div class="section-heading"><div><span class="eyebrow">Diagnóstico adaptativo</span><h2>Desempenho</h2></div><p>O domínio combina correção objetiva e esforço percebido.</p></div>
       <div id="performance-cards" class="syllabus-summary"></div>
@@ -93,7 +110,7 @@
       </div>
     </section>
   </main>
-  <footer><span>Fonte de controle: conteúdo programático e bibliografia recomendada pela DPC.</span><span>Dados desta versão salvos neste navegador.</span></footer>
+  <footer><span>Fonte de controle: conteúdo programático e bibliografia recomendada pela DPC.</span><span>Histórico sincronizado com armazenamento pessoal protegido.</span></footer>
   <script type="module" src="/app.js"></script>
 </body>
 </html>

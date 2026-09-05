@@ -10,6 +10,9 @@ Painel interativo de estudo e revisão adaptativa para o Processo Seletivo à Ca
 - avaliação de domínio de 0 a 3;
 - revisão adaptativa com FSRS 6 (`ts-fsrs`);
 - mapa dos sete eixos oficiais e das 85 referências recomendadas;
+- biblioteca pesquisável com os 85 recortes oficiais, prioridades e duplicações;
+- identificação `referenceId` e evidência verificável em cada questão;
+- bloqueio automático de publicação para rodada ou referência inconsistente;
 - relatório JSON exportável para leitura pelo GPT;
 - histórico offline em IndexedDB (`Dexie.js`), com contingência em `localStorage`;
 - PWA instalável e operacional offline (`vite-plugin-pwa`);
@@ -52,11 +55,24 @@ O bloqueio de acesso é deliberadamente simples e executado no navegador. Como o
 
 ## Publicação
 
-O workflow `Deploy GitHub Pages` instala as dependências, gera a PWA com Vite e publica a pasta `dist`.
+O workflow `Deploy GitHub Pages` instala as dependências, valida a rodada e gera a PWA com Vite. O deploy é interrompido se não houver exatamente 10 questões no mix 4–3–2–1, se um `referenceId` não existir ou se faltar evidência bibliográfica.
+
+## Protocolo de geração das questões
+
+1. O gerador lê `data/bibliography.json`, `data/generation-policy.json` e o relatório adaptativo.
+2. Seleciona três eixos simultâneos: principal, consolidação e rotação.
+3. Localiza a publicação no Google Drive pelo título e consulta somente o recorte do Anexo 2-B.
+4. Usa provas históricas para estilo e armadilhas, não como autoridade técnica.
+5. Preenche publicação, edição, seção, item programático, `referenceId` e evidência.
+6. Executa `npm run validate`; somente uma rodada aprovada segue para o Pages.
+
+Os PDFs e livros não são copiados para o repositório público. O catálogo contém metadados; os arquivos permanecem na pasta conectada do Google Drive.
 
 ## Desenvolvimento
 
 ```bash
 npm install
 npm run dev
+# antes de publicar
+npm run validate
 ```
