@@ -1,9 +1,9 @@
 {
-  "roundId": "arte-naval-meteorologia-review-2026-09-08",
-  "label": "Rodada adaptativa de terça-feira",
-  "title": "Arte Naval, manobra e meteorologia aplicada",
+  "roundId": "tugs-brm-corrections-2026-09-09",
+  "label": "Rodada adaptativa de quarta-feira",
+  "title": "Rebocadores portuários, riscos operacionais e BRM",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Correção de erros · princípios de manobra · efeitos de leme e hélice · meteorologia",
+  "path": "Correção de erros · tipos e limitações dos rebocadores · girting · planejamento e monitoramento com prático",
   "method": "4–3–2–1",
   "mixPlan": {
     "review": 4,
@@ -13,314 +13,315 @@
   },
   "questions": [
     {
-      "id": "tue-r1-trial-water-depth-correction",
+      "id": "wed-r1-overshoot-pair-lv18",
       "category": "review",
       "axis": "I",
-      "kind": "Correção do erro mais recente · profundidade da prova",
-      "stem": "Um navio com calado médio de 8 m realizará prova padrão de manobrabilidade em uma área com profundidade uniforme de 30 m. Considerando apenas o critério de profundidade da MSC/Circ.1053, qual avaliação está correta?",
+      "kind": "Correção do erro de leitura · overshoot 10°/10°",
+      "stem": "No teste de zig-zag 10°/10°, um navio apresenta L/V igual a 18 s. Quais são, respectivamente, os limites do primeiro e do segundo ângulo de overshoot segundo a MSC.137(76)?",
       "options": [
-        "A área atende ao critério, pois a profundidade equivale a 3,75 vezes o calado médio.",
-        "A área não atende ao critério, pois a profundidade deveria ser superior a 32 m.",
-        "A área atende ao critério, desde que o navio esteja em plena carga e sem trim.",
-        "A suficiência depende apenas da folga líquida sob a quilha, não da razão profundidade/calado."
-      ],
-      "correct": 1,
-      "explanation": "A circular exige profundidade superior a quatro vezes o calado médio. Para 8 m, o limite é 32 m; 30 m corresponde a 3,75 vezes o calado e não satisfaz a condição.",
-      "comments": [
-        "Incorreta: 3,75 vezes o calado é inferior ao mínimo exigido de mais de quatro vezes.",
-        "Correta: quatro vezes 8 m são 32 m, e a redação exige valor superior a esse resultado.",
-        "Incorreta: carregamento e trim são condições adicionais e não compensam profundidade insuficiente.",
-        "Incorreta: a circular expressa o requisito por razão entre profundidade e calado médio."
-      ],
-      "reference": {
-        "referenceId": "I-06",
-        "base": "IMO — MSC/Circ.1053",
-        "publication": "Explanatory Notes to the Standards for Ship Manoeuvrability",
-        "edition": "MSC/Circ.1053, 16 de dezembro de 2002",
-        "section": "Capítulo 2, §2.1.2 e §2.2.1.2.1.1 — deep, unrestricted water",
-        "syllabus": "Eixo I — Manobrabilidade · condições de realização das provas",
-        "evidence": "O recorte consultado explica que fundo, margens e outros navios influenciam a manobrabilidade e fixa, para a prova, profundidade superior a quatro vezes o calado médio."
-      }
-    },
-    {
-      "id": "tue-r2-first-overshoot-lv18",
-      "category": "review",
-      "axis": "I",
-      "kind": "Revisão FSRS vencida · critério de overshoot",
-      "stem": "No teste de zig-zag 10°/10°, um navio apresenta L/V igual a 18 s. Qual é o valor máximo admissível para o primeiro ângulo de overshoot segundo a MSC.137(76)?",
-      "options": [
-        "14°",
-        "18°",
-        "23,5°",
-        "25°"
+        "14° e 31°.",
+        "14° e 25°.",
+        "23,5° e 31°.",
+        "18° e 31°."
       ],
       "correct": 0,
-      "explanation": "Para 10 s ≤ L/V < 30 s, o limite do primeiro overshoot é 5 + 0,5(L/V). Com L/V = 18 s, o resultado é 5 + 9 = 14°.",
+      "explanation": "Na faixa 10 s ≤ L/V < 30 s, o primeiro limite é 5 + 0,5(L/V) = 14°; o segundo é 17,5 + 0,75(L/V) = 31°.",
       "comments": [
-        "Correta: aplica corretamente 5 + 0,5 × 18.",
-        "Incorreta: confunde o valor de L/V com o ângulo-limite.",
-        "Incorreta: aproxima-se da expressão usada para o segundo overshoot, que é diferente.",
-        "Incorreta: 25° é o limite do primeiro overshoot no zig-zag 20°/20°, não neste caso."
+        "Correta: aplica a fórmula própria de cada overshoot sem trocar os coeficientes.",
+        "Incorreta: 25° é o limite fixo do primeiro overshoot no zig-zag 20°/20°, não o segundo no 10°/10°.",
+        "Incorreta: 23,5° resulta de aplicar indevidamente 5 + L/V ao primeiro overshoot.",
+        "Incorreta: 18 é o valor de L/V em segundos, não o primeiro ângulo-limite."
       ],
       "reference": {
         "referenceId": "I-07",
         "base": "IMO — Resolution MSC.137(76)",
         "publication": "Standards for Ship Manoeuvrability",
         "edition": "MSC.137(76), adotada em 4 de dezembro de 2002",
-        "section": "Anexo, §5.3.3.1 — first overshoot angle",
-        "syllabus": "Eixo I — Manobrabilidade · critérios de yaw-checking e course-keeping",
-        "evidence": "O recorte consultado estabelece três faixas para o primeiro overshoot do zig-zag 10°/10°; entre 10 s e 30 s, o limite é 5 + 1/2(L/V) graus.",
+        "section": "Anexo, §5.3.3.1–5.3.3.3 — yaw-checking and course-keeping abilities",
+        "syllabus": "Eixo I — Manobrabilidade · critérios dos ângulos de overshoot",
+        "evidence": "O recorte consultado traz fórmulas distintas, para 10 s ≤ L/V < 30 s: 5 + 1/2(L/V) para o primeiro overshoot e 17,5 + 0,75(L/V) para o segundo; também fixa 25° para o primeiro overshoot do zig-zag 20°/20°.",
         "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
       }
     },
     {
-      "id": "tue-r3-smcp-course-distance",
+      "id": "wed-r2-cirrus-moving-versus-stationary",
       "category": "review",
-      "axis": "VI",
-      "kind": "Revisão FSRS vencida · números na IMO SMCP",
-      "stem": "Ao informar o rumo 090° e a distância de 2,5 milhas náuticas, qual transmissão segue a convenção numérica da IMO SMCP?",
+      "axis": "V",
+      "kind": "Correção do erro por confusão · nuvens Cirrus",
+      "stem": "Ao amanhecer, o céu local ainda está limpo, mas surgem Cirrus com garras em altos níveis, deslocando-se acentuadamente na direção do navio. Qual interpretação distingue corretamente esse quadro de Cirrus praticamente estacionárias?",
       "options": [
-        "Course zero-nine-zero degrees; distance two decimal five nautical miles.",
-        "Course ninety degrees; distance two point five.",
-        "Course zero-nine-zero degrees; distance two-five nautical miles.",
-        "Course oh-nine-oh degrees; distance two decimal five miles."
+        "O deslocamento acentuado indica aproximação de mau tempo e possível Cumulonimbus; Cirrus estacionárias podem acompanhar ar seco e bom tempo.",
+        "Ambas indicam necessariamente estabilidade, porque toda Cirrus é formada por cristais de gelo.",
+        "Somente Cirrus estacionárias anunciam Cumulonimbus; as que se deslocam indicam dissipação frontal.",
+        "O sentido do deslocamento não tem valor prognóstico; apenas a altura da nuvem deve ser considerada."
       ],
       "correct": 0,
-      "explanation": "A SMCP manda dizer números algarismo por algarismo, admite decimal ou point para a casa decimal e exige que a unidade de distância seja declarada.",
+      "explanation": "Lobo e Soares diferenciam Cirrus parada, associável a ar seco e bom tempo, de Cirrus com garras e deslocamento acentuado para o observador, sinal de mau tempo se aproximando e de Cumulonimbus no horizonte.",
       "comments": [
-        "Correta: o rumo é transmitido algarismo por algarismo, a decimal é explicitada e a unidade é informada.",
-        "Incorreta: o rumo não deve ser dito como cardinal comum e falta a unidade da distância.",
-        "Incorreta: 2,5 requer a palavra decimal ou point entre os algarismos.",
-        "Incorreta: a SMCP usa zero, não oh, e a unidade padronizada é nautical miles."
-      ],
-      "reference": {
-        "referenceId": "VI-01",
-        "base": "IMO — Resolution A.918(22)",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "A.918(22), adotada em 29 de novembro de 2001",
-        "section": "General, §§2.2, 10, 13 e 14 — digits, numbers, courses and distances",
-        "syllabus": "Eixo VI — Comunicações · transmissão de números, rumos e distâncias",
-        "evidence": "O recorte consultado padroniza zero, exige números em algarismos separados, exemplifica 2,5 com decimal ou point, determina rumos na notação de 360° e exige a unidade nas distâncias.",
-        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
-      }
-    },
-    {
-      "id": "tue-r4-msc137-compliance-sequence",
-      "category": "review",
-      "axis": "I",
-      "kind": "Revisão FSRS vencida · demonstração de conformidade",
-      "stem": "Qual alternativa descreve corretamente as vias previstas pela MSC.137(76) para demonstrar conformidade com os padrões de manobrabilidade?",
-      "options": [
-        "Somente ensaios em modelo, sem necessidade de validação posterior em escala real.",
-        "Avaliação na fase de projeto por modelo e/ou previsão computacional, validada em escala real, ou demonstração direta por provas em escala real.",
-        "Somente simulação computacional após a entrega do navio, desde que aprovada pela Administração.",
-        "Obrigatoriamente ensaios em modelo, previsão computacional e provas em escala real, todos cumulativos."
-      ],
-      "correct": 1,
-      "explanation": "A resolução admite avaliação na fase de projeto por ensaios em modelo e/ou previsões computacionais, seguida de validação em escala real, ou demonstração direta da conformidade por provas em escala real.",
-      "comments": [
-        "Incorreta: o resultado de projeto deve ser validado em escala real.",
-        "Correta: reproduz as duas vias previstas no §2.1.",
-        "Incorreta: a previsão computacional pertence à avaliação de projeto e não substitui sozinha a validação requerida.",
-        "Incorreta: modelo e previsão computacional são alternativas combináveis, não exigências cumulativas obrigatórias."
-      ],
-      "reference": {
-        "referenceId": "I-07",
-        "base": "IMO — Resolution MSC.137(76)",
-        "publication": "Standards for Ship Manoeuvrability",
-        "edition": "MSC.137(76), adotada em 4 de dezembro de 2002",
-        "section": "Anexo, §2.1.1–2.1.2 — demonstração de conformidade",
-        "syllabus": "Eixo I — Manobrabilidade · padrões de projeto IMO e sua aplicação",
-        "evidence": "O recorte consultado prevê avaliação por ensaios em modelo e/ou previsões computacionais no projeto, com validação em escala real, ou demonstração direta da conformidade por provas em escala real.",
-        "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
-      }
-    },
-    {
-      "id": "tue-c1-manoeuvre-assessment",
-      "category": "current",
-      "axis": "II",
-      "kind": "Tema principal · princípios da manobra",
-      "stem": "Antes de iniciar uma manobra em área restrita, qual conduta é mais compatível com os princípios apresentados em Arte Naval?",
-      "options": [
-        "Aplicar a mesma sequência usada em navio semelhante, pois os princípios de manobra são universais e dispensam reavaliação local.",
-        "Avaliar as qualidades de manobra do próprio navio, a situação local e a manobra pretendida, evitando generalizações indevidas.",
-        "Considerar apenas leme e propulsor, pois vento, mar, calado e geometria do canal são fatores secundários.",
-        "Definir a manobra exclusivamente pela potência instalada, independentemente do trim e da profundidade."
-      ],
-      "correct": 1,
-      "explanation": "Arte Naval ressalta que os princípios teóricos e práticos não devem ser generalizados cegamente. O oficial precisa conhecer o próprio navio e avaliar a situação local e a manobra pretendida.",
-      "comments": [
-        "Incorreta: semelhança entre navios não elimina diferenças de resposta nem condições locais.",
-        "Correta: reúne as três avaliações indicadas no recorte consultado.",
-        "Incorreta: a obra inclui vento, mar, calado, trim, banda, pouca profundidade e largura do canal entre os fatores relevantes.",
-        "Incorreta: potência isolada não caracteriza a resposta de manobra."
-      ],
-      "reference": {
-        "referenceId": "II-01",
-        "base": "Marinha do Brasil — Maurílio M. Fonseca",
-        "publication": "Arte Naval, Volume I",
-        "edition": "8ª edição, 2019",
-        "section": "Capítulo 12, §12.1 — generalidades sobre manobra dos navios",
-        "syllabus": "Eixo II — Arte Naval/Manobra · planejamento e fatores que influenciam a manobra",
-        "evidence": "O recorte consultado desaconselha generalizações e orienta avaliar o navio, a situação local e a manobra; enumera leme, propulsor, esteira, mar e vento, calado/trim/banda, profundidade e largura do canal como fatores de influência.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
-      }
-    },
-    {
-      "id": "tue-c2-rudder-ahead-astern",
-      "category": "current",
-      "axis": "II",
-      "kind": "Tema principal · ação evolutiva do leme",
-      "stem": "Desprezando outros efeitos, como se compara a ação do leme com o navio em marcha a vante e em marcha a ré?",
-      "options": [
-        "A vante, a proa guina para o bordo do leme; a ré, tende a guinar para o bordo oposto, com ação evolutiva geralmente menor.",
-        "A vante e a ré, a proa sempre guina para o mesmo bordo em que o leme foi carregado, com igual intensidade.",
-        "A vante, a proa guina para o bordo oposto ao leme; a ré, para o mesmo bordo, com maior intensidade.",
-        "A ré, o leme não produz qualquer efeito evolutivo, independentemente da velocidade."
-      ],
-      "correct": 0,
-      "explanation": "A vante, a força no leme empurra a popa para o bordo oposto e a proa guina para o bordo do leme. A ré, a tendência da proa se inverte; para a mesma velocidade, o efeito evolutivo é bem menor.",
-      "comments": [
-        "Correta: expressa o sentido da guinada e a diferença de eficácia descritos na obra.",
-        "Incorreta: o sentido da tendência se inverte na marcha a ré e a intensidade não é igual.",
-        "Incorreta: inverte os sentidos e superestima a ação do leme a ré.",
-        "Incorreta: o efeito existe, embora seja menor para a mesma velocidade."
-      ],
-      "reference": {
-        "referenceId": "II-01",
-        "base": "Marinha do Brasil — Maurílio M. Fonseca",
-        "publication": "Arte Naval, Volume I",
-        "edition": "8ª edição, 2019",
-        "section": "Capítulo 12, §12.2 — efeito do leme",
-        "syllabus": "Eixo II — Arte Naval/Manobra · efeitos do leme a vante e a ré",
-        "evidence": "O recorte consultado afirma que, a vante, a proa guina para o bordo do leme; a ré, a proa tende ao bordo oposto. Para a mesma velocidade, a ação evolutiva a ré é muito menor.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
-      }
-    },
-    {
-      "id": "tue-c3-right-hand-screw-astern",
-      "category": "current",
-      "axis": "II",
-      "kind": "Tema principal · hélice de passo direito em marcha a ré",
-      "stem": "Um navio de um só hélice de passo direito parte do repouso com máquina a ré. Qual tendência inicial deve ser antecipada?",
-      "options": [
-        "A popa cai para boreste e a proa para bombordo, neutralizadas imediatamente pelo leme a bombordo.",
-        "A popa cai para bombordo e a proa para boreste; mesmo leme a boreste pode não impedir a tendência inicial.",
-        "A proa e a popa permanecem alinhadas, pois a pressão lateral só aparece com seguimento a vante.",
-        "A popa cai para bombordo apenas se o hélice estiver totalmente fora d'água."
-      ],
-      "correct": 1,
-      "explanation": "Ao iniciar marcha a ré com hélice de passo direito, a pressão lateral tende a levar a popa para bombordo e a proa para boreste. Em baixa arrancada a ré, o leme tem pouca eficácia e pode não vencer essa tendência.",
-      "comments": [
-        "Incorreta: os bordos estão invertidos e o leme não neutraliza necessariamente o efeito inicial.",
-        "Correta: corresponde ao resumo da ação conjunta de hélice e leme para navio de um só hélice direito.",
-        "Incorreta: a pressão lateral é particularmente perceptível no início do movimento a ré.",
-        "Incorreta: a tendência ocorre com o hélice submerso; emersão parcial pode intensificá-la, mas não é condição necessária."
-      ],
-      "reference": {
-        "referenceId": "II-01",
-        "base": "Marinha do Brasil — Maurílio M. Fonseca",
-        "publication": "Arte Naval, Volume I",
-        "edition": "8ª edição, 2019",
-        "section": "Capítulo 12, §§12.4–12.6 — pressão lateral e efeitos combinados",
-        "syllabus": "Eixo II — Arte Naval/Manobra · efeitos de hélice e leme em navio de um só hélice",
-        "evidence": "O recorte consultado resume que, ao partir a ré com hélice de passo direito, a popa cai para bombordo e a proa para boreste; em arrancada e seguimento moderado a ré, o leme a boreste pode não evitar essa tendência.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
-      }
-    },
-    {
-      "id": "tue-x1-apparent-true-wind",
-      "category": "rotation",
-      "axis": "V",
-      "kind": "Eixo alternado · vento verdadeiro e aparente",
-      "stem": "Com o navio em movimento, o anemômetro de bordo indica diretamente qual vento e como se obtém o vento verdadeiro?",
-      "options": [
-        "Indica o vento verdadeiro; o aparente é obtido subtraindo-se a corrente marítima.",
-        "Indica o vento relativo ou aparente; o verdadeiro é obtido combinando vetorialmente esse vento com o movimento do navio.",
-        "Indica sempre o vento geostrófico; o verdadeiro depende apenas da pressão atmosférica.",
-        "Indica o vento aparente, que coincide com o verdadeiro qualquer que seja a velocidade do navio."
-      ],
-      "correct": 1,
-      "explanation": "O instrumento a bordo de navio em movimento registra o vento relativo ou aparente, resultante do vento verdadeiro e do movimento do navio. O vento verdadeiro é determinado pelo triângulo de velocidades ou método equivalente.",
-      "comments": [
-        "Incorreta: o instrumento não fornece diretamente o vento verdadeiro com o navio em movimento.",
-        "Correta: identifica a grandeza medida e o procedimento vetorial de correção.",
-        "Incorreta: vento geostrófico é conceito distinto e não é a leitura direta do anemômetro de bordo.",
-        "Incorreta: os dois coincidem apenas quando não há movimento do observador em relação à massa de ar."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Marinha do Brasil — Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte, Volume III",
-        "edition": "DHN",
-        "section": "Capítulo 45 — vento verdadeiro e vento relativo",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · vento verdadeiro e aparente",
-        "evidence": "O recorte consultado explica que os anemômetros do navio indicam vento relativo ou aparente, combinação do vento verdadeiro com o movimento do navio, e que o verdadeiro pode ser obtido por triângulo de velocidades, ábaco ou tabela.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
-      }
-    },
-    {
-      "id": "tue-x2-relative-humidity-dew-point",
-      "category": "rotation",
-      "axis": "V",
-      "kind": "Eixo alternado · umidade relativa e ponto de orvalho",
-      "stem": "Mantendo-se constante a quantidade de vapor d'água no ar e a pressão, o que ocorre quando a temperatura diminui até o ponto de orvalho?",
-      "options": [
-        "A umidade relativa diminui e a condensação cessa.",
-        "A umidade relativa aumenta; no ponto de orvalho o ar atinge a saturação, e resfriamento adicional favorece condensação.",
-        "A umidade relativa permanece constante porque a quantidade de vapor não mudou.",
-        "A umidade relativa aumenta apenas se a pressão atmosférica dobrar."
-      ],
-      "correct": 1,
-      "explanation": "Com teor de vapor constante, a redução da temperatura diminui a capacidade do ar de conter vapor e eleva a umidade relativa. No ponto de orvalho ocorre saturação; abaixo dele começa a condensação.",
-      "comments": [
-        "Incorreta: o resfriamento eleva, e não reduz, a umidade relativa.",
-        "Correta: descreve a aproximação da saturação e o início da condensação.",
-        "Incorreta: a umidade relativa depende também da temperatura, mesmo sem variar o teor de vapor.",
-        "Incorreta: não é necessário dobrar a pressão para que o resfriamento eleve a umidade relativa."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Marinha do Brasil — Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte, Volume III",
-        "edition": "DHN",
-        "section": "Capítulo 45 — umidade relativa e ponto de orvalho",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · umidade do ar e condensação",
-        "evidence": "O recorte consultado define umidade relativa como razão percentual para a capacidade máxima na temperatura considerada, explica que o resfriamento a eleva e identifica o ponto de orvalho como a temperatura de saturação a partir da qual a condensação se inicia.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
-      }
-    },
-    {
-      "id": "tue-o1-pscpp2006-q14",
-      "category": "official",
-      "axis": "V",
-      "kind": "Questão oficial histórica · PSCPP 2006",
-      "stem": "Um navegante, observando o estado do mar e o estado do tempo no oceano Atlântico Sul, em dia de céu limpo, sem vento e ondas, identifica, em determinado azimute, surgirem no horizonte, em altos níveis, nuvens Cirrus de cristais de gelo, com acentuado deslocamento na direção do navio. Na interpretação dessa situação, qual previsão pode ser feita?",
-      "options": [
-        "Permanece tempo estável com nuvens altas de cristais de gelo, características de bom tempo.",
-        "Não há previsão de nuvens Cumulonimbus, característica de mau tempo.",
-        "Há previsão de mudança de nebulosidade, passando de céu limpo para parcialmente nublado a quase encoberto, permanecendo as condições de estabilidade.",
-        "Não há previsão de instabilidade com formação de ondas, vento forte, precipitação pesada e rajadas de vento.",
-        "Há previsão de mau tempo com pancadas de chuva, rajadas de vento e trovoadas."
-      ],
-      "correct": 4,
-      "explanation": "Cirrus com garras e acentuado deslocamento em direção ao observador são indício de mau tempo se aproximando. A obra associa esse sinal à aproximação de Cumulonimbus, capaz de produzir pancadas, rajadas e trovoadas.",
-      "comments": [
-        "Incorreta: Cirrus parada pode acompanhar bom tempo; o acentuado deslocamento em direção ao navio muda a interpretação.",
-        "Incorreta: a obra associa esse sinal à aproximação de Cumulonimbus.",
-        "Incorreta: o quadro indica perda de estabilidade, não mera mudança de nebulosidade estável.",
-        "Incorreta: a previsão indicada inclui justamente instabilidade, vento e precipitação.",
-        "Correta: corresponde ao gabarito E da questão oficial e ao fundamento localizado em Lobo e Soares."
+        "Correta: usa o movimento observado para separar os dois cenários descritos na obra.",
+        "Incorreta: a composição por gelo não elimina o valor prognóstico da forma e do deslocamento.",
+        "Incorreta: inverte as interpretações apresentadas pela fonte.",
+        "Incorreta: forma e deslocamento são informações meteorológicas relevantes no recorte consultado."
       ],
       "reference": {
         "referenceId": "V-03",
-        "base": "Lobo e Soares",
+        "base": "Lobo, P. R. V.; Soares, C. A.",
         "publication": "Meteorologia e Oceanografia",
         "edition": "4ª edição, 2019",
-        "section": "Capítulo I — nuvens Cirrus; Capítulo III — Cumulonimbus e trovoadas",
+        "section": "Capítulo I, §2.5 — nuvens; Capítulo III, §2 — Cumulonimbus",
         "syllabus": "Eixo V — Meteorologia/Oceanografia · interpretação de nuvens e previsão do tempo",
-        "evidence": "O recorte consultado identifica Cirrus com garras e acentuado deslocamento para a embarcação como sinal de mau tempo se aproximando e relaciona Cumulonimbus a rajadas, precipitação intensa, relâmpagos e trovões.",
-        "origin": "PSCPP 2006 — prova oficial, questão 14 — gabarito E; enunciado adaptado apenas na redação, sem alterar o conteúdo técnico ou as alternativas",
+        "evidence": "O recorte consultado associa Cirrus com garras e acentuado deslocamento em direção à embarcação à aproximação de mau tempo e de Cumulonimbus, enquanto Cirrus parada pode caracterizar ar seco e bom tempo.",
+        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
+      }
+    },
+    {
+      "id": "wed-r3-underway-without-making-way",
+      "category": "review",
+      "axis": "III",
+      "kind": "Revisão FSRS vencida · underway e making way",
+      "stem": "Uma embarcação está à deriva, sem seguimento na água, com máquinas paradas, mas não está fundeada, amarrada à terra nem encalhada. Para fins do RIPEAM, qual classificação está correta?",
+      "options": [
+        "Não está em movimento, pois máquina parada exclui a condição de underway.",
+        "Está em movimento (underway), embora não esteja com seguimento na água (making way).",
+        "Está fundeada por equiparação, porque não possui velocidade sobre o fundo.",
+        "Está encalhada por equiparação, até que volte a ter governo."
+      ],
+      "correct": 1,
+      "explanation": "Underway é definido negativamente: não estar fundeada, amarrada à terra ou encalhada. A existência de seguimento na água é uma condição adicional e distinta.",
+      "comments": [
+        "Incorreta: o estado da máquina não integra a definição de underway.",
+        "Correta: separa a situação jurídica de underway da condição cinemática de making way.",
+        "Incorreta: ausência de velocidade não transforma a embarcação em fundeada.",
+        "Incorreta: falta de seguimento ou governo não equivale a estar fisicamente encalhada."
+      ],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "COLREG 1972 / RIPEAM",
+        "publication": "COLREG — Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte A, Regra 3(i) — definição de underway",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · definições gerais do RIPEAM",
+        "evidence": "A Regra 3(i) define underway como a condição de não estar fundeada, amarrada à terra ou encalhada; não exige propulsão ativa nem seguimento na água.",
+        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
+      }
+    },
+    {
+      "id": "wed-r4-pilot-ladder-spreaders",
+      "category": "review",
+      "axis": "II",
+      "kind": "Revisão FSRS vencida · degraus separadores da escada de prático",
+      "stem": "Uma escada de prático possui oito degraus. Qual arranjo de degraus separadores atende à Resolução A.1045(27)?",
+      "options": [
+        "Dispensá-los, pois só são exigidos em escadas com mais de nove degraus.",
+        "Instalar o separador mais baixo no quinto degrau a partir de baixo, com comprimento mínimo de 1,8 m.",
+        "Instalar o primeiro separador no terceiro degrau a partir de baixo, com comprimento mínimo de 1,2 m.",
+        "Instalar qualquer separador acima do quinto degrau, sem requisito de comprimento, desde que a escada não torça."
+      ],
+      "correct": 1,
+      "explanation": "Escadas com mais de cinco degraus devem ter separadores de pelo menos 1,8 m. O separador mais baixo deve ocupar o quinto degrau a partir de baixo; entre separadores consecutivos não podem existir mais de nove degraus.",
+      "comments": [
+        "Incorreta: a exigência começa quando a escada possui mais de cinco degraus.",
+        "Correta: reproduz a posição e o comprimento mínimo estabelecidos.",
+        "Incorreta: tanto a posição quanto o comprimento mínimo estão abaixo do exigido.",
+        "Incorreta: posição, comprimento e intervalo são especificados pela resolução."
+      ],
+      "reference": {
+        "referenceId": "II-06",
+        "base": "IMO — Resolution A.1045(27)",
+        "publication": "Pilot Transfer Arrangements",
+        "edition": "A.1045(27), adotada em 30 de novembro de 2011",
+        "section": "Anexo, §2.1.4 — spreader steps",
+        "syllabus": "Eixo II — Arte Naval · transferência de prático e construção da escada",
+        "evidence": "O recorte consultado exige separadores de pelo menos 1,8 m em escadas com mais de cinco degraus, coloca o mais baixo no quinto degrau a partir de baixo e limita a nove degraus o intervalo entre separadores.",
+        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.1045(27).pdf"
+      }
+    },
+    {
+      "id": "wed-c1-conventional-stern-tug-limit",
+      "category": "current",
+      "axis": "II",
+      "kind": "Tema principal · limitações do rebocador convencional",
+      "stem": "Um rebocador convencional trabalha como rebocador de popa, com cabo passado, enquanto o navio assistido supera aproximadamente 3 nós de seguimento. Segundo Hensen, qual limitação deve ser antecipada?",
+      "options": [
+        "O rebocador passa a produzir força indireta ilimitada, independentemente da posição do ponto de reboque.",
+        "O rebocador pode ficar restrito a um só bordo, sem conseguir mudar de lado nem controlar a velocidade do navio, além do risco de girting.",
+        "A velocidade melhora a capacidade de cruzar a popa e elimina a força transversal no cabo.",
+        "O único efeito esperado é perda de bollard pull estático, sem implicação para posicionamento ou estabilidade."
+      ],
+      "correct": 1,
+      "explanation": "Com o ponto de reboque próximo de meia-nau, o rebocador convencional tem severas limitações na popa de navio com seguimento acima de cerca de 3 nós: pode ficar preso a um bordo, não controlar a velocidade e sofrer girting.",
+      "comments": [
+        "Incorreta: o ponto de reboque e a velocidade limitam fortemente essa operação.",
+        "Correta: reúne as limitações e o risco explicitados no capítulo 2.",
+        "Incorreta: o aumento de velocidade dificulta, em vez de facilitar, a mudança segura de bordo.",
+        "Incorreta: posicionamento, controle de velocidade e girting são consequências operacionais centrais."
+      ],
+      "reference": {
+        "referenceId": "II-09",
+        "base": "Hensen, Henk",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4ª edição, 2021",
+        "section": "Capítulo 2, §2.3.4 — conventional tugs in ship handling",
+        "syllabus": "Eixo II — Arte Naval · capacidades e limitações dos tipos de rebocador",
+        "evidence": "O recorte consultado informa que, acima de aproximadamente 3 nós, o rebocador convencional de popa pode operar apenas em um bordo, não consegue mudar de lado nem controlar a velocidade do navio e fica exposto a girting pelo ponto de reboque próximo de meia-nau.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+      }
+    },
+    {
+      "id": "wed-c2-tractor-layout",
+      "category": "current",
+      "axis": "II",
+      "kind": "Tema principal · configuração do tractor tug",
+      "stem": "Qual configuração caracteriza um tractor tug com propulsão cicloidal, conforme Tug Use in Port?",
+      "options": [
+        "Propulsão sob o corpo de vante e ponto de reboque situado próximo da popa.",
+        "Propulsão convencional fixa na popa e ponto de reboque na extremidade de vante.",
+        "Um único hélice central de passo fixo, sem skeg e com ponto de reboque a meia-nau.",
+        "Dois propulsores azimutais sob a popa e ausência de ponto de reboque a ré."
+      ],
+      "correct": 0,
+      "explanation": "No tractor tug Voith-Schneider, as unidades propulsoras ficam sob o corpo de vante, enquanto o ponto de reboque se localiza próximo da popa; essa separação é determinante para sua manobrabilidade.",
+      "comments": [
+        "Correta: corresponde à disposição descrita para o tractor tug cicloidal.",
+        "Incorreta: descreve aproximadamente a lógica de um rebocador reverso/ASD, não a do tractor tug tratado.",
+        "Incorreta: não corresponde à configuração de duas unidades cicloidais indicada pela obra.",
+        "Incorreta: dois azimutais sob a popa caracterizam o reverse-tractor, e não o tractor cicloidal."
+      ],
+      "reference": {
+        "referenceId": "II-09",
+        "base": "Hensen, Henk",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4ª edição, 2021",
+        "section": "Capítulo 2, §2.5.1 — tractor tugs with cycloidal propellers",
+        "syllabus": "Eixo II — Arte Naval · projeto e classificação dos rebocadores",
+        "evidence": "O recorte consultado localiza a propulsão do tractor tug sob o corpo de vante, aproximadamente a 0,25–0,30 LWL a partir de vante, e o ponto de reboque próximo da popa.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+      }
+    },
+    {
+      "id": "wed-c3-girting-speed-communication",
+      "category": "current",
+      "axis": "II",
+      "kind": "Tema principal · girting e comunicação operacional",
+      "stem": "Um navio segue em rumo constante com rebocador convencional passado na proa. A velocidade começa a aumentar enquanto o rebocador abre para um bordo. Qual avaliação é correta?",
+      "options": [
+        "Girting só ocorre em curvas; em rumo constante o aumento de velocidade não cria risco transversal.",
+        "O excesso de velocidade pode gerar girting mesmo em rumo constante, devendo o mestre do rebocador alertar o prático com antecedência.",
+        "Abrir para o bordo elimina o risco, pois alinha automaticamente o cabo com o eixo longitudinal do rebocador.",
+        "O risco depende apenas do comprimento do cabo e não exige coordenação entre prático e mestre do rebocador."
+      ],
+      "correct": 1,
+      "explanation": "Hensen ressalta que girting não se limita às curvas. Em rumo constante, velocidade excessiva pode impedir o rebocador de manter posição segura e gerar grande força transversal; comunicação antecipada é essencial.",
+      "comments": [
+        "Incorreta: a obra apresenta expressamente o caso de girting em rumo reto por velocidade excessiva.",
+        "Correta: identifica causa, mecanismo operacional e barreira de comunicação.",
+        "Incorreta: abrir para o bordo pode aumentar o ângulo do cabo e agravar a força transversal.",
+        "Incorreta: velocidade, posição e comunicação são fatores decisivos, não apenas o comprimento do cabo."
+      ],
+      "reference": {
+        "referenceId": "II-09",
+        "base": "Hensen, Henk",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4ª edição, 2021",
+        "section": "Capítulo 6, §6.3 — tug safety and girting",
+        "syllabus": "Eixo II — Arte Naval · segurança de rebocadores e interação com o navio",
+        "evidence": "O recorte consultado explica que girting pode ocorrer em rumo reto quando a velocidade do navio é excessiva e recomenda que o mestre do rebocador informe o prático em tempo se considerar inseguro o aumento de velocidade.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+      }
+    },
+    {
+      "id": "wed-x1-pilotage-passage-plan",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Eixo alternado · planejamento da pilotagem",
+      "stem": "Ao se aproximar da estação de prático, como deve ser tratado o plano de viagem pela equipe do passadiço?",
+      "options": [
+        "O plano termina no ponto de embarque do prático, porque a partir dali prevalece somente o conhecimento local.",
+        "O plano continua até o berço, inclui o trecho conduzido pelo prático e contempla acompanhamento, abortagem e contingências.",
+        "O plano é suspenso até que o prático informe verbalmente sua derrota, sem necessidade de comparação posterior.",
+        "O plano permanece válido apenas para velocidade e ETA; perigos e margens passam a ser responsabilidade exclusiva do VTS."
+      ],
+      "correct": 1,
+      "explanation": "Bridge Team Management afirma que o planejamento não termina no embarque do prático: deve prosseguir de mar a berço, permitir comparação com a derrota prevista e incluir opções de abortagem e contingência.",
+      "comments": [
+        "Incorreta: a pilotagem integra o plano de passagem de berço a berço.",
+        "Correta: preserva planejamento, monitoramento e alternativas de segurança durante a pilotagem.",
+        "Incorreta: a derrota do prático deve ser discutida e acompanhada, não aceita sem verificação.",
+        "Incorreta: perigos, margens e monitoramento continuam sob responsabilidade da equipe do navio."
+      ],
+      "reference": {
+        "referenceId": "III-01",
+        "base": "Swift, A. J.; Bailey, T. J.",
+        "publication": "Bridge Team Management: A Practical Guide",
+        "edition": "2ª edição, 2004",
+        "section": "Capítulo 7 — Planning; navigating with a pilot on board",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · planejamento e pilotagem",
+        "evidence": "O recorte consultado determina que o plano continue de mar ao berço, incluindo as áreas em que o prático tem a condução, para comparação do progresso com a derrota planejada e preparação de abortagem e contingências.",
+        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
+      }
+    },
+    {
+      "id": "wed-x2-pilot-monitoring-responsibility",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Eixo alternado · responsabilidades e monitoramento no BRM",
+      "stem": "Durante a pilotagem, o prático tem a condução e determina rumos e velocidades. Qual atuação da equipe do navio está de acordo com o BRM?",
+      "options": [
+        "Suspender o monitoramento para não interferir na autoridade técnica do prático.",
+        "Manter o comandante responsável pela segurança, com o OOW monitorando derrota e velocidade e comunicando desvios ao comandante.",
+        "Transferir ao prático toda responsabilidade pela segurança até o desembarque.",
+        "Monitorar apenas se o prático solicitar, limitando a troca comandante–prático às características do motor."
+      ],
+      "correct": 1,
+      "explanation": "A presença do prático não retira a responsabilidade do comandante. O OOW deve acompanhar o progresso como em qualquer outra condição, identificar desvios de derrota ou velocidade e manter o comandante informado.",
+      "comments": [
+        "Incorreta: o monitoramento independente é uma barreira essencial contra cadeias de erro.",
+        "Correta: distribui responsabilidade, acompanhamento e comunicação conforme o capítulo 7.",
+        "Incorreta: o prático é o especialista local, mas a responsabilidade do comandante permanece.",
+        "Incorreta: o acompanhamento é contínuo e a troca inclui rota, velocidades, assistência, contingências e peculiaridades do navio."
+      ],
+      "reference": {
+        "referenceId": "III-01",
+        "base": "Swift, A. J.; Bailey, T. J.",
+        "publication": "Bridge Team Management: A Practical Guide",
+        "edition": "2ª edição, 2004",
+        "section": "Capítulo 7 — Master/Pilot Information Exchange; Responsibility; Monitoring",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · BRM com prático a bordo",
+        "evidence": "O recorte consultado mantém o comandante responsável pela segurança e orienta o OOW a monitorar derrota e velocidade mesmo com o prático na condução, reportando desvios ao comandante.",
+        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
+      }
+    },
+    {
+      "id": "wed-o1-pscpp2006-q7",
+      "category": "official",
+      "axis": "II",
+      "kind": "Questão oficial histórica · PSCPP 2006",
+      "stem": "O Prático Aroldo está a bordo de um rebocador convencional, parado em relação ao fundo, equipado com dois propulsores de passo fixo e dois lemes. Será necessário mover a embarcação somente com movimento lateral para boreste, sem alterar o rumo. Desprezando as forças ambientais, qual comando pode produzir a deriva lateral desejada?",
+      "options": [
+        "Máquina do propulsor de boreste para ré, máquina do propulsor de bombordo para vante e lemes para bombordo.",
+        "Máquina do propulsor de boreste para ré, máquina do propulsor de bombordo parada, leme de bombordo para boreste e leme de boreste a meio.",
+        "Máquina do propulsor de boreste para vante, máquina do propulsor de bombordo para ré e lemes para boreste.",
+        "Máquina do propulsor de boreste parada, máquina do propulsor de bombordo para ré e lemes para bombordo.",
+        "Ambas as máquinas para ré, leme de bombordo para bombordo e leme de boreste para boreste."
+      ],
+      "correct": 0,
+      "explanation": "Em rebocador convencional de dois eixos com hélices de passo fixo girando para dentro, a combinação boreste a ré, bombordo a vante e lemes a bombordo produz o flanking para boreste sem adquirir seguimento significativo.",
+      "comments": [
+        "Correta: é a combinação indicada por Hensen e corresponde ao gabarito A da prova.",
+        "Incorreta: parar um propulsor elimina o binário e a composição de forças necessária ao movimento lateral puro.",
+        "Incorreta: inverte máquinas e lemes, produzindo a tendência lateral oposta.",
+        "Incorreta: com apenas o propulsor de bombordo a ré não se obtém a composição equilibrada para flanking.",
+        "Incorreta: ambas as máquinas a ré geram seguimento a ré e não o movimento lateral pretendido."
+      ],
+      "reference": {
+        "referenceId": "II-09",
+        "base": "Hensen, Henk",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4ª edição, 2021",
+        "section": "Capítulo 2, §2.3 — twin screw conventional tugs; flanking",
+        "syllabus": "Eixo II — Arte Naval · emprego e manobra de rebocadores",
+        "evidence": "O recorte consultado descreve o flanking para boreste com propulsor de boreste a ré, propulsor de bombordo a vante e lemes a bombordo, combinação que desloca lateralmente o rebocador de dois eixos.",
+        "origin": "PSCPP 2006 — prova escrita oficial, questão 7 — gabarito A; redação adaptada apenas para expansão das abreviaturas BE e BB",
         "url": "https://www.marinha.mil.br/dpc/processo-seletivo"
       }
     }
