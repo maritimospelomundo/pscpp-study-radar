@@ -1,329 +1,91 @@
 {
-  "roundId": "tugs-brm-corrections-2026-09-09",
-  "label": "Rodada adaptativa de quarta-feira",
-  "title": "Rebocadores portuários, riscos operacionais e BRM",
+  "roundId": "pilotage-law-smcp-review-2026-09-10",
+  "label": "Rodada adaptativa de quinta-feira",
+  "title": "Marco legal da praticagem e comunicações padronizadas",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Correção de erros · tipos e limitações dos rebocadores · girting · planejamento e monitoramento com prático",
+  "path": "Revisões vencidas · Lei nº 14.813/2024 · IMO SMCP · Código Internacional de Sinais",
   "method": "4–3–2–1",
-  "mixPlan": {
-    "review": 4,
-    "current": 3,
-    "rotation": 2,
-    "official": 1
-  },
+  "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
   "questions": [
     {
-      "id": "wed-r1-overshoot-pair-lv18",
-      "category": "review",
-      "axis": "I",
-      "kind": "Correção do erro de leitura · overshoot 10°/10°",
-      "stem": "No teste de zig-zag 10°/10°, um navio apresenta L/V igual a 18 s. Quais são, respectivamente, os limites do primeiro e do segundo ângulo de overshoot segundo a MSC.137(76)?",
-      "options": [
-        "14° e 31°.",
-        "14° e 25°.",
-        "23,5° e 31°.",
-        "18° e 31°."
-      ],
-      "correct": 0,
-      "explanation": "Na faixa 10 s ≤ L/V < 30 s, o primeiro limite é 5 + 0,5(L/V) = 14°; o segundo é 17,5 + 0,75(L/V) = 31°.",
-      "comments": [
-        "Correta: aplica a fórmula própria de cada overshoot sem trocar os coeficientes.",
-        "Incorreta: 25° é o limite fixo do primeiro overshoot no zig-zag 20°/20°, não o segundo no 10°/10°.",
-        "Incorreta: 23,5° resulta de aplicar indevidamente 5 + L/V ao primeiro overshoot.",
-        "Incorreta: 18 é o valor de L/V em segundos, não o primeiro ângulo-limite."
-      ],
-      "reference": {
-        "referenceId": "I-07",
-        "base": "IMO — Resolution MSC.137(76)",
-        "publication": "Standards for Ship Manoeuvrability",
-        "edition": "MSC.137(76), adotada em 4 de dezembro de 2002",
-        "section": "Anexo, §5.3.3.1–5.3.3.3 — yaw-checking and course-keeping abilities",
-        "syllabus": "Eixo I — Manobrabilidade · critérios dos ângulos de overshoot",
-        "evidence": "O recorte consultado traz fórmulas distintas, para 10 s ≤ L/V < 30 s: 5 + 1/2(L/V) para o primeiro overshoot e 17,5 + 0,75(L/V) para o segundo; também fixa 25° para o primeiro overshoot do zig-zag 20°/20°.",
-        "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
-      }
+      "id": "thu-r1-overshoot-pair-lv22", "category": "review", "axis": "I", "kind": "Revisão vencida · overshoot 10°/10°",
+      "stem": "No teste de zig-zag 10°/10°, um navio apresenta L/V igual a 22 s. Quais são, respectivamente, os limites do primeiro e do segundo ângulo de overshoot segundo a MSC.137(76)?",
+      "options": ["16° e 34°.", "22° e 34°.", "16° e 25°.", "27° e 39,5°."], "correct": 0,
+      "explanation": "Para 10 s ≤ L/V < 30 s, o primeiro limite é 5 + 0,5(L/V) = 16° e o segundo é 17,5 + 0,75(L/V) = 34°.",
+      "comments": ["Correta: aplica a fórmula específica de cada overshoot ao valor L/V = 22 s.", "Incorreta: 22 é o valor de L/V, não o limite do primeiro overshoot.", "Incorreta: 25° é o limite do primeiro overshoot no zig-zag 20°/20°, não do segundo no 10°/10°.", "Incorreta: soma L/V diretamente às constantes e desconsidera os coeficientes 0,5 e 0,75."],
+      "reference": {"referenceId": "I-07", "base": "IMO — Resolution MSC.137(76)", "publication": "Standards for Ship Manoeuvrability", "edition": "MSC.137(76), adotada em 4 de dezembro de 2002", "section": "Anexo, §5.3.3.1–5.3.3.3 — yaw-checking and course-keeping abilities", "syllabus": "Eixo I — Manobrabilidade · critérios dos ângulos de overshoot", "evidence": "O recorte consultado estabelece, para 10 s ≤ L/V < 30 s, 5 + 0,5(L/V) graus para o primeiro overshoot e 17,5 + 0,75(L/V) graus para o segundo no zig-zag 10°/10°.", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"}
     },
     {
-      "id": "wed-r2-cirrus-moving-versus-stationary",
-      "category": "review",
-      "axis": "V",
-      "kind": "Correção do erro por confusão · nuvens Cirrus",
-      "stem": "Ao amanhecer, o céu local ainda está limpo, mas surgem Cirrus com garras em altos níveis, deslocando-se acentuadamente na direção do navio. Qual interpretação distingue corretamente esse quadro de Cirrus praticamente estacionárias?",
-      "options": [
-        "O deslocamento acentuado indica aproximação de mau tempo e possível Cumulonimbus; Cirrus estacionárias podem acompanhar ar seco e bom tempo.",
-        "Ambas indicam necessariamente estabilidade, porque toda Cirrus é formada por cristais de gelo.",
-        "Somente Cirrus estacionárias anunciam Cumulonimbus; as que se deslocam indicam dissipação frontal.",
-        "O sentido do deslocamento não tem valor prognóstico; apenas a altura da nuvem deve ser considerada."
-      ],
-      "correct": 0,
-      "explanation": "Lobo e Soares diferenciam Cirrus parada, associável a ar seco e bom tempo, de Cirrus com garras e deslocamento acentuado para o observador, sinal de mau tempo se aproximando e de Cumulonimbus no horizonte.",
-      "comments": [
-        "Correta: usa o movimento observado para separar os dois cenários descritos na obra.",
-        "Incorreta: a composição por gelo não elimina o valor prognóstico da forma e do deslocamento.",
-        "Incorreta: inverte as interpretações apresentadas pela fonte.",
-        "Incorreta: forma e deslocamento são informações meteorológicas relevantes no recorte consultado."
-      ],
-      "reference": {
-        "referenceId": "V-03",
-        "base": "Lobo, P. R. V.; Soares, C. A.",
-        "publication": "Meteorologia e Oceanografia",
-        "edition": "4ª edição, 2019",
-        "section": "Capítulo I, §2.5 — nuvens; Capítulo III, §2 — Cumulonimbus",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · interpretação de nuvens e previsão do tempo",
-        "evidence": "O recorte consultado associa Cirrus com garras e acentuado deslocamento em direção à embarcação à aproximação de mau tempo e de Cumulonimbus, enquanto Cirrus parada pode caracterizar ar seco e bom tempo.",
-        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
-      }
+      "id": "thu-r2-cirrus-claws-approach", "category": "review", "axis": "V", "kind": "Correção de confusão · interpretação de Cirrus",
+      "stem": "Durante a observação meteorológica, o navegante identifica Cirrus com garras, com acentuado deslocamento em direção à embarcação. Segundo Lobo e Soares, essa configuração indica mais provavelmente:",
+      "options": ["aproximação de mau tempo, associada à presença de Cumulonimbus com Cirrus no topo.", "dissipação de convecção e estabilização prolongada do tempo.", "formação exclusiva de nevoeiro de radiação junto à superfície.", "passagem de ar seco sem desenvolvimento vertical de nuvens."], "correct": 0,
+      "explanation": "O deslocamento acentuado das Cirrus com garras em direção à embarcação é apresentado como indício de mau tempo se aproximando, com Cumulonimbus e Cirrus em seu topo.",
+      "comments": ["Correta: corresponde à interpretação operacional descrita no recorte consultado.", "Incorreta: a configuração aponta aproximação, não dissipação, da atividade convectiva.", "Incorreta: nevoeiro de radiação é fenômeno de baixos níveis e não é a indicação atribuída às Cirrus com garras.", "Incorreta: contradiz a associação do sinal com Cumulonimbus e mau tempo em aproximação."],
+      "reference": {"referenceId": "V-03", "base": "Lobo, P. R. V.; Soares, C. A.", "publication": "Meteorologia e Oceanografia", "edition": "4ª edição, 2019", "section": "Capítulo I, §2.5 — nuvens", "syllabus": "Eixo V — Meteorologia/Oceanografia · interpretação de nuvens e previsão do tempo", "evidence": "O recorte consultado relaciona Cirrus com garras e acentuado deslocamento em direção à embarcação à aproximação de mau tempo, com Cumulonimbus e Cirrus no topo.", "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"}
     },
     {
-      "id": "wed-r3-underway-without-making-way",
-      "category": "review",
-      "axis": "III",
-      "kind": "Revisão FSRS vencida · underway e making way",
-      "stem": "Uma embarcação está à deriva, sem seguimento na água, com máquinas paradas, mas não está fundeada, amarrada à terra nem encalhada. Para fins do RIPEAM, qual classificação está correta?",
-      "options": [
-        "Não está em movimento, pois máquina parada exclui a condição de underway.",
-        "Está em movimento (underway), embora não esteja com seguimento na água (making way).",
-        "Está fundeada por equiparação, porque não possui velocidade sobre o fundo.",
-        "Está encalhada por equiparação, até que volte a ter governo."
-      ],
-      "correct": 1,
-      "explanation": "Underway é definido negativamente: não estar fundeada, amarrada à terra ou encalhada. A existência de seguimento na água é uma condição adicional e distinta.",
-      "comments": [
-        "Incorreta: o estado da máquina não integra a definição de underway.",
-        "Correta: separa a situação jurídica de underway da condição cinemática de making way.",
-        "Incorreta: ausência de velocidade não transforma a embarcação em fundeada.",
-        "Incorreta: falta de seguimento ou governo não equivale a estar fisicamente encalhada."
-      ],
-      "reference": {
-        "referenceId": "III-16",
-        "base": "COLREG 1972 / RIPEAM",
-        "publication": "COLREG — Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte A, Regra 3(i) — definição de underway",
-        "syllabus": "Eixo III — Navegação em Águas Restritas · definições gerais do RIPEAM",
-        "evidence": "A Regra 3(i) define underway como a condição de não estar fundeada, amarrada à terra ou encalhada; não exige propulsão ativa nem seguimento na água.",
-        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
-      }
+      "id": "thu-r3-rule19-radar-alterations", "category": "review", "axis": "III", "kind": "Revisão vencida · Regra 19 do RIPEAM",
+      "stem": "Em visibilidade restrita, uma embarcação detecta outra somente pelo radar e conclui que há risco de colisão. Se a ação de evitar consistir em alteração de rumo, a Regra 19 determina que, tanto quanto possível, se evite:",
+      "options": ["guinar para boreste para embarcação à vante do través e guinar para longe de embarcação pelo través.", "guinar para bombordo para embarcação à vante do través, salvo se estiver sendo alcançada, e guinar na direção de embarcação pelo través ou por ante-a-ré do través.", "qualquer guinada para boreste, independentemente da marcação do contato.", "reduzir a velocidade quando o sinal de cerração for ouvido aparentemente à vante do través."], "correct": 1,
+      "explanation": "A Regra 19(d) lista exatamente essas duas alterações a evitar: para bombordo diante de contato à vante do través, exceto alcançado, e em direção a contato pelo través ou por ante-a-ré dele.",
+      "comments": ["Incorreta: essas ações afastam-se das duas proibições condicionais enunciadas pela Regra 19(d).", "Correta: reproduz as duas cautelas de alteração de rumo para contato detectado apenas por radar.", "Incorreta: a regra não estabelece proibição geral de guinar para boreste.", "Incorreta: a redução é medida prevista na Regra 19(e), não uma alteração de rumo que deva ser evitada."],
+      "reference": {"referenceId": "III-16", "base": "COLREG 1972 / RIPEAM", "publication": "COLREG — Consolidated Edition 2018", "edition": "2018", "section": "Parte B, Seção III, Regra 19(d) — conduta em visibilidade restrita", "syllabus": "Eixo III — Navegação em Águas Restritas · ação anticolisão por radar", "evidence": "O recorte consultado manda evitar, tanto quanto possível, alteração para bombordo diante de embarcação à vante do través, exceto alcançada, e alteração em direção a embarcação pelo través ou por ante-a-ré do través.", "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"}
     },
     {
-      "id": "wed-r4-pilot-ladder-spreaders",
-      "category": "review",
-      "axis": "II",
-      "kind": "Revisão FSRS vencida · degraus separadores da escada de prático",
-      "stem": "Uma escada de prático possui oito degraus. Qual arranjo de degraus separadores atende à Resolução A.1045(27)?",
-      "options": [
-        "Dispensá-los, pois só são exigidos em escadas com mais de nove degraus.",
-        "Instalar o separador mais baixo no quinto degrau a partir de baixo, com comprimento mínimo de 1,8 m.",
-        "Instalar o primeiro separador no terceiro degrau a partir de baixo, com comprimento mínimo de 1,2 m.",
-        "Instalar qualquer separador acima do quinto degrau, sem requisito de comprimento, desde que a escada não torça."
-      ],
-      "correct": 1,
-      "explanation": "Escadas com mais de cinco degraus devem ter separadores de pelo menos 1,8 m. O separador mais baixo deve ocupar o quinto degrau a partir de baixo; entre separadores consecutivos não podem existir mais de nove degraus.",
-      "comments": [
-        "Incorreta: a exigência começa quando a escada possui mais de cinco degraus.",
-        "Correta: reproduz a posição e o comprimento mínimo estabelecidos.",
-        "Incorreta: tanto a posição quanto o comprimento mínimo estão abaixo do exigido.",
-        "Incorreta: posição, comprimento e intervalo são especificados pela resolução."
-      ],
-      "reference": {
-        "referenceId": "II-06",
-        "base": "IMO — Resolution A.1045(27)",
-        "publication": "Pilot Transfer Arrangements",
-        "edition": "A.1045(27), adotada em 30 de novembro de 2011",
-        "section": "Anexo, §2.1.4 — spreader steps",
-        "syllabus": "Eixo II — Arte Naval · transferência de prático e construção da escada",
-        "evidence": "O recorte consultado exige separadores de pelo menos 1,8 m em escadas com mais de cinco degraus, coloca o mais baixo no quinto degrau a partir de baixo e limita a nove degraus o intervalo entre separadores.",
-        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.1045(27).pdf"
-      }
+      "id": "thu-r4-initial-turning-criterion", "category": "review", "axis": "I", "kind": "Revisão vencida · capacidade inicial de guinada",
+      "stem": "No critério de capacidade inicial de guinada da MSC.137(76), após aplicar 10° de leme para um bordo, qual condição deve ser atendida?",
+      "options": ["O navio não deve percorrer mais de 2,5 L até que a proa se altere 10° em relação ao rumo inicial.", "O avanço não deve exceder 4,5 L quando a proa se alterar 90°.", "O diâmetro tático não deve exceder 5 L ao completar 360°.", "O navio deve atingir 10° de proa em exatamente 2,5 minutos."], "correct": 0,
+      "explanation": "A capacidade inicial é satisfatória se o navio, com 10° de leme, não tiver percorrido mais de 2,5 comprimentos quando a proa houver mudado 10°.",
+      "comments": ["Correta: reúne ângulo de leme, mudança de proa e distância máxima do critério específico.", "Incorreta: 4,5 L é o limite de avanço da curva de giro, outro critério.", "Incorreta: 5 L é o limite do diâmetro tático, não da guinada inicial.", "Incorreta: 2,5 refere-se a comprimentos do navio, não a minutos."],
+      "reference": {"referenceId": "I-07", "base": "IMO — Resolution MSC.137(76)", "publication": "Standards for Ship Manoeuvrability", "edition": "MSC.137(76), adotada em 4 de dezembro de 2002", "section": "Anexo, §5.3.2 — initial turning ability", "syllabus": "Eixo I — Manobrabilidade · critérios mínimos de capacidade inicial de guinada", "evidence": "O recorte consultado fixa aplicação de 10° de leme e distância máxima de 2,5 L até a alteração de 10° da proa em relação ao rumo inicial.", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"}
     },
     {
-      "id": "wed-c1-conventional-stern-tug-limit",
-      "category": "current",
-      "axis": "II",
-      "kind": "Tema principal · limitações do rebocador convencional",
-      "stem": "Um rebocador convencional trabalha como rebocador de popa, com cabo passado, enquanto o navio assistido supera aproximadamente 3 nós de seguimento. Segundo Hensen, qual limitação deve ser antecipada?",
-      "options": [
-        "O rebocador passa a produzir força indireta ilimitada, independentemente da posição do ponto de reboque.",
-        "O rebocador pode ficar restrito a um só bordo, sem conseguir mudar de lado nem controlar a velocidade do navio, além do risco de girting.",
-        "A velocidade melhora a capacidade de cruzar a popa e elimina a força transversal no cabo.",
-        "O único efeito esperado é perda de bollard pull estático, sem implicação para posicionamento ou estabilidade."
-      ],
-      "correct": 1,
-      "explanation": "Com o ponto de reboque próximo de meia-nau, o rebocador convencional tem severas limitações na popa de navio com seguimento acima de cerca de 3 nós: pode ficar preso a um bordo, não controlar a velocidade e sofrer girting.",
-      "comments": [
-        "Incorreta: o ponto de reboque e a velocidade limitam fortemente essa operação.",
-        "Correta: reúne as limitações e o risco explicitados no capítulo 2.",
-        "Incorreta: o aumento de velocidade dificulta, em vez de facilitar, a mudança segura de bordo.",
-        "Incorreta: posicionamento, controle de velocidade e girting são consequências operacionais centrais."
-      ],
-      "reference": {
-        "referenceId": "II-09",
-        "base": "Hensen, Henk",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4ª edição, 2021",
-        "section": "Capítulo 2, §2.3.4 — conventional tugs in ship handling",
-        "syllabus": "Eixo II — Arte Naval · capacidades e limitações dos tipos de rebocador",
-        "evidence": "O recorte consultado informa que, acima de aproximadamente 3 nós, o rebocador convencional de popa pode operar apenas em um bordo, não consegue mudar de lado nem controlar a velocidade do navio e fica exposto a girting pelo ponto de reboque próximo de meia-nau.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
-      }
+      "id": "thu-c1-pilotage-nature-objective", "category": "current", "axis": "IV", "kind": "Tema principal · natureza e finalidade da praticagem",
+      "stem": "À luz da Lei nº 14.813/2024, assinale a afirmativa correta sobre o serviço de praticagem:",
+      "options": ["É atividade pública delegada, voltada exclusivamente à eficiência econômica dos portos.", "É atividade essencial, de natureza privada, destinada ao interesse público da segurança da navegação, da salvaguarda da vida humana e da proteção ao meio ambiente.", "É atividade facultativa, cuja disponibilidade depende apenas da demanda comercial em cada porto.", "É atividade militar executada exclusivamente por servidores da autoridade marítima."], "correct": 1,
+      "explanation": "A lei qualifica a praticagem como atividade essencial e privada, vinculando seu objetivo aos três bens jurídicos indicados na alternativa correta.",
+      "comments": ["Incorreta: a lei atribui natureza privada e objetivos de segurança, vida humana e meio ambiente.", "Correta: corresponde aos elementos expressos no art. 12, §1º, introduzido pela Lei nº 14.813/2024.", "Incorreta: o serviço deve estar permanentemente disponível para continuidade e eficiência do tráfego.", "Incorreta: a execução cabe a práticos habilitados, sem transformar a atividade em função militar."],
+      "reference": {"referenceId": "IV-10", "base": "Brasil — Lei nº 14.813/2024", "publication": "Lei nº 14.813/2024 — Atividade de Praticagem", "edition": "Lei de 15 de janeiro de 2024", "section": "Art. 2º, alteração do art. 12, §§1º–3º, da Lei nº 9.537/1997", "syllabus": "Eixo IV — Legislação e Regulamentação · natureza e objetivos do serviço de praticagem", "evidence": "O texto consultado qualifica a praticagem como atividade essencial e privada, orientada à segurança da navegação, salvaguarda da vida humana e proteção ambiental, e exige disponibilidade permanente.", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14813.htm"}
     },
     {
-      "id": "wed-c2-tractor-layout",
-      "category": "current",
-      "axis": "II",
-      "kind": "Tema principal · configuração do tractor tug",
-      "stem": "Qual configuração caracteriza um tractor tug com propulsão cicloidal, conforme Tug Use in Port?",
-      "options": [
-        "Propulsão sob o corpo de vante e ponto de reboque situado próximo da popa.",
-        "Propulsão convencional fixa na popa e ponto de reboque na extremidade de vante.",
-        "Um único hélice central de passo fixo, sem skeg e com ponto de reboque a meia-nau.",
-        "Dois propulsores azimutais sob a popa e ausência de ponto de reboque a ré."
-      ],
-      "correct": 0,
-      "explanation": "No tractor tug Voith-Schneider, as unidades propulsoras ficam sob o corpo de vante, enquanto o ponto de reboque se localiza próximo da popa; essa separação é determinante para sua manobrabilidade.",
-      "comments": [
-        "Correta: corresponde à disposição descrita para o tractor tug cicloidal.",
-        "Incorreta: descreve aproximadamente a lógica de um rebocador reverso/ASD, não a do tractor tug tratado.",
-        "Incorreta: não corresponde à configuração de duas unidades cicloidais indicada pela obra.",
-        "Incorreta: dois azimutais sob a popa caracterizam o reverse-tractor, e não o tractor cicloidal."
-      ],
-      "reference": {
-        "referenceId": "II-09",
-        "base": "Hensen, Henk",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4ª edição, 2021",
-        "section": "Capítulo 2, §2.5.1 — tractor tugs with cycloidal propellers",
-        "syllabus": "Eixo II — Arte Naval · projeto e classificação dos rebocadores",
-        "evidence": "O recorte consultado localiza a propulsão do tractor tug sob o corpo de vante, aproximadamente a 0,25–0,30 LWL a partir de vante, e o ponto de reboque próximo da popa.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
-      }
+      "id": "thu-c2-pilotage-components-structure", "category": "current", "axis": "IV", "kind": "Tema principal · componentes e infraestrutura do serviço",
+      "stem": "Segundo a Lei nº 14.813/2024, o serviço de praticagem compreende quais elementos e a quem cabe manter sua infraestrutura e seus equipamentos?",
+      "options": ["Prático, rebocador e Capitania dos Portos; a manutenção cabe ao armador.", "Prático, lancha de prático e atalaia; os práticos respondem pela implantação e manutenção da infraestrutura e dos equipamentos necessários.", "Prático e VTS apenas; a manutenção cabe exclusivamente à Antaq.", "Atalaia, terminal e agência marítima; a manutenção cabe ao Estado."], "correct": 1,
+      "explanation": "O art. 12-A inclui prático, lancha de prático e atalaia, e atribui aos práticos a implantação e manutenção da estrutura e dos equipamentos do serviço.",
+      "comments": ["Incorreta: rebocador e Capitania não compõem a enumeração legal, e a obrigação não é atribuída ao armador.", "Correta: combina a composição legal com a responsabilidade estrutural prevista no parágrafo único.", "Incorreta: VTS não substitui lancha e atalaia, nem a Antaq recebe essa obrigação no dispositivo.", "Incorreta: terminal e agência marítima não integram a enumeração legal, e a manutenção não é imputada ao Estado."],
+      "reference": {"referenceId": "IV-10", "base": "Brasil — Lei nº 14.813/2024", "publication": "Lei nº 14.813/2024 — Atividade de Praticagem", "edition": "Lei de 15 de janeiro de 2024", "section": "Art. 2º, inclusão do art. 12-A na Lei nº 9.537/1997", "syllabus": "Eixo IV — Legislação e Regulamentação · organização do serviço de praticagem", "evidence": "O recorte consultado enumera prático, lancha de prático e atalaia e atribui aos práticos a implantação e a manutenção da infraestrutura e dos equipamentos necessários à execução do serviço.", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14813.htm"}
     },
     {
-      "id": "wed-c3-girting-speed-communication",
-      "category": "current",
-      "axis": "II",
-      "kind": "Tema principal · girting e comunicação operacional",
-      "stem": "Um navio segue em rumo constante com rebocador convencional passado na proa. A velocidade começa a aumentar enquanto o rebocador abre para um bordo. Qual avaliação é correta?",
-      "options": [
-        "Girting só ocorre em curvas; em rumo constante o aumento de velocidade não cria risco transversal.",
-        "O excesso de velocidade pode gerar girting mesmo em rumo constante, devendo o mestre do rebocador alertar o prático com antecedência.",
-        "Abrir para o bordo elimina o risco, pois alinha automaticamente o cabo com o eixo longitudinal do rebocador.",
-        "O risco depende apenas do comprimento do cabo e não exige coordenação entre prático e mestre do rebocador."
-      ],
-      "correct": 1,
-      "explanation": "Hensen ressalta que girting não se limita às curvas. Em rumo constante, velocidade excessiva pode impedir o rebocador de manter posição segura e gerar grande força transversal; comunicação antecipada é essencial.",
-      "comments": [
-        "Incorreta: a obra apresenta expressamente o caso de girting em rumo reto por velocidade excessiva.",
-        "Correta: identifica causa, mecanismo operacional e barreira de comunicação.",
-        "Incorreta: abrir para o bordo pode aumentar o ângulo do cabo e agravar a força transversal.",
-        "Incorreta: velocidade, posição e comunicação são fatores decisivos, não apenas o comprimento do cabo."
-      ],
-      "reference": {
-        "referenceId": "II-09",
-        "base": "Hensen, Henk",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4ª edição, 2021",
-        "section": "Capítulo 6, §6.3 — tug safety and girting",
-        "syllabus": "Eixo II — Arte Naval · segurança de rebocadores e interação com o navio",
-        "evidence": "O recorte consultado explica que girting pode ocorrer em rumo reto quando a velocidade do navio é excessiva e recomenda que o mestre do rebocador informe o prático em tempo se considerar inseguro o aumento de velocidade.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
-      }
+      "id": "thu-c3-course-speed-guidance", "category": "current", "axis": "IV", "kind": "Tema principal · assessoria de rumos e velocidades",
+      "stem": "Quando uma embarcação navega em zona de praticagem, quem pode transmitir ao comandante, na forma da Lei nº 14.813/2024, as orientações sobre rumos e velocidades em assessoria?",
+      "options": ["Exclusivamente o prático.", "Qualquer operador da atalaia, ainda que não seja prático.", "O representante do armador, independentemente de habilitação.", "Somente a autoridade portuária, por intermédio do VTS."], "correct": 0,
+      "explanation": "O art. 15-B reserva aos práticos a transmissão dessas orientações aos comandantes quando as embarcações estiverem navegando nas zonas de praticagem.",
+      "comments": ["Correta: corresponde à exclusividade expressamente estabelecida para a assessoria ao comandante.", "Incorreta: a atalaia integra o serviço, mas isso não confere ao operador a atribuição exclusiva do prático.", "Incorreta: representação comercial do armador não substitui a habilitação profissional exigida.", "Incorreta: o dispositivo não transfere essa assessoria exclusivamente à autoridade portuária ou ao VTS."],
+      "reference": {"referenceId": "IV-10", "base": "Brasil — Lei nº 14.813/2024", "publication": "Lei nº 14.813/2024 — Atividade de Praticagem", "edition": "Lei de 15 de janeiro de 2024", "section": "Art. 2º, inclusão do art. 15-B na Lei nº 9.537/1997", "syllabus": "Eixo IV — Legislação e Regulamentação · competências na assessoria de praticagem", "evidence": "O texto consultado reserva aos práticos as orientações sobre rumos e velocidades transmitidas aos comandantes, em assessoria, quando as embarcações navegam em zonas de praticagem.", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14813.htm"}
     },
     {
-      "id": "wed-x1-pilotage-passage-plan",
-      "category": "rotation",
-      "axis": "III",
-      "kind": "Eixo alternado · planejamento da pilotagem",
-      "stem": "Ao se aproximar da estação de prático, como deve ser tratado o plano de viagem pela equipe do passadiço?",
-      "options": [
-        "O plano termina no ponto de embarque do prático, porque a partir dali prevalece somente o conhecimento local.",
-        "O plano continua até o berço, inclui o trecho conduzido pelo prático e contempla acompanhamento, abortagem e contingências.",
-        "O plano é suspenso até que o prático informe verbalmente sua derrota, sem necessidade de comparação posterior.",
-        "O plano permanece válido apenas para velocidade e ETA; perigos e margens passam a ser responsabilidade exclusiva do VTS."
-      ],
-      "correct": 1,
-      "explanation": "Bridge Team Management afirma que o planejamento não termina no embarque do prático: deve prosseguir de mar a berço, permitir comparação com a derrota prevista e incluir opções de abortagem e contingência.",
-      "comments": [
-        "Incorreta: a pilotagem integra o plano de passagem de berço a berço.",
-        "Correta: preserva planejamento, monitoramento e alternativas de segurança durante a pilotagem.",
-        "Incorreta: a derrota do prático deve ser discutida e acompanhada, não aceita sem verificação.",
-        "Incorreta: perigos, margens e monitoramento continuam sob responsabilidade da equipe do navio."
-      ],
-      "reference": {
-        "referenceId": "III-01",
-        "base": "Swift, A. J.; Bailey, T. J.",
-        "publication": "Bridge Team Management: A Practical Guide",
-        "edition": "2ª edição, 2004",
-        "section": "Capítulo 7 — Planning; navigating with a pilot on board",
-        "syllabus": "Eixo III — Navegação em Águas Restritas · planejamento e pilotagem",
-        "evidence": "O recorte consultado determina que o plano continue de mar ao berço, incluindo as áreas em que o prático tem a condução, para comparação do progresso com a derrota planejada e preparação de abortagem e contingências.",
-        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
-      }
+      "id": "thu-x1-smcp-advice-response", "category": "rotation", "axis": "VI", "kind": "Eixo alternado · resposta a advice/instruction",
+      "stem": "Uma estação VTS transmite: ‘ADVICE. Do not overtake the vessel North of you.’ Se o navio aceita a orientação, qual resposta segue o padrão da IMO SMCP?",
+      "options": ["Roger. Advice received.", "Yes, understood.", "I will not overtake the vessel North of me.", "No overtaking intended, over and out."], "correct": 2,
+      "explanation": "Ao aceitar uma INSTRUCTION ou ADVICE, a IMO SMCP manda responder com ‘I will/can...’ e repetir integralmente a instrução ou orientação pertinente.",
+      "comments": ["Incorreta: confirma recepção, mas não repete a orientação no formato prescrito.", "Incorreta: a resposta genérica não oferece a salvaguarda da repetição integral.", "Correta: usa ‘I will’ e repete a ação, ajustando a referência para ‘North of me’.", "Incorreta: emprega fraseologia não padronizada e não reproduz a orientação recebida."],
+      "reference": {"referenceId": "VI-01", "base": "IMO — Resolution A.918(22)", "publication": "IMO Standard Marine Communication Phrases (SMCP)", "edition": "A.918(22), adotada em 29 de novembro de 2001", "section": "General, §4.5 — Responses", "syllabus": "Eixo VI — Comunicações · respostas padronizadas a instruction e advice", "evidence": "O recorte consultado determina resposta afirmativa com ‘I will/can’ seguida da instruction ou advice por extenso e apresenta esse mesmo exemplo de ultrapassagem.", "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"}
     },
     {
-      "id": "wed-x2-pilot-monitoring-responsibility",
-      "category": "rotation",
-      "axis": "III",
-      "kind": "Eixo alternado · responsabilidades e monitoramento no BRM",
-      "stem": "Durante a pilotagem, o prático tem a condução e determina rumos e velocidades. Qual atuação da equipe do navio está de acordo com o BRM?",
-      "options": [
-        "Suspender o monitoramento para não interferir na autoridade técnica do prático.",
-        "Manter o comandante responsável pela segurança, com o OOW monitorando derrota e velocidade e comunicando desvios ao comandante.",
-        "Transferir ao prático toda responsabilidade pela segurança até o desembarque.",
-        "Monitorar apenas se o prático solicitar, limitando a troca comandante–prático às características do motor."
-      ],
-      "correct": 1,
-      "explanation": "A presença do prático não retira a responsabilidade do comandante. O OOW deve acompanhar o progresso como em qualquer outra condição, identificar desvios de derrota ou velocidade e manter o comandante informado.",
-      "comments": [
-        "Incorreta: o monitoramento independente é uma barreira essencial contra cadeias de erro.",
-        "Correta: distribui responsabilidade, acompanhamento e comunicação conforme o capítulo 7.",
-        "Incorreta: o prático é o especialista local, mas a responsabilidade do comandante permanece.",
-        "Incorreta: o acompanhamento é contínuo e a troca inclui rota, velocidades, assistência, contingências e peculiaridades do navio."
-      ],
-      "reference": {
-        "referenceId": "III-01",
-        "base": "Swift, A. J.; Bailey, T. J.",
-        "publication": "Bridge Team Management: A Practical Guide",
-        "edition": "2ª edição, 2004",
-        "section": "Capítulo 7 — Master/Pilot Information Exchange; Responsibility; Monitoring",
-        "syllabus": "Eixo III — Navegação em Águas Restritas · BRM com prático a bordo",
-        "evidence": "O recorte consultado mantém o comandante responsável pela segurança e orienta o OOW a monitorar derrota e velocidade mesmo com o prático na condução, reportando desvios ao comandante.",
-        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
-      }
+      "id": "thu-x2-smcp-correction-sequence", "category": "rotation", "axis": "VI", "kind": "Eixo alternado · correção de mensagem",
+      "stem": "Durante uma comunicação, o oficial informa por engano velocidade de 14 nós, quando o valor correto é 12 nós. Qual sequência segue a IMO SMCP para corrigir a mensagem?",
+      "options": ["Cancel speed fourteen. New speed twelve.", "Mistake. Correction, my present speed is one-two knots.", "Negative fourteen. Affirmative twelve knots.", "Repeat speed: twelve knots."], "correct": 1,
+      "explanation": "A seção de correções prescreve ‘Mistake’, seguida de ‘Correction’ e da parte corrigida da mensagem; números comuns são pronunciados dígito a dígito.",
+      "comments": ["Incorreta: ‘Cancel’ e ‘New speed’ não constituem a fórmula de correção prevista.", "Correta: mantém a ordem Mistake → Correction → trecho corrigido e pronuncia 12 em dígitos separados.", "Incorreta: negative/affirmative são usados para respostas, não para essa correção.", "Incorreta: ‘Repeat’ protege ou solicita repetição; não identifica o erro nem introduz a correção."],
+      "reference": {"referenceId": "VI-01", "base": "IMO — Resolution A.918(22)", "publication": "IMO Standard Marine Communication Phrases (SMCP)", "edition": "A.918(22), adotada em 29 de novembro de 2001", "section": "General, §7 — Corrections; §10 — Numbers", "syllabus": "Eixo VI — Comunicações · correções e pronúncia de números", "evidence": "O recorte consultado estabelece ‘Mistake’ seguido de ‘Correction’ e da parte corrigida, ilustrando a mudança de 14 para 12 nós; também manda pronunciar números em dígitos separados, exceto ordens de leme.", "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"}
     },
     {
-      "id": "wed-o1-pscpp2006-q7",
-      "category": "official",
-      "axis": "II",
-      "kind": "Questão oficial histórica · PSCPP 2006",
-      "stem": "O Prático Aroldo está a bordo de um rebocador convencional, parado em relação ao fundo, equipado com dois propulsores de passo fixo e dois lemes. Será necessário mover a embarcação somente com movimento lateral para boreste, sem alterar o rumo. Desprezando as forças ambientais, qual comando pode produzir a deriva lateral desejada?",
-      "options": [
-        "Máquina do propulsor de boreste para ré, máquina do propulsor de bombordo para vante e lemes para bombordo.",
-        "Máquina do propulsor de boreste para ré, máquina do propulsor de bombordo parada, leme de bombordo para boreste e leme de boreste a meio.",
-        "Máquina do propulsor de boreste para vante, máquina do propulsor de bombordo para ré e lemes para boreste.",
-        "Máquina do propulsor de boreste parada, máquina do propulsor de bombordo para ré e lemes para bombordo.",
-        "Ambas as máquinas para ré, leme de bombordo para bombordo e leme de boreste para boreste."
-      ],
-      "correct": 0,
-      "explanation": "Em rebocador convencional de dois eixos com hélices de passo fixo girando para dentro, a combinação boreste a ré, bombordo a vante e lemes a bombordo produz o flanking para boreste sem adquirir seguimento significativo.",
-      "comments": [
-        "Correta: é a combinação indicada por Hensen e corresponde ao gabarito A da prova.",
-        "Incorreta: parar um propulsor elimina o binário e a composição de forças necessária ao movimento lateral puro.",
-        "Incorreta: inverte máquinas e lemes, produzindo a tendência lateral oposta.",
-        "Incorreta: com apenas o propulsor de bombordo a ré não se obtém a composição equilibrada para flanking.",
-        "Incorreta: ambas as máquinas a ré geram seguimento a ré e não o movimento lateral pretendido."
-      ],
-      "reference": {
-        "referenceId": "II-09",
-        "base": "Hensen, Henk",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4ª edição, 2021",
-        "section": "Capítulo 2, §2.3 — twin screw conventional tugs; flanking",
-        "syllabus": "Eixo II — Arte Naval · emprego e manobra de rebocadores",
-        "evidence": "O recorte consultado descreve o flanking para boreste com propulsor de boreste a ré, propulsor de bombordo a vante e lemes a bombordo, combinação que desloca lateralmente o rebocador de dois eixos.",
-        "origin": "PSCPP 2006 — prova escrita oficial, questão 7 — gabarito A; redação adaptada apenas para expansão das abreviaturas BE e BB",
-        "url": "https://www.marinha.mil.br/dpc/processo-seletivo"
-      }
+      "id": "thu-o1-pscpp2006-q2", "category": "official", "axis": "VI", "kind": "Questão oficial histórica · PSCPP 2006",
+      "stem": "Bandeira retangular nas cores preto, amarelo, azul e encarnado em quatro triângulos, formados pelas diagonais, sendo preto o triângulo junto à tralha, amarelo o superior, azul o da extremidade e encarnado o inferior, de acordo com o Código Internacional de Sinais (CIS), significa:",
+      "options": ["Embarcação se dirigindo para um perigo.", "Embarcação deve suspender a execução do que está fazendo e observar os sinais a serem mostrados.", "Embarcação deve parar imediatamente.", "Embarcação solicitando rebocador.", "Embarcação solicitando assistência médica."], "correct": 3,
+      "explanation": "A descrição corresponde à bandeira Z (Zulu). Como sinal de uma letra do CIS, Z significa ‘I require a tug’, isto é, solicito um rebocador.",
+      "comments": ["Incorreta: esse não é o significado do sinal de uma letra Z.", "Incorreta: a ordem de suspender o que se faz não corresponde à bandeira descrita.", "Incorreta: a bandeira Z não significa parar imediatamente.", "Correta: Z é o sinal de uma letra para solicitação de rebocador.", "Incorreta: assistência médica é comunicada por outro sinal do Código."],
+      "reference": {"referenceId": "VI-03", "base": "IMO — International Code of Signals", "publication": "International Code of Signals", "edition": "2005", "section": "Capítulo XI — Single-letter signals; General Section, Towing — Tugs", "syllabus": "Eixo VI — Comunicações · sinais de uma letra e solicitações operacionais", "evidence": "O recorte consultado identifica o sinal Z como solicitação de um ou mais rebocadores; a prova oficial associa a bandeira quadripartida descrita a essa resposta.", "origin": "PSCPP 2006 — prova escrita oficial, questão 2 — gabarito D; transcrição integral, sem adaptação", "url": "https://www.marinha.mil.br/dpc/processo-seletivo"}
     }
   ]
 }
