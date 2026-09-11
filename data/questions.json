@@ -1,91 +1,329 @@
 {
-  "roundId": "pilotage-law-smcp-review-2026-09-10",
-  "label": "Rodada adaptativa de quinta-feira",
-  "title": "Marco legal da praticagem e comunicações padronizadas",
+  "roundId": "tides-currents-manoeuvrability-2026-09-11",
+  "label": "Rodada adaptativa de sexta-feira",
+  "title": "Marés, correntes e decisões de navegação",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões vencidas · Lei nº 14.813/2024 · IMO SMCP · Código Internacional de Sinais",
+  "path": "Revisões vencidas · marés e correntes de maré · manobrabilidade · consolidação legal",
   "method": "4–3–2–1",
-  "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
+  "mixPlan": {
+    "review": 4,
+    "current": 3,
+    "rotation": 2,
+    "official": 1
+  },
   "questions": [
     {
-      "id": "thu-r1-overshoot-pair-lv22", "category": "review", "axis": "I", "kind": "Revisão vencida · overshoot 10°/10°",
-      "stem": "No teste de zig-zag 10°/10°, um navio apresenta L/V igual a 22 s. Quais são, respectivamente, os limites do primeiro e do segundo ângulo de overshoot segundo a MSC.137(76)?",
-      "options": ["16° e 34°.", "22° e 34°.", "16° e 25°.", "27° e 39,5°."], "correct": 0,
-      "explanation": "Para 10 s ≤ L/V < 30 s, o primeiro limite é 5 + 0,5(L/V) = 16° e o segundo é 17,5 + 0,75(L/V) = 34°.",
-      "comments": ["Correta: aplica a fórmula específica de cada overshoot ao valor L/V = 22 s.", "Incorreta: 22 é o valor de L/V, não o limite do primeiro overshoot.", "Incorreta: 25° é o limite do primeiro overshoot no zig-zag 20°/20°, não do segundo no 10°/10°.", "Incorreta: soma L/V diretamente às constantes e desconsidera os coeficientes 0,5 e 0,75."],
-      "reference": {"referenceId": "I-07", "base": "IMO — Resolution MSC.137(76)", "publication": "Standards for Ship Manoeuvrability", "edition": "MSC.137(76), adotada em 4 de dezembro de 2002", "section": "Anexo, §5.3.3.1–5.3.3.3 — yaw-checking and course-keeping abilities", "syllabus": "Eixo I — Manobrabilidade · critérios dos ângulos de overshoot", "evidence": "O recorte consultado estabelece, para 10 s ≤ L/V < 30 s, 5 + 0,5(L/V) graus para o primeiro overshoot e 17,5 + 0,75(L/V) graus para o segundo no zig-zag 10°/10°.", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"}
+      "id": "fri-r1-smcp-numbers-wheel-exception",
+      "category": "review",
+      "axis": "VI",
+      "kind": "Revisão FSRS vencida · números na IMO SMCP",
+      "stem": "Em comunicação marítima padronizada, o oficial informa o rumo 150° e, em seguida, transmite uma ordem de leme de 15°. Como esses números devem ser pronunciados segundo a IMO SMCP?",
+      "options": [
+        "“One hundred and fifty” e “one-five”.",
+        "“One-five-zero” e “fifteen”.",
+        "“One-five-zero” e “one-five”.",
+        "“One-fifty” e “fifteen degrees”."
+      ],
+      "correct": 1,
+      "explanation": "Os números são normalmente pronunciados dígito a dígito; a própria SMCP ressalva que ângulos de leme em ordens de governo são pronunciados como números inteiros, por exemplo “fifteen”.",
+      "comments": [
+        "Incorreta: a primeira forma não segue a pronúncia dígito a dígito e a segunda ignora a exceção da ordem de leme.",
+        "Correta: aplica a regra geral ao rumo e a exceção expressa ao ângulo de leme.",
+        "Incorreta: o rumo está correto, mas a ordem de leme deve ser pronunciada “fifteen”.",
+        "Incorreta: “one-fifty” não é a forma padronizada para o rumo e a ordem dispensa acrescentar “degrees”."
+      ],
+      "reference": {
+        "referenceId": "VI-01",
+        "base": "IMO — Resolution A.918(22)",
+        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
+        "edition": "A.918(22), adotada em 29 de novembro de 2001",
+        "section": "General, §10 — Numbers; §13 — Courses",
+        "syllabus": "Eixo VI — Comunicações · pronúncia de números, rumos e ordens de leme",
+        "evidence": "O recorte consultado manda pronunciar números em dígitos separados, exemplifica 150 como “one-five-zero” e estabelece exceção para ângulos de leme, pronunciados como “fifteen” ou “twenty”.",
+        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
+      }
     },
     {
-      "id": "thu-r2-cirrus-claws-approach", "category": "review", "axis": "V", "kind": "Correção de confusão · interpretação de Cirrus",
-      "stem": "Durante a observação meteorológica, o navegante identifica Cirrus com garras, com acentuado deslocamento em direção à embarcação. Segundo Lobo e Soares, essa configuração indica mais provavelmente:",
-      "options": ["aproximação de mau tempo, associada à presença de Cumulonimbus com Cirrus no topo.", "dissipação de convecção e estabilização prolongada do tempo.", "formação exclusiva de nevoeiro de radiação junto à superfície.", "passagem de ar seco sem desenvolvimento vertical de nuvens."], "correct": 0,
-      "explanation": "O deslocamento acentuado das Cirrus com garras em direção à embarcação é apresentado como indício de mau tempo se aproximando, com Cumulonimbus e Cirrus em seu topo.",
-      "comments": ["Correta: corresponde à interpretação operacional descrita no recorte consultado.", "Incorreta: a configuração aponta aproximação, não dissipação, da atividade convectiva.", "Incorreta: nevoeiro de radiação é fenômeno de baixos níveis e não é a indicação atribuída às Cirrus com garras.", "Incorreta: contradiz a associação do sinal com Cumulonimbus e mau tempo em aproximação."],
-      "reference": {"referenceId": "V-03", "base": "Lobo, P. R. V.; Soares, C. A.", "publication": "Meteorologia e Oceanografia", "edition": "4ª edição, 2019", "section": "Capítulo I, §2.5 — nuvens", "syllabus": "Eixo V — Meteorologia/Oceanografia · interpretação de nuvens e previsão do tempo", "evidence": "O recorte consultado relaciona Cirrus com garras e acentuado deslocamento em direção à embarcação à aproximação de mau tempo, com Cumulonimbus e Cirrus no topo.", "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"}
+      "id": "fri-r2-msc137-compliance-methods",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão FSRS vencida · demonstração de conformidade",
+      "stem": "A MSC.137(76) admite duas formas de demonstrar conformidade com os padrões de manobrabilidade. Qual alternativa as descreve corretamente?",
+      "options": [
+        "Somente provas em escala real; previsões matemáticas não podem ser usadas na fase de projeto.",
+        "Ensaios em modelo e/ou previsões computacionais na fase de projeto, validados por provas em escala real, ou demonstração direta pelos resultados das provas em escala real.",
+        "Simulação computacional isolada, sem validação posterior, ou declaração do estaleiro aceita automaticamente pela Administração.",
+        "Provas em escala real apenas em lastro ou comparação exclusiva com navio semelhante."
+      ],
+      "correct": 1,
+      "explanation": "A resolução permite previsão na fase de projeto por modelo e/ou cálculo, acompanhada de validação em escala real, e também permite demonstrar conformidade diretamente por provas em escala real conduzidas segundo o padrão.",
+      "comments": [
+        "Incorreta: a resolução admite expressamente modelos e previsões computacionais.",
+        "Correta: reúne os dois caminhos previstos no §2.1.",
+        "Incorreta: a validação em escala real integra o primeiro caminho e a Administração mantém poder de avaliação.",
+        "Incorreta: a condição preferencial é plena carga e a comparação com navio semelhante não substitui os dois métodos."
+      ],
+      "reference": {
+        "referenceId": "I-07",
+        "base": "IMO — Resolution MSC.137(76)",
+        "publication": "Standards for Ship Manoeuvrability",
+        "edition": "MSC.137(76), adotada em 4 de dezembro de 2002",
+        "section": "Anexo, §2.1 — General",
+        "syllabus": "Eixo I — Manobrabilidade · aplicação e demonstração de conformidade",
+        "evidence": "O recorte consultado apresenta dois métodos: previsão de projeto por ensaio em modelo e/ou modelo matemático, com validação em escala real, e demonstração baseada diretamente nos resultados de provas em escala real.",
+        "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
+      }
     },
     {
-      "id": "thu-r3-rule19-radar-alterations", "category": "review", "axis": "III", "kind": "Revisão vencida · Regra 19 do RIPEAM",
-      "stem": "Em visibilidade restrita, uma embarcação detecta outra somente pelo radar e conclui que há risco de colisão. Se a ação de evitar consistir em alteração de rumo, a Regra 19 determina que, tanto quanto possível, se evite:",
-      "options": ["guinar para boreste para embarcação à vante do través e guinar para longe de embarcação pelo través.", "guinar para bombordo para embarcação à vante do través, salvo se estiver sendo alcançada, e guinar na direção de embarcação pelo través ou por ante-a-ré do través.", "qualquer guinada para boreste, independentemente da marcação do contato.", "reduzir a velocidade quando o sinal de cerração for ouvido aparentemente à vante do través."], "correct": 1,
-      "explanation": "A Regra 19(d) lista exatamente essas duas alterações a evitar: para bombordo diante de contato à vante do través, exceto alcançado, e em direção a contato pelo través ou por ante-a-ré dele.",
-      "comments": ["Incorreta: essas ações afastam-se das duas proibições condicionais enunciadas pela Regra 19(d).", "Correta: reproduz as duas cautelas de alteração de rumo para contato detectado apenas por radar.", "Incorreta: a regra não estabelece proibição geral de guinar para boreste.", "Incorreta: a redução é medida prevista na Regra 19(e), não uma alteração de rumo que deva ser evitada."],
-      "reference": {"referenceId": "III-16", "base": "COLREG 1972 / RIPEAM", "publication": "COLREG — Consolidated Edition 2018", "edition": "2018", "section": "Parte B, Seção III, Regra 19(d) — conduta em visibilidade restrita", "syllabus": "Eixo III — Navegação em Águas Restritas · ação anticolisão por radar", "evidence": "O recorte consultado manda evitar, tanto quanto possível, alteração para bombordo diante de embarcação à vante do través, exceto alcançada, e alteração em direção a embarcação pelo través ou por ante-a-ré do través.", "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"}
+      "id": "fri-r3-trial-depth-mean-draught",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão FSRS vencida · profundidade da área de prova",
+      "stem": "Um navio com calado médio de 8,0 m realizará provas de manobrabilidade. Segundo a MSC/Circ.1053, qual profundidade satisfaz a condição de águas profundas e irrestritas?",
+      "options": [
+        "Exatamente 16 m.",
+        "Exatamente 24 m.",
+        "Exatamente 32 m.",
+        "Mais de 32 m."
+      ],
+      "correct": 3,
+      "explanation": "A profundidade deve exceder quatro vezes o calado médio. Quatro vezes 8,0 m são 32 m; portanto, igualdade não basta.",
+      "comments": [
+        "Incorreta: corresponde a apenas duas vezes o calado médio.",
+        "Incorreta: corresponde a três vezes o calado médio.",
+        "Incorreta: a circular usa “exceed”; 32 m é o limite, não uma profundidade que o exceda.",
+        "Correta: expressa rigorosamente a condição maior que quatro vezes o calado médio."
+      ],
+      "reference": {
+        "referenceId": "I-06",
+        "base": "IMO — MSC/Circ.1053",
+        "publication": "Explanatory Notes to the Standards for Ship Manoeuvrability",
+        "edition": "MSC/Circ.1053, 16 de dezembro de 2002",
+        "section": "Anexo, §§2.1.2 e 2.2.1.2.1 — deep, unrestricted water",
+        "syllabus": "Eixo I — Manobrabilidade · condições ambientais das provas padronizadas",
+        "evidence": "O recorte consultado exige profundidade superior a quatro vezes o calado médio e explica que fundo, margens e navios que passam afetam fortemente a manobrabilidade.",
+        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/MSC-Circ.1053.pdf"
+      }
     },
     {
-      "id": "thu-r4-initial-turning-criterion", "category": "review", "axis": "I", "kind": "Revisão vencida · capacidade inicial de guinada",
-      "stem": "No critério de capacidade inicial de guinada da MSC.137(76), após aplicar 10° de leme para um bordo, qual condição deve ser atendida?",
-      "options": ["O navio não deve percorrer mais de 2,5 L até que a proa se altere 10° em relação ao rumo inicial.", "O avanço não deve exceder 4,5 L quando a proa se alterar 90°.", "O diâmetro tático não deve exceder 5 L ao completar 360°.", "O navio deve atingir 10° de proa em exatamente 2,5 minutos."], "correct": 0,
-      "explanation": "A capacidade inicial é satisfatória se o navio, com 10° de leme, não tiver percorrido mais de 2,5 comprimentos quando a proa houver mudado 10°.",
-      "comments": ["Correta: reúne ângulo de leme, mudança de proa e distância máxima do critério específico.", "Incorreta: 4,5 L é o limite de avanço da curva de giro, outro critério.", "Incorreta: 5 L é o limite do diâmetro tático, não da guinada inicial.", "Incorreta: 2,5 refere-se a comprimentos do navio, não a minutos."],
-      "reference": {"referenceId": "I-07", "base": "IMO — Resolution MSC.137(76)", "publication": "Standards for Ship Manoeuvrability", "edition": "MSC.137(76), adotada em 4 de dezembro de 2002", "section": "Anexo, §5.3.2 — initial turning ability", "syllabus": "Eixo I — Manobrabilidade · critérios mínimos de capacidade inicial de guinada", "evidence": "O recorte consultado fixa aplicação de 10° de leme e distância máxima de 2,5 L até a alteração de 10° da proa em relação ao rumo inicial.", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"}
+      "id": "fri-r4-three-red-lights-draught",
+      "category": "review",
+      "axis": "III",
+      "kind": "Correção de erro histórico · identificação por luzes",
+      "stem": "À noite, observa-se uma embarcação de propulsão mecânica em movimento exibindo suas luzes usuais de navegação e, onde melhor possam ser vistas, três luzes circulares encarnadas em linha vertical. Ela está:",
+      "options": [
+        "sem governo.",
+        "com capacidade de manobra restrita.",
+        "restrita devido ao seu calado.",
+        "engajada em serviço de praticagem."
+      ],
+      "correct": 2,
+      "explanation": "Três luzes circulares encarnadas em linha vertical identificam embarcação restrita devido ao calado; estando em movimento, ela também exibe as luzes de embarcação de propulsão mecânica correspondentes.",
+      "comments": [
+        "Incorreta: embarcação sem governo exibe duas luzes encarnadas em linha vertical.",
+        "Incorreta: capacidade de manobra restrita é indicada por encarnada–branca–encarnada.",
+        "Correta: corresponde ao sinal adicional de três encarnadas da Regra 28.",
+        "Incorreta: embarcação em praticagem exibe branca sobre encarnada."
+      ],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "COLREG 1972 / RIPEAM",
+        "publication": "COLREG — Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte C, Regras 23 e 28 — luzes de embarcação de propulsão mecânica e restrita devido ao calado",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · identificação noturna de embarcações",
+        "evidence": "O recorte consultado estabelece três luzes circulares encarnadas em linha vertical para embarcação restrita devido ao calado e determina, quando em movimento, as luzes de propulsão mecânica previstas na Regra 23.",
+        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
+      }
     },
     {
-      "id": "thu-c1-pilotage-nature-objective", "category": "current", "axis": "IV", "kind": "Tema principal · natureza e finalidade da praticagem",
-      "stem": "À luz da Lei nº 14.813/2024, assinale a afirmativa correta sobre o serviço de praticagem:",
-      "options": ["É atividade pública delegada, voltada exclusivamente à eficiência econômica dos portos.", "É atividade essencial, de natureza privada, destinada ao interesse público da segurança da navegação, da salvaguarda da vida humana e da proteção ao meio ambiente.", "É atividade facultativa, cuja disponibilidade depende apenas da demanda comercial em cada porto.", "É atividade militar executada exclusivamente por servidores da autoridade marítima."], "correct": 1,
-      "explanation": "A lei qualifica a praticagem como atividade essencial e privada, vinculando seu objetivo aos três bens jurídicos indicados na alternativa correta.",
-      "comments": ["Incorreta: a lei atribui natureza privada e objetivos de segurança, vida humana e meio ambiente.", "Correta: corresponde aos elementos expressos no art. 12, §1º, introduzido pela Lei nº 14.813/2024.", "Incorreta: o serviço deve estar permanentemente disponível para continuidade e eficiência do tráfego.", "Incorreta: a execução cabe a práticos habilitados, sem transformar a atividade em função militar."],
-      "reference": {"referenceId": "IV-10", "base": "Brasil — Lei nº 14.813/2024", "publication": "Lei nº 14.813/2024 — Atividade de Praticagem", "edition": "Lei de 15 de janeiro de 2024", "section": "Art. 2º, alteração do art. 12, §§1º–3º, da Lei nº 9.537/1997", "syllabus": "Eixo IV — Legislação e Regulamentação · natureza e objetivos do serviço de praticagem", "evidence": "O texto consultado qualifica a praticagem como atividade essencial e privada, orientada à segurança da navegação, salvaguarda da vida humana e proteção ambiental, e exige disponibilidade permanente.", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14813.htm"}
+      "id": "fri-c1-spring-neap-tides",
+      "category": "current",
+      "axis": "III",
+      "kind": "Tema principal · marés de sizígia e quadratura",
+      "stem": "Qual associação entre fase lunar e amplitude de maré está correta?",
+      "options": [
+        "Lua Nova e Lua Cheia produzem quadratura e menores amplitudes.",
+        "Quartos Crescente e Minguante produzem sizígia e maiores amplitudes.",
+        "Lua Nova e Lua Cheia produzem sizígia e maiores amplitudes; os quartos produzem quadratura e menores amplitudes.",
+        "A fase lunar altera apenas o horário, sem afetar a amplitude."
+      ],
+      "correct": 2,
+      "explanation": "No alinhamento Sol–Terra–Lua, as forças se reforçam e produzem sizígias de maior amplitude. Nos quartos, atuam aproximadamente em ângulo reto e produzem quadraturas de menor amplitude.",
+      "comments": [
+        "Incorreta: inverte sizígia e quadratura.",
+        "Incorreta: os quartos correspondem às marés de quadratura ou águas mortas.",
+        "Correta: relaciona corretamente geometria, fase lunar e amplitude.",
+        "Incorreta: a fase lunar influencia diretamente a amplitude das oscilações."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Miguens, Altineu Pires",
+        "publication": "Navegação: A Ciência e a Arte, volume I",
+        "edition": "DHN, volume I",
+        "section": "Capítulo 10, §10.1.3 — marés de sizígia e de quadratura",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · marés e planejamento da navegação",
+        "evidence": "O recorte consultado associa Lua Nova e Cheia ao alinhamento das forças e às maiores amplitudes de sizígia; nos quartos, as forças atuam em ângulo reto e geram quadraturas de menor amplitude.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+      }
     },
     {
-      "id": "thu-c2-pilotage-components-structure", "category": "current", "axis": "IV", "kind": "Tema principal · componentes e infraestrutura do serviço",
-      "stem": "Segundo a Lei nº 14.813/2024, o serviço de praticagem compreende quais elementos e a quem cabe manter sua infraestrutura e seus equipamentos?",
-      "options": ["Prático, rebocador e Capitania dos Portos; a manutenção cabe ao armador.", "Prático, lancha de prático e atalaia; os práticos respondem pela implantação e manutenção da infraestrutura e dos equipamentos necessários.", "Prático e VTS apenas; a manutenção cabe exclusivamente à Antaq.", "Atalaia, terminal e agência marítima; a manutenção cabe ao Estado."], "correct": 1,
-      "explanation": "O art. 12-A inclui prático, lancha de prático e atalaia, e atribui aos práticos a implantação e manutenção da estrutura e dos equipamentos do serviço.",
-      "comments": ["Incorreta: rebocador e Capitania não compõem a enumeração legal, e a obrigação não é atribuída ao armador.", "Correta: combina a composição legal com a responsabilidade estrutural prevista no parágrafo único.", "Incorreta: VTS não substitui lancha e atalaia, nem a Antaq recebe essa obrigação no dispositivo.", "Incorreta: terminal e agência marítima não integram a enumeração legal, e a manutenção não é imputada ao Estado."],
-      "reference": {"referenceId": "IV-10", "base": "Brasil — Lei nº 14.813/2024", "publication": "Lei nº 14.813/2024 — Atividade de Praticagem", "edition": "Lei de 15 de janeiro de 2024", "section": "Art. 2º, inclusão do art. 12-A na Lei nº 9.537/1997", "syllabus": "Eixo IV — Legislação e Regulamentação · organização do serviço de praticagem", "evidence": "O recorte consultado enumera prático, lancha de prático e atalaia e atribui aos práticos a implantação e a manutenção da infraestrutura e dos equipamentos necessários à execução do serviço.", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14813.htm"}
+      "id": "fri-c2-tide-reference-elements",
+      "category": "current",
+      "axis": "III",
+      "kind": "Tema principal · elementos e planos de referência da maré",
+      "stem": "Assinale a afirmativa correta sobre os elementos da maré:",
+      "options": [
+        "A amplitude é a distância vertical entre o nível médio e a preamar.",
+        "A altura da maré é medida entre o nível instantâneo do mar e o nível de redução.",
+        "O nível de redução é o valor médio entre uma preamar e uma baixa-mar consecutivas.",
+        "O estofo é todo o intervalo em que o nível do mar sobe."
+      ],
+      "correct": 1,
+      "explanation": "A altura da maré tem como origem o nível de redução. Amplitude é a diferença entre preamar e baixa-mar consecutivas; nível médio e estofo são conceitos distintos.",
+      "comments": [
+        "Incorreta: a distância entre preamar e nível médio é uma semiamplitude, não a amplitude total.",
+        "Correta: usa o plano de referência indicado para alturas das águas e sondagens.",
+        "Incorreta: essa média define o nível médio da oscilação considerada, não o nível de redução.",
+        "Incorreta: subida do nível é enchente; estofo é o período praticamente estacionário."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Miguens, Altineu Pires",
+        "publication": "Navegação: A Ciência e a Arte, volume I",
+        "edition": "DHN, volume I",
+        "section": "Capítulo 10, §§10.1.5–10.1.7 — elementos e planos de referência",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · alturas, amplitude e nível de redução",
+        "evidence": "O recorte consultado define amplitude como PM menos BM consecutiva, estofo como nível praticamente estacionário, nível médio como média da oscilação e altura da maré como distância vertical entre o nível instantâneo e o nível de redução.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+      }
     },
     {
-      "id": "thu-c3-course-speed-guidance", "category": "current", "axis": "IV", "kind": "Tema principal · assessoria de rumos e velocidades",
-      "stem": "Quando uma embarcação navega em zona de praticagem, quem pode transmitir ao comandante, na forma da Lei nº 14.813/2024, as orientações sobre rumos e velocidades em assessoria?",
-      "options": ["Exclusivamente o prático.", "Qualquer operador da atalaia, ainda que não seja prático.", "O representante do armador, independentemente de habilitação.", "Somente a autoridade portuária, por intermédio do VTS."], "correct": 0,
-      "explanation": "O art. 15-B reserva aos práticos a transmissão dessas orientações aos comandantes quando as embarcações estiverem navegando nas zonas de praticagem.",
-      "comments": ["Correta: corresponde à exclusividade expressamente estabelecida para a assessoria ao comandante.", "Incorreta: a atalaia integra o serviço, mas isso não confere ao operador a atribuição exclusiva do prático.", "Incorreta: representação comercial do armador não substitui a habilitação profissional exigida.", "Incorreta: o dispositivo não transfere essa assessoria exclusivamente à autoridade portuária ou ao VTS."],
-      "reference": {"referenceId": "IV-10", "base": "Brasil — Lei nº 14.813/2024", "publication": "Lei nº 14.813/2024 — Atividade de Praticagem", "edition": "Lei de 15 de janeiro de 2024", "section": "Art. 2º, inclusão do art. 15-B na Lei nº 9.537/1997", "syllabus": "Eixo IV — Legislação e Regulamentação · competências na assessoria de praticagem", "evidence": "O texto consultado reserva aos práticos as orientações sobre rumos e velocidades transmitidas aos comandantes, em assessoria, quando as embarcações navegam em zonas de praticagem.", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14813.htm"}
+      "id": "fri-c3-current-chart-selection",
+      "category": "current",
+      "axis": "III",
+      "kind": "Tema principal · uso das Cartas de Correntes de Maré",
+      "stem": "A preamar prevista mais próxima ocorrerá às 15h. Para estimar a corrente às 12h em um dia que não é de sizígia, como deve proceder o navegante?",
+      "options": [
+        "Selecionar a carta de três horas depois da preamar e corrigir direção e velocidade.",
+        "Selecionar a carta de três horas antes da preamar; se precisar de maior precisão, corrigir a velocidade pelo fator aplicável, sem corrigir a direção.",
+        "Selecionar a carta do início da enchente, sem consultar a preamar.",
+        "Usar diretamente a carta da preamar, porque todas representam o instante real do dia."
+      ],
+      "correct": 1,
+      "explanation": "A carta é escolhida pela diferença em horas em relação à preamar mais próxima. Como 12h antecede 15h em três horas, usa-se “3 horas antes da PM”; fora da sizígia, corrige-se a velocidade quando necessário, não a direção.",
+      "comments": [
+        "Incorreta: o sinal temporal está invertido e a direção não recebe o fator de correção descrito.",
+        "Correta: combina referência temporal e tratamento das intensidades fora da sizígia.",
+        "Incorreta: a seleção se referencia à preamar, obtida nas Tábuas das Marés.",
+        "Incorreta: as cartas são médias de sizígia e cada folha representa um intervalo relativo à PM."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Miguens, Altineu Pires",
+        "publication": "Navegação: A Ciência e a Arte, volume I",
+        "edition": "DHN, volume I",
+        "section": "Capítulo 10, §§10.2.2–10.2.3 — Cartas de Correntes de Maré",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · seleção e uso de informações de corrente",
+        "evidence": "O recorte consultado seleciona a carta pela diferença entre o instante desejado e a PM mais próxima; as setas e números fornecem direção e velocidade médias de sizígia, com fator de correção apenas para a velocidade quando se busca maior precisão.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+      }
     },
     {
-      "id": "thu-x1-smcp-advice-response", "category": "rotation", "axis": "VI", "kind": "Eixo alternado · resposta a advice/instruction",
-      "stem": "Uma estação VTS transmite: ‘ADVICE. Do not overtake the vessel North of you.’ Se o navio aceita a orientação, qual resposta segue o padrão da IMO SMCP?",
-      "options": ["Roger. Advice received.", "Yes, understood.", "I will not overtake the vessel North of me.", "No overtaking intended, over and out."], "correct": 2,
-      "explanation": "Ao aceitar uma INSTRUCTION ou ADVICE, a IMO SMCP manda responder com ‘I will/can...’ e repetir integralmente a instrução ou orientação pertinente.",
-      "comments": ["Incorreta: confirma recepção, mas não repete a orientação no formato prescrito.", "Incorreta: a resposta genérica não oferece a salvaguarda da repetição integral.", "Correta: usa ‘I will’ e repete a ação, ajustando a referência para ‘North of me’.", "Incorreta: emprega fraseologia não padronizada e não reproduz a orientação recebida."],
-      "reference": {"referenceId": "VI-01", "base": "IMO — Resolution A.918(22)", "publication": "IMO Standard Marine Communication Phrases (SMCP)", "edition": "A.918(22), adotada em 29 de novembro de 2001", "section": "General, §4.5 — Responses", "syllabus": "Eixo VI — Comunicações · respostas padronizadas a instruction e advice", "evidence": "O recorte consultado determina resposta afirmativa com ‘I will/can’ seguida da instruction ou advice por extenso e apresenta esse mesmo exemplo de ultrapassagem.", "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"}
+      "id": "fri-x1-turning-circle-criteria",
+      "category": "rotation",
+      "axis": "I",
+      "kind": "Eixo de consolidação · capacidade de giro",
+      "stem": "Na manobra de curva de giro padronizada, quais limites caracterizam capacidade de giro satisfatória segundo a MSC.137(76)?",
+      "options": [
+        "Avanço máximo de 4,5 L e diâmetro tático máximo de 5 L.",
+        "Avanço máximo de 5 L e diâmetro tático máximo de 4,5 L.",
+        "Avanço máximo de 2,5 L e diâmetro tático máximo de 4,5 L.",
+        "Avanço e diâmetro tático limitados ambos a 3 L."
+      ],
+      "correct": 0,
+      "explanation": "A resolução fixa avanço não superior a 4,5 comprimentos e diâmetro tático não superior a 5 comprimentos.",
+      "comments": [
+        "Correta: mantém cada grandeza associada ao seu limite.",
+        "Incorreta: troca os dois limites entre si.",
+        "Incorreta: 2,5 L pertence ao critério de capacidade inicial de guinada.",
+        "Incorreta: não há limite geral de 3 L para essas grandezas."
+      ],
+      "reference": {
+        "referenceId": "I-07",
+        "base": "IMO — Resolution MSC.137(76)",
+        "publication": "Standards for Ship Manoeuvrability",
+        "edition": "MSC.137(76), adotada em 4 de dezembro de 2002",
+        "section": "Anexo, §5.3.1 — turning ability",
+        "syllabus": "Eixo I — Manobrabilidade · critérios da curva de giro",
+        "evidence": "O recorte consultado limita o avanço a 4,5 L e o diâmetro tático a 5 L na curva de giro.",
+        "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
+      }
     },
     {
-      "id": "thu-x2-smcp-correction-sequence", "category": "rotation", "axis": "VI", "kind": "Eixo alternado · correção de mensagem",
-      "stem": "Durante uma comunicação, o oficial informa por engano velocidade de 14 nós, quando o valor correto é 12 nós. Qual sequência segue a IMO SMCP para corrigir a mensagem?",
-      "options": ["Cancel speed fourteen. New speed twelve.", "Mistake. Correction, my present speed is one-two knots.", "Negative fourteen. Affirmative twelve knots.", "Repeat speed: twelve knots."], "correct": 1,
-      "explanation": "A seção de correções prescreve ‘Mistake’, seguida de ‘Correction’ e da parte corrigida da mensagem; números comuns são pronunciados dígito a dígito.",
-      "comments": ["Incorreta: ‘Cancel’ e ‘New speed’ não constituem a fórmula de correção prevista.", "Correta: mantém a ordem Mistake → Correction → trecho corrigido e pronuncia 12 em dígitos separados.", "Incorreta: negative/affirmative são usados para respostas, não para essa correção.", "Incorreta: ‘Repeat’ protege ou solicita repetição; não identifica o erro nem introduz a correção."],
-      "reference": {"referenceId": "VI-01", "base": "IMO — Resolution A.918(22)", "publication": "IMO Standard Marine Communication Phrases (SMCP)", "edition": "A.918(22), adotada em 29 de novembro de 2001", "section": "General, §7 — Corrections; §10 — Numbers", "syllabus": "Eixo VI — Comunicações · correções e pronúncia de números", "evidence": "O recorte consultado estabelece ‘Mistake’ seguido de ‘Correction’ e da parte corrigida, ilustrando a mudança de 14 para 12 nós; também manda pronunciar números em dígitos separados, exceto ordens de leme.", "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"}
+      "id": "fri-x2-pilotage-exemption-certificate",
+      "category": "rotation",
+      "axis": "IV",
+      "kind": "Eixo alternado · Certificado de Isenção de Praticagem",
+      "stem": "Sem prejuízo dos demais requisitos regulamentares, a Lei nº 14.813/2024 permite conceder Certificado de Isenção de Praticagem exclusivamente a:",
+      "options": [
+        "qualquer comandante de navio estrangeiro com até 500 AB.",
+        "comandante brasileiro de navio de bandeira brasileira com até 100 m, cuja tripulação tenha ao menos dois terços de brasileiros.",
+        "comandante estrangeiro de navio brasileiro sem limite de comprimento.",
+        "imediato brasileiro de qualquer navio com experiência comprovada na zona."
+      ],
+      "correct": 1,
+      "explanation": "A lei restringe a concessão ao comandante brasileiro, em navio de bandeira brasileira de até 100 m, com tripulação composta por no mínimo dois terços de brasileiros, além das demais condições.",
+      "comments": [
+        "Incorreta: nacionalidade, bandeira e limite apresentados não correspondem ao dispositivo.",
+        "Correta: reúne cumulativamente os requisitos pessoais e do navio enunciados no caput do §4º.",
+        "Incorreta: o comandante deve ser brasileiro e existe limite de 100 m.",
+        "Incorreta: a autorização legal é para comandante, não para imediato, e não abrange qualquer navio."
+      ],
+      "reference": {
+        "referenceId": "IV-10",
+        "base": "Brasil — Lei nº 14.813/2024",
+        "publication": "Lei nº 14.813/2024 — Atividade de Praticagem",
+        "edition": "Lei de 15 de janeiro de 2024",
+        "section": "Art. 2º, alteração do art. 13, §4º, da Lei nº 9.537/1997",
+        "syllabus": "Eixo IV — Legislação e Regulamentação · isenção de praticagem",
+        "evidence": "O texto consultado admite o certificado exclusivamente para comandante brasileiro de navio brasileiro com até 100 m e tripulação formada por pelo menos dois terços de brasileiros, condicionado aos demais requisitos.",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14813.htm"
+      }
     },
     {
-      "id": "thu-o1-pscpp2006-q2", "category": "official", "axis": "VI", "kind": "Questão oficial histórica · PSCPP 2006",
-      "stem": "Bandeira retangular nas cores preto, amarelo, azul e encarnado em quatro triângulos, formados pelas diagonais, sendo preto o triângulo junto à tralha, amarelo o superior, azul o da extremidade e encarnado o inferior, de acordo com o Código Internacional de Sinais (CIS), significa:",
-      "options": ["Embarcação se dirigindo para um perigo.", "Embarcação deve suspender a execução do que está fazendo e observar os sinais a serem mostrados.", "Embarcação deve parar imediatamente.", "Embarcação solicitando rebocador.", "Embarcação solicitando assistência médica."], "correct": 3,
-      "explanation": "A descrição corresponde à bandeira Z (Zulu). Como sinal de uma letra do CIS, Z significa ‘I require a tug’, isto é, solicito um rebocador.",
-      "comments": ["Incorreta: esse não é o significado do sinal de uma letra Z.", "Incorreta: a ordem de suspender o que se faz não corresponde à bandeira descrita.", "Incorreta: a bandeira Z não significa parar imediatamente.", "Correta: Z é o sinal de uma letra para solicitação de rebocador.", "Incorreta: assistência médica é comunicada por outro sinal do Código."],
-      "reference": {"referenceId": "VI-03", "base": "IMO — International Code of Signals", "publication": "International Code of Signals", "edition": "2005", "section": "Capítulo XI — Single-letter signals; General Section, Towing — Tugs", "syllabus": "Eixo VI — Comunicações · sinais de uma letra e solicitações operacionais", "evidence": "O recorte consultado identifica o sinal Z como solicitação de um ou mais rebocadores; a prova oficial associa a bandeira quadripartida descrita a essa resposta.", "origin": "PSCPP 2006 — prova escrita oficial, questão 2 — gabarito D; transcrição integral, sem adaptação", "url": "https://www.marinha.mil.br/dpc/processo-seletivo"}
+      "id": "fri-o1-pscpp2008-q26",
+      "category": "official",
+      "axis": "V",
+      "kind": "Questão oficial histórica · PSCPP 2008",
+      "stem": "As marés têm significativas influências na navegação costeira, inclusive na elaboração das cartas náuticas. Por consequência, os navegantes devem levar em consideração os seus efeitos. Para tal, utilizam as publicações Tábuas das Marés e Cartas de Correntes de Marés, que fornecem os principais elementos e efeitos das marés. Interprete as afirmativas a seguir:\nI) as Cartas de Correntes de Marés se referem às marés do próprio dia, por isso podendo ser usadas diariamente na navegação.\nII) ao longo do ciclo lunar, as variações diárias das alturas das marés são simétricas, em relação ao nível médio do mar (NM), tanto na quadratura quanto na sizígia.\nIII) a informação da altura do NM, indicada em destaque no cabeçalho das páginas de cada porto, nas Tábuas das Marés, é para alertar o navegante sobre o valor da amplitude da maré de sizígia no respectivo porto.\nIV) as intensidades distintas das correntes de enchente e de vazante, observadas em diferentes portos, devem-se a características geográficas da região.\nV) o estabelecimento do nível de referência do zero da régua das marés está associado à carta náutica do porto.\nDe acordo com Lobo & Soares, assinale a opção que contém todas as afirmativas verdadeiras:",
+      "options": [
+        "I e II.",
+        "II e IV.",
+        "III, IV e V.",
+        "I, III e V.",
+        "II, III e V."
+      ],
+      "correct": 4,
+      "explanation": "O gabarito oficial considera verdadeiras II, III e V. As cartas de correntes representam condições médias referidas à preamar, não a maré específica de cada dia; a afirmação IV generaliza incorretamente a causa das diferenças de intensidade.",
+      "comments": [
+        "Incorreta: inclui I, que atribui às cartas a maré específica do próprio dia.",
+        "Incorreta: inclui IV e omite III e V.",
+        "Incorreta: inclui IV, rejeitada no conjunto oficial, embora contenha III e V.",
+        "Incorreta: inclui I, ainda que III e V sejam verdadeiras.",
+        "Correta: é o conjunto II, III e V indicado pelo gabarito E."
+      ],
+      "reference": {
+        "referenceId": "V-03",
+        "base": "Lobo, P. R. V.; Soares, C. A.",
+        "publication": "Meteorologia e Oceanografia",
+        "edition": "4ª edição, 2019",
+        "section": "Capítulos IX e X — marés, correntes costeiras e Cartas de Correntes de Marés",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · marés e correntes aplicadas à navegação",
+        "evidence": "Os recortes consultados mantêm o NM constante ao longo do ciclo lunar, relacionam o NM à semiamplitude de sizígia, vinculam o zero da régua ao nível de redução da carta e descrevem as cartas como médias de sizígia referidas à PM.",
+        "origin": "PSCPP 2008 — prova escrita oficial, questão 26 — gabarito E; transcrição integral, com atualização apenas da grafia",
+        "url": "https://drive.google.com/file/d/14RLZewUiDcRYbg76OVZGahAH2lYPJEWk/view"
+      }
     }
   ]
 }
