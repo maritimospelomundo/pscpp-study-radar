@@ -1,9 +1,9 @@
 {
-  "roundId": "tides-currents-manoeuvrability-2026-09-11",
-  "label": "Rodada adaptativa de sexta-feira",
-  "title": "Marés, correntes e decisões de navegação",
+  "roundId": "cumulative-meteo-navigation-2026-09-12",
+  "label": "Simulado cumulativo de sábado",
+  "title": "Meteorologia, marés e decisões de manobra",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões vencidas · marés e correntes de maré · manobrabilidade · consolidação legal",
+  "path": "Correção de erros · meteorologia sinótica · manobrabilidade · rebocadores · fatores humanos",
   "method": "4–3–2–1",
   "mixPlan": {
     "review": 4,
@@ -13,316 +13,309 @@
   },
   "questions": [
     {
-      "id": "fri-r1-smcp-numbers-wheel-exception",
+      "id": "sat-r1-tide-reference-levels",
       "category": "review",
-      "axis": "VI",
-      "kind": "Revisão FSRS vencida · números na IMO SMCP",
-      "stem": "Em comunicação marítima padronizada, o oficial informa o rumo 150° e, em seguida, transmite uma ordem de leme de 15°. Como esses números devem ser pronunciados segundo a IMO SMCP?",
+      "axis": "V",
+      "kind": "Correção de erro · planos de referência das marés",
+      "stem": "Ao revisar os elementos das marés usados na navegação costeira, assinale a afirmativa correta.",
       "options": [
-        "“One hundred and fifty” e “one-five”.",
-        "“One-five-zero” e “fifteen”.",
-        "“One-five-zero” e “one-five”.",
-        "“One-fifty” e “fifteen degrees”."
+        "O nível médio varia com a fase da Lua e atinge seu maior valor nas sizígias.",
+        "O nível médio permanece o mesmo ao longo do ciclo lunar; o zero da régua de marés coincide com o nível de redução empregado na carta do porto.",
+        "A amplitude da maré é medida da superfície instantânea até o nível de redução.",
+        "As sondagens da carta náutica são reduzidas ao nível médio do mar."
       ],
       "correct": 1,
-      "explanation": "Os números são normalmente pronunciados dígito a dígito; a própria SMCP ressalva que ângulos de leme em ordens de governo são pronunciados como números inteiros, por exemplo “fifteen”.",
+      "explanation": "O nível médio é estável ao longo das fases lunares. O zero da régua coincide com o nível de redução do porto, também usado para reduzir as sondagens da carta.",
       "comments": [
-        "Incorreta: a primeira forma não segue a pronúncia dígito a dígito e a segunda ignora a exceção da ordem de leme.",
-        "Correta: aplica a regra geral ao rumo e a exceção expressa ao ângulo de leme.",
-        "Incorreta: o rumo está correto, mas a ordem de leme deve ser pronunciada “fifteen”.",
-        "Incorreta: “one-fifty” não é a forma padronizada para o rumo e a ordem dispensa acrescentar “degrees”."
+        "Incorreta: a fase lunar altera principalmente a amplitude entre preamar e baixa-mar, não o nível médio.",
+        "Correta: reúne as relações de referência apresentadas no recorte consultado.",
+        "Incorreta: a amplitude é a diferença entre a preamar e a baixa-mar; a altura da maré é referida ao nível de redução.",
+        "Incorreta: as sondagens são reduzidas ao nível de redução, não ao nível médio."
       ],
       "reference": {
-        "referenceId": "VI-01",
-        "base": "IMO — Resolution A.918(22)",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "A.918(22), adotada em 29 de novembro de 2001",
-        "section": "General, §10 — Numbers; §13 — Courses",
-        "syllabus": "Eixo VI — Comunicações · pronúncia de números, rumos e ordens de leme",
-        "evidence": "O recorte consultado manda pronunciar números em dígitos separados, exemplifica 150 como “one-five-zero” e estabelece exceção para ângulos de leme, pronunciados como “fifteen” ou “twenty”.",
-        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
+        "referenceId": "V-03",
+        "base": "Lobo, P. R. V.; Soares, C. A.",
+        "publication": "Meteorologia e Oceanografia",
+        "edition": "4. ed., 2019",
+        "section": "Capítulo IX — Marés e correntes de marés; conceitos e exercícios",
+        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · marés, níveis e cartas",
+        "evidence": "O recorte consultado afirma que o nível médio permanece constante ao longo do ciclo lunar, que o zero da régua coincide com o nível de redução e que esse nível é empregado na redução das sondagens da carta do porto."
       }
     },
     {
-      "id": "fri-r2-msc137-compliance-methods",
+      "id": "sat-r2-first-overshoot-lv18",
       "category": "review",
       "axis": "I",
-      "kind": "Revisão FSRS vencida · demonstração de conformidade",
-      "stem": "A MSC.137(76) admite duas formas de demonstrar conformidade com os padrões de manobrabilidade. Qual alternativa as descreve corretamente?",
+      "kind": "Correção de erro de leitura · primeiro overshoot",
+      "stem": "Para um navio com L/V = 18 s, qual é o limite do primeiro ângulo de overshoot no zig-zag 10°/10° e após qual execute ele é medido?",
       "options": [
-        "Somente provas em escala real; previsões matemáticas não podem ser usadas na fase de projeto.",
-        "Ensaios em modelo e/ou previsões computacionais na fase de projeto, validados por provas em escala real, ou demonstração direta pelos resultados das provas em escala real.",
-        "Simulação computacional isolada, sem validação posterior, ou declaração do estaleiro aceita automaticamente pela Administração.",
-        "Provas em escala real apenas em lastro ou comparação exclusiva com navio semelhante."
+        "14°, após o segundo execute.",
+        "14°, após o terceiro execute.",
+        "18°, após o segundo execute.",
+        "20°, após o primeiro execute."
       ],
-      "correct": 1,
-      "explanation": "A resolução permite previsão na fase de projeto por modelo e/ou cálculo, acompanhada de validação em escala real, e também permite demonstrar conformidade diretamente por provas em escala real conduzidas segundo o padrão.",
+      "correct": 0,
+      "explanation": "Na faixa 10 s ≤ L/V < 30 s, o limite é 5 + 0,5(L/V): 5 + 0,5×18 = 14°. O primeiro overshoot é o desvio adicional após o segundo execute.",
       "comments": [
-        "Incorreta: a resolução admite expressamente modelos e previsões computacionais.",
-        "Correta: reúne os dois caminhos previstos no §2.1.",
-        "Incorreta: a validação em escala real integra o primeiro caminho e a Administração mantém poder de avaliação.",
-        "Incorreta: a condição preferencial é plena carga e a comparação com navio semelhante não substitui os dois métodos."
+        "Correta: aplica a fórmula da faixa intermediária e a definição temporal do primeiro overshoot.",
+        "Incorreta: após o terceiro execute mede-se o segundo overshoot.",
+        "Incorreta: 18 s é a razão L/V, não o limite angular.",
+        "Incorreta: o primeiro execute inicia a guinada e não define o primeiro overshoot."
       ],
       "reference": {
         "referenceId": "I-07",
         "base": "IMO — Resolution MSC.137(76)",
         "publication": "Standards for Ship Manoeuvrability",
         "edition": "MSC.137(76), adotada em 4 de dezembro de 2002",
-        "section": "Anexo, §2.1 — General",
-        "syllabus": "Eixo I — Manobrabilidade · aplicação e demonstração de conformidade",
-        "evidence": "O recorte consultado apresenta dois métodos: previsão de projeto por ensaio em modelo e/ou modelo matemático, com validação em escala real, e demonstração baseada diretamente nos resultados de provas em escala real.",
+        "section": "Anexo, §§4.2.6–4.2.8 e 5.3.3.1 — zig-zag e primeiro overshoot",
+        "syllabus": "Eixo I — Manobrabilidade · zig-zag, executes e critérios de yaw-checking",
+        "evidence": "O recorte consultado define o primeiro overshoot como o desvio adicional após o segundo execute e fixa, para 10 s ≤ L/V < 30 s, o limite 5 + 0,5(L/V) graus.",
         "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
       }
     },
     {
-      "id": "fri-r3-trial-depth-mean-draught",
+      "id": "sat-r3-trial-depth-strict-limit",
       "category": "review",
       "axis": "I",
-      "kind": "Revisão FSRS vencida · profundidade da área de prova",
-      "stem": "Um navio com calado médio de 8,0 m realizará provas de manobrabilidade. Segundo a MSC/Circ.1053, qual profundidade satisfaz a condição de águas profundas e irrestritas?",
+      "kind": "Correção de erro · profundidade da área de prova",
+      "stem": "Nas provas padronizadas de um navio com calado médio de 7,5 m, qual profundidade atende à MSC/Circ.1053?",
       "options": [
-        "Exatamente 16 m.",
-        "Exatamente 24 m.",
-        "Exatamente 32 m.",
-        "Mais de 32 m."
+        "15 m ou mais.",
+        "22,5 m ou mais.",
+        "Exatamente 30 m.",
+        "Mais de 30 m."
       ],
       "correct": 3,
-      "explanation": "A profundidade deve exceder quatro vezes o calado médio. Quatro vezes 8,0 m são 32 m; portanto, igualdade não basta.",
+      "explanation": "A profundidade deve exceder quatro vezes o calado médio. Como 4×7,5 = 30 m, a igualdade não satisfaz o requisito.",
       "comments": [
-        "Incorreta: corresponde a apenas duas vezes o calado médio.",
-        "Incorreta: corresponde a três vezes o calado médio.",
-        "Incorreta: a circular usa “exceed”; 32 m é o limite, não uma profundidade que o exceda.",
-        "Correta: expressa rigorosamente a condição maior que quatro vezes o calado médio."
+        "Incorreta: equivale a apenas duas vezes o calado médio.",
+        "Incorreta: equivale a três vezes o calado médio.",
+        "Incorreta: a circular exige exceder, e não apenas alcançar, quatro vezes o calado médio.",
+        "Correta: é a única opção estritamente superior a 30 m."
       ],
       "reference": {
         "referenceId": "I-06",
         "base": "IMO — MSC/Circ.1053",
         "publication": "Explanatory Notes to the Standards for Ship Manoeuvrability",
         "edition": "MSC/Circ.1053, 16 de dezembro de 2002",
-        "section": "Anexo, §§2.1.2 e 2.2.1.2.1 — deep, unrestricted water",
-        "syllabus": "Eixo I — Manobrabilidade · condições ambientais das provas padronizadas",
-        "evidence": "O recorte consultado exige profundidade superior a quatro vezes o calado médio e explica que fundo, margens e navios que passam afetam fortemente a manobrabilidade.",
+        "section": "Anexo, §2.1.2 — Deep, unrestricted water",
+        "syllabus": "Eixo I — Manobrabilidade · condições ambientais das provas",
+        "evidence": "O recorte consultado estabelece que a profundidade da água deve exceder quatro vezes o calado médio, devido à influência do fundo, das margens e de navios que passam.",
         "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/MSC-Circ.1053.pdf"
       }
     },
     {
-      "id": "fri-r4-three-red-lights-draught",
+      "id": "sat-r4-underway-not-making-way",
       "category": "review",
       "axis": "III",
-      "kind": "Correção de erro histórico · identificação por luzes",
-      "stem": "À noite, observa-se uma embarcação de propulsão mecânica em movimento exibindo suas luzes usuais de navegação e, onde melhor possam ser vistas, três luzes circulares encarnadas em linha vertical. Ela está:",
+      "kind": "Revisão FSRS vencida · underway versus making way",
+      "stem": "Uma embarcação está à deriva, com máquinas paradas, sem estar fundeada, amarrada à terra ou encalhada. Para fins do COLREG, ela está:",
       "options": [
-        "sem governo.",
-        "com capacidade de manobra restrita.",
-        "restrita devido ao seu calado.",
-        "engajada em serviço de praticagem."
+        "underway, embora possa não estar making way through the water.",
+        "fundeada, porque não usa suas máquinas.",
+        "sem governo obrigatoriamente.",
+        "not underway, pois não desenvolve seguimento."
       ],
-      "correct": 2,
-      "explanation": "Três luzes circulares encarnadas em linha vertical identificam embarcação restrita devido ao calado; estando em movimento, ela também exibe as luzes de embarcação de propulsão mecânica correspondentes.",
+      "correct": 0,
+      "explanation": "Underway é definido pela ausência de fundeio, amarração à terra ou encalhe. A definição não exige propulsão nem seguimento na água.",
       "comments": [
-        "Incorreta: embarcação sem governo exibe duas luzes encarnadas em linha vertical.",
-        "Incorreta: capacidade de manobra restrita é indicada por encarnada–branca–encarnada.",
-        "Correta: corresponde ao sinal adicional de três encarnadas da Regra 28.",
-        "Incorreta: embarcação em praticagem exibe branca sobre encarnada."
+        "Correta: distingue a condição jurídica de underway da existência de seguimento.",
+        "Incorreta: fundeio depende de estar efetivamente ao ferro, não de máquinas paradas.",
+        "Incorreta: sem governo requer circunstância excepcional que impeça manobrar conforme as regras.",
+        "Incorreta: ausência de seguimento não elimina a condição de underway."
       ],
       "reference": {
         "referenceId": "III-16",
         "base": "COLREG 1972 / RIPEAM",
         "publication": "COLREG — Consolidated Edition 2018",
         "edition": "2018",
-        "section": "Parte C, Regras 23 e 28 — luzes de embarcação de propulsão mecânica e restrita devido ao calado",
-        "syllabus": "Eixo III — Navegação em Águas Restritas · identificação noturna de embarcações",
-        "evidence": "O recorte consultado estabelece três luzes circulares encarnadas em linha vertical para embarcação restrita devido ao calado e determina, quando em movimento, as luzes de propulsão mecânica previstas na Regra 23.",
+        "section": "Parte A, Regra 3(i) — definição de underway",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · definições e aplicação do RIPEAM",
+        "evidence": "O recorte consultado define underway como a embarcação que não está fundeada, amarrada à terra ou encalhada; não condiciona o termo à propulsão ou ao seguimento.",
         "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
       }
     },
     {
-      "id": "fri-c1-spring-neap-tides",
+      "id": "sat-c1-pressure-with-altitude",
       "category": "current",
-      "axis": "III",
-      "kind": "Tema principal · marés de sizígia e quadratura",
-      "stem": "Qual associação entre fase lunar e amplitude de maré está correta?",
+      "axis": "V",
+      "kind": "Tema principal · pressão atmosférica",
+      "stem": "Por que a pressão atmosférica diminui à medida que aumenta a altitude?",
       "options": [
-        "Lua Nova e Lua Cheia produzem quadratura e menores amplitudes.",
-        "Quartos Crescente e Minguante produzem sizígia e maiores amplitudes.",
-        "Lua Nova e Lua Cheia produzem sizígia e maiores amplitudes; os quartos produzem quadratura e menores amplitudes.",
-        "A fase lunar altera apenas o horário, sem afetar a amplitude."
-      ],
-      "correct": 2,
-      "explanation": "No alinhamento Sol–Terra–Lua, as forças se reforçam e produzem sizígias de maior amplitude. Nos quartos, atuam aproximadamente em ângulo reto e produzem quadraturas de menor amplitude.",
-      "comments": [
-        "Incorreta: inverte sizígia e quadratura.",
-        "Incorreta: os quartos correspondem às marés de quadratura ou águas mortas.",
-        "Correta: relaciona corretamente geometria, fase lunar e amplitude.",
-        "Incorreta: a fase lunar influencia diretamente a amplitude das oscilações."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Miguens, Altineu Pires",
-        "publication": "Navegação: A Ciência e a Arte, volume I",
-        "edition": "DHN, volume I",
-        "section": "Capítulo 10, §10.1.3 — marés de sizígia e de quadratura",
-        "syllabus": "Eixo III — Navegação em Águas Restritas · marés e planejamento da navegação",
-        "evidence": "O recorte consultado associa Lua Nova e Cheia ao alinhamento das forças e às maiores amplitudes de sizígia; nos quartos, as forças atuam em ângulo reto e geram quadraturas de menor amplitude.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
-    },
-    {
-      "id": "fri-c2-tide-reference-elements",
-      "category": "current",
-      "axis": "III",
-      "kind": "Tema principal · elementos e planos de referência da maré",
-      "stem": "Assinale a afirmativa correta sobre os elementos da maré:",
-      "options": [
-        "A amplitude é a distância vertical entre o nível médio e a preamar.",
-        "A altura da maré é medida entre o nível instantâneo do mar e o nível de redução.",
-        "O nível de redução é o valor médio entre uma preamar e uma baixa-mar consecutivas.",
-        "O estofo é todo o intervalo em que o nível do mar sobe."
+        "Porque a gravidade deixa de atuar acima do nível do mar.",
+        "Porque diminui o peso da coluna de atmosfera remanescente acima do ponto considerado.",
+        "Porque o ar ascendente sempre se aquece por compressão.",
+        "Porque a umidade relativa se torna necessariamente igual a zero."
       ],
       "correct": 1,
-      "explanation": "A altura da maré tem como origem o nível de redução. Amplitude é a diferença entre preamar e baixa-mar consecutivas; nível médio e estofo são conceitos distintos.",
+      "explanation": "A pressão em determinada altitude corresponde ao peso da atmosfera acima daquela cota por unidade de área; com a elevação, resta menos atmosfera sobre o ponto.",
       "comments": [
-        "Incorreta: a distância entre preamar e nível médio é uma semiamplitude, não a amplitude total.",
-        "Correta: usa o plano de referência indicado para alturas das águas e sondagens.",
-        "Incorreta: essa média define o nível médio da oscilação considerada, não o nível de redução.",
-        "Incorreta: subida do nível é enchente; estofo é o período praticamente estacionário."
+        "Incorreta: a gravidade continua atuando na atmosfera.",
+        "Correta: expressa a relação física apresentada no capítulo.",
+        "Incorreta: o ar ascendente se expande e tende a resfriar adiabaticamente.",
+        "Incorreta: a umidade relativa não determina sozinha a pressão nem necessariamente zera."
       ],
       "reference": {
-        "referenceId": "III-02",
+        "referenceId": "V-01",
         "base": "Miguens, Altineu Pires",
-        "publication": "Navegação: A Ciência e a Arte, volume I",
-        "edition": "DHN, volume I",
-        "section": "Capítulo 10, §§10.1.5–10.1.7 — elementos e planos de referência",
-        "syllabus": "Eixo III — Navegação em Águas Restritas · alturas, amplitude e nível de redução",
-        "evidence": "O recorte consultado define amplitude como PM menos BM consecutiva, estofo como nível praticamente estacionário, nível médio como média da oscilação e altura da maré como distância vertical entre o nível instantâneo e o nível de redução.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+        "publication": "Navegação: A Ciência e a Arte, v. III",
+        "edition": "DHN",
+        "section": "Capítulo 45, §45.2.1(a) — medida da pressão atmosférica",
+        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · elementos meteorológicos",
+        "evidence": "O recorte consultado define pressão atmosférica como o peso da atmosfera por unidade de área e explica sua redução com a altitude pela diminuição da coluna de ar remanescente."
       }
     },
     {
-      "id": "fri-c3-current-chart-selection",
+      "id": "sat-c2-buys-ballot-south",
       "category": "current",
-      "axis": "III",
-      "kind": "Tema principal · uso das Cartas de Correntes de Maré",
-      "stem": "A preamar prevista mais próxima ocorrerá às 15h. Para estimar a corrente às 12h em um dia que não é de sizígia, como deve proceder o navegante?",
+      "axis": "V",
+      "kind": "Tema principal · lei de Buys-Ballot",
+      "stem": "No Hemisfério Sul, um observador volta-se para a direção de onde sopra o vento verdadeiro. Segundo a lei de Buys-Ballot, onde fica aproximadamente a baixa barométrica?",
       "options": [
-        "Selecionar a carta de três horas depois da preamar e corrigir direção e velocidade.",
-        "Selecionar a carta de três horas antes da preamar; se precisar de maior precisão, corrigir a velocidade pelo fator aplicável, sem corrigir a direção.",
-        "Selecionar a carta do início da enchente, sem consultar a preamar.",
-        "Usar diretamente a carta da preamar, porque todas representam o instante real do dia."
+        "À direita, cerca de 110° da direção de onde sopra o vento.",
+        "À esquerda, cerca de 110° da direção de onde sopra o vento.",
+        "Diretamente a barlavento, a 000°.",
+        "Diretamente a sotavento, a 180°."
       ],
       "correct": 1,
-      "explanation": "A carta é escolhida pela diferença em horas em relação à preamar mais próxima. Como 12h antecede 15h em três horas, usa-se “3 horas antes da PM”; fora da sizígia, corrige-se a velocidade quando necessário, não a direção.",
+      "explanation": "Voltado para a origem do vento verdadeiro, o observador no Hemisfério Sul terá a baixa pressão à esquerda, aproximadamente 110° daquela direção.",
       "comments": [
-        "Incorreta: o sinal temporal está invertido e a direção não recebe o fator de correção descrito.",
-        "Correta: combina referência temporal e tratamento das intensidades fora da sizígia.",
-        "Incorreta: a seleção se referencia à preamar, obtida nas Tábuas das Marés.",
-        "Incorreta: as cartas são médias de sizígia e cada folha representa um intervalo relativo à PM."
+        "Incorreta: a baixa à direita corresponde ao enunciado para o Hemisfério Norte.",
+        "Correta: reproduz a relação indicada para o Hemisfério Sul.",
+        "Incorreta: a baixa não se situa diretamente na origem do vento.",
+        "Incorreta: a relação inclui desvio angular, não oposição exata de 180°."
       ],
       "reference": {
-        "referenceId": "III-02",
+        "referenceId": "V-01",
         "base": "Miguens, Altineu Pires",
-        "publication": "Navegação: A Ciência e a Arte, volume I",
-        "edition": "DHN, volume I",
-        "section": "Capítulo 10, §§10.2.2–10.2.3 — Cartas de Correntes de Maré",
-        "syllabus": "Eixo III — Navegação em Águas Restritas · seleção e uso de informações de corrente",
-        "evidence": "O recorte consultado seleciona a carta pela diferença entre o instante desejado e a PM mais próxima; as setas e números fornecem direção e velocidade médias de sizígia, com fator de correção apenas para a velocidade quando se busca maior precisão.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+        "publication": "Navegação: A Ciência e a Arte, v. III",
+        "edition": "DHN",
+        "section": "Capítulo 45, §45.2.4 — circulação do vento e lei de Buys-Ballot",
+        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · vento e distribuição de pressão",
+        "evidence": "O recorte consultado enuncia que, olhando para a direção de onde sopra o vento verdadeiro, a baixa fica à esquerda no Hemisfério Sul, cerca de 110° dessa direção."
       }
     },
     {
-      "id": "fri-x1-turning-circle-criteria",
-      "category": "rotation",
-      "axis": "I",
-      "kind": "Eixo de consolidação · capacidade de giro",
-      "stem": "Na manobra de curva de giro padronizada, quais limites caracterizam capacidade de giro satisfatória segundo a MSC.137(76)?",
+      "id": "sat-c3-pressure-systems-south",
+      "category": "current",
+      "axis": "V",
+      "kind": "Tema principal · circulação em centros de pressão",
+      "stem": "Desconsiderando efeitos locais, como se organiza a circulação horizontal do vento em torno de centros de pressão no Hemisfério Sul?",
       "options": [
-        "Avanço máximo de 4,5 L e diâmetro tático máximo de 5 L.",
-        "Avanço máximo de 5 L e diâmetro tático máximo de 4,5 L.",
-        "Avanço máximo de 2,5 L e diâmetro tático máximo de 4,5 L.",
-        "Avanço e diâmetro tático limitados ambos a 3 L."
+        "Horária em torno das baixas e anti-horária em torno das altas.",
+        "Anti-horária tanto nas baixas quanto nas altas.",
+        "Anti-horária em torno das baixas e horária em torno das altas.",
+        "Horária tanto nas baixas quanto nas altas."
       ],
       "correct": 0,
-      "explanation": "A resolução fixa avanço não superior a 4,5 comprimentos e diâmetro tático não superior a 5 comprimentos.",
+      "explanation": "No Hemisfério Sul, a circulação é horária ao redor das baixas pressões e anti-horária ao redor das altas.",
       "comments": [
-        "Correta: mantém cada grandeza associada ao seu limite.",
-        "Incorreta: troca os dois limites entre si.",
-        "Incorreta: 2,5 L pertence ao critério de capacidade inicial de guinada.",
-        "Incorreta: não há limite geral de 3 L para essas grandezas."
+        "Correta: é a configuração descrita para o Hemisfério Sul.",
+        "Incorreta: centros de sinais opostos não apresentam o mesmo sentido de circulação.",
+        "Incorreta: essa combinação corresponde ao Hemisfério Norte.",
+        "Incorreta: altas e baixas não têm o mesmo sentido de rotação."
       ],
       "reference": {
-        "referenceId": "I-07",
-        "base": "IMO — Resolution MSC.137(76)",
-        "publication": "Standards for Ship Manoeuvrability",
-        "edition": "MSC.137(76), adotada em 4 de dezembro de 2002",
-        "section": "Anexo, §5.3.1 — turning ability",
-        "syllabus": "Eixo I — Manobrabilidade · critérios da curva de giro",
-        "evidence": "O recorte consultado limita o avanço a 4,5 L e o diâmetro tático a 5 L na curva de giro.",
-        "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
+        "referenceId": "V-01",
+        "base": "Miguens, Altineu Pires",
+        "publication": "Navegação: A Ciência e a Arte, v. III",
+        "edition": "DHN",
+        "section": "Capítulo 45, §45.2.4 — ciclones e anticiclones",
+        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · circulação atmosférica",
+        "evidence": "O recorte consultado informa que, no Hemisfério Sul, os ventos giram no sentido horário em torno das baixas e no sentido anti-horário em torno das altas pressões."
       }
     },
     {
-      "id": "fri-x2-pilotage-exemption-certificate",
+      "id": "sat-x1-tug-girting",
       "category": "rotation",
-      "axis": "IV",
-      "kind": "Eixo alternado · Certificado de Isenção de Praticagem",
-      "stem": "Sem prejuízo dos demais requisitos regulamentares, a Lei nº 14.813/2024 permite conceder Certificado de Isenção de Praticagem exclusivamente a:",
+      "axis": "II",
+      "kind": "Eixo alternado · segurança de rebocadores",
+      "stem": "No emprego de um rebocador convencional, qual situação caracteriza o risco de girting?",
       "options": [
-        "qualquer comandante de navio estrangeiro com até 500 AB.",
-        "comandante brasileiro de navio de bandeira brasileira com até 100 m, cuja tripulação tenha ao menos dois terços de brasileiros.",
-        "comandante estrangeiro de navio brasileiro sem limite de comprimento.",
-        "imediato brasileiro de qualquer navio com experiência comprovada na zona."
+        "Perda de empuxo por cavitação axial do hélice, sem momento de banda.",
+        "Possibilidade de emborcamento causada por elevada força transversal do cabo de reboque.",
+        "Rompimento inevitável do cabo quando o rebocador trabalha alinhado ao reboque.",
+        "Aumento do calado do navio assistido devido ao efeito squat."
       ],
       "correct": 1,
-      "explanation": "A lei restringe a concessão ao comandante brasileiro, em navio de bandeira brasileira de até 100 m, com tripulação composta por no mínimo dois terços de brasileiros, além das demais condições.",
+      "explanation": "Girting é o risco de emborcamento, especialmente em rebocadores convencionais, quando forças elevadas do cabo atuam transversalmente e produzem grande momento de banda.",
       "comments": [
-        "Incorreta: nacionalidade, bandeira e limite apresentados não correspondem ao dispositivo.",
-        "Correta: reúne cumulativamente os requisitos pessoais e do navio enunciados no caput do §4º.",
-        "Incorreta: o comandante deve ser brasileiro e existe limite de 100 m.",
-        "Incorreta: a autorização legal é para comandante, não para imediato, e não abrange qualquer navio."
+        "Incorreta: cavitação não define girting.",
+        "Correta: corresponde à definição e ao mecanismo de risco descritos por Hensen.",
+        "Incorreta: alinhamento não torna o rompimento inevitável e não define o fenômeno.",
+        "Incorreta: squat é fenômeno hidrodinâmico do navio em águas restritas."
       ],
       "reference": {
-        "referenceId": "IV-10",
-        "base": "Brasil — Lei nº 14.813/2024",
-        "publication": "Lei nº 14.813/2024 — Atividade de Praticagem",
-        "edition": "Lei de 15 de janeiro de 2024",
-        "section": "Art. 2º, alteração do art. 13, §4º, da Lei nº 9.537/1997",
-        "syllabus": "Eixo IV — Legislação e Regulamentação · isenção de praticagem",
-        "evidence": "O texto consultado admite o certificado exclusivamente para comandante brasileiro de navio brasileiro com até 100 m e tripulação formada por pelo menos dois terços de brasileiros, condicionado aos demais requisitos.",
-        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14813.htm"
+        "referenceId": "II-09",
+        "base": "Hensen, Henk",
+        "publication": "Tug Use in Port",
+        "edition": "4. ed., 2021",
+        "section": "Glossário — Girting; Capítulo 4 — capabilities and limitations",
+        "syllabus": "Eixo II — Arte Naval · emprego e limitações de rebocadores portuários",
+        "evidence": "O recorte consultado define girting como risco de emborcamento, sobretudo em rebocadores convencionais, devido a forças elevadas e transversais exercidas pelo cabo de reboque."
       }
     },
     {
-      "id": "fri-o1-pscpp2008-q26",
+      "id": "sat-x2-fatigue-sleep-debt",
+      "category": "rotation",
+      "axis": "VII",
+      "kind": "Eixo de cobertura · fadiga e dívida de sono",
+      "stem": "Segundo as diretrizes da IMO sobre fadiga, qual afirmação descreve corretamente a dívida de sono?",
+      "options": [
+        "É eliminada por adaptação subjetiva depois de três turnos noturnos.",
+        "É o sono insuficiente acumulado em períodos consecutivos de 24 horas e pode reduzir a capacidade de avaliar o próprio desempenho.",
+        "Afeta somente tripulantes sem experiência ou treinamento.",
+        "Pode ser totalmente compensada por pausas curtas sem sono."
+      ],
+      "correct": 1,
+      "explanation": "A dívida de sono resulta da insuficiência acumulada de sono. Além de reduzir alerta e desempenho, pode fazer a pessoa subestimar o próprio nível de fadiga.",
+      "comments": [
+        "Incorreta: a percepção subjetiva pode piorar, não provar adaptação segura.",
+        "Correta: reúne a definição e uma consequência operacional expressa nas diretrizes.",
+        "Incorreta: a IMO ressalta que a fadiga afeta todos, independentemente de habilidade ou treinamento.",
+        "Incorreta: pausas ajudam, mas não substituem o sono necessário."
+      ],
+      "reference": {
+        "referenceId": "VII-05",
+        "base": "IMO — MSC.1/Circ.1598",
+        "publication": "Guidelines on Fatigue",
+        "edition": "MSC.1/Circ.1598, 2019",
+        "section": "Anexo, Módulo 1, §§22–23 — sleep debt and sleep inertia",
+        "syllabus": "Eixo VII — Conhecimentos Gerais · fatores humanos e gestão da fadiga",
+        "evidence": "O recorte consultado define dívida de sono como sono insuficiente acumulado em períodos consecutivos de 24 horas e alerta que a privação pode prejudicar a percepção da própria fadiga e do desempenho."
+      }
+    },
+    {
+      "id": "sat-o1-pscpp2008-q9",
       "category": "official",
       "axis": "V",
       "kind": "Questão oficial histórica · PSCPP 2008",
-      "stem": "As marés têm significativas influências na navegação costeira, inclusive na elaboração das cartas náuticas. Por consequência, os navegantes devem levar em consideração os seus efeitos. Para tal, utilizam as publicações Tábuas das Marés e Cartas de Correntes de Marés, que fornecem os principais elementos e efeitos das marés. Interprete as afirmativas a seguir:\nI) as Cartas de Correntes de Marés se referem às marés do próprio dia, por isso podendo ser usadas diariamente na navegação.\nII) ao longo do ciclo lunar, as variações diárias das alturas das marés são simétricas, em relação ao nível médio do mar (NM), tanto na quadratura quanto na sizígia.\nIII) a informação da altura do NM, indicada em destaque no cabeçalho das páginas de cada porto, nas Tábuas das Marés, é para alertar o navegante sobre o valor da amplitude da maré de sizígia no respectivo porto.\nIV) as intensidades distintas das correntes de enchente e de vazante, observadas em diferentes portos, devem-se a características geográficas da região.\nV) o estabelecimento do nível de referência do zero da régua das marés está associado à carta náutica do porto.\nDe acordo com Lobo & Soares, assinale a opção que contém todas as afirmativas verdadeiras:",
+      "stem": "Um navegante, no oceano Atlântico Sul, recebe a bordo o Meteoromarinha de 0000 HMG, que contempla, na parte III, a área Alfa, com a seguinte redação: “Céu parcialmente nublado a encoberto. Vento de NW/N, 3/4, passando a SW/S, 2/3, no sul da área. Ondas de S/NE, 1,0/2,0. Visibilidade boa a moderada”. Interprete as afirmativas: I) uma frente fria já está se afastando da área; II) rajadas de vento, trovoadas e pancadas de chuva, no norte da área, nas próximas 12 horas; III) ocorrência de Cb, no sul da área; IV) passagem do eixo de um cavado nas próximas 24 horas. Assinale a opção que contém todas as afirmativas corretas.",
       "options": [
-        "I e II.",
-        "II e IV.",
-        "III, IV e V.",
-        "I, III e V.",
-        "II, III e V."
+        "II, III e IV.",
+        "I, II e III.",
+        "I, II e IV.",
+        "II e III.",
+        "III e IV."
       ],
       "correct": 4,
-      "explanation": "O gabarito oficial considera verdadeiras II, III e V. As cartas de correntes representam condições médias referidas à preamar, não a maré específica de cada dia; a afirmação IV generaliza incorretamente a causa das diferenças de intensidade.",
+      "explanation": "O gabarito oficial indica E: são corretas III e IV. A mudança do vento no sul da área é compatível com instabilidade, Cumulonimbus e passagem associada a cavado; as afirmações I e II extrapolam ou invertem a situação descrita.",
       "comments": [
-        "Incorreta: inclui I, que atribui às cartas a maré específica do próprio dia.",
-        "Incorreta: inclui IV e omite III e V.",
-        "Incorreta: inclui IV, rejeitada no conjunto oficial, embora contenha III e V.",
-        "Incorreta: inclui I, ainda que III e V sejam verdadeiras.",
-        "Correta: é o conjunto II, III e V indicado pelo gabarito E."
+        "Incorreta: inclui II, que desloca para o norte fenômenos não informados pelo boletim.",
+        "Incorreta: inclui I e II, ambas incompatíveis com a interpretação oficial.",
+        "Incorreta: inclui I e II e exclui III.",
+        "Incorreta: mantém II e omite IV.",
+        "Correta: corresponde ao gabarito oficial, com III e IV."
       ],
       "reference": {
         "referenceId": "V-03",
         "base": "Lobo, P. R. V.; Soares, C. A.",
         "publication": "Meteorologia e Oceanografia",
-        "edition": "4ª edição, 2019",
-        "section": "Capítulos IX e X — marés, correntes costeiras e Cartas de Correntes de Marés",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · marés e correntes aplicadas à navegação",
-        "evidence": "Os recortes consultados mantêm o NM constante ao longo do ciclo lunar, relacionam o NM à semiamplitude de sizígia, vinculam o zero da régua ao nível de redução da carta e descrevem as cartas como médias de sizígia referidas à PM.",
-        "origin": "PSCPP 2008 — prova escrita oficial, questão 26 — gabarito E; transcrição integral, com atualização apenas da grafia",
-        "url": "https://drive.google.com/file/d/14RLZewUiDcRYbg76OVZGahAH2lYPJEWk/view"
+        "edition": "4. ed., 2019",
+        "section": "Capítulos I e V — nuvens, sistemas de pressão e interpretação meteorológica",
+        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · boletins, nuvens e sistemas sinóticos",
+        "evidence": "O recorte consultado relaciona movimento ascendente e instabilidade à formação de Cumulonimbus, descreve cavados como extensões de baixa pressão frequentemente associadas a frentes e fornece os elementos usados para interpretar a mudança de vento do boletim.",
+        "origin": "PSCPP 2008 — prova escrita oficial, questão 9 — gabarito E; transcrição integral, com atualização apenas da ortografia e da apresentação numérica"
       }
     }
   ]
