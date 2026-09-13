@@ -1,9 +1,9 @@
 {
-  "roundId": "cumulative-meteo-navigation-2026-09-12",
-  "label": "Simulado cumulativo de sábado",
-  "title": "Meteorologia, marés e decisões de manobra",
+  "roundId": "sunday-corrections-meteo-colreg-2026-09-13",
+  "label": "Rodada dominical de correção",
+  "title": "Erros persistentes, umidade e sinais de navegação",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Correção de erros · meteorologia sinótica · manobrabilidade · rebocadores · fatores humanos",
+  "path": "Revisões FSRS vencidas · correção de erros · meteorologia aplicada · SMCP · legislação · COLREG",
   "method": "4–3–2–1",
   "mixPlan": {
     "review": 4,
@@ -13,24 +13,24 @@
   },
   "questions": [
     {
-      "id": "sat-r1-tide-reference-levels",
+      "id": "sun-r1-tide-nr-nm-amplitude",
       "category": "review",
       "axis": "V",
-      "kind": "Correção de erro · planos de referência das marés",
-      "stem": "Ao revisar os elementos das marés usados na navegação costeira, assinale a afirmativa correta.",
+      "kind": "Correção do erro oficial · níveis e amplitude da maré",
+      "stem": "Na interpretação das Tábuas das Marés e da carta náutica de um porto, assinale a alternativa correta.",
       "options": [
-        "O nível médio varia com a fase da Lua e atinge seu maior valor nas sizígias.",
-        "O nível médio permanece o mesmo ao longo do ciclo lunar; o zero da régua de marés coincide com o nível de redução empregado na carta do porto.",
-        "A amplitude da maré é medida da superfície instantânea até o nível de redução.",
-        "As sondagens da carta náutica são reduzidas ao nível médio do mar."
+        "O nível médio sobe nas sizígias e desce nas quadraturas.",
+        "O nível de redução é próprio de cada porto e também serve de referência para reduzir as sondagens da respectiva carta náutica.",
+        "A amplitude é medida entre a superfície instantânea e o nível de redução.",
+        "O zero da régua de marés coincide necessariamente com o nível médio."
       ],
       "correct": 1,
-      "explanation": "O nível médio é estável ao longo das fases lunares. O zero da régua coincide com o nível de redução do porto, também usado para reduzir as sondagens da carta.",
+      "explanation": "O nível de redução é determinado para cada porto e é utilizado na redução das sondagens da carta correspondente. A amplitude, por sua vez, é a diferença entre preamar e baixa-mar.",
       "comments": [
-        "Incorreta: a fase lunar altera principalmente a amplitude entre preamar e baixa-mar, não o nível médio.",
-        "Correta: reúne as relações de referência apresentadas no recorte consultado.",
-        "Incorreta: a amplitude é a diferença entre a preamar e a baixa-mar; a altura da maré é referida ao nível de redução.",
-        "Incorreta: as sondagens são reduzidas ao nível de redução, não ao nível médio."
+        "Incorreta: o nível médio permanece o mesmo; o que varia com a fase lunar é a amplitude.",
+        "Correta: expressa a relação entre o nível de redução do porto e a carta náutica.",
+        "Incorreta: essa grandeza é a altura da maré; amplitude é PM menos BM.",
+        "Incorreta: o zero da régua coincide com o nível de redução, não com o nível médio."
       ],
       "reference": {
         "referenceId": "V-03",
@@ -38,60 +38,90 @@
         "publication": "Meteorologia e Oceanografia",
         "edition": "4. ed., 2019",
         "section": "Capítulo IX — Marés e correntes de marés; conceitos e exercícios",
-        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · marés, níveis e cartas",
-        "evidence": "O recorte consultado afirma que o nível médio permanece constante ao longo do ciclo lunar, que o zero da régua coincide com o nível de redução e que esse nível é empregado na redução das sondagens da carta do porto."
+        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · Tábuas das Marés e planos de referência",
+        "evidence": "O recorte consultado informa que cada porto possui nível de redução próprio, usado também para reduzir as sondagens de sua carta, e distingue altura da maré, nível médio e amplitude."
       }
     },
     {
-      "id": "sat-r2-first-overshoot-lv18",
+      "id": "sun-r2-cirrus-claws",
+      "category": "review",
+      "axis": "V",
+      "kind": "Correção de erro · Cirrus com garras",
+      "stem": "Para o navegante, a observação de nuvens Cirrus com garras, também chamadas rabo de galo, deslocando-se acentuadamente em direção à embarcação indica, em geral:",
+      "options": [
+        "dissipação de mau tempo e estabilização imediata.",
+        "aproximação de mau tempo, com caráter pré-frontal.",
+        "formação exclusiva de nevoeiro de radiação.",
+        "ausência de atividade convectiva nas proximidades."
+      ],
+      "correct": 1,
+      "explanation": "Cirrus com garras e deslocamento acentuado são descritos como nuvens pré-frontais e sinal de mau tempo em aproximação.",
+      "comments": [
+        "Incorreta: o sinal aponta aproximação, não afastamento, do mau tempo.",
+        "Correta: corresponde à interpretação operacional do recorte.",
+        "Incorreta: nevoeiro de radiação é outro fenômeno e não define essa forma de Cirrus.",
+        "Incorreta: o padrão pode anteceder sistema com instabilidade e não permite concluir ausência de convecção."
+      ],
+      "reference": {
+        "referenceId": "V-03",
+        "base": "Lobo, P. R. V.; Soares, C. A.",
+        "publication": "Meteorologia e Oceanografia",
+        "edition": "4. ed., 2019",
+        "section": "Capítulo I, §2.4.1 e Figura I-32 — Cirrus com garras",
+        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · nuvens de interesse ao navegante",
+        "evidence": "O recorte consultado classifica o Cirrus com garras ou rabo de galo como pré-frontal e o associa, quando se desloca acentuadamente em direção à embarcação, à aproximação de mau tempo."
+      }
+    },
+    {
+      "id": "sun-r3-first-overshoot-lv18",
       "category": "review",
       "axis": "I",
-      "kind": "Correção de erro de leitura · primeiro overshoot",
-      "stem": "Para um navio com L/V = 18 s, qual é o limite do primeiro ângulo de overshoot no zig-zag 10°/10° e após qual execute ele é medido?",
+      "kind": "Correção de erro de leitura · overshoot 10°/10°",
+      "stem": "No zig-zag 10°/10°, para L/V = 18 s, qual associação está correta?",
       "options": [
-        "14°, após o segundo execute.",
-        "14°, após o terceiro execute.",
-        "18°, após o segundo execute.",
-        "20°, após o primeiro execute."
+        "Primeiro overshoot máximo de 14°, medido após o segundo execute.",
+        "Primeiro overshoot máximo de 18°, medido após o terceiro execute.",
+        "Segundo overshoot máximo de 14°, medido após o segundo execute.",
+        "Primeiro overshoot máximo de 20°, medido após o primeiro execute."
       ],
       "correct": 0,
-      "explanation": "Na faixa 10 s ≤ L/V < 30 s, o limite é 5 + 0,5(L/V): 5 + 0,5×18 = 14°. O primeiro overshoot é o desvio adicional após o segundo execute.",
+      "explanation": "Para 10 s ≤ L/V < 30 s, o limite do primeiro overshoot é 5 + 0,5(L/V), resultando em 14°. Ele ocorre após o segundo execute.",
       "comments": [
-        "Correta: aplica a fórmula da faixa intermediária e a definição temporal do primeiro overshoot.",
-        "Incorreta: após o terceiro execute mede-se o segundo overshoot.",
-        "Incorreta: 18 s é a razão L/V, não o limite angular.",
-        "Incorreta: o primeiro execute inicia a guinada e não define o primeiro overshoot."
+        "Correta: combina o cálculo e a sequência de executes previstos na resolução.",
+        "Incorreta: 18 s é a razão L/V; após o terceiro execute mede-se o segundo overshoot.",
+        "Incorreta: confunde a ordem dos dois overshoots.",
+        "Incorreta: o primeiro execute apenas inicia a primeira guinada."
       ],
       "reference": {
         "referenceId": "I-07",
         "base": "IMO — Resolution MSC.137(76)",
         "publication": "Standards for Ship Manoeuvrability",
         "edition": "MSC.137(76), adotada em 4 de dezembro de 2002",
-        "section": "Anexo, §§4.2.6–4.2.8 e 5.3.3.1 — zig-zag e primeiro overshoot",
-        "syllabus": "Eixo I — Manobrabilidade · zig-zag, executes e critérios de yaw-checking",
-        "evidence": "O recorte consultado define o primeiro overshoot como o desvio adicional após o segundo execute e fixa, para 10 s ≤ L/V < 30 s, o limite 5 + 0,5(L/V) graus.",
+        "section": "Anexo, §§4.2.6–4.2.8 e 5.3.3.1",
+        "syllabus": "Eixo I — Manobrabilidade · zig-zag, executes e yaw-checking",
+        "evidence": "O recorte consultado define o primeiro overshoot após o segundo execute e fixa o limite 5 + 0,5(L/V) graus na faixa intermediária de 10 s a menos de 30 s.",
         "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
       }
     },
     {
-      "id": "sat-r3-trial-depth-strict-limit",
+      "id": "sun-r4-water-depth-mean-draught",
       "category": "review",
       "axis": "I",
-      "kind": "Correção de erro · profundidade da área de prova",
-      "stem": "Nas provas padronizadas de um navio com calado médio de 7,5 m, qual profundidade atende à MSC/Circ.1053?",
+      "kind": "Correção de erro · condição de águas profundas",
+      "stem": "Um navio de calado médio 9,0 m será submetido às provas padronizadas. Qual profundidade atende à MSC/Circ.1053?",
       "options": [
-        "15 m ou mais.",
-        "22,5 m ou mais.",
-        "Exatamente 30 m.",
-        "Mais de 30 m."
+        "18 m ou mais.",
+        "27 m ou mais.",
+        "Exatamente 36 m.",
+        "Mais de 36 m."
       ],
       "correct": 3,
-      "explanation": "A profundidade deve exceder quatro vezes o calado médio. Como 4×7,5 = 30 m, a igualdade não satisfaz o requisito.",
+      "explanation": "A profundidade deve exceder quatro vezes o calado médio. Quatro vezes 9,0 m são 36 m; portanto, a igualdade não basta.",
       "comments": [
-        "Incorreta: equivale a apenas duas vezes o calado médio.",
-        "Incorreta: equivale a três vezes o calado médio.",
-        "Incorreta: a circular exige exceder, e não apenas alcançar, quatro vezes o calado médio.",
-        "Correta: é a única opção estritamente superior a 30 m."
+        "Incorreta: corresponde a duas vezes o calado médio.",
+        "Incorreta: corresponde a três vezes o calado médio.",
+        "Incorreta: a circular exige exceder quatro vezes o calado.",
+        "Correta: é a única condição estritamente superior a 36 m."
       ],
       "reference": {
         "referenceId": "I-06",
@@ -100,222 +130,194 @@
         "edition": "MSC/Circ.1053, 16 de dezembro de 2002",
         "section": "Anexo, §2.1.2 — Deep, unrestricted water",
         "syllabus": "Eixo I — Manobrabilidade · condições ambientais das provas",
-        "evidence": "O recorte consultado estabelece que a profundidade da água deve exceder quatro vezes o calado médio, devido à influência do fundo, das margens e de navios que passam.",
+        "evidence": "O recorte consultado exige profundidade superior a quatro vezes o calado médio e ressalta a influência do fundo, das margens e de navios que passam.",
         "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/MSC-Circ.1053.pdf"
       }
     },
     {
-      "id": "sat-r4-underway-not-making-way",
-      "category": "review",
-      "axis": "III",
-      "kind": "Revisão FSRS vencida · underway versus making way",
-      "stem": "Uma embarcação está à deriva, com máquinas paradas, sem estar fundeada, amarrada à terra ou encalhada. Para fins do COLREG, ela está:",
+      "id": "sun-c1-relative-humidity",
+      "category": "current",
+      "axis": "V",
+      "kind": "Tema principal · umidade relativa",
+      "stem": "Em meteorologia, a umidade relativa do ar é definida como:",
       "options": [
-        "underway, embora possa não estar making way through the water.",
-        "fundeada, porque não usa suas máquinas.",
-        "sem governo obrigatoriamente.",
-        "not underway, pois não desenvolve seguimento."
+        "a massa total de ar por unidade de volume.",
+        "a relação percentual entre o vapor presente e o máximo que o ar pode conter na mesma temperatura.",
+        "a diferença entre a temperatura do ar e a temperatura da superfície do mar.",
+        "a pressão parcial do oxigênio dividida pela pressão atmosférica."
+      ],
+      "correct": 1,
+      "explanation": "A umidade relativa compara, em percentagem, o vapor d’água efetivamente presente com a quantidade máxima possível na temperatura considerada.",
+      "comments": [
+        "Incorreta: descreve densidade do ar, não umidade relativa.",
+        "Correta: corresponde à definição apresentada por Miguens.",
+        "Incorreta: essa diferença pode auxiliar diagnósticos, mas não define umidade relativa.",
+        "Incorreta: a composição de oxigênio não é a grandeza procurada."
+      ],
+      "reference": {
+        "referenceId": "V-01",
+        "base": "Miguens, Altineu Pires",
+        "publication": "Navegação: A Ciência e a Arte, v. III",
+        "edition": "DHN",
+        "section": "Capítulo 45, §45.2.3 — umidade",
+        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · elementos meteorológicos",
+        "evidence": "O recorte consultado define umidade relativa como a relação percentual entre a quantidade de vapor d’água presente e a quantidade máxima que o ar pode conter na mesma temperatura."
+      }
+    },
+    {
+      "id": "sun-c2-dew-point-condensation",
+      "category": "current",
+      "axis": "V",
+      "kind": "Tema principal · ponto de orvalho",
+      "stem": "Mantidos constantes a pressão e o teor de vapor d’água, o que ocorre quando o ar é resfriado abaixo da temperatura do ponto de orvalho?",
+      "options": [
+        "Inicia-se a condensação.",
+        "A umidade relativa torna-se zero.",
+        "A pressão atmosférica dobra.",
+        "O ar permanece necessariamente não saturado."
       ],
       "correct": 0,
-      "explanation": "Underway é definido pela ausência de fundeio, amarração à terra ou encalhe. A definição não exige propulsão nem seguimento na água.",
+      "explanation": "O ponto de orvalho é a temperatura de saturação. Se o resfriamento prossegue abaixo dela, inicia-se o processo de condensação.",
       "comments": [
-        "Correta: distingue a condição jurídica de underway da existência de seguimento.",
-        "Incorreta: fundeio depende de estar efetivamente ao ferro, não de máquinas paradas.",
-        "Incorreta: sem governo requer circunstância excepcional que impeça manobrar conforme as regras.",
-        "Incorreta: ausência de seguimento não elimina a condição de underway."
+        "Correta: é a consequência física indicada no recorte.",
+        "Incorreta: durante o resfriamento a umidade relativa aumenta até a saturação.",
+        "Incorreta: não existe essa relação de duplicação automática da pressão.",
+        "Incorreta: o ponto de orvalho marca justamente a saturação."
+      ],
+      "reference": {
+        "referenceId": "V-01",
+        "base": "Miguens, Altineu Pires",
+        "publication": "Navegação: A Ciência e a Arte, v. III",
+        "edition": "DHN",
+        "section": "Capítulo 45, §45.2.3 — ponto de orvalho",
+        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · saturação e condensação",
+        "evidence": "O recorte consultado define o ponto de orvalho como a temperatura de saturação para pressão e teor de vapor constantes e informa que resfriamento adicional inicia a condensação."
+      }
+    },
+    {
+      "id": "sun-c3-barometer-onboard",
+      "category": "current",
+      "axis": "V",
+      "kind": "Tema principal · observação barométrica a bordo",
+      "stem": "Qual instrumento é normalmente empregado a bordo para leituras rotineiras da pressão atmosférica?",
+      "options": [
+        "Barômetro aneroide.",
+        "Barômetro de mercúrio sem correções de movimento.",
+        "Psicrômetro de funda.",
+        "Anemômetro de conchas."
+      ],
+      "correct": 0,
+      "explanation": "O barômetro aneroide é normalmente utilizado no passadiço ou camarim de navegação. O de mercúrio é pouco conveniente a bordo por fragilidade, tamanho e sensibilidade aos movimentos.",
+      "comments": [
+        "Correta: é o instrumento descrito como usual para leituras rotineiras a bordo.",
+        "Incorreta: o barômetro de mercúrio é pouco prático no navio e, quando existente, tende a servir de aferição.",
+        "Incorreta: o psicrômetro mede temperaturas de bulbo seco e úmido.",
+        "Incorreta: o anemômetro mede vento."
+      ],
+      "reference": {
+        "referenceId": "V-01",
+        "base": "Miguens, Altineu Pires",
+        "publication": "Navegação: A Ciência e a Arte, v. III",
+        "edition": "DHN",
+        "section": "Capítulo 45, §45.2.1(a) — barômetros",
+        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · instrumentos meteorológicos",
+        "evidence": "O recorte consultado informa que barômetros aneroides são normalmente usados a bordo e explica as limitações do barômetro de mercúrio em razão da fragilidade, do tamanho e dos movimentos do navio."
+      }
+    },
+    {
+      "id": "sun-x1-smcp-correction",
+      "category": "rotation",
+      "axis": "VI",
+      "kind": "Eixo alternado · correção de mensagem na SMCP",
+      "stem": "Durante uma mensagem VHF, o oficial percebe que informou velocidade incorreta. Qual sequência segue a IMO SMCP?",
+      "options": [
+        "“Cancel” e repetir toda a mensagem desde o início.",
+        "“Mistake”, seguido de “Correction” e da parte corrigida.",
+        "“Say again” e aguardar a estação repetir o erro.",
+        "“Repeat” sem identificar a informação correta."
+      ],
+      "correct": 1,
+      "explanation": "Ao cometer erro, a SMCP manda dizer “Mistake”, depois “Correction” e transmitir a parte corrigida da mensagem.",
+      "comments": [
+        "Incorreta: essa não é a fórmula prescrita para corrigir erro do próprio transmissor.",
+        "Correta: reproduz a sequência expressa da seção Corrections.",
+        "Incorreta: “Say again” solicita repetição de mensagem não ouvida adequadamente.",
+        "Incorreta: “Repeat” protege informação importante, mas não substitui a fórmula de correção."
+      ],
+      "reference": {
+        "referenceId": "VI-01",
+        "base": "IMO — Resolution A.918(22)",
+        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
+        "edition": "A.918(22), adotada em 29 de novembro de 2001",
+        "section": "General, §§7–9 — Corrections and Repetition",
+        "syllabus": "Eixo VI — Comunicações · correção e repetição de mensagens",
+        "evidence": "O recorte consultado determina dizer “Mistake”, seguido de “Correction” e da parte corrigida; distingue essa sequência de “Say again” e “Repeat”.",
+        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
+      }
+    },
+    {
+      "id": "sun-x2-pilotage-exemption-limits",
+      "category": "rotation",
+      "axis": "IV",
+      "kind": "Eixo de consolidação · Certificado de Isenção de Praticagem",
+      "stem": "Nos termos da Lei nº 14.813/2024, qual conjunto contém requisitos legais expressos para a concessão do Certificado de Isenção de Praticagem?",
+      "options": [
+        "Comandante de qualquer nacionalidade, navio de qualquer bandeira e até 150 m.",
+        "Comandante brasileiro, navio de bandeira brasileira com até 100 m e tripulação composta por, no mínimo, dois terços de brasileiros.",
+        "Comandante brasileiro, navio estrangeiro com até 100 m e metade da tripulação brasileira.",
+        "Comandante estrangeiro, navio brasileiro com até 80 m e tripulação integralmente brasileira."
+      ],
+      "correct": 1,
+      "explanation": "A lei reserva a possibilidade a comandantes brasileiros de navios de bandeira brasileira com até 100 m e tripulação com pelo menos dois terços de brasileiros, além dos requisitos regulamentares.",
+      "comments": [
+        "Incorreta: erra nacionalidade, bandeira e limite de comprimento.",
+        "Correta: reúne os três requisitos expressos no §4º.",
+        "Incorreta: a bandeira deve ser brasileira e a fração mínima é dois terços.",
+        "Incorreta: o comandante deve ser brasileiro e o limite legal é até 100 m."
+      ],
+      "reference": {
+        "referenceId": "IV-10",
+        "base": "Brasil — Lei nº 14.813/2024",
+        "publication": "Lei nº 14.813, de 15 de janeiro de 2024",
+        "edition": "texto promulgado em 15 de janeiro de 2024",
+        "section": "Art. 2º, alteração do art. 13, §4º, da Lei nº 9.537/1997",
+        "syllabus": "Eixo IV — Legislação · serviço de praticagem e isenção",
+        "evidence": "O recorte consultado permite à autoridade marítima conceder o certificado exclusivamente a comandante brasileiro de navio de bandeira brasileira com até 100 m e tripulação composta de, no mínimo, dois terços de brasileiros.",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14813.htm"
+      }
+    },
+    {
+      "id": "sun-o1-pscpp2008-q28",
+      "category": "official",
+      "axis": "III",
+      "kind": "Questão oficial histórica · PSCPP 2008",
+      "stem": "Taking into account that the vessels described below carry all the lights prescribed by the COLREG, which alternative is correct?",
+      "options": [
+        "An 11-metre power-driven vessel underway may exhibit two masthead lights, sidelights and a sternlight.",
+        "A power-driven vessel towing, when the length of the tow exceeds 200 metres, shall exhibit four masthead lights, sidelights and a towing light.",
+        "A vessel of less than 50 metres engaged in trawling and making way may exhibit one all-round green light, one all-round red light, one masthead light, sidelights and a sternlight.",
+        "A vessel restricted in her ability to manoeuvre, except one engaged in mine-clearance operations, when at anchor, shall exhibit two all-round red lights and one all-round white light.",
+        "A 25-metre sailing vessel underway shall exhibit one all-round red light and one all-round green light."
+      ],
+      "correct": 0,
+      "explanation": "O gabarito oficial indica A. Embarcação de propulsão mecânica com menos de 50 m não é obrigada a exibir a segunda luz de mastro, mas pode fazê-lo; as luzes de bordos e de alcançado permanecem prescritas.",
+      "comments": [
+        "Correta: a segunda luz de mastro é facultativa para embarcação com menos de 50 m.",
+        "Incorreta: reboque superior a 200 m exige três, não quatro, luzes de mastro em linha vertical, além das demais luzes prescritas.",
+        "Incorreta: arrasto é indicado por verde sobre branca, não verde sobre encarnada.",
+        "Incorreta: capacidade de manobra restrita é encarnada–branca–encarnada e, quando fundeada, soma as luzes de fundeio.",
+        "Incorreta: encarnada sobre verde é facultativa e deve ser adicional às luzes de bordos e de alcançado."
       ],
       "reference": {
         "referenceId": "III-16",
         "base": "COLREG 1972 / RIPEAM",
         "publication": "COLREG — Consolidated Edition 2018",
         "edition": "2018",
-        "section": "Parte A, Regra 3(i) — definição de underway",
-        "syllabus": "Eixo III — Navegação em Águas Restritas · definições e aplicação do RIPEAM",
-        "evidence": "O recorte consultado define underway como a embarcação que não está fundeada, amarrada à terra ou encalhada; não condiciona o termo à propulsão ou ao seguimento.",
-        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
-      }
-    },
-    {
-      "id": "sat-c1-pressure-with-altitude",
-      "category": "current",
-      "axis": "V",
-      "kind": "Tema principal · pressão atmosférica",
-      "stem": "Por que a pressão atmosférica diminui à medida que aumenta a altitude?",
-      "options": [
-        "Porque a gravidade deixa de atuar acima do nível do mar.",
-        "Porque diminui o peso da coluna de atmosfera remanescente acima do ponto considerado.",
-        "Porque o ar ascendente sempre se aquece por compressão.",
-        "Porque a umidade relativa se torna necessariamente igual a zero."
-      ],
-      "correct": 1,
-      "explanation": "A pressão em determinada altitude corresponde ao peso da atmosfera acima daquela cota por unidade de área; com a elevação, resta menos atmosfera sobre o ponto.",
-      "comments": [
-        "Incorreta: a gravidade continua atuando na atmosfera.",
-        "Correta: expressa a relação física apresentada no capítulo.",
-        "Incorreta: o ar ascendente se expande e tende a resfriar adiabaticamente.",
-        "Incorreta: a umidade relativa não determina sozinha a pressão nem necessariamente zera."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Miguens, Altineu Pires",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45, §45.2.1(a) — medida da pressão atmosférica",
-        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · elementos meteorológicos",
-        "evidence": "O recorte consultado define pressão atmosférica como o peso da atmosfera por unidade de área e explica sua redução com a altitude pela diminuição da coluna de ar remanescente."
-      }
-    },
-    {
-      "id": "sat-c2-buys-ballot-south",
-      "category": "current",
-      "axis": "V",
-      "kind": "Tema principal · lei de Buys-Ballot",
-      "stem": "No Hemisfério Sul, um observador volta-se para a direção de onde sopra o vento verdadeiro. Segundo a lei de Buys-Ballot, onde fica aproximadamente a baixa barométrica?",
-      "options": [
-        "À direita, cerca de 110° da direção de onde sopra o vento.",
-        "À esquerda, cerca de 110° da direção de onde sopra o vento.",
-        "Diretamente a barlavento, a 000°.",
-        "Diretamente a sotavento, a 180°."
-      ],
-      "correct": 1,
-      "explanation": "Voltado para a origem do vento verdadeiro, o observador no Hemisfério Sul terá a baixa pressão à esquerda, aproximadamente 110° daquela direção.",
-      "comments": [
-        "Incorreta: a baixa à direita corresponde ao enunciado para o Hemisfério Norte.",
-        "Correta: reproduz a relação indicada para o Hemisfério Sul.",
-        "Incorreta: a baixa não se situa diretamente na origem do vento.",
-        "Incorreta: a relação inclui desvio angular, não oposição exata de 180°."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Miguens, Altineu Pires",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45, §45.2.4 — circulação do vento e lei de Buys-Ballot",
-        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · vento e distribuição de pressão",
-        "evidence": "O recorte consultado enuncia que, olhando para a direção de onde sopra o vento verdadeiro, a baixa fica à esquerda no Hemisfério Sul, cerca de 110° dessa direção."
-      }
-    },
-    {
-      "id": "sat-c3-pressure-systems-south",
-      "category": "current",
-      "axis": "V",
-      "kind": "Tema principal · circulação em centros de pressão",
-      "stem": "Desconsiderando efeitos locais, como se organiza a circulação horizontal do vento em torno de centros de pressão no Hemisfério Sul?",
-      "options": [
-        "Horária em torno das baixas e anti-horária em torno das altas.",
-        "Anti-horária tanto nas baixas quanto nas altas.",
-        "Anti-horária em torno das baixas e horária em torno das altas.",
-        "Horária tanto nas baixas quanto nas altas."
-      ],
-      "correct": 0,
-      "explanation": "No Hemisfério Sul, a circulação é horária ao redor das baixas pressões e anti-horária ao redor das altas.",
-      "comments": [
-        "Correta: é a configuração descrita para o Hemisfério Sul.",
-        "Incorreta: centros de sinais opostos não apresentam o mesmo sentido de circulação.",
-        "Incorreta: essa combinação corresponde ao Hemisfério Norte.",
-        "Incorreta: altas e baixas não têm o mesmo sentido de rotação."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Miguens, Altineu Pires",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45, §45.2.4 — ciclones e anticiclones",
-        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · circulação atmosférica",
-        "evidence": "O recorte consultado informa que, no Hemisfério Sul, os ventos giram no sentido horário em torno das baixas e no sentido anti-horário em torno das altas pressões."
-      }
-    },
-    {
-      "id": "sat-x1-tug-girting",
-      "category": "rotation",
-      "axis": "II",
-      "kind": "Eixo alternado · segurança de rebocadores",
-      "stem": "No emprego de um rebocador convencional, qual situação caracteriza o risco de girting?",
-      "options": [
-        "Perda de empuxo por cavitação axial do hélice, sem momento de banda.",
-        "Possibilidade de emborcamento causada por elevada força transversal do cabo de reboque.",
-        "Rompimento inevitável do cabo quando o rebocador trabalha alinhado ao reboque.",
-        "Aumento do calado do navio assistido devido ao efeito squat."
-      ],
-      "correct": 1,
-      "explanation": "Girting é o risco de emborcamento, especialmente em rebocadores convencionais, quando forças elevadas do cabo atuam transversalmente e produzem grande momento de banda.",
-      "comments": [
-        "Incorreta: cavitação não define girting.",
-        "Correta: corresponde à definição e ao mecanismo de risco descritos por Hensen.",
-        "Incorreta: alinhamento não torna o rompimento inevitável e não define o fenômeno.",
-        "Incorreta: squat é fenômeno hidrodinâmico do navio em águas restritas."
-      ],
-      "reference": {
-        "referenceId": "II-09",
-        "base": "Hensen, Henk",
-        "publication": "Tug Use in Port",
-        "edition": "4. ed., 2021",
-        "section": "Glossário — Girting; Capítulo 4 — capabilities and limitations",
-        "syllabus": "Eixo II — Arte Naval · emprego e limitações de rebocadores portuários",
-        "evidence": "O recorte consultado define girting como risco de emborcamento, sobretudo em rebocadores convencionais, devido a forças elevadas e transversais exercidas pelo cabo de reboque."
-      }
-    },
-    {
-      "id": "sat-x2-fatigue-sleep-debt",
-      "category": "rotation",
-      "axis": "VII",
-      "kind": "Eixo de cobertura · fadiga e dívida de sono",
-      "stem": "Segundo as diretrizes da IMO sobre fadiga, qual afirmação descreve corretamente a dívida de sono?",
-      "options": [
-        "É eliminada por adaptação subjetiva depois de três turnos noturnos.",
-        "É o sono insuficiente acumulado em períodos consecutivos de 24 horas e pode reduzir a capacidade de avaliar o próprio desempenho.",
-        "Afeta somente tripulantes sem experiência ou treinamento.",
-        "Pode ser totalmente compensada por pausas curtas sem sono."
-      ],
-      "correct": 1,
-      "explanation": "A dívida de sono resulta da insuficiência acumulada de sono. Além de reduzir alerta e desempenho, pode fazer a pessoa subestimar o próprio nível de fadiga.",
-      "comments": [
-        "Incorreta: a percepção subjetiva pode piorar, não provar adaptação segura.",
-        "Correta: reúne a definição e uma consequência operacional expressa nas diretrizes.",
-        "Incorreta: a IMO ressalta que a fadiga afeta todos, independentemente de habilidade ou treinamento.",
-        "Incorreta: pausas ajudam, mas não substituem o sono necessário."
-      ],
-      "reference": {
-        "referenceId": "VII-05",
-        "base": "IMO — MSC.1/Circ.1598",
-        "publication": "Guidelines on Fatigue",
-        "edition": "MSC.1/Circ.1598, 2019",
-        "section": "Anexo, Módulo 1, §§22–23 — sleep debt and sleep inertia",
-        "syllabus": "Eixo VII — Conhecimentos Gerais · fatores humanos e gestão da fadiga",
-        "evidence": "O recorte consultado define dívida de sono como sono insuficiente acumulado em períodos consecutivos de 24 horas e alerta que a privação pode prejudicar a percepção da própria fadiga e do desempenho."
-      }
-    },
-    {
-      "id": "sat-o1-pscpp2008-q9",
-      "category": "official",
-      "axis": "V",
-      "kind": "Questão oficial histórica · PSCPP 2008",
-      "stem": "Um navegante, no oceano Atlântico Sul, recebe a bordo o Meteoromarinha de 0000 HMG, que contempla, na parte III, a área Alfa, com a seguinte redação: “Céu parcialmente nublado a encoberto. Vento de NW/N, 3/4, passando a SW/S, 2/3, no sul da área. Ondas de S/NE, 1,0/2,0. Visibilidade boa a moderada”. Interprete as afirmativas: I) uma frente fria já está se afastando da área; II) rajadas de vento, trovoadas e pancadas de chuva, no norte da área, nas próximas 12 horas; III) ocorrência de Cb, no sul da área; IV) passagem do eixo de um cavado nas próximas 24 horas. Assinale a opção que contém todas as afirmativas corretas.",
-      "options": [
-        "II, III e IV.",
-        "I, II e III.",
-        "I, II e IV.",
-        "II e III.",
-        "III e IV."
-      ],
-      "correct": 4,
-      "explanation": "O gabarito oficial indica E: são corretas III e IV. A mudança do vento no sul da área é compatível com instabilidade, Cumulonimbus e passagem associada a cavado; as afirmações I e II extrapolam ou invertem a situação descrita.",
-      "comments": [
-        "Incorreta: inclui II, que desloca para o norte fenômenos não informados pelo boletim.",
-        "Incorreta: inclui I e II, ambas incompatíveis com a interpretação oficial.",
-        "Incorreta: inclui I e II e exclui III.",
-        "Incorreta: mantém II e omite IV.",
-        "Correta: corresponde ao gabarito oficial, com III e IV."
-      ],
-      "reference": {
-        "referenceId": "V-03",
-        "base": "Lobo, P. R. V.; Soares, C. A.",
-        "publication": "Meteorologia e Oceanografia",
-        "edition": "4. ed., 2019",
-        "section": "Capítulos I e V — nuvens, sistemas de pressão e interpretação meteorológica",
-        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · boletins, nuvens e sistemas sinóticos",
-        "evidence": "O recorte consultado relaciona movimento ascendente e instabilidade à formação de Cumulonimbus, descreve cavados como extensões de baixa pressão frequentemente associadas a frentes e fornece os elementos usados para interpretar a mudança de vento do boletim.",
-        "origin": "PSCPP 2008 — prova escrita oficial, questão 9 — gabarito E; transcrição integral, com atualização apenas da ortografia e da apresentação numérica"
+        "section": "Parte C, Regras 23–27 — luzes e marcas",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · identificação e luzes de embarcações",
+        "evidence": "O recorte consultado permite a navio de propulsão mecânica com menos de 50 m exibir a segunda luz de mastro; também distingue os sinais de reboque, pesca de arrasto, vela e capacidade de manobra restrita.",
+        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx",
+        "origin": "PSCPP 2008 — prova escrita oficial, questão 28 — gabarito A; redação original em inglês com correções apenas ortográficas e de unidades"
       }
     }
   ]
