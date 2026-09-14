@@ -1,128 +1,63 @@
 {
-  "roundId": "sunday-corrections-meteo-colreg-2026-09-13",
-  "label": "Rodada dominical de correção",
-  "title": "Erros persistentes, umidade e sinais de navegação",
+  "roundId": "turning-circle-ripeam-2026-09-14",
+  "label": "Rodada adaptativa de segunda-feira",
+  "title": "Curva de giro e decisões no RIPEAM",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões FSRS vencidas · correção de erros · meteorologia aplicada · SMCP · legislação · COLREG",
+  "path": "Revisões FSRS vencidas · parâmetros da curva de giro · ultrapassagem e rumos cruzados · visibilidade restrita",
   "method": "4–3–2–1",
-  "mixPlan": {
-    "review": 4,
-    "current": 3,
-    "rotation": 2,
-    "official": 1
-  },
+  "mixPlan": { "review": 4, "current": 3, "rotation": 2, "official": 1 },
   "questions": [
     {
-      "id": "sun-r1-tide-nr-nm-amplitude",
+      "id": "mon-r1-tide-amplitude-mean-level",
       "category": "review",
       "axis": "V",
-      "kind": "Correção do erro oficial · níveis e amplitude da maré",
-      "stem": "Na interpretação das Tábuas das Marés e da carta náutica de um porto, assinale a alternativa correta.",
-      "options": [
-        "O nível médio sobe nas sizígias e desce nas quadraturas.",
-        "O nível de redução é próprio de cada porto e também serve de referência para reduzir as sondagens da respectiva carta náutica.",
-        "A amplitude é medida entre a superfície instantânea e o nível de redução.",
-        "O zero da régua de marés coincide necessariamente com o nível médio."
-      ],
+      "kind": "Correção de erro · amplitude e nível médio da maré",
+      "stem": "Em determinado porto, as alturas previstas de preamar e baixa-mar são, respectivamente, 3,9 m e 0,9 m, ambas referidas ao nível de redução. Quais são a amplitude e o nível médio dessa maré?",
+      "options": ["Amplitude de 4,8 m e nível médio de 3,0 m.", "Amplitude de 3,0 m e nível médio de 2,4 m.", "Amplitude de 1,5 m e nível médio de 3,9 m.", "Amplitude de 3,9 m e nível médio de 0,9 m."],
       "correct": 1,
-      "explanation": "O nível de redução é determinado para cada porto e é utilizado na redução das sondagens da carta correspondente. A amplitude, por sua vez, é a diferença entre preamar e baixa-mar.",
-      "comments": [
-        "Incorreta: o nível médio permanece o mesmo; o que varia com a fase lunar é a amplitude.",
-        "Correta: expressa a relação entre o nível de redução do porto e a carta náutica.",
-        "Incorreta: essa grandeza é a altura da maré; amplitude é PM menos BM.",
-        "Incorreta: o zero da régua coincide com o nível de redução, não com o nível médio."
-      ],
+      "explanation": "A amplitude é PM menos BM: 3,9 − 0,9 = 3,0 m. O nível médio é a média entre os dois níveis: (3,9 + 0,9)/2 = 2,4 m.",
+      "comments": ["Incorreta: soma as alturas para obter a amplitude e ainda confunde o resultado com o nível médio.", "Correta: aplica as definições de amplitude e nível médio ao mesmo plano de referência.", "Incorreta: 1,5 m é a semiamplitude; 3,9 m é a preamar.", "Incorreta: toma diretamente a preamar e a baixa-mar como as grandezas pedidas."],
       "reference": {
         "referenceId": "V-03",
         "base": "Lobo, P. R. V.; Soares, C. A.",
         "publication": "Meteorologia e Oceanografia",
         "edition": "4. ed., 2019",
-        "section": "Capítulo IX — Marés e correntes de marés; conceitos e exercícios",
-        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · Tábuas das Marés e planos de referência",
-        "evidence": "O recorte consultado informa que cada porto possui nível de redução próprio, usado também para reduzir as sondagens de sua carta, e distingue altura da maré, nível médio e amplitude."
+        "section": "Capítulo IX — Elementos e características das curvas das marés",
+        "syllabus": "Eixo V — Meteorologia e Oceanografia · marés, níveis e amplitude",
+        "evidence": "O recorte consultado define amplitude como a diferença entre preamar e baixa-mar, nível médio como o nível intermediário entre ambas e semiamplitude como metade da amplitude."
       }
     },
     {
-      "id": "sun-r2-cirrus-claws",
-      "category": "review",
-      "axis": "V",
-      "kind": "Correção de erro · Cirrus com garras",
-      "stem": "Para o navegante, a observação de nuvens Cirrus com garras, também chamadas rabo de galo, deslocando-se acentuadamente em direção à embarcação indica, em geral:",
-      "options": [
-        "dissipação de mau tempo e estabilização imediata.",
-        "aproximação de mau tempo, com caráter pré-frontal.",
-        "formação exclusiva de nevoeiro de radiação.",
-        "ausência de atividade convectiva nas proximidades."
-      ],
-      "correct": 1,
-      "explanation": "Cirrus com garras e deslocamento acentuado são descritos como nuvens pré-frontais e sinal de mau tempo em aproximação.",
-      "comments": [
-        "Incorreta: o sinal aponta aproximação, não afastamento, do mau tempo.",
-        "Correta: corresponde à interpretação operacional do recorte.",
-        "Incorreta: nevoeiro de radiação é outro fenômeno e não define essa forma de Cirrus.",
-        "Incorreta: o padrão pode anteceder sistema com instabilidade e não permite concluir ausência de convecção."
-      ],
-      "reference": {
-        "referenceId": "V-03",
-        "base": "Lobo, P. R. V.; Soares, C. A.",
-        "publication": "Meteorologia e Oceanografia",
-        "edition": "4. ed., 2019",
-        "section": "Capítulo I, §2.4.1 e Figura I-32 — Cirrus com garras",
-        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · nuvens de interesse ao navegante",
-        "evidence": "O recorte consultado classifica o Cirrus com garras ou rabo de galo como pré-frontal e o associa, quando se desloca acentuadamente em direção à embarcação, à aproximação de mau tempo."
-      }
-    },
-    {
-      "id": "sun-r3-first-overshoot-lv18",
+      "id": "mon-r2-first-overshoot-lv22",
       "category": "review",
       "axis": "I",
-      "kind": "Correção de erro de leitura · overshoot 10°/10°",
-      "stem": "No zig-zag 10°/10°, para L/V = 18 s, qual associação está correta?",
-      "options": [
-        "Primeiro overshoot máximo de 14°, medido após o segundo execute.",
-        "Primeiro overshoot máximo de 18°, medido após o terceiro execute.",
-        "Segundo overshoot máximo de 14°, medido após o segundo execute.",
-        "Primeiro overshoot máximo de 20°, medido após o primeiro execute."
-      ],
-      "correct": 0,
-      "explanation": "Para 10 s ≤ L/V < 30 s, o limite do primeiro overshoot é 5 + 0,5(L/V), resultando em 14°. Ele ocorre após o segundo execute.",
-      "comments": [
-        "Correta: combina o cálculo e a sequência de executes previstos na resolução.",
-        "Incorreta: 18 s é a razão L/V; após o terceiro execute mede-se o segundo overshoot.",
-        "Incorreta: confunde a ordem dos dois overshoots.",
-        "Incorreta: o primeiro execute apenas inicia a primeira guinada."
-      ],
+      "kind": "Correção de erro de leitura · primeiro overshoot",
+      "stem": "No zig-zag 10°/10°, um navio apresenta L/V = 22 s. Qual é o limite do primeiro ângulo de overshoot e após qual execute ele é medido?",
+      "options": ["16°, após o terceiro execute.", "16°, após o segundo execute.", "22°, após o segundo execute.", "10°, após o primeiro execute."],
+      "correct": 1,
+      "explanation": "Para 10 s ≤ L/V < 30 s, o limite é 5 + 0,5(L/V): 5 + 0,5 × 22 = 16°. O primeiro overshoot é o desvio adicional após o segundo execute.",
+      "comments": ["Incorreta: após o terceiro execute é medido o segundo overshoot.", "Correta: combina a fórmula da faixa intermediária com a sequência correta dos executes.", "Incorreta: 22 s é a razão L/V, não o limite angular.", "Incorreta: o primeiro execute inicia a manobra e não delimita o primeiro overshoot."],
       "reference": {
         "referenceId": "I-07",
         "base": "IMO — Resolution MSC.137(76)",
         "publication": "Standards for Ship Manoeuvrability",
         "edition": "MSC.137(76), adotada em 4 de dezembro de 2002",
-        "section": "Anexo, §§4.2.6–4.2.8 e 5.3.3.1",
+        "section": "Anexo, §§4.2.6–4.2.8 e 5.3.3.1 — zig-zag e primeiro overshoot",
         "syllabus": "Eixo I — Manobrabilidade · zig-zag, executes e yaw-checking",
-        "evidence": "O recorte consultado define o primeiro overshoot após o segundo execute e fixa o limite 5 + 0,5(L/V) graus na faixa intermediária de 10 s a menos de 30 s.",
+        "evidence": "O recorte consultado define o primeiro overshoot após o segundo execute e fixa, para 10 s ≤ L/V < 30 s, o limite de 5 + 0,5(L/V) graus.",
         "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
       }
     },
     {
-      "id": "sun-r4-water-depth-mean-draught",
+      "id": "mon-r3-trial-depth-mean-draught",
       "category": "review",
       "axis": "I",
-      "kind": "Correção de erro · condição de águas profundas",
-      "stem": "Um navio de calado médio 9,0 m será submetido às provas padronizadas. Qual profundidade atende à MSC/Circ.1053?",
-      "options": [
-        "18 m ou mais.",
-        "27 m ou mais.",
-        "Exatamente 36 m.",
-        "Mais de 36 m."
-      ],
+      "kind": "Correção de erro · profundidade da área de prova",
+      "stem": "Para um navio com calado médio de 8,2 m, qual profundidade satisfaz a condição de águas profundas da MSC/Circ.1053?",
+      "options": ["16,4 m ou mais.", "24,6 m ou mais.", "Exatamente 32,8 m.", "33,0 m ou mais."],
       "correct": 3,
-      "explanation": "A profundidade deve exceder quatro vezes o calado médio. Quatro vezes 9,0 m são 36 m; portanto, a igualdade não basta.",
-      "comments": [
-        "Incorreta: corresponde a duas vezes o calado médio.",
-        "Incorreta: corresponde a três vezes o calado médio.",
-        "Incorreta: a circular exige exceder quatro vezes o calado.",
-        "Correta: é a única condição estritamente superior a 36 m."
-      ],
+      "explanation": "A profundidade deve exceder quatro vezes o calado médio. Como 4 × 8,2 = 32,8 m, a igualdade não atende; 33,0 m satisfaz o requisito.",
+      "comments": ["Incorreta: corresponde a apenas duas vezes o calado médio.", "Incorreta: corresponde a apenas três vezes o calado médio.", "Incorreta: a circular exige profundidade superior, não igual, a quatro vezes o calado.", "Correta: é a única alternativa estritamente superior a 32,8 m."],
       "reference": {
         "referenceId": "I-06",
         "base": "IMO — MSC/Circ.1053",
@@ -130,194 +65,153 @@
         "edition": "MSC/Circ.1053, 16 de dezembro de 2002",
         "section": "Anexo, §2.1.2 — Deep, unrestricted water",
         "syllabus": "Eixo I — Manobrabilidade · condições ambientais das provas",
-        "evidence": "O recorte consultado exige profundidade superior a quatro vezes o calado médio e ressalta a influência do fundo, das margens e de navios que passam.",
+        "evidence": "O recorte consultado estabelece que a profundidade deve exceder quatro vezes o calado médio, devido à influência do fundo, das margens e de navios que passam.",
         "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/MSC-Circ.1053.pdf"
       }
     },
     {
-      "id": "sun-c1-relative-humidity",
-      "category": "current",
-      "axis": "V",
-      "kind": "Tema principal · umidade relativa",
-      "stem": "Em meteorologia, a umidade relativa do ar é definida como:",
-      "options": [
-        "a massa total de ar por unidade de volume.",
-        "a relação percentual entre o vapor presente e o máximo que o ar pode conter na mesma temperatura.",
-        "a diferença entre a temperatura do ar e a temperatura da superfície do mar.",
-        "a pressão parcial do oxigênio dividida pela pressão atmosférica."
-      ],
-      "correct": 1,
-      "explanation": "A umidade relativa compara, em percentagem, o vapor d’água efetivamente presente com a quantidade máxima possível na temperatura considerada.",
-      "comments": [
-        "Incorreta: descreve densidade do ar, não umidade relativa.",
-        "Correta: corresponde à definição apresentada por Miguens.",
-        "Incorreta: essa diferença pode auxiliar diagnósticos, mas não define umidade relativa.",
-        "Incorreta: a composição de oxigênio não é a grandeza procurada."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Miguens, Altineu Pires",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45, §45.2.3 — umidade",
-        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · elementos meteorológicos",
-        "evidence": "O recorte consultado define umidade relativa como a relação percentual entre a quantidade de vapor d’água presente e a quantidade máxima que o ar pode conter na mesma temperatura."
-      }
-    },
-    {
-      "id": "sun-c2-dew-point-condensation",
-      "category": "current",
-      "axis": "V",
-      "kind": "Tema principal · ponto de orvalho",
-      "stem": "Mantidos constantes a pressão e o teor de vapor d’água, o que ocorre quando o ar é resfriado abaixo da temperatura do ponto de orvalho?",
-      "options": [
-        "Inicia-se a condensação.",
-        "A umidade relativa torna-se zero.",
-        "A pressão atmosférica dobra.",
-        "O ar permanece necessariamente não saturado."
-      ],
-      "correct": 0,
-      "explanation": "O ponto de orvalho é a temperatura de saturação. Se o resfriamento prossegue abaixo dela, inicia-se o processo de condensação.",
-      "comments": [
-        "Correta: é a consequência física indicada no recorte.",
-        "Incorreta: durante o resfriamento a umidade relativa aumenta até a saturação.",
-        "Incorreta: não existe essa relação de duplicação automática da pressão.",
-        "Incorreta: o ponto de orvalho marca justamente a saturação."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Miguens, Altineu Pires",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45, §45.2.3 — ponto de orvalho",
-        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · saturação e condensação",
-        "evidence": "O recorte consultado define o ponto de orvalho como a temperatura de saturação para pressão e teor de vapor constantes e informa que resfriamento adicional inicia a condensação."
-      }
-    },
-    {
-      "id": "sun-c3-barometer-onboard",
-      "category": "current",
-      "axis": "V",
-      "kind": "Tema principal · observação barométrica a bordo",
-      "stem": "Qual instrumento é normalmente empregado a bordo para leituras rotineiras da pressão atmosférica?",
-      "options": [
-        "Barômetro aneroide.",
-        "Barômetro de mercúrio sem correções de movimento.",
-        "Psicrômetro de funda.",
-        "Anemômetro de conchas."
-      ],
-      "correct": 0,
-      "explanation": "O barômetro aneroide é normalmente utilizado no passadiço ou camarim de navegação. O de mercúrio é pouco conveniente a bordo por fragilidade, tamanho e sensibilidade aos movimentos.",
-      "comments": [
-        "Correta: é o instrumento descrito como usual para leituras rotineiras a bordo.",
-        "Incorreta: o barômetro de mercúrio é pouco prático no navio e, quando existente, tende a servir de aferição.",
-        "Incorreta: o psicrômetro mede temperaturas de bulbo seco e úmido.",
-        "Incorreta: o anemômetro mede vento."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Miguens, Altineu Pires",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45, §45.2.1(a) — barômetros",
-        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · instrumentos meteorológicos",
-        "evidence": "O recorte consultado informa que barômetros aneroides são normalmente usados a bordo e explica as limitações do barômetro de mercúrio em razão da fragilidade, do tamanho e dos movimentos do navio."
-      }
-    },
-    {
-      "id": "sun-x1-smcp-correction",
-      "category": "rotation",
-      "axis": "VI",
-      "kind": "Eixo alternado · correção de mensagem na SMCP",
-      "stem": "Durante uma mensagem VHF, o oficial percebe que informou velocidade incorreta. Qual sequência segue a IMO SMCP?",
-      "options": [
-        "“Cancel” e repetir toda a mensagem desde o início.",
-        "“Mistake”, seguido de “Correction” e da parte corrigida.",
-        "“Say again” e aguardar a estação repetir o erro.",
-        "“Repeat” sem identificar a informação correta."
-      ],
-      "correct": 1,
-      "explanation": "Ao cometer erro, a SMCP manda dizer “Mistake”, depois “Correction” e transmitir a parte corrigida da mensagem.",
-      "comments": [
-        "Incorreta: essa não é a fórmula prescrita para corrigir erro do próprio transmissor.",
-        "Correta: reproduz a sequência expressa da seção Corrections.",
-        "Incorreta: “Say again” solicita repetição de mensagem não ouvida adequadamente.",
-        "Incorreta: “Repeat” protege informação importante, mas não substitui a fórmula de correção."
-      ],
-      "reference": {
-        "referenceId": "VI-01",
-        "base": "IMO — Resolution A.918(22)",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "A.918(22), adotada em 29 de novembro de 2001",
-        "section": "General, §§7–9 — Corrections and Repetition",
-        "syllabus": "Eixo VI — Comunicações · correção e repetição de mensagens",
-        "evidence": "O recorte consultado determina dizer “Mistake”, seguido de “Correction” e da parte corrigida; distingue essa sequência de “Say again” e “Repeat”.",
-        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
-      }
-    },
-    {
-      "id": "sun-x2-pilotage-exemption-limits",
-      "category": "rotation",
-      "axis": "IV",
-      "kind": "Eixo de consolidação · Certificado de Isenção de Praticagem",
-      "stem": "Nos termos da Lei nº 14.813/2024, qual conjunto contém requisitos legais expressos para a concessão do Certificado de Isenção de Praticagem?",
-      "options": [
-        "Comandante de qualquer nacionalidade, navio de qualquer bandeira e até 150 m.",
-        "Comandante brasileiro, navio de bandeira brasileira com até 100 m e tripulação composta por, no mínimo, dois terços de brasileiros.",
-        "Comandante brasileiro, navio estrangeiro com até 100 m e metade da tripulação brasileira.",
-        "Comandante estrangeiro, navio brasileiro com até 80 m e tripulação integralmente brasileira."
-      ],
-      "correct": 1,
-      "explanation": "A lei reserva a possibilidade a comandantes brasileiros de navios de bandeira brasileira com até 100 m e tripulação com pelo menos dois terços de brasileiros, além dos requisitos regulamentares.",
-      "comments": [
-        "Incorreta: erra nacionalidade, bandeira e limite de comprimento.",
-        "Correta: reúne os três requisitos expressos no §4º.",
-        "Incorreta: a bandeira deve ser brasileira e a fração mínima é dois terços.",
-        "Incorreta: o comandante deve ser brasileiro e o limite legal é até 100 m."
-      ],
-      "reference": {
-        "referenceId": "IV-10",
-        "base": "Brasil — Lei nº 14.813/2024",
-        "publication": "Lei nº 14.813, de 15 de janeiro de 2024",
-        "edition": "texto promulgado em 15 de janeiro de 2024",
-        "section": "Art. 2º, alteração do art. 13, §4º, da Lei nº 9.537/1997",
-        "syllabus": "Eixo IV — Legislação · serviço de praticagem e isenção",
-        "evidence": "O recorte consultado permite à autoridade marítima conceder o certificado exclusivamente a comandante brasileiro de navio de bandeira brasileira com até 100 m e tripulação composta de, no mínimo, dois terços de brasileiros.",
-        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14813.htm"
-      }
-    },
-    {
-      "id": "sun-o1-pscpp2008-q28",
-      "category": "official",
+      "id": "mon-r4-underway-drifting",
+      "category": "review",
       "axis": "III",
-      "kind": "Questão oficial histórica · PSCPP 2008",
-      "stem": "Taking into account that the vessels described below carry all the lights prescribed by the COLREG, which alternative is correct?",
-      "options": [
-        "An 11-metre power-driven vessel underway may exhibit two masthead lights, sidelights and a sternlight.",
-        "A power-driven vessel towing, when the length of the tow exceeds 200 metres, shall exhibit four masthead lights, sidelights and a towing light.",
-        "A vessel of less than 50 metres engaged in trawling and making way may exhibit one all-round green light, one all-round red light, one masthead light, sidelights and a sternlight.",
-        "A vessel restricted in her ability to manoeuvre, except one engaged in mine-clearance operations, when at anchor, shall exhibit two all-round red lights and one all-round white light.",
-        "A 25-metre sailing vessel underway shall exhibit one all-round red light and one all-round green light."
-      ],
+      "kind": "Revisão FSRS vencida · underway versus making way",
+      "stem": "Uma embarcação está à deriva, com máquinas paradas, sem estar fundeada, amarrada à terra ou encalhada. Para fins do COLREG, ela está:",
+      "options": ["underway, embora possa não estar making way through the water.", "fundeada, porque não utiliza propulsão.", "sem governo obrigatoriamente.", "not underway, porque não possui seguimento."],
       "correct": 0,
-      "explanation": "O gabarito oficial indica A. Embarcação de propulsão mecânica com menos de 50 m não é obrigada a exibir a segunda luz de mastro, mas pode fazê-lo; as luzes de bordos e de alcançado permanecem prescritas.",
-      "comments": [
-        "Correta: a segunda luz de mastro é facultativa para embarcação com menos de 50 m.",
-        "Incorreta: reboque superior a 200 m exige três, não quatro, luzes de mastro em linha vertical, além das demais luzes prescritas.",
-        "Incorreta: arrasto é indicado por verde sobre branca, não verde sobre encarnada.",
-        "Incorreta: capacidade de manobra restrita é encarnada–branca–encarnada e, quando fundeada, soma as luzes de fundeio.",
-        "Incorreta: encarnada sobre verde é facultativa e deve ser adicional às luzes de bordos e de alcançado."
-      ],
+      "explanation": "Underway significa não estar fundeada, amarrada à terra ou encalhada. A definição não exige propulsão nem seguimento na água.",
+      "comments": ["Correta: separa a condição jurídica de underway da existência de seguimento.", "Incorreta: fundeio exige que a embarcação esteja efetivamente ao ferro.", "Incorreta: sem governo pressupõe circunstância excepcional que impeça a manobra conforme as regras.", "Incorreta: a ausência de seguimento não elimina a condição de underway."],
       "reference": {
         "referenceId": "III-16",
         "base": "COLREG 1972 / RIPEAM",
         "publication": "COLREG — Consolidated Edition 2018",
         "edition": "2018",
-        "section": "Parte C, Regras 23–27 — luzes e marcas",
-        "syllabus": "Eixo III — Navegação em Águas Restritas · identificação e luzes de embarcações",
-        "evidence": "O recorte consultado permite a navio de propulsão mecânica com menos de 50 m exibir a segunda luz de mastro; também distingue os sinais de reboque, pesca de arrasto, vela e capacidade de manobra restrita.",
+        "section": "Parte A, Regra 3(i) — definição de underway",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · definições do RIPEAM",
+        "evidence": "O recorte consultado define underway como a condição da embarcação que não está fundeada, amarrada à terra ou encalhada; não condiciona o termo ao emprego da propulsão ou ao seguimento.",
+        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
+      }
+    },
+    {
+      "id": "mon-c1-turning-circle-advance",
+      "category": "current",
+      "axis": "I",
+      "kind": "Tema principal · avanço na curva de giro",
+      "stem": "Na curva de giro, o avanço (advance) é a distância:",
+      "options": ["percorrida na direção do rumo inicial até a mudança de aproamento de 90°.", "transversal ao rumo inicial até a mudança de aproamento de 90°.", "transversal ao rumo inicial até a mudança de aproamento de 180°.", "entre o centro de gravidade e o ponto pivô no giro permanente."],
+      "correct": 0,
+      "explanation": "O avanço é medido na direção da trajetória inicial, desde o carregamento do leme até o navio alterar o aproamento em 90°.",
+      "comments": ["Correta: corresponde à definição de avanço apresentada no capítulo.", "Incorreta: essa é a transferência ou afastamento lateral.", "Incorreta: essa descrição corresponde ao diâmetro tático.", "Incorreta: a posição do ponto pivô é outro parâmetro cinemático."],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Santos, Edson Mesquita dos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 6, §6.1 — definições associadas à curva de giro",
+        "syllabus": "Eixo I — Manobrabilidade · habilidade para executar curvas",
+        "evidence": "O recorte consultado define avanço como a distância percorrida na direção da trajetória inicial, desde o carregamento do leme até 90° de mudança de aproamento."
+      }
+    },
+    {
+      "id": "mon-c2-turning-circle-transfer",
+      "category": "current",
+      "axis": "I",
+      "kind": "Tema principal · transferência na curva de giro",
+      "stem": "Na curva de giro, a transferência (transfer) é corretamente definida como a distância:",
+      "options": ["longitudinal ao rumo inicial, medida até 180° de mudança de aproamento.", "transversal ao rumo inicial, medida até 90° de mudança de aproamento.", "transversal ao rumo inicial, medida somente depois de atingido o giro permanente.", "total percorrida sobre a trajetória até o navio completar 360°."],
+      "correct": 1,
+      "explanation": "A transferência é o afastamento transversal do centro do navio em relação à trajetória inicial, medido até 90° de mudança de aproamento.",
+      "comments": ["Incorreta: troca a direção transversal pela longitudinal e usa o marco de 180°.", "Correta: reúne direção de medição e marco angular previstos na definição.", "Incorreta: não é necessário aguardar o giro permanente para medir a transferência principal.", "Incorreta: a grandeza não é o comprimento total da trajetória."],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Santos, Edson Mesquita dos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 6, §6.1 — definições associadas à curva de giro",
+        "syllabus": "Eixo I — Manobrabilidade · habilidade para executar curvas",
+        "evidence": "O recorte consultado define transferência como a distância transversal percorrida pelo centro do navio, referida à trajetória inicial, até 90° de mudança de aproamento."
+      }
+    },
+    {
+      "id": "mon-c3-turning-circle-tactical-diameter",
+      "category": "current",
+      "axis": "I",
+      "kind": "Tema principal · diâmetro tático",
+      "stem": "Assinale a alternativa que distingue corretamente o diâmetro tático do diâmetro de giro permanente.",
+      "options": ["Ambos são medidos longitudinalmente quando o navio atinge 90° de mudança de aproamento.", "O diâmetro tático é o dobro do avanço; o permanente é sempre igual à transferência.", "O diâmetro tático é o afastamento transversal até 180°; o permanente é o diâmetro do círculo descrito no regime final estabilizado.", "O diâmetro tático só pode ser medido após 360°; o permanente é medido aos 180°."],
+      "correct": 2,
+      "explanation": "O diâmetro tático usa a distância transversal alcançada aos 180° de mudança de aproamento. O diâmetro permanente pertence ao círculo descrito depois de estabilizado o giro.",
+      "comments": ["Incorreta: aos 90° são definidos avanço e transferência, não os dois diâmetros.", "Incorreta: não existem essas igualdades necessárias entre os parâmetros.", "Correta: preserva o marco de 180° e a condição de equilíbrio permanente final.", "Incorreta: inverte e altera os marcos de medição."],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Santos, Edson Mesquita dos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 6, §6.1 — definições associadas à curva de giro",
+        "syllabus": "Eixo I — Manobrabilidade · parâmetros da curva de giro",
+        "evidence": "O recorte consultado define o diâmetro tático como a distância transversal até 180° de mudança de aproamento e o diâmetro permanente como o do círculo descrito no equilíbrio final."
+      }
+    },
+    {
+      "id": "mon-x1-colreg-overtaking-doubt",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Eixo alternado · ultrapassagem no RIPEAM",
+      "stem": "Uma embarcação aproxima-se de outra por uma direção superior a 22,5° para ré do través e tem dúvida se a situação caracteriza ultrapassagem. Como deve proceder?",
+      "options": ["Assumir que está ultrapassando e manter-se fora do caminho da embarcação alcançada.", "Aplicar a Regra 15 e aguardar que a embarcação a boreste manobre.", "Considerar-se preferencial porque desenvolve maior velocidade.", "Manter rumo e velocidade até conseguir avistar uma luz de bordo."],
+      "correct": 0,
+      "explanation": "A Regra 13 determina que, havendo dúvida, a embarcação deve assumir que está ultrapassando e agir de acordo, mantendo-se fora do caminho da alcançada.",
+      "comments": ["Correta: aplica simultaneamente o critério angular, a regra da dúvida e a obrigação da ultrapassadora.", "Incorreta: a Regra 13 prevalece sobre as regras de rumos cruzados nessa situação.", "Incorreta: velocidade superior não concede preferência à embarcação que alcança.", "Incorreta: a obrigação existe também de dia e a dúvida deve ser resolvida assumindo a ultrapassagem."],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "COLREG 1972 / RIPEAM",
+        "publication": "COLREG — Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte B, Seção II, Regra 13 — Overtaking",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · regras de governo e navegação",
+        "evidence": "O recorte consultado caracteriza ultrapassagem por aproximação superior a 22,5° para ré do través, obriga a embarcação que alcança a manter-se fora do caminho e manda assumir a ultrapassagem em caso de dúvida.",
+        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
+      }
+    },
+    {
+      "id": "mon-x2-colreg-crossing-giveway",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Eixo de consolidação · rumos cruzados no RIPEAM",
+      "stem": "Duas embarcações de propulsão mecânica estão no visual uma da outra, em rumos cruzados e com risco de abalroamento. A outra embarcação está a boreste da sua. Qual é a conduta prescrita?",
+      "options": ["Manter rumo e velocidade em qualquer circunstância, porque a outra está a boreste.", "Manobrar cedo e de forma substancial para manter-se bem safa, evitando, se possível, cruzar a proa da outra.", "Guinar obrigatoriamente para bombordo e cruzar pela proa da outra.", "Aguardar uma distância mínima regulamentar antes de alterar rumo ou velocidade."],
+      "correct": 1,
+      "explanation": "Quem tem a outra embarcação a boreste deve manter-se fora do caminho e, se as circunstâncias permitirem, evitar cruzar-lhe a proa. A ação deve ser antecipada e substancial.",
+      "comments": ["Incorreta: nessa geometria, sua embarcação é a obrigada a manobrar.", "Correta: combina as Regras 15 e 16.", "Incorreta: guinar para bombordo e cruzar pela proa contraria a orientação aplicável.", "Incorreta: o RIPEAM não fixa distância mínima; exige ação cedo e substancial."],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "COLREG 1972 / RIPEAM",
+        "publication": "COLREG — Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte B, Seção II, Regras 15 e 16 — Crossing Situation e Give-way Vessel",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · regras de governo e navegação",
+        "evidence": "O recorte consultado determina que a embarcação com a outra a boreste se mantenha fora do caminho, evite cruzar-lhe a proa se possível e adote ação antecipada e substancial.",
+        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
+      }
+    },
+    {
+      "id": "mon-o1-pscpp2008-q8",
+      "category": "official",
+      "axis": "III",
+      "kind": "Questão oficial histórica · PSCPP 2008",
+      "stem": "Em visibilidade restrita, um navio segue no rumo 035° com velocidade segura. O radar detecta, apenas por radar, alvo na bochecha de bombordo, marcação verdadeira 355°, aproximando-se com marcação praticamente constante e PMA de 500 jardas, cruzando sua proa. Ouve-se um apito longo seguido de dois curtos. Qual sugestão imediata é correta?",
+      "options": ["Manter rumo e velocidade.", "Guinar francamente para bombordo, mantendo a velocidade.", "Guinar para boreste e aumentar a velocidade.", "Guinar francamente para bombordo e aumentar a velocidade.", "Manter o rumo e reduzir a velocidade."],
+      "correct": 4,
+      "explanation": "O gabarito oficial indica E. O alvo está aparentemente para vante do través e há aproximação perigosa; a Regra 19 orienta reduzir para a mínima velocidade de governo, retirar o seguimento se necessário e navegar com extrema cautela.",
+      "comments": ["Incorreta: a aproximação perigosa e o sinal de cerração exigem redução de velocidade.", "Incorreta: deve-se evitar, tanto quanto possível, alteração para bombordo para alvo a vante do través.", "Incorreta: aumentar velocidade contraria a cautela requerida e a manobra não decorre automaticamente do sinal ouvido.", "Incorreta: combina duas ações inadequadas — guinada para bombordo e aumento de velocidade.", "Correta: corresponde ao gabarito e à redução prescrita pela Regra 19(e)."],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "COLREG 1972 / RIPEAM",
+        "publication": "COLREG — Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte B, Regra 19(d)–(e), e Parte D, Regra 35",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · visibilidade restrita, radar e sinais sonoros",
+        "evidence": "O recorte consultado manda evitar alteração para bombordo para alvo a vante do través e, ao ouvir sinal de cerração aparentemente a vante ou não poder evitar aproximação perigosa, reduzir à mínima velocidade de governo, retirando o seguimento se necessário.",
         "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx",
-        "origin": "PSCPP 2008 — prova escrita oficial, questão 28 — gabarito A; redação original em inglês com correções apenas ortográficas e de unidades"
+        "origin": "PSCPP 2008 — prova escrita oficial, questão 8 — gabarito E; cenário condensado, terminologia atualizada e unidades padronizadas, sem alteração da solução"
       }
     }
   ]
