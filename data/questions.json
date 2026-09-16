@@ -1,328 +1,318 @@
 {
-  "roundId": "anchoring-fog-corrections-2026-09-15",
-  "label": "Rodada adaptativa de terça-feira",
-  "title": "Fundeio, filame e meteorologia aplicada",
+  "roundId": "tug-interaction-brm-2026-09-16",
+  "label": "Rodada adaptativa de quarta-feira",
+  "title": "Interação rebocador–navio e BRM com prático a bordo",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões FSRS e notas 0/1 · fundeadouro, filame e situação da âncora · nevoeiro e sistemas de pressão · questão oficial de Arte Naval",
+  "path": "Revisões FSRS e notas 0/1 · interação, águas rasas e desempenho de rebocadores · planejamento e monitoramento no BRM · questão oficial de navegação com prático",
   "method": "4–3–2–1",
-  "mixPlan": {
-    "review": 4,
-    "current": 3,
-    "rotation": 2,
-    "official": 1
-  },
+  "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
   "questions": [
     {
-      "id": "tue-r1-rule19-fog-signal-forward",
+      "id": "wed-r1-msc137-compliance-routes",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão FSRS vencida · demonstração de conformidade",
+      "stem": "Quanto à demonstração de conformidade com a MSC.137(76), assinale a alternativa correta.",
+      "options": [
+        "Somente provas em escala real podem demonstrar conformidade; previsões de projeto são sempre desconsideradas.",
+        "A conformidade pode ser demonstrada por previsões de projeto validadas por provas em escala real ou diretamente pelos resultados das provas em escala real.",
+        "Ensaios com modelo bastam por si sós e dispensam qualquer validação posterior em escala real.",
+        "A Administração deve aceitar toda previsão de projeto, ainda que o método seja deficiente ou o desempenho divirja substancialmente do padrão."
+      ],
+      "correct": 1,
+      "explanation": "A resolução admite duas vias: previsão no projeto mediante ensaios em modelo e/ou modelos matemáticos, com validação por provas em escala real; ou demonstração baseada diretamente nas provas em escala real.",
+      "comments": [
+        "Incorreta: a resolução admite também previsões na fase de projeto, desde que validadas.",
+        "Correta: reúne as duas formas expressamente previstas no item 2.1.",
+        "Incorreta: quando se usa a via de previsão de projeto, a validação por provas em escala real continua exigida.",
+        "Incorreta: a Administração pode rejeitar previsão deficiente ou desempenho substancialmente divergente."
+      ],
+      "reference": {
+        "referenceId": "I-07",
+        "base": "International Maritime Organization",
+        "publication": "Standards for Ship Manoeuvrability",
+        "edition": "Resolução MSC.137(76), adotada em 4 de dezembro de 2002",
+        "section": "Anexo, item 2.1 — métodos para demonstrar conformidade",
+        "syllabus": "Eixo I — Manobrabilidade · padrões IMO e demonstração de conformidade",
+        "evidence": "O recorte consultado prevê duas formas de demonstração: previsões no projeto por ensaios em modelo e/ou modelos matemáticos, validadas por provas em escala real, ou resultados das próprias provas em escala real; também ressalva a atuação da Administração diante de previsão deficiente ou divergência substancial.",
+        "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
+      }
+    },
+    {
+      "id": "wed-r2-overshoot-lv18",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão de nota 1 · cálculo dos ângulos de overshoot",
+      "stem": "Em um zigue-zague 10°/10°, um navio apresenta L/V = 18 s. Quais são, respectivamente, os limites máximos do primeiro e do segundo ângulos de overshoot?",
+      "options": ["10° e 25°.", "14° e 31°.", "18° e 37°.", "20° e 40°."],
+      "correct": 1,
+      "explanation": "Como 10 s ≤ L/V < 30 s, aplicam-se as fórmulas 5 + 0,5(L/V) e 17,5 + 0,75(L/V). Para 18 s, os resultados são 14° e 31°.",
+      "comments": [
+        "Incorreta: 10° e 25° são os limites fixos para L/V inferior a 10 s.",
+        "Correta: resulta da aplicação das duas expressões à razão L/V de 18 s.",
+        "Incorreta: 18° e 37° seriam obtidos para L/V de 26 s.",
+        "Incorreta: 20° e 40° são os limites fixos quando L/V é igual ou superior a 30 s."
+      ],
+      "reference": {
+        "referenceId": "I-07",
+        "base": "International Maritime Organization",
+        "publication": "Standards for Ship Manoeuvrability",
+        "edition": "Resolução MSC.137(76), adotada em 4 de dezembro de 2002",
+        "section": "Anexo, itens 5.3.3.1–5.3.3.2 — zigue-zague 10°/10°",
+        "syllabus": "Eixo I — Manobrabilidade · capacidade de conter a guinada e manutenção de rumo",
+        "evidence": "O recorte consultado fixa, para 10 s ≤ L/V < 30 s, o primeiro overshoot em 5 + 0,5(L/V) graus e o segundo em 17,5 + 0,75(L/V) graus.",
+        "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
+      }
+    },
+    {
+      "id": "wed-r3-trial-depth-mean-draught",
+      "category": "review",
+      "axis": "I",
+      "kind": "Correção de erro · profundidade da área de prova",
+      "stem": "Uma embarcação tem calado a ré de 9 m e calado a vante de 7 m. Para atender ao critério de água profunda e não confinada da MSC/Circ.1053, qual profundidade deve ser superada?",
+      "options": [
+        "28 m, por corresponder a quatro vezes o calado de vante.",
+        "32 m, por corresponder a quatro vezes o calado médio.",
+        "36 m, por corresponder a quatro vezes o calado a ré.",
+        "64 m, por corresponder a oito vezes o calado médio."
+      ],
+      "correct": 1,
+      "explanation": "O calado médio é (9 + 7)/2 = 8 m. A profundidade deve exceder quatro vezes esse valor, portanto deve ser superior a 32 m.",
+      "comments": [
+        "Incorreta: o parâmetro não é o calado de vante isoladamente.",
+        "Correta: calcula o calado médio e aplica o requisito de profundidade superior a quatro vezes esse calado.",
+        "Incorreta: a circular não usa o calado a ré isoladamente.",
+        "Incorreta: o multiplicador prescrito é quatro, não oito."
+      ],
+      "reference": {
+        "referenceId": "I-06",
+        "base": "International Maritime Organization",
+        "publication": "Explanatory Notes to the Standards for Ship Manoeuvrability",
+        "edition": "MSC/Circ.1053, 16 de dezembro de 2002",
+        "section": "Capítulo 2, itens 2.1.2 e 2.2.1.2.1.1 — deep, unrestricted water",
+        "syllabus": "Eixo I — Manobrabilidade · condições e diretrizes para aplicação das provas",
+        "evidence": "O recorte consultado explica a influência do fundo, margens e navios que passam e estabelece que a profundidade da área de prova deve exceder quatro vezes o calado médio do navio.",
+        "url": "https://drive.google.com/file/d/18-iPKtK3TOFSi08gL_AYxix7pox04UF3/view"
+      }
+    },
+    {
+      "id": "wed-r4-colreg-constrained-draught",
       "category": "review",
       "axis": "III",
-      "kind": "Correção de erro · Regra 19 em visibilidade restrita",
-      "stem": "Em visibilidade restrita, sem avistar a outra embarcação, um navio detecta por radar um alvo por ante-a-vante, constata risco de abalroamento e ouve aparentemente por ante-a-vante o sinal de nevoeiro desse alvo. Não foi determinado que o risco deixou de existir. Qual conduta atende ao RIPEAM?",
+      "kind": "Correção de erro · luzes de embarcação restrita devido ao calado",
+      "stem": "À noite, além das luzes exigidas para uma embarcação de propulsão mecânica em movimento, qual sinal luminoso pode ser exibido por embarcação restrita devido ao seu calado?",
       "options": [
-        "Manter rumo e velocidade até que o alvo seja avistado, porque a detecção foi apenas por radar.",
-        "Guinar para bombordo e aumentar a velocidade para cruzar rapidamente a proa do alvo.",
-        "Reduzir a velocidade ao mínimo em que possa manter o rumo, retirar todo o seguimento se necessário e navegar com extrema cautela.",
-        "Guinar obrigatoriamente para boreste, mantendo a velocidade, independentemente da posição relativa do alvo."
+        "Duas luzes circulares encarnadas em linha vertical.",
+        "Encarnada, branca e encarnada em linha vertical.",
+        "Três luzes circulares encarnadas em linha vertical.",
+        "Branca sobre encarnada em linha vertical."
       ],
       "correct": 2,
-      "explanation": "A Regra 19(e) exige reduzir ao mínimo de governo quando se ouve aparentemente por ante-a-vante o sinal de nevoeiro de outra embarcação, ou quando não se pode evitar situação de aproximação excessiva com alvo por ante-a-vante. Se necessário, deve-se retirar todo o seguimento e navegar com extrema cautela.",
+      "explanation": "A Regra 28 permite três luzes circulares encarnadas em linha vertical, onde melhor possam ser vistas, além das luzes próprias da embarcação de propulsão mecânica.",
       "comments": [
-        "Incorreta: a ausência de contato visual não autoriza conservar a condição cinemática diante de risco de abalroamento.",
-        "Incorreta: a Regra 19(d) manda evitar, tanto quanto possível, alteração para bombordo para embarcação por ante-a-vante que não esteja sendo alcançada; aumentar a velocidade agrava a aproximação.",
-        "Correta: reúne as providências expressamente previstas na Regra 19(e).",
-        "Incorreta: a regra não impõe guinada automática para boreste; a ação deve considerar as circunstâncias e pode exigir redução ou retirada do seguimento."
+        "Incorreta: duas encarnadas verticais identificam embarcação sem governo.",
+        "Incorreta: encarnada-branca-encarnada identifica embarcação com capacidade de manobra restrita.",
+        "Correta: é o sinal adicional previsto na Regra 28.",
+        "Incorreta: branca sobre encarnada identifica embarcação engajada em serviço de praticagem."
       ],
       "reference": {
         "referenceId": "III-16",
         "base": "International Maritime Organization",
-        "publication": "COLREG - Consolidated Edition 2018",
+        "publication": "COLREG — Consolidated Edition 2018",
         "edition": "2018",
-        "section": "Parte B, Seção III, Regra 19(d)–(e) — visibilidade restrita",
-        "syllabus": "Eixo III — Navegação em águas restritas · RIPEAM e decisões em visibilidade restrita",
-        "evidence": "O recorte consultado determina ação antecipada quando o radar indica aproximação excessiva ou risco; recomenda evitar guinada para bombordo para alvo por ante-a-vante, salvo ultrapassagem, e exige reduzir ao mínimo de governo, retirar o seguimento se necessário e navegar com extrema cautela nas hipóteses da Regra 19(e).",
+        "section": "Parte C, Regras 23, 27, 28 e 29 — luzes de embarcações especiais",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · RIPEAM, luzes e marcas",
+        "evidence": "O recorte consultado permite à embarcação restrita devido ao calado exibir três luzes circulares encarnadas em linha vertical e diferencia esse sinal daqueles de embarcação sem governo, com capacidade de manobra restrita e de praticagem.",
         "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
       }
     },
     {
-      "id": "tue-r2-tidal-current-chart-selection",
-      "category": "review",
-      "axis": "V",
-      "kind": "Correção de erro · Cartas de Correntes de Marés",
-      "stem": "Para selecionar, em um atlas, a Carta de Correntes de Marés aplicável ao horário de uma manobra portuária, qual procedimento está correto?",
+      "id": "wed-c1-tug-ship-flow-pressure",
+      "category": "current",
+      "axis": "II",
+      "kind": "Tema principal · interação hidrodinâmica rebocador–navio",
+      "stem": "Um rebocador opera muito próximo ao costado de um navio com movimento relativo na água. Qual encadeamento físico explica o risco de sucção em direção ao navio?",
       "options": [
-        "Usar a carta correspondente ao intervalo entre o horário da manobra e a preamar do porto, obtida nas Tábuas das Marés.",
-        "Usar sempre a carta de seis horas após a baixa-mar, pois ela representa a corrente máxima de enchente.",
-        "Selecionar a carta exclusivamente pela fase da Lua, sem consultar a hora da preamar do porto.",
-        "Usar a carta cuja hora impressa coincida com a hora legal da manobra, independentemente da preamar."
-      ],
-      "correct": 0,
-      "explanation": "As cartas do atlas são referidas à preamar do porto: seis antes, uma na preamar e seis depois. Assim, consulta-se a Tábua das Marés para obter a hora da preamar e calcula-se o intervalo da manobra em relação a ela.",
-      "comments": [
-        "Correta: identifica o referencial temporal usado pelo atlas e a consulta necessária às Tábuas das Marés.",
-        "Incorreta: o atlas é referenciado à preamar, e a intensidade e o sentido não podem ser deduzidos por essa regra fixa.",
-        "Incorreta: a fase lunar afeta a intensidade, mas não substitui o cálculo do intervalo relativo à preamar.",
-        "Incorreta: as cartas são rotuladas por horas antes ou depois da preamar, não por horas legais absolutas."
-      ],
-      "reference": {
-        "referenceId": "V-03",
-        "base": "Lobo, P. R. V.; Soares, C. A.",
-        "publication": "Meteorologia e Oceanografia",
-        "edition": "4. ed., 2019",
-        "section": "Capítulo X — Cartas de Correntes de Marés",
-        "syllabus": "Eixo V — Meteorologia e Oceanografia · marés e correntes aplicadas à navegação",
-        "evidence": "O recorte consultado descreve um atlas com 13 cartas referidas à preamar — seis horas antes, a preamar e seis horas depois — e orienta obter nas Tábuas das Marés a hora da preamar do dia para calcular o intervalo correspondente à manobra.",
-        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
-      }
-    },
-    {
-      "id": "tue-r3-cirrus-hooks-increasing",
-      "category": "review",
-      "axis": "V",
-      "kind": "Correção de erro · evolução de nuvens Cirrus",
-      "stem": "Um observador identifica Cirrus em fiadas, com garras, aumentando progressivamente no céu e deslocando-se para a área do navio. Qual interpretação é mais adequada?",
-      "options": [
-        "É indicação segura de manutenção de céu limpo, sem mudança relevante do tempo.",
-        "É sinal de possível aproximação de sistema de mau tempo, exigindo acompanhar a evolução da nebulosidade e dos demais parâmetros.",
-        "Indica necessariamente dissipação de Cumulonimbus e fim imediato das trovoadas.",
-        "Caracteriza nevoeiro de radiação transportado para o mar."
+        "A velocidade relativa da água diminui entre os cascos, a pressão cai e o rebocador é repelido.",
+        "A velocidade relativa da água aumenta ao longo do costado, a pressão local diminui e pode surgir atração do rebocador.",
+        "A velocidade relativa da água aumenta, a pressão também aumenta e elimina qualquer interação lateral.",
+        "A pressão permanece uniforme porque somente a velocidade sobre o fundo produz interação."
       ],
       "correct": 1,
-      "explanation": "Cirrus com garras, em fiadas e aumentando são um sinal precursor que pode acompanhar a aproximação de sistema de mau tempo. A interpretação deve ser combinada com a evolução das demais nuvens, do vento e da pressão.",
+      "explanation": "O escoamento acelerado ao longo do casco implica redução de pressão. O campo de baixa pressão pode atrair o rebocador, razão pela qual a posição relativa e a velocidade na água exigem atenção.",
       "comments": [
-        "Incorreta: o aumento e o deslocamento das nuvens retiram a hipótese de estabilidade garantida.",
-        "Correta: preserva o valor prognóstico do sinal sem tratá-lo isoladamente como certeza absoluta.",
-        "Incorreta: o quadro não demonstra dissipação de Cumulonimbus nem término imediato de trovoadas.",
-        "Incorreta: nevoeiro de radiação forma-se junto à superfície terrestre resfriada, não como nuvem alta de cristais de gelo."
+        "Incorreta: combina redução de velocidade com queda de pressão e ainda conclui repulsão, contrariando o mecanismo descrito.",
+        "Correta: relaciona aumento da velocidade do escoamento, queda de pressão e sucção.",
+        "Incorreta: no fundamento utilizado, o aumento da velocidade está associado à diminuição da pressão.",
+        "Incorreta: o fenômeno depende da velocidade relativa da água, não apenas da velocidade sobre o fundo."
       ],
       "reference": {
-        "referenceId": "V-03",
-        "base": "Lobo, P. R. V.; Soares, C. A.",
-        "publication": "Meteorologia e Oceanografia",
-        "edition": "4. ed., 2019",
-        "section": "Capítulo I — nuvens altas; Código OMM 0509 — tipos de Cirrus",
-        "syllabus": "Eixo V — Meteorologia e Oceanografia · nuvens e previsão do tempo",
-        "evidence": "O recorte consultado distingue Cirrus filosos e esparsos que não aumentam de Cirrus em fiadas, com garras e em aumento, configuração usada para acompanhar a aproximação e a evolução de mudança do tempo.",
-        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
+        "referenceId": "II-09",
+        "base": "Hensen, Henk",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4. ed., 2021",
+        "section": "Capítulo 6, itens 6.2.1 e 6.2.3 — interaction effects and flow pattern around a ship",
+        "syllabus": "Eixo II — Arte Naval · emprego de rebocadores na manobrabilidade",
+        "evidence": "O recorte consultado explica que a água percorre trajetória maior ao redor do casco, aumentando sua velocidade relativa; pela relação de Bernoulli, o aumento da velocidade reduz a pressão e cria efeitos de interação que podem comprometer a segurança do rebocador.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
       }
     },
     {
-      "id": "tue-r4-smcp-digits-rudder-exception",
-      "category": "review",
-      "axis": "VI",
-      "kind": "Revisão FSRS vencida · números na IMO SMCP",
-      "stem": "Na comunicação padronizada em inglês, deve-se informar o rumo 150° e, em seguida, dar uma ordem de leme de 15° a boreste. Qual combinação segue a IMO SMCP?",
-      "options": [
-        "Course one hundred and fifty degrees; Starboard one-five.",
-        "Course one-five-zero degrees; Starboard fifteen.",
-        "Course fifteen-zero degrees; Starboard one-five degrees.",
-        "Course one-five-zero degrees; Starboard one-five-zero."
-      ],
-      "correct": 1,
-      "explanation": "A regra geral manda pronunciar números algarismo por algarismo, portanto 150 é one-five-zero. A própria SMCP ressalva que ângulos de leme nas ordens de governo são ditos como números inteiros usuais, como fifteen ou twenty.",
-      "comments": [
-        "Incorreta: usa forma cardinal comum para o rumo e separa os algarismos da ordem de leme, invertendo a regra e a exceção.",
-        "Correta: aplica a regra geral ao rumo e a exceção específica ao ângulo de leme.",
-        "Incorreta: fifteen-zero não representa a forma padronizada de 150, e one-five não é a forma indicada para a ordem de 15°.",
-        "Incorreta: one-five-zero na ordem de leme corresponderia a 150, valor incompatível com o ângulo determinado."
-      ],
-      "reference": {
-        "referenceId": "VI-01",
-        "base": "International Maritime Organization",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "Resolução A.918(22), adotada em 29 de novembro de 2001",
-        "section": "General, itens 10 — Numbers e nota sobre rudder angles",
-        "syllabus": "Eixo VI — Comunicações · procedimentos e vocabulário padrão da IMO SMCP",
-        "evidence": "O recorte consultado manda falar números em algarismos separados, exemplificando 150 como one-five-zero, e traz exceção expressa para ângulos de leme nas ordens de governo, exemplificando 15 como fifteen e 20 como twenty.",
-        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
-      }
-    },
-    {
-      "id": "tue-c1-good-anchorage-swinging-room",
+      "id": "wed-c2-asd-astern-thrust-loss",
       "category": "current",
       "axis": "II",
-      "kind": "Tema principal · requisitos do fundeadouro",
-      "stem": "Ao avaliar um fundeadouro, considera-se o espaço livre para o giro do navio. Segundo a Arte Naval, qual raio mínimo representa a área circular livre de obstruções necessária ao fundeio?",
+      "kind": "Tema principal · interação propulsor–casco do rebocador",
+      "stem": "Em um rebocador ASD/reverse-tractor, por que o empuxo a ré pode ser aproximadamente 5% a 10% inferior ao empuxo a vante?",
       "options": [
-        "Apenas o comprimento total do navio.",
-        "Apenas o filame efetivamente largado.",
-        "A soma do filame com o comprimento do navio.",
-        "Duas vezes a profundidade local, independentemente do filame."
-      ],
-      "correct": 2,
-      "explanation": "A área de giro requerida é tratada como um círculo cujo raio corresponde à soma do filame com o comprimento do navio, permitindo estimar o espaço varrido pela embarcação em torno do ferro.",
-      "comments": [
-        "Incorreta: desconsidera a distância do navio ao ponto de fundeio determinada pelo filame.",
-        "Incorreta: desconsidera a extensão longitudinal da embarcação.",
-        "Correta: é a relação expressa no recorte para a área livre de obstruções.",
-        "Incorreta: a profundidade influencia o filame, mas não substitui diretamente a relação geométrica indicada."
-      ],
-      "reference": {
-        "referenceId": "II-01",
-        "base": "Fonseca, Maurílio M.",
-        "publication": "Arte Naval, v. 1",
-        "edition": "8. ed., Marinha do Brasil, 2019",
-        "section": "Capítulo 12, §12.40 — Fundeadouro",
-        "syllabus": "Eixo II — Arte Naval · fundear, suspender e avaliar o fundeadouro",
-        "evidence": "O recorte consultado lista abrigo, pouca profundidade, boa tença, ausência de gradiente acentuado e espaço de giro; define a área livre como círculo de raio igual ao filame somado ao comprimento do navio.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
-      }
-    },
-    {
-      "id": "tue-c2-scope-catenary-horizontal-pull",
-      "category": "current",
-      "axis": "II",
-      "kind": "Tema principal · filame e catenária",
-      "stem": "Por que, em condições que o exijam, o filame deve ser várias vezes maior que a profundidade?",
-      "options": [
-        "Para aumentar a componente vertical da tração no anete e facilitar o arrancamento do ferro.",
-        "Para eliminar a catenária e transmitir instantaneamente os esforços ao ferro.",
-        "Para favorecer a componente horizontal que faz o ferro unhar e conservar uma catenária que amorteça choques.",
-        "Para manter toda a amarra suspensa, sem qualquer trecho próximo ao fundo."
-      ],
-      "correct": 2,
-      "explanation": "O maior filame favorece tração mais horizontal no anete, útil para a unha trabalhar no fundo, e produz catenária com elasticidade capaz de amortecer trancos. A componente vertical, ao contrário, tende a arrancar o ferro.",
-      "comments": [
-        "Incorreta: a componente vertical é indesejável porque tende a suspender ou arrancar o ferro.",
-        "Incorreta: a catenária é justamente o elemento que fornece elasticidade à amarração.",
-        "Correta: reúne os dois efeitos descritos no recorte — tração horizontal e amortecimento.",
-        "Incorreta: o objetivo não é manter toda a amarra suspensa; peso e curvatura fazem parte do comportamento do sistema."
-      ],
-      "reference": {
-        "referenceId": "II-01",
-        "base": "Fonseca, Maurílio M.",
-        "publication": "Arte Naval, v. 1",
-        "edition": "8. ed., Marinha do Brasil, 2019",
-        "section": "Capítulo 12, §12.41 — Filame",
-        "syllabus": "Eixo II — Arte Naval · filame, catenária e segurança do fundeio",
-        "evidence": "O recorte consultado explica que a catenária confere elasticidade e amortece choques; decompõe a tração no anete em componente vertical, que tende a arrancar o ferro, e horizontal, que tende a fazê-lo unhar.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
-      }
-    },
-    {
-      "id": "tue-c3-dragging-versus-matroca",
-      "category": "current",
-      "axis": "II",
-      "kind": "Tema principal · situação da âncora e da amarra",
-      "stem": "Assinale a descrição correta da diferença entre um navio à garra e um navio à tona ou à matroca.",
-      "options": [
-        "À garra, o navio deriva arrastando a âncora ou a amarra; à tona ou à matroca, segue com a correnteza sem arrastá-las.",
-        "À garra, o navio está seguro com duas âncoras; à matroca, está seguro por uma única âncora.",
-        "À garra, a âncora está corretamente unhada; à matroca, a amarra está obrigatoriamente partida.",
-        "As duas expressões são sinônimas e indicam qualquer deslocamento de navio fundeado."
+        "Porque o jato dos propulsores atinge parte do casco situada à vante deles, reduzindo o bollard pull efetivo nessa direção.",
+        "Porque os propulsores azimutais ficam mecanicamente limitados a metade da rotação quando orientados para ré.",
+        "Porque o cabo de reboque absorve permanentemente 5% a 10% da potência instalada.",
+        "Porque a baixa profundidade sempre duplica a resistência do casco, independentemente da operação."
       ],
       "correct": 0,
-      "explanation": "Ir à garra pressupõe que o navio seja levado enquanto arrasta a âncora ou a amarra, por falta de unha, arrancamento do fundo ou ruptura. Se acompanha a correnteza sem esse arrasto, a expressão indicada é à tona ou à matroca.",
+      "explanation": "O recorte atribui a perda à interação propulsor–casco: ao aplicar empuxo a ré, o jato encontra a parte do corpo do rebocador à vante dos propulsores e reduz a força útil.",
       "comments": [
-        "Correta: reproduz a distinção operacional apresentada no recorte.",
-        "Incorreta: estar seguro por duas ou mais âncoras caracteriza amarração, não a diferença pedida.",
-        "Incorreta: âncora corretamente unhada se opõe à situação de garra, e a ruptura é apenas uma possível causa.",
-        "Incorreta: o texto distingue explicitamente as duas situações."
+        "Correta: identifica o mecanismo e a ordem de grandeza indicados na obra.",
+        "Incorreta: a redução não é explicada por limitação mecânica fixa de rotação dos azimutais.",
+        "Incorreta: a obra trata de interação do jato com o casco, não de perda constante no cabo.",
+        "Incorreta: águas rasas podem agravar outras interações, mas não explicam esse diferencial específico em qualquer condição."
       ],
       "reference": {
-        "referenceId": "II-01",
-        "base": "Fonseca, Maurílio M.",
-        "publication": "Arte Naval, v. 1",
-        "edition": "8. ed., Marinha do Brasil, 2019",
-        "section": "Capítulo 12, §12.39 — Definições",
-        "syllabus": "Eixo II — Arte Naval · fundear, suspender e reconhecer a garra",
-        "evidence": "O recorte consultado define garrar como ser levado pelo vento, maré ou corrente arrastando âncora ou amarra; quando o navio segue com a correnteza sem arrastá-las, emprega as expressões à tona ou à matroca.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
+        "referenceId": "II-09",
+        "base": "Hensen, Henk",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4. ed., 2021",
+        "section": "Capítulo 6, item 6.2.1 — tug propeller–tug hull interaction",
+        "syllabus": "Eixo II — Arte Naval · capacidades e limitações dos rebocadores",
+        "evidence": "O recorte consultado informa que o empuxo a ré de rebocadores reverse-tractor/ASD é cerca de 5% a 10% menor que o empuxo a vante porque o jato dos propulsores atinge o corpo do rebocador à vante deles, reduzindo o bollard pull.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
       }
     },
     {
-      "id": "tue-x1-advection-fog-cold-sea",
+      "id": "wed-c3-shallow-water-tug-demand",
+      "category": "current",
+      "axis": "II",
+      "kind": "Tema principal · águas rasas e demanda de rebocadores",
+      "stem": "Ao reduzir-se a folga abaixo da quilha durante uma manobra em canal, qual efeito deve ser considerado no planejamento da assistência por rebocadores?",
+      "options": [
+        "Redução da sucção de banco e da almofada de proa, com menor bollard pull para conter o navio.",
+        "Aumento da sucção de banco e da almofada de proa, podendo aumentar o bollard pull necessário para conter ou parar o movimento lateral.",
+        "Desaparecimento dos efeitos de interação porque o fluxo fica confinado sob o navio.",
+        "Apenas aumento da velocidade sobre o fundo, sem efeito sobre as forças laterais."
+      ],
+      "correct": 1,
+      "explanation": "Águas rasas intensificam efeitos de banco e elevam a força que pode ser necessária para segurar o navio contra corrente ou conter movimento lateral.",
+      "comments": [
+        "Incorreta: a menor folga tende a intensificar, não reduzir, os efeitos descritos.",
+        "Correta: reúne os efeitos de interação e a consequência operacional para a assistência.",
+        "Incorreta: o confinamento não elimina a interação; pode agravá-la.",
+        "Incorreta: o problema não se limita à velocidade sobre o fundo e envolve forças laterais relevantes."
+      ],
+      "reference": {
+        "referenceId": "II-09",
+        "base": "Hensen, Henk",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4. ed., 2021",
+        "section": "Capítulo 6, item 6.2.2 — shallow water effects with respect to tug assistance",
+        "syllabus": "Eixo II — Arte Naval · emprego de rebocadores em águas rasas e restritas",
+        "evidence": "O recorte consultado associa a diminuição da folga abaixo da quilha ao aumento do bollard pull requerido para manter o navio contra a corrente ou deter movimento lateral e ao aumento da sucção de banco e da almofada de proa.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+      }
+    },
+    {
+      "id": "wed-x1-brm-berth-to-berth-pilotage",
       "category": "rotation",
-      "axis": "V",
-      "kind": "Eixo de consolidação · nevoeiro de advecção",
-      "stem": "Ar quente e úmido desloca-se, com vento moderado, sobre uma superfície marítima significativamente mais fria. Havendo estabilidade e elevada umidade relativa, qual fenômeno é mais provável?",
+      "axis": "III",
+      "kind": "Eixo alternado · planejamento da passagem com prático",
+      "stem": "No BRM, qual afirmação está correta sobre o plano de passagem quando haverá praticagem?",
       "options": [
-        "Nevoeiro de radiação, típico do forte resfriamento noturno da superfície do mar.",
-        "Nevoeiro de advecção, pelo resfriamento das camadas inferiores do ar em movimento sobre a superfície fria.",
-        "Nevoeiro orográfico, provocado necessariamente pela subida do ar ao longo de uma encosta.",
-        "Nevoeiro frontal, formado apenas pela evaporação de chuva quente em ar frio."
+        "O plano termina na estação de prático, pois dali em diante a navegação passa a ser responsabilidade exclusiva do prático.",
+        "O plano deve cobrir a passagem de berço a berço, inclusive as áreas em que o prático será empregado.",
+        "O plano só precisa incluir as áreas oceânicas, deixando águas restritas para decisão verbal a bordo.",
+        "O plano deve ser elaborado apenas depois do embarque do prático, para evitar divergências com a derrota do navio."
       ],
       "correct": 1,
-      "explanation": "Esse é o mecanismo clássico do nevoeiro de advecção: ar quente e úmido em movimento é resfriado ao passar sobre mar ou solo mais frio. O vento é necessário para a advecção, mas não deve ser forte a ponto de intensificar a mistura vertical.",
+      "explanation": "O planejamento não termina no ponto de embarque do prático. A derrota deve ser preparada de berço a berço e permitir que a equipe compare o desenvolvimento da praticagem com o plano.",
       "comments": [
-        "Incorreta: o nevoeiro de radiação é predominantemente terrestre e associado a noites claras e calmas.",
-        "Correta: corresponde ao mecanismo e às condições descritas para o nevoeiro mais frequente no mar.",
-        "Incorreta: falta a ascensão forçada sobre relevo que caracteriza o nevoeiro orográfico.",
-        "Incorreta: o enunciado descreve resfriamento por contato com superfície fria, não evaporação de precipitação."
+        "Incorreta: a presença do prático não interrompe o planejamento nem elimina a responsabilidade da equipe do passadiço.",
+        "Correta: corresponde ao princípio de planejamento integral da passagem.",
+        "Incorreta: as águas restritas exigem planejamento particularmente detalhado.",
+        "Incorreta: o plano deve existir antes; a troca com o prático serve para alinhá-lo e ajustá-lo."
       ],
       "reference": {
-        "referenceId": "V-01",
-        "base": "Miguens, Altineu Pires",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "Diretoria de Hidrografia e Navegação",
-        "section": "Capítulo 45, §45.3.1 — Nevoeiros; nevoeiro de advecção",
-        "syllabus": "Eixo V — Meteorologia e Oceanografia · visibilidade e nevoeiros",
-        "evidence": "O recorte consultado define nevoeiro de advecção como o produzido quando ar quente e úmido se desloca sobre superfície mais fria; registra que é frequente no mar e requer vento moderado, umidade elevada e estabilidade.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
+        "referenceId": "III-01",
+        "base": "Swift, A. J.; Bailey, T. J.",
+        "publication": "Bridge Team Management: A Practical Guide",
+        "edition": "2. ed., 2004",
+        "section": "Capítulo 7 — Navigating with a pilot on board; Planning",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · BRM, planejamento e prático a bordo",
+        "evidence": "O recorte consultado afirma que uma passagem bem planejada não termina na área de embarque do prático e deve continuar do mar ao berço, ou vice-versa, incluindo o embarque e o monitoramento das ações do prático.",
+        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
       }
     },
     {
-      "id": "tue-x2-trough-ridge-fronts",
+      "id": "wed-x2-brm-monitoring-pilot-con",
       "category": "rotation",
-      "axis": "V",
-      "kind": "Eixo alternado · leitura de cavado e crista",
-      "stem": "Na análise de uma carta sinótica no Hemisfério Sul, qual associação entre configuração de pressão e sistema frontal está correta?",
+      "axis": "III",
+      "kind": "Eixo alternado · monitoramento durante a praticagem",
+      "stem": "Durante a praticagem, o prático está com a condução da manobra. Qual conduta cabe ao oficial de quarto segundo o BRM?",
       "options": [
-        "Cavado bem acentuado: circulação de ar frio para regiões mais quentes e ocorrência normalmente associada a frente fria.",
-        "Crista bem pronunciada: cunha de baixa pressão e ocorrência normalmente associada a frente fria.",
-        "Garganta: centro fechado de baixa pressão com vento máximo no seu colo.",
-        "Anticiclone: pressões decrescentes da periferia para o centro e circulação convergente horária."
+        "Suspender o monitoramento da derrota para não interferir na autoridade técnica do prático.",
+        "Monitorar posição, derrota e velocidade como em qualquer outra condição, comunicar desvios ao comandante e manter consciência situacional.",
+        "Limitar-se a registrar as ordens no diário, sem comparar o progresso com o plano.",
+        "Questionar toda ordem do prático, mesmo quando o navio segue rigorosamente o plano."
       ],
-      "correct": 0,
-      "explanation": "O cavado é uma extensão de baixas pressões a partir de uma depressão. Quando bem acentuado, associa-se à circulação de ar frio em direção a regiões mais quentes e, normalmente, à presença de frente fria.",
+      "correct": 1,
+      "explanation": "A condução pelo prático não elimina o monitoramento independente. O oficial de quarto deve acompanhar o progresso e informar ao comandante os desvios observados.",
       "comments": [
-        "Correta: corresponde à associação descrita para cavados bem marcados.",
-        "Incorreta: a crista é alongamento de alta pressão e costuma associar-se à circulação de ar quente e à frente quente.",
-        "Incorreta: a garganta separa duas depressões e dois anticiclones; no colo, o gradiente muda gradualmente e os ventos tendem a ser fracos e variáveis.",
-        "Incorreta: no Hemisfério Sul, o anticiclone tem máxima pressão no centro, circulação divergente e anti-horária."
+        "Incorreta: a obra exige monitoramento mesmo quando o prático está com a condução.",
+        "Correta: descreve a função de apoio e verificação da equipe do passadiço.",
+        "Incorreta: registro sem comparação com o plano não satisfaz a função de monitoramento.",
+        "Incorreta: o BRM pede intervenção fundamentada diante de desvios ou riscos, não oposição automática."
       ],
       "reference": {
-        "referenceId": "V-01",
-        "base": "Miguens, Altineu Pires",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "Diretoria de Hidrografia e Navegação",
-        "section": "Capítulo 45, §45.3.2 — sistemas de pressão; crista, cavado e garganta",
-        "syllabus": "Eixo V — Meteorologia e Oceanografia · cartas sinóticas e sistemas frontais",
-        "evidence": "O recorte consultado caracteriza crista como alongamento de alta pressão associado normalmente a ar quente e frente quente, cavado como extensão de baixa pressão associada a ar frio e frente fria, e garganta como região de vento fraco e variável entre duas altas e duas baixas.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
+        "referenceId": "III-01",
+        "base": "Swift, A. J.; Bailey, T. J.",
+        "publication": "Bridge Team Management: A Practical Guide",
+        "edition": "2. ed., 2004",
+        "section": "Capítulo 7 — Navigating with a pilot on board; Monitoring",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · BRM, monitoramento e praticagem",
+        "evidence": "O recorte consultado determina que o progresso seja monitorado pelo oficial de quarto mesmo quando o prático tem a condução e que desvios da derrota ou velocidade planejadas sejam comunicados ao comandante.",
+        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
       }
     },
     {
-      "id": "tue-o1-pscpp2008-q2",
+      "id": "wed-o1-pscpp2008-q10",
       "category": "official",
-      "axis": "II",
+      "axis": "III",
       "kind": "Questão oficial histórica · PSCPP 2008",
-      "stem": "Aboçar uma espia, o tirador de uma talha ou, de modo geral, qualquer cabo é uma técnica de uso muito comum a bordo, sendo empregada:",
+      "stem": "O comandante responde pela segurança do navio e o prático auxilia a navegação em águas restritas, aproximação, atracação e saída. O comandante pode desconhecer a área, enquanto o prático pode desconhecer as peculiaridades do navio. Segundo Swift & Bailey, esses problemas podem ser minimizados por:",
       "options": [
-        "para impedir que o cabo ou a espia cavalgue as voltas dadas na saia do cabrestante, à medida que ele for virando.",
-        "para morder a talha, quando o peso que se quer içar é demasiado para que o tirador seja aguentado à mão enquanto se dá volta nele.",
-        "quando, estando o cabo ou a espia sob tensão, deseja-se mudar o ponto de amarração ou amarrá-lo em outra direção.",
-        "quando se deseja alcear qualquer volta aguentando o chicote ou um seio ao vivo do próprio cabo, havendo receio de que ele possa recorrer ou desfazer-se.",
-        "para unir dois cabos pelos chicotes, ou um chicote a um olhal, mão ou alça."
+        "comparar apenas ao fim da praticagem o progresso do navio com a derrota planejada.",
+        "planejar a passagem somente da estação de prático até o berço.",
+        "monitorar isoladamente todas as ações do prático, sem troca prévia de informações.",
+        "estabelecer uma rotina de troca de informações entre comandante e prático.",
+        "limitar o oficial de quarto à confirmação de que o navio segue a derrota predeterminada."
       ],
-      "correct": 2,
-      "explanation": "Aboçar ou trapear transfere temporariamente o esforço de um cabo sob tensão para uma boça, permitindo mudar seu ponto de amarração ou sua direção com controle.",
+      "correct": 3,
+      "explanation": "O gabarito oficial é D. A troca rotineira comandante–prático reduz a assimetria entre conhecimento local e conhecimento das características do navio, permitindo planejamento, apoio e monitoramento efetivos.",
       "comments": [
-        "Incorreta: impedir que o cabo cavalgue voltas no cabrestante é função do homem ao socairo.",
-        "Incorreta: morder a talha com voltas falidas entre pernadas caracteriza o emprego de badernas.",
-        "Correta: é a finalidade indicada pela Arte Naval e corresponde ao gabarito C.",
-        "Incorreta: descreve finalidade ligada a outras voltas e nós, não a transferência de esforço por aboçadura.",
-        "Incorreta: a união de cabos ou ligação a olhal e alça é feita por nós, voltas ou costuras adequados, não pela operação definida."
+        "Incorreta: a comparação deve ocorrer continuamente, não apenas ao final.",
+        "Incorreta: o planejamento recomendado é de berço a berço e não se limita ao trecho indicado.",
+        "Incorreta: monitoramento sem troca prévia não resolve a falta de conhecimento recíproco.",
+        "Correta: corresponde à solução indicada pela obra e ao gabarito D.",
+        "Incorreta: o papel do oficial de quarto é mais amplo e inclui monitoramento, análise e comunicação de desvios."
       ],
       "reference": {
-        "referenceId": "II-01",
-        "base": "Fonseca, Maurílio M.",
-        "publication": "Arte Naval, v. 1",
-        "edition": "8. ed., Marinha do Brasil, 2019",
-        "section": "Capítulo 8, §8.142 — Aboçar ou trapear um cabo",
-        "syllabus": "Eixo II — Arte Naval · Trabalhos do Marinheiro",
-        "evidence": "O recorte consultado define aboçar como prender temporariamente espia, tirador de talha ou outro cabo sob tensão quando se deseja mudar seu ponto de amarração ou amarrá-lo em outra direção; também distingue socairo e badernas.",
-        "origin": "PSCPP 2008 — prova escrita oficial, questão 2 — gabarito C; redação atualizada apenas quanto à ortografia e concisão, sem alterar a solução",
-        "url": "https://drive.google.com/file/d/1KfllJf4BukeOqCtNlr5uuwNC7xDu45I6/view"
+        "referenceId": "III-01",
+        "base": "Swift, A. J.; Bailey, T. J.",
+        "publication": "Bridge Team Management: A Practical Guide",
+        "edition": "2. ed., 2004",
+        "section": "Capítulo 7 — Navigating with a pilot on board; Master/Pilot Information Exchange",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · BRM e troca comandante–prático",
+        "evidence": "O recorte consultado identifica o conhecimento complementar do comandante e do prático e recomenda estabelecer uma rotina de troca de informações para minimizar as lacunas antes e durante a passagem.",
+        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view",
+        "origin": "PSCPP 2008 — prova escrita oficial, questão 10 — gabarito D; tradução e adaptação de concisão para português do Brasil, sem alterar a solução"
       }
     }
   ]
