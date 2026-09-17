@@ -1,319 +1,131 @@
 {
-  "roundId": "tug-interaction-brm-2026-09-16",
-  "label": "Rodada adaptativa de quarta-feira",
-  "title": "Interação rebocador–navio e BRM com prático a bordo",
+  "roundId": "pilotage-a960-smcp-2026-09-17",
+  "label": "Rodada adaptativa de quinta-feira",
+  "title": "Certificação de práticos e comunicações padronizadas",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões FSRS e notas 0/1 · interação, águas rasas e desempenho de rebocadores · planejamento e monitoramento no BRM · questão oficial de navegação com prático",
+  "path": "Revisões FSRS e notas 0/1 · A.960(23): autoridade, licença e aptidão médica · SMCP: sinais e respostas · questão oficial de rebocadores",
   "method": "4–3–2–1",
   "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
   "questions": [
     {
-      "id": "wed-r1-msc137-compliance-routes",
+      "id": "thu-r1-smcp-numbers",
       "category": "review",
-      "axis": "I",
-      "kind": "Revisão FSRS vencida · demonstração de conformidade",
-      "stem": "Quanto à demonstração de conformidade com a MSC.137(76), assinale a alternativa correta.",
-      "options": [
-        "Somente provas em escala real podem demonstrar conformidade; previsões de projeto são sempre desconsideradas.",
-        "A conformidade pode ser demonstrada por previsões de projeto validadas por provas em escala real ou diretamente pelos resultados das provas em escala real.",
-        "Ensaios com modelo bastam por si sós e dispensam qualquer validação posterior em escala real.",
-        "A Administração deve aceitar toda previsão de projeto, ainda que o método seja deficiente ou o desempenho divirja substancialmente do padrão."
-      ],
+      "axis": "VI",
+      "kind": "Revisão FSRS vencida · números na SMCP",
+      "stem": "Em uma comunicação externa padronizada, como deve ser transmitido o calado de 12,6 m segundo a IMO SMCP?",
+      "options": ["Twelve point six metres.", "One-two decimal six metres.", "One-twenty-six metres.", "Twelve-six cables."],
       "correct": 1,
-      "explanation": "A resolução admite duas vias: previsão no projeto mediante ensaios em modelo e/ou modelos matemáticos, com validação por provas em escala real; ou demonstração baseada diretamente nas provas em escala real.",
-      "comments": [
-        "Incorreta: a resolução admite também previsões na fase de projeto, desde que validadas.",
-        "Correta: reúne as duas formas expressamente previstas no item 2.1.",
-        "Incorreta: quando se usa a via de previsão de projeto, a validação por provas em escala real continua exigida.",
-        "Incorreta: a Administração pode rejeitar previsão deficiente ou desempenho substancialmente divergente."
-      ],
-      "reference": {
-        "referenceId": "I-07",
-        "base": "International Maritime Organization",
-        "publication": "Standards for Ship Manoeuvrability",
-        "edition": "Resolução MSC.137(76), adotada em 4 de dezembro de 2002",
-        "section": "Anexo, item 2.1 — métodos para demonstrar conformidade",
-        "syllabus": "Eixo I — Manobrabilidade · padrões IMO e demonstração de conformidade",
-        "evidence": "O recorte consultado prevê duas formas de demonstração: previsões no projeto por ensaios em modelo e/ou modelos matemáticos, validadas por provas em escala real, ou resultados das próprias provas em escala real; também ressalva a atuação da Administração diante de previsão deficiente ou divergência substancial.",
-        "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
-      }
+      "explanation": "Na SMCP, os números são pronunciados em algarismos separados; a parte decimal é introduzida por decimal ou point. Assim, 12,6 m é transmitido como one-two decimal six metres.",
+      "comments": ["Incorreta: a forma por dezenas não segue a regra geral de algarismos separados da SMCP.", "Correta: separa os algarismos, usa decimal e declara a unidade.", "Incorreta: essa construção não representa 12,6 e não é a forma padronizada.", "Incorreta: além de omitir o separador decimal, troca indevidamente a unidade de calado por cabos."],
+      "reference": {"referenceId": "VI-01", "base": "International Maritime Organization", "publication": "IMO Standard Marine Communication Phrases (SMCP)", "edition": "Resolução A.918(22), 2001", "section": "General, itens 9 e 10 — Repetition e Numbers", "syllabus": "Eixo VI — Comunicações · números e unidades na fraseologia padronizada", "evidence": "O recorte consultado determina que os números sejam falados em algarismos separados e exemplifica 12.6 como one-two decimal six metres; ângulos de leme constituem exceção expressa.", "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"}
     },
     {
-      "id": "wed-r2-overshoot-lv18",
-      "category": "review",
-      "axis": "I",
-      "kind": "Revisão de nota 1 · cálculo dos ângulos de overshoot",
-      "stem": "Em um zigue-zague 10°/10°, um navio apresenta L/V = 18 s. Quais são, respectivamente, os limites máximos do primeiro e do segundo ângulos de overshoot?",
-      "options": ["10° e 25°.", "14° e 31°.", "18° e 37°.", "20° e 40°."],
-      "correct": 1,
-      "explanation": "Como 10 s ≤ L/V < 30 s, aplicam-se as fórmulas 5 + 0,5(L/V) e 17,5 + 0,75(L/V). Para 18 s, os resultados são 14° e 31°.",
-      "comments": [
-        "Incorreta: 10° e 25° são os limites fixos para L/V inferior a 10 s.",
-        "Correta: resulta da aplicação das duas expressões à razão L/V de 18 s.",
-        "Incorreta: 18° e 37° seriam obtidos para L/V de 26 s.",
-        "Incorreta: 20° e 40° são os limites fixos quando L/V é igual ou superior a 30 s."
-      ],
-      "reference": {
-        "referenceId": "I-07",
-        "base": "International Maritime Organization",
-        "publication": "Standards for Ship Manoeuvrability",
-        "edition": "Resolução MSC.137(76), adotada em 4 de dezembro de 2002",
-        "section": "Anexo, itens 5.3.3.1–5.3.3.2 — zigue-zague 10°/10°",
-        "syllabus": "Eixo I — Manobrabilidade · capacidade de conter a guinada e manutenção de rumo",
-        "evidence": "O recorte consultado fixa, para 10 s ≤ L/V < 30 s, o primeiro overshoot em 5 + 0,5(L/V) graus e o segundo em 17,5 + 0,75(L/V) graus.",
-        "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
-      }
-    },
-    {
-      "id": "wed-r3-trial-depth-mean-draught",
-      "category": "review",
-      "axis": "I",
-      "kind": "Correção de erro · profundidade da área de prova",
-      "stem": "Uma embarcação tem calado a ré de 9 m e calado a vante de 7 m. Para atender ao critério de água profunda e não confinada da MSC/Circ.1053, qual profundidade deve ser superada?",
-      "options": [
-        "28 m, por corresponder a quatro vezes o calado de vante.",
-        "32 m, por corresponder a quatro vezes o calado médio.",
-        "36 m, por corresponder a quatro vezes o calado a ré.",
-        "64 m, por corresponder a oito vezes o calado médio."
-      ],
-      "correct": 1,
-      "explanation": "O calado médio é (9 + 7)/2 = 8 m. A profundidade deve exceder quatro vezes esse valor, portanto deve ser superior a 32 m.",
-      "comments": [
-        "Incorreta: o parâmetro não é o calado de vante isoladamente.",
-        "Correta: calcula o calado médio e aplica o requisito de profundidade superior a quatro vezes esse calado.",
-        "Incorreta: a circular não usa o calado a ré isoladamente.",
-        "Incorreta: o multiplicador prescrito é quatro, não oito."
-      ],
-      "reference": {
-        "referenceId": "I-06",
-        "base": "International Maritime Organization",
-        "publication": "Explanatory Notes to the Standards for Ship Manoeuvrability",
-        "edition": "MSC/Circ.1053, 16 de dezembro de 2002",
-        "section": "Capítulo 2, itens 2.1.2 e 2.2.1.2.1.1 — deep, unrestricted water",
-        "syllabus": "Eixo I — Manobrabilidade · condições e diretrizes para aplicação das provas",
-        "evidence": "O recorte consultado explica a influência do fundo, margens e navios que passam e estabelece que a profundidade da área de prova deve exceder quatro vezes o calado médio do navio.",
-        "url": "https://drive.google.com/file/d/18-iPKtK3TOFSi08gL_AYxix7pox04UF3/view"
-      }
-    },
-    {
-      "id": "wed-r4-colreg-constrained-draught",
+      "id": "thu-r2-colreg-underway",
       "category": "review",
       "axis": "III",
-      "kind": "Correção de erro · luzes de embarcação restrita devido ao calado",
-      "stem": "À noite, além das luzes exigidas para uma embarcação de propulsão mecânica em movimento, qual sinal luminoso pode ser exibido por embarcação restrita devido ao seu calado?",
-      "options": [
-        "Duas luzes circulares encarnadas em linha vertical.",
-        "Encarnada, branca e encarnada em linha vertical.",
-        "Três luzes circulares encarnadas em linha vertical.",
-        "Branca sobre encarnada em linha vertical."
-      ],
-      "correct": 2,
-      "explanation": "A Regra 28 permite três luzes circulares encarnadas em linha vertical, onde melhor possam ser vistas, além das luzes próprias da embarcação de propulsão mecânica.",
-      "comments": [
-        "Incorreta: duas encarnadas verticais identificam embarcação sem governo.",
-        "Incorreta: encarnada-branca-encarnada identifica embarcação com capacidade de manobra restrita.",
-        "Correta: é o sinal adicional previsto na Regra 28.",
-        "Incorreta: branca sobre encarnada identifica embarcação engajada em serviço de praticagem."
-      ],
-      "reference": {
-        "referenceId": "III-16",
-        "base": "International Maritime Organization",
-        "publication": "COLREG — Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte C, Regras 23, 27, 28 e 29 — luzes de embarcações especiais",
-        "syllabus": "Eixo III — Navegação em Águas Restritas · RIPEAM, luzes e marcas",
-        "evidence": "O recorte consultado permite à embarcação restrita devido ao calado exibir três luzes circulares encarnadas em linha vertical e diferencia esse sinal daqueles de embarcação sem governo, com capacidade de manobra restrita e de praticagem.",
-        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
-      }
-    },
-    {
-      "id": "wed-c1-tug-ship-flow-pressure",
-      "category": "current",
-      "axis": "II",
-      "kind": "Tema principal · interação hidrodinâmica rebocador–navio",
-      "stem": "Um rebocador opera muito próximo ao costado de um navio com movimento relativo na água. Qual encadeamento físico explica o risco de sucção em direção ao navio?",
-      "options": [
-        "A velocidade relativa da água diminui entre os cascos, a pressão cai e o rebocador é repelido.",
-        "A velocidade relativa da água aumenta ao longo do costado, a pressão local diminui e pode surgir atração do rebocador.",
-        "A velocidade relativa da água aumenta, a pressão também aumenta e elimina qualquer interação lateral.",
-        "A pressão permanece uniforme porque somente a velocidade sobre o fundo produz interação."
-      ],
-      "correct": 1,
-      "explanation": "O escoamento acelerado ao longo do casco implica redução de pressão. O campo de baixa pressão pode atrair o rebocador, razão pela qual a posição relativa e a velocidade na água exigem atenção.",
-      "comments": [
-        "Incorreta: combina redução de velocidade com queda de pressão e ainda conclui repulsão, contrariando o mecanismo descrito.",
-        "Correta: relaciona aumento da velocidade do escoamento, queda de pressão e sucção.",
-        "Incorreta: no fundamento utilizado, o aumento da velocidade está associado à diminuição da pressão.",
-        "Incorreta: o fenômeno depende da velocidade relativa da água, não apenas da velocidade sobre o fundo."
-      ],
-      "reference": {
-        "referenceId": "II-09",
-        "base": "Hensen, Henk",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulo 6, itens 6.2.1 e 6.2.3 — interaction effects and flow pattern around a ship",
-        "syllabus": "Eixo II — Arte Naval · emprego de rebocadores na manobrabilidade",
-        "evidence": "O recorte consultado explica que a água percorre trajetória maior ao redor do casco, aumentando sua velocidade relativa; pela relação de Bernoulli, o aumento da velocidade reduz a pressão e cria efeitos de interação que podem comprometer a segurança do rebocador.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
-      }
-    },
-    {
-      "id": "wed-c2-asd-astern-thrust-loss",
-      "category": "current",
-      "axis": "II",
-      "kind": "Tema principal · interação propulsor–casco do rebocador",
-      "stem": "Em um rebocador ASD/reverse-tractor, por que o empuxo a ré pode ser aproximadamente 5% a 10% inferior ao empuxo a vante?",
-      "options": [
-        "Porque o jato dos propulsores atinge parte do casco situada à vante deles, reduzindo o bollard pull efetivo nessa direção.",
-        "Porque os propulsores azimutais ficam mecanicamente limitados a metade da rotação quando orientados para ré.",
-        "Porque o cabo de reboque absorve permanentemente 5% a 10% da potência instalada.",
-        "Porque a baixa profundidade sempre duplica a resistência do casco, independentemente da operação."
-      ],
+      "kind": "Revisão FSRS vencida · underway versus making way",
+      "stem": "Uma embarcação está à deriva, com máquinas paradas, sem estar fundeada, encalhada ou amarrada à terra. Para efeito do COLREG, ela está:",
+      "options": ["underway, embora possa não estar making way through the water.", "fundeada, porque não produz propulsão própria.", "encalhada, porque não governa com as máquinas paradas.", "amarrada à terra, por equiparação regulamentar."],
       "correct": 0,
-      "explanation": "O recorte atribui a perda à interação propulsor–casco: ao aplicar empuxo a ré, o jato encontra a parte do corpo do rebocador à vante dos propulsores e reduz a força útil.",
-      "comments": [
-        "Correta: identifica o mecanismo e a ordem de grandeza indicados na obra.",
-        "Incorreta: a redução não é explicada por limitação mecânica fixa de rotação dos azimutais.",
-        "Incorreta: a obra trata de interação do jato com o casco, não de perda constante no cabo.",
-        "Incorreta: águas rasas podem agravar outras interações, mas não explicam esse diferencial específico em qualquer condição."
-      ],
-      "reference": {
-        "referenceId": "II-09",
-        "base": "Hensen, Henk",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulo 6, item 6.2.1 — tug propeller–tug hull interaction",
-        "syllabus": "Eixo II — Arte Naval · capacidades e limitações dos rebocadores",
-        "evidence": "O recorte consultado informa que o empuxo a ré de rebocadores reverse-tractor/ASD é cerca de 5% a 10% menor que o empuxo a vante porque o jato dos propulsores atinge o corpo do rebocador à vante deles, reduzindo o bollard pull.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
-      }
+      "explanation": "Underway é condição definida negativamente: não estar fundeada, amarrada à terra nem encalhada. Ela não exige avanço através da água; por isso, uma embarcação à deriva pode estar underway sem making way.",
+      "comments": ["Correta: distingue a condição jurídica underway do movimento efetivo através da água.", "Incorreta: fundeio depende de a embarcação estar efetivamente presa pela âncora, não da máquina estar parada.", "Incorreta: encalhe exige contato com o fundo que prenda a embarcação.", "Incorreta: não existe essa equiparação; made fast to the shore é uma situação física específica."],
+      "reference": {"referenceId": "III-16", "base": "International Maritime Organization", "publication": "COLREG — Consolidated Edition 2018", "edition": "2018", "section": "Regra 3(i) — definição de underway", "syllabus": "Eixo III — Navegação Restrita · definições do RIPEAM/COLREG", "evidence": "O recorte consultado define underway como a embarcação que não está fundeada, amarrada à terra ou encalhada; a definição não exige que esteja fazendo seguimento através da água.", "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"}
     },
     {
-      "id": "wed-c3-shallow-water-tug-demand",
+      "id": "thu-r3-tidal-current-chart",
+      "category": "review",
+      "axis": "V",
+      "kind": "Revisão FSRS vencida · Cartas de Correntes de Marés",
+      "stem": "A preamar do porto de referência ocorreu às 06h. A manobra será iniciada às 10h. Para consultar o atlas de Cartas de Correntes de Marés, deve-se selecionar a carta:",
+      "options": ["4 horas antes da preamar.", "correspondente exatamente à preamar.", "4 horas depois da preamar.", "6 horas depois da baixa-mar, independentemente da preamar."],
+      "correct": 2,
+      "explanation": "A carta é escolhida pela diferença entre o horário da manobra e a preamar do porto de referência. Das 06h às 10h transcorreram quatro horas; portanto, usa-se a carta de quatro horas depois da preamar.",
+      "comments": ["Incorreta: inverte o sinal da diferença temporal.", "Incorreta: a carta da preamar corresponderia ao instante das 06h.", "Correta: a manobra ocorre quatro horas após a preamar de referência.", "Incorreta: o atlas é referenciado à preamar e a carta deve corresponder ao intervalo efetivo da manobra."],
+      "reference": {"referenceId": "V-03", "base": "Lobo, P. R. V.; Soares, C. A.", "publication": "Meteorologia e Oceanografia", "edition": "4. ed., 2019", "section": "Capítulo X — Cartas de Correntes de Marés", "syllabus": "Eixo V — Meteorologia e Oceanografia · seleção e interpretação das cartas de correntes de maré", "evidence": "O recorte consultado orienta selecionar a carta pela diferença entre o horário da manobra e a preamar do porto de referência; o exemplo de 10h com preamar aproximada às 06h conduz à carta de quatro horas depois da preamar.", "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"}
+    },
+    {
+      "id": "thu-r4-cirrus-claws",
+      "category": "review",
+      "axis": "V",
+      "kind": "Revisão FSRS vencida · Cirrus com garras",
+      "stem": "Para o navegante, a observação de Cirrus com garras, também chamados rabo de galo, com acentuado deslocamento na direção da embarcação indica, em regra:",
+      "options": ["aproximação de mau tempo.", "dissipação definitiva de toda atividade convectiva.", "formação exclusiva de nevoeiro de radiação.", "estabelecimento de calmaria prolongada."],
+      "correct": 0,
+      "explanation": "A obra trata o Cirrus com garras como sinal pré-frontal útil ao navegante: seu deslocamento acentuado na direção da embarcação é indício de mau tempo se aproximando.",
+      "comments": ["Correta: corresponde ao indício meteorológico destacado na fonte.", "Incorreta: o sinal aponta para aproximação, não dissipação, de tempo adverso.", "Incorreta: nevoeiro de radiação decorre de outro processo e não é a indicação específica dessa nuvem.", "Incorreta: a interpretação é oposta; há tendência de deterioração do tempo."],
+      "reference": {"referenceId": "V-03", "base": "Lobo, P. R. V.; Soares, C. A.", "publication": "Meteorologia e Oceanografia", "edition": "4. ed., 2019", "section": "Capítulo II, item 2.4.1 e Figura I-32 — Cirrus com garras", "syllabus": "Eixo V — Meteorologia e Oceanografia · nuvens indicadoras e previsão prática", "evidence": "O recorte consultado descreve Cirrus com garras ou rabo de galo como nuvem pré-frontal cujo acentuado deslocamento na direção da embarcação indica aproximação de mau tempo.", "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"}
+    },
+    {
+      "id": "thu-c1-a960-authority",
       "category": "current",
-      "axis": "II",
-      "kind": "Tema principal · águas rasas e demanda de rebocadores",
-      "stem": "Ao reduzir-se a folga abaixo da quilha durante uma manobra em canal, qual efeito deve ser considerado no planejamento da assistência por rebocadores?",
-      "options": [
-        "Redução da sucção de banco e da almofada de proa, com menor bollard pull para conter o navio.",
-        "Aumento da sucção de banco e da almofada de proa, podendo aumentar o bollard pull necessário para conter ou parar o movimento lateral.",
-        "Desaparecimento dos efeitos de interação porque o fluxo fica confinado sob o navio.",
-        "Apenas aumento da velocidade sobre o fundo, sem efeito sobre as forças laterais."
-      ],
+      "axis": "IV",
+      "kind": "Conteúdo atual · autoridade de praticagem",
+      "stem": "Segundo a Resolução IMO A.960(23), cabe à autoridade de praticagem competente, em cooperação com as associações nacional e locais de práticos:",
+      "options": ["impedir que investigações de incidentes sejam usadas no treinamento, para preservar a confidencialidade operacional.", "definir requisitos de ingresso e padrões de certificação, manter esses padrões e incorporar ao treinamento os relatórios de investigações de incidentes de praticagem.", "transferir integralmente às empresas de navegação a avaliação dos candidatos a prático.", "limitar a qualificação ao tempo de serviço, dispensando pré-requisitos, experiência e exames."],
       "correct": 1,
-      "explanation": "Águas rasas intensificam efeitos de banco e elevam a força que pode ser necessária para segurar o navio contra corrente ou conter movimento lateral.",
-      "comments": [
-        "Incorreta: a menor folga tende a intensificar, não reduzir, os efeitos descritos.",
-        "Correta: reúne os efeitos de interação e a consequência operacional para a assistência.",
-        "Incorreta: o confinamento não elimina a interação; pode agravá-la.",
-        "Incorreta: o problema não se limita à velocidade sobre o fundo e envolve forças laterais relevantes."
-      ],
-      "reference": {
-        "referenceId": "II-09",
-        "base": "Hensen, Henk",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulo 6, item 6.2.2 — shallow water effects with respect to tug assistance",
-        "syllabus": "Eixo II — Arte Naval · emprego de rebocadores em águas rasas e restritas",
-        "evidence": "O recorte consultado associa a diminuição da folga abaixo da quilha ao aumento do bollard pull requerido para manter o navio contra a corrente ou deter movimento lateral e ao aumento da sucção de banco e da almofada de proa.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
-      }
+      "explanation": "A A.960(23) atribui à autoridade competente a avaliação dos candidatos e, em cooperação com associações de práticos, a definição e manutenção dos padrões, dos pré-requisitos e dos exames, além do aproveitamento dos relatórios de incidentes no treinamento.",
+      "comments": ["Incorreta: a resolução determina justamente que os relatórios de investigação sejam considerados nos programas de treinamento.", "Correta: reúne as responsabilidades listadas no item 2.3 do Anexo 1.", "Incorreta: a avaliação de experiência, qualificações e aptidão pertence à autoridade de praticagem competente.", "Incorreta: a autoridade deve especificar pré-requisitos, experiência e exames necessários."],
+      "reference": {"referenceId": "IV-18", "base": "International Maritime Organization", "publication": "Training, Certification and Operational Procedures for Maritime Pilots", "edition": "Resolução A.960(23), adotada em 5 de dezembro de 2003", "section": "Anexo 1, itens 2.2 e 2.3 — autoridade de praticagem competente", "syllabus": "Eixo IV — Legislação · formação, certificação e supervisão da praticagem", "evidence": "O recorte consultado atribui à autoridade competente a avaliação dos candidatos e enumera a definição dos requisitos de ingresso e certificação, a manutenção dos padrões, a especificação de pré-requisitos e exames e o uso de relatórios de incidentes no treinamento.", "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"}
     },
     {
-      "id": "wed-x1-brm-berth-to-berth-pilotage",
+      "id": "thu-c2-a960-certificate",
+      "category": "current",
+      "axis": "IV",
+      "kind": "Conteúdo atual · certificado ou licença do prático",
+      "stem": "Quanto ao certificado ou à licença do prático, a A.960(23) recomenda que o documento indique:",
+      "options": ["apenas a data de admissão, sem delimitar área nem restrições locais.", "somente a arqueação bruta do maior navio já conduzido pelo titular.", "a área de praticagem para a qual foi emitido e requisitos ou limitações locais, como porte, calado ou tonelagem máximos.", "exclusivamente a habilitação marítima anterior do titular."],
+      "correct": 2,
+      "explanation": "Além da área de praticagem, o documento deve registrar exigências ou limitações locais definidas pela autoridade competente, inclusive limites de porte, calado ou tonelagem dos navios que o titular está qualificado a praticar.",
+      "comments": ["Incorreta: a área e as limitações locais integram o conteúdo recomendado.", "Incorreta: o registro não se reduz ao histórico operacional do titular.", "Correta: reproduz os elementos expressamente previstos no item 3 do Anexo 1.", "Incorreta: a habilitação anterior pode compor a qualificação, mas não substitui as indicações exigidas no certificado de praticagem."],
+      "reference": {"referenceId": "IV-18", "base": "International Maritime Organization", "publication": "Training, Certification and Operational Procedures for Maritime Pilots", "edition": "Resolução A.960(23), adotada em 5 de dezembro de 2003", "section": "Anexo 1, item 3 — certificado ou licença de praticagem", "syllabus": "Eixo IV — Legislação · alcance e limitações da habilitação do prático", "evidence": "O recorte consultado determina que todo prático possua certificado ou licença apropriado, emitido pela autoridade competente, com a área de praticagem e eventuais requisitos ou limitações locais, inclusive porte, calado ou tonelagem máximos.", "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"}
+    },
+    {
+      "id": "thu-c3-a960-medical-fitness",
+      "category": "current",
+      "axis": "IV",
+      "kind": "Conteúdo atual · aptidão médica do prático",
+      "stem": "Um prático sofreu lesão grave e pretende retornar ao serviço. De acordo com a A.960(23), a providência recomendada é:",
+      "options": ["retorno automático após alta clínica, sem nova avaliação pela autoridade competente.", "reavaliação de sua aptidão médica antes do retorno ao serviço.", "conversão definitiva da licença em habilitação sem limitações locais.", "apenas treinamento em simulador, independentemente da condição física."],
+      "correct": 1,
+      "explanation": "A resolução recomenda reavaliar a aptidão médica do prático após doença ou lesão grave antes de seu retorno ao serviço, com atenção especial à visão, audição e aptidão física.",
+      "comments": ["Incorreta: a alta clínica não elimina a reavaliação prevista pela resolução.", "Correta: corresponde expressamente ao item 4.2 do Anexo 1.", "Incorreta: o evento de saúde não amplia a licença nem elimina limitações locais.", "Incorreta: simulador pode integrar treinamento, mas não substitui a verificação de aptidão médica."],
+      "reference": {"referenceId": "IV-18", "base": "International Maritime Organization", "publication": "Training, Certification and Operational Procedures for Maritime Pilots", "edition": "Resolução A.960(23), adotada em 5 de dezembro de 2003", "section": "Anexo 1, itens 4.1 e 4.2 — aptidão médica", "syllabus": "Eixo IV — Legislação · requisitos de aptidão para o exercício da praticagem", "evidence": "O recorte consultado exige padrão de aptidão médica com atenção a visão, audição e condição física e recomenda nova avaliação após lesão ou doença grave antes do retorno ao serviço.", "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"}
+    },
+    {
+      "id": "thu-x1-smcp-safety-signal",
       "category": "rotation",
-      "axis": "III",
-      "kind": "Eixo alternado · planejamento da passagem com prático",
-      "stem": "No BRM, qual afirmação está correta sobre o plano de passagem quando haverá praticagem?",
-      "options": [
-        "O plano termina na estação de prático, pois dali em diante a navegação passa a ser responsabilidade exclusiva do prático.",
-        "O plano deve cobrir a passagem de berço a berço, inclusive as áreas em que o prático será empregado.",
-        "O plano só precisa incluir as áreas oceânicas, deixando águas restritas para decisão verbal a bordo.",
-        "O plano deve ser elaborado apenas depois do embarque do prático, para evitar divergências com a derrota do navio."
-      ],
-      "correct": 1,
-      "explanation": "O planejamento não termina no ponto de embarque do prático. A derrota deve ser preparada de berço a berço e permitir que a equipe compare o desenvolvimento da praticagem com o plano.",
-      "comments": [
-        "Incorreta: a presença do prático não interrompe o planejamento nem elimina a responsabilidade da equipe do passadiço.",
-        "Correta: corresponde ao princípio de planejamento integral da passagem.",
-        "Incorreta: as águas restritas exigem planejamento particularmente detalhado.",
-        "Incorreta: o plano deve existir antes; a troca com o prático serve para alinhá-lo e ajustá-lo."
-      ],
-      "reference": {
-        "referenceId": "III-01",
-        "base": "Swift, A. J.; Bailey, T. J.",
-        "publication": "Bridge Team Management: A Practical Guide",
-        "edition": "2. ed., 2004",
-        "section": "Capítulo 7 — Navigating with a pilot on board; Planning",
-        "syllabus": "Eixo III — Navegação em Águas Restritas · BRM, planejamento e prático a bordo",
-        "evidence": "O recorte consultado afirma que uma passagem bem planejada não termina na área de embarque do prático e deve continuar do mar ao berço, ou vice-versa, incluindo o embarque e o monitoramento das ações do prático.",
-        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
-      }
+      "axis": "VI",
+      "kind": "Rotação · sinais de segurança na SMCP",
+      "stem": "Qual sinal deve anunciar uma mensagem de segurança segundo a IMO SMCP?",
+      "options": ["MAYDAY.", "PAN PAN.", "SECURITE.", "STAND BY."],
+      "correct": 2,
+      "explanation": "A SMCP reserva MAYDAY para perigo, PAN PAN para urgência e SECURITE para mensagem de segurança.",
+      "comments": ["Incorreta: MAYDAY anuncia mensagem de perigo.", "Incorreta: PAN PAN anuncia mensagem de urgência.", "Correta: SECURITE anuncia mensagem de segurança.", "Incorreta: STAND BY é frase organizacional de prontidão ou espera, não sinal de segurança."],
+      "reference": {"referenceId": "VI-01", "base": "International Maritime Organization", "publication": "IMO Standard Marine Communication Phrases (SMCP)", "edition": "Resolução A.918(22), 2001", "section": "General, item 5 — Distress, urgency and safety signals", "syllabus": "Eixo VI — Comunicações · sinais padronizados para perigo, urgência e segurança", "evidence": "O recorte consultado associa MAYDAY a distress, PAN PAN a urgency e SECURITE a safety message.", "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"}
     },
     {
-      "id": "wed-x2-brm-monitoring-pilot-con",
+      "id": "thu-x2-smcp-advice-response",
       "category": "rotation",
-      "axis": "III",
-      "kind": "Eixo alternado · monitoramento durante a praticagem",
-      "stem": "Durante a praticagem, o prático está com a condução da manobra. Qual conduta cabe ao oficial de quarto segundo o BRM?",
-      "options": [
-        "Suspender o monitoramento da derrota para não interferir na autoridade técnica do prático.",
-        "Monitorar posição, derrota e velocidade como em qualquer outra condição, comunicar desvios ao comandante e manter consciência situacional.",
-        "Limitar-se a registrar as ordens no diário, sem comparar o progresso com o plano.",
-        "Questionar toda ordem do prático, mesmo quando o navio segue rigorosamente o plano."
-      ],
+      "axis": "VI",
+      "kind": "Rotação · resposta padronizada a advice",
+      "stem": "Após receber a mensagem “ADVICE. Do not overtake the vessel North of you”, qual resposta afirmativa segue o padrão da IMO SMCP?",
+      "options": ["Roger, maybe later.", "I will not overtake the vessel North of me.", "No information.", "Say again your advice."],
       "correct": 1,
-      "explanation": "A condução pelo prático não elimina o monitoramento independente. O oficial de quarto deve acompanhar o progresso e informar ao comandante os desvios observados.",
-      "comments": [
-        "Incorreta: a obra exige monitoramento mesmo quando o prático está com a condução.",
-        "Correta: descreve a função de apoio e verificação da equipe do passadiço.",
-        "Incorreta: registro sem comparação com o plano não satisfaz a função de monitoramento.",
-        "Incorreta: o BRM pede intervenção fundamentada diante de desvios ou riscos, não oposição automática."
-      ],
-      "reference": {
-        "referenceId": "III-01",
-        "base": "Swift, A. J.; Bailey, T. J.",
-        "publication": "Bridge Team Management: A Practical Guide",
-        "edition": "2. ed., 2004",
-        "section": "Capítulo 7 — Navigating with a pilot on board; Monitoring",
-        "syllabus": "Eixo III — Navegação em Águas Restritas · BRM, monitoramento e praticagem",
-        "evidence": "O recorte consultado determina que o progresso seja monitorado pelo oficial de quarto mesmo quando o prático tem a condução e que desvios da derrota ou velocidade planejadas sejam comunicados ao comandante.",
-        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
-      }
+      "explanation": "Ao aceitar uma instrução ou conselho, a SMCP orienta responder com I will/can seguido da ação completa. No exemplo da própria fonte: I will not overtake the vessel North of me.",
+      "comments": ["Incorreta: é ambígua e não repete integralmente a ação aceita.", "Correta: é a resposta afirmativa padronizada apresentada no recorte.", "Incorreta: No information é usado quando a informação pedida não pode ser obtida.", "Incorreta: Say again é pedido de repetição e não confirmação do conselho."],
+      "reference": {"referenceId": "VI-01", "base": "International Maritime Organization", "publication": "IMO Standard Marine Communication Phrases (SMCP)", "edition": "Resolução A.918(22), 2001", "section": "General, item 4.5 — Responses to INSTRUCTION and ADVICE", "syllabus": "Eixo VI — Comunicações · confirmação de instruções e conselhos", "evidence": "O recorte consultado orienta responder a INSTRUCTION ou ADVICE com I will/can seguido da ação completa e fornece exatamente o exemplo de não ultrapassar o navio ao norte.", "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"}
     },
     {
-      "id": "wed-o1-pscpp2008-q10",
+      "id": "thu-o1-pscpp2008-q16",
       "category": "official",
-      "axis": "III",
+      "axis": "II",
       "kind": "Questão oficial histórica · PSCPP 2008",
-      "stem": "O comandante responde pela segurança do navio e o prático auxilia a navegação em águas restritas, aproximação, atracação e saída. O comandante pode desconhecer a área, enquanto o prático pode desconhecer as peculiaridades do navio. Segundo Swift & Bailey, esses problemas podem ser minimizados por:",
-      "options": [
-        "comparar apenas ao fim da praticagem o progresso do navio com a derrota planejada.",
-        "planejar a passagem somente da estação de prático até o berço.",
-        "monitorar isoladamente todas as ações do prático, sem troca prévia de informações.",
-        "estabelecer uma rotina de troca de informações entre comandante e prático.",
-        "limitar o oficial de quarto à confirmação de que o navio segue a derrota predeterminada."
-      ],
+      "stem": "O emprego de rebocadores puxando por cabo é mais comum quando rebocadores convencionais assistem o navio. A vantagem desse método é poder ser utilizado em águas ________. Às vezes, o rebocador de vante dispõe de dois cabos denominados linhas ________. Segundo Henk Hensen, assinale a opção que completa corretamente as lacunas.",
+      "options": ["estreitas — gêmeas.", "rasas — gêmeas.", "rasas — cruzadas.", "estreitas — cruzadas.", "rasas — bifurcadas."],
       "correct": 3,
-      "explanation": "O gabarito oficial é D. A troca rotineira comandante–prático reduz a assimetria entre conhecimento local e conhecimento das características do navio, permitindo planejamento, apoio e monitoramento efetivos.",
-      "comments": [
-        "Incorreta: a comparação deve ocorrer continuamente, não apenas ao final.",
-        "Incorreta: o planejamento recomendado é de berço a berço e não se limita ao trecho indicado.",
-        "Incorreta: monitoramento sem troca prévia não resolve a falta de conhecimento recíproco.",
-        "Correta: corresponde à solução indicada pela obra e ao gabarito D.",
-        "Incorreta: o papel do oficial de quarto é mais amplo e inclui monitoramento, análise e comunicação de desvios."
-      ],
-      "reference": {
-        "referenceId": "III-01",
-        "base": "Swift, A. J.; Bailey, T. J.",
-        "publication": "Bridge Team Management: A Practical Guide",
-        "edition": "2. ed., 2004",
-        "section": "Capítulo 7 — Navigating with a pilot on board; Master/Pilot Information Exchange",
-        "syllabus": "Eixo III — Navegação em Águas Restritas · BRM e troca comandante–prático",
-        "evidence": "O recorte consultado identifica o conhecimento complementar do comandante e do prático e recomenda estabelecer uma rotina de troca de informações para minimizar as lacunas antes e durante a passagem.",
-        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view",
-        "origin": "PSCPP 2008 — prova escrita oficial, questão 10 — gabarito D; tradução e adaptação de concisão para português do Brasil, sem alterar a solução"
-      }
+      "explanation": "O gabarito oficial é D. O método towing on a line pode ser usado em águas estreitas; o rebocador de vante pode empregar duas linhas cruzadas, também chamadas gate lines.",
+      "comments": ["Incorreta: a primeira lacuna está correta, mas a denominação técnica é linhas cruzadas.", "Incorreta: erra as duas expressões pedidas.", "Incorreta: linhas cruzadas está correto, porém a vantagem citada é o emprego em águas estreitas.", "Correta: corresponde ao texto de Hensen e ao gabarito D.", "Incorreta: o recorte não emprega águas rasas nem linhas bifurcadas para completar a afirmação."],
+      "reference": {"referenceId": "II-09", "base": "Hensen, Henk", "publication": "Tug Use in Port: A Practical Guide", "edition": "4. ed., 2021", "section": "Capítulo 3 — Assisting methods; towing on a line e cross/gate lines", "syllabus": "Eixo II — Arte Naval · métodos de assistência por rebocadores", "evidence": "O recorte consultado informa que towing on a line pode ser empregado em águas estreitas e que o rebocador de vante pode usar duas towlines denominadas cross lines ou gate lines, reagindo rapidamente com pouco espaço de manobra.", "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view", "origin": "PSCPP 2008 — prova escrita oficial, questão 16 — gabarito D; tradução e atualização de ortografia para português do Brasil, sem alterar a solução"}
     }
   ]
 }
