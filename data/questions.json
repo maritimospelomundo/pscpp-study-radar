@@ -1,318 +1,323 @@
 {
-  "roundId": "tides-currents-manoeuvrability-review-2026-09-18",
-  "label": "Rodada adaptativa de sexta-feira",
-  "title": "Marés, correntes e decisões de manobra",
+  "roundId": "cumulative-fatigue-corrections-2026-09-19",
+  "label": "Simulado cumulativo de sábado",
+  "title": "Fadiga, decisão segura e correção de fragilidades",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões FSRS e notas 0/1 · correntes de maré e modelos numéricos · efeitos da corrente na manobra · questão oficial de interação rebocador–navio",
+  "path": "Revisões FSRS e notas 0/1 · fadiga e fatores humanos · habilitação e comunicações · questão oficial de RIPEAM",
   "method": "4–3–2–1",
   "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
   "questions": [
     {
-      "id": "fri-r1-towing-cross-lines",
-      "category": "review",
-      "axis": "II",
-      "kind": "Revisão FSRS vencida · erro oficial anterior",
-      "stem": "Durante o trânsito para o berço, um navio é assistido por rebocadores convencionais em águas estreitas. Qual arranjo corresponde ao método descrito por Hensen para permitir reação rápida com pouco espaço de manobra?",
-      "options": [
-        "Rebocadores atuando apenas no costado, sem cabo passado, e o de vante empurrando continuamente.",
-        "Rebocadores puxando por cabo; o de vante pode usar duas linhas cruzadas, também chamadas gate lines.",
-        "Rebocadores em reboque a contrabordo; o de vante usa somente um spring para limitar o avanço.",
-        "Rebocadores escoltando sem cabo; o de vante mantém-se pela alheta para produzir força indireta."
-      ],
-      "correct": 1,
-      "explanation": "Hensen destaca que o reboque por cabo pode ser empregado em águas estreitas. Nessas condições, o rebocador de vante pode usar duas linhas cruzadas, ou gate lines, reagindo rapidamente e ocupando pouco espaço.",
-      "comments": [
-        "Incorreta: descreve atuação no costado e elimina justamente o emprego dos cabos citados no recorte.",
-        "Correta: reúne o método towing on a line, o emprego em águas estreitas e as cross/gate lines do rebocador de vante.",
-        "Incorreta: reboque a contrabordo e spring não são o arranjo indicado para completar essa situação.",
-        "Incorreta: força indireta de escolta pela alheta é outra modalidade operacional, não a descrita no enunciado."
-      ],
-      "reference": {
-        "referenceId": "II-09",
-        "base": "Hensen, Henk",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulo 3 — Assisting methods; towing on a line",
-        "syllabus": "Eixo II — Arte Naval · métodos de assistência por rebocadores",
-        "evidence": "O recorte consultado afirma que towing on a line pode ser empregado em águas estreitas e que o rebocador de vante pode usar duas linhas denominadas cross lines ou gate lines, o que permite reação rápida com pouco espaço de manobra.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
-      }
-    },
-    {
-      "id": "fri-r2-rule19-forward-fog-signal",
-      "category": "review",
-      "axis": "III",
-      "kind": "Revisão FSRS vencida · Regra 19",
-      "stem": "Em visibilidade restrita, uma embarcação ouve aparentemente por ante a vante do través o sinal de nevoeiro de outra e não determinou que inexiste risco de colisão. Segundo a Regra 19(e), deve:",
-      "options": [
-        "manter rumo e velocidade até obter contato visual, pois o sinal sonoro não autoriza manobra.",
-        "guinar obrigatoriamente para bombordo e aumentar a velocidade para sair da zona de risco.",
-        "reduzir a velocidade ao mínimo em que possa manter o rumo, retirar todo o seguimento se necessário e navegar com extrema cautela.",
-        "parar as máquinas imediatamente em todos os casos, sem considerar a capacidade de governo."
-      ],
-      "correct": 2,
-      "explanation": "A Regra 19(e) exige redução ao mínimo de velocidade em que a embarcação possa ser mantida no rumo; se necessário, deve retirar todo o seguimento e, em qualquer caso, navegar com extrema cautela até passar o perigo.",
-      "comments": [
-        "Incorreta: a regra impõe redução de velocidade nas condições descritas, ainda que não haja contato visual.",
-        "Incorreta: não há obrigação de guinar para bombordo; a Regra 19(d) inclusive manda evitar essa alteração para alvo por ante a vante do través, salvo ultrapassagem.",
-        "Correta: reproduz as três providências graduadas da Regra 19(e).",
-        "Incorreta: retirar todo o seguimento é medida aplicável se necessária; não substitui automaticamente a redução ao mínimo governável."
-      ],
-      "reference": {
-        "referenceId": "III-16",
-        "base": "International Maritime Organization",
-        "publication": "COLREG — Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte B, Seção III — Regra 19(e)",
-        "syllabus": "Eixo III — Navegação em águas restritas · condução em visibilidade restrita",
-        "evidence": "O texto consultado da Regra 19(e) determina reduzir ao mínimo a velocidade que permita manter o rumo quando se ouve sinal de nevoeiro aparentemente por ante a vante do través, retirar todo o seguimento se necessário e navegar com extrema cautela até cessar o perigo.",
-        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
-      }
-    },
-    {
-      "id": "fri-r3-tidal-current-atlas-selection",
+      "id": "sat-r1-tide-nm-chart-datum",
       "category": "review",
       "axis": "V",
-      "kind": "Revisão FSRS vencida · Cartas de Correntes de Maré",
-      "stem": "Para escolher no atlas a Carta de Correntes de Maré adequada ao horário previsto de uma manobra portuária, o navegante deve considerar principalmente:",
+      "kind": "Revisão FSRS vencida · nota 0 · marés",
+      "stem": "Ao relacionar Tábuas das Marés, régua de marés e carta náutica de um porto, assinale a afirmativa correta.",
       "options": [
-        "a diferença entre o horário da manobra e o instante da preamar indicado nas Tábuas das Marés.",
-        "a diferença entre a hora legal e o nascer da Lua no porto de referência.",
-        "apenas a fase da Lua, pois cada carta vale para todas as horas daquele dia.",
-        "somente o sentido observado da corrente, sem consultar o instante da preamar."
+        "O nível médio do mar varia com as fases da Lua e coincide com a baixa-mar de sizígia.",
+        "A altura do nível médio equivale à semiamplitude da maré de sizígia, e o zero da régua coincide com o nível de redução da carta.",
+        "O zero da régua coincide com o nível médio, independentemente do nível de redução adotado na carta.",
+        "A profundidade real resulta da profundidade cartografada menos a altura instantânea da maré."
       ],
-      "correct": 0,
-      "explanation": "O atlas reúne 13 cartas referidas à preamar: seis antes, uma para o instante da preamar e seis depois. A seleção decorre da diferença entre a hora da manobra e a preamar obtida nas Tábuas das Marés.",
+      "correct": 1,
+      "explanation": "No recorte consultado, o nível médio é mantido como referência ao longo do ciclo lunar; sua altura equivale à semiamplitude de sizígia, e o zero da régua coincide com o nível de redução do porto.",
       "comments": [
-        "Correta: esse intervalo posiciona a manobra em uma das 13 cartas referidas à preamar.",
-        "Incorreta: nascer da Lua e hora legal não são o procedimento de seleção descrito.",
-        "Incorreta: as cartas representam horas relativas à preamar, não uma única situação válida para o dia inteiro.",
-        "Incorreta: observar o sentido não substitui a escolha temporal da carta pela preamar prevista."
+        "Incorreta: o nível médio não é redefinido a cada fase lunar nem corresponde à baixa-mar de sizígia.",
+        "Correta: reúne as duas relações apresentadas no capítulo de marés.",
+        "Incorreta: confunde o nível médio com o nível de redução da carta.",
+        "Incorreta: a altura da maré é somada à profundidade cartografada para obter a profundidade real."
       ],
       "reference": {
         "referenceId": "V-03",
         "base": "Lobo, P. R. V.; Soares, C. A.",
         "publication": "Meteorologia e Oceanografia",
         "edition": "4. ed., 2019",
-        "section": "Capítulo X — Correntes oceânicas e costeiras; Cartas de Correntes de Maré",
-        "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · correntes de maré",
-        "evidence": "O recorte consultado descreve um atlas com 13 cartas — seis antes da preamar, uma na preamar e seis depois — e orienta selecionar a carta pela diferença entre o horário de interesse e a preamar prevista nas Tábuas das Marés.",
+        "section": "Capítulo IX — Marés; níveis de referência e profundidade real",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · marés aplicadas à navegação",
+        "evidence": "O recorte consultado informa que a altura do NM equivale à semiamplitude da maré de sizígia, que o zero da régua coincide com o nível de redução do porto e que a profundidade real é a soma da maré com a profundidade cartografada.",
         "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
       }
     },
     {
-      "id": "fri-r4-first-overshoot-lv26",
+      "id": "sat-r2-rule19-radar-action",
+      "category": "review",
+      "axis": "III",
+      "kind": "Revisão FSRS vencida · nota 0 · Regra 19",
+      "stem": "Em visibilidade restrita, uma embarcação detecta somente por radar outro navio a vante do través e conclui que há aproximação perigosa. Pouco depois, ouve sinal de cerração aparentemente a vante. Segundo o RIPEAM, qual conduta está correta?",
+      "options": [
+        "Guinar para bombordo e manter a velocidade, pois o contato ainda não está no visual.",
+        "Aumentar a velocidade para cruzar a proa do contato antes que ele se aproxime.",
+        "Evitar, tanto quanto possível, guinada para bombordo e reduzir à mínima velocidade de governo, retirando o seguimento se necessário.",
+        "Manter rumo e velocidade até que a outra embarcação possa ser observada visualmente."
+      ],
+      "correct": 2,
+      "explanation": "A Regra 19 manda evitar, tanto quanto possível, alteração para bombordo para embarcação a vante do través. Diante de sinal de cerração aparentemente a vante ou aproximação perigosa inevitável, exige redução à mínima velocidade de governo, com retirada do seguimento se necessário e extrema cautela.",
+      "comments": [
+        "Incorreta: a Regra 19 desaconselha a guinada para bombordo nessa geometria.",
+        "Incorreta: aumentar a velocidade contraria a cautela e a redução prescritas.",
+        "Correta: combina as cautelas dos parágrafos 19(d) e 19(e).",
+        "Incorreta: a regra se aplica justamente quando as embarcações não estão no visual e não autoriza esperar passivamente."
+      ],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "COLREG 1972 / RIPEAM",
+        "publication": "COLREG — Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte B, Seção III — Regra 19(d)–(e)",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · visibilidade restrita e uso do radar",
+        "evidence": "O texto consultado determina ação antecipada quando o radar indicar aproximação perigosa, orienta evitar guinada para bombordo para contato a vante do través e, nas condições da Regra 19(e), reduzir à mínima velocidade de governo e retirar o seguimento se necessário.",
+        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
+      }
+    },
+    {
+      "id": "sat-r3-trial-depth-strict-limit",
       "category": "review",
       "axis": "I",
-      "kind": "Revisão FSRS vencida · cálculo do primeiro overshoot",
-      "stem": "No zigue-zague 10°/10°, um navio apresenta L/V = 26 s. Qual é o máximo admissível para o primeiro ângulo de overshoot segundo a MSC.137(76)?",
-      "options": ["13°.", "18°.", "20°.", "37°."],
-      "correct": 1,
-      "explanation": "Como 10 s ≤ L/V < 30 s, aplica-se 5 + 0,5(L/V). Para L/V = 26 s: 5 + 0,5 × 26 = 18°.",
+      "kind": "Revisão FSRS vencida · nota 0 · condição de prova",
+      "stem": "Um navio apresenta calado médio de 9,5 m durante uma prova de manobrabilidade. Para atender à condição preferencial de águas profundas indicada na MSC/Circ.1053, a profundidade da área deve ser:",
+      "options": [
+        "superior a 19,0 m.",
+        "igual ou superior a 28,5 m.",
+        "igual a 38,0 m.",
+        "superior a 38,0 m."
+      ],
+      "correct": 3,
+      "explanation": "A circular exige profundidade superior a quatro vezes o calado médio. Como 4 × 9,5 m = 38,0 m, a profundidade deve exceder 38,0 m.",
       "comments": [
-        "Incorreta: corresponde apenas a 0,5 × 26, sem somar os 5° previstos no critério.",
-        "Correta: resulta da fórmula 5 + 0,5(L/V) aplicável a essa faixa.",
-        "Incorreta: 20° é o limite fixo quando L/V é igual ou superior a 30 s.",
-        "Incorreta: mistura parcelas de critérios distintos e excede o limite calculado."
+        "Incorreta: corresponde a apenas duas vezes o calado médio.",
+        "Incorreta: corresponde a três vezes o calado médio.",
+        "Incorreta: o texto usa limite estrito — deve exceder quatro vezes o calado.",
+        "Correta: aplica o fator quatro e preserva a desigualdade estrita."
+      ],
+      "reference": {
+        "referenceId": "I-06",
+        "base": "IMO",
+        "publication": "Explanatory Notes to the Standards for Ship Manoeuvrability",
+        "edition": "MSC/Circ.1053, 2002",
+        "section": "Capítulo 2, §2.1.2 — Deep, unrestricted water",
+        "syllabus": "Eixo I — Manobrabilidade · condições das provas padronizadas",
+        "evidence": "O recorte consultado recomenda provas em águas profundas, livres e abrigadas e estabelece que a profundidade deve exceder quatro vezes o calado médio do navio.",
+        "url": "https://drive.google.com/file/d/18-iPKtK3TOFSi08gL_AYxix7pox04UF3/view"
+      }
+    },
+    {
+      "id": "sat-r4-msc137-compliance-routes",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão FSRS vencida · nota 0 · conformidade IMO",
+      "stem": "A respeito da demonstração de conformidade com os padrões de manobrabilidade da MSC.137(76), assinale a opção correta.",
+      "options": [
+        "Somente provas em escala real podem demonstrar conformidade; previsões de projeto não são admitidas.",
+        "A conformidade pode ser prevista no projeto por ensaios em modelo e/ou simulação matemática, com provas em escala real para validação, ou demonstrada diretamente pelas provas em escala real.",
+        "Ensaios em modelo dispensam definitivamente qualquer prova em escala real, ainda que a Administração discorde da previsão.",
+        "Simulações computacionais substituem as provas em escala real apenas quando o navio estiver em lastro."
+      ],
+      "correct": 1,
+      "explanation": "A resolução apresenta duas rotas: previsão no projeto por ensaio em modelo e/ou modelo matemático, validada por provas em escala real; ou demonstração diretamente pelos resultados das provas em escala real.",
+      "comments": [
+        "Incorreta: a resolução admite previsão no estágio de projeto.",
+        "Correta: reproduz as duas vias de demonstração descritas no §2.1.",
+        "Incorreta: a primeira via inclui provas em escala real para validar a previsão e ressalva a avaliação da Administração.",
+        "Incorreta: a resolução não cria essa restrição à condição de lastro."
       ],
       "reference": {
         "referenceId": "I-07",
-        "base": "International Maritime Organization",
+        "base": "IMO",
         "publication": "Standards for Ship Manoeuvrability",
         "edition": "MSC.137(76), 2002",
-        "section": "Anexo 6, item 5.3.3.1 — primeiro overshoot no zigue-zague 10°/10°",
-        "syllabus": "Eixo I — Manobrabilidade · capacidade de conter a guinada e manutenção de rumo",
-        "evidence": "O recorte consultado fixa, para 10 s ≤ L/V < 30 s, o limite do primeiro overshoot em 5 + 0,5(L/V) graus; substituindo L/V por 26 s, o resultado é 18°.",
+        "section": "Anexo 6, §2.1 — General",
+        "syllabus": "Eixo I — Manobrabilidade · critérios e demonstração de conformidade",
+        "evidence": "O §2.1 consultado apresenta a previsão por ensaios em modelo e/ou modelos matemáticos, seguida de validação em escala real, e a alternativa de demonstrar conformidade diretamente pelos resultados das provas em escala real.",
         "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
       }
     },
     {
-      "id": "fri-c1-axial-rotary-tidal-currents",
+      "id": "sat-c1-fatigue-definition",
       "category": "current",
-      "axis": "III",
-      "kind": "Conteúdo atual · comportamento espacial da corrente de maré",
-      "stem": "Ao comparar a corrente de maré na entrada de um porto com a corrente em mar aberto, qual comportamento é mais característico?",
+      "axis": "VII",
+      "kind": "Conteúdo atual · fadiga como perigo operacional",
+      "stem": "Para as Guidelines on Fatigue da IMO, qual descrição caracteriza corretamente a fadiga?",
       "options": [
-        "No canal, tende a ser alternada e aproximadamente axial; ao largo, pode girar ao longo do ciclo por influência das forças astronômicas e de Coriolis.",
-        "No canal, gira uniformemente; ao largo, permanece sempre alinhada com o meridiano local.",
-        "Em ambos os locais, conserva direção fixa e apenas a intensidade muda entre enchente e vazante.",
-        "No canal, é determinada apenas pelo vento; ao largo, somente pela profundidade cartografada."
+        "É apenas a sonolência causada por período de repouso inferior ao mínimo regulamentar.",
+        "É um estado exclusivamente físico que não afeta memória ou tomada de decisão.",
+        "É um estado de comprometimento físico e/ou mental, associado a fatores como sono inadequado, vigília prolongada, desalinhamento circadiano e esforço, capaz de prejudicar a vigilância e tarefas de segurança.",
+        "É uma condição restrita a pessoas sem experiência ou treinamento marítimo suficiente."
       ],
-      "correct": 0,
-      "explanation": "A geometria do canal condiciona a corrente portuária a um movimento alternado, aproximadamente segundo seu eixo. Em mar aberto, a direção pode rotacionar durante o ciclo, com participação da força de Coriolis.",
+      "correct": 2,
+      "explanation": "A definição da IMO abrange comprometimento físico e/ou mental e múltiplas causas, com possível redução da vigilância e da capacidade de operar o navio ou executar tarefas de segurança.",
       "comments": [
-        "Correta: distingue a corrente axial alternada em canal da corrente rotatória possível ao largo.",
-        "Incorreta: inverte os comportamentos e atribui ao largo um alinhamento fixo inexistente no recorte.",
-        "Incorreta: a direção ao largo também pode variar ao longo do ciclo.",
-        "Incorreta: vento e profundidade podem influenciar a circulação real, mas não explicam a distinção básica descrita."
+        "Incorreta: sono insuficiente é uma causa importante, mas a definição é mais ampla.",
+        "Incorreta: a fadiga também é mental e pode prejudicar memória e decisão.",
+        "Correta: reúne os componentes e efeitos constantes da definição da circular.",
+        "Incorreta: a IMO afirma que a fadiga afeta todos, independentemente de habilidade, conhecimento e treinamento."
       ],
       "reference": {
-        "referenceId": "III-02",
-        "base": "Miguens, Altineu Pires",
-        "publication": "Navegação: A Ciência e a Arte",
-        "edition": "v. I e III",
-        "section": "Volume I, capítulo 10, item 10.2.1 — correntes de maré",
-        "syllabus": "Eixo III — Navegação em águas restritas · correntes e planejamento da derrota",
-        "evidence": "O recorte consultado explica que, nas entradas de portos, a corrente de maré costuma ser alternada e aproximadamente axial ao canal, enquanto ao largo pode apresentar rotação de direção por ação astronômica e da força de Coriolis.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+        "referenceId": "VII-05",
+        "base": "IMO",
+        "publication": "Guidelines on Fatigue",
+        "edition": "MSC.1/Circ.1598, 2019",
+        "section": "Anexo, Introdução, §§1–3",
+        "syllabus": "Eixo VII — Conhecimentos Gerais · segurança operacional e fator humano",
+        "evidence": "O recorte consultado define fadiga como comprometimento físico e/ou mental decorrente, entre outros fatores, de sono inadequado, vigília prolongada, desalinhamento circadiano e esforço, com prejuízo à vigilância e às tarefas de segurança.",
+        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
       }
     },
     {
-      "id": "fri-c2-current-chart-spring-correction",
+      "id": "sat-c2-fatigue-causes-categories",
       "category": "current",
-      "axis": "III",
-      "kind": "Conteúdo atual · correção de velocidade da corrente",
-      "stem": "Uma Carta de Correntes de Maré indica direção 345° e velocidade 1,0 nó, valores referidos à maré de sizígia. Para uma maré fora da sizígia, a aplicação do fator obtido no ábaco deve:",
+      "axis": "VII",
+      "kind": "Conteúdo atual · causas e categorias da fadiga",
+      "stem": "Assinale a opção que apresenta somente elementos reconhecidos pela MSC.1/Circ.1598 ao tratar das causas da fadiga e de sua classificação.",
       "options": [
-        "corrigir apenas a direção, conservando a velocidade de 1,0 nó.",
-        "multiplicar a velocidade pelo fator de correção, sem corrigir a direção indicada.",
-        "somar o fator à velocidade e aplicá-lo também como correção angular.",
-        "ser dispensada, pois os valores da carta já correspondem à maré real do dia."
+        "Sono restaurador suficiente, rotina diurna e baixa carga de trabalho; fatores exclusivamente individuais.",
+        "Sono inadequado, vigília prolongada, trabalho em horário contrário ao ritmo circadiano e carga excessiva; fatores individuais, de gestão, do navio, ambientais e operacionais.",
+        "Apenas estresse e consumo de cafeína; fatores médicos e disciplinares.",
+        "Somente escalas de serviço irregulares; fatores de navegação, meteorologia e manutenção."
       ],
       "correct": 1,
-      "explanation": "Os algarismos das cartas expressam velocidades de sizígia. Fora dessa condição, o fator obtido com a duração e a amplitude da maré corrige a velocidade; a direção indicada pela seta não recebe essa correção.",
+      "explanation": "A circular lista sono insuficiente ou de má qualidade, desalinhamento circadiano, vigília prolongada, estresse e carga excessiva, agrupando causas em cinco classes: individuais, de gestão, específicas do navio, ambientais e operacionais.",
       "comments": [
-        "Incorreta: o fator corrige a intensidade, não a direção.",
-        "Correta: aplica o fator multiplicativo à velocidade e mantém a direção da carta.",
-        "Incorreta: o fator é multiplicativo e não constitui correção angular.",
-        "Incorreta: as velocidades são referidas à sizígia e podem precisar de correção para a maré considerada."
+        "Incorreta: descreve condições protetoras e reduz indevidamente as causas a fatores individuais.",
+        "Correta: corresponde às causas primárias e às cinco categorias da circular.",
+        "Incorreta: estresse e substâncias podem contribuir, mas a lista e a classificação estão incompletas.",
+        "Incorreta: escalas irregulares são apenas um dos vários fatores e as categorias oficiais são outras."
       ],
       "reference": {
-        "referenceId": "III-02",
-        "base": "Miguens, Altineu Pires",
-        "publication": "Navegação: A Ciência e a Arte",
-        "edition": "v. I e III",
-        "section": "Volume I, capítulo 10, itens 10.2.2 e 10.2.3 — Cartas de Correntes de Maré",
-        "syllabus": "Eixo III — Navegação em águas restritas · uso de publicações de correntes",
-        "evidence": "O recorte consultado informa que as velocidades impressas nas cartas correspondem à maré de sizígia; para outra amplitude, multiplica-se a velocidade pelo fator do ábaco, sem aplicar correção às direções.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+        "referenceId": "VII-05",
+        "base": "IMO",
+        "publication": "Guidelines on Fatigue",
+        "edition": "MSC.1/Circ.1598, 2019",
+        "section": "Módulo 1, §§8–13 — Causes of fatigue",
+        "syllabus": "Eixo VII — Conhecimentos Gerais · causas da fadiga e gestão do risco",
+        "evidence": "Os §§8–9 consultados enumeram as causas primárias e as organizam em cinco grupos: fatores do marítimo, de gestão, específicos do navio, ambientais e operacionais.",
+        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
       }
     },
     {
-      "id": "fri-c3-tidal-model-limitations",
+      "id": "sat-c3-fatigue-nap-inertia",
       "category": "current",
-      "axis": "III",
-      "kind": "Conteúdo atual · limites do modelo numérico",
-      "stem": "Ao empregar previsões de corrente produzidas por um modelo numérico de marés astronômicas, qual limitação deve integrar a avaliação do prático?",
+      "axis": "VII",
+      "kind": "Conteúdo atual · cochilo estratégico e inércia do sono",
+      "stem": "Um oficial dispõe de uma pausa antes de assumir tarefa que exige pronta tomada de decisão. À luz das Guidelines on Fatigue, qual orientação é tecnicamente adequada?",
       "options": [
-        "O modelo incorpora automaticamente qualquer vento futuro e dispensa observações locais.",
-        "O modelo representa apenas correntes de densidade e exclui os constituintes astronômicos.",
-        "O resultado astronômico pode não representar efeitos de vento, maré meteorológica e circulação por diferenças de densidade.",
-        "A validação com medições locais elimina permanentemente toda incerteza ambiental."
-      ],
-      "correct": 2,
-      "explanation": "O modelo descrito é construído e validado para reproduzir os efeitos astronômicos. Vento, maré meteorológica e circulação por densidade ficam fora desse resultado e precisam ser considerados por outras informações.",
-      "comments": [
-        "Incorreta: vento futuro não é incorporado automaticamente no modelo astronômico descrito.",
-        "Incorreta: ocorre o inverso; os constituintes astronômicos são a base do modelo.",
-        "Correta: identifica expressamente os fenômenos excluídos do resultado astronômico.",
-        "Incorreta: a validação melhora a confiabilidade, mas não transforma fenômenos não modelados em componentes do cálculo."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Miguens, Altineu Pires",
-        "publication": "Navegação: A Ciência e a Arte",
-        "edition": "v. I e III",
-        "section": "Volume I, capítulo 10, item 10.2.4 — modelos numéricos de correntes de maré",
-        "syllabus": "Eixo III — Navegação em águas restritas · previsão e avaliação de correntes",
-        "evidence": "O recorte consultado descreve a modelagem hidrodinâmica, sua calibração e análise harmônica, advertindo que o resultado considera marés astronômicas e exclui vento, marés meteorológicas e circulação devida a diferenças de densidade.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
-    },
-    {
-      "id": "fri-t1-cross-current-simulation",
-      "category": "rotation",
-      "axis": "I",
-      "kind": "Rotação · corrente transversal e simulação",
-      "stem": "Na preparação de um estudo de manobra para entrada portuária com forte corrente transversal de maré, qual premissa é tecnicamente mais adequada?",
-      "options": [
-        "Aplicar um único coeficiente linear de corrente a qualquer tipo de navio e condição de carga.",
-        "Desprezar a corrente no simulador se o vento estiver abaixo de força 4.",
-        "Usar dados detalhados da corrente, pois seus efeitos são não lineares e as curvas de coeficientes variam conforme o tipo de navio.",
-        "Representar a corrente apenas como aumento uniforme da velocidade no fundo, sem forças laterais ou momento de guinada."
-      ],
-      "correct": 2,
-      "explanation": "Os efeitos da corrente são complexos e não lineares, e cada tipo de navio possui curvas próprias de coeficientes. Uma entrada com forte corrente transversal exige descrição detalhada no simulador.",
-      "comments": [
-        "Incorreta: a resposta do navio não é universal nem estritamente linear.",
-        "Incorreta: vento fraco não elimina as forças e momentos produzidos pela corrente.",
-        "Correta: preserva a não linearidade, a dependência do tipo de navio e a necessidade de dados detalhados.",
-        "Incorreta: corrente transversal também produz forças laterais e momentos que precisam ser representados."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Santos, Edson Mesquita dos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 8 — efeitos ambientais; corrente",
-        "syllabus": "Eixo I — Manobrabilidade · efeitos da corrente e simulação de manobras",
-        "evidence": "O recorte consultado caracteriza os efeitos da corrente como complexos e não lineares, registra que cada tipo de navio tem curvas próprias de coeficientes e recomenda dados detalhados de corrente em simulações de entradas com forte corrente transversal de maré.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
-    },
-    {
-      "id": "fri-t2-ocimf-current-inputs",
-      "category": "rotation",
-      "axis": "I",
-      "kind": "Rotação · estimativa da força de corrente",
-      "stem": "No procedimento apresentado por Santos para estimar forças de corrente com dados da OCIMF, qual conjunto pertence à caracterização inicial do navio e da corrente?",
-      "options": [
-        "Configuração de proa, velocidade e direção da corrente em relação à popa, e altura da medição em relação à superfície e ao calado.",
-        "Somente potência do motor principal, passo do hélice e ângulo máximo de leme.",
-        "Apenas comprimento entre perpendiculares e velocidade no fundo obtida do GPS.",
-        "Pressão atmosférica, temperatura do ar e altura significativa de onda, sem referência ao calado."
+        "Um cochilo estratégico de cerca de 20 minutos pode ajudar, considerando que despertar abruptamente de sono profundo pode produzir inércia do sono e prejuízo temporário à decisão.",
+        "O cochilo deve sempre superar 90 minutos, pois a inércia do sono só ocorre após repousos curtos.",
+        "A cafeína elimina a necessidade de sono restaurador e impede a inércia do sono.",
+        "A inércia do sono afeta apenas a coordenação física, sem repercussão sobre memória ou julgamento."
       ],
       "correct": 0,
-      "explanation": "A etapa inicial requer identificar a configuração do navio/proa e caracterizar a corrente por velocidade, direção relativa à popa e posição vertical da medição em relação à superfície e ao calado.",
+      "explanation": "A circular indica cerca de 20 minutos como duração eficaz para cochilo estratégico e alerta que a inércia do sono, especialmente após despertar abrupto de sono profundo, pode prejudicar memória de curto prazo e decisão por mais de 30 minutos.",
       "comments": [
-        "Correta: reúne os dados de geometria e de corrente indicados na primeira etapa.",
-        "Incorreta: esses dados de propulsão e governo não substituem a caracterização da corrente exigida.",
-        "Incorreta: omite direção relativa, configuração da proa e altura de medição.",
-        "Incorreta: são variáveis ambientais distintas e o conjunto ainda ignora a referência vertical da corrente."
+        "Correta: concilia a contramedida recomendada com o risco transitório após o despertar.",
+        "Incorreta: a orientação não impõe duração superior a 90 minutos, e a inércia pode ser maior após sono profundo.",
+        "Incorreta: estimulantes não substituem sono restaurador nem eliminam o fenômeno.",
+        "Incorreta: o recorte associa a inércia à desorientação, memória de curto prazo e tomada de decisão."
       ],
       "reference": {
-        "referenceId": "I-08",
-        "base": "Santos, Edson Mesquita dos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 8, item 8.3.3 — método OCIMF para força de corrente",
-        "syllabus": "Eixo I — Manobrabilidade · forças ambientais de corrente",
-        "evidence": "O recorte consultado inicia o cálculo OCIMF pela configuração do navio e da proa, velocidade e direção da corrente relativas à popa e altura em que a corrente foi medida ou estimada, relacionada à superfície do mar e ao calado.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+        "referenceId": "VII-05",
+        "base": "IMO",
+        "publication": "Guidelines on Fatigue",
+        "edition": "MSC.1/Circ.1598, 2019",
+        "section": "Módulo 1, §23; Módulo 3, §17.1",
+        "syllabus": "Eixo VII — Conhecimentos Gerais · mitigação da fadiga e aptidão para o serviço",
+        "evidence": "O recorte consultado descreve a inércia do sono como desorientação e prejuízo de memória e decisão, potencialmente por mais de 30 minutos, e recomenda cochilos estratégicos de aproximadamente 20 minutos.",
+        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
       }
     },
     {
-      "id": "fri-o1-pscpp2008-q25",
-      "category": "official",
-      "axis": "II",
-      "kind": "Questão oficial histórica · PSCPP 2008",
-      "stem": "Um rebocador ultrapassa lentamente um graneleiro, vindo de ré. Ao se aproximar da popa, passa por uma região de velocidade relativa da água menor; quase pelo través da popa, o escoamento entre os cascos acelera. Mais adiante, o rebocador fica paralelo ao costado. Qual sequência descreve corretamente os efeitos esperados?",
+      "id": "sat-x1-a960-continued-proficiency",
+      "category": "rotation",
+      "axis": "IV",
+      "kind": "Rotação · habilitação e proficiência continuada",
+      "stem": "Segundo a Resolução IMO A.960(23), como a autoridade competente deve verificar a proficiência continuada dos práticos?",
       "options": [
-        "Redução de velocidade; sucção para o navio; momento para o navio; depois momento para fora causado pelo colchão de proa do rebocador.",
-        "Redução de velocidade; afastamento pela alta pressão da popa; momento para fora; depois momento para o navio causado pela onda do navio.",
-        "Aumento de velocidade; sucção para o navio; momento para fora; depois momento para o navio causado pela maior velocidade relativa da água.",
-        "Aumento de velocidade; afastamento pela esteira; momento para o navio; depois momento para fora causado pelo colchão de proa do rebocador.",
-        "Aumento de velocidade; sucção para o navio; momento para o navio; depois momento para fora causado pelo colchão de proa do rebocador."
+        "Somente após acidente ou afastamento superior a cinco anos.",
+        "Em intervalos regulares não superiores a cinco anos, verificando conhecimento local recente, aptidão médica e conhecimento das normas aplicáveis.",
+        "Anualmente, apenas por exame escrito sobre legislação internacional.",
+        "A cada dez anos, mediante comprovação exclusiva do número de manobras realizadas."
       ],
-      "correct": 4,
-      "explanation": "O gabarito oficial é E. A menor velocidade relativa da água junto à popa aumenta inicialmente a velocidade do rebocador. O escoamento acelerado entre os cascos cria sucção; como a proa está mais próxima, surge momento para o navio. Ao avançar paralelo ao casco, aparece subitamente momento para fora por efeito do colchão de proa do rebocador.",
+      "correct": 1,
+      "explanation": "A A.960(23) fixa intervalos regulares não superiores a cinco anos e abrange conhecimento recente da área, aptidão médica e conhecimento atualizado das normas internacionais, nacionais e locais pertinentes.",
       "comments": [
-        "Incorreta: erra o primeiro efeito; o rebocador experimenta aumento, não redução, de velocidade.",
-        "Incorreta: troca a sucção por afastamento e inverte a sequência de momentos.",
-        "Incorreta: acerta aumento e sucção, mas inverte os momentos para o navio e para fora.",
-        "Incorreta: a aproximação do través da popa produz sucção, não afastamento pela esteira.",
-        "Correta: reproduz a sequência indicada por Hensen e corresponde ao gabarito E."
+        "Incorreta: a verificação é periódica, sem depender de acidente; afastamento pode exigir retomada de familiaridade.",
+        "Correta: reúne periodicidade e os três núcleos de verificação do §6.1.",
+        "Incorreta: a resolução não exige periodicidade anual nem limita a verificação a prova escrita.",
+        "Incorreta: cinco anos é o intervalo máximo, e os meios de prova não se restringem ao número de manobras."
       ],
       "reference": {
-        "referenceId": "II-09",
-        "base": "Hensen, Henk",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulo 6, item 6.2.3 — interação rebocador–navio e segurança",
-        "syllabus": "Eixo II — Arte Naval · interação entre navio e rebocador",
-        "evidence": "O recorte consultado descreve um rebocador ultrapassando lentamente um graneleiro: aumento inicial de velocidade na região de menor velocidade relativa da água, sucção quando o escoamento acelera entre os cascos, momento para o navio porque a proa do rebocador está mais próxima e, ao avançar paralelo ao casco, momento súbito para fora pelo bow cushion do rebocador.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view",
-        "origin": "PSCPP 2008 — prova escrita oficial, questão 25 — gabarito E; traduzida e condensada para português do Brasil, sem alterar a sequência técnica nem a solução"
+        "referenceId": "IV-18",
+        "base": "IMO",
+        "publication": "Training, Certification and Operational Procedures for Maritime Pilots",
+        "edition": "A.960(23), 2003",
+        "section": "Anexo 1, §6 — Continued proficiency",
+        "syllabus": "Eixo IV — Legislação · treinamento, certificação e manutenção da proficiência",
+        "evidence": "O §6.1 consultado determina verificação em intervalos não superiores a cinco anos de conhecimento local recente, aptidão médica e conhecimento das normas pertinentes; o §6.2 admite registros, desenvolvimento profissional ou exame como meios de prova.",
+        "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"
+      }
+    },
+    {
+      "id": "sat-x2-smcp-advice-response",
+      "category": "rotation",
+      "axis": "VI",
+      "kind": "Rotação · resposta padronizada à instrução ou advice",
+      "stem": "Uma estação VTS transmite uma mensagem marcada como ADVICE. Se o navio puder cumpri-la, qual é a forma de resposta prevista nas IMO SMCP?",
+      "options": [
+        "Yes, advice received.",
+        "Roger. I understand.",
+        "I will/can ..., repetindo em seguida integralmente a orientação recebida.",
+        "Stand by, sem indicar prazo para a resposta."
+      ],
+      "correct": 2,
+      "explanation": "Para resposta afirmativa a INSTRUCTION ou ADVICE, as SMCP determinam “I will/can ...”, seguida da instrução ou orientação por extenso.",
+      "comments": [
+        "Incorreta: a resposta genérica não repete a ação que será executada.",
+        "Incorreta: “Roger” e “understand” são ambíguos para confirmar execução.",
+        "Correta: é a estrutura afirmativa padronizada no item General 4.5.",
+        "Incorreta: “Stand by” é usado quando a informação não está imediatamente disponível e deve ser acompanhado do intervalo de tempo."
+      ],
+      "reference": {
+        "referenceId": "VI-01",
+        "base": "IMO",
+        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
+        "edition": "A.918(22), 2001",
+        "section": "General, §§3–4 — Message markers and responses",
+        "syllabus": "Eixo VI — Comunicações · respostas padronizadas e marcadores de mensagem",
+        "evidence": "O recorte consultado lista ADVICE entre os oito marcadores e determina que a resposta afirmativa a uma INSTRUCTION ou ADVICE seja “I will/can ...”, seguida da frase completa.",
+        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
+      }
+    },
+    {
+      "id": "sat-o1-pscpp2012-q13",
+      "category": "official",
+      "axis": "III",
+      "kind": "Questão oficial histórica · PSCPP 2012 · retomada de erro",
+      "stem": "De acordo com a Regra 3 do COLREG, que trata das definições gerais:",
+      "options": [
+        "Duas embarcações são consideradas no visual quando não estiver presente condição de visibilidade restrita.",
+        "Uma embarcação sem governo é uma embarcação com capacidade de manobra restrita.",
+        "O termo em movimento também se aplica à embarcação sob máquinas, mas parada e sem seguimento.",
+        "Uma embarcação de pesca deve ser sempre considerada como com capacidade de manobra restrita.",
+        "Uma embarcação à vela deve ser sempre considerada como embarcação sem propulsão mecânica."
+      ],
+      "correct": 2,
+      "explanation": "A alternativa C é correta: “em movimento” significa não estar fundeada, amarrada à terra nem encalhada; portanto, pode estar parada e sem seguimento na água.",
+      "comments": [
+        "Incorreta: no visual exige que uma embarcação possa ser observada visualmente da outra.",
+        "Incorreta: são definições distintas, com causas diferentes para a limitação de manobra.",
+        "Correta: a ausência de seguimento não retira a condição de em movimento.",
+        "Incorreta: a definição de embarcação de pesca depende do aparelho empregado restringir sua manobrabilidade.",
+        "Incorreta: uma embarcação à vela deixa de ser assim considerada para as regras quando também utiliza propulsão mecânica."
+      ],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "COLREG 1972 / RIPEAM",
+        "publication": "COLREG — Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte A — Regra 3, definições gerais",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · definições do RIPEAM",
+        "evidence": "A Regra 3(i) consultada define underway como a condição de não estar fundeada, amarrada à terra ou encalhada; a definição não exige que exista seguimento na água.",
+        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx",
+        "origin": "PSCPP 2012 — Prova Rosa oficial, questão 13 — gabarito definitivo C; transcrição com atualização apenas de ortografia e apresentação"
       }
     }
   ]
