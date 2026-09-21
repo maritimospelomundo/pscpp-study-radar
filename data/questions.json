@@ -1,101 +1,324 @@
 {
-  "roundId": "sunday-clouds-fronts-corrections-2026-09-20",
-  "label": "Revisões dominicais e correção de erros",
-  "title": "Nuvens, aproximação frontal e sinais operacionais",
+  "roundId": "shallow-water-ripeam-2026-09-21",
+  "label": "Rodada adaptativa de segunda-feira",
+  "title": "Águas rasas, resposta do navio e RIPEAM",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões FSRS e notas 0/1 · nuvens e frentes · fadiga e carga de trabalho · questão oficial de meteorologia",
+  "path": "Revisões FSRS e notas 0/1 · efeitos de águas rasas · canal estreito e visibilidade restrita · questão oficial PSCPP",
   "method": "4–3–2–1",
   "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
   "questions": [
     {
-      "id": "sun-r1-overshoot-lv18-pair", "category": "review", "axis": "I", "kind": "Revisão FSRS vencida · nota 0 · cálculo de overshoot",
-      "stem": "Um navio tem L/V = 18 s no ensaio de zig-zag 10°/10°. Segundo a MSC.137(76), quais são, respectivamente, os limites do primeiro e do segundo ângulos de overshoot?",
-      "options": ["9° e 18°.", "14° e 31°.", "18° e 31°.", "25° e 40°."],
+      "id": "mon-r1-msc137-compliance-two-routes",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão FSRS vencida · nota 0 · conformidade IMO",
+      "stem": "Segundo a MSC.137(76), qual alternativa apresenta corretamente as duas vias para demonstrar conformidade com os padrões de manobrabilidade?",
+      "options": [
+        "Somente provas em escala real, sempre realizadas antes da construção do navio.",
+        "Ensaios com modelos e/ou previsões computacionais na fase de projeto, posteriormente validados por provas em escala real; ou demonstração direta pelos resultados das provas em escala real.",
+        "Apenas simulação computacional aprovada pelo estaleiro, sem necessidade de validação.",
+        "Certificação por comparação exclusiva com navio-irmão, dispensando ensaios e previsões."
+      ],
       "correct": 1,
-      "explanation": "Para 10 s ≤ L/V < 30 s, os limites são 5° + 0,5(L/V) para o primeiro overshoot e 17,5° + 0,75(L/V) para o segundo. Com L/V = 18 s, resultam 14° e 31°.",
-      "comments": ["Incorreta: usa L/V/2 e L/V sem aplicar as parcelas constantes.", "Correta: 5 + 0,5 × 18 = 14 e 17,5 + 0,75 × 18 = 31.", "Incorreta: toma L/V como se fosse o primeiro limite.", "Incorreta: 25° e 40° são limites fixos de outras faixas, não do caso L/V = 18 s."],
-      "reference": {"referenceId": "I-07", "base": "IMO", "publication": "Standards for Ship Manoeuvrability", "edition": "MSC.137(76), 2002", "section": "Anexo 6, §5.3.4 — Zig-zag test criteria", "syllabus": "Eixo I — Manobrabilidade · critérios dos ensaios de zig-zag", "evidence": "O recorte consultado estabelece, para 10 s ≤ L/V < 30 s no zig-zag 10°/10°, primeiro overshoot máximo de 5° + 0,5(L/V) e segundo máximo de 17,5° + 0,75(L/V).", "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"}
+      "explanation": "A resolução admite previsão na fase de projeto por modelos em escala e/ou modelos matemáticos, com validação posterior por provas em escala real, ou demonstração direta de conformidade pelos resultados dessas provas.",
+      "comments": [
+        "Incorreta: as provas em escala real não são a única via nem ocorrem antes da construção.",
+        "Correta: reúne as duas vias expressamente previstas no §2.1.",
+        "Incorreta: previsões de projeto devem ser validadas por provas em escala real.",
+        "Incorreta: a comparação com navio-irmão não substitui as vias previstas na resolução."
+      ],
+      "reference": {
+        "referenceId": "I-07",
+        "base": "IMO",
+        "publication": "Standards for Ship Manoeuvrability",
+        "edition": "MSC.137(76), 2002",
+        "section": "Anexo 6, §2.1 — General",
+        "syllabus": "Eixo I — Manobrabilidade · demonstração de conformidade com padrões IMO",
+        "evidence": "O recorte consultado admite duas vias: previsão na fase de projeto por modelos em escala e/ou modelos matemáticos, validada por provas em escala real, ou demonstração baseada diretamente em provas em escala real conduzidas conforme os padrões.",
+        "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
+      }
     },
     {
-      "id": "sun-r2-smcp-numbers-rudder", "category": "review", "axis": "VI", "kind": "Revisão FSRS vencida · nota 0 · números na SMCP",
-      "stem": "Na transmissão segundo a IMO SMCP, qual sequência representa corretamente o número 150, o decimal 2,5 e um ângulo de leme de 15°?",
-      "options": ["One hundred fifty; two comma five; one-five.", "One-five-zero; two decimal five; fifteen.", "One-five-zero; twenty-five; one-five.", "One hundred and fifty; two point five; one-five."],
-      "correct": 1,
-      "explanation": "A SMCP manda pronunciar números em dígitos separados e admite decimal/point para a separação decimal; a exceção expressa é o ângulo de leme em wheel orders, pronunciado como número inteiro, como fifteen.",
-      "comments": ["Incorreta: agrega 150, usa comma e separa indevidamente o ângulo de leme.", "Correta: reproduz a regra geral para 150 e 2,5 e a exceção para ângulos de leme.", "Incorreta: elimina o separador decimal e aplica a regra geral de dígitos ao ângulo de leme.", "Incorreta: agrega 150 e separa o ângulo de leme, embora two point five esteja aceitável."],
-      "reference": {"referenceId": "VI-01", "base": "IMO", "publication": "IMO Standard Marine Communication Phrases (SMCP)", "edition": "A.918(22), 2001", "section": "General, §10 — Numbers", "syllabus": "Eixo VI — Comunicações · pronúncia padronizada de números", "evidence": "O recorte consultado determina dígitos separados, exemplifica 150 como one-five-zero e 2,5 como two decimal five ou two point five, e ressalva que ângulos de leme são ditos como fifteen ou twenty.", "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"}
-    },
-    {
-      "id": "sun-r3-constrained-draught-signals", "category": "review", "axis": "III", "kind": "Revisão FSRS vencida · nota 0 · sinais de embarcação restrita pelo calado",
-      "stem": "Uma embarcação de propulsão mecânica restrita devido ao seu calado decide exibir os sinais facultados pela Regra 28 do RIPEAM. Qual conjunto está correto?",
-      "options": ["Duas luzes circulares encarnadas em linha vertical ou duas esferas.", "Três luzes circulares encarnadas em linha vertical ou um cilindro.", "Uma luz circular branca sobre uma encarnada ou a bandeira Alfa.", "Três luzes circulares verdes em linha vertical ou um cone com o vértice para baixo."],
-      "correct": 1,
-      "explanation": "Além das luzes de embarcação de propulsão mecânica da Regra 23, a embarcação restrita devido ao calado pode exibir três luzes circulares encarnadas em linha vertical ou um cilindro.",
-      "comments": ["Incorreta: duas luzes encarnadas identificam embarcação sem governo; duas esferas não são o sinal da Regra 28.", "Correta: corresponde exatamente aos sinais adicionais facultados pela Regra 28.", "Incorreta: confunde sinais de embarcação de prático e de operação subaquática.", "Incorreta: luzes verdes triplas e cone invertido não identificam restrição devido ao calado."],
-      "reference": {"referenceId": "III-16", "base": "IMO", "publication": "COLREG - Consolidated Edition 2018", "edition": "2018", "section": "Parte C — Regra 28, embarcação restrita devido ao calado", "syllabus": "Eixo III — Navegação Restrita · RIPEAM, luzes e marcas", "evidence": "O recorte consultado dispõe que a embarcação restrita devido ao calado pode, além das luzes da Regra 23, exibir três luzes circulares encarnadas em linha vertical ou um cilindro.", "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"}
-    },
-    {
-      "id": "sun-r4-tug-cross-gate-lines", "category": "review", "axis": "II", "kind": "Revisão FSRS vencida · nota 0 · emprego de rebocadores",
-      "stem": "Em águas estreitas, um rebocador que trabalha pela proa do navio assistido pode usar duas linhas de reboque. Segundo Hensen, como essas linhas são denominadas e qual vantagem operacional oferecem?",
-      "options": ["Spring lines; ampliam o comprimento do reboque para aumentar a catenária.", "Cross lines ou gate lines; permitem reação rápida quando há pouco espaço para o rebocador manobrar.", "Breast lines; eliminam a necessidade de coordenar o esforço com o navio.", "Escort lines; mantêm o rebocador sempre alinhado pela popa do navio."],
-      "correct": 1,
-      "explanation": "O recorte chama as duas linhas de cross lines ou gate lines e ressalta seu emprego em águas estreitas, nas quais é necessária reação rápida e há pouco espaço para o rebocador manobrar.",
-      "comments": ["Incorreta: spring é termo de amarração e a vantagem descrita não é aumentar a catenária.", "Correta: reúne a nomenclatura e a finalidade operacional do trecho consultado.", "Incorreta: breast lines são linhas de amarração e nenhuma configuração elimina a coordenação com o navio.", "Incorreta: o trecho trata de rebocador pela proa e não impõe permanência pela popa."],
-      "reference": {"referenceId": "II-09", "base": "Hensen, Henk", "publication": "Tug Use in Port: A Practical Guide", "edition": "4. ed., 2021", "section": "Capítulo 3 — assisting methods; towlines in narrow waters", "syllabus": "Eixo II — Arte Naval · emprego e segurança de rebocadores portuários", "evidence": "O recorte consultado informa que o rebocador pela proa pode usar duas linhas, chamadas cross lines ou gate lines, úteis em águas estreitas por darem reação rápida quando há pouco espaço de manobra.", "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"}
-    },
-    {
-      "id": "sun-c1-cloud-structure-stability", "category": "current", "axis": "V", "kind": "Conteúdo atual · estrutura das nuvens e estabilidade",
-      "stem": "Quanto à estrutura das nuvens e às condições atmosféricas associadas, assinale a afirmativa correta.",
-      "options": ["Nuvens estratiformes indicam forte corrente ascendente e produzem, em regra, pancadas intensas e descontínuas.", "Nuvens cumuliformes formam camadas uniformes extensas e se associam principalmente à estabilidade.", "Nuvens estratiformes tendem a ocorrer com estabilidade e precipitação leve e contínua; cumuliformes associam-se a instabilidade e pancadas.", "A distinção entre estratiformes e cumuliformes depende apenas da altitude de suas bases."],
+      "id": "mon-r2-trial-depth-exceeds-four-draughts",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão FSRS vencida · nota 0 · profundidade da área de prova",
+      "stem": "Um navio com calado médio de 12 m realizará provas padronizadas de manobrabilidade. Para atender à orientação da MSC/Circ.1053 quanto a águas profundas e irrestritas, a profundidade deve:",
+      "options": [
+        "ser igual ou superior a 36 m.",
+        "ser exatamente 48 m.",
+        "exceder 48 m.",
+        "exceder 60 m."
+      ],
       "correct": 2,
-      "explanation": "As estratiformes se apresentam em camadas uniformes, ligadas à estabilidade e a precipitação leve, contínua e extensa. As cumuliformes têm desenvolvimento vertical, decorrem de correntes ascendentes e instabilidade e podem produzir pancadas.",
-      "comments": ["Incorreta: atribui às estratiformes características típicas das cumuliformes.", "Incorreta: inverte a morfologia e a condição dinâmica dos dois grupos.", "Correta: sintetiza a oposição descrita entre os dois grandes tipos estruturais.", "Incorreta: a classificação considera forma, desenvolvimento vertical e processos atmosféricos, não apenas a altura da base."],
-      "reference": {"referenceId": "V-01", "base": "Miguens, Altineu Pires", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN", "section": "Capítulo 45 — nuvens estratiformes e cumuliformes", "syllabus": "Eixo V — Meteorologia/Oceanografia · nuvens e estabilidade atmosférica", "evidence": "O recorte consultado associa nuvens estratiformes a camadas uniformes, estabilidade e precipitação leve e contínua, e nuvens cumuliformes a desenvolvimento vertical, correntes ascendentes, instabilidade e pancadas.", "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"}
+      "explanation": "A circular determina que a profundidade exceda quatro vezes o calado médio. Para 12 m, quatro calados equivalem a 48 m; portanto, a profundidade precisa ser maior que 48 m.",
+      "comments": [
+        "Incorreta: 36 m corresponde a apenas três vezes o calado médio.",
+        "Incorreta: a redação exige exceder, e não apenas igualar, quatro calados médios.",
+        "Correta: aplica estritamente h > 4Tm.",
+        "Incorreta: 60 m satisfaria a condição, mas não representa o limite mínimo pedido."
+      ],
+      "reference": {
+        "referenceId": "I-06",
+        "base": "IMO",
+        "publication": "Explanatory Notes to the Standards for Ship Manoeuvrability",
+        "edition": "MSC/Circ.1053, 2002",
+        "section": "Capítulo 2, §2.1.2 — Deep, unrestricted water",
+        "syllabus": "Eixo I — Manobrabilidade · condições das provas padronizadas",
+        "evidence": "O recorte consultado orienta realizar as provas preferencialmente em águas profundas, irrestritas e abrigadas, com profundidade superior a quatro vezes o calado médio do navio.",
+        "url": "https://drive.google.com/file/d/18-iPKtK3TOFSi08gL_AYxix7pox04UF3/view"
+      }
     },
     {
-      "id": "sun-c2-cloud-level-cumulonimbus", "category": "current", "axis": "V", "kind": "Conteúdo atual · níveis e desenvolvimento vertical das nuvens",
-      "stem": "Na classificação por níveis apresentada por Miguens, qual descrição do Cumulonimbus é correta?",
-      "options": ["É nuvem exclusivamente alta, com base sempre acima de 6 km e sem precipitação.", "É nuvem exclusivamente média, sem extensão para os níveis alto ou baixo.", "Tem base no nível baixo e pode apresentar desenvolvimento vertical até os níveis médio e alto.", "Forma camada baixa uniforme, sem correntes ascendentes significativas."],
+      "id": "mon-r3-tidal-current-chart-selection",
+      "category": "review",
+      "axis": "V",
+      "kind": "Revisão FSRS vencida · nota 0 · Cartas de Correntes de Maré",
+      "stem": "Para selecionar a Carta de Correntes de Maré correspondente ao horário previsto de uma manobra portuária, o navegante deve usar principalmente:",
+      "options": [
+        "a diferença entre o horário de interesse e o instante da preamar indicado nas Tábuas das Marés.",
+        "a fase da Lua isoladamente, pois cada carta cobre todo o dia.",
+        "a diferença entre a hora legal e a hora do nascer do Sol.",
+        "apenas o sentido observado da corrente no momento, sem consultar a preamar."
+      ],
+      "correct": 0,
+      "explanation": "A coletânea possui 13 cartas referidas à preamar: seis anteriores, uma para o instante da preamar e seis posteriores. A carta correta resulta da diferença entre a hora de interesse e a preamar prevista.",
+      "comments": [
+        "Correta: é o procedimento indicado no capítulo para escolher a folha horária.",
+        "Incorreta: a fase lunar influencia a maré, mas não seleciona sozinha a carta horária.",
+        "Incorreta: nascer do Sol não é a referência temporal da coletânea.",
+        "Incorreta: a observação local auxilia, mas não substitui a seleção pela diferença em relação à preamar."
+      ],
+      "reference": {
+        "referenceId": "V-03",
+        "base": "Lobo, P. R. V.; Soares, C. A.",
+        "publication": "Meteorologia e Oceanografia",
+        "edition": "4. ed., 2019",
+        "section": "Capítulo X — Cartas de Correntes de Maré",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · correntes de maré aplicadas à navegação",
+        "evidence": "O recorte consultado descreve 13 folhas — seis antes, uma na preamar e seis depois — e orienta selecionar a carta pela diferença entre o instante da preamar previsto nas Tábuas das Marés e o horário de interesse.",
+        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
+      }
+    },
+    {
+      "id": "mon-r4-narrow-channel-crossing",
+      "category": "review",
+      "axis": "III",
+      "kind": "Revisão FSRS vencida · Regra 9",
+      "stem": "Em um canal estreito, uma embarcação pretende cruzar a derrota de outra que só pode navegar com segurança dentro do canal. Segundo a Regra 9, a embarcação que cruza:",
+      "options": [
+        "tem preferência se estiver vindo por boreste.",
+        "pode cruzar desde que mantenha velocidade constante.",
+        "não deve cruzar se isso impedir a passagem da embarcação confinada ao canal.",
+        "deve fundear próximo ao limite externo para aguardar oportunidade."
+      ],
       "correct": 2,
-      "explanation": "Embora classificado entre as nuvens baixas pela altura da base, o Cumulonimbus é uma exceção importante: seu grande desenvolvimento vertical pode atravessar os níveis médio e alto.",
-      "comments": ["Incorreta: confunde o topo elevado com a altura da base e exclui a precipitação típica.", "Incorreta: o Cumulonimbus não fica confinado ao nível médio.", "Correta: preserva a classificação pela base e a exceção de grande desenvolvimento vertical.", "Incorreta: descreve nuvem estratiforme, não Cumulonimbus."],
-      "reference": {"referenceId": "V-01", "base": "Miguens, Altineu Pires", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN", "section": "Capítulo 45 — classificação das nuvens por altura", "syllabus": "Eixo V — Meteorologia/Oceanografia · identificação e níveis das nuvens", "evidence": "O quadro consultado inclui Cumulus e Cumulonimbus entre as nuvens baixas e explica que suas bases ficam no nível baixo, mas seus topos podem atingir os níveis médio e alto.", "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"}
+      "explanation": "A Regra 9(d) proíbe o cruzamento quando ele impedir a passagem de embarcação que só pode navegar com segurança dentro do canal ou via de acesso estreita.",
+      "comments": [
+        "Incorreta: a Regra 9(d) impõe dever específico que não é afastado pela posição relativa.",
+        "Incorreta: manter velocidade não autoriza impedir a passagem da embarcação confinada ao canal.",
+        "Correta: corresponde ao comando expresso da Regra 9(d).",
+        "Incorreta: a Regra 9(g) recomenda evitar fundear em canal estreito, se as circunstâncias permitirem."
+      ],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "IMO",
+        "publication": "COLREG - Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte B, Regra 9(d) e (g) — Narrow Channels",
+        "syllabus": "Eixo III — Navegação Restrita · canais estreitos",
+        "evidence": "O recorte consultado estabelece que uma embarcação não deve cruzar canal estreito se impedir a passagem de outra que só possa navegar com segurança dentro dele; também orienta evitar fundear no canal, quando possível.",
+        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
+      }
     },
     {
-      "id": "sun-c3-trough-ridge-fronts", "category": "current", "axis": "V", "kind": "Conteúdo atual · cavados, cristas e aproximação frontal",
-      "stem": "Em uma carta sinótica, um cavado bem pronunciado e uma crista bem pronunciada costumam indicar, respectivamente, quais deslocamentos e tipos de frente?",
-      "options": ["Ar quente avançando sobre região mais fria, frente quente; ar frio avançando sobre região mais quente, frente fria.", "Ar frio avançando sobre região mais quente, geralmente frente fria; ar quente avançando sobre região mais fria, geralmente frente quente.", "Divergência de ar frio, frente oclusa; convergência de ar quente, frente estacionária.", "Ausência de advecção em ambos os casos; cavados e cristas não se relacionam com frentes."],
+      "id": "mon-c1-shallow-water-pressure-sinkage",
+      "category": "current",
+      "axis": "I",
+      "kind": "Conteúdo atual · mecanismo hidrodinâmico em águas rasas",
+      "stem": "Em água de profundidade limitada e largura praticamente irrestrita, qual sequência explica corretamente o aumento do afundamento dinâmico e do trim?",
+      "options": [
+        "A água desacelera sob o casco, a pressão aumenta e o navio emerge.",
+        "A água acelera sob o casco, a pressão diminui e aumentam o afundamento e a alteração dinâmica do trim.",
+        "O escoamento sob o casco permanece inalterado; apenas o vento modifica o trim.",
+        "A água acelera apenas nas laterais, elevando uniformemente proa e popa."
+      ],
       "correct": 1,
-      "explanation": "O capítulo relaciona cavado acentuado à penetração de ar frio em região mais quente, normalmente uma frente fria, e crista acentuada à penetração de ar quente em região mais fria, normalmente uma frente quente.",
-      "comments": ["Incorreta: troca as associações de cavado e crista.", "Correta: reproduz as duas relações do recorte consultado.", "Incorreta: introduz tipos de frente e mecanismos que não correspondem ao texto.", "Incorreta: o texto usa cavados e cristas pronunciados como indícios de deslocamentos de massas e frentes."],
-      "reference": {"referenceId": "V-01", "base": "Miguens, Altineu Pires", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN", "section": "Capítulo 45 — cartas sinóticas, cavados, cristas e frentes", "syllabus": "Eixo V — Meteorologia/Oceanografia · análise sinótica e sistemas frontais", "evidence": "O recorte consultado associa cavado bem pronunciado a ar frio penetrando região mais quente e, em geral, frente fria; associa crista pronunciada a ar quente penetrando região mais fria e, em geral, frente quente.", "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"}
+      "explanation": "Com menor espaço vertical, a água que passa sob o casco precisa acelerar mais do que em águas profundas. A redução de pressão associada aumenta o afundamento e modifica dinamicamente o trim.",
+      "comments": [
+        "Incorreta: inverte tanto a variação da velocidade do escoamento quanto a resposta de pressão.",
+        "Correta: reproduz o mecanismo descrito para o escoamento sob o casco em águas rasas.",
+        "Incorreta: a limitação de profundidade altera diretamente o campo hidrodinâmico.",
+        "Incorreta: o efeito relevante ocorre sob o casco e não implica elevação uniforme do navio."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Santos, Edson Mesquita dos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 9, §9.2 — sinais e mecanismos em águas rasas",
+        "syllabus": "Eixo I — Manobrabilidade · efeitos de águas rasas",
+        "evidence": "O recorte consultado explica que a restrição vertical acelera o escoamento sob o casco, reduz a pressão e aumenta o afundamento e a alteração dinâmica do trim.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
     },
     {
-      "id": "sun-x1-fatigue-sleep-debt-awareness", "category": "rotation", "axis": "VII", "kind": "Rotação · dívida de sono e percepção do desempenho",
-      "stem": "De acordo com as Guidelines on Fatigue, qual afirmação descreve corretamente a dívida de sono e um risco associado?",
-      "options": ["É a perda de sono em um único período de 24 horas e sempre é percebida com precisão.", "É o acúmulo de sono insuficiente ao longo de períodos consecutivos de 24 horas; a pessoa privada de sono pode subestimar a própria perda de desempenho.", "É causada somente por trabalho noturno e desaparece após qualquer cochilo curto.", "Afeta apenas a saúde de longo prazo, sem efeito sobre alerta e desempenho operacional."],
+      "id": "mon-c2-shallow-water-indications",
+      "category": "current",
+      "axis": "I",
+      "kind": "Conteúdo atual · sinais operacionais de águas rasas",
+      "stem": "Qual conjunto de sinais a bordo é compatível com a entrada do navio em águas progressivamente mais rasas, segundo Santos?",
+      "options": [
+        "Respostas de controle mais rápidas, aumento de RPM e aumento de velocidade.",
+        "Respostas de controle mais lentas, possível queda de RPM e velocidade e surgimento de vibrações.",
+        "Eliminação do trim dinâmico, ausência de vibração e maior eficiência do leme.",
+        "Aumento uniforme da RPM sem alteração de velocidade ou calados."
+      ],
       "correct": 1,
-      "explanation": "A circular define dívida de sono como sono insuficiente acumulado ao longo de vários períodos consecutivos de 24 horas e alerta que a pessoa privada de sono pode perder a capacidade de avaliar adequadamente seu próprio desempenho.",
-      "comments": ["Incorreta: restringe o conceito a um único dia e presume autoconsciência preservada.", "Correta: reúne a definição acumulativa e o risco de baixa percepção da própria degradação.", "Incorreta: a dívida tem múltiplas causas e não é necessariamente eliminada por qualquer cochilo.", "Incorreta: a circular destaca efeitos imediatos sobre alerta, desempenho e segurança."],
-      "reference": {"referenceId": "VII-05", "base": "IMO", "publication": "Guidelines on Fatigue", "edition": "MSC.1/Circ.1598, 2019", "section": "Módulo 1 — sleep debt, alertness and performance", "syllabus": "Eixo VII — Conhecimentos Gerais · fatores humanos e gerenciamento da fadiga", "evidence": "O recorte consultado define sleep debt como sono insuficiente acumulado em períodos consecutivos de 24 horas e alerta que pessoas privadas de sono podem ficar menos conscientes e incapazes de julgar sua perda de desempenho.", "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"}
+      "explanation": "Entre os sinais listados estão respostas de controle mais lentas, alterações nas leituras de calado, quedas de RPM e velocidade e possível surgimento repentino de vibrações.",
+      "comments": [
+        "Incorreta: inverte as tendências de resposta, RPM e velocidade.",
+        "Correta: reúne sinais operacionais efetivamente relacionados no recorte.",
+        "Incorreta: águas rasas podem aumentar o trim dinâmico, gerar vibração e reduzir a eficiência do leme.",
+        "Incorreta: o texto registra justamente possíveis quedas de RPM e mudanças nas leituras de calado."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Santos, Edson Mesquita dos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 9, §9.2 — sinais presenciados a bordo",
+        "syllabus": "Eixo I — Manobrabilidade · reconhecimento operacional de águas rasas",
+        "evidence": "O recorte consultado enumera respostas de controle mais lentas, alterações de calado, queda de RPM e velocidade e vibrações repentinas entre os sinais observáveis em águas rasas.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
     },
     {
-      "id": "sun-x2-fatigue-technology-workload", "category": "rotation", "axis": "VII", "kind": "Rotação · tecnologia, carga de trabalho e fadiga",
-      "stem": "Ao introduzir nova tecnologia a bordo, qual conduta é compatível com as Guidelines on Fatigue?",
-      "options": ["Presumir que toda automação reduz a fadiga e dispensar avaliação da carga de trabalho.", "Avaliar como a tecnologia altera a natureza do trabalho, a carga da tripulação e os riscos de fadiga.", "Considerar somente o tempo de treinamento inicial, sem observar efeitos na operação cotidiana.", "Transferir integralmente ao tripulante a responsabilidade por adaptar seus períodos de descanso."],
+      "id": "mon-c3-shallow-water-turning-yaw",
+      "category": "current",
+      "axis": "I",
+      "kind": "Conteúdo atual · curva de giro e controle da guinada",
+      "stem": "Ao comparar águas muito rasas com águas profundas, qual combinação é apresentada como tendência geral?",
+      "options": [
+        "Menor diâmetro tático, maior eficiência do leme e overshoots maiores.",
+        "Maior diâmetro tático e maior dificuldade para curva fechada, mas maior facilidade para quebrar a guinada e overshoots menores.",
+        "Maior eficiência do leme, menor distância de parada e nenhuma alteração nos overshoots.",
+        "Menor diâmetro tático e menor facilidade para quebrar a guinada."
+      ],
       "correct": 1,
-      "explanation": "A circular reconhece que mudanças tecnológicas podem alterar a natureza e a carga do trabalho; por isso, seus efeitos sobre a carga da tripulação e a fadiga devem ser avaliados, sem presumir benefício automático.",
-      "comments": ["Incorreta: automação pode reduzir ou redistribuir carga, e seu efeito precisa ser verificado.", "Correta: corresponde à orientação de avaliar impactos da tecnologia sobre trabalho, carga e fadiga.", "Incorreta: o risco não se limita ao treinamento; inclui a operação normal.", "Incorreta: o gerenciamento da fadiga é responsabilidade compartilhada."],
-      "reference": {"referenceId": "VII-05", "base": "IMO", "publication": "Guidelines on Fatigue", "edition": "MSC.1/Circ.1598, 2019", "section": "Módulos sobre desenho do trabalho e mudanças tecnológicas", "syllabus": "Eixo VII — Conhecimentos Gerais · fatores humanos, tecnologia e carga de trabalho", "evidence": "O recorte consultado afirma que a tecnologia modifica a natureza e a carga do trabalho e orienta avaliar seus impactos sobre a carga da tripulação e a fadiga.", "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"}
+      "explanation": "O texto distingue habilidade de virar de habilidade de controlar a guinada: em águas rasas o diâmetro tático pode crescer e a curva fechada ficar mais difícil, embora seja geralmente mais fácil quebrar a guinada e os overshoots diminuam.",
+      "comments": [
+        "Incorreta: inverte as tendências de diâmetro tático, eficiência do leme e overshoots.",
+        "Correta: combina os efeitos distintos sobre capacidade de giro e controle da guinada.",
+        "Incorreta: a eficiência do leme geralmente se reduz e a distância de parada tende a aumentar.",
+        "Incorreta: o diâmetro tende a aumentar e a guinada costuma ser mais fácil de quebrar."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Santos, Edson Mesquita dos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 9, §9.2 — efeitos sobre giro, leme e zigue-zague",
+        "syllabus": "Eixo I — Manobrabilidade · curva de giro e controle de guinada em águas rasas",
+        "evidence": "O recorte consultado registra possível aumento do diâmetro tático, menor eficiência do leme e maior dificuldade para curva fechada, ao mesmo tempo em que indica maior facilidade para quebrar a guinada e overshoots geralmente menores.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
     },
     {
-      "id": "sun-o1-pscpp2006-q14", "category": "official", "axis": "V", "kind": "Questão oficial histórica · PSCPP 2006 · retomada de erro",
-      "stem": "Um navegante, observando o estado do mar e o estado do tempo no oceano Atlântico Sul, em dia de céu limpo, sem vento e ondas, identifica, em determinado azimute, surgirem no horizonte, em altos níveis, nuvens Cirrus de cristais de gelo, com acentuado deslocamento na direção do navio. Na interpretação dessa situação, qual previsão pode ser feita?",
-      "options": ["Permanece tempo estável com nuvens altas de cristais de gelo, características de bom tempo.", "Não há previsão de nuvens Cumulonimbus, característica de mau tempo.", "Há previsão de mudança de nebulosidade, passando de céu limpo para parcialmente nublado a quase encoberto, permanecendo as condições de estabilidade.", "Não há previsão de instabilidade com formação de ondas, vento forte, precipitação pesada e rajadas de vento.", "Há previsão de mau tempo com pancadas de chuva, rajadas de vento e trovoadas."],
+      "id": "mon-x1-narrow-channel-bend-signal",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Rotação · canal estreito e curva encoberta",
+      "stem": "Ao se aproximar de uma curva de canal estreito em que outra embarcação possa estar encoberta por obstáculo, a embarcação deve:",
+      "options": [
+        "manter silêncio para não confundir embarcações fora do canal.",
+        "navegar com especial atenção e cautela e emitir o sinal sonoro previsto para a situação.",
+        "cruzar para o lado de bombordo do canal antes da curva.",
+        "aumentar a velocidade para reduzir o tempo de exposição."
+      ],
+      "correct": 1,
+      "explanation": "A Regra 9(f) exige especial atenção e cautela ao se aproximar de curva ou trecho encoberto de canal estreito, além do sinal apropriado da Regra 34(e).",
+      "comments": [
+        "Incorreta: a regra exige sinal sonoro, não silêncio.",
+        "Correta: reúne a conduta e o sinal requeridos.",
+        "Incorreta: o navio deve manter-se tão próximo quanto seguro e praticável do limite de boreste.",
+        "Incorreta: aumentar velocidade contraria a cautela especial requerida."
+      ],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "IMO",
+        "publication": "COLREG - Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte B, Regra 9(f), e Parte D, Regra 34(e)",
+        "syllabus": "Eixo III — Navegação Restrita · canais estreitos e sinais de manobra",
+        "evidence": "O recorte consultado exige atenção e cautela particulares ao se aproximar de curva ou trecho encoberto de canal estreito e determina a emissão do sinal sonoro apropriado.",
+        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
+      }
+    },
+    {
+      "id": "mon-x2-rule19-radar-alterations",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Rotação · visibilidade restrita e ação por radar",
+      "stem": "Em visibilidade restrita, uma embarcação detecta outra somente pelo radar e decide alterar o rumo para evitar aproximação excessiva. Tanto quanto possível, deve evitar:",
+      "options": [
+        "guinar para boreste para alvo a vante do través e afastar-se de alvo pelo través.",
+        "guinar para bombordo para alvo a vante do través, salvo se estiver sendo alcançado, e guinar em direção a alvo pelo través ou a ré do través.",
+        "qualquer alteração superior a 10°, independentemente da posição do alvo.",
+        "reduzir a velocidade quando ouvir sinal de cerração a vante."
+      ],
+      "correct": 1,
+      "explanation": "A Regra 19(d) orienta evitar, tanto quanto possível, guinada para bombordo para alvo a vante do través, exceto o alcançado, e alteração em direção a alvo pelo través ou a ré do través.",
+      "comments": [
+        "Incorreta: não corresponde às alterações especificamente desaconselhadas pela regra.",
+        "Correta: reproduz os dois cuidados da Regra 19(d).",
+        "Incorreta: o RIPEAM não estabelece esse limite angular geral.",
+        "Incorreta: a redução pode ser exigida pela Regra 19(e), não é ação a evitar."
+      ],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "IMO",
+        "publication": "COLREG - Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte B, Regra 19(d) — ação para evitar colisão",
+        "syllabus": "Eixo III — Navegação Restrita · visibilidade restrita e radar",
+        "evidence": "O recorte consultado manda evitar, tanto quanto possível, alteração para bombordo para alvo a vante do través, exceto alcançado, e alteração em direção a alvo pelo través ou a ré do través.",
+        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
+      }
+    },
+    {
+      "id": "mon-o1-pscpp2008-q8-retry",
+      "category": "official",
+      "axis": "III",
+      "kind": "Questão oficial histórica · PSCPP 2008 · retomada de erro",
+      "stem": "Em visibilidade restrita, um navio segue no rumo 035° com velocidade segura. O radar detecta, apenas por radar, alvo na bochecha de bombordo, marcação verdadeira 355°, aproximando-se com marcação praticamente constante e PMA de 500 jardas, cruzando sua proa. Ouve-se um apito longo seguido de dois curtos. Qual sugestão imediata é correta?",
+      "options": [
+        "Manter rumo e velocidade.",
+        "Guinar francamente para bombordo, mantendo a velocidade.",
+        "Guinar para boreste e aumentar a velocidade.",
+        "Guinar francamente para bombordo e aumentar a velocidade.",
+        "Manter o rumo e reduzir a velocidade."
+      ],
       "correct": 4,
-      "explanation": "Cirrus com garras e acentuado deslocamento em direção ao observador são indício de mau tempo se aproximando. A obra associa esse sinal à aproximação de Cumulonimbus, capaz de produzir pancadas, rajadas e trovoadas.",
-      "comments": ["Incorreta: Cirrus parada pode acompanhar bom tempo; o deslocamento em direção ao navio muda a interpretação.", "Incorreta: a obra associa esse sinal à aproximação de Cumulonimbus.", "Incorreta: o quadro indica perda de estabilidade, não mera mudança de nebulosidade estável.", "Incorreta: a previsão inclui justamente instabilidade, vento e precipitação.", "Correta: corresponde ao gabarito E e ao fundamento localizado em Lobo e Soares."],
-      "reference": {"referenceId": "V-03", "base": "Lobo, P. R. V.; Soares, C. A.", "publication": "Meteorologia e Oceanografia", "edition": "4. ed., 2019", "section": "Capítulo I — nuvens Cirrus; Capítulo III — Cumulonimbus e trovoadas", "syllabus": "Eixo V — Meteorologia/Oceanografia · interpretação de nuvens e previsão do tempo", "evidence": "O recorte consultado identifica Cirrus com garras e acentuado deslocamento para a embarcação como sinal de mau tempo se aproximando e relaciona Cumulonimbus a rajadas, precipitação intensa, relâmpagos e trovões.", "origin": "PSCPP 2006 — prova oficial, questão 14 — gabarito E; enunciado e alternativas com atualização apenas ortográfica", "url": "https://drive.google.com/file/d/1_6AvrqlquyvlPVQ4ERooU0NCKVFzs6tc/view"}
+      "explanation": "O gabarito oficial é E. Há aproximação perigosa em visibilidade restrita e sinal de cerração aparentemente a vante; a Regra 19 orienta reduzir à mínima velocidade de governo, retirar o seguimento se necessário e navegar com extrema cautela.",
+      "comments": [
+        "Incorreta: aproximação perigosa e sinal de cerração exigem redução de velocidade.",
+        "Incorreta: deve-se evitar, tanto quanto possível, guinada para bombordo para alvo a vante do través.",
+        "Incorreta: aumentar velocidade contraria a cautela requerida.",
+        "Incorreta: combina guinada desaconselhada e aumento inadequado de velocidade.",
+        "Correta: corresponde ao gabarito E e à redução determinada pela Regra 19(e)."
+      ],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "IMO",
+        "publication": "COLREG - Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte B, Regra 19(d)–(e), e Parte D, Regra 35",
+        "syllabus": "Eixo III — Navegação Restrita · visibilidade restrita, radar e sinais sonoros",
+        "evidence": "O recorte consultado manda evitar alteração para bombordo para alvo a vante do través e, ao ouvir sinal de cerração aparentemente a vante ou não poder evitar aproximação perigosa, reduzir à mínima velocidade de governo, retirando o seguimento se necessário.",
+        "origin": "PSCPP 2008 — prova escrita oficial, questão 8 — gabarito E; cenário condensado, terminologia atualizada e unidades padronizadas, sem alteração da solução",
+        "url": "https://drive.google.com/file/d/1KfllJf4BukeOqCtNlr5uuwNC7xDu45I6/view"
+      }
     }
   ]
 }
