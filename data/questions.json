@@ -1,323 +1,248 @@
 {
-  "roundId": "shallow-water-ripeam-2026-09-21",
-  "label": "Rodada adaptativa de segunda-feira",
-  "title": "Águas rasas, resposta do navio e RIPEAM",
+  "roundId": "mooring-lines-meteorology-2026-09-22",
+  "label": "Rodada adaptativa de terça-feira",
+  "title": "Espias, amarração e meteorologia aplicada",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões FSRS e notas 0/1 · efeitos de águas rasas · canal estreito e visibilidade restrita · questão oficial PSCPP",
+  "path": "Revisões FSRS e notas 0/1 · espias e amarração · vento e sistemas de pressão · questão oficial PSCPP",
   "method": "4–3–2–1",
   "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
   "questions": [
     {
-      "id": "mon-r1-msc137-compliance-two-routes",
+      "id": "tue-r1-smcp-numbers-wheel-exception",
       "category": "review",
-      "axis": "I",
-      "kind": "Revisão FSRS vencida · nota 0 · conformidade IMO",
-      "stem": "Segundo a MSC.137(76), qual alternativa apresenta corretamente as duas vias para demonstrar conformidade com os padrões de manobrabilidade?",
-      "options": [
-        "Somente provas em escala real, sempre realizadas antes da construção do navio.",
-        "Ensaios com modelos e/ou previsões computacionais na fase de projeto, posteriormente validados por provas em escala real; ou demonstração direta pelos resultados das provas em escala real.",
-        "Apenas simulação computacional aprovada pelo estaleiro, sem necessidade de validação.",
-        "Certificação por comparação exclusiva com navio-irmão, dispensando ensaios e previsões."
-      ],
+      "axis": "VI",
+      "kind": "Revisão FSRS vencida · nota 0 · comunicação padronizada",
+      "stem": "Na IMO SMCP, como deve ser pronunciado o número 15 quando aparece como número comum e como ângulo de leme em uma ordem ao timoneiro, respectivamente?",
+      "options": ["fifteen; one-five", "one-five; fifteen", "one-five; one-five", "fifteen; fifteen"],
       "correct": 1,
-      "explanation": "A resolução admite previsão na fase de projeto por modelos em escala e/ou modelos matemáticos, com validação posterior por provas em escala real, ou demonstração direta de conformidade pelos resultados dessas provas.",
+      "explanation": "Como regra geral, os algarismos são pronunciados separadamente, portanto 15 é one-five. Nas ordens ao timoneiro, porém, o ângulo de leme de 15° é expresso como fifteen.",
       "comments": [
-        "Incorreta: as provas em escala real não são a única via nem ocorrem antes da construção.",
-        "Correta: reúne as duas vias expressamente previstas no §2.1.",
-        "Incorreta: previsões de projeto devem ser validadas por provas em escala real.",
-        "Incorreta: a comparação com navio-irmão não substitui as vias previstas na resolução."
+        "Incorreta: inverte a regra geral e a exceção das ordens ao timoneiro.",
+        "Correta: aplica a pronúncia dígito a dígito ao número comum e a forma especial prevista para o ângulo de leme.",
+        "Incorreta: one-five vale para o emprego geral, mas não para a ordem de leme de 15°.",
+        "Incorreta: fifteen é usado na ordem de leme, não como regra geral para números na SMCP."
       ],
       "reference": {
-        "referenceId": "I-07",
-        "base": "IMO",
-        "publication": "Standards for Ship Manoeuvrability",
-        "edition": "MSC.137(76), 2002",
-        "section": "Anexo 6, §2.1 — General",
-        "syllabus": "Eixo I — Manobrabilidade · demonstração de conformidade com padrões IMO",
-        "evidence": "O recorte consultado admite duas vias: previsão na fase de projeto por modelos em escala e/ou modelos matemáticos, validada por provas em escala real, ou demonstração baseada diretamente em provas em escala real conduzidas conforme os padrões.",
+        "referenceId": "VI-01", "base": "IMO", "publication": "IMO Standard Marine Communication Phrases (SMCP)", "edition": "A.918(22), 2001",
+        "section": "General, §10 — Numbers; Part A, Standard wheel orders",
+        "syllabus": "Eixo VI — Comunicações · números e ordens padronizadas ao timoneiro",
+        "evidence": "O recorte consultado estabelece que números são normalmente falados algarismo por algarismo; nas ordens ao timoneiro, os ângulos de 15° e 20° aparecem, respectivamente, como fifteen e twenty.",
+        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
+      }
+    },
+    {
+      "id": "tue-r2-first-overshoot-definition",
+      "category": "review", "axis": "I", "kind": "Revisão FSRS vencida · nota 0 · leitura de critério IMO",
+      "stem": "No ensaio de zig-zag 10°/10° da MSC.137(76), o que representa o primeiro ângulo de overshoot?",
+      "options": [
+        "O ângulo entre o rumo inicial e o instante em que o leme atinge 10° pela primeira vez.",
+        "O desvio adicional do rumo, além do rumo de 10° alcançado no segundo execute, até cessar a guinada no sentido inicial.",
+        "A soma dos ângulos de leme aplicados no primeiro e no segundo execute.",
+        "O maior ângulo de banda medido durante o primeiro giro completo do navio."
+      ],
+      "correct": 1,
+      "explanation": "Quando o rumo já variou 10°, dá-se a ordem de leme para o bordo oposto. O navio ainda continua guinando no sentido inicial; o excesso de variação do rumo após esse segundo execute é o primeiro overshoot.",
+      "comments": [
+        "Incorreta: o critério é baseado na evolução do rumo, não no tempo de deslocamento físico do leme.",
+        "Correta: descreve o excesso de rumo após o segundo execute e antes da reversão efetiva da guinada.",
+        "Incorreta: overshoot não é soma de ângulos de leme.",
+        "Incorreta: o ensaio avalia controle de guinada, não ângulo de banda nem giro completo."
+      ],
+      "reference": {
+        "referenceId": "I-07", "base": "IMO", "publication": "Standards for Ship Manoeuvrability", "edition": "MSC.137(76), 2002",
+        "section": "Anexo 6, §4.2.6 — 10°/10° zig-zag test", "syllabus": "Eixo I — Manobrabilidade · teste de zig-zag e ângulos de overshoot",
+        "evidence": "O recorte consultado define o primeiro overshoot como o desvio adicional do rumo após a segunda ordem de leme, emitida quando o rumo já variou 10° em relação ao rumo original.",
         "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
       }
     },
     {
-      "id": "mon-r2-trial-depth-exceeds-four-draughts",
-      "category": "review",
-      "axis": "I",
-      "kind": "Revisão FSRS vencida · nota 0 · profundidade da área de prova",
-      "stem": "Um navio com calado médio de 12 m realizará provas padronizadas de manobrabilidade. Para atender à orientação da MSC/Circ.1053 quanto a águas profundas e irrestritas, a profundidade deve:",
+      "id": "tue-r3-spring-neap-tides",
+      "category": "review", "axis": "V", "kind": "Revisão FSRS vencida · nota 0 · marés",
+      "stem": "Assinale a alternativa correta sobre marés de sizígia e de quadratura.",
       "options": [
-        "ser igual ou superior a 36 m.",
-        "ser exatamente 48 m.",
-        "exceder 48 m.",
-        "exceder 60 m."
+        "As marés de sizígia ocorrem nos quartos crescente e minguante e apresentam a menor amplitude.",
+        "As marés de quadratura ocorrem na Lua nova e na Lua cheia e apresentam a maior amplitude.",
+        "As marés de sizígia ocorrem na Lua nova e na Lua cheia, quando Sol, Terra e Lua estão aproximadamente alinhados, e apresentam maior amplitude.",
+        "As duas marés têm a mesma amplitude; apenas o horário das preamares se altera."
       ],
       "correct": 2,
-      "explanation": "A circular determina que a profundidade exceda quatro vezes o calado médio. Para 12 m, quatro calados equivalem a 48 m; portanto, a profundidade precisa ser maior que 48 m.",
+      "explanation": "Na Lua nova e na Lua cheia, os astros ficam aproximadamente alinhados e os efeitos geradores se reforçam, produzindo marés de sizígia, com preamares mais altas, baixa-mares mais baixas e maior amplitude.",
       "comments": [
-        "Incorreta: 36 m corresponde a apenas três vezes o calado médio.",
-        "Incorreta: a redação exige exceder, e não apenas igualar, quatro calados médios.",
-        "Correta: aplica estritamente h > 4Tm.",
-        "Incorreta: 60 m satisfaria a condição, mas não representa o limite mínimo pedido."
+        "Incorreta: quartos crescente e minguante correspondem às quadraturas.",
+        "Incorreta: Lua nova e Lua cheia correspondem às sizígias, não às quadraturas.",
+        "Correta: associa corretamente fases, alinhamento e maior amplitude de maré.",
+        "Incorreta: a amplitude difere de modo característico entre sizígia e quadratura."
       ],
       "reference": {
-        "referenceId": "I-06",
-        "base": "IMO",
-        "publication": "Explanatory Notes to the Standards for Ship Manoeuvrability",
-        "edition": "MSC/Circ.1053, 2002",
-        "section": "Capítulo 2, §2.1.2 — Deep, unrestricted water",
-        "syllabus": "Eixo I — Manobrabilidade · condições das provas padronizadas",
-        "evidence": "O recorte consultado orienta realizar as provas preferencialmente em águas profundas, irrestritas e abrigadas, com profundidade superior a quatro vezes o calado médio do navio.",
-        "url": "https://drive.google.com/file/d/18-iPKtK3TOFSi08gL_AYxix7pox04UF3/view"
+        "referenceId": "V-03", "base": "Bibliografia oficial PSCPP", "publication": "Meteorologia e Oceanografia", "edition": "4. ed., 2019",
+        "section": "Marés — sizígias e quadraturas", "syllabus": "Eixo V — Oceanografia · fases da Lua e amplitude das marés",
+        "evidence": "O recorte consultado relaciona as sizígias à Lua nova e à Lua cheia, com maior amplitude, e as quadraturas aos quartos crescente e minguante, com menor amplitude."
       }
     },
     {
-      "id": "mon-r3-tidal-current-chart-selection",
-      "category": "review",
-      "axis": "V",
-      "kind": "Revisão FSRS vencida · nota 0 · Cartas de Correntes de Maré",
-      "stem": "Para selecionar a Carta de Correntes de Maré correspondente ao horário previsto de uma manobra portuária, o navegante deve usar principalmente:",
+      "id": "tue-r4-underway-making-way",
+      "category": "review", "axis": "III", "kind": "Revisão FSRS vencida · nota 0 · conceito RIPEAM",
+      "stem": "Um navio está sem seguimento sobre a água, à deriva, mas não está fundeado, amarrado à terra nem encalhado. À luz do RIPEAM, ele está:",
       "options": [
-        "a diferença entre o horário de interesse e o instante da preamar indicado nas Tábuas das Marés.",
-        "a fase da Lua isoladamente, pois cada carta cobre todo o dia.",
-        "a diferença entre a hora legal e a hora do nascer do Sol.",
-        "apenas o sentido observado da corrente no momento, sem consultar a preamar."
+        "em movimento e com seguimento, porque sofre deriva.",
+        "em movimento, mas sem seguimento sobre a água.",
+        "fundeado, porque não tem seguimento.",
+        "encalhado, porque não governa."
+      ],
+      "correct": 1,
+      "explanation": "Underway, vertido no RIPEAM como em movimento, significa não estar fundeado, amarrado à terra ou encalhado. Isso não exige que o navio tenha seguimento sobre a água.",
+      "comments": [
+        "Incorreta: a deriva não equivale necessariamente a seguimento sobre a água.",
+        "Correta: satisfaz a definição de em movimento, embora esteja sem seguimento sobre a água.",
+        "Incorreta: fundeio exige que a embarcação esteja efetivamente fundeada.",
+        "Incorreta: ausência de governo ou de seguimento não caracteriza, por si, encalhe."
+      ],
+      "reference": {
+        "referenceId": "III-16", "base": "IMO", "publication": "COLREG - Consolidated Edition 2018", "edition": "2018",
+        "section": "Parte A, Regra 3(i) — General Definitions", "syllabus": "Eixo III — RIPEAM · definição de embarcação em movimento",
+        "evidence": "O recorte consultado define underway como a condição da embarcação que não está fundeada, amarrada à terra ou encalhada; a definição não exige movimento através da água.",
+        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
+      }
+    },
+    {
+      "id": "tue-c1-mooring-lines-longitudinal-control",
+      "category": "current", "axis": "II", "kind": "Conteúdo atual · espias · função e orientação",
+      "stem": "Durante a atracação, qual alternativa descreve corretamente os lançantes e os espringues?",
+      "options": [
+        "Lançantes saem transversalmente ao cais; espringues saem sempre para vante.",
+        "Lançantes são orientados para fora do navio no sentido longitudinal; espringues saem da proa para ré e da popa para vante, contribuindo para limitar o movimento longitudinal.",
+        "Lançantes e espringues têm a função exclusiva de impedir o afastamento transversal do cais.",
+        "Espringues só podem ser dados da proa e destinam-se a controlar o jogo vertical do navio."
+      ],
+      "correct": 1,
+      "explanation": "Os lançantes de proa e de popa seguem longitudinalmente para fora do navio. Os espringues trabalham em sentidos opostos: o de proa para ré e o de popa para vante. Em conjunto, controlam o deslocamento longitudinal.",
+      "comments": [
+        "Incorreta: a orientação transversal caracteriza o través, e o espringue depende do ponto de saída.",
+        "Correta: reproduz a orientação e a função longitudinal dessas espias.",
+        "Incorreta: o afastamento transversal é combatido principalmente pelo través.",
+        "Incorreta: há espringues de proa e de popa; sua função não é controlar jogo vertical."
+      ],
+      "reference": {
+        "referenceId": "II-01", "base": "Bibliografia oficial PSCPP", "publication": "Arte Naval, v. 1", "edition": "8. ed., MB, 2019",
+        "section": "Capítulo 12 — Manobra · espias e amarração", "syllabus": "Eixo II — Arte Naval · orientação e função de lançantes e espringues",
+        "evidence": "O recorte consultado descreve os lançantes como espias longitudinais orientadas para fora e os espringues como espias que saem da proa para ré ou da popa para vante, empregadas no controle do movimento longitudinal."
+      }
+    },
+    {
+      "id": "tue-c2-breast-line-purpose-limitation",
+      "category": "current", "axis": "II", "kind": "Conteúdo atual · espia de través · emprego",
+      "stem": "Sobre a espia de través, assinale a afirmativa correta.",
+      "options": [
+        "É passada aproximadamente perpendicular ao cais para impedir o afastamento do navio, mas seu uso prolongado deve ser evitado quando o pequeno comprimento não permite acompanhar com segurança a variação da maré.",
+        "É passada paralelamente ao cais e serve exclusivamente para impedir o navio de correr para vante.",
+        "É sempre a espia mais longa e, por isso, dispensa atenção à variação do nível d'água.",
+        "Só pode ser usada durante a desatracação, nunca com o navio amarrado."
       ],
       "correct": 0,
-      "explanation": "A coletânea possui 13 cartas referidas à preamar: seis anteriores, uma para o instante da preamar e seis posteriores. A carta correta resulta da diferença entre a hora de interesse e a preamar prevista.",
+      "explanation": "O través atua principalmente contra o afastamento transversal causado por vento ou corrente. Por ser curto e aproximadamente perpendicular ao cais, pode não oferecer comprimento suficiente para acompanhar a maré, razão pela qual seu emprego continuado exige cautela.",
       "comments": [
-        "Correta: é o procedimento indicado no capítulo para escolher a folha horária.",
-        "Incorreta: a fase lunar influencia a maré, mas não seleciona sozinha a carta horária.",
-        "Incorreta: nascer do Sol não é a referência temporal da coletânea.",
-        "Incorreta: a observação local auxilia, mas não substitui a seleção pela diferença em relação à preamar."
+        "Correta: reúne a função transversal e a limitação associada ao pequeno comprimento da espia.",
+        "Incorreta: a orientação e a função descritas correspondem mais a espias longitudinais.",
+        "Incorreta: o través tende a ser curto e é justamente sensível à variação do nível d'água.",
+        "Incorreta: pode ser empregado na amarração, especialmente em emergência ou mau tempo."
       ],
       "reference": {
-        "referenceId": "V-03",
-        "base": "Lobo, P. R. V.; Soares, C. A.",
-        "publication": "Meteorologia e Oceanografia",
-        "edition": "4. ed., 2019",
-        "section": "Capítulo X — Cartas de Correntes de Maré",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · correntes de maré aplicadas à navegação",
-        "evidence": "O recorte consultado descreve 13 folhas — seis antes, uma na preamar e seis depois — e orienta selecionar a carta pela diferença entre o instante da preamar previsto nas Tábuas das Marés e o horário de interesse.",
-        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
+        "referenceId": "II-01", "base": "Bibliografia oficial PSCPP", "publication": "Arte Naval, v. 1", "edition": "8. ed., MB, 2019",
+        "section": "Capítulo 12 — Manobra · espia de través", "syllabus": "Eixo II — Arte Naval · emprego e limitações da espia de través",
+        "evidence": "O recorte consultado caracteriza o través como espia aproximadamente perpendicular ao cais, destinada a impedir o afastamento do navio, e alerta que seu pequeno comprimento pode ser insuficiente para acompanhar a variação da maré."
       }
     },
     {
-      "id": "mon-r4-narrow-channel-crossing",
-      "category": "review",
-      "axis": "III",
-      "kind": "Revisão FSRS vencida · Regra 9",
-      "stem": "Em um canal estreito, uma embarcação pretende cruzar a derrota de outra que só pode navegar com segurança dentro do canal. Segundo a Regra 9, a embarcação que cruza:",
+      "id": "tue-c3-eyes-on-same-bollard",
+      "category": "current", "axis": "II", "kind": "Conteúdo atual · segurança da amarração",
+      "stem": "Quando duas ou mais espias precisam ser encapeladas no mesmo cabeço de terra, qual procedimento preserva a possibilidade de largar qualquer uma delas sem interferência?",
       "options": [
-        "tem preferência se estiver vindo por boreste.",
-        "pode cruzar desde que mantenha velocidade constante.",
-        "não deve cruzar se isso impedir a passagem da embarcação confinada ao canal.",
-        "deve fundear próximo ao limite externo para aguardar oportunidade."
+        "Passar todas as alças por baixo das anteriores, comprimindo-as contra o cabeço.",
+        "Dar voltas redondas com cada espia no cabeço, eliminando as alças.",
+        "Dispor cada nova alça de modo que possa ser retirada sem ficar presa sob as demais.",
+        "Unir previamente todas as alças com um nó único."
       ],
       "correct": 2,
-      "explanation": "A Regra 9(d) proíbe o cruzamento quando ele impedir a passagem de embarcação que só pode navegar com segurança dentro do canal ou via de acesso estreita.",
+      "explanation": "A ordem de encapelamento deve permitir que cada alça seja desencapelada independentemente. Assim, nenhuma espia fica presa sob outra quando precisa ser largada primeiro.",
       "comments": [
-        "Incorreta: a Regra 9(d) impõe dever específico que não é afastado pela posição relativa.",
-        "Incorreta: manter velocidade não autoriza impedir a passagem da embarcação confinada ao canal.",
-        "Correta: corresponde ao comando expresso da Regra 9(d).",
-        "Incorreta: a Regra 9(g) recomenda evitar fundear em canal estreito, se as circunstâncias permitirem."
+        "Incorreta: prender uma alça sob outra impede a largada independente.",
+        "Incorreta: espias com alça são encapeladas; substituir esse arranjo por voltas não resolve o requisito operacional.",
+        "Correta: mantém cada espia livre para ser largada na ordem exigida pela manobra.",
+        "Incorreta: unir as alças cria dependência entre espias e dificulta a largada."
       ],
       "reference": {
-        "referenceId": "III-16",
-        "base": "IMO",
-        "publication": "COLREG - Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte B, Regra 9(d) e (g) — Narrow Channels",
-        "syllabus": "Eixo III — Navegação Restrita · canais estreitos",
-        "evidence": "O recorte consultado estabelece que uma embarcação não deve cruzar canal estreito se impedir a passagem de outra que só possa navegar com segurança dentro dele; também orienta evitar fundear no canal, quando possível.",
-        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
+        "referenceId": "II-01", "base": "Bibliografia oficial PSCPP", "publication": "Arte Naval, v. 1", "edition": "8. ed., MB, 2019",
+        "section": "Capítulo 12 — Manobra · encapelamento de espias", "syllabus": "Eixo II — Arte Naval · segurança e sequência de largada das espias",
+        "evidence": "O recorte consultado determina que, havendo várias alças no mesmo cabeço, elas sejam dispostas de forma que qualquer espia possa ser desencapelada primeiro sem interferência das demais."
       }
     },
     {
-      "id": "mon-c1-shallow-water-pressure-sinkage",
-      "category": "current",
-      "axis": "I",
-      "kind": "Conteúdo atual · mecanismo hidrodinâmico em águas rasas",
-      "stem": "Em água de profundidade limitada e largura praticamente irrestrita, qual sequência explica corretamente o aumento do afundamento dinâmico e do trim?",
+      "id": "tue-x1-apparent-true-wind",
+      "category": "rotation", "axis": "V", "kind": "Rotação · meteorologia · vento a bordo",
+      "stem": "Um anemômetro instalado a bordo de um navio em movimento fornece diretamente qual vento, e como se obtém o vento verdadeiro?",
       "options": [
-        "A água desacelera sob o casco, a pressão aumenta e o navio emerge.",
-        "A água acelera sob o casco, a pressão diminui e aumentam o afundamento e a alteração dinâmica do trim.",
-        "O escoamento sob o casco permanece inalterado; apenas o vento modifica o trim.",
-        "A água acelera apenas nas laterais, elevando uniformemente proa e popa."
+        "Vento verdadeiro; o aparente é obtido corrigindo apenas a declinação magnética.",
+        "Vento aparente; o verdadeiro é obtido pela composição vetorial com o movimento do navio.",
+        "Vento geostrófico; o verdadeiro é obtido pela diferença de pressão entre proa e popa.",
+        "Vento verdadeiro; o aparente é sempre igual e oposto ao rumo do navio."
       ],
       "correct": 1,
-      "explanation": "Com menor espaço vertical, a água que passa sob o casco precisa acelerar mais do que em águas profundas. A redução de pressão associada aumenta o afundamento e modifica dinamicamente o trim.",
+      "explanation": "O instrumento mede o vento relativo ou aparente, resultante do vento verdadeiro combinado com a velocidade do navio. Para recuperar o vento verdadeiro, desfaz-se essa composição por tabela, construção gráfica ou triângulo de velocidades.",
       "comments": [
-        "Incorreta: inverte tanto a variação da velocidade do escoamento quanto a resposta de pressão.",
-        "Correta: reproduz o mecanismo descrito para o escoamento sob o casco em águas rasas.",
-        "Incorreta: a limitação de profundidade altera diretamente o campo hidrodinâmico.",
-        "Incorreta: o efeito relevante ocorre sob o casco e não implica elevação uniforme do navio."
+        "Incorreta: o anemômetro a bordo mede diretamente o vento aparente, e declinação magnética não resolve a composição.",
+        "Correta: identifica a leitura do instrumento e o método vetorial de correção.",
+        "Incorreta: o vento geostrófico não é a leitura direta do anemômetro do navio.",
+        "Incorreta: a leitura direta não é o vento verdadeiro e depende da combinação de velocidades."
       ],
       "reference": {
-        "referenceId": "I-08",
-        "base": "Santos, Edson Mesquita dos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 9, §9.2 — sinais e mecanismos em águas rasas",
-        "syllabus": "Eixo I — Manobrabilidade · efeitos de águas rasas",
-        "evidence": "O recorte consultado explica que a restrição vertical acelera o escoamento sob o casco, reduz a pressão e aumenta o afundamento e a alteração dinâmica do trim.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+        "referenceId": "V-01", "base": "Bibliografia oficial PSCPP", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN",
+        "section": "Capítulo 45 — vento verdadeiro e vento aparente", "syllabus": "Eixo V — Meteorologia · observação do vento a bordo",
+        "evidence": "O recorte consultado informa que o anemômetro a bordo indica vento relativo ou aparente, combinação do vento verdadeiro com o movimento do navio, e que o vento verdadeiro é obtido por tabelas, construção gráfica ou triângulo de velocidades."
       }
     },
     {
-      "id": "mon-c2-shallow-water-indications",
-      "category": "current",
-      "axis": "I",
-      "kind": "Conteúdo atual · sinais operacionais de águas rasas",
-      "stem": "Qual conjunto de sinais a bordo é compatível com a entrada do navio em águas progressivamente mais rasas, segundo Santos?",
+      "id": "tue-x2-ridge-trough-fronts",
+      "category": "rotation", "axis": "V", "kind": "Rotação · meteorologia sinótica · sistemas de pressão",
+      "stem": "Em uma carta sinótica, qual associação está correta?",
       "options": [
-        "Respostas de controle mais rápidas, aumento de RPM e aumento de velocidade.",
-        "Respostas de controle mais lentas, possível queda de RPM e velocidade e surgimento de vibrações.",
-        "Eliminação do trim dinâmico, ausência de vibração e maior eficiência do leme.",
-        "Aumento uniforme da RPM sem alteração de velocidade ou calados."
+        "Crista bem definida — ar frio avançando sobre ar quente — frente fria.",
+        "Cavado bem definido — ar quente avançando sobre ar frio — frente quente.",
+        "Crista bem definida — ar quente avançando sobre região mais fria — frente quente.",
+        "Crista e cavado representam sempre o mesmo tipo de frente, variando apenas o hemisfério."
       ],
-      "correct": 1,
-      "explanation": "Entre os sinais listados estão respostas de controle mais lentas, alterações nas leituras de calado, quedas de RPM e velocidade e possível surgimento repentino de vibrações.",
+      "correct": 2,
+      "explanation": "A crista é um prolongamento de alta pressão e, quando bem definida, associa-se em geral à incursão de ar quente sobre região mais fria e a uma frente quente. O cavado é prolongamento de baixa pressão e se associa normalmente à frente fria.",
       "comments": [
-        "Incorreta: inverte as tendências de resposta, RPM e velocidade.",
-        "Correta: reúne sinais operacionais efetivamente relacionados no recorte.",
-        "Incorreta: águas rasas podem aumentar o trim dinâmico, gerar vibração e reduzir a eficiência do leme.",
-        "Incorreta: o texto registra justamente possíveis quedas de RPM e mudanças nas leituras de calado."
+        "Incorreta: essa associação com ar frio e frente fria corresponde ao cavado bem definido.",
+        "Incorreta: inverte as associações entre cavado e crista.",
+        "Correta: relaciona crista, advecção de ar quente e frente quente.",
+        "Incorreta: crista e cavado são configurações distintas de pressão e têm associações frontais diferentes."
       ],
       "reference": {
-        "referenceId": "I-08",
-        "base": "Santos, Edson Mesquita dos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 9, §9.2 — sinais presenciados a bordo",
-        "syllabus": "Eixo I — Manobrabilidade · reconhecimento operacional de águas rasas",
-        "evidence": "O recorte consultado enumera respostas de controle mais lentas, alterações de calado, queda de RPM e velocidade e vibrações repentinas entre os sinais observáveis em águas rasas.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+        "referenceId": "V-01", "base": "Bibliografia oficial PSCPP", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN",
+        "section": "Capítulo 45 — cristas, cavados e frentes", "syllabus": "Eixo V — Meteorologia · interpretação de cartas sinóticas",
+        "evidence": "O recorte consultado apresenta a crista como prolongamento de alta pressão, geralmente associado a ar quente avançando sobre região fria e a frente quente; o cavado é prolongamento de baixa pressão, associado a ar frio avançando e a frente fria."
       }
     },
     {
-      "id": "mon-c3-shallow-water-turning-yaw",
-      "category": "current",
-      "axis": "I",
-      "kind": "Conteúdo atual · curva de giro e controle da guinada",
-      "stem": "Ao comparar águas muito rasas com águas profundas, qual combinação é apresentada como tendência geral?",
-      "options": [
-        "Menor diâmetro tático, maior eficiência do leme e overshoots maiores.",
-        "Maior diâmetro tático e maior dificuldade para curva fechada, mas maior facilidade para quebrar a guinada e overshoots menores.",
-        "Maior eficiência do leme, menor distância de parada e nenhuma alteração nos overshoots.",
-        "Menor diâmetro tático e menor facilidade para quebrar a guinada."
-      ],
-      "correct": 1,
-      "explanation": "O texto distingue habilidade de virar de habilidade de controlar a guinada: em águas rasas o diâmetro tático pode crescer e a curva fechada ficar mais difícil, embora seja geralmente mais fácil quebrar a guinada e os overshoots diminuam.",
+      "id": "tue-o1-pscpp2008-q16",
+      "category": "official", "axis": "II", "kind": "Questão oficial histórica · rebocadores",
+      "stem": "No método em que rebocadores auxiliam puxando por cabo de reboque, uma vantagem é a possibilidade de emprego em águas ______. O rebocador de vante pode usar dois cabos, denominados linhas ______.",
+      "options": ["estreitas — gêmeas", "rasas — gêmeas", "rasas — cruzadas", "estreitas — cruzadas", "rasas — bifurcadas"],
+      "correct": 3,
+      "explanation": "O reboque por cabo pode ser usado em águas estreitas. Na proa, dois cabos podem ser passados cruzados entre navio e rebocador, formando cross lines ou gate lines.",
       "comments": [
-        "Incorreta: inverte as tendências de diâmetro tático, eficiência do leme e overshoots.",
-        "Correta: combina os efeitos distintos sobre capacidade de giro e controle da guinada.",
-        "Incorreta: a eficiência do leme geralmente se reduz e a distância de parada tende a aumentar.",
-        "Incorreta: o diâmetro tende a aumentar e a guinada costuma ser mais fácil de quebrar."
+        "Incorreta: águas estreitas está correto, mas a denominação técnica pedida é linhas cruzadas.",
+        "Incorreta: as duas lacunas divergem do fundamento da questão.",
+        "Incorreta: linhas cruzadas está correto, mas a vantagem indicada refere-se a águas estreitas.",
+        "Correta: corresponde ao método e à nomenclatura descritos na bibliografia e ao gabarito oficial D.",
+        "Incorreta: nem o tipo de água nem a denominação das linhas corresponde ao recorte."
       ],
       "reference": {
-        "referenceId": "I-08",
-        "base": "Santos, Edson Mesquita dos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 9, §9.2 — efeitos sobre giro, leme e zigue-zague",
-        "syllabus": "Eixo I — Manobrabilidade · curva de giro e controle de guinada em águas rasas",
-        "evidence": "O recorte consultado registra possível aumento do diâmetro tático, menor eficiência do leme e maior dificuldade para curva fechada, ao mesmo tempo em que indica maior facilidade para quebrar a guinada e overshoots geralmente menores.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
-    },
-    {
-      "id": "mon-x1-narrow-channel-bend-signal",
-      "category": "rotation",
-      "axis": "III",
-      "kind": "Rotação · canal estreito e curva encoberta",
-      "stem": "Ao se aproximar de uma curva de canal estreito em que outra embarcação possa estar encoberta por obstáculo, a embarcação deve:",
-      "options": [
-        "manter silêncio para não confundir embarcações fora do canal.",
-        "navegar com especial atenção e cautela e emitir o sinal sonoro previsto para a situação.",
-        "cruzar para o lado de bombordo do canal antes da curva.",
-        "aumentar a velocidade para reduzir o tempo de exposição."
-      ],
-      "correct": 1,
-      "explanation": "A Regra 9(f) exige especial atenção e cautela ao se aproximar de curva ou trecho encoberto de canal estreito, além do sinal apropriado da Regra 34(e).",
-      "comments": [
-        "Incorreta: a regra exige sinal sonoro, não silêncio.",
-        "Correta: reúne a conduta e o sinal requeridos.",
-        "Incorreta: o navio deve manter-se tão próximo quanto seguro e praticável do limite de boreste.",
-        "Incorreta: aumentar velocidade contraria a cautela especial requerida."
-      ],
-      "reference": {
-        "referenceId": "III-16",
-        "base": "IMO",
-        "publication": "COLREG - Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte B, Regra 9(f), e Parte D, Regra 34(e)",
-        "syllabus": "Eixo III — Navegação Restrita · canais estreitos e sinais de manobra",
-        "evidence": "O recorte consultado exige atenção e cautela particulares ao se aproximar de curva ou trecho encoberto de canal estreito e determina a emissão do sinal sonoro apropriado.",
-        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
-      }
-    },
-    {
-      "id": "mon-x2-rule19-radar-alterations",
-      "category": "rotation",
-      "axis": "III",
-      "kind": "Rotação · visibilidade restrita e ação por radar",
-      "stem": "Em visibilidade restrita, uma embarcação detecta outra somente pelo radar e decide alterar o rumo para evitar aproximação excessiva. Tanto quanto possível, deve evitar:",
-      "options": [
-        "guinar para boreste para alvo a vante do través e afastar-se de alvo pelo través.",
-        "guinar para bombordo para alvo a vante do través, salvo se estiver sendo alcançado, e guinar em direção a alvo pelo través ou a ré do través.",
-        "qualquer alteração superior a 10°, independentemente da posição do alvo.",
-        "reduzir a velocidade quando ouvir sinal de cerração a vante."
-      ],
-      "correct": 1,
-      "explanation": "A Regra 19(d) orienta evitar, tanto quanto possível, guinada para bombordo para alvo a vante do través, exceto o alcançado, e alteração em direção a alvo pelo través ou a ré do través.",
-      "comments": [
-        "Incorreta: não corresponde às alterações especificamente desaconselhadas pela regra.",
-        "Correta: reproduz os dois cuidados da Regra 19(d).",
-        "Incorreta: o RIPEAM não estabelece esse limite angular geral.",
-        "Incorreta: a redução pode ser exigida pela Regra 19(e), não é ação a evitar."
-      ],
-      "reference": {
-        "referenceId": "III-16",
-        "base": "IMO",
-        "publication": "COLREG - Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte B, Regra 19(d) — ação para evitar colisão",
-        "syllabus": "Eixo III — Navegação Restrita · visibilidade restrita e radar",
-        "evidence": "O recorte consultado manda evitar, tanto quanto possível, alteração para bombordo para alvo a vante do través, exceto alcançado, e alteração em direção a alvo pelo través ou a ré do través.",
-        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
-      }
-    },
-    {
-      "id": "mon-o1-pscpp2008-q8-retry",
-      "category": "official",
-      "axis": "III",
-      "kind": "Questão oficial histórica · PSCPP 2008 · retomada de erro",
-      "stem": "Em visibilidade restrita, um navio segue no rumo 035° com velocidade segura. O radar detecta, apenas por radar, alvo na bochecha de bombordo, marcação verdadeira 355°, aproximando-se com marcação praticamente constante e PMA de 500 jardas, cruzando sua proa. Ouve-se um apito longo seguido de dois curtos. Qual sugestão imediata é correta?",
-      "options": [
-        "Manter rumo e velocidade.",
-        "Guinar francamente para bombordo, mantendo a velocidade.",
-        "Guinar para boreste e aumentar a velocidade.",
-        "Guinar francamente para bombordo e aumentar a velocidade.",
-        "Manter o rumo e reduzir a velocidade."
-      ],
-      "correct": 4,
-      "explanation": "O gabarito oficial é E. Há aproximação perigosa em visibilidade restrita e sinal de cerração aparentemente a vante; a Regra 19 orienta reduzir à mínima velocidade de governo, retirar o seguimento se necessário e navegar com extrema cautela.",
-      "comments": [
-        "Incorreta: aproximação perigosa e sinal de cerração exigem redução de velocidade.",
-        "Incorreta: deve-se evitar, tanto quanto possível, guinada para bombordo para alvo a vante do través.",
-        "Incorreta: aumentar velocidade contraria a cautela requerida.",
-        "Incorreta: combina guinada desaconselhada e aumento inadequado de velocidade.",
-        "Correta: corresponde ao gabarito E e à redução determinada pela Regra 19(e)."
-      ],
-      "reference": {
-        "referenceId": "III-16",
-        "base": "IMO",
-        "publication": "COLREG - Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte B, Regra 19(d)–(e), e Parte D, Regra 35",
-        "syllabus": "Eixo III — Navegação Restrita · visibilidade restrita, radar e sinais sonoros",
-        "evidence": "O recorte consultado manda evitar alteração para bombordo para alvo a vante do través e, ao ouvir sinal de cerração aparentemente a vante ou não poder evitar aproximação perigosa, reduzir à mínima velocidade de governo, retirando o seguimento se necessário.",
-        "origin": "PSCPP 2008 — prova escrita oficial, questão 8 — gabarito E; cenário condensado, terminologia atualizada e unidades padronizadas, sem alteração da solução",
-        "url": "https://drive.google.com/file/d/1KfllJf4BukeOqCtNlr5uuwNC7xDu45I6/view"
+        "referenceId": "II-09", "base": "Prova oficial PSCPP e bibliografia oficial", "publication": "Tug Use in Port: A Practical Guide", "edition": "4. ed., 2021",
+        "section": "Capítulo 3 — Assisting Methods · towing on a line", "syllabus": "Eixo II — Arte Naval · métodos de emprego de rebocadores",
+        "evidence": "O recorte consultado afirma que o método towing on a line pode ser empregado em águas estreitas e que o rebocador de vante pode usar dois cabos denominados cross lines ou gate lines.",
+        "origin": "PSCPP 2008, questão 16, gabarito D. Traduzida para o português e atualizada apenas na pontuação, sem alteração do conteúdo ou da solução."
       }
     }
   ]
