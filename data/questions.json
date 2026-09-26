@@ -1,9 +1,9 @@
 {
-  "roundId": "currents-ground-track-bank-effect-2026-09-25",
-  "label": "Rodada adaptativa de sexta-feira",
-  "title": "Correntes, navegação no fundo e efeito de banco",
+  "roundId": "cumulative-waves-tides-corrections-2026-09-26",
+  "label": "Simulado cumulativo de sábado",
+  "title": "Ondas, marés e decisões críticas",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões FSRS e notas 0/1 · navegação e correntes · manobrabilidade em canal · questão oficial",
+  "path": "Revisões FSRS e notas 0/1 · movimento do navio em ondas · fadiga e proficiência · questão oficial",
   "method": "4–3–2–1",
   "mixPlan": {
     "review": 4,
@@ -13,24 +13,86 @@
   },
   "questions": [
     {
-      "id": "fri-r1-first-overshoot-definition",
+      "id": "sat-r1-spring-neap-amplitude-correction",
+      "category": "review",
+      "axis": "V",
+      "kind": "Revisão corretiva · nota 0 · marés de sizígia e quadratura",
+      "stem": "Em um porto de maré semidiurna, no dia A foram observadas preamar de 4,7 m e baixa-mar de 0,1 m; no dia B, preamar de 2,6 m e baixa-mar de 0,8 m. Admitindo condições meteorológicas sem influência relevante, a interpretação correta é:",
+      "options": [
+        "O dia A apresenta menor amplitude e caracteriza maré de quadratura.",
+        "O dia A apresenta maior amplitude e é compatível com maré de sizígia; o dia B, de menor amplitude, é compatível com quadratura.",
+        "Os dois dias têm a mesma amplitude, pois o nível médio do mar é invariável.",
+        "O dia B caracteriza sizígia porque sua baixa-mar é mais alta."
+      ],
+      "correct": 1,
+      "explanation": "A amplitude é a diferença entre as alturas da preamar e da baixa-mar. No dia A, ela é 4,6 m; no dia B, 1,8 m. A maior oscilação é compatível com sizígia, enquanto a menor é compatível com quadratura.",
+      "comments": [
+        "Incorreta: o dia A tem a maior, e não a menor, amplitude.",
+        "Correta: distingue a maior oscilação da sizígia da menor oscilação da quadratura.",
+        "Incorreta: nível médio e amplitude são grandezas diferentes; os dados mostram amplitudes distintas.",
+        "Incorreta: a baixa-mar mais alta contribui para reduzir a amplitude, característica do exemplo de quadratura."
+      ],
+      "reference": {
+        "referenceId": "V-03",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "Meteorologia e Oceanografia",
+        "edition": "4. ed., 2019",
+        "section": "Capítulo IX — Marés · teoria e elementos das curvas de maré",
+        "syllabus": "Eixo V — Oceanografia · marés, fases da Lua e amplitude",
+        "evidence": "O recorte consultado explica que, nas sizígias, as forças do Sol e da Lua reforçam a oscilação, produzindo preamares mais altas e baixa-mares mais acentuadas; nas quadraturas, a resultante é menor e as marés são mortas.",
+        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
+      }
+    },
+    {
+      "id": "sat-r2-escort-indirect-direct-transition",
+      "category": "review",
+      "axis": "II",
+      "kind": "Revisão FSRS vencida · nota 0 · reboque de escolta",
+      "stem": "Um rebocador de escolta atua pelo método indireto enquanto o navio assistido navega com velocidade elevada. À medida que o navio reduz o seguimento, a conduta tecnicamente coerente é:",
+      "options": [
+        "Manter indefinidamente o método indireto, pois suas forças independem da velocidade relativa.",
+        "Transitar para o método direto quando a redução da velocidade enfraquecer as forças hidrodinâmicas do método indireto.",
+        "Largar o cabo antes de qualquer redução de velocidade, porque o método direto não pode ser usado em escolta.",
+        "Aumentar o ângulo de deriva sem limite para preservar a força indireta em qualquer velocidade."
+      ],
+      "correct": 1,
+      "explanation": "O método indireto aproveita forças hidrodinâmicas no casco e é eficiente em velocidades mais altas. Com a redução do seguimento, essas forças diminuem e o método direto passa a ser o meio adequado de produzir força com a propulsão do rebocador.",
+      "comments": [
+        "Incorreta: o desempenho indireto depende da velocidade relativa da água.",
+        "Correta: reconhece a transição operacional entre os dois regimes.",
+        "Incorreta: o método direto integra a escolta em velocidades menores e não exige largar o cabo.",
+        "Incorreta: ângulo excessivo eleva riscos e não compensa indefinidamente a perda de velocidade."
+      ],
+      "reference": {
+        "referenceId": "II-09",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4. ed., 2021",
+        "section": "Capítulo 9 — Escort tugs · direct and indirect methods",
+        "syllabus": "Eixo II — Arte Naval · rebocadores de escolta, capacidades e limitações",
+        "evidence": "O recorte consultado informa que o controle de rumo em alta velocidade pode empregar o método indireto, com forças hidrodinâmicas no casco, e que em velocidades menores se emprega o método direto; as forças indiretas podem superar o bollard pull.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+      }
+    },
+    {
+      "id": "sat-r3-first-overshoot-definition",
       "category": "review",
       "axis": "I",
       "kind": "Revisão FSRS vencida · nota 0 · primeiro overshoot",
-      "stem": "Na manobra de zigue-zague 10°/10°, o primeiro ângulo de overshoot corresponde:",
+      "stem": "Na manobra de zigue-zague, o primeiro ângulo de overshoot é:",
       "options": [
-        "À mudança de proa medida entre o primeiro execute e a primeira inversão do leme.",
-        "Ao desvio adicional de proa ocorrido após o segundo execute, além da proa na qual o leme foi invertido.",
-        "Ao maior ângulo de leme efetivamente alcançado após o terceiro execute.",
-        "À soma dos desvios de proa medidos após o segundo e o terceiro executes."
+        "O ângulo máximo de leme alcançado antes do primeiro execute.",
+        "O desvio adicional de proa ocorrido após o segundo execute, além da proa em que o leme foi invertido.",
+        "A soma das mudanças de proa até o segundo e o terceiro executes.",
+        "O diâmetro medido após uma guinada de 180°."
       ],
       "correct": 1,
-      "explanation": "O primeiro overshoot é o desvio adicional de proa experimentado depois do segundo execute, enquanto o navio ainda guina no sentido anterior antes de responder ao leme invertido.",
+      "explanation": "Mesmo após a segunda ordem de leme, a inércia mantém a guinada por algum tempo. O desvio adicional além da proa de execute constitui o primeiro overshoot.",
       "comments": [
-        "Incorreta: até a primeira inversão mede-se a alteração inicial comandada, não o overshoot.",
-        "Correta: reproduz a definição da MSC.137(76) para o primeiro overshoot.",
-        "Incorreta: overshoot é desvio de proa, não ângulo de leme.",
-        "Incorreta: os primeiro e segundo overshoots são medidas distintas."
+        "Incorreta: overshoot é uma medida de proa, não o máximo ângulo de leme.",
+        "Correta: corresponde à definição formal da MSC.137(76).",
+        "Incorreta: os overshoots são determinados separadamente, não somados.",
+        "Incorreta: essa descrição pertence à geometria da curva de giro."
       ],
       "reference": {
         "referenceId": "I-07",
@@ -38,92 +100,30 @@
         "publication": "Standards for Ship Manoeuvrability",
         "edition": "MSC.137(76), 2002",
         "section": "Anexo 6, §4.2.7 — First overshoot angle",
-        "syllabus": "Eixo I — Manobrabilidade · manobra de zigue-zague e medidas de controle",
+        "syllabus": "Eixo I — Manobrabilidade · zigue-zague e controle da guinada",
         "evidence": "O recorte consultado define o primeiro overshoot como o desvio adicional de proa experimentado no teste de zigue-zague após o segundo execute.",
         "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MSCResolutions/MSC.137(76).pdf"
       }
     },
     {
-      "id": "fri-r2-trial-depth-four-draughts",
-      "category": "review",
-      "axis": "I",
-      "kind": "Revisão FSRS vencida · nota 0 · condições das provas",
-      "stem": "Para reduzir a influência do fundo nas provas de manobrabilidade, a MSC/Circ.1053 recomenda que a profundidade da água:",
-      "options": [
-        "Seja igual ou superior a duas vezes o calado máximo do navio.",
-        "Exceda quatro vezes o calado médio do navio.",
-        "Exceda quatro vezes o calado de popa, independentemente do trim.",
-        "Seja igual ao dobro da boca somada ao calado médio."
-      ],
-      "correct": 1,
-      "explanation": "As notas explicativas recomendam águas profundas e não confinadas, com profundidade superior a quatro vezes o calado médio.",
-      "comments": [
-        "Incorreta: duas vezes o calado não atende ao critério indicado.",
-        "Correta: é a relação expressa no recorte oficial.",
-        "Incorreta: a referência é o calado médio, não isoladamente o calado de popa.",
-        "Incorreta: a recomendação não usa essa combinação entre boca e calado."
-      ],
-      "reference": {
-        "referenceId": "I-06",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Explanatory Notes to the Standards for Ship Manoeuvrability",
-        "edition": "MSC/Circ.1053, 2002",
-        "section": "Capítulo 2, §2.1.2 — Deep, unrestricted water",
-        "syllabus": "Eixo I — Manobrabilidade · condições ambientais e de profundidade das provas",
-        "evidence": "O recorte consultado informa que as provas devem ocorrer preferencialmente em águas profundas e não confinadas e que a profundidade deve exceder quatro vezes o calado médio do navio.",
-        "url": "https://drive.google.com/file/d/18-iPKtK3TOFSi08gL_AYxix7pox04UF3/view"
-      }
-    },
-    {
-      "id": "fri-r3-cirrus-hooks-weather",
-      "category": "review",
-      "axis": "V",
-      "kind": "Revisão FSRS vencida · nota 0 · nuvens",
-      "stem": "Durante a navegação, são observados Cirrus com garras, ou rabos de galo, apresentando acentuado deslocamento na direção do navio. Essa observação indica, em regra:",
-      "options": [
-        "Dissipação de qualquer sistema frontal e manutenção garantida de bom tempo.",
-        "Aproximação de mau tempo.",
-        "Formação imediata de nevoeiro de radiação sobre o mar.",
-        "Existência exclusiva de circulação anticiclônica estacionária."
-      ],
-      "correct": 1,
-      "explanation": "Cirrus isolados podem acompanhar bom tempo, mas Cirrus com garras e deslocamento acentuado na direção do navio constituem boa indicação de mau tempo se aproximando.",
-      "comments": [
-        "Incorreta: a forma e o deslocamento descritos alteram a interpretação de Cirrus genéricos.",
-        "Correta: corresponde à indicação meteorológica descrita por Miguens.",
-        "Incorreta: nevoeiro de radiação depende de resfriamento junto à superfície e não é inferido por esse sinal.",
-        "Incorreta: a observação não permite concluir circulação anticiclônica exclusiva ou estacionária."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Navegação: A Ciência e a Arte, volume III",
-        "edition": "DHN",
-        "section": "Capítulo 45 — Noções de Meteorologia para Navegantes · nuvens altas",
-        "syllabus": "Eixo V — Meteorologia · identificação de nuvens e sinais de mudança do tempo",
-        "evidence": "O recorte consultado registra que Cirrus com garras, com acentuado deslocamento na direção do navio, são boa indicação de mau tempo se aproximando.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
-      }
-    },
-    {
-      "id": "fri-r4-rule19-fog-signal-forward",
+      "id": "sat-r4-rule19-fog-signal-forward",
       "category": "review",
       "axis": "III",
       "kind": "Revisão FSRS vencida · nota 0 · Regra 19(e)",
       "stem": "Em visibilidade restrita, uma embarcação ouve aparentemente por ante-a-vante do través o sinal de cerração de outra e ainda não determinou que inexiste risco de colisão. Segundo a Regra 19(e), deverá:",
       "options": [
-        "Alterar obrigatoriamente o rumo para bombordo, mantendo a velocidade.",
+        "Alterar obrigatoriamente o rumo para bombordo e manter a velocidade.",
         "Manter rumo e velocidade até obter contato visual.",
         "Reduzir para a velocidade mínima em que possa ser mantida no rumo, tirar todo o seguimento se necessário e navegar com extrema cautela.",
-        "Guinar para o bordo de onde se ouve o sinal e aumentar a velocidade para cruzar rapidamente."
+        "Guinar para o bordo de onde se ouve o sinal e aumentar a velocidade."
       ],
       "correct": 2,
-      "explanation": "A Regra 19(e) exige redução para a velocidade mínima de governo; se necessário, todo o seguimento deve ser retirado, mantendo-se extrema cautela até cessar o perigo.",
+      "explanation": "A Regra 19(e) exige a redução para a velocidade mínima de governo; se necessário, deve-se retirar todo o seguimento e navegar com extrema cautela até cessar o perigo.",
       "comments": [
-        "Incorreta: a regra não manda guinar obrigatoriamente para bombordo; essa ação pode agravar a aproximação.",
-        "Incorreta: manter velocidade contraria a medida expressamente prevista.",
-        "Correta: reúne a sequência determinada pela Regra 19(e).",
-        "Incorreta: guinar em direção ao sinal e acelerar não constitui a ação prescrita."
+        "Incorreta: a regra não prescreve uma guinada obrigatória para bombordo.",
+        "Incorreta: manter a velocidade contraria a redução expressamente prevista.",
+        "Correta: reúne as ações determinadas pela Regra 19(e).",
+        "Incorreta: guinar em direção ao sinal e acelerar agrava o risco e não é a conduta prescrita."
       ],
       "reference": {
         "referenceId": "III-16",
@@ -137,192 +137,192 @@
       }
     },
     {
-      "id": "fri-c1-ground-track-current-vector",
+      "id": "sat-c1-head-sea-encounter-frequency",
       "category": "current",
-      "axis": "III",
-      "kind": "Conteúdo atual · navegação estimada · rumo no fundo",
-      "stem": "Um navio governa um rumo na superfície enquanto sofre ação transversal de corrente. O rumo no fundo representa:",
-      "options": [
-        "A direção da proa verdadeira, sem considerar qualquer movimento da massa líquida.",
-        "A direção resultante realmente navegada, obtida pela composição do movimento na superfície com o efeito da corrente.",
-        "A direção de onde vem a corrente, medida a partir da proa.",
-        "O rumo da agulha corrigido apenas do desvio, sem correção magnética."
-      ],
-      "correct": 1,
-      "explanation": "O rumo no fundo é a direção resultante referida ao norte verdadeiro, realmente percorrida entre posições, resultante da composição do rumo na superfície com o movimento provocado pela corrente.",
-      "comments": [
-        "Incorreta: a direção da proa não incorpora necessariamente o abatimento produzido pela corrente.",
-        "Correta: expressa a composição vetorial descrita na obra.",
-        "Incorreta: corrente é informada para onde flui; além disso, rumo no fundo é a trajetória resultante do navio.",
-        "Incorreta: essa operação se refere a correções de agulha, não à trajetória sobre o fundo."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Navegação: A Ciência e a Arte",
-        "edition": "volumes I e III",
-        "section": "Volume I, capítulo 1 — Rumo na superfície e rumo no fundo",
-        "syllabus": "Eixo III — Navegação · navegação estimada, rumos e efeito da corrente",
-        "evidence": "O recorte consultado define rumo no fundo como a direção resultante, referida ao norte verdadeiro, realmente navegada, compondo o rumo na superfície com o efeito da corrente.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
-    },
-    {
-      "id": "fri-c2-ground-speed-soa",
-      "category": "current",
-      "axis": "III",
-      "kind": "Conteúdo atual · navegação estimada · velocidades",
-      "stem": "Assinale a alternativa que distingue corretamente velocidade no fundo de velocidade de avanço (SOA):",
-      "options": [
-        "Velocidade no fundo é sempre planejada; SOA é sempre medida pelo odômetro através da água.",
-        "Velocidade no fundo é a velocidade efetiva ao longo da derrota em relação ao fundo; SOA é a velocidade pretendida para progredir na derrota planejada.",
-        "Velocidade no fundo exclui corrente; SOA inclui apenas vento e mar.",
-        "As duas expressões são sinônimas e indicam necessariamente a rotação do propulsor."
-      ],
-      "correct": 1,
-      "explanation": "A velocidade no fundo descreve o progresso efetivo em relação ao fundo. A SOA é um dado de planejamento usado, entre outros fins, no cálculo de ETA e ETD.",
-      "comments": [
-        "Incorreta: inverte os conceitos e associa indevidamente a SOA ao odômetro.",
-        "Correta: corresponde às definições localizadas no recorte.",
-        "Incorreta: a velocidade no fundo já incorpora o efeito resultante da corrente.",
-        "Incorreta: são conceitos diferentes e nenhum deles é definido pela rotação do propulsor."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Navegação: A Ciência e a Arte",
-        "edition": "volumes I e III",
-        "section": "Volume I, capítulo 1 — A velocidade no mar",
-        "syllabus": "Eixo III — Navegação · velocidade no fundo, planejamento e ETA",
-        "evidence": "O recorte consultado define velocidade no fundo como a velocidade ao longo da derrota efetivamente seguida em relação ao fundo e SOA como a velocidade pretendida para avançar na derrota planejada.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
-    },
-    {
-      "id": "fri-c3-tidal-current-channel-ocean",
-      "category": "current",
-      "axis": "III",
-      "kind": "Conteúdo atual · correntes de maré · comportamento",
-      "stem": "Quanto ao comportamento típico das correntes de maré, é correto afirmar que:",
-      "options": [
-        "São sempre rotatórias, tanto em canais quanto em oceano aberto.",
-        "São sempre axiais e alternativas, qualquer que seja a configuração geográfica.",
-        "Em entradas e canais podem assumir caráter axial alternativo, enquanto no oceano aberto podem ser rotatórias sob influência, entre outros fatores, do efeito de Coriolis.",
-        "Sua direção independe da maré e da rotação da Terra."
-      ],
-      "correct": 2,
-      "explanation": "Em canais e entradas portuárias, o fluxo e o refluxo podem produzir corrente axial alternativa. Em oceano aberto, a interação entre forças astronômicas e rotação terrestre pode gerar corrente rotatória.",
-      "comments": [
-        "Incorreta: canais e entradas frequentemente apresentam fluxo axial alternativo.",
-        "Incorreta: no oceano aberto é possível haver comportamento rotatório.",
-        "Correta: sintetiza a distinção apresentada no recorte consultado.",
-        "Incorreta: maré e Coriolis participam do comportamento descrito."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Navegação: A Ciência e a Arte",
-        "edition": "volumes I e III",
-        "section": "Volume III — Marés e correntes de maré",
-        "syllabus": "Eixo III — Navegação em águas restritas · correntes de maré",
-        "evidence": "O recorte consultado descreve correntes axiais alternativas em entradas portuárias e canais e correntes rotatórias em oceano aberto, com participação do efeito de Coriolis.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
-    },
-    {
-      "id": "fri-x1-bank-effect-speed-clearance-depth",
-      "category": "rotation",
-      "axis": "I",
-      "kind": "Rotação · manobrabilidade · intensidade do efeito de banco",
-      "stem": "Um navio aproxima-se demasiadamente de um banco em canal raso e com velocidade elevada. Para reduzir o efeito de banco, a medida operacional mais coerente é:",
-      "options": [
-        "Aumentar a velocidade e diminuir ainda mais a distância ao banco.",
-        "Reduzir a velocidade e, quando houver espaço seguro, aumentar o afastamento do banco.",
-        "Manter a velocidade, pois forças e momentos independem dela.",
-        "Aproximar a popa do banco para anular automaticamente o momento de guinada."
-      ],
-      "correct": 1,
-      "explanation": "Os efeitos aumentam com a proximidade do banco, crescem aproximadamente com o quadrado da velocidade e se intensificam com a redução da razão profundidade/calado.",
-      "comments": [
-        "Incorreta: velocidade e proximidade maiores intensificam a interação.",
-        "Correta: atua sobre dois fatores que aumentam forças e momentos de banco.",
-        "Incorreta: a velocidade é fator relevante e pode produzir crescimento aproximadamente quadrático.",
-        "Incorreta: aproximar a popa aumenta o risco e não constitui compensação automática."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 10 — Efeitos de águas restritas · fatores do efeito de banco",
-        "syllabus": "Eixo I — Manobrabilidade · bancos, canais estreitos e interação",
-        "evidence": "O recorte consultado relaciona o aumento do efeito de banco à menor separação, à maior velocidade e à menor razão profundidade/calado.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
-    },
-    {
-      "id": "fri-x2-steep-sloping-bank",
-      "category": "rotation",
-      "axis": "I",
-      "kind": "Rotação · manobrabilidade · geometria do banco",
-      "stem": "Mantidas comparáveis as demais condições, qual banco tende a produzir efeito mais intenso sobre um navio que passa próximo?",
-      "options": [
-        "O banco de inclinação suave, porque bloqueia integralmente o escoamento lateral.",
-        "O banco íngreme, porque permite menor escoamento lateral incidente e provoca maior redução de pressão.",
-        "Ambos produzem necessariamente o mesmo efeito, pois a geometria do banco é irrelevante.",
-        "O banco mais distante, independentemente de sua geometria."
-      ],
-      "correct": 1,
-      "explanation": "O banco íngreme tende a produzir efeito maior que o inclinado. Num talude menos inclinado ainda ocorre algum escoamento lateral em direção ao banco, reduzindo a queda de pressão.",
-      "comments": [
-        "Incorreta: o banco suave permite algum escoamento lateral, reduzindo o efeito.",
-        "Correta: corresponde à comparação apresentada na obra.",
-        "Incorreta: a geometria do banco é um dos fatores expressamente considerados.",
-        "Incorreta: maior distância tende a reduzir a interação, e não a intensificá-la."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 10 — Efeitos de águas restritas · geometria do banco",
-        "syllabus": "Eixo I — Manobrabilidade · efeitos de banco em águas restritas",
-        "evidence": "O recorte consultado afirma que o efeito de banco íngreme é maior que o de banco menos inclinado, pois o talude suave ainda permite algum escoamento lateral e menor redução de pressão.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
-    },
-    {
-      "id": "fri-o1-pscpp2008-q26-tides",
-      "category": "official",
       "axis": "V",
-      "kind": "Questão oficial histórica · marés e correntes",
-      "stem": "Considere as afirmativas: I) as Cartas de Correntes de Marés referem-se às marés do próprio dia; II) ao longo do ciclo lunar, as variações diárias das alturas são simétricas em relação ao nível médio, na quadratura e na sizígia; III) a altura do nível médio destacada nas Tábuas das Marés alerta sobre a amplitude de sizígia do porto; IV) intensidades distintas das correntes de enchente e vazante devem-se às características geográficas da região; V) o zero da régua das marés está associado à carta náutica do porto. Segundo Lobo & Soares, quais são verdadeiras?",
+      "kind": "Conteúdo atual · ondas regulares · frequência de encontro",
+      "stem": "Um navio passa de mar de través para mar de proa, mantendo velocidade e encontrando o mesmo trem de ondas regulares. Quanto à frequência de encontro, é correto afirmar que:",
       "options": [
-        "I e II.",
-        "II e IV.",
-        "III, IV e V.",
-        "I, III e V.",
-        "II, III e V."
+        "No mar de proa, ela tende a ser maior que a frequência própria das ondas, porque navio e cristas se aproximam.",
+        "No mar de proa, ela é sempre nula.",
+        "No mar de través, ela depende exclusivamente da rotação do propulsor.",
+        "No mar de popa, ela é necessariamente maior que no mar de proa."
+      ],
+      "correct": 0,
+      "explanation": "No mar de proa, o movimento relativo entre o navio e as cristas aumenta o número de encontros por unidade de tempo. No mar de través, a frequência de encontro coincide com a frequência da onda; no mar de popa, pode ser reduzida.",
+      "comments": [
+        "Correta: traduz o aumento da frequência recebida pelo navio em ondas de proa.",
+        "Incorreta: a aproximação entre navio e cristas aumenta, e não zera, os encontros.",
+        "Incorreta: a frequência de encontro decorre da cinemática entre navio e ondas.",
+        "Incorreta: em ondas de popa, a frequência de encontro pode diminuir e até mudar de sinal se o navio ultrapassar as ondas."
+      ],
+      "reference": {
+        "referenceId": "V-04",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
+        "edition": "1. ed., 2021",
+        "section": "Capítulo 3 — Movimento do navio em ondas regulares · frequência de encontro",
+        "syllabus": "Eixo V — Oceanografia e navegação · ondas e movimento do navio",
+        "evidence": "O recorte consultado define frequência de encontro como a frequência recebida pelo navio em movimento e mostra que, em mar de proa, ela aumenta; no través coincide com a frequência da onda e, em mar de popa, pode diminuir.",
+        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
+      }
+    },
+    {
+      "id": "sat-c2-wave-celerity-wavelength-period",
+      "category": "current",
+      "axis": "V",
+      "kind": "Conteúdo atual · ondas regulares · celeridade",
+      "stem": "Para uma onda regular monocromática, a relação entre celeridade c, comprimento de onda λ e período T é:",
+      "options": [
+        "c = T/λ.",
+        "c = λ/T.",
+        "c = λ × T².",
+        "c = 1/(λ × T)."
+      ],
+      "correct": 1,
+      "explanation": "A celeridade é a velocidade de propagação da fase da onda e pode ser expressa por c = λ/T, equivalente a ω/k.",
+      "comments": [
+        "Incorreta: a razão está invertida e não fornece dimensão de velocidade.",
+        "Correta: comprimento percorrido por ciclo dividido pelo período resulta em velocidade.",
+        "Incorreta: o produto não representa a relação de propagação apresentada.",
+        "Incorreta: o inverso do produto possui dimensão incompatível com velocidade."
+      ],
+      "reference": {
+        "referenceId": "V-04",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
+        "edition": "1. ed., 2021",
+        "section": "Capítulo 2 — Ondas regulares · número de onda, período e celeridade",
+        "syllabus": "Eixo V — Oceanografia e navegação · propriedades das ondas",
+        "evidence": "O recorte consultado apresenta a celeridade da onda regular como c = ω/k = λ/T e discute sua dependência do regime de profundidade.",
+        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
+      }
+    },
+    {
+      "id": "sat-c3-rao-response-amplification",
+      "category": "current",
+      "axis": "V",
+      "kind": "Conteúdo atual · movimento em ondas · RAO",
+      "stem": "Na análise linear do movimento do navio em ondas, o RAO é empregado principalmente para:",
+      "options": [
+        "Relacionar a amplitude da resposta do navio à amplitude da excitação periódica, em função da frequência, incluindo a defasagem correspondente.",
+        "Converter diretamente potência de máquinas em altura significativa de onda.",
+        "Determinar apenas o calado estático do navio em água doce.",
+        "Substituir o espectro de ondas por uma velocidade constante de corrente."
+      ],
+      "correct": 0,
+      "explanation": "O operador de amplitude de resposta caracteriza quanto o navio amplifica ou atenua uma excitação em cada frequência e permite considerar a fase entre excitação e movimento.",
+      "comments": [
+        "Correta: expressa o papel do RAO como função de transferência da resposta do navio.",
+        "Incorreta: o RAO não converte potência propulsiva em altura de onda.",
+        "Incorreta: calado estático não é a finalidade do operador.",
+        "Incorreta: corrente e espectro de ondas são fenômenos distintos e não são substituídos dessa forma."
+      ],
+      "reference": {
+        "referenceId": "V-04",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
+        "edition": "1. ed., 2021",
+        "section": "Capítulo 3 — Movimento do navio em ondas regulares · resposta forçada",
+        "syllabus": "Eixo V — Oceanografia e navegação · resposta do navio às ondas",
+        "evidence": "O recorte consultado descreve o RAO como fator que relaciona a amplitude da resposta do navio à amplitude da força de excitação e registra as fases entre a excitação e o movimento.",
+        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
+      }
+    },
+    {
+      "id": "sat-x1-fatigue-sleep-debt",
+      "category": "rotation",
+      "axis": "VII",
+      "kind": "Rotação · fatores humanos · débito de sono",
+      "stem": "Um prático necessita habitualmente de oito horas de sono, mas dorme apenas seis horas por noite durante vários dias consecutivos. Segundo as diretrizes de fadiga, essa condição:",
+      "options": [
+        "Não produz efeito cumulativo se cada período de sono for ininterrupto.",
+        "Caracteriza débito de sono acumulado, capaz de reduzir alerta e desempenho, mesmo que a pessoa perceba menos o próprio comprometimento.",
+        "É compensada automaticamente pelo ritmo circadiano, sem necessidade de recuperação.",
+        "Afeta apenas força muscular, sem repercussão cognitiva."
+      ],
+      "correct": 1,
+      "explanation": "A insuficiência de sono em períodos sucessivos acumula débito. Esse débito prejudica alerta e desempenho e pode reduzir a percepção subjetiva do próprio comprometimento.",
+      "comments": [
+        "Incorreta: a perda parcial repetida é cumulativa.",
+        "Correta: corresponde à definição e às consequências descritas na circular.",
+        "Incorreta: o relógio circadiano não quita o débito de sono automaticamente.",
+        "Incorreta: fadiga compromete funções físicas e mentais, inclusive decisão e atenção."
+      ],
+      "reference": {
+        "referenceId": "VII-05",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "Guidelines on Fatigue",
+        "edition": "MSC.1/Circ.1598, 2019",
+        "section": "Anexo, módulo 1 — Fatigue, sleep and sleep debt",
+        "syllabus": "Eixo VII — Conhecimentos Gerais · fadiga, alerta e desempenho",
+        "evidence": "O recorte consultado define débito de sono como o sono insuficiente acumulado em períodos consecutivos de 24 horas e aponta prejuízo ao alerta e ao desempenho, com possível redução da percepção do próprio comprometimento.",
+        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
+      }
+    },
+    {
+      "id": "sat-x2-a960-continued-proficiency",
+      "category": "rotation",
+      "axis": "IV",
+      "kind": "Rotação · legislação internacional · proficiência continuada",
+      "stem": "Segundo a Resolução IMO A.960(23), a autoridade competente deve assegurar, em intervalos regulares não superiores a cinco anos, que o prático continue demonstrando, entre outros requisitos:",
+      "options": [
+        "Somente experiência geral de navegação oceânica, sem necessidade de conhecimento local recente.",
+        "Conhecimento recente da navegação local, aptidão médica e conhecimento das normas internacionais, nacionais e locais aplicáveis.",
+        "Apenas aprovação em prova escrita de meteorologia, independentemente da aptidão médica.",
+        "Somente proficiência em inglês, dispensando atualização sobre leis e regulamentos."
+      ],
+      "correct": 1,
+      "explanation": "A A.960(23) vincula a manutenção da habilitação à verificação periódica de conhecimento local recente, aptidão médica e conhecimento atualizado das regras pertinentes, em intervalo máximo de cinco anos.",
+      "comments": [
+        "Incorreta: a resolução exige conhecimento local recente.",
+        "Correta: reúne requisitos expressamente listados no recorte.",
+        "Incorreta: não há substituição da aptidão médica por uma prova isolada.",
+        "Incorreta: o conhecimento das normas aplicáveis integra a verificação periódica."
+      ],
+      "reference": {
+        "referenceId": "IV-18",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "Training, Certification and Operational Procedures for Maritime Pilots",
+        "edition": "A.960(23), 2003",
+        "section": "Anexo 1, §6.1 — Continued proficiency",
+        "syllabus": "Eixo IV — Legislação · habilitação e proficiência continuada dos práticos",
+        "evidence": "O recorte consultado determina verificações em intervalos não superiores a cinco anos e inclui conhecimento local recente, aptidão médica e conhecimento das leis e regulamentos internacionais, nacionais e locais aplicáveis.",
+        "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"
+      }
+    },
+    {
+      "id": "sat-o1-pscpp2011-q55",
+      "category": "official",
+      "axis": "III",
+      "kind": "Questão oficial histórica · PSCPP 2011",
+      "stem": "Assinale a resposta correta. Considerando o prescrito no COLREG, uma embarcação exibindo uma luz de mastro à vante, uma segunda luz de mastro a ré e mais alta do que a de vante, luzes de bordos, uma luz de alcançado e, onde melhor possam ser vistas, três luzes circulares encarnadas dispostas em uma linha vertical, é uma embarcação em movimento:",
+      "options": [
+        "com capacidade de manobra restrita, não engajada em operações de remoção de minas.",
+        "engajada em operações submarinas ou de dragagem.",
+        "engajada em serviço de praticagem.",
+        "mas sem governo.",
+        "restrita devido ao seu calado."
       ],
       "correct": 4,
-      "explanation": "O gabarito oficial indica II, III e V. As Cartas de Correntes são selecionadas pela diferença de tempo em relação à preamar, não por pertencerem ao dia consultado, e a afirmativa IV generaliza incorretamente a causa das diferenças entre enchente e vazante.",
+      "explanation": "As luzes de uma embarcação de propulsão mecânica em movimento, acrescidas de três luzes circulares encarnadas em linha vertical, identificam embarcação restrita devido ao calado.",
       "comments": [
-        "Incorreta: contém I, considerada falsa no conjunto oficial.",
-        "Incorreta: inclui IV e omite III e V.",
-        "Incorreta: inclui IV e omite II.",
-        "Incorreta: inclui I e omite II.",
-        "Correta: reúne II, III e V, conforme o gabarito definitivo E."
+        "Incorreta: embarcação com capacidade de manobra restrita exibe encarnada-branca-encarnada em linha vertical.",
+        "Incorreta: dragagem ou operação submarina usa os sinais de capacidade de manobra restrita e sinais adicionais quando houver obstrução.",
+        "Incorreta: embarcação de praticagem exibe branca sobre encarnada; em movimento, também luzes de bordos e de alcançado.",
+        "Incorreta: embarcação sem governo exibe duas luzes circulares encarnadas em linha vertical.",
+        "Correta: a Regra 28 admite três luzes circulares encarnadas em linha vertical, além das luzes da Regra 23."
       ],
       "reference": {
-        "referenceId": "V-03",
-        "base": "Prova oficial PSCPP e bibliografia oficial",
-        "publication": "Meteorologia e Oceanografia",
-        "edition": "4. ed., 2019",
-        "section": "Capítulos IX e X — marés, nível médio e correntes de maré",
-        "syllabus": "Eixo V — Oceanografia · marés, Tábuas das Marés e Cartas de Correntes",
-        "evidence": "O recorte consultado explica a referência das cartas à preamar, a relação entre níveis de maré e nível médio e a associação dos níveis de referência às informações náuticas; a prova oficial marca a alternativa E.",
-        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view",
-        "origin": "PSCPP 2008, questão 26, gabarito definitivo E. Adaptada apenas por condensação do enunciado e atualização ortográfica, mantendo as cinco afirmativas, alternativas e solução."
+        "referenceId": "III-16",
+        "base": "COLREG 1972 / RIPEAM",
+        "publication": "COLREG - Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte C, Regras 23 e 28 — luzes de embarcação de propulsão mecânica e restrita devido ao calado",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · luzes e marcas do RIPEAM",
+        "evidence": "A prova oficial consultada apresenta exatamente o arranjo de luzes; no COLREG, a Regra 23 prescreve as luzes da embarcação de propulsão mecânica em movimento e a Regra 28 acrescenta três luzes circulares encarnadas em linha vertical para a embarcação restrita devido ao calado.",
+        "origin": "PSCPP 2011 — Prova Amarela, questão 55 — gabarito E — transcrição sem adaptação",
+        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
       }
     }
   ]
