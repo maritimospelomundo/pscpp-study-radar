@@ -1,9 +1,9 @@
 {
-  "roundId": "sunday-wave-corrections-tides-2026-09-27",
-  "label": "Rodada corretiva de domingo",
-  "title": "Correção de ondas, espectros e marés",
-  "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões FSRS e notas 0/1 · correção de ondas e marés · consolidação de manobrabilidade · rotações de rebocadores e SMCP",
+  "roundId": "stopping-manoeuvres-colreg-2026-09-28",
+  "label": "Rodada de 28 de setembro de 2026",
+  "title": "Capacidade de parada, manobra e RIPEAM",
+  "publication": "2026-09-28",
+  "path": "manobrabilidade-parada-ripeam",
   "method": "4–3–2–1",
   "mixPlan": {
     "review": 4,
@@ -13,316 +13,316 @@
   },
   "questions": [
     {
-      "id": "sun-r1-celerity-numeric-correction",
+      "id": "mon-r1-significant-wave-height-correction",
       "category": "review",
       "axis": "V",
-      "kind": "Revisão corretiva · nota 0 · celeridade de onda",
-      "stem": "Uma onda regular tem comprimento de 120 m e período de 10 s. Desprezadas alterações do meio, sua celeridade é:",
+      "kind": "Revisão corretiva · nota 0 · altura significativa de onda",
+      "stem": "Em um registro simplificado, nove alturas de onda, em ordem crescente, foram: 2,0 m; 2,5 m; 3,0 m; 3,5 m; 4,0 m; 4,5 m; 5,0 m; 6,0 m; e 7,0 m. Pela definição estatística usual, a altura significativa desse conjunto é:",
       "options": [
-        "0,083 m/s.",
-        "12 m/s.",
-        "110 m/s.",
-        "1.200 m/s."
-      ],
-      "correct": 1,
-      "explanation": "A celeridade é dada por c = λ/T. Assim, c = 120/10 = 12 m/s.",
-      "comments": [
-        "Incorreta: resulta aproximadamente do inverso de 12 e não da razão λ/T.",
-        "Correta: aplica diretamente c = 120 m ÷ 10 s.",
-        "Incorreta: subtrair período do comprimento não produz velocidade.",
-        "Incorreta: multiplicar λ por T inverte a operação e gera unidade incompatível."
-      ],
-      "reference": {
-        "referenceId": "V-04",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
-        "edition": "1. ed., 2021",
-        "section": "Capítulo 2 — Ondas regulares · período, comprimento e celeridade",
-        "syllabus": "Eixo V — Oceanografia e navegação · propriedades das ondas",
-        "evidence": "O recorte consultado apresenta a celeridade de uma onda regular pela relação c = ω/k = λ/T.",
-        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
-      }
-    },
-    {
-      "id": "sun-r2-rao-square-response-spectrum",
-      "category": "review",
-      "axis": "V",
-      "kind": "Revisão FSRS · nota 1 · RAO e espectro de resposta",
-      "stem": "Na mesma frequência de encontro e sob o mesmo espectro de ondas, o RAO do movimento de heave do navio A é duas vezes o do navio B. No modelo linear apresentado, a ordenada do espectro de resposta de A será:",
-      "options": [
-        "Duas vezes a de B.",
-        "Quatro vezes a de B.",
-        "Metade da de B.",
-        "Igual à de B."
-      ],
-      "correct": 1,
-      "explanation": "O espectro de resposta é obtido multiplicando-se o espectro de ondas pelo quadrado do RAO. Se o RAO dobra, seu quadrado aumenta por um fator 2² = 4.",
-      "comments": [
-        "Incorreta: essa alternativa ignora que o RAO entra ao quadrado.",
-        "Correta: (2 × RAO)² = 4 × RAO².",
-        "Incorreta: RAO maior aumenta, e não reduz, a resposta na frequência considerada.",
-        "Incorreta: com o mesmo espectro de ondas, RAOs diferentes produzem respostas diferentes."
-      ],
-      "reference": {
-        "referenceId": "V-04",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
-        "edition": "1. ed., 2021",
-        "section": "Capítulo 4, §4.7 — Espectro de resposta do navio",
-        "syllabus": "Eixo V — Oceanografia e navegação · resposta do navio em mar irregular",
-        "evidence": "O recorte consultado informa que o elo entre o espectro de energia das ondas e o espectro de resposta é o quadrado da função de transferência RAO, aplicado na mesma frequência.",
-        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
-      }
-    },
-    {
-      "id": "sun-r3-tidal-current-chart-selection",
-      "category": "review",
-      "axis": "V",
-      "kind": "Revisão FSRS vencida · nota 0 · cartas de correntes de maré",
-      "stem": "A preamar prevista para um porto ocorre às 11h. Para conhecer a corrente de maré às 9h, o navegante deve selecionar, na coletânea correspondente:",
-      "options": [
-        "A carta de duas horas antes da preamar.",
-        "A carta de duas horas depois da preamar.",
-        "A carta do instante da baixa-mar.",
-        "Qualquer carta de sizígia, pois a hora relativa não altera a distribuição."
-      ],
-      "correct": 0,
-      "explanation": "A seleção usa a diferença entre o instante da preamar da tábua e o horário de interesse. Como 9h ocorre duas horas antes de 11h, escolhe-se a carta de duas horas antes da preamar.",
-      "comments": [
-        "Correta: identifica corretamente a hora relativa à preamar.",
-        "Incorreta: duas horas depois corresponderiam a 13h.",
-        "Incorreta: a coletânea é referenciada à preamar, não ao instante da baixa-mar.",
-        "Incorreta: direção e intensidade variam entre as 13 cartas da coletânea."
-      ],
-      "reference": {
-        "referenceId": "V-03",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Meteorologia e Oceanografia",
-        "edition": "4. ed., 2019",
-        "section": "Capítulo X — Correntes oceânicas e costeiras · cartas de correntes de maré",
-        "syllabus": "Eixo V — Oceanografia · correntes de maré e apoio à navegação",
-        "evidence": "O recorte consultado descreve 13 cartas, de seis horas antes a seis horas depois da preamar, e determina a escolha pela diferença entre a preamar prevista e o horário de interesse.",
-        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
-      }
-    },
-    {
-      "id": "sun-r4-trial-depth-mean-draught",
-      "category": "review",
-      "axis": "I",
-      "kind": "Revisão FSRS vencida · nota 0 · profundidade das provas",
-      "stem": "Um navio com calado médio de 10 m realizará provas de manobrabilidade. Para atender à recomendação de águas profundas da MSC/Circ.1053, a profundidade deve:",
-      "options": [
-        "Ser igual ou superior a 20 m.",
-        "Exceder 30 m.",
-        "Exceder 40 m.",
-        "Ser igual ao comprimento do navio dividido pela boca."
+        "4,0 m.",
+        "5,0 m.",
+        "6,0 m.",
+        "7,0 m."
       ],
       "correct": 2,
-      "explanation": "A circular recomenda profundidade superior a quatro vezes o calado médio. Para 10 m, a profundidade deve exceder 40 m.",
+      "explanation": "A altura significativa é a média do terço de maiores ondas. Em nove observações, tomam-se as três maiores: 5,0 m, 6,0 m e 7,0 m. A média é 6,0 m.",
       "comments": [
-        "Incorreta: corresponde a apenas duas vezes o calado médio.",
-        "Incorreta: três vezes o calado não satisfaz o critério indicado.",
-        "Correta: aplica o limite superior a 4 × 10 m.",
-        "Incorreta: o critério não é expresso pela razão comprimento/boca."
-      ],
-      "reference": {
-        "referenceId": "I-06",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Explanatory Notes to the Standards for Ship Manoeuvrability",
-        "edition": "MSC/Circ.1053, 2002",
-        "section": "Capítulo 2, §§2.1.2 e 2.2.1.2.1 — Deep, unrestricted water",
-        "syllabus": "Eixo I — Manobrabilidade · condições ambientais das provas",
-        "evidence": "O recorte consultado afirma que a interação com fundo e margens afeta fortemente a manobrabilidade e recomenda profundidade superior a quatro vezes o calado médio.",
-        "url": "https://drive.google.com/file/d/18-iPKtK3TOFSi08gL_AYxix7pox04UF3/view"
-      }
-    },
-    {
-      "id": "sun-c1-significant-wave-height",
-      "category": "current",
-      "axis": "V",
-      "kind": "Conteúdo atual · mar irregular · altura significativa",
-      "stem": "No tratamento estatístico do mar irregular apresentado por Santos, a altura significativa das ondas corresponde:",
-      "options": [
-        "À média das alturas do terço de ondas mais altas.",
-        "À altura da menor onda observada no período.",
-        "À soma de todas as alturas dividida pelo período modal.",
-        "À maior onda individual, obrigatoriamente."
-      ],
-      "correct": 0,
-      "explanation": "A altura significativa é a média das alturas do terço mais alto da distribuição de ondas, parâmetro tradicionalmente associado à percepção visual do estado do mar.",
-      "comments": [
-        "Correta: é a definição estatística destacada na obra.",
-        "Incorreta: a menor onda não representa a altura significativa.",
-        "Incorreta: período modal e altura média do terço superior são grandezas distintas.",
-        "Incorreta: a maior onda isolada não é a média do terço mais alto."
+        "Incorreta: 4,0 m é a mediana do conjunto, não a média do terço superior.",
+        "Incorreta: 5,0 m é apenas a menor das três alturas selecionadas.",
+        "Correta: (5,0 + 6,0 + 7,0) ÷ 3 = 6,0 m.",
+        "Incorreta: 7,0 m é a maior onda individual, não a altura significativa."
       ],
       "reference": {
         "referenceId": "V-04",
         "base": "Bibliografia oficial PSCPP",
         "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
         "edition": "1. ed., 2021",
-        "section": "Capítulo 4, §4.4 — Altura das ondas do mar",
-        "syllabus": "Eixo V — Oceanografia e navegação · representação estatística do mar",
-        "evidence": "O recorte consultado define a altura significativa como a média das alturas do terço de ondas mais altas e explica sua origem na avaliação visual dos marítimos.",
+        "section": "Capítulo 3 — Ondas irregulares · altura significativa",
+        "syllabus": "Eixo V — Oceanografia e navegação · ondas irregulares e parâmetros estatísticos",
+        "evidence": "O recorte consultado define a altura significativa como a média das alturas do terço de ondas mais altas de um registro.",
         "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
       }
     },
     {
-      "id": "sun-c2-wave-spectrum-area",
-      "category": "current",
-      "axis": "V",
-      "kind": "Conteúdo atual · mar irregular · espectro de ondas",
-      "stem": "No espectro de um mar irregular, a área sob a curva de densidade espectral está associada principalmente:",
+      "id": "mon-r2-escort-indirect-direct-transition",
+      "category": "review",
+      "axis": "II",
+      "kind": "Revisão corretiva · nota 0 · reboque de escolta",
+      "stem": "Um rebocador de escolta atua pela popa de um navio que reduz a velocidade de 8 para cerca de 4 nós. Para conservar eficácia no controle, a conduta tecnicamente coerente é:",
       "options": [
-        "À variância do registro da elevação e, portanto, à energia distribuída entre as frequências.",
-        "Somente à direção média do vento, independentemente das ondas.",
-        "À rotação do propulsor necessária para manter a proa.",
-        "Exclusivamente à profundidade cartografada."
-      ],
-      "correct": 0,
-      "explanation": "A área sob o espectro representa a variância do sinal de elevação; fisicamente, permite avaliar como a energia do mar se distribui pelas frequências.",
-      "comments": [
-        "Correta: corresponde à interpretação estatística e energética do espectro.",
-        "Incorreta: o vento influencia a geração, mas não substitui a densidade espectral das ondas.",
-        "Incorreta: rotação do propulsor não define a área do espectro do mar.",
-        "Incorreta: profundidade pode alterar ondas, mas não é a grandeza representada pela área."
-      ],
-      "reference": {
-        "referenceId": "V-04",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
-        "edition": "1. ed., 2021",
-        "section": "Capítulo 4, §4.5.1 — Área sob a curva de densidade espectral",
-        "syllabus": "Eixo V — Oceanografia e navegação · espectro do mar",
-        "evidence": "O recorte consultado relaciona a área sob a curva à variância estatística do registro de onda e ao conteúdo energético do espectro, além de vinculá-la ao quadrado da altura significativa.",
-        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
-      }
-    },
-    {
-      "id": "sun-c3-irregular-sea-linear-superposition",
-      "category": "current",
-      "axis": "V",
-      "kind": "Conteúdo atual · mar irregular · resposta do navio",
-      "stem": "Na análise linear de um navio em mar irregular, a resposta total pode ser determinada:",
-      "options": [
-        "Pela sobreposição dos efeitos das componentes regulares que formam o mar real, considerando a resposta em cada frequência.",
-        "Apenas pela maior onda isolada, desprezando todas as demais componentes.",
-        "Somente por uma prova de velocidade em água calma.",
-        "Substituindo o espectro do mar por uma corrente uniforme."
-      ],
-      "correct": 0,
-      "explanation": "O mar irregular é representado por componentes regulares. Assumindo comportamento linear, suas respostas são combinadas para construir o espectro de resposta do movimento do navio.",
-      "comments": [
-        "Correta: aplica o princípio de superposição linear descrito na obra.",
-        "Incorreta: o método considera a contribuição estatística das diversas componentes.",
-        "Incorreta: água calma não reproduz a excitação espectral das ondas.",
-        "Incorreta: corrente uniforme e espectro de ondas não são equivalentes."
-      ],
-      "reference": {
-        "referenceId": "V-04",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
-        "edition": "1. ed., 2021",
-        "section": "Capítulo 4, §4.7 — Espectro de resposta do navio",
-        "syllabus": "Eixo V — Oceanografia e navegação · movimento do navio em mar irregular",
-        "evidence": "O recorte consultado assume movimento linear e determina a resposta no mar real pela sobreposição dos efeitos das componentes de ondas regulares em suas respectivas frequências.",
-        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
-      }
-    },
-    {
-      "id": "sun-x1-smcp-number-rudder-exception",
-      "category": "rotation",
-      "axis": "VI",
-      "kind": "Rotação · comunicações · números na SMCP",
-      "stem": "Assinale a transmissão compatível com a IMO SMCP:",
-      "options": [
-        "Rumo 150: “one hundred and fifty”; leme 15: “one-five”.",
-        "Rumo 150: “one-five-zero”; leme 15: “fifteen”.",
-        "Rumo 150: “fifteen-zero”; leme 15: “one-five-zero”.",
-        "Rumo 150: “one-five-zero”; leme 15: “one-five”."
+        "Manter exclusivamente o modo indireto, pois sua força independe da velocidade do navio assistido.",
+        "Transitar do modo indireto para o direto, à medida que diminui a força hidrodinâmica disponível e passa a predominar o empuxo do rebocador.",
+        "Largar obrigatoriamente o cabo, porque nenhum modo de escolta é eficaz abaixo de 5 nós.",
+        "Colocar o rebocador transversalmente ao fluxo e dispensar o uso do propulsor."
       ],
       "correct": 1,
-      "explanation": "Os números são pronunciados dígito a dígito, mas a SMCP estabelece exceção para ângulos de leme nas ordens ao timoneiro: 15 é pronunciado “fifteen”.",
+      "explanation": "O modo indireto explora forças hidrodinâmicas e é empregado em velocidades mais elevadas. Com a redução da velocidade, essas forças diminuem; o modo direto, baseado sobretudo no empuxo do rebocador, torna-se apropriado.",
       "comments": [
-        "Incorreta: o rumo deve ser pronunciado em dígitos separados e o leme não usa “one-five”.",
-        "Correta: aplica a regra geral ao rumo e a exceção ao ângulo de leme.",
-        "Incorreta: nenhuma das duas formas corresponde ao padrão.",
-        "Incorreta: a segunda expressão ignora a exceção das ordens de leme."
-      ],
-      "reference": {
-        "referenceId": "VI-01",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "IMO Standard Marine Communication Phrases",
-        "edition": "A.918(22), 2001",
-        "section": "General, item 10 — Numbers",
-        "syllabus": "Eixo VI — Comunicações · pronúncia padronizada de números e ordens de leme",
-        "evidence": "O recorte consultado manda pronunciar números em dígitos separados, como “one-five-zero” para 150, e ressalva que ângulos de leme são ditos como “fifteen” ou “twenty”.",
-        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
-      }
-    },
-    {
-      "id": "sun-x2-cross-lines-narrow-water",
-      "category": "rotation",
-      "axis": "II",
-      "kind": "Rotação · rebocadores · cross lines em águas estreitas",
-      "stem": "No reboque com cabo durante trânsito em águas estreitas, o emprego de duas espias no rebocador de vante, em arranjo de cross lines ou gate lines, permite principalmente:",
-      "options": [
-        "Reação rápida com pequena necessidade de espaço para manobra.",
-        "Eliminar a necessidade de guincho e ponto de reboque.",
-        "Tornar a força do rebocador independente da velocidade do navio.",
-        "Usar as duas espias sempre paralelas no mesmo bordo do navio."
-      ],
-      "correct": 0,
-      "explanation": "O arranjo permite ao rebocador atuar rapidamente para ambos os bordos, vantagem relevante em pontes, eclusas, docas e outros trechos com espaço restrito.",
-      "comments": [
-        "Correta: é a vantagem operacional descrita para águas estreitas.",
-        "Incorreta: o arranjo continua dependendo de equipamento de reboque apropriado.",
-        "Incorreta: velocidade e forças hidrodinâmicas continuam relevantes.",
-        "Incorreta: as linhas são cruzadas para lados opostos, não mantidas paralelas no mesmo bordo."
+        "Incorreta: a eficácia indireta depende do escoamento sobre o casco, a quilha e o skeg do rebocador.",
+        "Correta: corresponde à passagem do regime hidrodinâmico de maior velocidade para o emprego direto do empuxo em menor velocidade.",
+        "Incorreta: a queda de velocidade exige mudança de modo, não abandono automático da assistência.",
+        "Incorreta: essa posição amplia riscos e não substitui o controle ativo por propulsor e cabo."
       ],
       "reference": {
         "referenceId": "II-09",
         "base": "Bibliografia oficial PSCPP",
         "publication": "Tug Use in Port: A Practical Guide",
         "edition": "4. ed., 2021",
-        "section": "Capítulo 3 — Tugs towing on a line during transit towards a berth",
-        "syllabus": "Eixo II — Arte Naval · métodos de assistência por rebocadores",
-        "evidence": "O recorte consultado descreve duas linhas no rebocador de vante, chamadas cross lines ou gate lines, e afirma que elas permitem reação muito rápida com pouca necessidade de espaço para manobra.",
+        "section": "Capítulo 4 — Escort towing · direct and indirect towing",
+        "syllabus": "Eixo II — Rebocadores · modos direto e indireto na escolta",
+        "evidence": "O recorte consultado situa o reboque direto em velocidades relativamente baixas e o indireto, que utiliza forças hidrodinâmicas no corpo submerso e no skeg, acima de aproximadamente 5 a 6 nós.",
         "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
       }
     },
     {
-      "id": "sun-o1-pscpp2011-q39",
-      "category": "official",
-      "axis": "V",
-      "kind": "Questão oficial histórica · PSCPP 2011",
-      "stem": "Os dados da tabela a seguir representam os horários e as alturas das preamares (PM) e baixa-mares (BM) no fictício porto ZULU, em dois sábados consecutivos. A fase da Lua no dia 21 de setembro foi Lua Nova. Em 14/SET: PM 00h23 — 2,6 m; BM 06h37 — 0,9 m; PM 12h48 — 2,6 m; BM 19h19 — 0,8 m. Em 21/SET: BM 01h37 — 0,2 m; PM 07h39 — 4,7 m; BM 13h49 — 0,1 m; PM 19h55 — 4,6 m. Das afirmações abaixo, aponte aquela que contraria ou não encontra respaldo nos dados:",
+      "id": "mon-r3-first-overshoot-limit",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão corretiva · nota 0 · primeiro overshoot",
+      "stem": "Em uma manobra de zigue-zague 10°/10°, um navio apresenta L/V = 18 s. Segundo o critério aplicável, o primeiro ângulo de overshoot não deve exceder:",
       "options": [
-        "As marés no porto ZULU são do tipo semidiurnas.",
-        "Foram de quadratura as marés no dia 14 de setembro.",
-        "No dia 21 de setembro, ocorreram marés de águas mortas.",
-        "Às 10h do dia 14 de setembro, a maré no porto ZULU era de enchente.",
-        "O estofo da maré de vazante na tarde do dia 21 de setembro ocorreu em torno das 13h49."
+        "9°.",
+        "14°.",
+        "18°.",
+        "25°."
       ],
-      "correct": 2,
-      "explanation": "Lua Nova corresponde a sizígia, com amplitudes maiores, e não a águas mortas. Os dados de 21/SET confirmam grande amplitude; portanto, a alternativa C é a que contraria os dados.",
+      "correct": 1,
+      "explanation": "Para 10 s ≤ L/V < 30 s, o limite do primeiro overshoot é 5° + 0,5(L/V). Com L/V = 18 s, o limite é 5° + 9° = 14°.",
       "comments": [
-        "Correta quanto aos dados: há aproximadamente duas preamares e duas baixa-mares no dia.",
-        "Correta quanto aos dados: a menor amplitude de 14/SET é compatível com quadratura.",
-        "Incorreta e gabarito da questão: Lua Nova produz sizígia, ou águas vivas, não águas mortas.",
-        "Correta quanto aos dados: às 10h o nível subia da BM de 06h37 para a PM de 12h48.",
-        "Correta quanto aos dados: a BM de 13h49 marca o estofo ao final da vazante."
+        "Incorreta: 9° corresponde apenas à parcela 0,5(L/V), sem somar os 5°.",
+        "Correta: 5 + 0,5 × 18 = 14°.",
+        "Incorreta: o valor de L/V não é usado diretamente como ângulo-limite.",
+        "Incorreta: excede o resultado previsto para a faixa intermediária de L/V."
       ],
       "reference": {
-        "referenceId": "V-03",
+        "referenceId": "I-08",
         "base": "Bibliografia oficial PSCPP",
-        "publication": "Meteorologia e Oceanografia",
-        "edition": "4. ed., 2019",
-        "section": "Capítulo IX — Marés · teoria, curvas e Tábuas das Marés",
-        "syllabus": "Eixo V — Oceanografia · marés semidiurnas, sizígias, quadraturas e estofo",
-        "evidence": "A prova oficial consultada apresenta a tabela e as cinco alternativas. O recorte bibliográfico explica que Lua Nova e Lua Cheia produzem sizígias, com maior oscilação, enquanto os quartos produzem marés mortas ou de quadratura.",
-        "origin": "PSCPP 2011 — Prova Amarela, questão 39 — gabarito C — transcrição condensada apenas na apresentação da tabela",
-        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., 2021",
+        "section": "Capítulo 5 — Manobra de zigue-zague · critérios de overshoot",
+        "syllabus": "Eixo I — Manobrabilidade · estabilidade direcional e manobra de zigue-zague",
+        "evidence": "O recorte consultado apresenta, para a manobra 10°/10°, o limite do primeiro overshoot de 5° + 0,5(L/V) quando 10 s ≤ L/V < 30 s.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
+    },
+    {
+      "id": "mon-r4-rule19-fog-signal-ahead",
+      "category": "review",
+      "axis": "III",
+      "kind": "Revisão corretiva · nota 0 · Regra 19",
+      "stem": "Em visibilidade restrita, uma embarcação detecta risco de colisão e ouve, aparentemente por ante-a-vante do través, o sinal de cerração de outra embarcação cuja posição não foi determinada. De acordo com o RIPEAM, ela deve:",
+      "options": [
+        "Manter rumo e velocidade até obter contato visual.",
+        "Reduzir a velocidade ao mínimo em que possa manter o rumo, retirar todo o seguimento se necessário e navegar com extrema cautela.",
+        "Guinar obrigatoriamente para bombordo, qualquer que seja a marcação estimada.",
+        "Aumentar a velocidade para atravessar rapidamente a área de risco."
+      ],
+      "correct": 1,
+      "explanation": "A Regra 19 determina redução ao mínimo de governo quando se ouve sinal de cerração aparentemente por ante-a-vante do través, salvo se já estiver afastado o risco. Se necessário, deve-se retirar todo o seguimento e navegar com extrema cautela.",
+      "comments": [
+        "Incorreta: a manutenção automática de rumo e velocidade é incompatível com o risco reconhecido em visibilidade restrita.",
+        "Correta: reproduz a sequência de cautela prevista na Regra 19(e).",
+        "Incorreta: a regra não prescreve guinada obrigatória para bombordo nessa situação.",
+        "Incorreta: aumentar velocidade amplia o risco e contraria a obrigação de navegar com segurança."
+      ],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "COLREG — Consolidated Edition 2018",
+        "edition": "Consolidated Edition 2018",
+        "section": "Parte B, Seção III — Regra 19(e)",
+        "syllabus": "Eixo III — RIPEAM · condução de embarcações em visibilidade restrita",
+        "evidence": "O texto consultado determina reduzir ao mínimo de governo, retirar todo o seguimento se necessário e navegar com extrema cautela quando se ouve sinal de cerração aparentemente por ante-a-vante do través e o risco não foi afastado.",
+        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
+      }
+    },
+    {
+      "id": "mon-c1-stopping-versus-coasting",
+      "category": "current",
+      "axis": "I",
+      "kind": "Conteúdo atual · capacidade de parada",
+      "stem": "Quanto aos conceitos empregados na análise da capacidade de parada, assinale a opção correta:",
+      "options": [
+        "Stopping e coasting são sinônimos e exigem máquina a toda força a ré.",
+        "Stopping é a desaceleração com aplicação de força a ré até parar; coasting é a parada sem empuxo a ré, podendo-se manter rotação avante mínima para governo.",
+        "Coasting é executado com toda força a ré, enquanto stopping ocorre apenas por resistência do casco.",
+        "Stopping mede somente o tempo, e coasting mede somente a distância transversal."
+      ],
+      "correct": 1,
+      "explanation": "Stopping envolve força a ré aplicada a partir de velocidade avante até a parada completa. Coasting é a desaceleração sem empuxo a ré, podendo haver rotação avante mínima apenas para conservar governo.",
+      "comments": [
+        "Incorreta: os conceitos distinguem justamente o emprego ou não de força a ré.",
+        "Correta: expressa as definições operacionais dos dois processos.",
+        "Incorreta: inverte as definições de stopping e coasting.",
+        "Incorreta: ambos podem ser avaliados por diversos índices de distância, tempo e rumo."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., 2021",
+        "section": "Capítulo 7, item 7.1 — Definições de stopping e coasting",
+        "syllabus": "Eixo I — Manobrabilidade · capacidade de parada",
+        "evidence": "O recorte consultado define stopping como desaceleração com força a ré até a parada e coasting como parada sem empuxo a ré, em geral com rotação avante mínima para manter governo.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
+    },
+    {
+      "id": "mon-c2-crash-stop-operational-trial",
+      "category": "current",
+      "axis": "I",
+      "kind": "Conteúdo atual · crash stop",
+      "stem": "A respeito da manobra de crash stop e de sua prova de mar, é correto afirmar que:",
+      "options": [
+        "No emprego operacional, crash stop só existe se iniciado exatamente na máxima velocidade de serviço.",
+        "A prova de crash stop parte de qualquer velocidade a ré e termina em toda força avante.",
+        "Operacionalmente, pode-se ordenar toda força a ré a partir de uma velocidade avante; na prova de mar, a manobra padronizada parte da máxima velocidade de cruzeiro ou de toda força avante.",
+        "A manobra é equivalente a deixar o navio perder seguimento sem usar máquina a ré."
+      ],
+      "correct": 2,
+      "explanation": "O uso operacional do crash stop pode ocorrer a partir de uma velocidade avante, normalmente em emergência. A prova de mar padroniza a condição inicial em máxima velocidade de cruzeiro ou toda força avante antes da reversão para toda força a ré.",
+      "comments": [
+        "Incorreta: a condição operacional não se limita à máxima velocidade de serviço.",
+        "Incorreta: a sequência está invertida; a prova parte de avanço e aplica força a ré.",
+        "Correta: distingue a aplicação operacional da condição padronizada de prova.",
+        "Incorreta: perder seguimento sem força a ré caracteriza coasting, não crash stop."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., 2021",
+        "section": "Capítulo 7, item 7.1 — Crash stop",
+        "syllabus": "Eixo I — Manobrabilidade · manobras de parada e provas de mar",
+        "evidence": "O recorte consultado diferencia o crash stop operacional, com aplicação de toda força a ré desde uma velocidade avante, da prova padronizada iniciada na máxima velocidade de cruzeiro ou em toda força avante.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
+    },
+    {
+      "id": "mon-c3-stopping-performance-indices",
+      "category": "current",
+      "axis": "I",
+      "kind": "Conteúdo atual · índices de desempenho na parada",
+      "stem": "Qual conjunto reúne os cinco índices usados para caracterizar o desempenho do navio em uma manobra de parada?",
+      "options": [
+        "Distância ao longo da trajetória, distância longitudinal, distância transversal, tempo até parar e desvio de rumo.",
+        "Avanço, diâmetro tático, abatimento, raio final e ângulo de deriva.",
+        "Tempo de máquina, rotação do hélice, potência, consumo e calado.",
+        "Somente distância longitudinal, tempo de parada, vento, corrente e profundidade."
+      ],
+      "correct": 0,
+      "explanation": "A parada é descrita por distância total ao longo da trajetória, componentes longitudinal e transversal, tempo decorrido até parar e alteração ou desvio do rumo.",
+      "comments": [
+        "Correta: reúne os cinco índices apresentados para avaliar a capacidade de parada.",
+        "Incorreta: mistura parâmetros típicos da curva de giro, não da parada.",
+        "Incorreta: são variáveis operacionais ou de máquina, não o conjunto de índices geométricos e temporais da parada.",
+        "Incorreta: omite índices essenciais e inclui condições ambientais."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., 2021",
+        "section": "Capítulo 7, item 7.2 — Índices de desempenho na parada",
+        "syllabus": "Eixo I — Manobrabilidade · avaliação da capacidade de parada",
+        "evidence": "O recorte consultado enumera cinco índices: distância ao longo da trajetória, componentes longitudinal e transversal, tempo até a parada completa e desvio do rumo.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
+    },
+    {
+      "id": "mon-t1-rule14-head-on-doubt",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Rotação · RIPEAM · situação de roda a roda",
+      "stem": "Duas embarcações de propulsão mecânica aproximam-se em rumos diretamente opostos ou quase diretamente opostos, com risco de colisão. Havendo dúvida razoável sobre a configuração, cada uma deve:",
+      "options": [
+        "Considerar que a situação existe, guinar para boreste e passar por bombordo da outra.",
+        "Considerar que é situação de rumos cruzados e manter rumo e velocidade.",
+        "Guinar para bombordo e passar por boreste da outra.",
+        "Parar imediatamente as máquinas, sem avaliar as circunstâncias."
+      ],
+      "correct": 0,
+      "explanation": "Na situação de roda a roda, cada embarcação deve guinar para boreste para que passem por bombordo uma da outra. Em caso de dúvida, a situação deve ser considerada existente.",
+      "comments": [
+        "Correta: combina a presunção em caso de dúvida com a manobra prescrita pela Regra 14.",
+        "Incorreta: a Regra 14 não autoriza reclassificar a situação como rumos cruzados para manter ação.",
+        "Incorreta: a guinada prescrita é para boreste, não para bombordo.",
+        "Incorreta: parar máquinas não é a manobra automática determinada para roda a roda."
+      ],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "COLREG — Consolidated Edition 2018",
+        "edition": "Consolidated Edition 2018",
+        "section": "Parte B, Seção II — Regra 14",
+        "syllabus": "Eixo III — RIPEAM · situação de roda a roda",
+        "evidence": "O texto consultado determina que, em roda a roda, ambas as embarcações de propulsão mecânica guinem para boreste e passem por bombordo; em caso de dúvida, presume-se que a situação existe.",
+        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
+      }
+    },
+    {
+      "id": "mon-t2-rule15-crossing-starboard",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Rotação · RIPEAM · rumos cruzados",
+      "stem": "Em situação de rumos cruzados com risco de colisão, uma embarcação de propulsão mecânica avista a outra por boreste. A ação regulamentar é:",
+      "options": [
+        "Manter rumo e velocidade porque a outra está por boreste.",
+        "Guinar para bombordo e cruzar pela proa da outra.",
+        "Manobrar para se manter fora do caminho, cedo e de forma substancial, evitando cruzar pela proa se as circunstâncias permitirem.",
+        "Emitir apenas cinco apitos curtos e aguardar a manobra da outra."
+      ],
+      "correct": 2,
+      "explanation": "Quem vê a outra embarcação por boreste é a embarcação que deve manter-se fora do caminho. Sua ação deve ser antecipada e substancial, evitando, se possível, cruzar pela proa da outra.",
+      "comments": [
+        "Incorreta: a embarcação que vê a outra por boreste é a obrigada a manobrar.",
+        "Incorreta: a Regra 15 recomenda evitar cruzar pela proa quando as circunstâncias permitirem.",
+        "Correta: reúne as obrigações das Regras 15 e 16.",
+        "Incorreta: sinal de dúvida não substitui a ação positiva para manter-se fora do caminho."
+      ],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "COLREG — Consolidated Edition 2018",
+        "edition": "Consolidated Edition 2018",
+        "section": "Parte B, Seção II — Regras 15 e 16",
+        "syllabus": "Eixo III — RIPEAM · rumos cruzados e ação da embarcação obrigada a manobrar",
+        "evidence": "O texto consultado atribui a obrigação de manter-se fora do caminho à embarcação que vê a outra por boreste, recomenda não cruzar pela proa e exige ação antecipada e substancial.",
+        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
+      }
+    },
+    {
+      "id": "mon-o1-pscpp2011-q35",
+      "category": "official",
+      "axis": "III",
+      "kind": "Questão oficial histórica · PSCPP 2011",
+      "stem": "Segundo Miguens, assinale a opção incorreta sobre os elementos e as características da curva de giro de um navio:",
+      "options": [
+        "Abatimento é o movimento do centro de gravidade do navio para o lado da curva, logo no início da guinada.",
+        "As características de manobra são determinadas durante as provas de mar realizadas após a construção ou modernização do navio.",
+        "Transferência é a distância percorrida pelo centro de gravidade na direção perpendicular ao rumo inicial, desde o começo da guinada até a proa atingir o novo rumo.",
+        "Avanço, diâmetro tático e transferência diminuem com o aumento do ângulo de leme.",
+        "O diâmetro final é sempre menor que o diâmetro tático."
+      ],
+      "correct": 0,
+      "explanation": "A alternativa A é incorreta: no início da guinada ocorre pequeno movimento do centro de gravidade para o bordo oposto ao da curva. As demais proposições correspondem às definições e relações apresentadas no recorte.",
+      "comments": [
+        "Incorreta e gabarito da questão: o abatimento inicial ocorre para o lado oposto ao da curva.",
+        "Correta: as provas de mar determinam as características de manobra após construção ou modernização.",
+        "Correta: define a transferência relativamente ao rumo inicial até o novo rumo considerado.",
+        "Correta: esses parâmetros tendem a diminuir quando aumenta o ângulo de leme.",
+        "Correta: o diâmetro final é apresentado como inferior ao diâmetro tático."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "Navegação: A Ciência e a Arte",
+        "edition": "Volumes I e III",
+        "section": "Volume I, Capítulo 8 — Curva de giro e seus elementos",
+        "syllabus": "Eixo III — Navegação · características de manobra e curva de giro",
+        "evidence": "A prova oficial consultada contém o enunciado e as cinco alternativas. O recorte bibliográfico define o abatimento inicial para o bordo oposto ao da curva, além de avanço, transferência, diâmetro tático e diâmetro final.",
+        "origin": "PSCPP 2011 — Prova Amarela, questão 35 — gabarito A — transcrição com atualização apenas ortográfica",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
       }
     }
   ]
