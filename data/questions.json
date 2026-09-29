@@ -1,329 +1,111 @@
 {
-  "roundId": "stopping-manoeuvres-colreg-2026-09-28",
-  "label": "Rodada de 28 de setembro de 2026",
-  "title": "Capacidade de parada, manobra e RIPEAM",
-  "publication": "2026-09-28",
-  "path": "manobrabilidade-parada-ripeam",
+  "roundId": "rudder-action-cyclones-2026-09-29",
+  "label": "Rodada de 29 de setembro de 2026",
+  "title": "Ação do leme e meteorologia de ciclones",
+  "publication": "2026-09-29",
+  "path": "acao-do-leme-ciclones",
   "method": "4–3–2–1",
-  "mixPlan": {
-    "review": 4,
-    "current": 3,
-    "rotation": 2,
-    "official": 1
-  },
+  "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
   "questions": [
     {
-      "id": "mon-r1-significant-wave-height-correction",
-      "category": "review",
-      "axis": "V",
-      "kind": "Revisão corretiva · nota 0 · altura significativa de onda",
-      "stem": "Em um registro simplificado, nove alturas de onda, em ordem crescente, foram: 2,0 m; 2,5 m; 3,0 m; 3,5 m; 4,0 m; 4,5 m; 5,0 m; 6,0 m; e 7,0 m. Pela definição estatística usual, a altura significativa desse conjunto é:",
-      "options": [
-        "4,0 m.",
-        "5,0 m.",
-        "6,0 m.",
-        "7,0 m."
-      ],
-      "correct": 2,
-      "explanation": "A altura significativa é a média do terço de maiores ondas. Em nove observações, tomam-se as três maiores: 5,0 m, 6,0 m e 7,0 m. A média é 6,0 m.",
-      "comments": [
-        "Incorreta: 4,0 m é a mediana do conjunto, não a média do terço superior.",
-        "Incorreta: 5,0 m é apenas a menor das três alturas selecionadas.",
-        "Correta: (5,0 + 6,0 + 7,0) ÷ 3 = 6,0 m.",
-        "Incorreta: 7,0 m é a maior onda individual, não a altura significativa."
-      ],
-      "reference": {
-        "referenceId": "V-04",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
-        "edition": "1. ed., 2021",
-        "section": "Capítulo 3 — Ondas irregulares · altura significativa",
-        "syllabus": "Eixo V — Oceanografia e navegação · ondas irregulares e parâmetros estatísticos",
-        "evidence": "O recorte consultado define a altura significativa como a média das alturas do terço de ondas mais altas de um registro.",
-        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
-      }
+      "id": "tue-r1-significant-wave-height-recovery",
+      "category": "review", "axis": "V", "kind": "Revisão corretiva · nota 0 · altura significativa de onda",
+      "stem": "Em um registro simplificado, seis alturas de onda, em ordem crescente, foram: 1,0 m; 2,0 m; 3,0 m; 4,0 m; 5,0 m; e 7,0 m. Pela definição estatística usual, a altura significativa desse conjunto é:",
+      "options": ["3,5 m.", "4,0 m.", "5,0 m.", "6,0 m."],
+      "correct": 3,
+      "explanation": "A altura significativa é a média do terço de maiores ondas. Em seis observações, selecionam-se as duas maiores, 5,0 m e 7,0 m; sua média é 6,0 m.",
+      "comments": ["Incorreta: 3,5 m é a média de todas as seis observações, não a média do terço superior.", "Incorreta: 4,0 m não resulta da seleção das duas maiores ondas.", "Incorreta: 5,0 m é uma das duas ondas selecionadas, mas não a média delas.", "Correta: (5,0 + 7,0) ÷ 2 = 6,0 m."],
+      "reference": {"referenceId": "V-04", "base": "Bibliografia oficial PSCPP", "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio", "edition": "1. ed., 2021", "section": "Capítulo 3 — Ondas irregulares · altura significativa", "syllabus": "Eixo V — Oceanografia e navegação · ondas irregulares e parâmetros estatísticos", "evidence": "O recorte consultado define a altura significativa como a média das alturas do terço de ondas mais altas de um registro.", "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"}
     },
     {
-      "id": "mon-r2-escort-indirect-direct-transition",
-      "category": "review",
-      "axis": "II",
-      "kind": "Revisão corretiva · nota 0 · reboque de escolta",
-      "stem": "Um rebocador de escolta atua pela popa de um navio que reduz a velocidade de 8 para cerca de 4 nós. Para conservar eficácia no controle, a conduta tecnicamente coerente é:",
-      "options": [
-        "Manter exclusivamente o modo indireto, pois sua força independe da velocidade do navio assistido.",
-        "Transitar do modo indireto para o direto, à medida que diminui a força hidrodinâmica disponível e passa a predominar o empuxo do rebocador.",
-        "Largar obrigatoriamente o cabo, porque nenhum modo de escolta é eficaz abaixo de 5 nós.",
-        "Colocar o rebocador transversalmente ao fluxo e dispensar o uso do propulsor."
-      ],
-      "correct": 1,
-      "explanation": "O modo indireto explora forças hidrodinâmicas e é empregado em velocidades mais elevadas. Com a redução da velocidade, essas forças diminuem; o modo direto, baseado sobretudo no empuxo do rebocador, torna-se apropriado.",
-      "comments": [
-        "Incorreta: a eficácia indireta depende do escoamento sobre o casco, a quilha e o skeg do rebocador.",
-        "Correta: corresponde à passagem do regime hidrodinâmico de maior velocidade para o emprego direto do empuxo em menor velocidade.",
-        "Incorreta: a queda de velocidade exige mudança de modo, não abandono automático da assistência.",
-        "Incorreta: essa posição amplia riscos e não substitui o controle ativo por propulsor e cabo."
-      ],
-      "reference": {
-        "referenceId": "II-09",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulo 4 — Escort towing · direct and indirect towing",
-        "syllabus": "Eixo II — Rebocadores · modos direto e indireto na escolta",
-        "evidence": "O recorte consultado situa o reboque direto em velocidades relativamente baixas e o indireto, que utiliza forças hidrodinâmicas no corpo submerso e no skeg, acima de aproximadamente 5 a 6 nós.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
-      }
-    },
-    {
-      "id": "mon-r3-first-overshoot-limit",
-      "category": "review",
-      "axis": "I",
-      "kind": "Revisão corretiva · nota 0 · primeiro overshoot",
-      "stem": "Em uma manobra de zigue-zague 10°/10°, um navio apresenta L/V = 18 s. Segundo o critério aplicável, o primeiro ângulo de overshoot não deve exceder:",
-      "options": [
-        "9°.",
-        "14°.",
-        "18°.",
-        "25°."
-      ],
-      "correct": 1,
-      "explanation": "Para 10 s ≤ L/V < 30 s, o limite do primeiro overshoot é 5° + 0,5(L/V). Com L/V = 18 s, o limite é 5° + 9° = 14°.",
-      "comments": [
-        "Incorreta: 9° corresponde apenas à parcela 0,5(L/V), sem somar os 5°.",
-        "Correta: 5 + 0,5 × 18 = 14°.",
-        "Incorreta: o valor de L/V não é usado diretamente como ângulo-limite.",
-        "Incorreta: excede o resultado previsto para a faixa intermediária de L/V."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., 2021",
-        "section": "Capítulo 5 — Manobra de zigue-zague · critérios de overshoot",
-        "syllabus": "Eixo I — Manobrabilidade · estabilidade direcional e manobra de zigue-zague",
-        "evidence": "O recorte consultado apresenta, para a manobra 10°/10°, o limite do primeiro overshoot de 5° + 0,5(L/V) quando 10 s ≤ L/V < 30 s.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
-    },
-    {
-      "id": "mon-r4-rule19-fog-signal-ahead",
-      "category": "review",
-      "axis": "III",
-      "kind": "Revisão corretiva · nota 0 · Regra 19",
-      "stem": "Em visibilidade restrita, uma embarcação detecta risco de colisão e ouve, aparentemente por ante-a-vante do través, o sinal de cerração de outra embarcação cuja posição não foi determinada. De acordo com o RIPEAM, ela deve:",
-      "options": [
-        "Manter rumo e velocidade até obter contato visual.",
-        "Reduzir a velocidade ao mínimo em que possa manter o rumo, retirar todo o seguimento se necessário e navegar com extrema cautela.",
-        "Guinar obrigatoriamente para bombordo, qualquer que seja a marcação estimada.",
-        "Aumentar a velocidade para atravessar rapidamente a área de risco."
-      ],
-      "correct": 1,
-      "explanation": "A Regra 19 determina redução ao mínimo de governo quando se ouve sinal de cerração aparentemente por ante-a-vante do través, salvo se já estiver afastado o risco. Se necessário, deve-se retirar todo o seguimento e navegar com extrema cautela.",
-      "comments": [
-        "Incorreta: a manutenção automática de rumo e velocidade é incompatível com o risco reconhecido em visibilidade restrita.",
-        "Correta: reproduz a sequência de cautela prevista na Regra 19(e).",
-        "Incorreta: a regra não prescreve guinada obrigatória para bombordo nessa situação.",
-        "Incorreta: aumentar velocidade amplia o risco e contraria a obrigação de navegar com segurança."
-      ],
-      "reference": {
-        "referenceId": "III-16",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "COLREG — Consolidated Edition 2018",
-        "edition": "Consolidated Edition 2018",
-        "section": "Parte B, Seção III — Regra 19(e)",
-        "syllabus": "Eixo III — RIPEAM · condução de embarcações em visibilidade restrita",
-        "evidence": "O texto consultado determina reduzir ao mínimo de governo, retirar todo o seguimento se necessário e navegar com extrema cautela quando se ouve sinal de cerração aparentemente por ante-a-vante do través e o risco não foi afastado.",
-        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
-      }
-    },
-    {
-      "id": "mon-c1-stopping-versus-coasting",
-      "category": "current",
-      "axis": "I",
-      "kind": "Conteúdo atual · capacidade de parada",
-      "stem": "Quanto aos conceitos empregados na análise da capacidade de parada, assinale a opção correta:",
-      "options": [
-        "Stopping e coasting são sinônimos e exigem máquina a toda força a ré.",
-        "Stopping é a desaceleração com aplicação de força a ré até parar; coasting é a parada sem empuxo a ré, podendo-se manter rotação avante mínima para governo.",
-        "Coasting é executado com toda força a ré, enquanto stopping ocorre apenas por resistência do casco.",
-        "Stopping mede somente o tempo, e coasting mede somente a distância transversal."
-      ],
-      "correct": 1,
-      "explanation": "Stopping envolve força a ré aplicada a partir de velocidade avante até a parada completa. Coasting é a desaceleração sem empuxo a ré, podendo haver rotação avante mínima apenas para conservar governo.",
-      "comments": [
-        "Incorreta: os conceitos distinguem justamente o emprego ou não de força a ré.",
-        "Correta: expressa as definições operacionais dos dois processos.",
-        "Incorreta: inverte as definições de stopping e coasting.",
-        "Incorreta: ambos podem ser avaliados por diversos índices de distância, tempo e rumo."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., 2021",
-        "section": "Capítulo 7, item 7.1 — Definições de stopping e coasting",
-        "syllabus": "Eixo I — Manobrabilidade · capacidade de parada",
-        "evidence": "O recorte consultado define stopping como desaceleração com força a ré até a parada e coasting como parada sem empuxo a ré, em geral com rotação avante mínima para manter governo.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
-    },
-    {
-      "id": "mon-c2-crash-stop-operational-trial",
-      "category": "current",
-      "axis": "I",
-      "kind": "Conteúdo atual · crash stop",
-      "stem": "A respeito da manobra de crash stop e de sua prova de mar, é correto afirmar que:",
-      "options": [
-        "No emprego operacional, crash stop só existe se iniciado exatamente na máxima velocidade de serviço.",
-        "A prova de crash stop parte de qualquer velocidade a ré e termina em toda força avante.",
-        "Operacionalmente, pode-se ordenar toda força a ré a partir de uma velocidade avante; na prova de mar, a manobra padronizada parte da máxima velocidade de cruzeiro ou de toda força avante.",
-        "A manobra é equivalente a deixar o navio perder seguimento sem usar máquina a ré."
-      ],
-      "correct": 2,
-      "explanation": "O uso operacional do crash stop pode ocorrer a partir de uma velocidade avante, normalmente em emergência. A prova de mar padroniza a condição inicial em máxima velocidade de cruzeiro ou toda força avante antes da reversão para toda força a ré.",
-      "comments": [
-        "Incorreta: a condição operacional não se limita à máxima velocidade de serviço.",
-        "Incorreta: a sequência está invertida; a prova parte de avanço e aplica força a ré.",
-        "Correta: distingue a aplicação operacional da condição padronizada de prova.",
-        "Incorreta: perder seguimento sem força a ré caracteriza coasting, não crash stop."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., 2021",
-        "section": "Capítulo 7, item 7.1 — Crash stop",
-        "syllabus": "Eixo I — Manobrabilidade · manobras de parada e provas de mar",
-        "evidence": "O recorte consultado diferencia o crash stop operacional, com aplicação de toda força a ré desde uma velocidade avante, da prova padronizada iniciada na máxima velocidade de cruzeiro ou em toda força avante.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
-    },
-    {
-      "id": "mon-c3-stopping-performance-indices",
-      "category": "current",
-      "axis": "I",
-      "kind": "Conteúdo atual · índices de desempenho na parada",
-      "stem": "Qual conjunto reúne os cinco índices usados para caracterizar o desempenho do navio em uma manobra de parada?",
-      "options": [
-        "Distância ao longo da trajetória, distância longitudinal, distância transversal, tempo até parar e desvio de rumo.",
-        "Avanço, diâmetro tático, abatimento, raio final e ângulo de deriva.",
-        "Tempo de máquina, rotação do hélice, potência, consumo e calado.",
-        "Somente distância longitudinal, tempo de parada, vento, corrente e profundidade."
-      ],
+      "id": "tue-r2-initial-kick-correction",
+      "category": "review", "axis": "III", "kind": "Revisão corretiva · nota 0 · leitura de curva de giro",
+      "stem": "Um navio em marcha a vante inicia uma curva de giro com leme a boreste. No instante inicial da evolução, antes de se estabelecer a curva, é correto afirmar que:",
+      "options": ["a proa guina para boreste e o centro de gravidade apresenta pequeno deslocamento inicial para bombordo.", "a proa guina para bombordo e o centro de gravidade desloca-se inicialmente para boreste.", "a proa e o centro de gravidade deslocam-se ambos inicialmente para boreste, sem abatimento oposto.", "o centro de gravidade permanece sobre a linha do rumo original até completar 90° de guinada."],
       "correct": 0,
-      "explanation": "A parada é descrita por distância total ao longo da trajetória, componentes longitudinal e transversal, tempo decorrido até parar e alteração ou desvio do rumo.",
-      "comments": [
-        "Correta: reúne os cinco índices apresentados para avaliar a capacidade de parada.",
-        "Incorreta: mistura parâmetros típicos da curva de giro, não da parada.",
-        "Incorreta: são variáveis operacionais ou de máquina, não o conjunto de índices geométricos e temporais da parada.",
-        "Incorreta: omite índices essenciais e inclui condições ambientais."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., 2021",
-        "section": "Capítulo 7, item 7.2 — Índices de desempenho na parada",
-        "syllabus": "Eixo I — Manobrabilidade · avaliação da capacidade de parada",
-        "evidence": "O recorte consultado enumera cinco índices: distância ao longo da trajetória, componentes longitudinal e transversal, tempo até a parada completa e desvio do rumo.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
+      "explanation": "Ao carregar o leme a boreste, a proa guina para boreste; no início, a ação transversal que desloca a popa produz um pequeno movimento lateral do centro de gravidade para o bordo oposto, bombordo, chamado abatimento inicial ou kick.",
+      "comments": ["Correta: distingue a guinada da proa do pequeno abatimento inicial do centro de gravidade para o bordo oposto.", "Incorreta: inverte tanto o sentido da guinada quanto o do abatimento inicial.", "Incorreta: confunde o bordo da guinada com o sentido do deslocamento transversal inicial do centro de gravidade.", "Incorreta: o abatimento inicial ocorre no começo da evolução, não somente após 90°."],
+      "reference": {"referenceId": "III-02", "base": "Bibliografia oficial PSCPP", "publication": "Navegação: A Ciência e a Arte, volume I — Navegação Costeira, Estimada e em Águas Restritas", "edition": "DHN", "section": "Curva de giro · avanço, afastamento e abatimento inicial", "syllabus": "Eixo III — Navegação em águas restritas · elementos da curva de giro", "evidence": "O recorte consultado descreve a trajetória do centro de gravidade na curva de giro e identifica o abatimento inicial para o bordo oposto ao da guinada.", "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"}
     },
     {
-      "id": "mon-t1-rule14-head-on-doubt",
-      "category": "rotation",
-      "axis": "III",
-      "kind": "Rotação · RIPEAM · situação de roda a roda",
-      "stem": "Duas embarcações de propulsão mecânica aproximam-se em rumos diretamente opostos ou quase diretamente opostos, com risco de colisão. Havendo dúvida razoável sobre a configuração, cada uma deve:",
-      "options": [
-        "Considerar que a situação existe, guinar para boreste e passar por bombordo da outra.",
-        "Considerar que é situação de rumos cruzados e manter rumo e velocidade.",
-        "Guinar para bombordo e passar por boreste da outra.",
-        "Parar imediatamente as máquinas, sem avaliar as circunstâncias."
-      ],
-      "correct": 0,
-      "explanation": "Na situação de roda a roda, cada embarcação deve guinar para boreste para que passem por bombordo uma da outra. Em caso de dúvida, a situação deve ser considerada existente.",
-      "comments": [
-        "Correta: combina a presunção em caso de dúvida com a manobra prescrita pela Regra 14.",
-        "Incorreta: a Regra 14 não autoriza reclassificar a situação como rumos cruzados para manter ação.",
-        "Incorreta: a guinada prescrita é para boreste, não para bombordo.",
-        "Incorreta: parar máquinas não é a manobra automática determinada para roda a roda."
-      ],
-      "reference": {
-        "referenceId": "III-16",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "COLREG — Consolidated Edition 2018",
-        "edition": "Consolidated Edition 2018",
-        "section": "Parte B, Seção II — Regra 14",
-        "syllabus": "Eixo III — RIPEAM · situação de roda a roda",
-        "evidence": "O texto consultado determina que, em roda a roda, ambas as embarcações de propulsão mecânica guinem para boreste e passem por bombordo; em caso de dúvida, presume-se que a situação existe.",
-        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
-      }
+      "id": "tue-r3-wave-celerity-recovery",
+      "category": "review", "axis": "V", "kind": "Revisão FSRS vencida · nota 0 · celeridade",
+      "stem": "Uma onda regular tem comprimento de 180 m e período de 15 s. Sua celeridade é:",
+      "options": ["10 m/s.", "12 m/s.", "15 m/s.", "2.700 m/s."],
+      "correct": 1,
+      "explanation": "A celeridade é a razão entre o comprimento de onda e o período: c = λ/T = 180/15 = 12 m/s.",
+      "comments": ["Incorreta: 10 m/s não resulta da divisão de 180 m por 15 s.", "Correta: 180 ÷ 15 = 12 m/s.", "Incorreta: 15 s é o período informado, não a velocidade de propagação.", "Incorreta: 2.700 decorre de multiplicar comprimento por período, operação incompatível com a definição de celeridade."],
+      "reference": {"referenceId": "V-04", "base": "Bibliografia oficial PSCPP", "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio", "edition": "1. ed., 2021", "section": "Capítulo 2 — Ondas regulares · período, comprimento e celeridade", "syllabus": "Eixo V — Oceanografia e navegação · cinemática das ondas", "evidence": "O recorte consultado relaciona a celeridade ao comprimento de onda dividido pelo período, c = λ/T.", "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"}
     },
     {
-      "id": "mon-t2-rule15-crossing-starboard",
-      "category": "rotation",
-      "axis": "III",
-      "kind": "Rotação · RIPEAM · rumos cruzados",
-      "stem": "Em situação de rumos cruzados com risco de colisão, uma embarcação de propulsão mecânica avista a outra por boreste. A ação regulamentar é:",
-      "options": [
-        "Manter rumo e velocidade porque a outra está por boreste.",
-        "Guinar para bombordo e cruzar pela proa da outra.",
-        "Manobrar para se manter fora do caminho, cedo e de forma substancial, evitando cruzar pela proa se as circunstâncias permitirem.",
-        "Emitir apenas cinco apitos curtos e aguardar a manobra da outra."
-      ],
+      "id": "tue-r4-rao-linear-response-recovery",
+      "category": "review", "axis": "V", "kind": "Revisão FSRS vencida · nota 1 · RAO",
+      "stem": "No regime linear, para uma mesma frequência e rumo relativo, a amplitude da onda incidente é duplicada, sem alteração da RAO do movimento considerado. A amplitude da resposta do navio e a energia espectral associada a essa componente passam, respectivamente, a:",
+      "options": ["metade e um quarto.", "o dobro e o dobro.", "o dobro e quatro vezes o valor inicial.", "quatro vezes e quatro vezes o valor inicial."],
       "correct": 2,
-      "explanation": "Quem vê a outra embarcação por boreste é a embarcação que deve manter-se fora do caminho. Sua ação deve ser antecipada e substancial, evitando, se possível, cruzar pela proa da outra.",
-      "comments": [
-        "Incorreta: a embarcação que vê a outra por boreste é a obrigada a manobrar.",
-        "Incorreta: a Regra 15 recomenda evitar cruzar pela proa quando as circunstâncias permitirem.",
-        "Correta: reúne as obrigações das Regras 15 e 16.",
-        "Incorreta: sinal de dúvida não substitui a ação positiva para manter-se fora do caminho."
-      ],
-      "reference": {
-        "referenceId": "III-16",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "COLREG — Consolidated Edition 2018",
-        "edition": "Consolidated Edition 2018",
-        "section": "Parte B, Seção II — Regras 15 e 16",
-        "syllabus": "Eixo III — RIPEAM · rumos cruzados e ação da embarcação obrigada a manobrar",
-        "evidence": "O texto consultado atribui a obrigação de manter-se fora do caminho à embarcação que vê a outra por boreste, recomenda não cruzar pela proa e exige ação antecipada e substancial.",
-        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
-      }
+      "explanation": "Na hipótese linear, a amplitude da resposta é proporcional à amplitude da onda; portanto, dobra. Como a energia espectral é proporcional ao quadrado da amplitude, passa a quatro vezes o valor inicial.",
+      "comments": ["Incorreta: inverte o efeito do aumento da amplitude incidente.", "Incorreta: acerta a amplitude da resposta, mas não o crescimento quadrático da energia.", "Correta: a resposta em amplitude dobra e a energia, proporcional ao quadrado, quadruplica.", "Incorreta: a amplitude da resposta não quadruplica em um modelo linear."],
+      "reference": {"referenceId": "V-04", "base": "Bibliografia oficial PSCPP", "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio", "edition": "1. ed., 2021", "section": "Capítulos 5 e 6 — resposta linear do navio e operador de amplitude de resposta", "syllabus": "Eixo V — Oceanografia e navegação · movimentos do navio em ondas", "evidence": "O recorte consultado apresenta a RAO como relação linear entre amplitude da resposta e amplitude da onda; no domínio espectral, a densidade de resposta envolve o quadrado do módulo da RAO.", "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"}
     },
     {
-      "id": "mon-o1-pscpp2011-q35",
-      "category": "official",
-      "axis": "III",
-      "kind": "Questão oficial histórica · PSCPP 2011",
-      "stem": "Segundo Miguens, assinale a opção incorreta sobre os elementos e as características da curva de giro de um navio:",
-      "options": [
-        "Abatimento é o movimento do centro de gravidade do navio para o lado da curva, logo no início da guinada.",
-        "As características de manobra são determinadas durante as provas de mar realizadas após a construção ou modernização do navio.",
-        "Transferência é a distância percorrida pelo centro de gravidade na direção perpendicular ao rumo inicial, desde o começo da guinada até a proa atingir o novo rumo.",
-        "Avanço, diâmetro tático e transferência diminuem com o aumento do ângulo de leme.",
-        "O diâmetro final é sempre menor que o diâmetro tático."
-      ],
+      "id": "tue-c1-rudder-ahead-effects",
+      "category": "current", "axis": "II", "kind": "Conteúdo atual · ação do leme em marcha a vante",
+      "stem": "Um navio está em marcha a vante e o leme é carregado a bombordo. Desprezando os demais fatores, inclusive o hélice, qual sequência descreve corretamente os efeitos iniciais da ação do leme?",
+      "options": ["A proa guina para bombordo, a velocidade diminui e ocorre ligeiro abatimento para boreste.", "A proa guina para boreste, a velocidade aumenta e ocorre abatimento para bombordo.", "A popa guina para bombordo, a velocidade permanece constante e não há abatimento.", "A proa mantém o rumo, a velocidade diminui e a popa desloca-se para bombordo."],
       "correct": 0,
-      "explanation": "A alternativa A é incorreta: no início da guinada ocorre pequeno movimento do centro de gravidade para o bordo oposto ao da curva. As demais proposições correspondem às definições e relações apresentadas no recorte.",
-      "comments": [
-        "Incorreta e gabarito da questão: o abatimento inicial ocorre para o lado oposto ao da curva.",
-        "Correta: as provas de mar determinam as características de manobra após construção ou modernização.",
-        "Correta: define a transferência relativamente ao rumo inicial até o novo rumo considerado.",
-        "Correta: esses parâmetros tendem a diminuir quando aumenta o ângulo de leme.",
-        "Correta: o diâmetro final é apresentado como inferior ao diâmetro tático."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Navegação: A Ciência e a Arte",
-        "edition": "Volumes I e III",
-        "section": "Volume I, Capítulo 8 — Curva de giro e seus elementos",
-        "syllabus": "Eixo III — Navegação · características de manobra e curva de giro",
-        "evidence": "A prova oficial consultada contém o enunciado e as cinco alternativas. O recorte bibliográfico define o abatimento inicial para o bordo oposto ao da curva, além de avanço, transferência, diâmetro tático e diâmetro final.",
-        "origin": "PSCPP 2011 — Prova Amarela, questão 35 — gabarito A — transcrição com atualização apenas ortográfica",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
+      "explanation": "Em marcha a vante, o leme carregado a bombordo faz a proa guinar para bombordo; a componente longitudinal da pressão aumenta a resistência e reduz a velocidade, enquanto a popa é empurrada para boreste, produzindo ligeiro abatimento para esse bordo.",
+      "comments": ["Correta: reúne os três efeitos indicados no recorte — guinada para o bordo do leme, redução da velocidade e abatimento oposto.", "Incorreta: inverte o sentido da guinada e supõe aumento de velocidade apesar da resistência adicional.", "Incorreta: a popa é deslocada para o bordo oposto ao leme, e a velocidade se reduz.", "Incorreta: a proa não mantém o rumo após a aplicação do leme."],
+      "reference": {"referenceId": "II-01", "base": "Bibliografia oficial PSCPP", "publication": "Arte Naval, volume I", "edition": "8. ed., Marinha do Brasil, 2019", "section": "Capítulo 12, seção A, item 12.2 — Efeito do leme", "syllabus": "Eixo II — Arte Naval · manobra do navio e ação do leme", "evidence": "O recorte consultado afirma que, em marcha a vante, a proa guina para o bordo do leme, a velocidade diminui e há ligeiro abatimento para o bordo oposto.", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"}
+    },
+    {
+      "id": "tue-c2-rudder-astern-effects",
+      "category": "current", "axis": "II", "kind": "Conteúdo atual · ação do leme em marcha a ré",
+      "stem": "Um navio está dando atrás e o leme é carregado a boreste. Desprezando o efeito do hélice, a tendência produzida pelo leme é:",
+      "options": ["a popa guinar para boreste e a proa para bombordo, com ação evolutiva menor que em marcha a vante à mesma velocidade.", "a popa guinar para bombordo e a proa para boreste, com ação maior que em marcha a vante.", "a proa e a popa deslocarem-se ambas para boreste, sem rotação do navio.", "a proa guinar para boreste, exatamente como em marcha a vante, com igual eficácia."],
+      "correct": 0,
+      "explanation": "Em marcha a ré, a pressão sobre a porta do leme obriga a popa a guinar para o bordo do leme; logo, a proa vai para o bordo oposto. O recorte também registra que a ação evolutiva a ré é muito menor que a vante para a mesma velocidade.",
+      "comments": ["Correta: popa para boreste, proa para bombordo e menor autoridade evolutiva a ré.", "Incorreta: inverte o sentido das guinadas e superestima a eficácia em marcha a ré.", "Incorreta: a ação do leme gera momento de guinada, não simples translação lateral do casco inteiro.", "Incorreta: o efeito em marcha a ré é oposto e menos intenso que em marcha a vante."],
+      "reference": {"referenceId": "II-01", "base": "Bibliografia oficial PSCPP", "publication": "Arte Naval, volume I", "edition": "8. ed., Marinha do Brasil, 2019", "section": "Capítulo 12, seção A, item 12.2 — Efeito do leme", "syllabus": "Eixo II — Arte Naval · manobra do navio e ação do leme", "evidence": "O recorte consultado explica que, em marcha a ré, a popa guina para o bordo do leme e a proa para o bordo oposto; a ação evolutiva é muito menor que em marcha a vante para a mesma velocidade.", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"}
+    },
+    {
+      "id": "tue-c3-rudder-pressure-speed-square",
+      "category": "current", "axis": "II", "kind": "Conteúdo atual · pressão normal no leme",
+      "stem": "Mantidos o ângulo, a área e a forma do leme, bem como a forma da popa, a velocidade dos filetes líquidos sobre o leme é reduzida à metade. Pela relação indicada em Arte Naval, a pressão normal no leme passa aproximadamente a:",
+      "options": ["metade do valor inicial.", "um quarto do valor inicial.", "o dobro do valor inicial.", "quatro vezes o valor inicial."],
+      "correct": 1,
+      "explanation": "A pressão normal varia com o quadrado da velocidade. Reduzindo a velocidade à metade, o fator é (1/2)² = 1/4.",
+      "comments": ["Incorreta: trataria a dependência como linear, mas ela é quadrática.", "Correta: metade da velocidade produz um quarto da pressão normal, mantidas as demais condições.", "Incorreta: reduzir a velocidade não duplica a pressão.", "Incorreta: quatro vezes seria o efeito de duplicar, e não reduzir à metade, a velocidade."],
+      "reference": {"referenceId": "II-01", "base": "Bibliografia oficial PSCPP", "publication": "Arte Naval, volume I", "edition": "8. ed., Marinha do Brasil, 2019", "section": "Capítulo 12, seção A, item 12.2 — Efeito do leme", "syllabus": "Eixo II — Arte Naval · fatores que influem na ação do leme", "evidence": "O recorte consultado informa que a pressão normal depende do ângulo, da velocidade dos filetes, da área do leme e da forma da popa, e varia com o quadrado da velocidade do navio.", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"}
+    },
+    {
+      "id": "tue-t1-tropical-cyclone-classification",
+      "category": "rotation", "axis": "V", "kind": "Rotação · meteorologia · classificação de ciclones tropicais",
+      "stem": "Um ciclone tropical apresenta vento máximo sustentado à superfície de 50 nós, medido como média de um minuto. Segundo a classificação do recorte consultado, o sistema é uma:",
+      "options": ["depressão tropical.", "tempestade tropical.", "tempestade subtropical, necessariamente.", "furacão."],
+      "correct": 1,
+      "explanation": "Para ciclones tropicais, tempestade tropical corresponde a vento máximo sustentado igual ou superior a 34 nós e inferior a 64 nós. Cinquenta nós situa-se nesse intervalo.",
+      "comments": ["Incorreta: depressão tropical tem vento sustentado inferior a 34 nós.", "Correta: 50 nós está no intervalo de 34 nós, inclusive, a 64 nós, exclusive.", "Incorreta: a intensidade, isoladamente, não transforma um sistema tropical em subtropical.", "Incorreta: furacão exige vento sustentado igual ou superior a 64 nós."],
+      "reference": {"referenceId": "V-01", "base": "Bibliografia oficial PSCPP", "publication": "Navegação: A Ciência e a Arte, volume III — Navegação Eletrônica e em Condições Especiais", "edition": "DHN", "section": "Capítulo 45 — Noções de Meteorologia para Navegantes · ciclones tropicais", "syllabus": "Eixo V — Meteorologia · sistemas de pressão e ciclones", "evidence": "O recorte consultado classifica o ciclone tropical, pela média de um minuto do vento máximo sustentado, em depressão abaixo de 34 nós, tempestade de 34 a menos de 64 nós e furacão a partir de 64 nós.", "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"}
+    },
+    {
+      "id": "tue-t2-tropical-extratropical-distinction",
+      "category": "rotation", "axis": "V", "kind": "Rotação · meteorologia · natureza dos ciclones",
+      "stem": "Assinale a opção que distingue corretamente um ciclone tropical de um ciclone extratropical no recorte meteorológico consultado:",
+      "options": ["O tropical tem núcleo quente e não está associado a sistema frontal; o extratropical obtém energia principalmente do contraste horizontal de temperatura e geralmente se associa a frentes.", "O tropical tem núcleo frio e nasce sempre em frentes; o extratropical tem núcleo quente e convecção simétrica.", "Ambos são definidos apenas pela velocidade máxima do vento, sem relação com estrutura térmica ou frentes.", "O extratropical somente pode ocorrer entre os trópicos, enquanto o tropical se forma exclusivamente em altas latitudes."],
+      "correct": 0,
+      "explanation": "O ciclone tropical é descrito como centro de baixa pressão de núcleo quente, não frontal, originado sobre águas tropicais ou subtropicais. O extratropical extrai energia sobretudo do contraste horizontal de temperatura e costuma estar ligado a sistema frontal.",
+      "comments": ["Correta: reproduz os critérios estruturais e energéticos que diferenciam os dois tipos.", "Incorreta: troca as características de núcleo e a associação frontal.", "Incorreta: a classificação não se limita à intensidade do vento; estrutura térmica e relação com frentes são essenciais.", "Incorreta: inverte as regiões de formação típicas."],
+      "reference": {"referenceId": "V-01", "base": "Bibliografia oficial PSCPP", "publication": "Navegação: A Ciência e a Arte, volume III — Navegação Eletrônica e em Condições Especiais", "edition": "DHN", "section": "Capítulo 45 — Noções de Meteorologia para Navegantes · tipos de ciclone", "syllabus": "Eixo V — Meteorologia · sistemas de pressão e ciclones", "evidence": "O recorte consultado define o ciclone tropical como sistema de núcleo quente e não frontal e o extratropical como sistema cuja energia provém principalmente do contraste horizontal de temperatura, em geral associado a frentes.", "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"}
+    },
+    {
+      "id": "tue-o1-pscpp2011-q25",
+      "category": "official", "axis": "II", "kind": "Questão oficial histórica · PSCPP 2011 · questão 25",
+      "stem": "Assinale a opção incorreta. De acordo com Arte Naval, no estudo das curvas e dos efeitos do leme sobre os navios:",
+      "options": ["Quando se dá o leme para um bordo, com o navio dando adiante, a proa guina para esse bordo, a velocidade diminui, o navio abate para fora da curva, forma um ângulo de abatimento e pode tomar uma inclinação.", "O avanço diminui à medida que aumenta o ângulo do leme e aumenta com a velocidade do navio.", "O tempo de evolução diminui à medida que aumentam o ângulo do leme e a velocidade do navio.", "O ângulo de abatimento aumenta com o ângulo do leme, mas diminui com o aumento da velocidade do navio.", "A velocidade angular é inicialmente nula, atinge o máximo antes de a proa girar 90° e depois se torna aproximadamente constante; em geral, o primeiro quadrante é percorrido em menos tempo que cada um dos seguintes."],
+      "correct": 3,
+      "explanation": "A opção D é a incorreta. O recorte de Arte Naval afirma que o ângulo de abatimento aumenta com o ângulo do leme e com a diminuição do calado, mas independe da velocidade do navio.",
+      "comments": ["Correta como afirmação doutrinária: reúne os efeitos descritos para o leme com o navio dando adiante.", "Correta como afirmação doutrinária: o avanço diminui com maior ângulo de leme e aumenta com a velocidade.", "Correta como afirmação doutrinária: maior ângulo de leme e maior velocidade reduzem o tempo de evolução.", "Incorreta — gabarito da prova: o ângulo de abatimento é apresentado como independente da velocidade do navio.", "Correta como afirmação doutrinária: descreve a evolução típica da velocidade angular ao longo da curva."],
+      "reference": {"referenceId": "II-01", "base": "Bibliografia oficial PSCPP e prova oficial histórica", "publication": "Arte Naval, volume I", "edition": "8. ed., Marinha do Brasil, 2019", "section": "Capítulo 12, item 12.56.3 — Considerações práticas sobre a curva de giro", "syllabus": "Eixo II — Arte Naval · curva de giro e efeitos do leme", "evidence": "O recorte consultado informa que o ângulo de abatimento aumenta com o ângulo do leme e com a diminuição do calado, mas independe da velocidade do navio; isso torna incorreta a opção D.", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view", "origin": {"exam": "PSCPP 2011", "year": 2011, "question": 25, "answer": "D", "adaptation": "Transcrição com atualização ortográfica e supressão de repetição tipográfica na opção C, sem alteração da solução.", "url": "https://drive.google.com/file/d/1Fdz2o1xtzIkg1KONqP95HemlINDJcv_1/view"}}
     }
   ]
 }
