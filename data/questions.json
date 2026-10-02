@@ -1,9 +1,9 @@
 {
-  "roundId": "pilotage-procedures-smcp-corrections-2026-10-01",
-  "label": "Rodada de 1º de outubro de 2026",
-  "title": "Procedimentos de praticagem, SMCP e correção meteorológica",
-  "publication": "2026-10-01",
-  "path": "procedimentos-praticagem-smcp-correcoes",
+  "roundId": "tidal-currents-manoeuvring-waves-2026-10-02",
+  "label": "Rodada de 2 de outubro de 2026",
+  "title": "Correntes de maré, manobra sob corrente e correções de ondas",
+  "publication": "2026-10-02",
+  "path": "correntes-mare-manobra-ondas",
   "method": "4–3–2–1",
   "mixPlan": {
     "review": 4,
@@ -13,322 +13,322 @@
   },
   "questions": [
     {
-      "id": "thu-r1-tropical-cyclone-threshold-immediate-correction",
+      "id": "fri-r1-wave-celerity-depth-recovery",
       "category": "review",
       "axis": "V",
-      "kind": "Revisão corretiva imediata · nota 0 · leitura de limite",
-      "stem": "Dois ciclones tropicais apresentam ventos máximos sustentados de 63 nós e 64 nós, respectivamente. Segundo a classificação meteorológica indicada na bibliografia, eles são classificados, nessa ordem, como:",
+      "kind": "Revisão FSRS vencida · nota 0 · celeridade de onda",
+      "stem": "Na teoria linear de ondas, considerando uma frequência angular definida e profundidade uniforme, qual afirmação descreve corretamente a relação de dispersão?",
       "options": [
-        "Duas depressões tropicais.",
-        "Uma depressão tropical e uma tempestade tropical.",
-        "Uma tempestade tropical e um furacão.",
-        "Dois furacões."
-      ],
-      "correct": 2,
-      "explanation": "A tempestade tropical abrange ventos de 34 nós até menos de 64 nós. A partir de 64 nós, o ciclone recebe a classificação de furacão; portanto, 63 nós ainda é tempestade tropical e 64 nós já é furacão.",
-      "comments": [
-        "Incorreta: depressão tropical corresponde a ventos inferiores a 34 nós.",
-        "Incorreta: 63 nós está na faixa de tempestade tropical, não de depressão.",
-        "Correta: 63 nós permanece abaixo do limiar de 64 nós; 64 nós alcança o limiar de furacão.",
-        "Incorreta: somente o segundo caso, com 64 nós, atinge o limiar de furacão."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45 — Noções de Meteorologia para Navegantes · ciclones tropicais",
-        "syllabus": "Eixo V — Meteorologia · classificação dos ciclones tropicais pela intensidade do vento",
-        "evidence": "O recorte consultado classifica como depressão tropical o sistema com vento inferior a 34 nós, como tempestade tropical aquele com vento de 34 até menos de 64 nós e como furacão aquele com vento igual ou superior a 64 nós.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
-      }
-    },
-    {
-      "id": "thu-r2-smcp-rudder-angle-exception",
-      "category": "review",
-      "axis": "VI",
-      "kind": "Revisão FSRS vencida · nota 0 · pronúncia numérica",
-      "stem": "Durante uma ordem de leme em inglês padronizado, o prático determina quinze graus a bombordo. A forma compatível com as SMCP é:",
-      "options": [
-        "Port one five.",
-        "Port fifteen.",
-        "Left one five degrees.",
-        "Rudder port decimal one five."
-      ],
-      "correct": 1,
-      "explanation": "Nas SMCP, os algarismos normalmente são pronunciados separadamente, mas os ângulos de leme nas ordens ao timoneiro constituem exceção: o número é dito por inteiro. Assim, quinze é pronunciado “fifteen”.",
-      "comments": [
-        "Incorreta: a leitura dígito a dígito é a regra geral, mas não se aplica aos ângulos de leme nas ordens ao timoneiro.",
-        "Correta: “Port fifteen” emprega a ordem e a exceção numérica padronizadas.",
-        "Incorreta: “left” não substitui “port” na frase padronizada de ordem de leme.",
-        "Incorreta: não há número decimal nessa ordem e a construção não corresponde à frase padronizada."
-      ],
-      "reference": {
-        "referenceId": "VI-01",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "A.918(22), 2001",
-        "section": "General — Spelling; Numbers; Wheel orders",
-        "syllabus": "Eixo VI — Comunicações · SMCP, números e ordens de leme",
-        "evidence": "O recorte consultado determina a pronúncia separada dos algarismos em geral e estabelece que os ângulos de leme nas ordens ao timoneiro sejam pronunciados como números inteiros, exemplificando “Fifteen”.",
-        "url": "https://drive.google.com/file/d/1nEnUGi3L9FcPy42aOtSPRoTLmKcqQZtU/view"
-      }
-    },
-    {
-      "id": "thu-r3-smcp-correction-procedure",
-      "category": "review",
-      "axis": "VI",
-      "kind": "Revisão FSRS vencida · comunicação fechada · correção",
-      "stem": "Após transmitir uma informação incorreta em inglês, o oficial percebe o erro antes de concluir a troca. De acordo com as SMCP, ele deve:",
-      "options": [
-        "Dizer “Say again” e repetir toda a mensagem desde o início.",
-        "Dizer somente “Correction” e aguardar que o interlocutor identifique o trecho errado.",
-        "Dizer “Mistake”, seguido de “Correction” e do trecho corrigido.",
-        "Dizer “Repeat” e transmitir apenas a palavra que antecedeu o erro."
-      ],
-      "correct": 2,
-      "explanation": "O procedimento padronizado para corrigir uma transmissão própria é anunciar “Mistake”, depois “Correction” e então transmitir a parte correta.",
-      "comments": [
-        "Incorreta: “Say again” solicita repetição ao interlocutor; não é a fórmula de correção do próprio erro.",
-        "Incorreta: a fórmula inclui a indicação de erro e o conteúdo corrigido, não apenas “Correction”.",
-        "Correta: a sequência explicita o erro e apresenta imediatamente o trecho correto.",
-        "Incorreta: “Repeat” é empregado para repetição de conteúdo, não para substituir o procedimento de correção."
-      ],
-      "reference": {
-        "referenceId": "VI-01",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "A.918(22), 2001",
-        "section": "General — Corrections; Repetition",
-        "syllabus": "Eixo VI — Comunicações · correção e repetição nas SMCP",
-        "evidence": "O recorte consultado prescreve que o emissor anuncie “Mistake”, em seguida “Correction”, e então transmita a parte corrigida; distingue esse procedimento das expressões usadas para solicitar repetição.",
-        "url": "https://drive.google.com/file/d/1nEnUGi3L9FcPy42aOtSPRoTLmKcqQZtU/view"
-      }
-    },
-    {
-      "id": "thu-r4-colreg-underway-without-making-way",
-      "category": "review",
-      "axis": "III",
-      "kind": "Revisão FSRS vencida · nota 0 · definição RIPEAM",
-      "stem": "Uma embarcação está com máquinas paradas, sem seguimento através da água, mas não está fundeada, amarrada à terra nem encalhada. Para os efeitos do RIPEAM, ela se encontra:",
-      "options": [
-        "Em movimento, embora sem seguimento através da água.",
-        "Fundeada, porque não apresenta velocidade sobre o fundo.",
-        "Encalhada, porque não apresenta seguimento através da água.",
-        "Fora do âmbito do termo “em movimento” até voltar a usar a máquina."
+        "A frequência e a profundidade determinam uma única solução para o número de onda; por isso, comprimento e celeridade dependem da profundidade.",
+        "A celeridade é constante em qualquer profundidade, tal como ocorre com a velocidade da luz no vácuo.",
+        "O número de onda independe da profundidade e varia apenas com a altura significativa.",
+        "Ondas de períodos diferentes propagam-se sempre com a mesma celeridade."
       ],
       "correct": 0,
-      "explanation": "“Em movimento” é a condição da embarcação que não está fundeada, amarrada à terra ou encalhada. Ter ou não seguimento através da água é questão distinta; portanto, a embarcação descrita permanece em movimento, mas sem seguimento.",
+      "explanation": "Para valores definidos de frequência angular e profundidade, a relação de dispersão fornece uma única solução para o número de onda. Como o comprimento de onda se relaciona com esse número e a celeridade com frequência e comprimento, ambos variam com a profundidade.",
       "comments": [
-        "Correta: a situação satisfaz a definição de “em movimento”, embora não haja seguimento através da água.",
-        "Incorreta: fundeio depende de a embarcação estar presa ao fundo por âncora, não de sua velocidade sobre o fundo.",
-        "Incorreta: encalhe pressupõe contato e imobilização no fundo, fato não indicado no enunciado.",
-        "Incorreta: o uso da máquina não integra a definição de “em movimento”."
+        "Correta: o recorte relaciona frequência, profundidade e número de onda e conclui que comprimento e celeridade dependem da profundidade.",
+        "Incorreta: a obra contrasta expressamente as ondas do mar com ondas eletromagnéticas, cuja velocidade é constante.",
+        "Incorreta: o número de onda está ligado à frequência e à profundidade, não à altura significativa isoladamente.",
+        "Incorreta: ondas de períodos diferentes podem propagar-se com celeridades diferentes."
       ],
       "reference": {
-        "referenceId": "III-16",
+        "referenceId": "V-04",
         "base": "Bibliografia oficial PSCPP",
-        "publication": "COLREG - Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte A — Regra 3(i), Definições Gerais",
-        "syllabus": "Eixo III — RIPEAM · definições de em movimento e com seguimento",
-        "evidence": "O recorte consultado define “em movimento” como a condição de toda embarcação que não esteja fundeada, amarrada à terra ou encalhada; a definição não exige seguimento através da água.",
-        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
+        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 1, §1.12 — relação de dispersão e celeridade",
+        "syllabus": "Eixo V — Oceanografia · ondas, comprimento e celeridade",
+        "evidence": "O recorte consultado afirma que, para valores únicos de frequência angular e profundidade, existe uma única solução do número de onda, e conclui que número de onda, comprimento e celeridade dependem da profundidade; ondas de períodos diferentes propagam-se com velocidades diferentes.",
+        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
       }
     },
     {
-      "id": "thu-c1-pilot-presence-shared-responsibility",
-      "category": "current",
-      "axis": "IV",
-      "kind": "Conteúdo atual · procedimentos operacionais de praticagem",
-      "stem": "Durante a praticagem, o prático está a bordo e conduz a navegação em uma passagem restrita. À luz da Resolução IMO A.960(23), é correto afirmar que:",
+      "id": "fri-r2-response-spectrum-rao-recovery",
+      "category": "review",
+      "axis": "V",
+      "kind": "Revisão FSRS vencida · nota 1 · espectro de resposta",
+      "stem": "Para obter o espectro de resposta de um movimento do navio em mar irregular, o elo entre o espectro de energia da onda e a resposta do navio é:",
       "options": [
-        "A presença do prático transfere integralmente a responsabilidade pela segurança ao serviço de praticagem.",
-        "O comandante e o oficial de quarto deixam de monitorar a navegação enquanto o prático estiver no passadiço.",
-        "A presença do prático não afasta os deveres do comandante e do oficial de quarto, que devem apoiá-lo e monitorar suas ações.",
-        "O oficial de quarto somente retoma suas obrigações após o desembarque do prático."
-      ],
-      "correct": 2,
-      "explanation": "A A.960(23) preserva os deveres do comandante e do oficial de quarto quanto à segurança. Eles devem apoiar o prático e monitorar suas ações, mantendo clara a compreensão dos papéis e responsabilidades.",
-      "comments": [
-        "Incorreta: a presença do prático não transfere integralmente a responsabilidade pela segurança.",
-        "Incorreta: a resolução determina apoio e monitoramento contínuos pelo comandante e pelos oficiais.",
-        "Correta: sintetiza os deveres preservados e a cooperação exigida no passadiço.",
-        "Incorreta: as obrigações permanecem durante toda a praticagem, não apenas após o desembarque."
-      ],
-      "reference": {
-        "referenceId": "IV-18",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Training, Certification and Operational Procedures for Maritime Pilots",
-        "edition": "A.960(23), 2003",
-        "section": "Annex 2, itens 2.1 a 2.3 — Duties of master, bridge officers and pilot",
-        "syllabus": "Eixo IV — Legislação · deveres e responsabilidades na praticagem",
-        "evidence": "O recorte consultado estabelece que a presença do prático não exime comandante ou oficial de quarto de seus deveres de segurança e exige que apoiem o prático e monitorem suas ações durante todo o tempo.",
-        "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"
-      }
-    },
-    {
-      "id": "thu-c2-pilot-boarding-point-exchange-room",
-      "category": "current",
-      "axis": "IV",
-      "kind": "Conteúdo atual · ponto de embarque do prático",
-      "stem": "Ao estabelecer o ponto de embarque do prático para uma derrota de praticagem obrigatória, a autoridade competente deve escolher posição que, além de permitir embarque seguro, proporcione:",
-      "options": [
-        "A menor distância possível até o berço, ainda que a troca comandante–prático ocorra durante a primeira manobra crítica.",
-        "Tempo e espaço de manobra suficientes para a troca comandante–prático antes do início das exigências críticas da praticagem.",
-        "Somente cobertura contínua de VHF, independentemente do espaço de manobra disponível.",
-        "Obrigatoriamente águas abrigadas, mesmo que o ponto fique depois do trecho que exige conhecimento local."
+        "A RAO sem elevar ao quadrado, multiplicada pela altura significativa.",
+        "O quadrado da RAO, aplicado ao espectro da onda na mesma frequência.",
+        "A soma direta da RAO com o espectro da onda.",
+        "O inverso da RAO, aplicado somente à frequência natural de jogo."
       ],
       "correct": 1,
-      "explanation": "A A.960(23) orienta que o ponto seja suficientemente anterior ao trecho de praticagem para permitir embarque seguro e dar tempo e espaço de mar adequados à troca comandante–prático.",
+      "explanation": "No tratamento linear, o espectro de resposta é obtido multiplicando-se o espectro da onda pelo quadrado da função de transferência, a RAO, em cada frequência correspondente.",
       "comments": [
-        "Incorreta: a troca não deve ser comprimida dentro da primeira manobra crítica.",
-        "Correta: reúne os requisitos de antecedência, tempo e espaço de manobra previstos na resolução.",
-        "Incorreta: comunicações são importantes, mas não substituem o requisito de tempo e espaço de manobra.",
-        "Incorreta: o ponto deve anteceder suficientemente a praticagem; não pode ficar depois do trecho que demanda o serviço."
+        "Incorreta: a função de transferência entra ao quadrado, e não apenas em primeira potência.",
+        "Correta: o texto estabelece o elo pelo quadrado da RAO na mesma frequência do componente espectral.",
+        "Incorreta: espectro e RAO não são somados; há multiplicação pelo quadrado da função de transferência.",
+        "Incorreta: não se usa o inverso da RAO nem se restringe o procedimento a uma única frequência natural."
       ],
       "reference": {
-        "referenceId": "IV-18",
+        "referenceId": "V-04",
         "base": "Bibliografia oficial PSCPP",
-        "publication": "Training, Certification and Operational Procedures for Maritime Pilots",
-        "edition": "A.960(23), 2003",
-        "section": "Annex 2, itens 3.1 a 3.3 — Pilot boarding point",
-        "syllabus": "Eixo IV — Legislação · estabelecimento do ponto de embarque do prático",
-        "evidence": "O recorte consultado atribui à autoridade competente a definição do ponto de embarque e exige que ele seja suficientemente anterior à praticagem para permitir embarque seguro e tempo e espaço de mar adequados à troca comandante–prático.",
-        "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"
+        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 4, §4.7 — espectro de resposta do navio",
+        "syllabus": "Eixo V — Oceanografia · mar irregular, RAO e resposta do navio",
+        "evidence": "O recorte consultado declara que o elo entre o espectro de energia da onda e o espectro de resposta do navio é o quadrado da RAO; a altura espectral da onda é multiplicada pelo quadrado da unidade de resposta, em igual frequência.",
+        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
       }
     },
     {
-      "id": "thu-c3-master-pilot-exchange-card-not-substitute",
-      "category": "current",
-      "axis": "IV",
-      "kind": "Conteúdo atual · troca comandante–prático",
-      "stem": "No início de uma praticagem, o navio apresenta ao prático um cartão padronizado preenchido com seus dados de manobra. Segundo a A.960(23), esse cartão:",
+      "id": "fri-r3-rudder-pressure-speed-square",
+      "category": "review",
+      "axis": "II",
+      "kind": "Revisão FSRS vencida · nota 1 · ação do leme",
+      "stem": "Dois navios têm o mesmo tamanho e formas comparáveis, mas um deles opera a menor velocidade. Para conservar ação evolutiva adequada, a bibliografia indica que o navio mais lento deve, em princípio, possuir:",
       "options": [
-        "Substitui a troca verbal comandante–prático se estiver assinado por ambos.",
-        "Dispensa a discussão do plano de passagem quando contém curvas de giro e distâncias de parada.",
-        "Complementa a troca verbal, que deve ocorrer em cada serviço e prosseguir conforme surjam informações relevantes.",
-        "Tem utilidade apenas após a atracação, para registro administrativo."
-      ],
-      "correct": 2,
-      "explanation": "Formulários, cartões e listas de verificação podem estruturar e complementar a troca, mas não substituem a comunicação verbal. A troca começa em cada serviço de praticagem e continua durante a operação.",
-      "comments": [
-        "Incorreta: nem a assinatura nem o preenchimento eliminam a necessidade da troca verbal.",
-        "Incorreta: o plano, as contingências e as condições da operação devem ser efetivamente discutidos.",
-        "Correta: expressa o caráter complementar do cartão e contínuo da troca de informações.",
-        "Incorreta: o cartão é instrumento operacional anterior e durante a praticagem, não mero registro posterior."
-      ],
-      "reference": {
-        "referenceId": "IV-18",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Training, Certification and Operational Procedures for Maritime Pilots",
-        "edition": "A.960(23), 2003",
-        "section": "Annex 2, itens 5.1 a 5.4 — Master-pilot information exchange",
-        "syllabus": "Eixo IV — Legislação · conteúdo e continuidade da troca comandante–prático",
-        "evidence": "O recorte consultado determina troca de informações no início de cada serviço e ao longo da praticagem e afirma que cartão, formulário ou lista padronizada complementa, mas não substitui, a troca verbal.",
-        "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"
-      }
-    },
-    {
-      "id": "thu-t1-smcp-response-to-advice",
-      "category": "rotation",
-      "axis": "VI",
-      "kind": "Rotação · SMCP · resposta a advice/instruction",
-      "stem": "Após receber por VHF a mensagem padronizada “ADVICE. You should alter course to starboard”, o comandante aceita e pode cumprir a recomendação. A resposta SMCP mais adequada é:",
-      "options": [
-        "Received.",
-        "Yes, starboard.",
-        "I will alter course to starboard.",
-        "Stand by course alteration."
-      ],
-      "correct": 2,
-      "explanation": "A resposta a uma mensagem marcada como Advice ou Instruction deve declarar, com a frase completa, que a ação será ou poderá ser executada, usando “I will...” ou “I can...”.",
-      "comments": [
-        "Incorreta: mero recebimento não confirma se a recomendação será cumprida.",
-        "Incorreta: a resposta é incompleta e não emprega a fórmula prevista para Advice/Instruction.",
-        "Correta: confirma de forma fechada e inequívoca a ação que será executada.",
-        "Incorreta: “Stand by” indica indisponibilidade temporária de resposta, não aceitação da recomendação."
-      ],
-      "reference": {
-        "referenceId": "VI-01",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "A.918(22), 2001",
-        "section": "General — Message markers; Responses",
-        "syllabus": "Eixo VI — Comunicações · respostas padronizadas a Advice e Instruction",
-        "evidence": "O recorte consultado orienta que a resposta a Advice ou Instruction declare com a frase completa “I will/can...” quando a ação puder ser cumprida, ou “I will not/cannot...” quando não puder.",
-        "url": "https://drive.google.com/file/d/1nEnUGi3L9FcPy42aOtSPRoTLmKcqQZtU/view"
-      }
-    },
-    {
-      "id": "thu-t2-smcp-stand-by-time-interval",
-      "category": "rotation",
-      "axis": "VI",
-      "kind": "Rotação · SMCP · indisponibilidade temporária",
-      "stem": "Uma estação solicita o calado atual do navio. A informação existe, mas o oficial precisa de dois minutos para confirmá-la. Segundo as SMCP, a resposta inicial deve ser:",
-      "options": [
-        "No information.",
-        "Stand by — two minutes.",
-        "Say again — two minutes.",
-        "Negative — draught unavailable."
+        "Leme de menor área, porque a pressão normal varia linearmente com a velocidade.",
+        "Leme de maior área, porque a pressão normal varia com o quadrado da velocidade.",
+        "Leme de igual área, porque a pressão normal independe da velocidade.",
+        "Leme de menor altura e maior ângulo máximo, pois a pressão normal depende apenas do ângulo."
       ],
       "correct": 1,
-      "explanation": "Quando a informação não está imediatamente disponível, mas pode ser obtida, emprega-se “Stand by” e informa-se o intervalo necessário. “No information” é reservado ao caso em que a informação não pode ser obtida.",
+      "explanation": "A pressão normal sobre o leme varia com o quadrado da velocidade dos filetes líquidos. Entre navios de mesmo tamanho, o de menor velocidade precisa compensar a menor pressão com maior área de leme.",
       "comments": [
-        "Incorreta: a informação pode ser obtida; portanto, não cabe declarar ausência de informação.",
-        "Correta: comunica a espera e fixa o intervalo para a resposta.",
-        "Incorreta: “Say again” solicita repetição da mensagem recebida, o que não é necessário no cenário.",
-        "Incorreta: a resposta nega disponibilidade de modo definitivo, contrariando o enunciado."
+        "Incorreta: a dependência indicada é quadrática, e não linear.",
+        "Correta: menor velocidade reduz fortemente a pressão normal, justificando maior área de leme.",
+        "Incorreta: a velocidade é um dos fatores expressamente relacionados à pressão normal.",
+        "Incorreta: a pressão depende também da velocidade, da área e da forma da popa; não apenas do ângulo."
       ],
       "reference": {
-        "referenceId": "VI-01",
+        "referenceId": "II-01",
         "base": "Bibliografia oficial PSCPP",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "A.918(22), 2001",
-        "section": "General — Responses",
-        "syllabus": "Eixo VI — Comunicações · Stand by e No information",
-        "evidence": "O recorte consultado determina “Stand by” acompanhado do intervalo quando a informação não está imediatamente disponível; se ela não puder ser obtida, determina “No information”.",
-        "url": "https://drive.google.com/file/d/1nEnUGi3L9FcPy42aOtSPRoTLmKcqQZtU/view"
+        "publication": "Arte Naval, v. 1",
+        "edition": "8. ed., Marinha do Brasil, 2019",
+        "section": "Capítulo 12, §12.2 — efeito do leme",
+        "syllabus": "Eixo II — Arte Naval · governo do navio e ação do leme",
+        "evidence": "O recorte consultado afirma que a pressão normal depende, entre outros fatores, da velocidade dos filetes líquidos e que, entre navios de mesmo tamanho, os de menor velocidade devem ter maior área de leme porque essa pressão varia com o quadrado da velocidade.",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
       }
     },
     {
-      "id": "thu-o1-pscpp-2006-q2-zulu-tug",
+      "id": "fri-r4-coasting-without-astern-thrust",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão FSRS vencida · nota 2 · manobra de parada",
+      "stem": "Na manobra denominada coasting, a redução de velocidade e a parada são avaliadas:",
+      "options": [
+        "Sem emprego de empuxo a ré do propulsor.",
+        "Com máquina a ré toda força desde a velocidade inicial.",
+        "Somente mediante fundeio de emergência.",
+        "Com leme todo a um bordo para converter avanço em guinada."
+      ],
+      "correct": 0,
+      "explanation": "Coasting é a manobra de desaceleração ou parada sem emprego de empuxo a ré. A obra apresenta solução numérica e métodos empíricos para estimar o tempo e a distância correspondentes.",
+      "comments": [
+        "Correta: essa é a definição empregada no título e no desenvolvimento da seção sobre coasting.",
+        "Incorreta: a aplicação de empuxo a ré caracteriza outra manobra de parada.",
+        "Incorreta: o fundeio não integra a definição de coasting.",
+        "Incorreta: uma guinada pode reduzir velocidade, mas não define a manobra de coasting."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 7, §7.9 — parada sem emprego de empuxo a ré",
+        "syllabus": "Eixo I — Manobrabilidade · parar, desacelerar e mover a ré",
+        "evidence": "O recorte consultado define coasting como a manobra de parada sem emprego de forças de controle de empuxo a ré e registra que distância e tempo podem ser obtidos por simulação numérica ou por métodos empíricos.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
+    },
+    {
+      "id": "fri-c1-tidal-current-port-open-sea",
+      "category": "current",
+      "axis": "III",
+      "kind": "Conteúdo atual · gênese e caráter das correntes de maré",
+      "stem": "Quanto ao comportamento típico das correntes de maré em uma entrada de porto e no oceano aberto, assinale a opção correta:",
+      "options": [
+        "Na entrada do porto, tende a ser axial e alternativa; no oceano aberto, pode ter caráter rotatório.",
+        "Na entrada do porto, é sempre rotatória; no oceano aberto, é exclusivamente axial.",
+        "Em ambos os ambientes, a corrente permanece com direção e intensidade constantes.",
+        "A corrente de maré existe apenas no oceano aberto, não nas entradas portuárias."
+      ],
+      "correct": 0,
+      "explanation": "Nas entradas portuárias, a diferença de nível entre oceano e interior do porto costuma produzir fluxo e refluxo axialmente ao canal. No oceano aberto, a interação das forças astronômicas com a rotação terrestre favorece correntes rotatórias.",
+      "comments": [
+        "Correta: reproduz a distinção entre corrente axial alternativa no acesso e rotatória em mar aberto.",
+        "Incorreta: os comportamentos foram invertidos.",
+        "Incorreta: direção e intensidade variam com a fase da maré e com o local.",
+        "Incorreta: as correntes de maré são particularmente relevantes em entradas e canais portuários."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "Navegação: A Ciência e a Arte, v. I",
+        "edition": "2ª revisão atualizada, DHN, 2023",
+        "section": "Capítulo 10, §10.2.1 — gênese das correntes de maré",
+        "syllabus": "Eixo III — Navegação em águas restritas · marés e correntes de maré",
+        "evidence": "O recorte consultado descreve nas entradas portuárias corrente axial alternativa resultante da diferença de nível entre oceano e interior do porto; em oceano aberto, atribui caráter rotatório à interação das forças astronômicas com a rotação terrestre.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+      }
+    },
+    {
+      "id": "fri-c2-coriolis-tidal-current-hemispheres",
+      "category": "current",
+      "axis": "III",
+      "kind": "Conteúdo atual · Coriolis e corrente rotatória",
+      "stem": "Na explicação das correntes de maré rotatórias em oceano aberto, o efeito de Coriolis tende a desviar as correntes:",
+      "options": [
+        "Para a esquerda em ambos os hemisférios.",
+        "Para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul.",
+        "Para a esquerda no Hemisfério Norte e para a direita no Hemisfério Sul.",
+        "Sempre para a direção da Lua, independentemente do hemisfério."
+      ],
+      "correct": 1,
+      "explanation": "A rotação da Terra produz desvio para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul, contribuindo para o caráter rotatório das correntes de maré oceânicas.",
+      "comments": [
+        "Incorreta: o sentido do desvio muda entre os hemisférios.",
+        "Correta: direita no Hemisfério Norte e esquerda no Hemisfério Sul.",
+        "Incorreta: os sentidos estão invertidos.",
+        "Incorreta: o efeito de Coriolis decorre da rotação terrestre e depende do hemisfério."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "Navegação: A Ciência e a Arte, v. I",
+        "edition": "2ª revisão atualizada, DHN, 2023",
+        "section": "Capítulo 10, §10.2.1 — gênese das correntes de maré",
+        "syllabus": "Eixo III — Navegação em águas restritas · corrente rotatória e efeito de Coriolis",
+        "evidence": "O recorte consultado registra que o efeito de Coriolis tende a desviar as correntes de maré para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+      }
+    },
+    {
+      "id": "fri-c3-tidal-current-operational-use",
+      "category": "current",
+      "axis": "III",
+      "kind": "Conteúdo atual · emprego operacional da previsão de corrente",
+      "stem": "O conhecimento antecipado da direção e da velocidade da corrente de maré auxilia diretamente:",
+      "options": [
+        "Apenas a correção da declinação magnética da agulha.",
+        "Somente o cálculo da altura significativa das ondas.",
+        "O planejamento da derrota, a escolha de horários de manobra, do bordo de atracação e das velocidades de evolução.",
+        "Exclusivamente a determinação do calado de verão do navio."
+      ],
+      "correct": 2,
+      "explanation": "A previsão de corrente de maré tem emprego operacional amplo: planejamento da derrota em águas restritas, seleção de horários favoráveis, escolha do bordo de atracação e definição das velocidades com que o navio deve evoluir.",
+      "comments": [
+        "Incorreta: declinação magnética não é determinada pela corrente de maré.",
+        "Incorreta: altura significativa pertence ao estudo de ondas e não resume o uso da previsão de corrente.",
+        "Correta: reúne os quatro usos operacionais listados no recorte consultado.",
+        "Incorreta: o calado de verão decorre de critérios de borda livre, não da previsão de corrente."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "Navegação: A Ciência e a Arte, v. I",
+        "edition": "2ª revisão atualizada, DHN, 2023",
+        "section": "Capítulo 10, §10.2.1 — importância das correntes de maré",
+        "syllabus": "Eixo III — Navegação em águas restritas · planejamento e manobra com corrente",
+        "evidence": "O recorte consultado lista como utilidades do conhecimento antecipado das correntes de maré o planejamento da derrota, a seleção dos horários mais favoráveis às manobras, a escolha do bordo de atracação e as velocidades de evolução.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+      }
+    },
+    {
+      "id": "fri-t1-current-relative-angle-crossflow",
+      "category": "rotation",
+      "axis": "I",
+      "kind": "Rotação · manobrabilidade · corrente e cross flow",
+      "stem": "Um navio reduz para baixa velocidade em águas restritas e passa a receber a corrente com ângulo relativo superior a cerca de 30°. Segundo a bibliografia, tende a predominar:",
+      "options": [
+        "Escoamento cruzado sobre a asa-casco, com comportamento quadrático das forças.",
+        "Apenas resistência longitudinal linear, sem força lateral.",
+        "Força aerodinâmica de pequeno ângulo sobre as obras mortas.",
+        "Ausência de efeito de corrente, porque a velocidade do navio é baixa."
+      ],
+      "correct": 0,
+      "explanation": "Em baixa velocidade e com ângulo relativo de corrente superior a aproximadamente 30°, as forças passam a ser predominantemente de escoamento cruzado sobre a asa-casco e apresentam comportamento quadrático.",
+      "comments": [
+        "Correta: corresponde ao regime de cross flow descrito para baixa velocidade e grande ângulo de entrada.",
+        "Incorreta: nesse regime há força lateral relevante e comportamento não meramente linear.",
+        "Incorreta: trata-se de ação hidrodinâmica sobre a parte imersa, não aerodinâmica sobre as obras mortas.",
+        "Incorreta: a baixa velocidade do navio pode tornar a corrente ainda mais importante para a controlabilidade."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 8, §8.3 — a corrente",
+        "syllabus": "Eixo I — Manobrabilidade · forças ambientais e corrente",
+        "evidence": "O recorte consultado informa que, em baixa velocidade e com ângulo de entrada da corrente superior a cerca de 30°, predominam forças de escoamento cruzado sobre a asa-casco, com comportamento de funções quadráticas.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
+    },
+    {
+      "id": "fri-t2-current-force-speed-squared",
+      "category": "rotation",
+      "axis": "I",
+      "kind": "Rotação · manobrabilidade · intensidade da força de corrente",
+      "stem": "Mantidos o navio, o calado, o ângulo de ataque e os coeficientes hidrodinâmicos, se a velocidade média da corrente sobre a área molhada duplicar, a força calculada da corrente tenderá a:",
+      "options": [
+        "Permanecer inalterada.",
+        "Duplicar.",
+        "Quadruplicar.",
+        "Reduzir-se à metade."
+      ],
+      "correct": 2,
+      "explanation": "As expressões de força longitudinal, força lateral e momento de guinada contêm o quadrado da velocidade média da corrente. Mantidos os demais fatores, duplicar a velocidade multiplica a força por quatro.",
+      "comments": [
+        "Incorreta: a velocidade da corrente entra explicitamente no cálculo.",
+        "Incorreta: a dependência não é linear.",
+        "Correta: 2² = 4, porque a força varia com o quadrado da velocidade.",
+        "Incorreta: o aumento de velocidade eleva, e não reduz, a força."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 8, §8.3.1 — forças da corrente",
+        "syllabus": "Eixo I — Manobrabilidade · força longitudinal, lateral e momento de guinada da corrente",
+        "evidence": "O recorte consultado apresenta as forças longitudinal e lateral e o momento de guinada proporcionais ao quadrado da velocidade média da corrente sobre a área molhada, mantidos dimensões e coeficientes.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
+    },
+    {
+      "id": "fri-o1-pscpp2011-q25-turning-circle",
       "category": "official",
-      "axis": "VI",
-      "kind": "Questão oficial · PSCPP 2006 · questão 2",
-      "stem": "Bandeira retangular nas cores preto, amarelo, azul e encarnado em quatro triângulos, formados pelas diagonais, sendo preto o triângulo junto à tralha, amarelo o superior, azul o da extremidade e encarnado o inferior, de acordo com o Código Internacional de Sinais (CIS), significa:",
+      "axis": "II",
+      "kind": "Questão oficial adaptada · PSCPP 2011 · Prova Amarela · questão 25",
+      "stem": "Assinale a opção incorreta. De acordo com Arte Naval, o estudo das curvas de giro, dos efeitos do leme e as experiências práticas demonstram que:",
       "options": [
-        "Embarcação se dirigindo para um perigo.",
-        "Embarcação deve suspender a execução do que está fazendo e observar os sinais a serem mostrados.",
-        "Embarcação deve parar imediatamente.",
-        "Embarcação solicitando rebocador.",
-        "Embarcação solicitando assistência médica."
+        "Ao dar leme a um bordo com o navio em marcha a vante, a velocidade diminui, o navio abate para fora da curva, assume ângulo de deriva e pode tomar banda.",
+        "O avanço diminui com o aumento do ângulo do leme e aumenta com a velocidade do navio.",
+        "O tempo de evolução diminui com o aumento do ângulo do leme e da velocidade.",
+        "O ângulo de deriva aumenta com o ângulo do leme, mas diminui com o aumento da velocidade do navio.",
+        "A velocidade angular, nula no início, atinge o máximo antes de 90°, diminui ligeiramente e se torna constante na parte final da curva."
       ],
       "correct": 3,
-      "explanation": "A descrição corresponde à bandeira Zulu. No Código Internacional de Sinais, o sinal de uma letra Z significa “I require a tug”, isto é, “necessito de rebocador”.",
+      "explanation": "A alternativa D é a incorreta. Arte Naval afirma que o ângulo de deriva aumenta com o ângulo do leme e com a diminuição do calado, mas é independente da velocidade do navio.",
       "comments": [
-        "Incorreta: o Código atribui à bandeira U o aviso de que a embarcação se dirige para um perigo.",
-        "Incorreta: a ordem de suspender as intenções e observar sinais corresponde à bandeira X.",
-        "Incorreta: a ordem para parar imediatamente corresponde à bandeira L.",
-        "Correta: a bandeira Z, ou Zulu, significa solicitação de rebocador.",
-        "Incorreta: a solicitação de assistência médica corresponde à bandeira W."
+        "Correta como afirmação técnica; portanto, não atende ao comando de marcar a incorreta.",
+        "Correta como afirmação técnica: o avanço diminui com maior ângulo de leme e aumenta com a velocidade.",
+        "Correta como afirmação técnica: o tempo de evolução diminui com o aumento do ângulo do leme e da velocidade.",
+        "Incorreta e gabarito: o ângulo de deriva é descrito como independente da velocidade do navio.",
+        "Correta como afirmação técnica: a evolução da velocidade angular segue a sequência descrita."
       ],
       "reference": {
-        "referenceId": "VI-03",
+        "referenceId": "II-01",
         "base": "Bibliografia oficial PSCPP e prova oficial histórica",
-        "publication": "International Code of Signals",
-        "edition": "2005",
-        "section": "Chapter XI — Single-letter signals · signal Z",
-        "syllabus": "Eixo VI — Comunicações · bandeiras de uma letra do Código Internacional de Sinais",
-        "evidence": "O recorte consultado identifica o sinal de uma letra Z como “I require a tug”; a tabela também distingue U, W, X e L pelos significados usados como distratores na prova.",
-        "url": "https://drive.google.com/file/d/1KqhwaBEb2t1A5RwCrT7HNUlOkwnZHbtL/view",
+        "publication": "Arte Naval, v. 1",
+        "edition": "8. ed., Marinha do Brasil, 2019",
+        "section": "Capítulo 12, §12.56 — curva de giro e seus elementos",
+        "syllabus": "Eixo II — Arte Naval · curva de giro e efeitos do leme",
+        "evidence": "O recorte consultado confirma avanço, tempo de evolução e evolução da velocidade angular e declara que o ângulo de deriva aumenta com o ângulo do leme e com a diminuição do calado, mas é independente da velocidade.",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view",
         "origin": {
-          "exam": "PSCPP 2006",
-          "year": 2006,
-          "question": 2,
+          "exam": "PSCPP 2011 — Prova Amarela",
+          "year": 2011,
+          "question": 25,
           "answer": "D",
-          "adaptation": "Atualização ortográfica mínima, sem alteração do enunciado, das alternativas ou da solução.",
-          "url": "https://drive.google.com/file/d/1_6AvrqlquyvlPVQ4ERooU0NCKVFzs6tc/view"
+          "adaptation": "Enunciado e alternativas condensados, com atualização ortográfica e remoção de repetição tipográfica, sem alteração da solução.",
+          "url": "https://drive.google.com/file/d/1Fdz2o1xtzIkg1KONqP95HemlINDJcv_1/view"
         }
       }
     }
