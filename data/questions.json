@@ -292,42 +292,42 @@
       }
     },
     {
-      "id": "fri-o1-pscpp2011-q25-turning-circle",
+      "id": "fri-o1-pscpp2011-q35-turning-circle-correction",
       "category": "official",
-      "axis": "II",
-      "kind": "Questão oficial adaptada · PSCPP 2011 · Prova Amarela · questão 25",
-      "stem": "Assinale a opção incorreta. De acordo com Arte Naval, o estudo das curvas de giro, dos efeitos do leme e as experiências práticas demonstram que:",
+      "axis": "III",
+      "kind": "Questão oficial adaptada · PSCPP 2011 · Prova Amarela · questão 35 · correção de erro",
+      "stem": "Ao demandar um canal ou manobrar em águas restritas, assinale a alternativa que contém conceito ou definição incorreta sobre dados táticos e curva de giro:",
       "options": [
-        "Ao dar leme a um bordo com o navio em marcha a vante, a velocidade diminui, o navio abate para fora da curva, assume ângulo de deriva e pode tomar banda.",
-        "O avanço diminui com o aumento do ângulo do leme e aumenta com a velocidade do navio.",
-        "O tempo de evolução diminui com o aumento do ângulo do leme e da velocidade.",
-        "O ângulo de deriva aumenta com o ângulo do leme, mas diminui com o aumento da velocidade do navio.",
-        "A velocidade angular, nula no início, atinge o máximo antes de 90°, diminui ligeiramente e se torna constante na parte final da curva."
+        "Abatimento é o caimento do navio para o bordo da guinada, no início da evolução, medido perpendicularmente ao rumo inicial.",
+        "Os dados táticos são determinados durante as provas de mar posteriores à construção ou modernização.",
+        "Afastamento é a distância transversal ao rumo inicial, desde o ponto em que o leme foi carregado até a proa atingir o novo rumo.",
+        "Avanço, diâmetro tático e afastamento diminuem com o aumento do ângulo de leme.",
+        "No giro de 360° com ângulo de leme constante, o diâmetro final é menor que o diâmetro tático."
       ],
-      "correct": 3,
-      "explanation": "A alternativa D é a incorreta. Arte Naval afirma que o ângulo de deriva aumenta com o ângulo do leme e com a diminuição do calado, mas é independente da velocidade do navio.",
+      "correct": 0,
+      "explanation": "A alternativa A é a incorreta. O abatimento inicial ocorre para o bordo contrário ao da guinada, e não para o mesmo bordo.",
       "comments": [
+        "Incorreta e gabarito: a popa é empurrada para fora e o abatimento é medido para o bordo contrário ao da guinada.",
         "Correta como afirmação técnica; portanto, não atende ao comando de marcar a incorreta.",
-        "Correta como afirmação técnica: o avanço diminui com maior ângulo de leme e aumenta com a velocidade.",
-        "Correta como afirmação técnica: o tempo de evolução diminui com o aumento do ângulo do leme e da velocidade.",
-        "Incorreta e gabarito: o ângulo de deriva é descrito como independente da velocidade do navio.",
-        "Correta como afirmação técnica: a evolução da velocidade angular segue a sequência descrita."
+        "Correta como afirmação técnica: essa é a definição de afastamento.",
+        "Correta como afirmação técnica: esses elementos diminuem quando se aumenta o ângulo de leme.",
+        "Correta como afirmação técnica: o diâmetro final é sempre menor que o diâmetro tático."
       ],
       "reference": {
-        "referenceId": "II-01",
+        "referenceId": "III-02",
         "base": "Bibliografia oficial PSCPP e prova oficial histórica",
-        "publication": "Arte Naval, v. 1",
-        "edition": "8. ed., Marinha do Brasil, 2019",
-        "section": "Capítulo 12, §12.56 — curva de giro e seus elementos",
-        "syllabus": "Eixo II — Arte Naval · curva de giro e efeitos do leme",
-        "evidence": "O recorte consultado confirma avanço, tempo de evolução e evolução da velocidade angular e declara que o ângulo de deriva aumenta com o ângulo do leme e com a diminuição do calado, mas é independente da velocidade.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view",
+        "publication": "Navegação: A Ciência e a Arte, v. I",
+        "edition": "2ª revisão atualizada, DHN, 2023",
+        "section": "Capítulo 8, §§8.1–8.3 — dados táticos, curva de giro e considerações práticas",
+        "syllabus": "Eixo III — Navegação em águas restritas · dados táticos e elementos da curva de giro",
+        "evidence": "O recorte consultado define o abatimento como caimento para o bordo contrário ao da guinada; confirma a origem dos dados táticos nas provas de mar, a definição de afastamento, a redução de avanço, diâmetro tático e afastamento com maior ângulo de leme e a inferioridade do diâmetro final em relação ao tático.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view",
         "origin": {
           "exam": "PSCPP 2011 — Prova Amarela",
           "year": 2011,
-          "question": 25,
-          "answer": "D",
-          "adaptation": "Enunciado e alternativas condensados, com atualização ortográfica e remoção de repetição tipográfica, sem alteração da solução.",
+          "question": 35,
+          "answer": "A",
+          "adaptation": "Enunciado contextual condensado e ortografia atualizada, sem alteração dos conceitos, das alternativas ou da solução.",
           "url": "https://drive.google.com/file/d/1Fdz2o1xtzIkg1KONqP95HemlINDJcv_1/view"
         }
       }
