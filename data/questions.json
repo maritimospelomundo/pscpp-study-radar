@@ -1,334 +1,184 @@
 {
-  "roundId": "tidal-currents-manoeuvring-waves-2026-10-02",
-  "label": "Rodada de 2 de outubro de 2026",
-  "title": "Correntes de maré, manobra sob corrente e correções de ondas",
-  "publication": "2026-10-02",
-  "path": "correntes-mare-manobra-ondas",
+  "roundId": "cumulative-fatigue-tides-corrections-2026-10-03",
+  "label": "Simulado cumulativo de 3 de outubro de 2026",
+  "title": "Fadiga, decisão segura e correção de fragilidades",
+  "publication": "Bibliografia oficial PSCPP/DPC",
+  "path": "Revisões FSRS e notas 0/1 · fadiga e ritmo circadiano · A.960(23) e SMCP · questão oficial de marés",
   "method": "4–3–2–1",
-  "mixPlan": {
-    "review": 4,
-    "current": 3,
-    "rotation": 2,
-    "official": 1
-  },
+  "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
   "questions": [
     {
-      "id": "fri-r1-wave-celerity-depth-recovery",
+      "id": "sat-r1-coriolis-tidal-current-recovery",
       "category": "review",
-      "axis": "V",
-      "kind": "Revisão FSRS vencida · nota 0 · celeridade de onda",
-      "stem": "Na teoria linear de ondas, considerando uma frequência angular definida e profundidade uniforme, qual afirmação descreve corretamente a relação de dispersão?",
-      "options": [
-        "A frequência e a profundidade determinam uma única solução para o número de onda; por isso, comprimento e celeridade dependem da profundidade.",
-        "A celeridade é constante em qualquer profundidade, tal como ocorre com a velocidade da luz no vácuo.",
-        "O número de onda independe da profundidade e varia apenas com a altura significativa.",
-        "Ondas de períodos diferentes propagam-se sempre com a mesma celeridade."
-      ],
-      "correct": 0,
-      "explanation": "Para valores definidos de frequência angular e profundidade, a relação de dispersão fornece uma única solução para o número de onda. Como o comprimento de onda se relaciona com esse número e a celeridade com frequência e comprimento, ambos variam com a profundidade.",
-      "comments": [
-        "Correta: o recorte relaciona frequência, profundidade e número de onda e conclui que comprimento e celeridade dependem da profundidade.",
-        "Incorreta: a obra contrasta expressamente as ondas do mar com ondas eletromagnéticas, cuja velocidade é constante.",
-        "Incorreta: o número de onda está ligado à frequência e à profundidade, não à altura significativa isoladamente.",
-        "Incorreta: ondas de períodos diferentes podem propagar-se com celeridades diferentes."
-      ],
+      "axis": "III",
+      "kind": "Revisão imediata · nota 0 · Coriolis e correntes de maré",
+      "stem": "No oceano aberto, a rotação da Terra contribui para o caráter rotatório das correntes de maré. Quanto ao desvio produzido pelo efeito de Coriolis, assinale a opção correta.",
+      "options": ["Para a esquerda no Hemisfério Norte e para a direita no Hemisfério Sul.", "Para a direita nos dois hemisférios, variando apenas a intensidade.", "Para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul.", "Não há desvio nas correntes de maré; Coriolis atua somente sobre ventos."],
+      "correct": 2,
+      "explanation": "O efeito de Coriolis desvia movimentos para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul, contribuindo com as forças astronômicas para a gênese de correntes rotatórias.",
+      "comments": ["Incorreta: inverte os sentidos do desvio nos dois hemisférios.", "Incorreta: o sentido do desvio muda entre os hemisférios.", "Correta: corresponde aos sentidos expressamente indicados no recorte consultado.", "Incorreta: o capítulo aplica o efeito de Coriolis às correntes de maré em oceano aberto."],
       "reference": {
-        "referenceId": "V-04",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 1, §1.12 — relação de dispersão e celeridade",
-        "syllabus": "Eixo V — Oceanografia · ondas, comprimento e celeridade",
-        "evidence": "O recorte consultado afirma que, para valores únicos de frequência angular e profundidade, existe uma única solução do número de onda, e conclui que número de onda, comprimento e celeridade dependem da profundidade; ondas de períodos diferentes propagam-se com velocidades diferentes.",
-        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
+        "referenceId": "III-02", "base": "Bibliografia oficial PSCPP", "publication": "Navegação: A Ciência e a Arte, v. I", "edition": "2ª revisão atualizada, DHN, 2023",
+        "section": "Capítulo 10, §10.2.1 — gênese das correntes de maré", "syllabus": "Eixo III — Navegação em águas restritas · marés e correntes de maré",
+        "evidence": "O recorte consultado informa que, no oceano aberto, Coriolis desvia a corrente para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul, concorrendo com as forças astronômicas para formar correntes rotatórias.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
       }
     },
     {
-      "id": "fri-r2-response-spectrum-rao-recovery",
+      "id": "sat-r2-tropical-cyclone-threshold-recovery",
       "category": "review",
       "axis": "V",
-      "kind": "Revisão FSRS vencida · nota 1 · espectro de resposta",
-      "stem": "Para obter o espectro de resposta de um movimento do navio em mar irregular, o elo entre o espectro de energia da onda e a resposta do navio é:",
-      "options": [
-        "A RAO sem elevar ao quadrado, multiplicada pela altura significativa.",
-        "O quadrado da RAO, aplicado ao espectro da onda na mesma frequência.",
-        "A soma direta da RAO com o espectro da onda.",
-        "O inverso da RAO, aplicado somente à frequência natural de jogo."
-      ],
+      "kind": "Revisão FSRS vencida · nota 0 · classificação de ciclone tropical",
+      "stem": "Pela classificação apresentada por Miguens para a média do vento máximo sustentado à superfície durante um minuto, qual faixa caracteriza uma tempestade tropical?",
+      "options": ["Inferior a 34 nós.", "Igual ou superior a 34 nós e inferior a 64 nós.", "Superior a 34 nós e igual ou inferior a 64 nós.", "Igual ou superior a 64 nós."],
       "correct": 1,
-      "explanation": "No tratamento linear, o espectro de resposta é obtido multiplicando-se o espectro da onda pelo quadrado da função de transferência, a RAO, em cada frequência correspondente.",
-      "comments": [
-        "Incorreta: a função de transferência entra ao quadrado, e não apenas em primeira potência.",
-        "Correta: o texto estabelece o elo pelo quadrado da RAO na mesma frequência do componente espectral.",
-        "Incorreta: espectro e RAO não são somados; há multiplicação pelo quadrado da função de transferência.",
-        "Incorreta: não se usa o inverso da RAO nem se restringe o procedimento a uma única frequência natural."
-      ],
+      "explanation": "A tempestade tropical começa em 34 nós, inclusive, e termina antes de 64 nós. Abaixo de 34 nós é depressão tropical; a partir de 64 nós é furacão.",
+      "comments": ["Incorreta: essa faixa corresponde à depressão tropical.", "Correta: preserva os dois limites e suas desigualdades.", "Incorreta: exclui 34 nós e inclui 64 nós, invertendo os limites críticos.", "Incorreta: essa faixa corresponde ao furacão."],
       "reference": {
-        "referenceId": "V-04",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 4, §4.7 — espectro de resposta do navio",
-        "syllabus": "Eixo V — Oceanografia · mar irregular, RAO e resposta do navio",
-        "evidence": "O recorte consultado declara que o elo entre o espectro de energia da onda e o espectro de resposta do navio é o quadrado da RAO; a altura espectral da onda é multiplicada pelo quadrado da unidade de resposta, em igual frequência.",
+        "referenceId": "V-01", "base": "Bibliografia oficial PSCPP", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN",
+        "section": "Capítulo 45 — Noções de Meteorologia para Navegantes; ciclones tropicais", "syllabus": "Eixo V — Meteorologia/Oceanografia · sistemas tropicais",
+        "evidence": "O recorte consultado classifica depressão tropical com vento inferior a 34 nós, tempestade tropical com vento igual ou superior a 34 e inferior a 64 nós e furacão com vento igual ou superior a 64 nós.",
+        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
+      }
+    },
+    {
+      "id": "sat-r3-significant-wave-height-recovery",
+      "category": "review",
+      "axis": "V",
+      "kind": "Revisão FSRS vencida · nota 0 · altura significativa",
+      "stem": "Em um registro ordenado de alturas de ondas, a altura significativa representa:",
+      "options": ["a média de todas as alturas registradas.", "a média do décimo mais alto das ondas.", "a maior altura individual observada no período.", "a média do terço mais alto das ondas."],
+      "correct": 3,
+      "explanation": "A altura significativa é a média das alturas do terço mais alto das ondas, medida estatística historicamente associada à avaliação visual do estado do mar.",
+      "comments": ["Incorreta: a média de todas as ondas é menor e não define a altura significativa.", "Incorreta: o décimo mais alto corresponde a outro parâmetro estatístico.", "Incorreta: uma altura máxima isolada não é uma média significativa.", "Correta: reproduz a definição H1/3 apresentada na obra."],
+      "reference": {
+        "referenceId": "V-04", "base": "Bibliografia oficial PSCPP", "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio", "edition": "1. ed., 2021",
+        "section": "Capítulo 2 — distribuição estatística das ondas; altura significativa", "syllabus": "Eixo V — Meteorologia/Oceanografia · ondas e estado do mar",
+        "evidence": "O recorte consultado define altura significativa como a média das alturas do terço mais alto das ondas e explica sua origem na estimativa visual tradicional do estado do mar.",
         "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
       }
     },
     {
-      "id": "fri-r3-rudder-pressure-speed-square",
+      "id": "sat-r4-escort-indirect-direct-recovery",
       "category": "review",
       "axis": "II",
-      "kind": "Revisão FSRS vencida · nota 1 · ação do leme",
-      "stem": "Dois navios têm o mesmo tamanho e formas comparáveis, mas um deles opera a menor velocidade. Para conservar ação evolutiva adequada, a bibliografia indica que o navio mais lento deve, em princípio, possuir:",
-      "options": [
-        "Leme de menor área, porque a pressão normal varia linearmente com a velocidade.",
-        "Leme de maior área, porque a pressão normal varia com o quadrado da velocidade.",
-        "Leme de igual área, porque a pressão normal independe da velocidade.",
-        "Leme de menor altura e maior ângulo máximo, pois a pressão normal depende apenas do ângulo."
-      ],
-      "correct": 1,
-      "explanation": "A pressão normal sobre o leme varia com o quadrado da velocidade dos filetes líquidos. Entre navios de mesmo tamanho, o de menor velocidade precisa compensar a menor pressão com maior área de leme.",
-      "comments": [
-        "Incorreta: a dependência indicada é quadrática, e não linear.",
-        "Correta: menor velocidade reduz fortemente a pressão normal, justificando maior área de leme.",
-        "Incorreta: a velocidade é um dos fatores expressamente relacionados à pressão normal.",
-        "Incorreta: a pressão depende também da velocidade, da área e da forma da popa; não apenas do ângulo."
-      ],
-      "reference": {
-        "referenceId": "II-01",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Arte Naval, v. 1",
-        "edition": "8. ed., Marinha do Brasil, 2019",
-        "section": "Capítulo 12, §12.2 — efeito do leme",
-        "syllabus": "Eixo II — Arte Naval · governo do navio e ação do leme",
-        "evidence": "O recorte consultado afirma que a pressão normal depende, entre outros fatores, da velocidade dos filetes líquidos e que, entre navios de mesmo tamanho, os de menor velocidade devem ter maior área de leme porque essa pressão varia com o quadrado da velocidade.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
-      }
-    },
-    {
-      "id": "fri-r4-coasting-without-astern-thrust",
-      "category": "review",
-      "axis": "I",
-      "kind": "Revisão FSRS vencida · nota 2 · manobra de parada",
-      "stem": "Na manobra denominada coasting, a redução de velocidade e a parada são avaliadas:",
-      "options": [
-        "Sem emprego de empuxo a ré do propulsor.",
-        "Com máquina a ré toda força desde a velocidade inicial.",
-        "Somente mediante fundeio de emergência.",
-        "Com leme todo a um bordo para converter avanço em guinada."
-      ],
-      "correct": 0,
-      "explanation": "Coasting é a manobra de desaceleração ou parada sem emprego de empuxo a ré. A obra apresenta solução numérica e métodos empíricos para estimar o tempo e a distância correspondentes.",
-      "comments": [
-        "Correta: essa é a definição empregada no título e no desenvolvimento da seção sobre coasting.",
-        "Incorreta: a aplicação de empuxo a ré caracteriza outra manobra de parada.",
-        "Incorreta: o fundeio não integra a definição de coasting.",
-        "Incorreta: uma guinada pode reduzir velocidade, mas não define a manobra de coasting."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 7, §7.9 — parada sem emprego de empuxo a ré",
-        "syllabus": "Eixo I — Manobrabilidade · parar, desacelerar e mover a ré",
-        "evidence": "O recorte consultado define coasting como a manobra de parada sem emprego de forças de controle de empuxo a ré e registra que distância e tempo podem ser obtidos por simulação numérica ou por métodos empíricos.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
-    },
-    {
-      "id": "fri-c1-tidal-current-port-open-sea",
-      "category": "current",
-      "axis": "III",
-      "kind": "Conteúdo atual · gênese e caráter das correntes de maré",
-      "stem": "Quanto ao comportamento típico das correntes de maré em uma entrada de porto e no oceano aberto, assinale a opção correta:",
-      "options": [
-        "Na entrada do porto, tende a ser axial e alternativa; no oceano aberto, pode ter caráter rotatório.",
-        "Na entrada do porto, é sempre rotatória; no oceano aberto, é exclusivamente axial.",
-        "Em ambos os ambientes, a corrente permanece com direção e intensidade constantes.",
-        "A corrente de maré existe apenas no oceano aberto, não nas entradas portuárias."
-      ],
-      "correct": 0,
-      "explanation": "Nas entradas portuárias, a diferença de nível entre oceano e interior do porto costuma produzir fluxo e refluxo axialmente ao canal. No oceano aberto, a interação das forças astronômicas com a rotação terrestre favorece correntes rotatórias.",
-      "comments": [
-        "Correta: reproduz a distinção entre corrente axial alternativa no acesso e rotatória em mar aberto.",
-        "Incorreta: os comportamentos foram invertidos.",
-        "Incorreta: direção e intensidade variam com a fase da maré e com o local.",
-        "Incorreta: as correntes de maré são particularmente relevantes em entradas e canais portuários."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Navegação: A Ciência e a Arte, v. I",
-        "edition": "2ª revisão atualizada, DHN, 2023",
-        "section": "Capítulo 10, §10.2.1 — gênese das correntes de maré",
-        "syllabus": "Eixo III — Navegação em águas restritas · marés e correntes de maré",
-        "evidence": "O recorte consultado descreve nas entradas portuárias corrente axial alternativa resultante da diferença de nível entre oceano e interior do porto; em oceano aberto, atribui caráter rotatório à interação das forças astronômicas com a rotação terrestre.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
-    },
-    {
-      "id": "fri-c2-coriolis-tidal-current-hemispheres",
-      "category": "current",
-      "axis": "III",
-      "kind": "Conteúdo atual · Coriolis e corrente rotatória",
-      "stem": "Na explicação das correntes de maré rotatórias em oceano aberto, o efeito de Coriolis tende a desviar as correntes:",
-      "options": [
-        "Para a esquerda em ambos os hemisférios.",
-        "Para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul.",
-        "Para a esquerda no Hemisfério Norte e para a direita no Hemisfério Sul.",
-        "Sempre para a direção da Lua, independentemente do hemisfério."
-      ],
-      "correct": 1,
-      "explanation": "A rotação da Terra produz desvio para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul, contribuindo para o caráter rotatório das correntes de maré oceânicas.",
-      "comments": [
-        "Incorreta: o sentido do desvio muda entre os hemisférios.",
-        "Correta: direita no Hemisfério Norte e esquerda no Hemisfério Sul.",
-        "Incorreta: os sentidos estão invertidos.",
-        "Incorreta: o efeito de Coriolis decorre da rotação terrestre e depende do hemisfério."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Navegação: A Ciência e a Arte, v. I",
-        "edition": "2ª revisão atualizada, DHN, 2023",
-        "section": "Capítulo 10, §10.2.1 — gênese das correntes de maré",
-        "syllabus": "Eixo III — Navegação em águas restritas · corrente rotatória e efeito de Coriolis",
-        "evidence": "O recorte consultado registra que o efeito de Coriolis tende a desviar as correntes de maré para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
-    },
-    {
-      "id": "fri-c3-tidal-current-operational-use",
-      "category": "current",
-      "axis": "III",
-      "kind": "Conteúdo atual · emprego operacional da previsão de corrente",
-      "stem": "O conhecimento antecipado da direção e da velocidade da corrente de maré auxilia diretamente:",
-      "options": [
-        "Apenas a correção da declinação magnética da agulha.",
-        "Somente o cálculo da altura significativa das ondas.",
-        "O planejamento da derrota, a escolha de horários de manobra, do bordo de atracação e das velocidades de evolução.",
-        "Exclusivamente a determinação do calado de verão do navio."
-      ],
+      "kind": "Revisão FSRS vencida · nota 0 · modos de escolta",
+      "stem": "Um rebocador de escolta produz força de governo no modo indireto enquanto o navio perde rapidamente velocidade após uma avaria de leme. Qual providência preserva melhor a efetividade da assistência?",
+      "options": ["Manter o modo indireto, porque a sustentação hidrodinâmica aumenta com a queda da velocidade.", "Solecar o cabo e aguardar a paralisação completa do navio.", "Passar ao modo direto, ou ao modo combinado de frenagem, à medida que o efeito hidrodinâmico diminui.", "Transferir imediatamente o cabo para a proa do navio, sem considerar a geometria da manobra."],
       "correct": 2,
-      "explanation": "A previsão de corrente de maré tem emprego operacional amplo: planejamento da derrota em águas restritas, seleção de horários favoráveis, escolha do bordo de atracação e definição das velocidades com que o navio deve evoluir.",
-      "comments": [
-        "Incorreta: declinação magnética não é determinada pela corrente de maré.",
-        "Incorreta: altura significativa pertence ao estudo de ondas e não resume o uso da previsão de corrente.",
-        "Correta: reúne os quatro usos operacionais listados no recorte consultado.",
-        "Incorreta: o calado de verão decorre de critérios de borda livre, não da previsão de corrente."
-      ],
+      "explanation": "O modo indireto depende do escoamento sobre casco e apêndices do rebocador. Com a queda da velocidade, a força hidrodinâmica se reduz e a transição ao modo direto ou combinado mantém a assistência efetiva.",
+      "comments": ["Incorreta: a sustentação útil ao modo indireto diminui com a velocidade.", "Incorreta: eliminar a tração retira a assistência durante uma fase crítica.", "Correta: é a transição operacional indicada no recorte consultado.", "Incorreta: posição, velocidade, cabo e configuração do conjunto precisam ser considerados."],
       "reference": {
-        "referenceId": "III-02",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Navegação: A Ciência e a Arte, v. I",
-        "edition": "2ª revisão atualizada, DHN, 2023",
-        "section": "Capítulo 10, §10.2.1 — importância das correntes de maré",
-        "syllabus": "Eixo III — Navegação em águas restritas · planejamento e manobra com corrente",
-        "evidence": "O recorte consultado lista como utilidades do conhecimento antecipado das correntes de maré o planejamento da derrota, a seleção dos horários mais favoráveis às manobras, a escolha do bordo de atracação e as velocidades de evolução.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+        "referenceId": "II-09", "base": "Bibliografia oficial PSCPP", "publication": "Tug Use in Port: A Practical Guide", "edition": "4. ed., 2021",
+        "section": "Capítulo 9 — Escort tugs; braking and steering forces", "syllabus": "Eixo II — Arte Naval · rebocadores de escolta e modos direto/indireto",
+        "evidence": "O recorte consultado explica que a velocidade cai rapidamente durante a guinada e que, após a atuação no modo indireto, o rebocador deve passar ao modo direto ou combinado de frenagem para permanecer efetivo.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
       }
     },
     {
-      "id": "fri-t1-current-relative-angle-crossflow",
-      "category": "rotation",
-      "axis": "I",
-      "kind": "Rotação · manobrabilidade · corrente e cross flow",
-      "stem": "Um navio reduz para baixa velocidade em águas restritas e passa a receber a corrente com ângulo relativo superior a cerca de 30°. Segundo a bibliografia, tende a predominar:",
-      "options": [
-        "Escoamento cruzado sobre a asa-casco, com comportamento quadrático das forças.",
-        "Apenas resistência longitudinal linear, sem força lateral.",
-        "Força aerodinâmica de pequeno ângulo sobre as obras mortas.",
-        "Ausência de efeito de corrente, porque a velocidade do navio é baixa."
-      ],
+      "id": "sat-c1-fatigue-sleep-debt",
+      "category": "current",
+      "axis": "VII",
+      "kind": "Conteúdo atual · fadiga · débito de sono",
+      "stem": "Um prático necessita de oito horas de sono por período de 24 horas, mas obtém apenas seis horas por vários dias consecutivos. Segundo a MSC.1/Circ.1598, qual avaliação está correta?",
+      "options": ["Não há débito de sono se os períodos mínimos regulamentares de descanso tiverem sido formalmente cumpridos.", "Há débito de sono acumulado, capaz de reduzir alerta e desempenho, e a própria pessoa pode passar a subestimar sua fadiga.", "O déficit diário é compensado integralmente por cafeína antes do serviço.", "O efeito limita-se à disposição física e não alcança decisão ou saúde."],
+      "correct": 1,
+      "explanation": "A circular define débito de sono como sono acumulado insuficiente ao longo de períodos consecutivos de 24 horas. Ele reduz alerta e desempenho e pode prejudicar a autopercepção do nível de fadiga.",
+      "comments": ["Incorreta: tempo fora de serviço não garante quantidade e qualidade de sono obtidas.", "Correta: reúne a definição e os efeitos operacionais descritos pela IMO.", "Incorreta: cafeína não quita débito de sono nem substitui sono restaurador.", "Incorreta: o recorte também relaciona débito prolongado a desempenho e saúde."],
+      "reference": {
+        "referenceId": "VII-05", "base": "IMO", "publication": "Guidelines on Fatigue", "edition": "MSC.1/Circ.1598, 2019",
+        "section": "Módulo 1, §22 — sleep debt", "syllabus": "Eixo VII — Conhecimentos Gerais · fadiga, desempenho e segurança",
+        "evidence": "O §22 consultado define débito de sono como sono acumulado insuficiente em períodos consecutivos de 24 horas, associa-o à perda de alerta e desempenho e alerta que pessoas privadas de sono podem perder a capacidade de julgar a própria fadiga.",
+        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
+      }
+    },
+    {
+      "id": "sat-c2-fatigue-circadian-lows",
+      "category": "current",
+      "axis": "VII",
+      "kind": "Conteúdo atual · fadiga · ritmo circadiano",
+      "stem": "Durante o planejamento de uma manobra noturna prolongada, qual intervalo merece atenção especial por coincidir com a principal janela de baixa circadiana indicada pela IMO?",
+      "options": ["Entre 03h e 05h.", "Entre 07h e 09h.", "Entre 11h e 13h.", "Entre 19h e 21h."],
       "correct": 0,
-      "explanation": "Em baixa velocidade e com ângulo relativo de corrente superior a aproximadamente 30°, as forças passam a ser predominantemente de escoamento cruzado sobre a asa-casco e apresentam comportamento quadrático.",
-      "comments": [
-        "Correta: corresponde ao regime de cross flow descrito para baixa velocidade e grande ângulo de entrada.",
-        "Incorreta: nesse regime há força lateral relevante e comportamento não meramente linear.",
-        "Incorreta: trata-se de ação hidrodinâmica sobre a parte imersa, não aerodinâmica sobre as obras mortas.",
-        "Incorreta: a baixa velocidade do navio pode tornar a corrente ainda mais importante para a controlabilidade."
-      ],
+      "explanation": "A principal janela de baixa circadiana ocorre aproximadamente entre 03h e 05h. A circular também registra uma queda secundária entre 15h e 17h.",
+      "comments": ["Correta: é a window of circadian low destacada no recorte.", "Incorreta: não corresponde à principal baixa circadiana indicada.", "Incorreta: o recorte não localiza a janela principal nesse período.", "Incorreta: não corresponde à janela circadiana de maior risco descrita."],
       "reference": {
-        "referenceId": "I-08",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 8, §8.3 — a corrente",
-        "syllabus": "Eixo I — Manobrabilidade · forças ambientais e corrente",
-        "evidence": "O recorte consultado informa que, em baixa velocidade e com ângulo de entrada da corrente superior a cerca de 30°, predominam forças de escoamento cruzado sobre a asa-casco, com comportamento de funções quadráticas.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+        "referenceId": "VII-05", "base": "IMO", "publication": "Guidelines on Fatigue", "edition": "MSC.1/Circ.1598, 2019",
+        "section": "Módulo 1, §§27–31 — body clock and circadian rhythm", "syllabus": "Eixo VII — Conhecimentos Gerais · ritmo circadiano e risco operacional",
+        "evidence": "O recorte consultado situa a janela de baixa circadiana entre 03h e 05h, associa incidentes marítimos ao período entre meia-noite e 06h e registra uma queda secundária entre 15h e 17h.",
+        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
       }
     },
     {
-      "id": "fri-t2-current-force-speed-squared",
-      "category": "rotation",
-      "axis": "I",
-      "kind": "Rotação · manobrabilidade · intensidade da força de corrente",
-      "stem": "Mantidos o navio, o calado, o ângulo de ataque e os coeficientes hidrodinâmicos, se a velocidade média da corrente sobre a área molhada duplicar, a força calculada da corrente tenderá a:",
-      "options": [
-        "Permanecer inalterada.",
-        "Duplicar.",
-        "Quadruplicar.",
-        "Reduzir-se à metade."
-      ],
+      "id": "sat-c3-fatigue-management-sleep-opportunity",
+      "category": "current",
+      "axis": "VII",
+      "kind": "Conteúdo atual · fadiga · gestão do risco",
+      "stem": "Na gestão de fadiga a bordo, qual princípio está alinhado às Guidelines on Fatigue?",
+      "options": ["O cumprimento formal das horas mínimas de descanso garante, por si só, sono restaurador.", "A responsabilidade é exclusivamente individual, pois experiência e treinamento eliminam a suscetibilidade à fadiga.", "A estratégia deve priorizar oportunidade adequada de sono e combinar tripulação, carga de trabalho, horários e apoio em uma abordagem abrangente.", "Cochilos e cafeína permitem manter indefinidamente escalas incompatíveis com o ritmo circadiano."],
       "correct": 2,
-      "explanation": "As expressões de força longitudinal, força lateral e momento de guinada contêm o quadrado da velocidade média da corrente. Mantidos os demais fatores, duplicar a velocidade multiplica a força por quatro.",
-      "comments": [
-        "Incorreta: a velocidade da corrente entra explicitamente no cálculo.",
-        "Incorreta: a dependência não é linear.",
-        "Correta: 2² = 4, porque a força varia com o quadrado da velocidade.",
-        "Incorreta: o aumento de velocidade eleva, e não reduz, a força."
-      ],
+      "explanation": "A IMO trata a gestão de fadiga como abordagem abrangente e compartilhada. O núcleo é assegurar oportunidade adequada de sono, sem presumir que todo intervalo de descanso produza sono suficiente e restaurador.",
+      "comments": ["Incorreta: a própria circular distingue período de descanso de sono efetivamente obtido.", "Incorreta: a fadiga pode afetar qualquer pessoa, independentemente de habilidade e treinamento.", "Correta: sintetiza os princípios de oportunidade de sono e abordagem holística.", "Incorreta: contramedidas de curto prazo não substituem organização sustentável do trabalho e do sono."],
       "reference": {
-        "referenceId": "I-08",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 8, §8.3.1 — forças da corrente",
-        "syllabus": "Eixo I — Manobrabilidade · força longitudinal, lateral e momento de guinada da corrente",
-        "evidence": "O recorte consultado apresenta as forças longitudinal e lateral e o momento de guinada proporcionais ao quadrado da velocidade média da corrente sobre a área molhada, mantidos dimensões e coeficientes.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+        "referenceId": "VII-05", "base": "IMO", "publication": "Guidelines on Fatigue", "edition": "MSC.1/Circ.1598, 2019",
+        "section": "Introdução, §§2–4; Módulo 2, §§22–24 — adequate sleep opportunity", "syllabus": "Eixo VII — Conhecimentos Gerais · gestão do risco de fadiga",
+        "evidence": "Os recortes consultados exigem abordagem abrangente que considere todos os responsáveis e indicam que a gestão efetiva depende principalmente de oportunidade adequada de sono; um período de descanso não assegura, por si, quantidade e qualidade de sono.",
+        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
       }
     },
     {
-      "id": "fri-o1-pscpp2011-q35-turning-circle-correction",
+      "id": "sat-t1-a960-brm-emergency-training",
+      "category": "rotation",
+      "axis": "IV",
+      "kind": "Rotação · legislação · BRM para práticos",
+      "stem": "Segundo a Resolução IMO A.960(23), o treinamento de BRM de todo prático deve incluir:",
+      "options": ["apenas comunicações rotineiras, pois emergências são atribuição exclusiva do comandante.", "troca de informações com comandante ou oficial de quarto e manutenção da relação de trabalho em condições rotineiras e de emergência, inclusive falhas em canal estreito.", "somente simulação computacional, vedada experiência prática a bordo.", "apenas procedimentos administrativos de certificação e renovação."],
+      "correct": 1,
+      "explanation": "A A.960(23) exige BRM com ênfase na troca de informações e na relação entre prático e equipe do passadiço, abrangendo rotina e emergências como perda de governo ou propulsão e falhas de radar e sistemas vitais em canal estreito.",
+      "comments": ["Incorreta: o texto inclui expressamente condições de emergência.", "Correta: reúne o núcleo do §5.3 e seus cenários de treinamento.", "Incorreta: a resolução admite simulação como complemento, não como único meio obrigatório.", "Incorreta: o treinamento operacional vai além da administração da licença."],
+      "reference": {
+        "referenceId": "IV-18", "base": "IMO", "publication": "Training, Certification and Operational Procedures for Maritime Pilots", "edition": "A.960(23), 2003",
+        "section": "Anexo 1, §5.3 — bridge resource management", "syllabus": "Eixo IV — Legislação · formação, certificação e procedimentos de praticagem",
+        "evidence": "O §5.3 consultado exige treinamento em BRM com troca de informações e relação eficaz com a equipe do passadiço em rotina e emergência, citando perda de governo, perda de propulsão e falhas de radar, sistemas vitais e automação em canal estreito ou fairway.",
+        "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"
+      }
+    },
+    {
+      "id": "sat-t2-smcp-message-marker-distinction",
+      "category": "rotation",
+      "axis": "VI",
+      "kind": "Rotação · comunicações · marcadores de mensagem",
+      "stem": "Uma estação VTS, com plena autoridade, transmite uma determinação legalmente vinculante para que um navio não cruze o canal. Qual marcador SMCP deve preceder a mensagem?",
+      "options": ["ADVICE.", "WARNING.", "INFORMATION.", "INSTRUCTION."],
+      "correct": 3,
+      "explanation": "INSTRUCTION identifica mensagem enviada por autoridade competente com intenção de influenciar a conduta por uma regra; o destinatário deve cumpri-la, salvo razão de segurança contraditória a ser informada.",
+      "comments": ["Incorreta: ADVICE é recomendação cuja decisão final permanece com o destinatário.", "Incorreta: WARNING chama atenção para um perigo, sem impor por si uma determinação regulatória.", "Incorreta: INFORMATION limita-se a fatos, situações ou observações.", "Correta: é o marcador destinado à determinação regulatória emitida por autoridade competente."],
+      "reference": {
+        "referenceId": "VI-01", "base": "IMO", "publication": "IMO Standard Marine Communication Phrases (SMCP)", "edition": "A.918(22), 2001",
+        "section": "General, item 3; Parte A1/6 — Application of Message Markers", "syllabus": "Eixo VI — Comunicações · marcadores de mensagem e VTS",
+        "evidence": "O recorte consultado lista oito marcadores e define INSTRUCTION como mensagem de autoridade plena destinada a influenciar por uma regra, diferenciando-a de recomendação, aviso de perigo e informação factual.",
+        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
+      }
+    },
+    {
+      "id": "sat-o1-pscpp2008-q26-tides-correction",
       "category": "official",
-      "axis": "III",
-      "kind": "Questão oficial adaptada · PSCPP 2011 · Prova Amarela · questão 35 · correção de erro",
-      "stem": "Ao demandar um canal ou manobrar em águas restritas, assinale a alternativa que contém conceito ou definição incorreta sobre dados táticos e curva de giro:",
-      "options": [
-        "Abatimento é o caimento do navio para o bordo da guinada, no início da evolução, medido perpendicularmente ao rumo inicial.",
-        "Os dados táticos são determinados durante as provas de mar posteriores à construção ou modernização.",
-        "Afastamento é a distância transversal ao rumo inicial, desde o ponto em que o leme foi carregado até a proa atingir o novo rumo.",
-        "Avanço, diâmetro tático e afastamento diminuem com o aumento do ângulo de leme.",
-        "No giro de 360° com ângulo de leme constante, o diâmetro final é menor que o diâmetro tático."
-      ],
-      "correct": 0,
-      "explanation": "A alternativa A é a incorreta. O abatimento inicial ocorre para o bordo contrário ao da guinada, e não para o mesmo bordo.",
-      "comments": [
-        "Incorreta e gabarito: a popa é empurrada para fora e o abatimento é medido para o bordo contrário ao da guinada.",
-        "Correta como afirmação técnica; portanto, não atende ao comando de marcar a incorreta.",
-        "Correta como afirmação técnica: essa é a definição de afastamento.",
-        "Correta como afirmação técnica: esses elementos diminuem quando se aumenta o ângulo de leme.",
-        "Correta como afirmação técnica: o diâmetro final é sempre menor que o diâmetro tático."
-      ],
+      "axis": "V",
+      "kind": "Questão oficial adaptada · PSCPP 2008 · questão 26 · gabarito E · correção de fragilidade",
+      "stem": "Sobre marés, Tábuas das Marés e Cartas de Correntes de Marés, analise: I) as Cartas de Correntes de Marés se referem às marés do próprio dia e podem ser usadas diariamente; II) ao longo do ciclo lunar, as variações diárias das alturas são simétricas em relação ao nível médio, na quadratura e na sizígia; III) a altura do nível médio destacada na Tábua alerta para a amplitude da maré de sizígia do porto; IV) diferenças entre intensidades de enchente e vazante decorrem de características geográficas; V) o zero da régua de marés está associado à carta náutica do porto. Assinale a opção que contém todas as afirmativas verdadeiras.",
+      "options": ["I e II.", "II e IV.", "III, IV e V.", "I, III e V.", "II, III e V."],
+      "correct": 4,
+      "explanation": "O gabarito oficial é E. São verdadeiras II, III e V; a afirmação I confunde cartas referidas a fases da maré com cartas do dia, e IV atribui incorretamente à geografia uma assimetria tratada em relação às fases e referências de maré.",
+      "comments": ["Incorreta: inclui I, que atribui às cartas uma validade diária vinculada à maré do próprio dia.", "Incorreta: inclui IV e omite III e V.", "Incorreta: inclui IV, embora III e V estejam corretas.", "Incorreta: inclui I e omite II.", "Correta: coincide com o gabarito oficial E — II, III e V."],
       "reference": {
-        "referenceId": "III-02",
-        "base": "Bibliografia oficial PSCPP e prova oficial histórica",
-        "publication": "Navegação: A Ciência e a Arte, v. I",
-        "edition": "2ª revisão atualizada, DHN, 2023",
-        "section": "Capítulo 8, §§8.1–8.3 — dados táticos, curva de giro e considerações práticas",
-        "syllabus": "Eixo III — Navegação em águas restritas · dados táticos e elementos da curva de giro",
-        "evidence": "O recorte consultado define o abatimento como caimento para o bordo contrário ao da guinada; confirma a origem dos dados táticos nas provas de mar, a definição de afastamento, a redução de avanço, diâmetro tático e afastamento com maior ângulo de leme e a inferioridade do diâmetro final em relação ao tático.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view",
+        "referenceId": "V-03", "base": "Bibliografia oficial PSCPP e prova oficial histórica", "publication": "Meteorologia e Oceanografia — Usuário Navegante", "edition": "2. ed., 2007",
+        "section": "Capítulo IX — marés; nível médio, níveis de referência e correntes de maré", "syllabus": "Eixo V — Meteorologia/Oceanografia · marés aplicadas à navegação",
+        "evidence": "O recorte consultado relaciona a variação simétrica das alturas ao nível médio, associa a altura do nível médio à semiamplitude de sizígia e vincula o zero da régua de marés ao nível de redução empregado na carta náutica do porto.",
+        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view",
         "origin": {
-          "exam": "PSCPP 2011 — Prova Amarela",
-          "year": 2011,
-          "question": 35,
-          "answer": "A",
-          "adaptation": "Enunciado contextual condensado e ortografia atualizada, sem alteração dos conceitos, das alternativas ou da solução.",
-          "url": "https://drive.google.com/file/d/1Fdz2o1xtzIkg1KONqP95HemlINDJcv_1/view"
+          "exam": "PSCPP 2008", "year": 2008, "question": 26, "answer": "E",
+          "adaptation": "Ortografia atualizada e enunciado condensado, sem alteração das cinco afirmações, das alternativas ou da solução.",
+          "url": "https://drive.google.com/file/d/1KfllJf4BukeOqCtNlr5uuwNC7xDu45I6/view"
         }
       }
     }
