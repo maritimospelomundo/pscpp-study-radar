@@ -1,183 +1,333 @@
 {
-  "roundId": "cumulative-fatigue-tides-corrections-2026-10-03",
-  "label": "Simulado cumulativo de 3 de outubro de 2026",
-  "title": "Fadiga, decisão segura e correção de fragilidades",
+  "roundId": "sunday-smcp-tides-corrections-2026-10-04",
+  "label": "Rodada de revisão de 4 de outubro de 2026",
+  "title": "Correção de marcadores SMCP, marés e decisões em baixa visibilidade",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões FSRS e notas 0/1 · fadiga e ritmo circadiano · A.960(23) e SMCP · questão oficial de marés",
+  "path": "Revisões FSRS e erros de 3/10 · marcadores SMCP · marés e referências verticais · RIPEAM e fadiga",
   "method": "4–3–2–1",
-  "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
+  "mixPlan": {
+    "review": 4,
+    "current": 3,
+    "rotation": 2,
+    "official": 1
+  },
   "questions": [
     {
-      "id": "sat-r1-coriolis-tidal-current-recovery",
+      "id": "sun-r1-smcp-instruction-advice-correction",
       "category": "review",
-      "axis": "III",
-      "kind": "Revisão imediata · nota 0 · Coriolis e correntes de maré",
-      "stem": "No oceano aberto, a rotação da Terra contribui para o caráter rotatório das correntes de maré. Quanto ao desvio produzido pelo efeito de Coriolis, assinale a opção correta.",
-      "options": ["Para a esquerda no Hemisfério Norte e para a direita no Hemisfério Sul.", "Para a direita nos dois hemisférios, variando apenas a intensidade.", "Para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul.", "Não há desvio nas correntes de maré; Coriolis atua somente sobre ventos."],
-      "correct": 2,
-      "explanation": "O efeito de Coriolis desvia movimentos para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul, contribuindo com as forças astronômicas para a gênese de correntes rotatórias.",
-      "comments": ["Incorreta: inverte os sentidos do desvio nos dois hemisférios.", "Incorreta: o sentido do desvio muda entre os hemisférios.", "Correta: corresponde aos sentidos expressamente indicados no recorte consultado.", "Incorreta: o capítulo aplica o efeito de Coriolis às correntes de maré em oceano aberto."],
-      "reference": {
-        "referenceId": "III-02", "base": "Bibliografia oficial PSCPP", "publication": "Navegação: A Ciência e a Arte, v. I", "edition": "2ª revisão atualizada, DHN, 2023",
-        "section": "Capítulo 10, §10.2.1 — gênese das correntes de maré", "syllabus": "Eixo III — Navegação em águas restritas · marés e correntes de maré",
-        "evidence": "O recorte consultado informa que, no oceano aberto, Coriolis desvia a corrente para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul, concorrendo com as forças astronômicas para formar correntes rotatórias.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
-    },
-    {
-      "id": "sat-r2-tropical-cyclone-threshold-recovery",
-      "category": "review",
-      "axis": "V",
-      "kind": "Revisão FSRS vencida · nota 0 · classificação de ciclone tropical",
-      "stem": "Pela classificação apresentada por Miguens para a média do vento máximo sustentado à superfície durante um minuto, qual faixa caracteriza uma tempestade tropical?",
-      "options": ["Inferior a 34 nós.", "Igual ou superior a 34 nós e inferior a 64 nós.", "Superior a 34 nós e igual ou inferior a 64 nós.", "Igual ou superior a 64 nós."],
-      "correct": 1,
-      "explanation": "A tempestade tropical começa em 34 nós, inclusive, e termina antes de 64 nós. Abaixo de 34 nós é depressão tropical; a partir de 64 nós é furacão.",
-      "comments": ["Incorreta: essa faixa corresponde à depressão tropical.", "Correta: preserva os dois limites e suas desigualdades.", "Incorreta: exclui 34 nós e inclui 64 nós, invertendo os limites críticos.", "Incorreta: essa faixa corresponde ao furacão."],
-      "reference": {
-        "referenceId": "V-01", "base": "Bibliografia oficial PSCPP", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN",
-        "section": "Capítulo 45 — Noções de Meteorologia para Navegantes; ciclones tropicais", "syllabus": "Eixo V — Meteorologia/Oceanografia · sistemas tropicais",
-        "evidence": "O recorte consultado classifica depressão tropical com vento inferior a 34 nós, tempestade tropical com vento igual ou superior a 34 e inferior a 64 nós e furacão com vento igual ou superior a 64 nós.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
-      }
-    },
-    {
-      "id": "sat-r3-significant-wave-height-recovery",
-      "category": "review",
-      "axis": "V",
-      "kind": "Revisão FSRS vencida · nota 0 · altura significativa",
-      "stem": "Em um registro ordenado de alturas de ondas, a altura significativa representa:",
-      "options": ["a média de todas as alturas registradas.", "a média do décimo mais alto das ondas.", "a maior altura individual observada no período.", "a média do terço mais alto das ondas."],
-      "correct": 3,
-      "explanation": "A altura significativa é a média das alturas do terço mais alto das ondas, medida estatística historicamente associada à avaliação visual do estado do mar.",
-      "comments": ["Incorreta: a média de todas as ondas é menor e não define a altura significativa.", "Incorreta: o décimo mais alto corresponde a outro parâmetro estatístico.", "Incorreta: uma altura máxima isolada não é uma média significativa.", "Correta: reproduz a definição H1/3 apresentada na obra."],
-      "reference": {
-        "referenceId": "V-04", "base": "Bibliografia oficial PSCPP", "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio", "edition": "1. ed., 2021",
-        "section": "Capítulo 2 — distribuição estatística das ondas; altura significativa", "syllabus": "Eixo V — Meteorologia/Oceanografia · ondas e estado do mar",
-        "evidence": "O recorte consultado define altura significativa como a média das alturas do terço mais alto das ondas e explica sua origem na estimativa visual tradicional do estado do mar.",
-        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
-      }
-    },
-    {
-      "id": "sat-r4-escort-indirect-direct-recovery",
-      "category": "review",
-      "axis": "II",
-      "kind": "Revisão FSRS vencida · nota 0 · modos de escolta",
-      "stem": "Um rebocador de escolta produz força de governo no modo indireto enquanto o navio perde rapidamente velocidade após uma avaria de leme. Qual providência preserva melhor a efetividade da assistência?",
-      "options": ["Manter o modo indireto, porque a sustentação hidrodinâmica aumenta com a queda da velocidade.", "Solecar o cabo e aguardar a paralisação completa do navio.", "Passar ao modo direto, ou ao modo combinado de frenagem, à medida que o efeito hidrodinâmico diminui.", "Transferir imediatamente o cabo para a proa do navio, sem considerar a geometria da manobra."],
-      "correct": 2,
-      "explanation": "O modo indireto depende do escoamento sobre casco e apêndices do rebocador. Com a queda da velocidade, a força hidrodinâmica se reduz e a transição ao modo direto ou combinado mantém a assistência efetiva.",
-      "comments": ["Incorreta: a sustentação útil ao modo indireto diminui com a velocidade.", "Incorreta: eliminar a tração retira a assistência durante uma fase crítica.", "Correta: é a transição operacional indicada no recorte consultado.", "Incorreta: posição, velocidade, cabo e configuração do conjunto precisam ser considerados."],
-      "reference": {
-        "referenceId": "II-09", "base": "Bibliografia oficial PSCPP", "publication": "Tug Use in Port: A Practical Guide", "edition": "4. ed., 2021",
-        "section": "Capítulo 9 — Escort tugs; braking and steering forces", "syllabus": "Eixo II — Arte Naval · rebocadores de escolta e modos direto/indireto",
-        "evidence": "O recorte consultado explica que a velocidade cai rapidamente durante a guinada e que, após a atuação no modo indireto, o rebocador deve passar ao modo direto ou combinado de frenagem para permanecer efetivo.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
-      }
-    },
-    {
-      "id": "sat-c1-fatigue-sleep-debt",
-      "category": "current",
-      "axis": "VII",
-      "kind": "Conteúdo atual · fadiga · débito de sono",
-      "stem": "Um prático necessita de oito horas de sono por período de 24 horas, mas obtém apenas seis horas por vários dias consecutivos. Segundo a MSC.1/Circ.1598, qual avaliação está correta?",
-      "options": ["Não há débito de sono se os períodos mínimos regulamentares de descanso tiverem sido formalmente cumpridos.", "Há débito de sono acumulado, capaz de reduzir alerta e desempenho, e a própria pessoa pode passar a subestimar sua fadiga.", "O déficit diário é compensado integralmente por cafeína antes do serviço.", "O efeito limita-se à disposição física e não alcança decisão ou saúde."],
-      "correct": 1,
-      "explanation": "A circular define débito de sono como sono acumulado insuficiente ao longo de períodos consecutivos de 24 horas. Ele reduz alerta e desempenho e pode prejudicar a autopercepção do nível de fadiga.",
-      "comments": ["Incorreta: tempo fora de serviço não garante quantidade e qualidade de sono obtidas.", "Correta: reúne a definição e os efeitos operacionais descritos pela IMO.", "Incorreta: cafeína não quita débito de sono nem substitui sono restaurador.", "Incorreta: o recorte também relaciona débito prolongado a desempenho e saúde."],
-      "reference": {
-        "referenceId": "VII-05", "base": "IMO", "publication": "Guidelines on Fatigue", "edition": "MSC.1/Circ.1598, 2019",
-        "section": "Módulo 1, §22 — sleep debt", "syllabus": "Eixo VII — Conhecimentos Gerais · fadiga, desempenho e segurança",
-        "evidence": "O §22 consultado define débito de sono como sono acumulado insuficiente em períodos consecutivos de 24 horas, associa-o à perda de alerta e desempenho e alerta que pessoas privadas de sono podem perder a capacidade de julgar a própria fadiga.",
-        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
-      }
-    },
-    {
-      "id": "sat-c2-fatigue-circadian-lows",
-      "category": "current",
-      "axis": "VII",
-      "kind": "Conteúdo atual · fadiga · ritmo circadiano",
-      "stem": "Durante o planejamento de uma manobra noturna prolongada, qual intervalo merece atenção especial por coincidir com a principal janela de baixa circadiana indicada pela IMO?",
-      "options": ["Entre 03h e 05h.", "Entre 07h e 09h.", "Entre 11h e 13h.", "Entre 19h e 21h."],
-      "correct": 0,
-      "explanation": "A principal janela de baixa circadiana ocorre aproximadamente entre 03h e 05h. A circular também registra uma queda secundária entre 15h e 17h.",
-      "comments": ["Correta: é a window of circadian low destacada no recorte.", "Incorreta: não corresponde à principal baixa circadiana indicada.", "Incorreta: o recorte não localiza a janela principal nesse período.", "Incorreta: não corresponde à janela circadiana de maior risco descrita."],
-      "reference": {
-        "referenceId": "VII-05", "base": "IMO", "publication": "Guidelines on Fatigue", "edition": "MSC.1/Circ.1598, 2019",
-        "section": "Módulo 1, §§27–31 — body clock and circadian rhythm", "syllabus": "Eixo VII — Conhecimentos Gerais · ritmo circadiano e risco operacional",
-        "evidence": "O recorte consultado situa a janela de baixa circadiana entre 03h e 05h, associa incidentes marítimos ao período entre meia-noite e 06h e registra uma queda secundária entre 15h e 17h.",
-        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
-      }
-    },
-    {
-      "id": "sat-c3-fatigue-management-sleep-opportunity",
-      "category": "current",
-      "axis": "VII",
-      "kind": "Conteúdo atual · fadiga · gestão do risco",
-      "stem": "Na gestão de fadiga a bordo, qual princípio está alinhado às Guidelines on Fatigue?",
-      "options": ["O cumprimento formal das horas mínimas de descanso garante, por si só, sono restaurador.", "A responsabilidade é exclusivamente individual, pois experiência e treinamento eliminam a suscetibilidade à fadiga.", "A estratégia deve priorizar oportunidade adequada de sono e combinar tripulação, carga de trabalho, horários e apoio em uma abordagem abrangente.", "Cochilos e cafeína permitem manter indefinidamente escalas incompatíveis com o ritmo circadiano."],
-      "correct": 2,
-      "explanation": "A IMO trata a gestão de fadiga como abordagem abrangente e compartilhada. O núcleo é assegurar oportunidade adequada de sono, sem presumir que todo intervalo de descanso produza sono suficiente e restaurador.",
-      "comments": ["Incorreta: a própria circular distingue período de descanso de sono efetivamente obtido.", "Incorreta: a fadiga pode afetar qualquer pessoa, independentemente de habilidade e treinamento.", "Correta: sintetiza os princípios de oportunidade de sono e abordagem holística.", "Incorreta: contramedidas de curto prazo não substituem organização sustentável do trabalho e do sono."],
-      "reference": {
-        "referenceId": "VII-05", "base": "IMO", "publication": "Guidelines on Fatigue", "edition": "MSC.1/Circ.1598, 2019",
-        "section": "Introdução, §§2–4; Módulo 2, §§22–24 — adequate sleep opportunity", "syllabus": "Eixo VII — Conhecimentos Gerais · gestão do risco de fadiga",
-        "evidence": "Os recortes consultados exigem abordagem abrangente que considere todos os responsáveis e indicam que a gestão efetiva depende principalmente de oportunidade adequada de sono; um período de descanso não assegura, por si, quantidade e qualidade de sono.",
-        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
-      }
-    },
-    {
-      "id": "sat-t1-a960-brm-emergency-training",
-      "category": "rotation",
-      "axis": "IV",
-      "kind": "Rotação · legislação · BRM para práticos",
-      "stem": "Segundo a Resolução IMO A.960(23), o treinamento de BRM de todo prático deve incluir:",
-      "options": ["apenas comunicações rotineiras, pois emergências são atribuição exclusiva do comandante.", "troca de informações com comandante ou oficial de quarto e manutenção da relação de trabalho em condições rotineiras e de emergência, inclusive falhas em canal estreito.", "somente simulação computacional, vedada experiência prática a bordo.", "apenas procedimentos administrativos de certificação e renovação."],
-      "correct": 1,
-      "explanation": "A A.960(23) exige BRM com ênfase na troca de informações e na relação entre prático e equipe do passadiço, abrangendo rotina e emergências como perda de governo ou propulsão e falhas de radar e sistemas vitais em canal estreito.",
-      "comments": ["Incorreta: o texto inclui expressamente condições de emergência.", "Correta: reúne o núcleo do §5.3 e seus cenários de treinamento.", "Incorreta: a resolução admite simulação como complemento, não como único meio obrigatório.", "Incorreta: o treinamento operacional vai além da administração da licença."],
-      "reference": {
-        "referenceId": "IV-18", "base": "IMO", "publication": "Training, Certification and Operational Procedures for Maritime Pilots", "edition": "A.960(23), 2003",
-        "section": "Anexo 1, §5.3 — bridge resource management", "syllabus": "Eixo IV — Legislação · formação, certificação e procedimentos de praticagem",
-        "evidence": "O §5.3 consultado exige treinamento em BRM com troca de informações e relação eficaz com a equipe do passadiço em rotina e emergência, citando perda de governo, perda de propulsão e falhas de radar, sistemas vitais e automação em canal estreito ou fairway.",
-        "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"
-      }
-    },
-    {
-      "id": "sat-t2-smcp-message-marker-distinction",
-      "category": "rotation",
       "axis": "VI",
-      "kind": "Rotação · comunicações · marcadores de mensagem",
-      "stem": "Uma estação VTS, com plena autoridade, transmite uma determinação legalmente vinculante para que um navio não cruze o canal. Qual marcador SMCP deve preceder a mensagem?",
-      "options": ["ADVICE.", "WARNING.", "INFORMATION.", "INSTRUCTION."],
+      "kind": "Revisão imediata · nota 0 · INSTRUCTION versus ADVICE",
+      "stem": "Uma estação VTS, investida de plena autoridade, determina que um navio não cruze o canal. Qual marcador SMCP deve abrir a mensagem?",
+      "options": [
+        "ADVICE.",
+        "WARNING.",
+        "INFORMATION.",
+        "INSTRUCTION."
+      ],
       "correct": 3,
-      "explanation": "INSTRUCTION identifica mensagem enviada por autoridade competente com intenção de influenciar a conduta por uma regra; o destinatário deve cumpri-la, salvo razão de segurança contraditória a ser informada.",
-      "comments": ["Incorreta: ADVICE é recomendação cuja decisão final permanece com o destinatário.", "Incorreta: WARNING chama atenção para um perigo, sem impor por si uma determinação regulatória.", "Incorreta: INFORMATION limita-se a fatos, situações ou observações.", "Correta: é o marcador destinado à determinação regulatória emitida por autoridade competente."],
+      "explanation": "INSTRUCTION identifica uma mensagem de autoridade competente destinada a influenciar a conduta por força de uma regra. O destinatário deve cumpri-la, salvo razão de segurança contraditória, que deve ser comunicada.",
+      "comments": [
+        "Incorreta: ADVICE apresenta recomendação, e a decisão final permanece com o destinatário.",
+        "Incorreta: WARNING chama atenção para perigo, mas não expressa, por si, uma determinação regulatória.",
+        "Incorreta: INFORMATION comunica fatos, situações ou observações.",
+        "Correta: INSTRUCTION é o marcador da determinação emitida por autoridade plena."
+      ],
       "reference": {
-        "referenceId": "VI-01", "base": "IMO", "publication": "IMO Standard Marine Communication Phrases (SMCP)", "edition": "A.918(22), 2001",
-        "section": "General, item 3; Parte A1/6 — Application of Message Markers", "syllabus": "Eixo VI — Comunicações · marcadores de mensagem e VTS",
-        "evidence": "O recorte consultado lista oito marcadores e define INSTRUCTION como mensagem de autoridade plena destinada a influenciar por uma regra, diferenciando-a de recomendação, aviso de perigo e informação factual.",
+        "referenceId": "VI-01",
+        "base": "IMO",
+        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
+        "edition": "A.918(22), 2001",
+        "section": "General, item 3; Parte A1/6 — Application of Message Markers",
+        "syllabus": "Eixo VI — Comunicações · marcadores de mensagem e VTS",
+        "evidence": "O recorte consultado define INSTRUCTION como mensagem de autoridade plena destinada a influenciar por uma regra e ADVICE como recomendação cuja decisão permanece com o destinatário.",
         "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
       }
     },
     {
-      "id": "sat-o1-pscpp2008-q26-tides-correction",
+      "id": "sun-r2-colreg-rule19-fog-signal-ahead",
+      "category": "review",
+      "axis": "III",
+      "kind": "Revisão vencida · RIPEAM · Regra 19(e)",
+      "stem": "Em visibilidade restrita, um navio ouve, aparentemente por ante-a-vante do través, o sinal de cerração de outra embarcação cuja posição ainda não foi determinada. Conforme a Regra 19(e), qual conduta é exigida?",
+      "options": [
+        "Manter rumo e velocidade até que o alvo seja adquirido visualmente.",
+        "Reduzir à velocidade mínima de governo, retirar todo o seguimento se necessário e navegar com extrema cautela.",
+        "Alterar sempre o rumo para bombordo, afastando-se do sinal.",
+        "Parar as máquinas, mas conservar obrigatoriamente o seguimento para manter governo."
+      ],
+      "correct": 1,
+      "explanation": "A Regra 19(e) exige reduzir à velocidade mínima em que se possa manter o rumo; se necessário, deve-se retirar todo o seguimento e, em qualquer caso, navegar com extrema cautela até cessar o perigo de abalroamento.",
+      "comments": [
+        "Incorreta: a regra impõe redução imediata quando o sinal é ouvido aparentemente por ante-a-vante do través.",
+        "Correta: reúne as três medidas previstas na Regra 19(e).",
+        "Incorreta: a Regra 19(d) orienta evitar alteração para bombordo para alvo por ante-a-vante do través, salvo se estiver sendo ultrapassado.",
+        "Incorreta: a retirada de todo o seguimento pode ser necessária; conservar seguimento não é obrigação absoluta."
+      ],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "IMO",
+        "publication": "COLREG - Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte B, Seção III, Regra 19(d)–(e)",
+        "syllabus": "Eixo III — Navegação em Águas Restritas · RIPEAM em visibilidade restrita",
+        "evidence": "O recorte consultado determina reduzir à velocidade mínima de governo ao ouvir sinal de cerração aparentemente por ante-a-vante do través, retirar todo o seguimento se necessário e navegar com extrema cautela.",
+        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
+      }
+    },
+    {
+      "id": "sun-r3-msc1053-depth-strict-limit",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão vencida · manobrabilidade · profundidade da área de prova",
+      "stem": "Um navio com calado médio de 10 m realizará provas de manobrabilidade destinadas a demonstrar conformidade com os padrões IMO. Segundo a MSC/Circ.1053, qual profundidade atende ao critério de águas profundas?",
+      "options": [
+        "30 m.",
+        "40 m.",
+        "41 m.",
+        "Qualquer profundidade superior a 20 m."
+      ],
+      "correct": 2,
+      "explanation": "A profundidade deve exceder quatro vezes o calado médio. Para 10 m, quatro vezes o calado são 40 m; como a condição é estrita, 41 m atende e 40 m não.",
+      "comments": [
+        "Incorreta: corresponde a apenas três vezes o calado médio.",
+        "Incorreta: iguala quatro vezes o calado, mas o texto exige exceder esse valor.",
+        "Correta: 41 m é superior a quatro vezes o calado médio de 10 m.",
+        "Incorreta: duas vezes o calado não satisfaz o critério indicado."
+      ],
+      "reference": {
+        "referenceId": "I-06",
+        "base": "IMO",
+        "publication": "Explanatory Notes to the Standards for Ship Manoeuvrability",
+        "edition": "MSC/Circ.1053, 2002",
+        "section": "Capítulo 2, §2.1.2 — deep, unrestricted water",
+        "syllabus": "Eixo I — Manobrabilidade · condições ambientais das provas de mar",
+        "evidence": "O §2.1.2 consultado estabelece que a profundidade da água deve exceder quatro vezes o calado médio do navio para as provas em águas profundas e irrestritas.",
+        "url": "https://drive.google.com/file/d/18-iPKtK3TOFSi08gL_AYxix7pox04UF3/view"
+      }
+    },
+    {
+      "id": "sun-r4-tide-gauge-chart-datum",
+      "category": "review",
+      "axis": "V",
+      "kind": "Revisão imediata · nota 0 · zero da régua e nível de redução",
+      "stem": "Ao comparar a régua de marés do porto com a carta náutica local, qual relação de referência deve ser reconhecida?",
+      "options": [
+        "O zero da régua coincide com o nível médio do mar, independentemente da carta.",
+        "O zero da régua está associado ao nível de redução adotado na carta náutica do porto.",
+        "O zero da régua corresponde sempre à baixa-mar observada no próprio dia.",
+        "A régua mede apenas amplitude e não se relaciona com profundidades cartografadas."
+      ],
+      "correct": 1,
+      "explanation": "O zero da régua de marés está associado ao nível de redução da carta do porto. Assim, a altura da maré pode ser combinada com a profundidade cartografada para obter a profundidade real.",
+      "comments": [
+        "Incorreta: nível médio e nível de redução são referências distintas.",
+        "Correta: expressa a vinculação usada entre observação da maré e carta náutica.",
+        "Incorreta: o zero é uma referência fixa, não a baixa-mar variável de cada dia.",
+        "Incorreta: a régua integra a determinação da altura da maré em relação à referência cartográfica."
+      ],
+      "reference": {
+        "referenceId": "V-03",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "Meteorologia e Oceanografia",
+        "edition": "4. ed., 2019",
+        "section": "Marés — níveis de referência, régua de marés e profundidade real",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · marés aplicadas à navegação",
+        "evidence": "O recorte consultado associa o zero da régua ao nível de redução da carta náutica do porto e apresenta a profundidade real como soma da altura da maré com a profundidade cartografada.",
+        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
+      }
+    },
+    {
+      "id": "sun-c1-smcp-warning-information",
+      "category": "current",
+      "axis": "VI",
+      "kind": "Conteúdo atual · SMCP · WARNING versus INFORMATION",
+      "stem": "Uma estação costeira pretende chamar a atenção de um navio para um contêiner à deriva em sua derrota, constituindo perigo imediato. Qual marcador SMCP é o mais adequado?",
+      "options": [
+        "INFORMATION.",
+        "WARNING.",
+        "ADVICE.",
+        "INTENTION."
+      ],
+      "correct": 1,
+      "explanation": "WARNING é empregado para chamar a atenção para um perigo. INFORMATION comunica fatos ou situações observadas, sem caracterizar por si a função específica de advertência.",
+      "comments": [
+        "Incorreta: embora haja um fato observado, a finalidade principal da mensagem é advertir sobre perigo.",
+        "Correta: WARNING é o marcador próprio para perigo.",
+        "Incorreta: ADVICE introduz recomendação, não a identificação primária do perigo.",
+        "Incorreta: INTENTION anuncia ação náutica imediata pretendida pelo próprio emissor."
+      ],
+      "reference": {
+        "referenceId": "VI-01",
+        "base": "IMO",
+        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
+        "edition": "A.918(22), 2001",
+        "section": "General, item 3; Parte A1/6 — Application of Message Markers",
+        "syllabus": "Eixo VI — Comunicações · função dos marcadores SMCP",
+        "evidence": "O recorte consultado define WARNING como mensagem destinada a chamar atenção para perigo e INFORMATION como comunicação de fatos, situações ou observações.",
+        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
+      }
+    },
+    {
+      "id": "sun-c2-smcp-request-limits",
+      "category": "current",
+      "axis": "VI",
+      "kind": "Conteúdo atual · SMCP · REQUEST e seus limites",
+      "stem": "Qual mensagem está corretamente classificada com o marcador REQUEST nas SMCP?",
+      "options": [
+        "REQUEST. Alter course to starboard to comply with Rule 15.",
+        "REQUEST. Keep out of the way; I am the stand-on vessel.",
+        "REQUEST. I require two tugs.",
+        "REQUEST. You must not cross the fairway."
+      ],
+      "correct": 2,
+      "explanation": "REQUEST pode ser empregado para solicitar serviços ou providências, como rebocadores. Não deve ser usado para tratar de manobra de navegação nem para modificar ou substituir o COLREG.",
+      "comments": [
+        "Incorreta: REQUEST não deve ser utilizado para dirigir manobra de navegação baseada no COLREG.",
+        "Incorreta: a solicitação não pode alterar as obrigações de governo e navegação.",
+        "Correta: a própria aplicação do marcador admite solicitar rebocadores.",
+        "Incorreta: uma proibição regulatória emitida por autoridade plena pede o marcador INSTRUCTION."
+      ],
+      "reference": {
+        "referenceId": "VI-01",
+        "base": "IMO",
+        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
+        "edition": "A.918(22), 2001",
+        "section": "Parte A1/6 — Application of Message Markers, REQUEST",
+        "syllabus": "Eixo VI — Comunicações · solicitações e limites do marcador REQUEST",
+        "evidence": "O recorte consultado permite REQUEST para pedir ação, assistência, suprimentos, rebocadores ou autorização, mas proíbe seu uso em mensagens de navegação ou para modificar o COLREG; o exemplo solicita dois rebocadores.",
+        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
+      }
+    },
+    {
+      "id": "sun-c3-smcp-intention-immediate-action",
+      "category": "current",
+      "axis": "VI",
+      "kind": "Conteúdo atual · SMCP · INTENTION",
+      "stem": "Um navio deseja anunciar a ação náutica imediata que ele próprio pretende executar. Qual opção usa corretamente o marcador SMCP?",
+      "options": [
+        "INTENTION. I will reduce my speed.",
+        "INTENTION. You should reduce your speed.",
+        "INTENTION. Shallow water ahead of you.",
+        "INTENTION. Do not overtake."
+      ],
+      "correct": 0,
+      "explanation": "INTENTION anuncia uma ação náutica imediata pretendida pelo navio que transmite a mensagem. Recomendações, perigos e determinações correspondem a outros marcadores.",
+      "comments": [
+        "Correta: anuncia a ação imediata pretendida pelo próprio emissor.",
+        "Incorreta: é recomendação dirigida ao destinatário e pede ADVICE.",
+        "Incorreta: descreve perigo e pede WARNING.",
+        "Incorreta: expressa proibição, que pode constituir INSTRUCTION quando emitida por autoridade competente."
+      ],
+      "reference": {
+        "referenceId": "VI-01",
+        "base": "IMO",
+        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
+        "edition": "A.918(22), 2001",
+        "section": "Parte A1/6 — Application of Message Markers, INTENTION",
+        "syllabus": "Eixo VI — Comunicações · anúncio de ação náutica imediata",
+        "evidence": "O recorte consultado define INTENTION como anúncio da ação náutica imediata que o próprio navio emissor pretende realizar e exemplifica a redução de velocidade.",
+        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
+      }
+    },
+    {
+      "id": "sun-t1-tides-mean-level-spring-range",
+      "category": "rotation",
+      "axis": "V",
+      "kind": "Rotação de consolidação · marés · nível médio e sizígia",
+      "stem": "Em um porto de maré semidiurna, qual interpretação é compatível com as referências apresentadas por Lobo e Soares?",
+      "options": [
+        "A altura do nível médio sobre o nível de redução corresponde à semiamplitude da maré de sizígia.",
+        "O nível médio varia diariamente na mesma proporção que a preamar.",
+        "A amplitude de sizígia é igual à altura total do nível médio acima do nível de redução.",
+        "O nível de redução coincide obrigatoriamente com o nível médio."
+      ],
+      "correct": 0,
+      "explanation": "A altura do nível médio sobre o nível de redução representa a semiamplitude de sizígia. Nível médio, nível de redução, amplitude e semiamplitude não são grandezas intercambiáveis.",
+      "comments": [
+        "Correta: corresponde à relação apresentada no recorte consultado.",
+        "Incorreta: o nível médio é uma referência, não acompanha a variação diária de cada preamar.",
+        "Incorreta: confunde amplitude completa com semiamplitude.",
+        "Incorreta: nível médio e nível de redução são referências distintas."
+      ],
+      "reference": {
+        "referenceId": "V-03",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "Meteorologia e Oceanografia",
+        "edition": "4. ed., 2019",
+        "section": "Marés — nível médio, nível de redução e amplitude de sizígia",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · níveis de referência e marés",
+        "evidence": "O recorte consultado informa que o nível médio permanece como referência ao longo dos ciclos lunares e que sua altura sobre o nível de redução equivale à semiamplitude da maré de sizígia.",
+        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
+      }
+    },
+    {
+      "id": "sun-t2-fatigue-sleep-inertia",
+      "category": "rotation",
+      "axis": "VII",
+      "kind": "Rotação de consolidação · fadiga · inércia do sono",
+      "stem": "Um oficial é despertado abruptamente de sono profundo para apoiar uma manobra crítica. Qual risco imediato deve ser considerado?",
+      "options": [
+        "Aumento instantâneo e estável do estado de alerta.",
+        "Inércia do sono, com sonolência, desorientação e prejuízo temporário de memória e decisão.",
+        "Débito de sono eliminado pelo simples despertar.",
+        "Redução automática da fadiga por pelo menos seis horas."
+      ],
+      "correct": 1,
+      "explanation": "O despertar abrupto de sono profundo pode produzir inércia do sono: sonolência e desorientação, com prejuízo de memória de curto prazo e tomada de decisão. O efeito pode durar mais de 30 minutos.",
+      "comments": [
+        "Incorreta: o desempenho pode estar temporariamente degradado após o despertar.",
+        "Correta: descreve os efeitos operacionais destacados pela IMO.",
+        "Incorreta: despertar não quita débito de sono acumulado.",
+        "Incorreta: o recorte não atribui efeito protetor prolongado ao despertar."
+      ],
+      "reference": {
+        "referenceId": "VII-05",
+        "base": "IMO",
+        "publication": "Guidelines on Fatigue",
+        "edition": "MSC.1/Circ.1598, 2019",
+        "section": "Módulo 1, §23 — sleep inertia",
+        "syllabus": "Eixo VII — Conhecimentos Gerais · fadiga, despertar e decisão segura",
+        "evidence": "O §23 consultado relaciona o despertar súbito de sono profundo a sonolência e desorientação, prejuízo de memória de curto prazo e decisão, podendo os efeitos persistir por mais de 30 minutos.",
+        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
+      }
+    },
+    {
+      "id": "sun-o1-pscpp2008-q26-tides-recovery",
       "category": "official",
       "axis": "V",
-      "kind": "Questão oficial adaptada · PSCPP 2008 · questão 26 · gabarito E · correção de fragilidade",
+      "kind": "Questão oficial adaptada · PSCPP 2008 · questão 26 · gabarito E · reaplicação corretiva",
       "stem": "Sobre marés, Tábuas das Marés e Cartas de Correntes de Marés, analise: I) as Cartas de Correntes de Marés se referem às marés do próprio dia e podem ser usadas diariamente; II) ao longo do ciclo lunar, as variações diárias das alturas são simétricas em relação ao nível médio, na quadratura e na sizígia; III) a altura do nível médio destacada na Tábua alerta para a amplitude da maré de sizígia do porto; IV) diferenças entre intensidades de enchente e vazante decorrem de características geográficas; V) o zero da régua de marés está associado à carta náutica do porto. Assinale a opção que contém todas as afirmativas verdadeiras.",
-      "options": ["I e II.", "II e IV.", "III, IV e V.", "I, III e V.", "II, III e V."],
+      "options": [
+        "I e II.",
+        "II e IV.",
+        "III, IV e V.",
+        "I, III e V.",
+        "II, III e V."
+      ],
       "correct": 4,
-      "explanation": "O gabarito oficial é E. São verdadeiras II, III e V; a afirmação I confunde cartas referidas a fases da maré com cartas do dia, e IV atribui incorretamente à geografia uma assimetria tratada em relação às fases e referências de maré.",
-      "comments": ["Incorreta: inclui I, que atribui às cartas uma validade diária vinculada à maré do próprio dia.", "Incorreta: inclui IV e omite III e V.", "Incorreta: inclui IV, embora III e V estejam corretas.", "Incorreta: inclui I e omite II.", "Correta: coincide com o gabarito oficial E — II, III e V."],
+      "explanation": "O gabarito oficial é E. São verdadeiras II, III e V. A opção C, escolhida na rodada anterior, inclui IV e omite II; a correção exige reconhecer simultaneamente a simetria em relação ao nível médio, a indicação da amplitude de sizígia e a associação do zero da régua à carta.",
+      "comments": [
+        "Incorreta: inclui I, que atribui às cartas uma validade diária vinculada à maré do próprio dia.",
+        "Incorreta: inclui IV e omite III e V.",
+        "Incorreta: inclui IV e omite II; foi o distrator selecionado na tentativa anterior.",
+        "Incorreta: inclui I e omite II.",
+        "Correta: coincide com o gabarito oficial E — II, III e V."
+      ],
       "reference": {
-        "referenceId": "V-03", "base": "Bibliografia oficial PSCPP e prova oficial histórica", "publication": "Meteorologia e Oceanografia — Usuário Navegante", "edition": "2. ed., 2007",
-        "section": "Capítulo IX — marés; nível médio, níveis de referência e correntes de maré", "syllabus": "Eixo V — Meteorologia/Oceanografia · marés aplicadas à navegação",
+        "referenceId": "V-03",
+        "base": "Bibliografia oficial PSCPP e prova oficial histórica",
+        "publication": "Meteorologia e Oceanografia — Usuário Navegante",
+        "edition": "2. ed., 2007",
+        "section": "Capítulo IX — marés; nível médio, níveis de referência e correntes de maré",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · marés aplicadas à navegação",
         "evidence": "O recorte consultado relaciona a variação simétrica das alturas ao nível médio, associa a altura do nível médio à semiamplitude de sizígia e vincula o zero da régua de marés ao nível de redução empregado na carta náutica do porto.",
         "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view",
         "origin": {
-          "exam": "PSCPP 2008", "year": 2008, "question": 26, "answer": "E",
-          "adaptation": "Ortografia atualizada e enunciado condensado, sem alteração das cinco afirmações, das alternativas ou da solução.",
+          "exam": "PSCPP 2008",
+          "year": 2008,
+          "question": 26,
+          "answer": "E",
+          "adaptation": "Ortografia atualizada e enunciado condensado, sem alteração das cinco afirmações, das alternativas ou da solução; reaplicada para correção do erro de 3 de outubro.",
           "url": "https://drive.google.com/file/d/1KfllJf4BukeOqCtNlr5uuwNC7xDu45I6/view"
         }
       }
