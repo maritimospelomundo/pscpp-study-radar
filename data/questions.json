@@ -1,9 +1,9 @@
 {
-  "roundId": "sunday-smcp-tides-corrections-2026-10-04",
-  "label": "Rodada de revisão de 4 de outubro de 2026",
-  "title": "Correção de marcadores SMCP, marés e decisões em baixa visibilidade",
+  "roundId": "manoeuvring-information-colreg-2026-10-05",
+  "label": "Rodada adaptativa de 5 de outubro de 2026",
+  "title": "Informações de manobra a bordo e decisões RIPEAM",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões FSRS e erros de 3/10 · marcadores SMCP · marés e referências verticais · RIPEAM e fadiga",
+  "path": "Revisões FSRS e erros pendentes · A.601(15) — Pilot Card, Wheelhouse Poster e Manoeuvring Booklet · Regras 13 e 14 · questão oficial de curva de giro",
   "method": "4–3–2–1",
   "mixPlan": {
     "review": 4,
@@ -13,11 +13,11 @@
   },
   "questions": [
     {
-      "id": "sun-r1-smcp-instruction-advice-correction",
+      "id": "mon-r1-smcp-instruction-advice-recovery",
       "category": "review",
       "axis": "VI",
-      "kind": "Revisão imediata · nota 0 · INSTRUCTION versus ADVICE",
-      "stem": "Uma estação VTS, investida de plena autoridade, determina que um navio não cruze o canal. Qual marcador SMCP deve abrir a mensagem?",
+      "kind": "Revisão FSRS vencida · nota 0 · INSTRUCTION versus ADVICE",
+      "stem": "Uma estação VTS, investida de plena autoridade, transmite uma determinação regulatória para que um navio não cruze o canal. Qual marcador SMCP deve iniciar a mensagem?",
       "options": [
         "ADVICE.",
         "WARNING.",
@@ -25,10 +25,10 @@
         "INSTRUCTION."
       ],
       "correct": 3,
-      "explanation": "INSTRUCTION identifica uma mensagem de autoridade competente destinada a influenciar a conduta por força de uma regra. O destinatário deve cumpri-la, salvo razão de segurança contraditória, que deve ser comunicada.",
+      "explanation": "INSTRUCTION identifica determinação de autoridade competente destinada a influenciar a conduta por força de uma regra. ADVICE é recomendação, e a decisão final permanece com o destinatário.",
       "comments": [
-        "Incorreta: ADVICE apresenta recomendação, e a decisão final permanece com o destinatário.",
-        "Incorreta: WARNING chama atenção para perigo, mas não expressa, por si, uma determinação regulatória.",
+        "Incorreta: ADVICE apresenta recomendação, não uma ordem regulatória vinculante.",
+        "Incorreta: WARNING chama atenção para perigo, sem impor por si uma determinação.",
         "Incorreta: INFORMATION comunica fatos, situações ou observações.",
         "Correta: INSTRUCTION é o marcador da determinação emitida por autoridade plena."
       ],
@@ -37,298 +37,298 @@
         "base": "IMO",
         "publication": "IMO Standard Marine Communication Phrases (SMCP)",
         "edition": "A.918(22), 2001",
-        "section": "General, item 3; Parte A1/6 — Application of Message Markers",
+        "section": "General, itens 3 e 4.5; Parte A1/6 — Application of Message Markers",
         "syllabus": "Eixo VI — Comunicações · marcadores de mensagem e VTS",
-        "evidence": "O recorte consultado define INSTRUCTION como mensagem de autoridade plena destinada a influenciar por uma regra e ADVICE como recomendação cuja decisão permanece com o destinatário.",
-        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
+        "evidence": "O recorte consultado distingue INSTRUCTION, emitida por VTS ou pessoal plenamente autorizado, de ADVICE; também determina que ambas sejam respondidas repetindo integralmente a instrução ou recomendação.",
+        "url": "https://drive.google.com/file/d/1nEnUGi3L9FcPy42aOtSPRoTLmKcqQZtU/view"
       }
     },
     {
-      "id": "sun-r2-colreg-rule19-fog-signal-ahead",
+      "id": "mon-r2-tides-chart-datum-recovery",
       "category": "review",
-      "axis": "III",
-      "kind": "Revisão vencida · RIPEAM · Regra 19(e)",
-      "stem": "Em visibilidade restrita, um navio ouve, aparentemente por ante-a-vante do través, o sinal de cerração de outra embarcação cuja posição ainda não foi determinada. Conforme a Regra 19(e), qual conduta é exigida?",
+      "axis": "V",
+      "kind": "Revisão FSRS vencida · nota 0 · zero da régua e nível de redução",
+      "stem": "Ao relacionar a leitura da régua de marés com a carta náutica do porto, qual afirmação está correta?",
       "options": [
-        "Manter rumo e velocidade até que o alvo seja adquirido visualmente.",
-        "Reduzir à velocidade mínima de governo, retirar todo o seguimento se necessário e navegar com extrema cautela.",
-        "Alterar sempre o rumo para bombordo, afastando-se do sinal.",
-        "Parar as máquinas, mas conservar obrigatoriamente o seguimento para manter governo."
+        "O zero da régua coincide com o nível médio e varia ao longo do ciclo lunar.",
+        "O zero da régua coincide com o nível de redução usado para as sondagens da carta do porto.",
+        "O zero da régua corresponde à baixa-mar prevista para cada dia.",
+        "A régua não possui vínculo com as profundidades cartografadas."
       ],
       "correct": 1,
-      "explanation": "A Regra 19(e) exige reduzir à velocidade mínima em que se possa manter o rumo; se necessário, deve-se retirar todo o seguimento e, em qualquer caso, navegar com extrema cautela até cessar o perigo de abalroamento.",
+      "explanation": "O zero da régua coincide com o nível de redução do porto, que também é usado para reduzir as sondagens da carta. A profundidade real resulta da soma da altura da maré com a profundidade cartografada.",
       "comments": [
-        "Incorreta: a regra impõe redução imediata quando o sinal é ouvido aparentemente por ante-a-vante do través.",
-        "Correta: reúne as três medidas previstas na Regra 19(e).",
-        "Incorreta: a Regra 19(d) orienta evitar alteração para bombordo para alvo por ante-a-vante do través, salvo se estiver sendo ultrapassado.",
-        "Incorreta: a retirada de todo o seguimento pode ser necessária; conservar seguimento não é obrigação absoluta."
+        "Incorreta: nível médio e nível de redução são referências distintas, e o nível médio não acompanha cada fase lunar.",
+        "Correta: expressa a referência comum entre a régua de marés e a carta náutica.",
+        "Incorreta: o zero é referência fixa, não a baixa-mar variável de cada dia.",
+        "Incorreta: a relação é justamente a que permite combinar altura da maré e profundidade cartografada."
+      ],
+      "reference": {
+        "referenceId": "V-03",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "Meteorologia e Oceanografia",
+        "edition": "4. ed., 2019",
+        "section": "Capítulo IX — marés; níveis de referência, régua de marés e profundidade real",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · marés aplicadas à navegação",
+        "evidence": "O recorte consultado afirma que cada porto possui seu nível de redução, usado na redução das sondagens da carta, e que o zero da régua de marés coincide com esse nível.",
+        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
+      }
+    },
+    {
+      "id": "mon-r3-coriolis-current-recovery",
+      "category": "review",
+      "axis": "III",
+      "kind": "Revisão FSRS vencida · nota 0 · Coriolis e correntes de maré",
+      "stem": "No oceano aberto, como o efeito de Coriolis tende a desviar as correntes de maré?",
+      "options": [
+        "Para a esquerda no Hemisfério Norte e para a direita no Hemisfério Sul.",
+        "Para a direita nos dois hemisférios.",
+        "Para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul.",
+        "Sem desvio; Coriolis atua apenas sobre a atmosfera."
+      ],
+      "correct": 2,
+      "explanation": "A rotação terrestre tende a desviar as correntes para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul, contribuindo para seu caráter rotatório em oceano aberto.",
+      "comments": [
+        "Incorreta: inverte os sentidos do desvio nos dois hemisférios.",
+        "Incorreta: o sentido muda de um hemisfério para o outro.",
+        "Correta: corresponde aos sentidos indicados por Miguens.",
+        "Incorreta: o capítulo aplica expressamente Coriolis às correntes de maré."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "Navegação: A Ciência e a Arte, v. I",
+        "edition": "2ª revisão atualizada, DHN, 2023",
+        "section": "Capítulo 10, §10.2.1 — gênese das correntes de maré",
+        "syllabus": "Eixo III — Navegação em águas restritas · marés e correntes",
+        "evidence": "O recorte consultado informa que Coriolis desvia as correntes de maré para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul, concorrendo para a formação de correntes rotatórias.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+      }
+    },
+    {
+      "id": "mon-r4-zigzag-overshoot-recovery",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão FSRS vencida · nota 0 · primeiro overshoot",
+      "stem": "Na manobra de zigue-zague, qual definição corresponde ao primeiro ângulo de overshoot?",
+      "options": [
+        "O ângulo de leme aplicado na primeira execução.",
+        "O máximo ângulo adicional de aproamento depois da segunda execução do leme, antes de a razão de guinada chegar a zero.",
+        "O ângulo entre a tangente à curva de giro e o eixo longitudinal do navio.",
+        "O desvio lateral acumulado até a proa completar 180°."
+      ],
+      "correct": 1,
+      "explanation": "Depois de o leme ser revertido na segunda execução, o navio ainda continua guinando no sentido original. O máximo sobrepasso então alcançado é o primeiro overshoot; nesse máximo, a razão de guinada é zero.",
+      "comments": [
+        "Incorreta: confunde a ordem de leme com a resposta angular do navio.",
+        "Correta: reúne o momento, o sentido residual e a condição de máximo do primeiro overshoot.",
+        "Incorreta: essa é a definição de ângulo de deriva.",
+        "Incorreta: não corresponde à grandeza angular medida na manobra de zigue-zague."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Bibliografia oficial PSCPP",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 5, §5.3 — curva de zigue-zague",
+        "syllabus": "Eixo I — Manobrabilidade · habilidade de governo e zigue-zague",
+        "evidence": "O recorte consultado define overshoot como o ângulo adicional pelo qual o navio continua a guinar no sentido original após a aplicação do leme para quebrar a guinada; o primeiro máximo ocorre após a segunda execução, quando a razão de guinada se anula.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
+    },
+    {
+      "id": "mon-c1-a601-pilot-card",
+      "category": "current",
+      "axis": "I",
+      "kind": "Conteúdo atual · A.601(15) · Pilot Card",
+      "stem": "Segundo a Resolução IMO A.601(15), qual é a finalidade principal do Pilot Card?",
+      "options": [
+        "Registrar exclusivamente os resultados completos das provas de mar.",
+        "Fornecer ao prático, ao embarcar, a condição atual do navio quanto a carregamento, propulsão, manobra e equipamentos relevantes.",
+        "Substituir permanentemente o Manoeuvring Booklet.",
+        "Apresentar somente as dimensões principais do navio, sem dados operacionais."
+      ],
+      "correct": 1,
+      "explanation": "O Pilot Card é preenchido pelo comandante para informar ao prático, no embarque, a condição atual do navio. Seu uso não depende da execução de provas especiais de manobra.",
+      "comments": [
+        "Incorreta: o cartão pode ser utilizado sem provas especiais de manobra.",
+        "Correta: corresponde à finalidade e ao conteúdo corrente definidos na resolução.",
+        "Incorreta: os documentos têm funções complementares, não substitutivas.",
+        "Incorreta: o cartão abrange carregamento, propulsão, manobra e outros equipamentos relevantes."
+      ],
+      "reference": {
+        "referenceId": "I-11",
+        "base": "IMO",
+        "publication": "Provision and Display of Manoeuvring Information on Board Ships",
+        "edition": "A.601(15), 1987",
+        "section": "Anexo, §§1.2 e 3.1; Apêndice 1 — Pilot Card",
+        "syllabus": "Eixo I — Manobrabilidade · informações de manobra disponíveis a bordo",
+        "evidence": "O §3.1 consultado estabelece que o Pilot Card, preenchido pelo comandante, informa ao prático a condição atual de carregamento, propulsão, equipamentos de manobra e outros equipamentos relevantes, sem exigir provas especiais.",
+        "url": "https://drive.google.com/file/d/12LfLToqpd39zhkeQL_noIsxYEE-iAGbd/view"
+      }
+    },
+    {
+      "id": "mon-c2-a601-wheelhouse-poster",
+      "category": "current",
+      "axis": "I",
+      "kind": "Conteúdo atual · A.601(15) · Wheelhouse Poster",
+      "stem": "Quanto ao Wheelhouse Poster previsto na A.601(15), assinale a opção correta.",
+      "options": [
+        "Deve ficar permanentemente exposto no passadiço e apresentar dados gerais e informações detalhadas sobre as características de manobra.",
+        "É entregue ao prático e retirado do passadiço após o desembarque.",
+        "Seus valores de desempenho são invariáveis, qualquer que seja a condição ambiental, do casco ou do carregamento.",
+        "Contém apenas procedimentos de emergência e sinais de alarme."
+      ],
+      "correct": 0,
+      "explanation": "O Wheelhouse Poster deve permanecer exposto no passadiço, em tamanho que facilite o uso, com dados gerais e características detalhadas de manobra. A resolução alerta que o desempenho real pode variar.",
+      "comments": [
+        "Correta: reúne localização, apresentação e conteúdo exigidos pela resolução.",
+        "Incorreta: descreve inadequadamente o uso do Pilot Card e contradiz a exposição permanente.",
+        "Incorreta: ambiente, estado do casco e carregamento podem alterar o desempenho.",
+        "Incorreta: o documento trata das características de manobra do navio."
+      ],
+      "reference": {
+        "referenceId": "I-11",
+        "base": "IMO",
+        "publication": "Provision and Display of Manoeuvring Information on Board Ships",
+        "edition": "A.601(15), 1987",
+        "section": "Anexo, §3.2; Apêndice 2 — Wheelhouse Poster",
+        "syllabus": "Eixo I — Manobrabilidade · apresentação das características de manobra",
+        "evidence": "O §3.2 consultado exige exposição permanente no passadiço, dados gerais e informações detalhadas, tamanho que facilite o uso e ressalva variações de desempenho por condições ambientais, do casco e de carregamento.",
+        "url": "https://drive.google.com/file/d/12LfLToqpd39zhkeQL_noIsxYEE-iAGbd/view"
+      }
+    },
+    {
+      "id": "mon-c3-a601-manoeuvring-booklet",
+      "category": "current",
+      "axis": "I",
+      "kind": "Conteúdo atual · A.601(15) · Manoeuvring Booklet",
+      "stem": "Qual característica distingue o Manoeuvring Booklet na estrutura documental da A.601(15)?",
+      "options": [
+        "Reúne apenas a condição instantânea de carregamento encontrada pelo prático.",
+        "Contém dados abrangentes das características de manobra, incorpora as informações do Wheelhouse Poster e pode ser suplementado ao longo da vida do navio.",
+        "Apresenta somente informações obtidas obrigatoriamente em provas de mar.",
+        "É dispensável para navios novos com 100 m ou mais."
+      ],
+      "correct": 1,
+      "explanation": "O Manoeuvring Booklet reúne informações abrangentes, inclui o conteúdo do Wheelhouse Poster e outros dados disponíveis. Parte pode ser estimada, parte deve vir de provas, e o documento pode ser suplementado.",
+      "comments": [
+        "Incorreta: a condição instantânea é função central do Pilot Card.",
+        "Correta: sintetiza conteúdo, fontes dos dados e atualização previstos na resolução.",
+        "Incorreta: a maior parte pode ser estimada; apenas parte deve ser obtida em provas.",
+        "Incorreta: a resolução recomenda o conjunto completo para navios novos de 100 m ou mais e para certos navios independentemente do porte."
+      ],
+      "reference": {
+        "referenceId": "I-11",
+        "base": "IMO",
+        "publication": "Provision and Display of Manoeuvring Information on Board Ships",
+        "edition": "A.601(15), 1987",
+        "section": "Anexo, §§2.1.2 e 3.3; Apêndice 3 — Manoeuvring Booklet",
+        "syllabus": "Eixo I — Manobrabilidade · registro abrangente das características de manobra",
+        "evidence": "O §3.3 consultado determina que o booklet contenha detalhes abrangentes, as informações do poster e outros dados; registra que a maioria pode ser estimada, parte deve vir de provas e o conteúdo pode ser suplementado durante a vida do navio.",
+        "url": "https://drive.google.com/file/d/12LfLToqpd39zhkeQL_noIsxYEE-iAGbd/view"
+      }
+    },
+    {
+      "id": "mon-t1-colreg-overtaking-doubt",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Rotação · RIPEAM · Regra 13",
+      "stem": "Uma embarcação tem dúvida se está alcançando outra. Conforme a Regra 13, como deve proceder?",
+      "options": [
+        "Considerar que se trata de rumos cruzados e aguardar alteração de marcação.",
+        "Considerar que está alcançando e manobrar de acordo, mantendo-se fora do caminho até ultrapassar inteiramente e ficar suficientemente afastada.",
+        "Manter rumo e velocidade, pois a dúvida elimina a obrigação de manobrar.",
+        "Aplicar a Regra 14 e guinar obrigatoriamente para boreste."
+      ],
+      "correct": 1,
+      "explanation": "Na dúvida, a embarcação deve considerar que está alcançando. Uma alteração posterior de marcação não a transforma em embarcação de rumos cruzados nem encerra sua obrigação antes de ultrapassar e afastar-se.",
+      "comments": [
+        "Incorreta: a regra manda presumir ultrapassagem, não rumos cruzados.",
+        "Correta: reúne a presunção na dúvida e a duração da obrigação.",
+        "Incorreta: a dúvida não afasta a responsabilidade da alcançadora.",
+        "Incorreta: a Regra 14 disciplina situação roda a roda."
       ],
       "reference": {
         "referenceId": "III-16",
-        "base": "IMO",
+        "base": "IMO/DPC",
         "publication": "COLREG - Consolidated Edition 2018",
         "edition": "2018",
-        "section": "Parte B, Seção III, Regra 19(d)–(e)",
-        "syllabus": "Eixo III — Navegação em Águas Restritas · RIPEAM em visibilidade restrita",
-        "evidence": "O recorte consultado determina reduzir à velocidade mínima de governo ao ouvir sinal de cerração aparentemente por ante-a-vante do través, retirar todo o seguimento se necessário e navegar com extrema cautela.",
+        "section": "Parte B, Seção II, Regra 13(c)–(d)",
+        "syllabus": "Eixo III — Navegação em águas restritas · RIPEAM e ultrapassagem",
+        "evidence": "O recorte consultado determina que, havendo dúvida, a embarcação presuma a ultrapassagem; a obrigação permanece até que a outra seja ultrapassada inteiramente e esteja suficientemente afastada.",
         "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
       }
     },
     {
-      "id": "sun-r3-msc1053-depth-strict-limit",
-      "category": "review",
-      "axis": "I",
-      "kind": "Revisão vencida · manobrabilidade · profundidade da área de prova",
-      "stem": "Um navio com calado médio de 10 m realizará provas de manobrabilidade destinadas a demonstrar conformidade com os padrões IMO. Segundo a MSC/Circ.1053, qual profundidade atende ao critério de águas profundas?",
+      "id": "mon-t2-colreg-headon",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Rotação · RIPEAM · Regra 14",
+      "stem": "Duas embarcações de propulsão mecânica aproximam-se em rumos diretamente opostos, com risco de abalroamento. Qual ação é prescrita pela Regra 14?",
       "options": [
-        "30 m.",
-        "40 m.",
-        "41 m.",
-        "Qualquer profundidade superior a 20 m."
+        "Ambas guinam para bombordo, passando por boreste uma da outra.",
+        "A embarcação de maior porte mantém rumo e velocidade.",
+        "Cada embarcação guina para boreste, permitindo passagem por bombordo uma da outra.",
+        "Somente a que avista a outra por boreste deve manobrar."
       ],
       "correct": 2,
-      "explanation": "A profundidade deve exceder quatro vezes o calado médio. Para 10 m, quatro vezes o calado são 40 m; como a condição é estrita, 41 m atende e 40 m não.",
+      "explanation": "Na situação roda a roda, cada embarcação deve guinar para boreste, de modo que ambas passem por bombordo uma da outra. Na dúvida sobre a existência da situação, deve-se considerá-la existente.",
       "comments": [
-        "Incorreta: corresponde a apenas três vezes o calado médio.",
-        "Incorreta: iguala quatro vezes o calado, mas o texto exige exceder esse valor.",
-        "Correta: 41 m é superior a quatro vezes o calado médio de 10 m.",
-        "Incorreta: duas vezes o calado não satisfaz o critério indicado."
+        "Incorreta: inverte o bordo da manobra prescrita.",
+        "Incorreta: a regra atribui ação às duas embarcações.",
+        "Correta: corresponde literalmente à ação exigida na situação roda a roda.",
+        "Incorreta: essa formulação remete a rumos cruzados, não à Regra 14."
       ],
       "reference": {
-        "referenceId": "I-06",
-        "base": "IMO",
-        "publication": "Explanatory Notes to the Standards for Ship Manoeuvrability",
-        "edition": "MSC/Circ.1053, 2002",
-        "section": "Capítulo 2, §2.1.2 — deep, unrestricted water",
-        "syllabus": "Eixo I — Manobrabilidade · condições ambientais das provas de mar",
-        "evidence": "O §2.1.2 consultado estabelece que a profundidade da água deve exceder quatro vezes o calado médio do navio para as provas em águas profundas e irrestritas.",
-        "url": "https://drive.google.com/file/d/18-iPKtK3TOFSi08gL_AYxix7pox04UF3/view"
+        "referenceId": "III-16",
+        "base": "IMO/DPC",
+        "publication": "COLREG - Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte B, Seção II, Regra 14(a)–(c)",
+        "syllabus": "Eixo III — Navegação em águas restritas · RIPEAM e situação roda a roda",
+        "evidence": "O recorte consultado determina que ambas as embarcações de propulsão mecânica guinem para boreste em rumos diretamente ou quase diretamente opostos, para passarem por bombordo uma da outra.",
+        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
       }
     },
     {
-      "id": "sun-r4-tide-gauge-chart-datum",
-      "category": "review",
-      "axis": "V",
-      "kind": "Revisão imediata · nota 0 · zero da régua e nível de redução",
-      "stem": "Ao comparar a régua de marés do porto com a carta náutica local, qual relação de referência deve ser reconhecida?",
-      "options": [
-        "O zero da régua coincide com o nível médio do mar, independentemente da carta.",
-        "O zero da régua está associado ao nível de redução adotado na carta náutica do porto.",
-        "O zero da régua corresponde sempre à baixa-mar observada no próprio dia.",
-        "A régua mede apenas amplitude e não se relaciona com profundidades cartografadas."
-      ],
-      "correct": 1,
-      "explanation": "O zero da régua de marés está associado ao nível de redução da carta do porto. Assim, a altura da maré pode ser combinada com a profundidade cartografada para obter a profundidade real.",
-      "comments": [
-        "Incorreta: nível médio e nível de redução são referências distintas.",
-        "Correta: expressa a vinculação usada entre observação da maré e carta náutica.",
-        "Incorreta: o zero é uma referência fixa, não a baixa-mar variável de cada dia.",
-        "Incorreta: a régua integra a determinação da altura da maré em relação à referência cartográfica."
-      ],
-      "reference": {
-        "referenceId": "V-03",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Meteorologia e Oceanografia",
-        "edition": "4. ed., 2019",
-        "section": "Marés — níveis de referência, régua de marés e profundidade real",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · marés aplicadas à navegação",
-        "evidence": "O recorte consultado associa o zero da régua ao nível de redução da carta náutica do porto e apresenta a profundidade real como soma da altura da maré com a profundidade cartografada.",
-        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
-      }
-    },
-    {
-      "id": "sun-c1-smcp-warning-information",
-      "category": "current",
-      "axis": "VI",
-      "kind": "Conteúdo atual · SMCP · WARNING versus INFORMATION",
-      "stem": "Uma estação costeira pretende chamar a atenção de um navio para um contêiner à deriva em sua derrota, constituindo perigo imediato. Qual marcador SMCP é o mais adequado?",
-      "options": [
-        "INFORMATION.",
-        "WARNING.",
-        "ADVICE.",
-        "INTENTION."
-      ],
-      "correct": 1,
-      "explanation": "WARNING é empregado para chamar a atenção para um perigo. INFORMATION comunica fatos ou situações observadas, sem caracterizar por si a função específica de advertência.",
-      "comments": [
-        "Incorreta: embora haja um fato observado, a finalidade principal da mensagem é advertir sobre perigo.",
-        "Correta: WARNING é o marcador próprio para perigo.",
-        "Incorreta: ADVICE introduz recomendação, não a identificação primária do perigo.",
-        "Incorreta: INTENTION anuncia ação náutica imediata pretendida pelo próprio emissor."
-      ],
-      "reference": {
-        "referenceId": "VI-01",
-        "base": "IMO",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "A.918(22), 2001",
-        "section": "General, item 3; Parte A1/6 — Application of Message Markers",
-        "syllabus": "Eixo VI — Comunicações · função dos marcadores SMCP",
-        "evidence": "O recorte consultado define WARNING como mensagem destinada a chamar atenção para perigo e INFORMATION como comunicação de fatos, situações ou observações.",
-        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
-      }
-    },
-    {
-      "id": "sun-c2-smcp-request-limits",
-      "category": "current",
-      "axis": "VI",
-      "kind": "Conteúdo atual · SMCP · REQUEST e seus limites",
-      "stem": "Qual mensagem está corretamente classificada com o marcador REQUEST nas SMCP?",
-      "options": [
-        "REQUEST. Alter course to starboard to comply with Rule 15.",
-        "REQUEST. Keep out of the way; I am the stand-on vessel.",
-        "REQUEST. I require two tugs.",
-        "REQUEST. You must not cross the fairway."
-      ],
-      "correct": 2,
-      "explanation": "REQUEST pode ser empregado para solicitar serviços ou providências, como rebocadores. Não deve ser usado para tratar de manobra de navegação nem para modificar ou substituir o COLREG.",
-      "comments": [
-        "Incorreta: REQUEST não deve ser utilizado para dirigir manobra de navegação baseada no COLREG.",
-        "Incorreta: a solicitação não pode alterar as obrigações de governo e navegação.",
-        "Correta: a própria aplicação do marcador admite solicitar rebocadores.",
-        "Incorreta: uma proibição regulatória emitida por autoridade plena pede o marcador INSTRUCTION."
-      ],
-      "reference": {
-        "referenceId": "VI-01",
-        "base": "IMO",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "A.918(22), 2001",
-        "section": "Parte A1/6 — Application of Message Markers, REQUEST",
-        "syllabus": "Eixo VI — Comunicações · solicitações e limites do marcador REQUEST",
-        "evidence": "O recorte consultado permite REQUEST para pedir ação, assistência, suprimentos, rebocadores ou autorização, mas proíbe seu uso em mensagens de navegação ou para modificar o COLREG; o exemplo solicita dois rebocadores.",
-        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
-      }
-    },
-    {
-      "id": "sun-c3-smcp-intention-immediate-action",
-      "category": "current",
-      "axis": "VI",
-      "kind": "Conteúdo atual · SMCP · INTENTION",
-      "stem": "Um navio deseja anunciar a ação náutica imediata que ele próprio pretende executar. Qual opção usa corretamente o marcador SMCP?",
-      "options": [
-        "INTENTION. I will reduce my speed.",
-        "INTENTION. You should reduce your speed.",
-        "INTENTION. Shallow water ahead of you.",
-        "INTENTION. Do not overtake."
-      ],
-      "correct": 0,
-      "explanation": "INTENTION anuncia uma ação náutica imediata pretendida pelo navio que transmite a mensagem. Recomendações, perigos e determinações correspondem a outros marcadores.",
-      "comments": [
-        "Correta: anuncia a ação imediata pretendida pelo próprio emissor.",
-        "Incorreta: é recomendação dirigida ao destinatário e pede ADVICE.",
-        "Incorreta: descreve perigo e pede WARNING.",
-        "Incorreta: expressa proibição, que pode constituir INSTRUCTION quando emitida por autoridade competente."
-      ],
-      "reference": {
-        "referenceId": "VI-01",
-        "base": "IMO",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "A.918(22), 2001",
-        "section": "Parte A1/6 — Application of Message Markers, INTENTION",
-        "syllabus": "Eixo VI — Comunicações · anúncio de ação náutica imediata",
-        "evidence": "O recorte consultado define INTENTION como anúncio da ação náutica imediata que o próprio navio emissor pretende realizar e exemplifica a redução de velocidade.",
-        "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/A.918(22).pdf"
-      }
-    },
-    {
-      "id": "sun-t1-tides-mean-level-spring-range",
-      "category": "rotation",
-      "axis": "V",
-      "kind": "Rotação de consolidação · marés · nível médio e sizígia",
-      "stem": "Em um porto de maré semidiurna, qual interpretação é compatível com as referências apresentadas por Lobo e Soares?",
-      "options": [
-        "A altura do nível médio sobre o nível de redução corresponde à semiamplitude da maré de sizígia.",
-        "O nível médio varia diariamente na mesma proporção que a preamar.",
-        "A amplitude de sizígia é igual à altura total do nível médio acima do nível de redução.",
-        "O nível de redução coincide obrigatoriamente com o nível médio."
-      ],
-      "correct": 0,
-      "explanation": "A altura do nível médio sobre o nível de redução representa a semiamplitude de sizígia. Nível médio, nível de redução, amplitude e semiamplitude não são grandezas intercambiáveis.",
-      "comments": [
-        "Correta: corresponde à relação apresentada no recorte consultado.",
-        "Incorreta: o nível médio é uma referência, não acompanha a variação diária de cada preamar.",
-        "Incorreta: confunde amplitude completa com semiamplitude.",
-        "Incorreta: nível médio e nível de redução são referências distintas."
-      ],
-      "reference": {
-        "referenceId": "V-03",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Meteorologia e Oceanografia",
-        "edition": "4. ed., 2019",
-        "section": "Marés — nível médio, nível de redução e amplitude de sizígia",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · níveis de referência e marés",
-        "evidence": "O recorte consultado informa que o nível médio permanece como referência ao longo dos ciclos lunares e que sua altura sobre o nível de redução equivale à semiamplitude da maré de sizígia.",
-        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
-      }
-    },
-    {
-      "id": "sun-t2-fatigue-sleep-inertia",
-      "category": "rotation",
-      "axis": "VII",
-      "kind": "Rotação de consolidação · fadiga · inércia do sono",
-      "stem": "Um oficial é despertado abruptamente de sono profundo para apoiar uma manobra crítica. Qual risco imediato deve ser considerado?",
-      "options": [
-        "Aumento instantâneo e estável do estado de alerta.",
-        "Inércia do sono, com sonolência, desorientação e prejuízo temporário de memória e decisão.",
-        "Débito de sono eliminado pelo simples despertar.",
-        "Redução automática da fadiga por pelo menos seis horas."
-      ],
-      "correct": 1,
-      "explanation": "O despertar abrupto de sono profundo pode produzir inércia do sono: sonolência e desorientação, com prejuízo de memória de curto prazo e tomada de decisão. O efeito pode durar mais de 30 minutos.",
-      "comments": [
-        "Incorreta: o desempenho pode estar temporariamente degradado após o despertar.",
-        "Correta: descreve os efeitos operacionais destacados pela IMO.",
-        "Incorreta: despertar não quita débito de sono acumulado.",
-        "Incorreta: o recorte não atribui efeito protetor prolongado ao despertar."
-      ],
-      "reference": {
-        "referenceId": "VII-05",
-        "base": "IMO",
-        "publication": "Guidelines on Fatigue",
-        "edition": "MSC.1/Circ.1598, 2019",
-        "section": "Módulo 1, §23 — sleep inertia",
-        "syllabus": "Eixo VII — Conhecimentos Gerais · fadiga, despertar e decisão segura",
-        "evidence": "O §23 consultado relaciona o despertar súbito de sono profundo a sonolência e desorientação, prejuízo de memória de curto prazo e decisão, podendo os efeitos persistir por mais de 30 minutos.",
-        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
-      }
-    },
-    {
-      "id": "sun-o1-pscpp2008-q26-tides-recovery",
+      "id": "mon-o1-pscpp2011-q35-turning-curve",
       "category": "official",
-      "axis": "V",
-      "kind": "Questão oficial adaptada · PSCPP 2008 · questão 26 · gabarito E · reaplicação corretiva",
-      "stem": "Sobre marés, Tábuas das Marés e Cartas de Correntes de Marés, analise: I) as Cartas de Correntes de Marés se referem às marés do próprio dia e podem ser usadas diariamente; II) ao longo do ciclo lunar, as variações diárias das alturas são simétricas em relação ao nível médio, na quadratura e na sizígia; III) a altura do nível médio destacada na Tábua alerta para a amplitude da maré de sizígia do porto; IV) diferenças entre intensidades de enchente e vazante decorrem de características geográficas; V) o zero da régua de marés está associado à carta náutica do porto. Assinale a opção que contém todas as afirmativas verdadeiras.",
+      "axis": "III",
+      "kind": "Questão oficial adaptada · PSCPP 2011 · Prova Amarela · questão 35 · gabarito A · correção de leitura",
+      "stem": "Segundo Miguens, assinale a afirmativa incorreta sobre os dados táticos e a curva de giro.",
       "options": [
-        "I e II.",
-        "II e IV.",
-        "III, IV e V.",
-        "I, III e V.",
-        "II, III e V."
+        "Abatimento é o caimento inicial do navio para o bordo da guinada, medido perpendicularmente ao rumo inicial.",
+        "Os dados táticos são determinados nas provas de mar posteriores à construção ou modernização.",
+        "Afastamento é a distância transversal ao rumo inicial, desde o carregamento do leme até a proa atingir o novo rumo.",
+        "Avanço, diâmetro tático e afastamento diminuem com o aumento do ângulo de leme.",
+        "Em giro de 360° com ângulo de leme constante, o diâmetro final é menor que o diâmetro tático."
       ],
-      "correct": 4,
-      "explanation": "O gabarito oficial é E. São verdadeiras II, III e V. A opção C, escolhida na rodada anterior, inclui IV e omite II; a correção exige reconhecer simultaneamente a simetria em relação ao nível médio, a indicação da amplitude de sizígia e a associação do zero da régua à carta.",
+      "correct": 0,
+      "explanation": "O gabarito oficial é A. O abatimento inicial ocorre para o bordo contrário ao da guinada, e não para o bordo da guinada. As demais alternativas reproduzem propriedades e definições aceitas no recorte.",
       "comments": [
-        "Incorreta: inclui I, que atribui às cartas uma validade diária vinculada à maré do próprio dia.",
-        "Incorreta: inclui IV e omite III e V.",
-        "Incorreta: inclui IV e omite II; foi o distrator selecionado na tentativa anterior.",
-        "Incorreta: inclui I e omite II.",
-        "Correta: coincide com o gabarito oficial E — II, III e V."
+        "Correta como resposta: contém o conceito incorreto, pois o abatimento inicial ocorre para o bordo oposto ao da guinada.",
+        "Incorreta como resposta: a determinação dos dados táticos em provas de mar está correta.",
+        "Incorreta como resposta: corresponde à definição de afastamento.",
+        "Incorreta como resposta: o aumento do ângulo de leme reduz essas dimensões da evolução.",
+        "Incorreta como resposta: o diâmetro final estabilizado é menor que o diâmetro tático."
       ],
       "reference": {
-        "referenceId": "V-03",
+        "referenceId": "III-02",
         "base": "Bibliografia oficial PSCPP e prova oficial histórica",
-        "publication": "Meteorologia e Oceanografia — Usuário Navegante",
-        "edition": "2. ed., 2007",
-        "section": "Capítulo IX — marés; nível médio, níveis de referência e correntes de maré",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · marés aplicadas à navegação",
-        "evidence": "O recorte consultado relaciona a variação simétrica das alturas ao nível médio, associa a altura do nível médio à semiamplitude de sizígia e vincula o zero da régua de marés ao nível de redução empregado na carta náutica do porto.",
-        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view",
+        "publication": "Navegação: A Ciência e a Arte, v. I",
+        "edition": "2ª revisão atualizada, DHN, 2023",
+        "section": "Capítulo 8 — uso dos dados táticos; curva de giro",
+        "syllabus": "Eixo III — Navegação em águas restritas · dados táticos e curva de giro",
+        "evidence": "O recorte consultado define abatimento como caimento para o bordo contrário ao da guinada, avanço e afastamento pelas direções longitudinal e transversal, diâmetro tático na guinada de 180° e diâmetro final inferior ao tático.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view",
         "origin": {
-          "exam": "PSCPP 2008",
-          "year": 2008,
-          "question": 26,
-          "answer": "E",
-          "adaptation": "Ortografia atualizada e enunciado condensado, sem alteração das cinco afirmações, das alternativas ou da solução; reaplicada para correção do erro de 3 de outubro.",
-          "url": "https://drive.google.com/file/d/1KfllJf4BukeOqCtNlr5uuwNC7xDu45I6/view"
+          "exam": "PSCPP 2011 — Prova Amarela",
+          "year": 2011,
+          "question": 35,
+          "answer": "A",
+          "adaptation": "Enunciado condensado e ortografia atualizada, sem alterar os cinco conceitos, a alternativa incorreta ou a solução.",
+          "url": "https://drive.google.com/file/d/1Fdz2o1xtzIkg1KONqP95HemlINDJcv_1/view"
         }
       }
     }
