@@ -1,9 +1,9 @@
 {
-  "roundId": "manoeuvring-information-colreg-2026-10-05",
-  "label": "Rodada adaptativa de 5 de outubro de 2026",
-  "title": "Informações de manobra a bordo e decisões RIPEAM",
+  "roundId": "twin-screw-manoeuvring-cyclones-2026-10-06",
+  "label": "Rodada adaptativa de 6 de outubro de 2026",
+  "title": "Governo de navios de dois hélices e classificação de ciclones",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões FSRS e erros pendentes · A.601(15) — Pilot Card, Wheelhouse Poster e Manoeuvring Booklet · Regras 13 e 14 · questão oficial de curva de giro",
+  "path": "Revisões FSRS e erros persistentes · Arte Naval — governo e giro de navios de dois hélices · Meteorologia — ciclones subtropicais e extratropicais · questão oficial de aparelhos de laborar",
   "method": "4–3–2–1",
   "mixPlan": {
     "review": 4,
@@ -13,322 +13,322 @@
   },
   "questions": [
     {
-      "id": "mon-r1-smcp-instruction-advice-recovery",
-      "category": "review",
-      "axis": "VI",
-      "kind": "Revisão FSRS vencida · nota 0 · INSTRUCTION versus ADVICE",
-      "stem": "Uma estação VTS, investida de plena autoridade, transmite uma determinação regulatória para que um navio não cruze o canal. Qual marcador SMCP deve iniciar a mensagem?",
-      "options": [
-        "ADVICE.",
-        "WARNING.",
-        "INFORMATION.",
-        "INSTRUCTION."
-      ],
-      "correct": 3,
-      "explanation": "INSTRUCTION identifica determinação de autoridade competente destinada a influenciar a conduta por força de uma regra. ADVICE é recomendação, e a decisão final permanece com o destinatário.",
-      "comments": [
-        "Incorreta: ADVICE apresenta recomendação, não uma ordem regulatória vinculante.",
-        "Incorreta: WARNING chama atenção para perigo, sem impor por si uma determinação.",
-        "Incorreta: INFORMATION comunica fatos, situações ou observações.",
-        "Correta: INSTRUCTION é o marcador da determinação emitida por autoridade plena."
-      ],
-      "reference": {
-        "referenceId": "VI-01",
-        "base": "IMO",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "A.918(22), 2001",
-        "section": "General, itens 3 e 4.5; Parte A1/6 — Application of Message Markers",
-        "syllabus": "Eixo VI — Comunicações · marcadores de mensagem e VTS",
-        "evidence": "O recorte consultado distingue INSTRUCTION, emitida por VTS ou pessoal plenamente autorizado, de ADVICE; também determina que ambas sejam respondidas repetindo integralmente a instrução ou recomendação.",
-        "url": "https://drive.google.com/file/d/1nEnUGi3L9FcPy42aOtSPRoTLmKcqQZtU/view"
-      }
-    },
-    {
-      "id": "mon-r2-tides-chart-datum-recovery",
+      "id": "tue-r1-significant-wave-height-third",
       "category": "review",
       "axis": "V",
-      "kind": "Revisão FSRS vencida · nota 0 · zero da régua e nível de redução",
-      "stem": "Ao relacionar a leitura da régua de marés com a carta náutica do porto, qual afirmação está correta?",
+      "kind": "Revisão FSRS vencida · nota 0 · altura significativa",
+      "stem": "Em uma sequência estatisticamente representativa de ondas irregulares, a altura significativa corresponde, por definição tradicional, a:",
       "options": [
-        "O zero da régua coincide com o nível médio e varia ao longo do ciclo lunar.",
-        "O zero da régua coincide com o nível de redução usado para as sondagens da carta do porto.",
-        "O zero da régua corresponde à baixa-mar prevista para cada dia.",
-        "A régua não possui vínculo com as profundidades cartografadas."
-      ],
-      "correct": 1,
-      "explanation": "O zero da régua coincide com o nível de redução do porto, que também é usado para reduzir as sondagens da carta. A profundidade real resulta da soma da altura da maré com a profundidade cartografada.",
-      "comments": [
-        "Incorreta: nível médio e nível de redução são referências distintas, e o nível médio não acompanha cada fase lunar.",
-        "Correta: expressa a referência comum entre a régua de marés e a carta náutica.",
-        "Incorreta: o zero é referência fixa, não a baixa-mar variável de cada dia.",
-        "Incorreta: a relação é justamente a que permite combinar altura da maré e profundidade cartografada."
-      ],
-      "reference": {
-        "referenceId": "V-03",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Meteorologia e Oceanografia",
-        "edition": "4. ed., 2019",
-        "section": "Capítulo IX — marés; níveis de referência, régua de marés e profundidade real",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · marés aplicadas à navegação",
-        "evidence": "O recorte consultado afirma que cada porto possui seu nível de redução, usado na redução das sondagens da carta, e que o zero da régua de marés coincide com esse nível.",
-        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
-      }
-    },
-    {
-      "id": "mon-r3-coriolis-current-recovery",
-      "category": "review",
-      "axis": "III",
-      "kind": "Revisão FSRS vencida · nota 0 · Coriolis e correntes de maré",
-      "stem": "No oceano aberto, como o efeito de Coriolis tende a desviar as correntes de maré?",
-      "options": [
-        "Para a esquerda no Hemisfério Norte e para a direita no Hemisfério Sul.",
-        "Para a direita nos dois hemisférios.",
-        "Para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul.",
-        "Sem desvio; Coriolis atua apenas sobre a atmosfera."
+        "altura da maior onda observada no período.",
+        "média aritmética das alturas de todas as ondas.",
+        "média das alturas do terço de ondas mais altas.",
+        "média das alturas do décimo de ondas mais baixas."
       ],
       "correct": 2,
-      "explanation": "A rotação terrestre tende a desviar as correntes para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul, contribuindo para seu caráter rotatório em oceano aberto.",
+      "explanation": "A altura significativa é a média das alturas do terço de ondas mais altas da amostra. Não é a maior onda isolada nem a média de todas as ondas.",
       "comments": [
-        "Incorreta: inverte os sentidos do desvio nos dois hemisférios.",
-        "Incorreta: o sentido muda de um hemisfério para o outro.",
-        "Correta: corresponde aos sentidos indicados por Miguens.",
-        "Incorreta: o capítulo aplica expressamente Coriolis às correntes de maré."
+        "Incorreta: uma onda máxima isolada não define a altura significativa.",
+        "Incorreta: a média de todas as alturas é outro parâmetro estatístico.",
+        "Correta: o recorte define a altura significativa como a média das alturas do terço mais alto.",
+        "Incorreta: o parâmetro não utiliza o décimo de ondas mais baixas."
       ],
       "reference": {
-        "referenceId": "III-02",
-        "base": "Bibliografia oficial PSCPP",
-        "publication": "Navegação: A Ciência e a Arte, v. I",
-        "edition": "2ª revisão atualizada, DHN, 2023",
-        "section": "Capítulo 10, §10.2.1 — gênese das correntes de maré",
-        "syllabus": "Eixo III — Navegação em águas restritas · marés e correntes",
-        "evidence": "O recorte consultado informa que Coriolis desvia as correntes de maré para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul, concorrendo para a formação de correntes rotatórias.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+        "referenceId": "V-04",
+        "base": "Edson Mesquita dos Santos",
+        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 4 — distribuição estatística das alturas de onda",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · mar irregular e altura significativa",
+        "evidence": "O recorte consultado apresenta a distribuição das alturas e identifica a média das alturas do terço mais alto como altura significativa, distinguindo-a da altura média e da média do décimo mais alto.",
+        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
       }
     },
     {
-      "id": "mon-r4-zigzag-overshoot-recovery",
+      "id": "tue-r2-tropical-cyclone-sixty-four-knots",
       "category": "review",
-      "axis": "I",
-      "kind": "Revisão FSRS vencida · nota 0 · primeiro overshoot",
-      "stem": "Na manobra de zigue-zague, qual definição corresponde ao primeiro ângulo de overshoot?",
+      "axis": "V",
+      "kind": "Revisão FSRS vencida · nota 0 · limite de furacão",
+      "stem": "Um ciclone tropical apresenta vento máximo sustentado à superfície de exatamente 64 nós, calculado no intervalo de um minuto. Segundo Miguens, sua classificação é:",
       "options": [
-        "O ângulo de leme aplicado na primeira execução.",
-        "O máximo ângulo adicional de aproamento depois da segunda execução do leme, antes de a razão de guinada chegar a zero.",
-        "O ângulo entre a tangente à curva de giro e o eixo longitudinal do navio.",
-        "O desvio lateral acumulado até a proa completar 180°."
+        "depressão tropical.",
+        "tempestade tropical.",
+        "tempestade subtropical.",
+        "furacão."
+      ],
+      "correct": 3,
+      "explanation": "O limite de 64 nós pertence à classe furacão. Tempestade tropical começa em 34 nós, mas termina antes de 64 nós.",
+      "comments": [
+        "Incorreta: depressão tropical tem vento máximo sustentado inferior a 34 nós.",
+        "Incorreta: tempestade tropical abrange de 34 nós inclusive a menos de 64 nós.",
+        "Incorreta: o enunciado identifica um ciclone tropical, não subtropical.",
+        "Correta: 64 nós ou mais, na média de um minuto, caracteriza furacão."
+      ],
+      "reference": {
+        "referenceId": "V-01",
+        "base": "Diretoria de Hidrografia e Navegação",
+        "publication": "Navegação: A Ciência e a Arte, v. III",
+        "edition": "2ª revisão atualizada, DHN, 2023",
+        "section": "Capítulo 45 — classificação dos ciclones tropicais",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · sistemas atmosféricos e ciclones",
+        "evidence": "O trecho consultado classifica depressão tropical abaixo de 34 nós, tempestade tropical de 34 nós inclusive a menos de 64 nós e furacão a partir de 64 nós, usando vento máximo sustentado em um minuto.",
+        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
+      }
+    },
+    {
+      "id": "tue-r3-gob-rope-control-girting",
+      "category": "review",
+      "axis": "II",
+      "kind": "Revisão FSRS vencida · gob rope e risco de girting",
+      "stem": "Um rebocador convencional atua pela popa, com cabo passado, enquanto o navio assistido ganha seguimento a vante. Qual emprego da gob rope é coerente com Hensen?",
+      "options": [
+        "Mantê-la sempre conectada e folgada, independentemente da posição do rebocador.",
+        "Usá-la para deslocar o ponto de reboque para ré, controlando seu comprimento e desconectando-a quando desnecessária.",
+        "Usá-la apenas para aumentar o comprimento efetivo do cabo de reboque.",
+        "Tesá-la ao máximo para impedir qualquer giro do rebocador em relação ao navio."
       ],
       "correct": 1,
-      "explanation": "Depois de o leme ser revertido na segunda execução, o navio ainda continua guinando no sentido original. O máximo sobrepasso então alcançado é o primeiro overshoot; nesse máximo, a razão de guinada é zero.",
+      "explanation": "A gob rope desloca longitudinalmente o ponto de reboque, inclusive para a extremidade de ré. Seu comprimento deve ser controlado; se apertar inadequadamente, pode impedir a rotação do rebocador e criar girting.",
       "comments": [
-        "Incorreta: confunde a ordem de leme com a resposta angular do navio.",
-        "Correta: reúne o momento, o sentido residual e a condição de máximo do primeiro overshoot.",
-        "Incorreta: essa é a definição de ângulo de deriva.",
-        "Incorreta: não corresponde à grandeza angular medida na manobra de zigue-zague."
+        "Incorreta: a fonte recomenda desconectar a gob rope quando ela não for necessária.",
+        "Correta: resume a finalidade e a precaução operacional descritas no capítulo 7.",
+        "Incorreta: sua função é deslocar o ponto de reboque, não alongar o cabo principal.",
+        "Incorreta: restringir o giro com comprimento inadequado pode produzir girting."
+      ],
+      "reference": {
+        "referenceId": "II-09",
+        "base": "Henk Hensen",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4. ed., 2021",
+        "section": "Capítulo 7, §7.2 — Additional towing points and gob ropes",
+        "syllabus": "Eixo II — Arte Naval · equipamentos de reboque e segurança",
+        "evidence": "O recorte define a gob rope como cabo usado para deslocar o ponto de reboque, descreve seu emprego para movê-lo à ré e alerta que comprimento inadequado pode restringir o rebocador e gerar girting.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+      }
+    },
+    {
+      "id": "tue-r4-current-force-speed-square",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão FSRS vencida · nota 1 · força de corrente",
+      "stem": "Mantidos o ângulo de ataque, o calado, a folga abaixo da quilha, a densidade e os coeficientes hidrodinâmicos, a velocidade média da corrente relativa ao navio dobra. A força lateral de corrente tende a:",
+      "options": [
+        "permanecer inalterada.",
+        "duplicar.",
+        "quadruplicar.",
+        "ser reduzida à metade."
+      ],
+      "correct": 2,
+      "explanation": "A expressão da força lateral contém o quadrado da velocidade média da corrente. Dobrar a velocidade multiplica a força por quatro.",
+      "comments": [
+        "Incorreta: a velocidade integra diretamente a expressão da força.",
+        "Incorreta: a relação não é linear com a velocidade.",
+        "Correta: 2² resulta em fator quatro.",
+        "Incorreta: maior velocidade relativa aumenta, não reduz, a força."
       ],
       "reference": {
         "referenceId": "I-08",
-        "base": "Bibliografia oficial PSCPP",
+        "base": "Edson Mesquita dos Santos",
         "publication": "A Manobrabilidade do Navio no Século 21",
         "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 5, §5.3 — curva de zigue-zague",
-        "syllabus": "Eixo I — Manobrabilidade · habilidade de governo e zigue-zague",
-        "evidence": "O recorte consultado define overshoot como o ângulo adicional pelo qual o navio continua a guinar no sentido original após a aplicação do leme para quebrar a guinada; o primeiro máximo ocorre após a segunda execução, quando a razão de guinada se anula.",
+        "section": "Capítulo 8 — correntes; forças e momentos sobre o navio",
+        "syllabus": "Eixo I — Manobrabilidade · ação ambiental das correntes",
+        "evidence": "O recorte consultado expressa as forças longitudinal e lateral e o momento de guinada com termo proporcional ao quadrado da velocidade média da corrente.",
         "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
       }
     },
     {
-      "id": "mon-c1-a601-pilot-card",
+      "id": "tue-c1-twin-screw-normal-running",
       "category": "current",
-      "axis": "I",
-      "kind": "Conteúdo atual · A.601(15) · Pilot Card",
-      "stem": "Segundo a Resolução IMO A.601(15), qual é a finalidade principal do Pilot Card?",
+      "axis": "II",
+      "kind": "Conteúdo atual · Arte Naval · dois hélices em mesmo regime",
+      "stem": "Num navio de dois hélices que giram de dentro para fora, com as duas máquinas no mesmo regime e leme a meio, qual comportamento geral é indicado por Arte Naval?",
       "options": [
-        "Registrar exclusivamente os resultados completos das provas de mar.",
-        "Fornecer ao prático, ao embarcar, a condição atual do navio quanto a carregamento, propulsão, manobra e equipamentos relevantes.",
-        "Substituir permanentemente o Manoeuvring Booklet.",
-        "Apresentar somente as dimensões principais do navio, sem dados operacionais."
-      ],
-      "correct": 1,
-      "explanation": "O Pilot Card é preenchido pelo comandante para informar ao prático, no embarque, a condição atual do navio. Seu uso não depende da execução de provas especiais de manobra.",
-      "comments": [
-        "Incorreta: o cartão pode ser utilizado sem provas especiais de manobra.",
-        "Correta: corresponde à finalidade e ao conteúdo corrente definidos na resolução.",
-        "Incorreta: os documentos têm funções complementares, não substitutivas.",
-        "Incorreta: o cartão abrange carregamento, propulsão, manobra e outros equipamentos relevantes."
-      ],
-      "reference": {
-        "referenceId": "I-11",
-        "base": "IMO",
-        "publication": "Provision and Display of Manoeuvring Information on Board Ships",
-        "edition": "A.601(15), 1987",
-        "section": "Anexo, §§1.2 e 3.1; Apêndice 1 — Pilot Card",
-        "syllabus": "Eixo I — Manobrabilidade · informações de manobra disponíveis a bordo",
-        "evidence": "O §3.1 consultado estabelece que o Pilot Card, preenchido pelo comandante, informa ao prático a condição atual de carregamento, propulsão, equipamentos de manobra e outros equipamentos relevantes, sem exigir provas especiais.",
-        "url": "https://drive.google.com/file/d/12LfLToqpd39zhkeQL_noIsxYEE-iAGbd/view"
-      }
-    },
-    {
-      "id": "mon-c2-a601-wheelhouse-poster",
-      "category": "current",
-      "axis": "I",
-      "kind": "Conteúdo atual · A.601(15) · Wheelhouse Poster",
-      "stem": "Quanto ao Wheelhouse Poster previsto na A.601(15), assinale a opção correta.",
-      "options": [
-        "Deve ficar permanentemente exposto no passadiço e apresentar dados gerais e informações detalhadas sobre as características de manobra.",
-        "É entregue ao prático e retirado do passadiço após o desembarque.",
-        "Seus valores de desempenho são invariáveis, qualquer que seja a condição ambiental, do casco ou do carregamento.",
-        "Contém apenas procedimentos de emergência e sinais de alarme."
+        "As pressões laterais e correntes dos hélices tendem a se compensar, permitindo seguimento aproximadamente retilíneo.",
+        "A proa guina necessariamente para boreste pela ação do hélice de boreste.",
+        "A popa cai necessariamente para bombordo por prevalecer o hélice de bombordo.",
+        "O navio só pode manter o rumo com um hélice parado."
       ],
       "correct": 0,
-      "explanation": "O Wheelhouse Poster deve permanecer exposto no passadiço, em tamanho que facilite o uso, com dados gerais e características detalhadas de manobra. A resolução alerta que o desempenho real pode variar.",
+      "explanation": "Com os dois hélices no mesmo regime, seus efeitos opostos tendem a se anular; com o leme a meio, o navio segue aproximadamente em linha reta.",
       "comments": [
-        "Correta: reúne localização, apresentação e conteúdo exigidos pela resolução.",
-        "Incorreta: descreve inadequadamente o uso do Pilot Card e contradiz a exposição permanente.",
-        "Incorreta: ambiente, estado do casco e carregamento podem alterar o desempenho.",
-        "Incorreta: o documento trata das características de manobra do navio."
+        "Correta: corresponde ao comportamento geral da condição simétrica.",
+        "Incorreta: não há guinada obrigatória para boreste.",
+        "Incorreta: não há prevalência necessária do hélice de bombordo.",
+        "Incorreta: parar um hélice cria assimetria e tende a produzir guinada."
       ],
       "reference": {
-        "referenceId": "I-11",
-        "base": "IMO",
-        "publication": "Provision and Display of Manoeuvring Information on Board Ships",
-        "edition": "A.601(15), 1987",
-        "section": "Anexo, §3.2; Apêndice 2 — Wheelhouse Poster",
-        "syllabus": "Eixo I — Manobrabilidade · apresentação das características de manobra",
-        "evidence": "O §3.2 consultado exige exposição permanente no passadiço, dados gerais e informações detalhadas, tamanho que facilite o uso e ressalva variações de desempenho por condições ambientais, do casco e de carregamento.",
-        "url": "https://drive.google.com/file/d/12LfLToqpd39zhkeQL_noIsxYEE-iAGbd/view"
+        "referenceId": "II-01",
+        "base": "Marinha do Brasil",
+        "publication": "Arte Naval, v. 1",
+        "edition": "8. ed., MB, 2019",
+        "section": "Capítulo 12, §12.10 — efeito dos hélices no governo",
+        "syllabus": "Eixo II — Arte Naval · governo de navios de dois ou mais hélices",
+        "evidence": "Com leme a meio e máquinas no mesmo regime, o recorte informa que as pressões laterais e as correntes de descarga e sucção produzem efeitos opostos e, em geral, não influem no governo.",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
       }
     },
     {
-      "id": "mon-c3-a601-manoeuvring-booklet",
+      "id": "tue-c2-twin-screw-one-propeller-slow",
       "category": "current",
-      "axis": "I",
-      "kind": "Conteúdo atual · A.601(15) · Manoeuvring Booklet",
-      "stem": "Qual característica distingue o Manoeuvring Booklet na estrutura documental da A.601(15)?",
+      "axis": "II",
+      "kind": "Conteúdo atual · Arte Naval · assimetria de máquinas",
+      "stem": "Um navio de dois hélices segue a vante quando o hélice de bombordo reduz sensivelmente as rotações. Desprezadas forças externas, qual tendência inicial e qual correção são coerentes com Arte Naval?",
       "options": [
-        "Reúne apenas a condição instantânea de carregamento encontrada pelo prático.",
-        "Contém dados abrangentes das características de manobra, incorpora as informações do Wheelhouse Poster e pode ser suplementado ao longo da vida do navio.",
-        "Apresenta somente informações obtidas obrigatoriamente em provas de mar.",
-        "É dispensável para navios novos com 100 m ou mais."
+        "A proa tende a boreste; aplica-se pequeno leme a bombordo.",
+        "A proa tende a bombordo; pequeno leme a boreste pode manter o rumo.",
+        "A popa tende a bombordo; aumenta-se ainda mais a rotação de boreste sem usar o leme.",
+        "Não surge tendência de guinada porque os hélices permanecem submersos."
       ],
       "correct": 1,
-      "explanation": "O Manoeuvring Booklet reúne informações abrangentes, inclui o conteúdo do Wheelhouse Poster e outros dados disponíveis. Parte pode ser estimada, parte deve vir de provas, e o documento pode ser suplementado.",
+      "explanation": "Quando um hélice para ou reduz rotações, a proa tende ao bordo correspondente. O rumo pode ser mantido com pequeno ângulo de leme, de 5° a 10°, para o bordo oposto.",
       "comments": [
-        "Incorreta: a condição instantânea é função central do Pilot Card.",
-        "Correta: sintetiza conteúdo, fontes dos dados e atualização previstos na resolução.",
-        "Incorreta: a maior parte pode ser estimada; apenas parte deve ser obtida em provas.",
-        "Incorreta: a resolução recomenda o conjunto completo para navios novos de 100 m ou mais e para certos navios independentemente do porte."
+        "Incorreta: a proa tende para o bordo do hélice que perdeu força.",
+        "Correta: combina a tendência para bombordo com correção a boreste.",
+        "Incorreta: aumentar a assimetria reforçaria o conjugado de guinada.",
+        "Incorreta: a assimetria de empuxo produz guinada mesmo com ambos submersos."
       ],
       "reference": {
-        "referenceId": "I-11",
-        "base": "IMO",
-        "publication": "Provision and Display of Manoeuvring Information on Board Ships",
-        "edition": "A.601(15), 1987",
-        "section": "Anexo, §§2.1.2 e 3.3; Apêndice 3 — Manoeuvring Booklet",
-        "syllabus": "Eixo I — Manobrabilidade · registro abrangente das características de manobra",
-        "evidence": "O §3.3 consultado determina que o booklet contenha detalhes abrangentes, as informações do poster e outros dados; registra que a maioria pode ser estimada, parte deve vir de provas e o conteúdo pode ser suplementado durante a vida do navio.",
-        "url": "https://drive.google.com/file/d/12LfLToqpd39zhkeQL_noIsxYEE-iAGbd/view"
+        "referenceId": "II-01",
+        "base": "Marinha do Brasil",
+        "publication": "Arte Naval, v. 1",
+        "edition": "8. ed., MB, 2019",
+        "section": "Capítulo 12, §12.11 — navio e hélices em marcha a vante",
+        "syllabus": "Eixo II — Arte Naval · governo com dois hélices e regimes diferentes",
+        "evidence": "O trecho afirma que, se um hélice parar ou reduzir rotações, a proa guina para o bordo correspondente e o rumo pode ser mantido com 5° a 10° de leme para o bordo oposto.",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
       }
     },
     {
-      "id": "mon-t1-colreg-overtaking-doubt",
-      "category": "rotation",
-      "axis": "III",
-      "kind": "Rotação · RIPEAM · Regra 13",
-      "stem": "Uma embarcação tem dúvida se está alcançando outra. Conforme a Regra 13, como deve proceder?",
+      "id": "tue-c3-twin-screw-turn-from-rest",
+      "category": "current",
+      "axis": "II",
+      "kind": "Conteúdo atual · Arte Naval · giro partindo do repouso",
+      "stem": "Partindo do repouso, um navio de dois hélices põe a máquina de boreste atrás e a de bombordo adiante. Sem vento ou corrente, qual resultado é esperado?",
       "options": [
-        "Considerar que se trata de rumos cruzados e aguardar alteração de marcação.",
-        "Considerar que está alcançando e manobrar de acordo, mantendo-se fora do caminho até ultrapassar inteiramente e ficar suficientemente afastada.",
-        "Manter rumo e velocidade, pois a dúvida elimina a obrigação de manobrar.",
-        "Aplicar a Regra 14 e guinar obrigatoriamente para boreste."
+        "A proa guina para bombordo e o navio adquire seguimento a ré.",
+        "A proa guina para boreste; com rotações iguais, pode surgir ligeiro seguimento a vante.",
+        "O navio gira exatamente sobre a quilha com rotações iguais, sem qualquer translação.",
+        "A proa não guina até que haja seguimento suficiente para o leme atuar."
       ],
       "correct": 1,
-      "explanation": "Na dúvida, a embarcação deve considerar que está alcançando. Uma alteração posterior de marcação não a transforma em embarcação de rumos cruzados nem encerra sua obrigação antes de ultrapassar e afastar-se.",
+      "explanation": "Sem seguimento, a proa guina para o bordo do hélice que dá atrás. Com rotações iguais, pode surgir ligeiro seguimento a vante; para girar sobre a quilha, reduz-se a rotação da máquina adiante.",
       "comments": [
-        "Incorreta: a regra manda presumir ultrapassagem, não rumos cruzados.",
-        "Correta: reúne a presunção na dúvida e a duração da obrigação.",
-        "Incorreta: a dúvida não afasta a responsabilidade da alcançadora.",
-        "Incorreta: a Regra 14 disciplina situação roda a roda."
+        "Incorreta: a proa vai para o bordo da máquina em marcha a ré, boreste.",
+        "Correta: reúne o sentido da guinada e a translação residual descritos.",
+        "Incorreta: rotações iguais não garantem rotação sem translação.",
+        "Incorreta: o conjugado dos hélices inicia a guinada mesmo sem seguimento."
       ],
       "reference": {
-        "referenceId": "III-16",
-        "base": "IMO/DPC",
-        "publication": "COLREG - Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte B, Seção II, Regra 13(c)–(d)",
-        "syllabus": "Eixo III — Navegação em águas restritas · RIPEAM e ultrapassagem",
-        "evidence": "O recorte consultado determina que, havendo dúvida, a embarcação presuma a ultrapassagem; a obrigação permanece até que a outra seja ultrapassada inteiramente e esteja suficientemente afastada.",
-        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
+        "referenceId": "II-01",
+        "base": "Marinha do Brasil",
+        "publication": "Arte Naval, v. 1",
+        "edition": "8. ed., MB, 2019",
+        "section": "Capítulo 12, §12.15 — giro com os hélices em sentidos opostos",
+        "syllabus": "Eixo II — Arte Naval · manobra de navios de dois hélices em águas limitadas",
+        "evidence": "Partindo do repouso com um hélice adiante e outro atrás, a proa guina para o bordo do hélice que dá atrás; com rotações iguais surge ligeiro seguimento a vante e, para girar sobre a quilha, usa-se menos rotação na máquina adiante.",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
       }
     },
     {
-      "id": "mon-t2-colreg-headon",
+      "id": "tue-t1-subtropical-cyclone-structure",
       "category": "rotation",
-      "axis": "III",
-      "kind": "Rotação · RIPEAM · Regra 14",
-      "stem": "Duas embarcações de propulsão mecânica aproximam-se em rumos diretamente opostos, com risco de abalroamento. Qual ação é prescrita pela Regra 14?",
+      "axis": "V",
+      "kind": "Rotação · Meteorologia · ciclone subtropical",
+      "stem": "Qual conjunto melhor caracteriza um ciclone subtropical em comparação com um ciclone tropical?",
       "options": [
-        "Ambas guinam para bombordo, passando por boreste uma da outra.",
-        "A embarcação de maior porte mantém rumo e velocidade.",
-        "Cada embarcação guina para boreste, permitindo passagem por bombordo uma da outra.",
-        "Somente a que avista a outra por boreste deve manobrar."
+        "Sistema frontal de núcleo exclusivamente frio, com vento máximo sempre junto ao centro.",
+        "Sistema não frontal com características híbridas, ventos máximos geralmente mais afastados do centro e convecção menos simétrica.",
+        "Cavado sem circulação fechada e duração obrigatoriamente inferior a 24 horas.",
+        "Alta pressão de núcleo quente, com divergência de superfície."
       ],
-      "correct": 2,
-      "explanation": "Na situação roda a roda, cada embarcação deve guinar para boreste, de modo que ambas passem por bombordo uma da outra. Na dúvida sobre a existência da situação, deve-se considerá-la existente.",
+      "correct": 1,
+      "explanation": "O ciclone subtropical é não frontal e reúne características tropicais e extratropicais. Em geral, seus ventos máximos ficam mais afastados do centro e sua convecção é menos simétrica.",
       "comments": [
-        "Incorreta: inverte o bordo da manobra prescrita.",
-        "Incorreta: a regra atribui ação às duas embarcações.",
-        "Correta: corresponde literalmente à ação exigida na situação roda a roda.",
-        "Incorreta: essa formulação remete a rumos cruzados, não à Regra 14."
+        "Incorreta: associação frontal caracteriza o extratropical.",
+        "Correta: reproduz os traços diferenciais indicados.",
+        "Incorreta: descreve onda ou distúrbio, não ciclone fechado.",
+        "Incorreta: ciclone é centro de baixa pressão."
       ],
       "reference": {
-        "referenceId": "III-16",
-        "base": "IMO/DPC",
-        "publication": "COLREG - Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte B, Seção II, Regra 14(a)–(c)",
-        "syllabus": "Eixo III — Navegação em águas restritas · RIPEAM e situação roda a roda",
-        "evidence": "O recorte consultado determina que ambas as embarcações de propulsão mecânica guinem para boreste em rumos diretamente ou quase diretamente opostos, para passarem por bombordo uma da outra.",
-        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
-      }
-    },
-    {
-      "id": "mon-o1-pscpp2011-q35-turning-curve",
-      "category": "official",
-      "axis": "III",
-      "kind": "Questão oficial adaptada · PSCPP 2011 · Prova Amarela · questão 35 · gabarito A · correção de leitura",
-      "stem": "Segundo Miguens, assinale a afirmativa incorreta sobre os dados táticos e a curva de giro.",
-      "options": [
-        "Abatimento é o caimento inicial do navio para o bordo da guinada, medido perpendicularmente ao rumo inicial.",
-        "Os dados táticos são determinados nas provas de mar posteriores à construção ou modernização.",
-        "Afastamento é a distância transversal ao rumo inicial, desde o carregamento do leme até a proa atingir o novo rumo.",
-        "Avanço, diâmetro tático e afastamento diminuem com o aumento do ângulo de leme.",
-        "Em giro de 360° com ângulo de leme constante, o diâmetro final é menor que o diâmetro tático."
-      ],
-      "correct": 0,
-      "explanation": "O gabarito oficial é A. O abatimento inicial ocorre para o bordo contrário ao da guinada, e não para o bordo da guinada. As demais alternativas reproduzem propriedades e definições aceitas no recorte.",
-      "comments": [
-        "Correta como resposta: contém o conceito incorreto, pois o abatimento inicial ocorre para o bordo oposto ao da guinada.",
-        "Incorreta como resposta: a determinação dos dados táticos em provas de mar está correta.",
-        "Incorreta como resposta: corresponde à definição de afastamento.",
-        "Incorreta como resposta: o aumento do ângulo de leme reduz essas dimensões da evolução.",
-        "Incorreta como resposta: o diâmetro final estabilizado é menor que o diâmetro tático."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Bibliografia oficial PSCPP e prova oficial histórica",
-        "publication": "Navegação: A Ciência e a Arte, v. I",
+        "referenceId": "V-01",
+        "base": "Diretoria de Hidrografia e Navegação",
+        "publication": "Navegação: A Ciência e a Arte, v. III",
         "edition": "2ª revisão atualizada, DHN, 2023",
-        "section": "Capítulo 8 — uso dos dados táticos; curva de giro",
-        "syllabus": "Eixo III — Navegação em águas restritas · dados táticos e curva de giro",
-        "evidence": "O recorte consultado define abatimento como caimento para o bordo contrário ao da guinada, avanço e afastamento pelas direções longitudinal e transversal, diâmetro tático na guinada de 180° e diâmetro final inferior ao tático.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view",
+        "section": "Capítulo 45 — classificação dos ciclones subtropicais",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · sistemas atmosféricos",
+        "evidence": "O recorte define o ciclone subtropical como baixa não frontal híbrida, com ventos máximos geralmente além de 60 milhas do centro e menor simetria do campo de ventos e da convecção.",
+        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
+      }
+    },
+    {
+      "id": "tue-t2-extratropical-cyclone-energy",
+      "category": "rotation",
+      "axis": "V",
+      "kind": "Rotação · Meteorologia · ciclone extratropical",
+      "stem": "A fonte primária distingue o ciclone extratropical principalmente por obter energia:",
+      "options": [
+        "do contraste horizontal de temperatura, estando geralmente associado a sistema frontal.",
+        "somente do calor latente liberado por convecção profunda não frontal.",
+        "da rotação terrestre, independentemente de gradientes térmicos.",
+        "do aquecimento radiativo de uma alta pressão subtropical."
+      ],
+      "correct": 0,
+      "explanation": "O ciclone extratropical extrai energia primordialmente da energia potencial ligada ao contraste horizontal de temperatura e geralmente se associa a sistema frontal.",
+      "comments": [
+        "Correta: corresponde ao mecanismo e à associação frontal definidos.",
+        "Incorreta: aproxima-se da sustentação típica de ciclones tropicais.",
+        "Incorreta: a rotação não substitui a fonte baroclínica de energia.",
+        "Incorreta: ciclone é baixa pressão."
+      ],
+      "reference": {
+        "referenceId": "V-01",
+        "base": "Diretoria de Hidrografia e Navegação",
+        "publication": "Navegação: A Ciência e a Arte, v. III",
+        "edition": "2ª revisão atualizada, DHN, 2023",
+        "section": "Capítulo 45 — ciclones extratropicais e frente polar",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · sistemas frontais e ciclones",
+        "evidence": "O trecho define o ciclone extratropical como baixa cuja energia provém primordialmente do contraste horizontal de temperatura e que geralmente se associa a sistema frontal.",
+        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
+      }
+    },
+    {
+      "id": "tue-o1-pscpp2008-q72-tackles",
+      "category": "official",
+      "axis": "II",
+      "kind": "Questão oficial · PSCPP 2008 · questão 72 · gabarito D",
+      "stem": "Julgue as regras práticas para aparelhos de laborar: I) aplicar, quando possível, o cadernal onde gurne o tirador no peso a alar; II) fazer a arreigada fixa fora do cadernal fixo reduz o esforço nesse cadernal; III) ao içar, o tirador suporta tensão mínima e a arreigada fixa, máxima; IV) o melhor modo de engatar talha em cabo sem alça é a volta de encapeladura singela; V) o ganho de força implica maior comprimento a alar no tirador. Assinale a sequência correta.",
+      "options": [
+        "V – F – V – V – V.",
+        "F – F – V – F – V.",
+        "F – V – F – V – F.",
+        "V – V – F – F – V.",
+        "V – F – V – F – F."
+      ],
+      "correct": 3,
+      "explanation": "O gabarito oficial é D. I, II e V são verdadeiras. III inverte as tensões: ao içar, o tirador suporta a máxima e a arreigada fixa, a mínima. IV é falsa porque a fonte recomenda a boca-de-lobo.",
+      "comments": [
+        "Incorreta: trata III e IV como verdadeiras.",
+        "Incorreta: I e II são verdadeiras, e III é falsa.",
+        "Incorreta: I e V são verdadeiras, enquanto IV é falsa.",
+        "Correta: apresenta V – V – F – F – V.",
+        "Incorreta: II e V são verdadeiras, e III é falsa."
+      ],
+      "reference": {
+        "referenceId": "II-01",
+        "base": "Bibliografia oficial PSCPP e prova oficial histórica",
+        "publication": "Arte Naval, v. 1",
+        "edition": "8. ed., MB, 2019",
+        "section": "Capítulo 9, §9.21 — regras práticas dos aparelhos de laborar",
+        "syllabus": "Eixo II — Arte Naval · poleame, aparelhos de laborar e acessórios",
+        "evidence": "O recorte confirma o cadernal do tirador no peso, a arreigada fixa fora do cadernal fixo, a tensão máxima no tirador durante o içamento, a boca-de-lobo para engatar talha em cabo sem alça e a troca de ganho de força por maior comprimento a alar.",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view",
         "origin": {
-          "exam": "PSCPP 2011 — Prova Amarela",
-          "year": 2011,
-          "question": 35,
-          "answer": "A",
-          "adaptation": "Enunciado condensado e ortografia atualizada, sem alterar os cinco conceitos, a alternativa incorreta ou a solução.",
-          "url": "https://drive.google.com/file/d/1Fdz2o1xtzIkg1KONqP95HemlINDJcv_1/view"
+          "exam": "PSCPP 2008",
+          "year": 2008,
+          "question": 72,
+          "answer": "D",
+          "adaptation": "Ortografia atualizada e enunciado condensado, preservando as cinco assertivas, as sequências e o gabarito.",
+          "url": "https://drive.google.com/file/d/1KfllJf4BukeOqCtNlr5uuwNC7xDu45I6/view"
         }
       }
     }
