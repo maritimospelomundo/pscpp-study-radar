@@ -1,9 +1,9 @@
 {
-  "roundId": "twin-screw-manoeuvring-cyclones-2026-10-06",
-  "label": "Rodada adaptativa de 6 de outubro de 2026",
-  "title": "Governo de navios de dois hélices e classificação de ciclones",
+  "roundId": "escort-towing-brm-corrections-2026-10-07",
+  "label": "Rodada adaptativa de 7 de outubro de 2026",
+  "title": "Reboque de escolta, métodos direto e indireto e BRM com prático",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões FSRS e erros persistentes · Arte Naval — governo e giro de navios de dois hélices · Meteorologia — ciclones subtropicais e extratropicais · questão oficial de aparelhos de laborar",
+  "path": "Correção dos três erros da rodada anterior · Rebocadores de escolta — métodos direto, indireto e controle da força · BRM — planejamento, troca comandante–prático e monitoramento · questão oficial corretiva de aparelhos de laborar",
   "method": "4–3–2–1",
   "mixPlan": {
     "review": 4,
@@ -13,314 +13,314 @@
   },
   "questions": [
     {
-      "id": "tue-r1-significant-wave-height-third",
+      "id": "wed-r1-tropical-cyclone-sixty-four-knots",
       "category": "review",
       "axis": "V",
-      "kind": "Revisão FSRS vencida · nota 0 · altura significativa",
-      "stem": "Em uma sequência estatisticamente representativa de ondas irregulares, a altura significativa corresponde, por definição tradicional, a:",
-      "options": [
-        "altura da maior onda observada no período.",
-        "média aritmética das alturas de todas as ondas.",
-        "média das alturas do terço de ondas mais altas.",
-        "média das alturas do décimo de ondas mais baixas."
-      ],
-      "correct": 2,
-      "explanation": "A altura significativa é a média das alturas do terço de ondas mais altas da amostra. Não é a maior onda isolada nem a média de todas as ondas.",
-      "comments": [
-        "Incorreta: uma onda máxima isolada não define a altura significativa.",
-        "Incorreta: a média de todas as alturas é outro parâmetro estatístico.",
-        "Correta: o recorte define a altura significativa como a média das alturas do terço mais alto.",
-        "Incorreta: o parâmetro não utiliza o décimo de ondas mais baixas."
-      ],
-      "reference": {
-        "referenceId": "V-04",
-        "base": "Edson Mesquita dos Santos",
-        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 4 — distribuição estatística das alturas de onda",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · mar irregular e altura significativa",
-        "evidence": "O recorte consultado apresenta a distribuição das alturas e identifica a média das alturas do terço mais alto como altura significativa, distinguindo-a da altura média e da média do décimo mais alto.",
-        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
-      }
-    },
-    {
-      "id": "tue-r2-tropical-cyclone-sixty-four-knots",
-      "category": "review",
-      "axis": "V",
-      "kind": "Revisão FSRS vencida · nota 0 · limite de furacão",
-      "stem": "Um ciclone tropical apresenta vento máximo sustentado à superfície de exatamente 64 nós, calculado no intervalo de um minuto. Segundo Miguens, sua classificação é:",
+      "kind": "Revisão FSRS imediata · nota 0 · erro de leitura",
+      "stem": "Pela classificação baseada no vento máximo sustentado à superfície durante um minuto, um ciclone tropical com vento de 64 nós deve ser classificado como:",
       "options": [
         "depressão tropical.",
         "tempestade tropical.",
-        "tempestade subtropical.",
-        "furacão."
+        "furacão.",
+        "tempestade subtropical."
       ],
-      "correct": 3,
-      "explanation": "O limite de 64 nós pertence à classe furacão. Tempestade tropical começa em 34 nós, mas termina antes de 64 nós.",
+      "correct": 2,
+      "explanation": "O limiar de 64 nós já pertence à categoria furacão. Tempestade tropical abrange ventos iguais ou superiores a 34 nós e inferiores a 64 nós.",
       "comments": [
-        "Incorreta: depressão tropical tem vento máximo sustentado inferior a 34 nós.",
-        "Incorreta: tempestade tropical abrange de 34 nós inclusive a menos de 64 nós.",
-        "Incorreta: o enunciado identifica um ciclone tropical, não subtropical.",
-        "Correta: 64 nós ou mais, na média de um minuto, caracteriza furacão."
+        "Incorreta: depressão tropical apresenta vento máximo inferior a 34 nós.",
+        "Incorreta: a tempestade tropical termina antes de 64 nós.",
+        "Correta: 64 nós é o limite inferior da categoria furacão.",
+        "Incorreta: a questão trata de ciclone tropical, não da classificação subtropical."
       ],
       "reference": {
         "referenceId": "V-01",
-        "base": "Diretoria de Hidrografia e Navegação",
+        "base": "Altineu Pires Miguens",
         "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "2ª revisão atualizada, DHN, 2023",
+        "edition": "DHN",
         "section": "Capítulo 45 — classificação dos ciclones tropicais",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · sistemas atmosféricos e ciclones",
-        "evidence": "O trecho consultado classifica depressão tropical abaixo de 34 nós, tempestade tropical de 34 nós inclusive a menos de 64 nós e furacão a partir de 64 nós, usando vento máximo sustentado em um minuto.",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · ciclones tropicais",
+        "evidence": "O recorte consultado classifica como depressão tropical o sistema abaixo de 34 nós, como tempestade tropical o intervalo de 34 até menos de 64 nós e como furacão o sistema com vento máximo sustentado igual ou superior a 64 nós.",
         "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
       }
     },
     {
-      "id": "tue-r3-gob-rope-control-girting",
+      "id": "wed-r2-extratropical-cyclone-energy",
       "category": "review",
-      "axis": "II",
-      "kind": "Revisão FSRS vencida · gob rope e risco de girting",
-      "stem": "Um rebocador convencional atua pela popa, com cabo passado, enquanto o navio assistido ganha seguimento a vante. Qual emprego da gob rope é coerente com Hensen?",
+      "axis": "V",
+      "kind": "Revisão FSRS imediata · nota 0 · erro de conteúdo",
+      "stem": "A fonte primordial de energia de um ciclone extratropical decorre:",
       "options": [
-        "Mantê-la sempre conectada e folgada, independentemente da posição do rebocador.",
-        "Usá-la para deslocar o ponto de reboque para ré, controlando seu comprimento e desconectando-a quando desnecessária.",
-        "Usá-la apenas para aumentar o comprimento efetivo do cabo de reboque.",
-        "Tesá-la ao máximo para impedir qualquer giro do rebocador em relação ao navio."
+        "exclusivamente do calor latente liberado no olho do sistema.",
+        "do contraste horizontal de temperatura, geralmente associado a sistema frontal.",
+        "da ausência de gradiente térmico entre massas de ar.",
+        "somente do aquecimento uniforme da superfície do mar tropical."
       ],
       "correct": 1,
-      "explanation": "A gob rope desloca longitudinalmente o ponto de reboque, inclusive para a extremidade de ré. Seu comprimento deve ser controlado; se apertar inadequadamente, pode impedir a rotação do rebocador e criar girting.",
+      "explanation": "O ciclone extratropical extrai energia principalmente da energia potencial associada ao contraste horizontal de temperatura e, em geral, está ligado a um sistema frontal.",
       "comments": [
-        "Incorreta: a fonte recomenda desconectar a gob rope quando ela não for necessária.",
-        "Correta: resume a finalidade e a precaução operacional descritas no capítulo 7.",
-        "Incorreta: sua função é deslocar o ponto de reboque, não alongar o cabo principal.",
-        "Incorreta: restringir o giro com comprimento inadequado pode produzir girting."
+        "Incorreta: olho e predominância do calor latente são associações típicas de ciclones tropicais maduros.",
+        "Correta: o gradiente horizontal de temperatura fornece a energia potencial característica do sistema extratropical.",
+        "Incorreta: a ausência de contraste térmico elimina justamente o mecanismo indicado no recorte.",
+        "Incorreta: aquecimento uniforme de águas tropicais não define a fonte de energia do ciclone extratropical."
+      ],
+      "reference": {
+        "referenceId": "V-01",
+        "base": "Altineu Pires Miguens",
+        "publication": "Navegação: A Ciência e a Arte, v. III",
+        "edition": "DHN",
+        "section": "Capítulo 45 — ciclones extratropicais",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · sistemas de baixa pressão",
+        "evidence": "O recorte define o ciclone extratropical como centro de baixa pressão que obtém sua energia primordialmente da energia potencial de um contraste horizontal de temperatura, geralmente associado a sistema frontal.",
+        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
+      }
+    },
+    {
+      "id": "wed-r3-escort-indirect-to-direct-speed",
+      "category": "review",
+      "axis": "II",
+      "kind": "Revisão FSRS vencida · nota 0 · reboque de escolta",
+      "stem": "Quanto à escolha entre os métodos indireto e direto por um rebocador de escolta, é correto afirmar que:",
+      "options": [
+        "o método indireto é próprio apenas para navio parado e dispensa forças hidrodinâmicas no casco do rebocador.",
+        "o método direto é sempre preferível em alta velocidade porque sua força necessariamente supera o bollard pull.",
+        "o método indireto é empregado para controle em velocidades mais altas, enquanto o direto é adequado a velocidades mais baixas.",
+        "ambos os métodos são independentes da velocidade do navio assistido."
+      ],
+      "correct": 2,
+      "explanation": "No método indireto, usado em velocidades mais altas, o rebocador aproveita as forças hidrodinâmicas sobre casco e apêndices. Em velocidades menores, o método direto passa a ser apropriado.",
+      "comments": [
+        "Incorreta: o método indireto depende do escoamento sobre o casco e é especialmente útil com seguimento.",
+        "Incorreta: o método direto não supera necessariamente o bollard pull e perde eficácia relativa com o aumento da velocidade.",
+        "Correta: a obra distingue o emprego indireto em alta velocidade do direto em velocidades menores.",
+        "Incorreta: a velocidade é variável essencial para selecionar e executar o método."
       ],
       "reference": {
         "referenceId": "II-09",
         "base": "Henk Hensen",
         "publication": "Tug Use in Port: A Practical Guide",
         "edition": "4. ed., 2021",
-        "section": "Capítulo 7, §7.2 — Additional towing points and gob ropes",
-        "syllabus": "Eixo II — Arte Naval · equipamentos de reboque e segurança",
-        "evidence": "O recorte define a gob rope como cabo usado para deslocar o ponto de reboque, descreve seu emprego para movê-lo à ré e alerta que comprimento inadequado pode restringir o rebocador e gerar girting.",
+        "section": "Capítulos 2 e 9 — métodos direto e indireto de assistência",
+        "syllabus": "Eixo II — Arte Naval · emprego de rebocadores e reboque de escolta",
+        "evidence": "O recorte consultado associa o controle de rumo em velocidades mais altas ao método indireto, que utiliza forças hidrodinâmicas no casco, e o método direto às velocidades mais baixas; registra ainda que a força indireta pode superar o bollard pull.",
         "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
       }
     },
     {
-      "id": "tue-r4-current-force-speed-square",
+      "id": "wed-r4-coriolis-current-hemispheres",
       "category": "review",
-      "axis": "I",
-      "kind": "Revisão FSRS vencida · nota 1 · força de corrente",
-      "stem": "Mantidos o ângulo de ataque, o calado, a folga abaixo da quilha, a densidade e os coeficientes hidrodinâmicos, a velocidade média da corrente relativa ao navio dobra. A força lateral de corrente tende a:",
+      "axis": "III",
+      "kind": "Revisão FSRS vencida · nota 0 · confusão hemisférica",
+      "stem": "Considerando a ação da força de Coriolis sobre correntes superficiais geradas pelo vento, o desvio ocorre:",
       "options": [
-        "permanecer inalterada.",
-        "duplicar.",
-        "quadruplicar.",
-        "ser reduzida à metade."
+        "para a direita no Hemisfério Sul e para a esquerda no Hemisfério Norte.",
+        "para a esquerda em ambos os hemisférios.",
+        "para a esquerda no Hemisfério Sul e para a direita no Hemisfério Norte.",
+        "sempre na mesma direção do vento, sem desvio lateral."
       ],
       "correct": 2,
-      "explanation": "A expressão da força lateral contém o quadrado da velocidade média da corrente. Dobrar a velocidade multiplica a força por quatro.",
+      "explanation": "A rotação da Terra produz desvio para a esquerda no Hemisfério Sul e para a direita no Hemisfério Norte.",
       "comments": [
-        "Incorreta: a velocidade integra diretamente a expressão da força.",
-        "Incorreta: a relação não é linear com a velocidade.",
-        "Correta: 2² resulta em fator quatro.",
-        "Incorreta: maior velocidade relativa aumenta, não reduz, a força."
+        "Incorreta: os sentidos hemisféricos foram invertidos.",
+        "Incorreta: o sentido do desvio muda entre os hemisférios.",
+        "Correta: esquerda no Sul e direita no Norte.",
+        "Incorreta: a corrente superficial não segue necessariamente a direção exata do vento."
       ],
       "reference": {
-        "referenceId": "I-08",
-        "base": "Edson Mesquita dos Santos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 8 — correntes; forças e momentos sobre o navio",
-        "syllabus": "Eixo I — Manobrabilidade · ação ambiental das correntes",
-        "evidence": "O recorte consultado expressa as forças longitudinal e lateral e o momento de guinada com termo proporcional ao quadrado da velocidade média da corrente.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+        "referenceId": "III-02",
+        "base": "Altineu Pires Miguens",
+        "publication": "Navegação: A Ciência e a Arte, v. I",
+        "edition": "2ª revisão atualizada, DHN, 2023",
+        "section": "Capítulos 10–11 — correntes oceânicas e efeito de Coriolis",
+        "syllabus": "Eixo III — Navegação Restrita · marés, correntes e ação da rotação terrestre",
+        "evidence": "O recorte consultado explica que Coriolis desvia as correntes superficiais para a esquerda do vento no Hemisfério Sul e para a direita no Hemisfério Norte; a intensidade depende da velocidade e da latitude.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
       }
     },
     {
-      "id": "tue-c1-twin-screw-normal-running",
+      "id": "wed-c1-escort-indirect-hydrodynamic-force",
       "category": "current",
       "axis": "II",
-      "kind": "Conteúdo atual · Arte Naval · dois hélices em mesmo regime",
-      "stem": "Num navio de dois hélices que giram de dentro para fora, com as duas máquinas no mesmo regime e leme a meio, qual comportamento geral é indicado por Arte Naval?",
+      "kind": "Conteúdo atual · rebocador de escolta · método indireto",
+      "stem": "No método indireto de escolta, a elevada força transversal transmitida pelo cabo resulta principalmente:",
       "options": [
-        "As pressões laterais e correntes dos hélices tendem a se compensar, permitindo seguimento aproximadamente retilíneo.",
-        "A proa guina necessariamente para boreste pela ação do hélice de boreste.",
-        "A popa cai necessariamente para bombordo por prevalecer o hélice de bombordo.",
-        "O navio só pode manter o rumo com um hélice parado."
+        "da força hidrodinâmica gerada no casco e nos apêndices do rebocador, equilibrada por propulsão e cabo.",
+        "apenas do empuxo estático medido no teste de bollard pull.",
+        "da anulação completa da incidência do fluxo sobre o casco do rebocador.",
+        "do uso do cabo sem tensão, mantendo o rebocador alinhado à popa do navio."
       ],
       "correct": 0,
-      "explanation": "Com os dois hélices no mesmo regime, seus efeitos opostos tendem a se anular; com o leme a meio, o navio segue aproximadamente em linha reta.",
+      "explanation": "O rebocador é colocado com ângulo de ataque ao escoamento; casco e apêndices produzem força hidrodinâmica, cuja resultante é controlada pela propulsão e transmitida pelo cabo.",
       "comments": [
-        "Correta: corresponde ao comportamento geral da condição simétrica.",
-        "Incorreta: não há guinada obrigatória para boreste.",
-        "Incorreta: não há prevalência necessária do hélice de bombordo.",
-        "Incorreta: parar um hélice cria assimetria e tende a produzir guinada."
+        "Correta: a sustentação hidrodinâmica no casco e nos apêndices é a base do método indireto.",
+        "Incorreta: a força indireta pode ultrapassar o bollard pull por não depender apenas do empuxo estático.",
+        "Incorreta: o método exige incidência do fluxo, em vez de anulá-la.",
+        "Incorreta: é necessária tensão controlada no cabo para transmitir a força ao navio."
       ],
       "reference": {
-        "referenceId": "II-01",
-        "base": "Marinha do Brasil",
-        "publication": "Arte Naval, v. 1",
-        "edition": "8. ed., MB, 2019",
-        "section": "Capítulo 12, §12.10 — efeito dos hélices no governo",
-        "syllabus": "Eixo II — Arte Naval · governo de navios de dois ou mais hélices",
-        "evidence": "Com leme a meio e máquinas no mesmo regime, o recorte informa que as pressões laterais e as correntes de descarga e sucção produzem efeitos opostos e, em geral, não influem no governo.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
+        "referenceId": "II-09",
+        "base": "Henk Hensen",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4. ed., 2021",
+        "section": "Capítulos 4 e 9 — desempenho de escolta no modo indireto",
+        "syllabus": "Eixo II — Arte Naval · capacidades e limitações de rebocadores",
+        "evidence": "O recorte descreve o método indireto como aplicação de força de governo em velocidade por meio das forças hidrodinâmicas no casco e no skeg, equilibradas pelo empuxo e pela força no cabo; essas forças podem superar o bollard pull.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
       }
     },
     {
-      "id": "tue-c2-twin-screw-one-propeller-slow",
+      "id": "wed-c2-escort-direct-method-lower-speed",
       "category": "current",
       "axis": "II",
-      "kind": "Conteúdo atual · Arte Naval · assimetria de máquinas",
-      "stem": "Um navio de dois hélices segue a vante quando o hélice de bombordo reduz sensivelmente as rotações. Desprezadas forças externas, qual tendência inicial e qual correção são coerentes com Arte Naval?",
+      "kind": "Conteúdo atual · rebocador de escolta · método direto",
+      "stem": "Ao diminuir o seguimento do navio assistido e reduzir-se a contribuição hidrodinâmica sobre o rebocador, a assistência de governo tende a migrar para:",
       "options": [
-        "A proa tende a boreste; aplica-se pequeno leme a bombordo.",
-        "A proa tende a bombordo; pequeno leme a boreste pode manter o rumo.",
-        "A popa tende a bombordo; aumenta-se ainda mais a rotação de boreste sem usar o leme.",
-        "Não surge tendência de guinada porque os hélices permanecem submersos."
+        "o método indireto, porque a força hidrodinâmica aumenta quando a velocidade cai.",
+        "o método direto, no qual predomina a força propulsiva do rebocador.",
+        "a perda deliberada de tensão no cabo, eliminando a possibilidade de governo.",
+        "o emprego exclusivo do rebocador pela proa, qualquer que seja sua configuração."
       ],
       "correct": 1,
-      "explanation": "Quando um hélice para ou reduz rotações, a proa tende ao bordo correspondente. O rumo pode ser mantido com pequeno ângulo de leme, de 5° a 10°, para o bordo oposto.",
+      "explanation": "Com menor velocidade, diminuem as forças hidrodinâmicas utilizadas no modo indireto. O modo direto, baseado principalmente na força propulsiva orientada do rebocador, torna-se adequado.",
       "comments": [
-        "Incorreta: a proa tende para o bordo do hélice que perdeu força.",
-        "Correta: combina a tendência para bombordo com correção a boreste.",
-        "Incorreta: aumentar a assimetria reforçaria o conjugado de guinada.",
-        "Incorreta: a assimetria de empuxo produz guinada mesmo com ambos submersos."
+        "Incorreta: a força hidrodinâmica diminui, e não aumenta, com a redução do seguimento.",
+        "Correta: em baixa velocidade, o método direto utiliza predominantemente o empuxo do rebocador.",
+        "Incorreta: o cabo deve permanecer sob controle; folga não constitui método de governo.",
+        "Incorreta: posição e configuração dependem da manobra e do tipo de rebocador."
       ],
       "reference": {
-        "referenceId": "II-01",
-        "base": "Marinha do Brasil",
-        "publication": "Arte Naval, v. 1",
-        "edition": "8. ed., MB, 2019",
-        "section": "Capítulo 12, §12.11 — navio e hélices em marcha a vante",
-        "syllabus": "Eixo II — Arte Naval · governo com dois hélices e regimes diferentes",
-        "evidence": "O trecho afirma que, se um hélice parar ou reduzir rotações, a proa guina para o bordo correspondente e o rumo pode ser mantido com 5° a 10° de leme para o bordo oposto.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
+        "referenceId": "II-09",
+        "base": "Henk Hensen",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4. ed., 2021",
+        "section": "Capítulos 2 e 9 — assistência direta e indireta",
+        "syllabus": "Eixo II — Arte Naval · métodos de assistência com rebocadores",
+        "evidence": "O recorte contrapõe o método indireto, empregado para controle em velocidades maiores mediante forças hidrodinâmicas, ao método direto em velocidades menores, no qual a contribuição propulsiva do rebocador é determinante.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
       }
     },
     {
-      "id": "tue-c3-twin-screw-turn-from-rest",
+      "id": "wed-c3-vs-tug-braking-engine-protection",
       "category": "current",
       "axis": "II",
-      "kind": "Conteúdo atual · Arte Naval · giro partindo do repouso",
-      "stem": "Partindo do repouso, um navio de dois hélices põe a máquina de boreste atrás e a de bombordo adiante. Sem vento ou corrente, qual resultado é esperado?",
+      "kind": "Conteúdo atual · frenagem com rebocador VS",
+      "stem": "Ao aplicar força de frenagem com um rebocador Voith Schneider em navio com seguimento, a recomendação operacional é:",
       "options": [
-        "A proa guina para bombordo e o navio adquire seguimento a ré.",
-        "A proa guina para boreste; com rotações iguais, pode surgir ligeiro seguimento a vante.",
-        "O navio gira exatamente sobre a quilha com rotações iguais, sem qualquer translação.",
-        "A proa não guina até que haja seguimento suficiente para o leme atuar."
+        "aplicar passo máximo e todo o leme disponível, independentemente da velocidade.",
+        "ajustar os comandos de passo à velocidade do navio e usar o mínimo necessário de wheel, evitando sobrecarga do motor.",
+        "parar imediatamente os propulsores para que apenas o cabo suporte a carga.",
+        "manter o cabo folgado até o rebocador ficar exatamente na esteira do navio."
       ],
       "correct": 1,
-      "explanation": "Sem seguimento, a proa guina para o bordo do hélice que dá atrás. Com rotações iguais, pode surgir ligeiro seguimento a vante; para girar sobre a quilha, reduz-se a rotação da máquina adiante.",
+      "explanation": "Na frenagem em velocidade, os comandos devem acompanhar a velocidade do navio e o wheel deve ser mínimo, reduzindo o risco de sobrecarga do motor.",
       "comments": [
-        "Incorreta: a proa vai para o bordo da máquina em marcha a ré, boreste.",
-        "Correta: reúne o sentido da guinada e a translação residual descritos.",
-        "Incorreta: rotações iguais não garantem rotação sem translação.",
-        "Incorreta: o conjugado dos hélices inicia a guinada mesmo sem seguimento."
+        "Incorreta: comandos máximos sem considerar a velocidade podem sobrecarregar o conjunto.",
+        "Correta: a obra recomenda adequar o passo à velocidade e limitar o wheel.",
+        "Incorreta: parar a propulsão elimina a capacidade de controlar atitude e força do rebocador.",
+        "Incorreta: a frenagem exige força controlada no cabo, não folga deliberada."
       ],
       "reference": {
-        "referenceId": "II-01",
-        "base": "Marinha do Brasil",
-        "publication": "Arte Naval, v. 1",
-        "edition": "8. ed., MB, 2019",
-        "section": "Capítulo 12, §12.15 — giro com os hélices em sentidos opostos",
-        "syllabus": "Eixo II — Arte Naval · manobra de navios de dois hélices em águas limitadas",
-        "evidence": "Partindo do repouso com um hélice adiante e outro atrás, a proa guina para o bordo do hélice que dá atrás; com rotações iguais surge ligeiro seguimento a vante e, para girar sobre a quilha, usa-se menos rotação na máquina adiante.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
+        "referenceId": "II-09",
+        "base": "Henk Hensen",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4. ed., 2021",
+        "section": "Capítulo 2 — VS tugs in ship handling",
+        "syllabus": "Eixo II — Arte Naval · limitações operacionais e segurança de rebocadores",
+        "evidence": "O recorte consultado orienta que, quando forem necessárias forças de frenagem, os comandos de passo sejam ajustados à velocidade do navio e se utilize o mínimo de wheel, a fim de evitar sobrecarga do motor.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
       }
     },
     {
-      "id": "tue-t1-subtropical-cyclone-structure",
+      "id": "wed-t1-brm-pilotage-plan-continuity",
       "category": "rotation",
-      "axis": "V",
-      "kind": "Rotação · Meteorologia · ciclone subtropical",
-      "stem": "Qual conjunto melhor caracteriza um ciclone subtropical em comparação com um ciclone tropical?",
+      "axis": "III",
+      "kind": "Rotação · BRM · planejamento com prático",
+      "stem": "Quando o prático embarca e assume a condução da navegação, o plano de viagem:",
       "options": [
-        "Sistema frontal de núcleo exclusivamente frio, com vento máximo sempre junto ao centro.",
-        "Sistema não frontal com características híbridas, ventos máximos geralmente mais afastados do centro e convecção menos simétrica.",
-        "Cavado sem circulação fechada e duração obrigatoriamente inferior a 24 horas.",
-        "Alta pressão de núcleo quente, com divergência de superfície."
+        "encerra-se no ponto de embarque do prático, porque o conhecimento local substitui o planejamento.",
+        "continua até o berço, incluindo a área de praticagem, o monitoramento do prático e os planos de contingência.",
+        "passa a existir apenas verbalmente, sem necessidade de rota planejada ou limites.",
+        "fica suspenso até o comandante reassumir formalmente a condução."
       ],
       "correct": 1,
-      "explanation": "O ciclone subtropical é não frontal e reúne características tropicais e extratropicais. Em geral, seus ventos máximos ficam mais afastados do centro e sua convecção é menos simétrica.",
+      "explanation": "O planejamento é de cais a cais. A área em que o prático conduz o navio permanece planejada e monitorada, com contingências e limites conhecidos pela equipe.",
       "comments": [
-        "Incorreta: associação frontal caracteriza o extratropical.",
-        "Correta: reproduz os traços diferenciais indicados.",
-        "Incorreta: descreve onda ou distúrbio, não ciclone fechado.",
-        "Incorreta: ciclone é centro de baixa pressão."
+        "Incorreta: o embarque do prático não encerra o plano de viagem.",
+        "Correta: o plano continua pela praticagem até o berço e sustenta o monitoramento pela equipe.",
+        "Incorreta: conhecimento local complementa, mas não substitui, o plano formal.",
+        "Incorreta: o plano permanece ativo independentemente de quem esteja com a condução."
       ],
       "reference": {
-        "referenceId": "V-01",
-        "base": "Diretoria de Hidrografia e Navegação",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "2ª revisão atualizada, DHN, 2023",
-        "section": "Capítulo 45 — classificação dos ciclones subtropicais",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · sistemas atmosféricos",
-        "evidence": "O recorte define o ciclone subtropical como baixa não frontal híbrida, com ventos máximos geralmente além de 60 milhas do centro e menor simetria do campo de ventos e da convecção.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
+        "referenceId": "III-01",
+        "base": "A. J. Swift e T. J. Bailey",
+        "publication": "Bridge Team Management: A Practical Guide",
+        "edition": "2. ed., 2004",
+        "section": "Capítulo 7 — Navigating with a pilot on board · Planning",
+        "syllabus": "Eixo III — Navegação Restrita · BRM e pilotagem",
+        "evidence": "O recorte consultado afirma que um plano bem elaborado não termina na estação de prático: prossegue do mar ao berço, inclui a área sob condução do prático, permite comparar o progresso com a derrota prevista e incorpora alternativas e contingências.",
+        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
       }
     },
     {
-      "id": "tue-t2-extratropical-cyclone-energy",
+      "id": "wed-t2-brm-master-pilot-exchange-responsibility",
       "category": "rotation",
-      "axis": "V",
-      "kind": "Rotação · Meteorologia · ciclone extratropical",
-      "stem": "A fonte primária distingue o ciclone extratropical principalmente por obter energia:",
+      "axis": "III",
+      "kind": "Rotação · BRM · troca comandante–prático",
+      "stem": "Na troca de informações comandante–prático, qual conjunto melhor representa a prática recomendada?",
       "options": [
-        "do contraste horizontal de temperatura, estando geralmente associado a sistema frontal.",
-        "somente do calor latente liberado por convecção profunda não frontal.",
-        "da rotação terrestre, independentemente de gradientes térmicos.",
-        "do aquecimento radiativo de uma alta pressão subtropical."
+        "O prático informa apenas o rumo inicial; o comandante transfere integralmente a responsabilidade pela segurança.",
+        "O comandante limita-se a entregar o Pilot Card; rota, velocidades e contingências permanecem reservadas ao prático.",
+        "Discutem-se rota, velocidades, ETA, rebocadores, VTS e contingências; o comandante informa características do navio e mantém a responsabilidade pela segurança.",
+        "A troca pode ser omitida sempre que a praticagem for compulsória."
       ],
-      "correct": 0,
-      "explanation": "O ciclone extratropical extrai energia primordialmente da energia potencial ligada ao contraste horizontal de temperatura e geralmente se associa a sistema frontal.",
+      "correct": 2,
+      "explanation": "A troca deve tornar mútuas as intenções, limitações e recursos. A presença do prático não elimina a responsabilidade do comandante pela segurança do navio.",
       "comments": [
-        "Correta: corresponde ao mecanismo e à associação frontal definidos.",
-        "Incorreta: aproxima-se da sustentação típica de ciclones tropicais.",
-        "Incorreta: a rotação não substitui a fonte baroclínica de energia.",
-        "Incorreta: ciclone é baixa pressão."
+        "Incorreta: a troca é mais ampla e a responsabilidade do comandante permanece.",
+        "Incorreta: o Pilot Card auxilia, mas não substitui a discussão operacional.",
+        "Correta: reúne intenções do prático, recursos externos, peculiaridades do navio e responsabilidade continuada do comandante.",
+        "Incorreta: praticagem compulsória não dispensa a troca; se ela não ocorrer, exige-se cautela ainda maior."
       ],
       "reference": {
-        "referenceId": "V-01",
-        "base": "Diretoria de Hidrografia e Navegação",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "2ª revisão atualizada, DHN, 2023",
-        "section": "Capítulo 45 — ciclones extratropicais e frente polar",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · sistemas frontais e ciclones",
-        "evidence": "O trecho define o ciclone extratropical como baixa cuja energia provém primordialmente do contraste horizontal de temperatura e que geralmente se associa a sistema frontal.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
+        "referenceId": "III-01",
+        "base": "A. J. Swift e T. J. Bailey",
+        "publication": "Bridge Team Management: A Practical Guide",
+        "edition": "2. ed., 2004",
+        "section": "Capítulo 7 — Master/Pilot Information Exchange e Responsibility",
+        "syllabus": "Eixo III — Navegação Restrita · BRM, pilotagem e monitoramento",
+        "evidence": "O recorte recomenda discutir rota pretendida, velocidades, ETA, apoio de rebocadores e VTS e contingências; o comandante deve informar características de manobra, condição dos ferros, propulsão, controles e pessoal. Mesmo com o prático, o comandante conserva a responsabilidade pela segurança.",
+        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
       }
     },
     {
-      "id": "tue-o1-pscpp2008-q72-tackles",
+      "id": "wed-o1-pscpp2008-q72-tackles-correction",
       "category": "official",
       "axis": "II",
-      "kind": "Questão oficial · PSCPP 2008 · questão 72 · gabarito D",
-      "stem": "Julgue as regras práticas para aparelhos de laborar: I) aplicar, quando possível, o cadernal onde gurne o tirador no peso a alar; II) fazer a arreigada fixa fora do cadernal fixo reduz o esforço nesse cadernal; III) ao içar, o tirador suporta tensão mínima e a arreigada fixa, máxima; IV) o melhor modo de engatar talha em cabo sem alça é a volta de encapeladura singela; V) o ganho de força implica maior comprimento a alar no tirador. Assinale a sequência correta.",
+      "kind": "Questão oficial histórica · reaplicação corretiva",
+      "stem": "Julgue as afirmações sobre regras práticas no emprego de aparelhos de laborar: I — aplicar, quando possível, o cadernal onde gurne o tirador no peso a alar; II — para reduzir o esforço sobre o cadernal fixo, fazer a arreigada fixa fora dele; III — içando, o tirador suporta a tensão mínima e a arreigada fixa a máxima; IV — o melhor modo de engatar uma talha em cabo sem alça é a volta de encapeladura singela; V — o ganho de força implica maior comprimento a alar no tirador. Assinale a sequência correta.",
       "options": [
-        "V – F – V – V – V.",
-        "F – F – V – F – V.",
-        "F – V – F – V – F.",
-        "V – V – F – F – V.",
-        "V – F – V – F – F."
+        "V – F – V – V – V",
+        "F – F – V – F – V",
+        "F – V – F – V – F",
+        "V – V – F – F – V",
+        "V – F – V – F – F"
       ],
       "correct": 3,
-      "explanation": "O gabarito oficial é D. I, II e V são verdadeiras. III inverte as tensões: ao içar, o tirador suporta a máxima e a arreigada fixa, a mínima. IV é falsa porque a fonte recomenda a boca-de-lobo.",
+      "explanation": "A sequência é V–V–F–F–V. I e II reproduzem regras práticas; III inverte as tensões durante o içamento; IV erra porque o engate recomendado é pela boca-de-lobo; V expressa a troca entre ganho de força e maior percurso do tirador.",
       "comments": [
-        "Incorreta: trata III e IV como verdadeiras.",
-        "Incorreta: I e II são verdadeiras, e III é falsa.",
-        "Incorreta: I e V são verdadeiras, enquanto IV é falsa.",
-        "Correta: apresenta V – V – F – F – V.",
-        "Incorreta: II e V são verdadeiras, e III é falsa."
+        "Incorreta: II também é verdadeira, enquanto III e IV são falsas.",
+        "Incorreta: I e II são verdadeiras e III é falsa.",
+        "Incorreta: I é verdadeira, IV é falsa e V é verdadeira.",
+        "Correta: V–V–F–F–V, conforme as regras práticas do art. 9.21.",
+        "Incorreta: II é verdadeira, III é falsa e V é verdadeira."
       ],
       "reference": {
         "referenceId": "II-01",
-        "base": "Bibliografia oficial PSCPP e prova oficial histórica",
+        "base": "Maurílio M. Fonseca",
         "publication": "Arte Naval, v. 1",
         "edition": "8. ed., MB, 2019",
         "section": "Capítulo 9, §9.21 — regras práticas dos aparelhos de laborar",
-        "syllabus": "Eixo II — Arte Naval · poleame, aparelhos de laborar e acessórios",
-        "evidence": "O recorte confirma o cadernal do tirador no peso, a arreigada fixa fora do cadernal fixo, a tensão máxima no tirador durante o içamento, a boca-de-lobo para engatar talha em cabo sem alça e a troca de ganho de força por maior comprimento a alar.",
+        "syllabus": "Eixo II — Arte Naval · poleame e aparelhos de laborar",
+        "evidence": "O recorte confirma que o cadernal móvel deve ser aplicado ao peso quando possível, que a arreigada fora reduz a carga no cadernal fixo, que no içamento o tirador recebe tensão máxima, que o engate recomendado em cabo sem alça é a boca-de-lobo e que o ganho de força aumenta o comprimento a alar.",
         "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view",
         "origin": {
           "exam": "PSCPP 2008",
