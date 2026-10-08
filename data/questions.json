@@ -1,9 +1,9 @@
 {
-  "roundId": "escort-towing-brm-corrections-2026-10-07",
-  "label": "Rodada adaptativa de 7 de outubro de 2026",
-  "title": "Reboque de escolta, métodos direto e indireto e BRM com prático",
+  "roundId": "pilotage-procedures-smcp-corrections-2026-10-08",
+  "label": "Rodada adaptativa de 8 de outubro de 2026",
+  "title": "Procedimentos operacionais da praticagem, SMCP e correção de fragilidades",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Correção dos três erros da rodada anterior · Rebocadores de escolta — métodos direto, indireto e controle da força · BRM — planejamento, troca comandante–prático e monitoramento · questão oficial corretiva de aparelhos de laborar",
+  "path": "Correção de ciclones tropicais e extratropicais, aparelhos de laborar e Coriolis · Praticagem — ponto de embarque, solicitação do prático e recusa por risco · SMCP — respostas e correções · questão oficial do Código Internacional de Sinais",
   "method": "4–3–2–1",
   "mixPlan": {
     "review": 4,
@@ -13,7 +13,7 @@
   },
   "questions": [
     {
-      "id": "wed-r1-tropical-cyclone-sixty-four-knots",
+      "id": "thu-r1-tropical-cyclone-sixty-four-knots",
       "category": "review",
       "axis": "V",
       "kind": "Revisão FSRS imediata · nota 0 · erro de leitura",
@@ -22,15 +22,15 @@
         "depressão tropical.",
         "tempestade tropical.",
         "furacão.",
-        "tempestade subtropical."
+        "ciclone extratropical."
       ],
       "correct": 2,
-      "explanation": "O limiar de 64 nós já pertence à categoria furacão. Tempestade tropical abrange ventos iguais ou superiores a 34 nós e inferiores a 64 nós.",
+      "explanation": "O valor de 64 nós já alcança o limite inferior da categoria furacão. Tempestade tropical compreende ventos iguais ou superiores a 34 nós e inferiores a 64 nós.",
       "comments": [
         "Incorreta: depressão tropical apresenta vento máximo inferior a 34 nós.",
-        "Incorreta: a tempestade tropical termina antes de 64 nós.",
+        "Incorreta: a faixa da tempestade tropical termina antes de 64 nós.",
         "Correta: 64 nós é o limite inferior da categoria furacão.",
-        "Incorreta: a questão trata de ciclone tropical, não da classificação subtropical."
+        "Incorreta: a classificação pedida é a de um ciclone tropical e não depende do mecanismo extratropical."
       ],
       "reference": {
         "referenceId": "V-01",
@@ -44,7 +44,7 @@
       }
     },
     {
-      "id": "wed-r2-extratropical-cyclone-energy",
+      "id": "thu-r2-extratropical-cyclone-energy",
       "category": "review",
       "axis": "V",
       "kind": "Revisão FSRS imediata · nota 0 · erro de conteúdo",
@@ -56,11 +56,11 @@
         "somente do aquecimento uniforme da superfície do mar tropical."
       ],
       "correct": 1,
-      "explanation": "O ciclone extratropical extrai energia principalmente da energia potencial associada ao contraste horizontal de temperatura e, em geral, está ligado a um sistema frontal.",
+      "explanation": "O ciclone extratropical extrai energia principalmente da energia potencial ligada ao contraste horizontal de temperatura e, em geral, associa-se a um sistema frontal.",
       "comments": [
         "Incorreta: olho e predominância do calor latente são associações típicas de ciclones tropicais maduros.",
         "Correta: o gradiente horizontal de temperatura fornece a energia potencial característica do sistema extratropical.",
-        "Incorreta: a ausência de contraste térmico elimina justamente o mecanismo indicado no recorte.",
+        "Incorreta: a ausência de contraste térmico elimina justamente o mecanismo indicado na obra.",
         "Incorreta: aquecimento uniforme de águas tropicais não define a fonte de energia do ciclone extratropical."
       ],
       "reference": {
@@ -75,38 +75,38 @@
       }
     },
     {
-      "id": "wed-r3-escort-indirect-to-direct-speed",
+      "id": "thu-r3-tackle-tensions-and-attachment",
       "category": "review",
       "axis": "II",
-      "kind": "Revisão FSRS vencida · nota 0 · reboque de escolta",
-      "stem": "Quanto à escolha entre os métodos indireto e direto por um rebocador de escolta, é correto afirmar que:",
+      "kind": "Revisão FSRS imediata · nota 0 · aparelhos de laborar",
+      "stem": "Ao içar um peso com uma talha e ao engatar a talha em um cabo sem alça, assinale a combinação correta:",
       "options": [
-        "o método indireto é próprio apenas para navio parado e dispensa forças hidrodinâmicas no casco do rebocador.",
-        "o método direto é sempre preferível em alta velocidade porque sua força necessariamente supera o bollard pull.",
-        "o método indireto é empregado para controle em velocidades mais altas, enquanto o direto é adequado a velocidades mais baixas.",
-        "ambos os métodos são independentes da velocidade do navio assistido."
+        "A arreigada fixa recebe a tensão máxima; o engate é feito por encapeladura singela.",
+        "O tirador recebe a tensão máxima; o engate recomendado é a boca-de-lobo.",
+        "O cadernal móvel recebe tensão nula; o engate é feito por volta de fiel.",
+        "As tensões são necessariamente iguais; o engate é feito por nó direito."
       ],
-      "correct": 2,
-      "explanation": "No método indireto, usado em velocidades mais altas, o rebocador aproveita as forças hidrodinâmicas sobre casco e apêndices. Em velocidades menores, o método direto passa a ser apropriado.",
+      "correct": 1,
+      "explanation": "Durante o içamento, o tirador suporta a tensão máxima e a arreigada fixa, a mínima. Para prender uma talha a cabo sem alça, a regra prática recomenda a boca-de-lobo.",
       "comments": [
-        "Incorreta: o método indireto depende do escoamento sobre o casco e é especialmente útil com seguimento.",
-        "Incorreta: o método direto não supera necessariamente o bollard pull e perde eficácia relativa com o aumento da velocidade.",
-        "Correta: a obra distingue o emprego indireto em alta velocidade do direto em velocidades menores.",
-        "Incorreta: a velocidade é variável essencial para selecionar e executar o método."
+        "Incorreta: inverte a distribuição das tensões e indica engate diferente do recomendado.",
+        "Correta: reúne as duas regras práticas do recorte consultado.",
+        "Incorreta: não há tensão nula no cadernal móvel e a volta de fiel não é a recomendação dada.",
+        "Incorreta: as tensões não são necessariamente iguais e nó direito não é o engate prescrito."
       ],
       "reference": {
-        "referenceId": "II-09",
-        "base": "Henk Hensen",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulos 2 e 9 — métodos direto e indireto de assistência",
-        "syllabus": "Eixo II — Arte Naval · emprego de rebocadores e reboque de escolta",
-        "evidence": "O recorte consultado associa o controle de rumo em velocidades mais altas ao método indireto, que utiliza forças hidrodinâmicas no casco, e o método direto às velocidades mais baixas; registra ainda que a força indireta pode superar o bollard pull.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+        "referenceId": "II-01",
+        "base": "Maurílio M. Fonseca",
+        "publication": "Arte Naval, v. 1",
+        "edition": "8. ed., MB, 2019",
+        "section": "Capítulo 9, §9.21 — regras práticas dos aparelhos de laborar",
+        "syllabus": "Eixo II — Arte Naval · poleame e aparelhos de laborar",
+        "evidence": "O recorte estabelece que, no içamento, o tirador recebe a tensão máxima e a arreigada fixa a mínima; recomenda a boca-de-lobo para engatar uma talha em cabo sem alça.",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
       }
     },
     {
-      "id": "wed-r4-coriolis-current-hemispheres",
+      "id": "thu-r4-coriolis-current-hemispheres",
       "category": "review",
       "axis": "III",
       "kind": "Revisão FSRS vencida · nota 0 · confusão hemisférica",
@@ -137,198 +137,198 @@
       }
     },
     {
-      "id": "wed-c1-escort-indirect-hydrodynamic-force",
+      "id": "thu-c1-pilot-boarding-point",
       "category": "current",
-      "axis": "II",
-      "kind": "Conteúdo atual · rebocador de escolta · método indireto",
-      "stem": "No método indireto de escolta, a elevada força transversal transmitida pelo cabo resulta principalmente:",
+      "axis": "IV",
+      "kind": "Conteúdo atual · praticagem · ponto de embarque",
+      "stem": "Ao estabelecer o ponto de embarque ou desembarque do prático, a autoridade competente deve considerar, entre outros fatores:",
       "options": [
-        "da força hidrodinâmica gerada no casco e nos apêndices do rebocador, equilibrada por propulsão e cabo.",
-        "apenas do empuxo estático medido no teste de bollard pull.",
-        "da anulação completa da incidência do fluxo sobre o casco do rebocador.",
-        "do uso do cabo sem tensão, mantendo o rebocador alinhado à popa do navio."
+        "apenas a menor distância possível do berço, ainda que não haja espaço para a troca comandante–prático.",
+        "um local seguro, suficientemente afastado do início do ato de praticagem e com tempo e espaço marítimo para a troca comandante–prático.",
+        "obrigatoriamente o limite externo do mar territorial, sem considerar as condições locais.",
+        "somente a conveniência comercial do armador, independentemente da segurança do embarque."
+      ],
+      "correct": 1,
+      "explanation": "O ponto deve permitir embarque e desembarque seguros, situar-se a distância adequada do início do ato de praticagem e deixar tempo e espaço marítimo suficientes para a troca de informações.",
+      "comments": [
+        "Incorreta: proximidade do berço não substitui segurança nem tempo para a troca operacional.",
+        "Correta: reúne os três critérios expressamente indicados na recomendação.",
+        "Incorreta: a recomendação não fixa o limite do mar territorial como posição obrigatória.",
+        "Incorreta: a autoridade deve priorizar condições seguras, não apenas conveniência comercial."
+      ],
+      "reference": {
+        "referenceId": "IV-18",
+        "base": "International Maritime Organization",
+        "publication": "Resolution A.960(23) — Recommendations on training and certification and on operational procedures for maritime pilots other than deep-sea pilots",
+        "edition": "Adotada em 5 de dezembro de 2003",
+        "section": "Anexo 2, §3 — Pilot boarding point",
+        "syllabus": "Eixo IV — Legislação · praticagem e procedimentos operacionais",
+        "evidence": "O recorte determina que a autoridade competente estabeleça e divulgue pontos seguros de embarque e desembarque, suficientemente afastados do início do ato de praticagem e com tempo e espaço marítimo para a troca comandante–prático.",
+        "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"
+      }
+    },
+    {
+      "id": "thu-c2-requesting-pilot-eta-updates",
+      "category": "current",
+      "axis": "IV",
+      "kind": "Conteúdo atual · praticagem · solicitação do prático",
+      "stem": "Para favorecer um serviço de praticagem eficiente, o navio deve transmitir a hora estimada de chegada ou saída:",
+      "options": [
+        "somente depois de atingir o ponto de embarque do prático.",
+        "com antecedência e mantê-la atualizada quando houver alteração.",
+        "apenas ao agente, sem comunicação à autoridade de praticagem.",
+        "uma única vez, sendo vedadas correções posteriores."
+      ],
+      "correct": 1,
+      "explanation": "A autoridade deve estabelecer procedimentos de solicitação, e o navio deve fornecer ETA ou ETD com antecedência suficiente e atualizá-la sempre que necessário.",
+      "comments": [
+        "Incorreta: esperar o ponto de embarque elimina a antecedência necessária ao planejamento do serviço.",
+        "Correta: antecedência e atualizações frequentes são requisitos operacionais destacados no recorte.",
+        "Incorreta: a informação deve chegar ao serviço ou à autoridade pelos procedimentos estabelecidos.",
+        "Incorreta: alterações devem ser comunicadas; a estimativa não é imutável."
+      ],
+      "reference": {
+        "referenceId": "IV-18",
+        "base": "International Maritime Organization",
+        "publication": "Resolution A.960(23) — Recommendations on training and certification and on operational procedures for maritime pilots other than deep-sea pilots",
+        "edition": "Adotada em 5 de dezembro de 2003",
+        "section": "Anexo 2, §4 — Procedures for requesting pilot",
+        "syllabus": "Eixo IV — Legislação · solicitação e coordenação da praticagem",
+        "evidence": "O recorte estabelece procedimentos para solicitar o prático e registra que um serviço eficiente requer o envio antecipado da ETA ou ETD, com atualizações frequentes, além do estabelecimento de contato VHF tão cedo quanto possível.",
+        "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"
+      }
+    },
+    {
+      "id": "thu-c3-pilot-refusal-danger-report",
+      "category": "current",
+      "axis": "IV",
+      "kind": "Conteúdo atual · praticagem · recusa por risco",
+      "stem": "Segundo a recomendação da IMO, se o prático considerar que o navio representa perigo para a navegação ou para o meio ambiente, ele pode:",
+      "options": [
+        "recusar o ato de praticagem, devendo comunicar imediatamente a recusa e o motivo à autoridade competente.",
+        "recusar o ato sem registrar ou comunicar a causa.",
+        "assumir o comando do navio e dispensar o comandante.",
+        "prosseguir obrigatoriamente, pois não lhe é reconhecido direito de recusa."
       ],
       "correct": 0,
-      "explanation": "O rebocador é colocado com ângulo de ataque ao escoamento; casco e apêndices produzem força hidrodinâmica, cuja resultante é controlada pela propulsão e transmitida pelo cabo.",
+      "explanation": "É reconhecido ao prático o direito de recusar quando o navio oferece perigo à navegação ou ao meio ambiente, com comunicação imediata da recusa e de sua razão.",
       "comments": [
-        "Correta: a sustentação hidrodinâmica no casco e nos apêndices é a base do método indireto.",
-        "Incorreta: a força indireta pode ultrapassar o bollard pull por não depender apenas do empuxo estático.",
-        "Incorreta: o método exige incidência do fluxo, em vez de anulá-la.",
-        "Incorreta: é necessária tensão controlada no cabo para transmitir a força ao navio."
+        "Correta: reproduz o direito de recusa e o dever de informar imediatamente a causa.",
+        "Incorreta: a razão deve ser comunicada à autoridade competente.",
+        "Incorreta: o prático não substitui juridicamente o comandante pelo simples exercício da praticagem.",
+        "Incorreta: a recomendação reconhece expressamente o direito de recusa nessa situação."
       ],
       "reference": {
-        "referenceId": "II-09",
-        "base": "Henk Hensen",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulos 4 e 9 — desempenho de escolta no modo indireto",
-        "syllabus": "Eixo II — Arte Naval · capacidades e limitações de rebocadores",
-        "evidence": "O recorte descreve o método indireto como aplicação de força de governo em velocidade por meio das forças hidrodinâmicas no casco e no skeg, equilibradas pelo empuxo e pela força no cabo; essas forças podem superar o bollard pull.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+        "referenceId": "IV-18",
+        "base": "International Maritime Organization",
+        "publication": "Resolution A.960(23) — Recommendations on training and certification and on operational procedures for maritime pilots other than deep-sea pilots",
+        "edition": "Adotada em 5 de dezembro de 2003",
+        "section": "Anexo 2, §8 — Refusal of pilotage services",
+        "syllabus": "Eixo IV — Legislação · segurança do ato de praticagem",
+        "evidence": "O recorte reconhece ao prático o direito de recusar o ato quando o navio representa perigo para a navegação ou para o meio ambiente e exige que a recusa e sua razão sejam imediatamente informadas à autoridade competente.",
+        "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"
       }
     },
     {
-      "id": "wed-c2-escort-direct-method-lower-speed",
-      "category": "current",
-      "axis": "II",
-      "kind": "Conteúdo atual · rebocador de escolta · método direto",
-      "stem": "Ao diminuir o seguimento do navio assistido e reduzir-se a contribuição hidrodinâmica sobre o rebocador, a assistência de governo tende a migrar para:",
-      "options": [
-        "o método indireto, porque a força hidrodinâmica aumenta quando a velocidade cai.",
-        "o método direto, no qual predomina a força propulsiva do rebocador.",
-        "a perda deliberada de tensão no cabo, eliminando a possibilidade de governo.",
-        "o emprego exclusivo do rebocador pela proa, qualquer que seja sua configuração."
-      ],
-      "correct": 1,
-      "explanation": "Com menor velocidade, diminuem as forças hidrodinâmicas utilizadas no modo indireto. O modo direto, baseado principalmente na força propulsiva orientada do rebocador, torna-se adequado.",
-      "comments": [
-        "Incorreta: a força hidrodinâmica diminui, e não aumenta, com a redução do seguimento.",
-        "Correta: em baixa velocidade, o método direto utiliza predominantemente o empuxo do rebocador.",
-        "Incorreta: o cabo deve permanecer sob controle; folga não constitui método de governo.",
-        "Incorreta: posição e configuração dependem da manobra e do tipo de rebocador."
-      ],
-      "reference": {
-        "referenceId": "II-09",
-        "base": "Henk Hensen",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulos 2 e 9 — assistência direta e indireta",
-        "syllabus": "Eixo II — Arte Naval · métodos de assistência com rebocadores",
-        "evidence": "O recorte contrapõe o método indireto, empregado para controle em velocidades maiores mediante forças hidrodinâmicas, ao método direto em velocidades menores, no qual a contribuição propulsiva do rebocador é determinante.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
-      }
-    },
-    {
-      "id": "wed-c3-vs-tug-braking-engine-protection",
-      "category": "current",
-      "axis": "II",
-      "kind": "Conteúdo atual · frenagem com rebocador VS",
-      "stem": "Ao aplicar força de frenagem com um rebocador Voith Schneider em navio com seguimento, a recomendação operacional é:",
-      "options": [
-        "aplicar passo máximo e todo o leme disponível, independentemente da velocidade.",
-        "ajustar os comandos de passo à velocidade do navio e usar o mínimo necessário de wheel, evitando sobrecarga do motor.",
-        "parar imediatamente os propulsores para que apenas o cabo suporte a carga.",
-        "manter o cabo folgado até o rebocador ficar exatamente na esteira do navio."
-      ],
-      "correct": 1,
-      "explanation": "Na frenagem em velocidade, os comandos devem acompanhar a velocidade do navio e o wheel deve ser mínimo, reduzindo o risco de sobrecarga do motor.",
-      "comments": [
-        "Incorreta: comandos máximos sem considerar a velocidade podem sobrecarregar o conjunto.",
-        "Correta: a obra recomenda adequar o passo à velocidade e limitar o wheel.",
-        "Incorreta: parar a propulsão elimina a capacidade de controlar atitude e força do rebocador.",
-        "Incorreta: a frenagem exige força controlada no cabo, não folga deliberada."
-      ],
-      "reference": {
-        "referenceId": "II-09",
-        "base": "Henk Hensen",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulo 2 — VS tugs in ship handling",
-        "syllabus": "Eixo II — Arte Naval · limitações operacionais e segurança de rebocadores",
-        "evidence": "O recorte consultado orienta que, quando forem necessárias forças de frenagem, os comandos de passo sejam ajustados à velocidade do navio e se utilize o mínimo de wheel, a fim de evitar sobrecarga do motor.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
-      }
-    },
-    {
-      "id": "wed-t1-brm-pilotage-plan-continuity",
+      "id": "thu-t1-smcp-response-instruction-advice",
       "category": "rotation",
-      "axis": "III",
-      "kind": "Rotação · BRM · planejamento com prático",
-      "stem": "Quando o prático embarca e assume a condução da navegação, o plano de viagem:",
+      "axis": "VI",
+      "kind": "Rotação · comunicações · resposta a INSTRUCTION e ADVICE",
+      "stem": "Ao responder afirmativamente a uma mensagem SMCP marcada como INSTRUCTION ou ADVICE, o interlocutor deve:",
       "options": [
-        "encerra-se no ponto de embarque do prático, porque o conhecimento local substitui o planejamento.",
-        "continua até o berço, incluindo a área de praticagem, o monitoramento do prático e os planos de contingência.",
-        "passa a existir apenas verbalmente, sem necessidade de rota planejada ou limites.",
-        "fica suspenso até o comandante reassumir formalmente a condução."
+        "dizer apenas “Yes”, sem repetir o conteúdo.",
+        "usar “I will/can...” e repetir por extenso a instrução ou o conselho.",
+        "responder com “Received” e encerrar a comunicação.",
+        "trocar o marcador por INFORMATION antes de confirmar."
       ],
       "correct": 1,
-      "explanation": "O planejamento é de cais a cais. A área em que o prático conduz o navio permanece planejada e monitorada, com contingências e limites conhecidos pela equipe.",
+      "explanation": "A confirmação positiva deve usar “I will/can...” seguida da repetição integral da instrução ou do conselho, reduzindo ambiguidades operacionais.",
       "comments": [
-        "Incorreta: o embarque do prático não encerra o plano de viagem.",
-        "Correta: o plano continua pela praticagem até o berço e sustenta o monitoramento pela equipe.",
-        "Incorreta: conhecimento local complementa, mas não substitui, o plano formal.",
-        "Incorreta: o plano permanece ativo independentemente de quem esteja com a condução."
+        "Incorreta: uma confirmação isolada não demonstra que o conteúdo foi corretamente compreendido.",
+        "Correta: é a forma prevista nas SMCP para resposta afirmativa a INSTRUCTION ou ADVICE.",
+        "Incorreta: “Received” não substitui a repetição integral prevista para esses marcadores.",
+        "Incorreta: o marcador original não deve ser alterado para confirmar a mensagem."
       ],
       "reference": {
-        "referenceId": "III-01",
-        "base": "A. J. Swift e T. J. Bailey",
-        "publication": "Bridge Team Management: A Practical Guide",
-        "edition": "2. ed., 2004",
-        "section": "Capítulo 7 — Navigating with a pilot on board · Planning",
-        "syllabus": "Eixo III — Navegação Restrita · BRM e pilotagem",
-        "evidence": "O recorte consultado afirma que um plano bem elaborado não termina na estação de prático: prossegue do mar ao berço, inclui a área sob condução do prático, permite comparar o progresso com a derrota prevista e incorpora alternativas e contingências.",
-        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
+        "referenceId": "VI-01",
+        "base": "International Maritime Organization",
+        "publication": "IMO Standard Marine Communication Phrases — Resolution A.918(22)",
+        "edition": "Adotada em 29 de novembro de 2001",
+        "section": "General, §4.5 — Responses to INSTRUCTION and ADVICE",
+        "syllabus": "Eixo VI — Comunicações · SMCP e marcadores de mensagem",
+        "evidence": "O recorte determina que a resposta afirmativa a INSTRUCTION ou ADVICE use “I will/can...” seguida da instrução ou do conselho repetido integralmente; a resposta negativa usa “I will not/cannot...” com a mesma repetição.",
+        "url": "https://drive.google.com/file/d/1nEnUGi3L9FcPy42aOtSPRoTLmKcqQZtU/view"
       }
     },
     {
-      "id": "wed-t2-brm-master-pilot-exchange-responsibility",
+      "id": "thu-t2-smcp-correction-procedure",
       "category": "rotation",
-      "axis": "III",
-      "kind": "Rotação · BRM · troca comandante–prático",
-      "stem": "Na troca de informações comandante–prático, qual conjunto melhor representa a prática recomendada?",
+      "axis": "VI",
+      "kind": "Rotação · comunicações · correção de mensagem",
+      "stem": "Durante uma transmissão SMCP, o oficial percebe que informou velocidade incorreta. Qual procedimento deve empregar para corrigir a mensagem?",
       "options": [
-        "O prático informa apenas o rumo inicial; o comandante transfere integralmente a responsabilidade pela segurança.",
-        "O comandante limita-se a entregar o Pilot Card; rota, velocidades e contingências permanecem reservadas ao prático.",
-        "Discutem-se rota, velocidades, ETA, rebocadores, VTS e contingências; o comandante informa características do navio e mantém a responsabilidade pela segurança.",
-        "A troca pode ser omitida sempre que a praticagem for compulsória."
+        "Prosseguir normalmente e corrigir apenas ao final da viagem.",
+        "Dizer “Mistake”, depois “Correction” e transmitir a parte corrigida.",
+        "Repetir toda a mensagem sem indicar que houve erro.",
+        "Dizer apenas “No” e encerrar a transmissão."
       ],
-      "correct": 2,
-      "explanation": "A troca deve tornar mútuas as intenções, limitações e recursos. A presença do prático não elimina a responsabilidade do comandante pela segurança do navio.",
+      "correct": 1,
+      "explanation": "A correção deve ser explicitamente sinalizada: “Mistake”, seguida de “Correction” e da informação correta.",
       "comments": [
-        "Incorreta: a troca é mais ampla e a responsabilidade do comandante permanece.",
-        "Incorreta: o Pilot Card auxilia, mas não substitui a discussão operacional.",
-        "Correta: reúne intenções do prático, recursos externos, peculiaridades do navio e responsabilidade continuada do comandante.",
-        "Incorreta: praticagem compulsória não dispensa a troca; se ela não ocorrer, exige-se cautela ainda maior."
+        "Incorreta: erro operacional deve ser corrigido imediatamente.",
+        "Correta: essa sequência distingue claramente o conteúdo errado da correção.",
+        "Incorreta: repetir sem marcador pode preservar a ambiguidade sobre qual versão vale.",
+        "Incorreta: “No” não identifica nem substitui a informação corrigida."
       ],
       "reference": {
-        "referenceId": "III-01",
-        "base": "A. J. Swift e T. J. Bailey",
-        "publication": "Bridge Team Management: A Practical Guide",
-        "edition": "2. ed., 2004",
-        "section": "Capítulo 7 — Master/Pilot Information Exchange e Responsibility",
-        "syllabus": "Eixo III — Navegação Restrita · BRM, pilotagem e monitoramento",
-        "evidence": "O recorte recomenda discutir rota pretendida, velocidades, ETA, apoio de rebocadores e VTS e contingências; o comandante deve informar características de manobra, condição dos ferros, propulsão, controles e pessoal. Mesmo com o prático, o comandante conserva a responsabilidade pela segurança.",
-        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
+        "referenceId": "VI-01",
+        "base": "International Maritime Organization",
+        "publication": "IMO Standard Marine Communication Phrases — Resolution A.918(22)",
+        "edition": "Adotada em 29 de novembro de 2001",
+        "section": "General, §7 — Corrections",
+        "syllabus": "Eixo VI — Comunicações · correção e clareza na SMCP",
+        "evidence": "O recorte orienta dizer “Mistake” quando houver erro, seguido de “Correction” e da parte corrigida; o exemplo substitui uma velocidade informada como 14 nós por 12 nós.",
+        "url": "https://drive.google.com/file/d/1nEnUGi3L9FcPy42aOtSPRoTLmKcqQZtU/view"
       }
     },
     {
-      "id": "wed-o1-pscpp2008-q72-tackles-correction",
+      "id": "thu-o1-pscpp2006-q2-zulu-tug",
       "category": "official",
-      "axis": "II",
-      "kind": "Questão oficial histórica · reaplicação corretiva",
-      "stem": "Julgue as afirmações sobre regras práticas no emprego de aparelhos de laborar: I — aplicar, quando possível, o cadernal onde gurne o tirador no peso a alar; II — para reduzir o esforço sobre o cadernal fixo, fazer a arreigada fixa fora dele; III — içando, o tirador suporta a tensão mínima e a arreigada fixa a máxima; IV — o melhor modo de engatar uma talha em cabo sem alça é a volta de encapeladura singela; V — o ganho de força implica maior comprimento a alar no tirador. Assinale a sequência correta.",
+      "axis": "VI",
+      "kind": "Questão oficial histórica · Código Internacional de Sinais",
+      "stem": "Bandeira retangular nas cores preto, amarelo, azul e encarnado em quatro triângulos formados pelas diagonais, sendo preto o triângulo junto à tralha, amarelo o superior, azul o da extremidade e encarnado o inferior, de acordo com o Código Internacional de Sinais, significa:",
       "options": [
-        "V – F – V – V – V",
-        "F – F – V – F – V",
-        "F – V – F – V – F",
-        "V – V – F – F – V",
-        "V – F – V – F – F"
+        "A embarcação dirige-se para um perigo.",
+        "Pare de executar suas intenções e observe meus sinais.",
+        "Pare imediatamente.",
+        "A embarcação solicita um rebocador.",
+        "A embarcação solicita assistência médica."
       ],
       "correct": 3,
-      "explanation": "A sequência é V–V–F–F–V. I e II reproduzem regras práticas; III inverte as tensões durante o içamento; IV erra porque o engate recomendado é pela boca-de-lobo; V expressa a troca entre ganho de força e maior percurso do tirador.",
+      "explanation": "A descrição corresponde à bandeira Zulu (Z), cujo significado isolado no Código Internacional de Sinais é “Necessito de um rebocador”.",
       "comments": [
-        "Incorreta: II também é verdadeira, enquanto III e IV são falsas.",
-        "Incorreta: I e II são verdadeiras e III é falsa.",
-        "Incorreta: I é verdadeira, IV é falsa e V é verdadeira.",
-        "Correta: V–V–F–F–V, conforme as regras práticas do art. 9.21.",
-        "Incorreta: II é verdadeira, III é falsa e V é verdadeira."
+        "Incorreta: “Você está correndo para um perigo” corresponde ao sinal uniforme U.",
+        "Incorreta: “Pare de executar suas intenções e observe meus sinais” corresponde ao sinal X.",
+        "Incorreta: “Pare sua embarcação imediatamente” corresponde ao sinal L.",
+        "Correta: o sinal uniforme Z significa que a embarcação necessita de um rebocador.",
+        "Incorreta: pedido de assistência médica corresponde ao sinal W."
       ],
       "reference": {
-        "referenceId": "II-01",
-        "base": "Maurílio M. Fonseca",
-        "publication": "Arte Naval, v. 1",
-        "edition": "8. ed., MB, 2019",
-        "section": "Capítulo 9, §9.21 — regras práticas dos aparelhos de laborar",
-        "syllabus": "Eixo II — Arte Naval · poleame e aparelhos de laborar",
-        "evidence": "O recorte confirma que o cadernal móvel deve ser aplicado ao peso quando possível, que a arreigada fora reduz a carga no cadernal fixo, que no içamento o tirador recebe tensão máxima, que o engate recomendado em cabo sem alça é a boca-de-lobo e que o ganho de força aumenta o comprimento a alar.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view",
+        "referenceId": "VI-03",
+        "base": "International Maritime Organization",
+        "publication": "International Code of Signals",
+        "edition": "2005 Edition",
+        "section": "Chapter XI — Single-letter signals · signal Z",
+        "syllabus": "Eixo VI — Comunicações · Código Internacional de Sinais",
+        "evidence": "O recorte consultado identifica o sinal uniforme Z como “I require a tug”; no mesmo quadro, U indica perigo, W assistência médica, X interrupção das intenções e L parada imediata.",
+        "url": "https://drive.google.com/file/d/1KqhwaBEb2t1A5RwCrT7HNUlOkwnZHbtL/view",
         "origin": {
-          "exam": "PSCPP 2008",
-          "year": 2008,
-          "question": 72,
+          "exam": "PSCPP 2006",
+          "year": 2006,
+          "question": 2,
           "answer": "D",
-          "adaptation": "Ortografia atualizada e enunciado condensado, preservando as cinco assertivas, as sequências e o gabarito.",
-          "url": "https://drive.google.com/file/d/1KfllJf4BukeOqCtNlr5uuwNC7xDu45I6/view"
+          "adaptation": "Atualização ortográfica e expansão das abreviações, sem alteração do significado, das cinco alternativas ou do gabarito.",
+          "url": "https://drive.google.com/file/d/1_6AvrqlquyvlPVQ4ERooU0NCKVFzs6tc/view"
         }
       }
     }
