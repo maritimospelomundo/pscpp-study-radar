@@ -1,9 +1,9 @@
 {
-  "roundId": "pilotage-procedures-smcp-corrections-2026-10-08",
-  "label": "Rodada adaptativa de 8 de outubro de 2026",
-  "title": "Procedimentos operacionais da praticagem, SMCP e correção de fragilidades",
+  "roundId": "current-vectors-manoeuvring-corrections-2026-10-09",
+  "label": "Rodada adaptativa de 9 de outubro de 2026",
+  "title": "Correntes, navegação estimada e forças ambientais na manobra",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Correção de ciclones tropicais e extratropicais, aparelhos de laborar e Coriolis · Praticagem — ponto de embarque, solicitação do prático e recusa por risco · SMCP — respostas e correções · questão oficial do Código Internacional de Sinais",
+  "path": "Correção imediata de aparelhos de laborar e efeito de Coriolis · Revisão de referência de maré e marcadores da SMCP · Navegação estimada — velocidade e rumo no fundo, corrente, avanço, atraso e caimento · Forças de corrente na manobra · questão oficial sobre curva de giro",
   "method": "4–3–2–1",
   "mixPlan": {
     "review": 4,
@@ -13,322 +13,322 @@
   },
   "questions": [
     {
-      "id": "thu-r1-tropical-cyclone-sixty-four-knots",
-      "category": "review",
-      "axis": "V",
-      "kind": "Revisão FSRS imediata · nota 0 · erro de leitura",
-      "stem": "Pela classificação baseada no vento máximo sustentado à superfície durante um minuto, um ciclone tropical com vento de 64 nós deve ser classificado como:",
-      "options": [
-        "depressão tropical.",
-        "tempestade tropical.",
-        "furacão.",
-        "ciclone extratropical."
-      ],
-      "correct": 2,
-      "explanation": "O valor de 64 nós já alcança o limite inferior da categoria furacão. Tempestade tropical compreende ventos iguais ou superiores a 34 nós e inferiores a 64 nós.",
-      "comments": [
-        "Incorreta: depressão tropical apresenta vento máximo inferior a 34 nós.",
-        "Incorreta: a faixa da tempestade tropical termina antes de 64 nós.",
-        "Correta: 64 nós é o limite inferior da categoria furacão.",
-        "Incorreta: a classificação pedida é a de um ciclone tropical e não depende do mecanismo extratropical."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45 — classificação dos ciclones tropicais",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · ciclones tropicais",
-        "evidence": "O recorte consultado classifica como depressão tropical o sistema abaixo de 34 nós, como tempestade tropical o intervalo de 34 até menos de 64 nós e como furacão o sistema com vento máximo sustentado igual ou superior a 64 nós.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
-      }
-    },
-    {
-      "id": "thu-r2-extratropical-cyclone-energy",
-      "category": "review",
-      "axis": "V",
-      "kind": "Revisão FSRS imediata · nota 0 · erro de conteúdo",
-      "stem": "A fonte primordial de energia de um ciclone extratropical decorre:",
-      "options": [
-        "exclusivamente do calor latente liberado no olho do sistema.",
-        "do contraste horizontal de temperatura, geralmente associado a sistema frontal.",
-        "da ausência de gradiente térmico entre massas de ar.",
-        "somente do aquecimento uniforme da superfície do mar tropical."
-      ],
-      "correct": 1,
-      "explanation": "O ciclone extratropical extrai energia principalmente da energia potencial ligada ao contraste horizontal de temperatura e, em geral, associa-se a um sistema frontal.",
-      "comments": [
-        "Incorreta: olho e predominância do calor latente são associações típicas de ciclones tropicais maduros.",
-        "Correta: o gradiente horizontal de temperatura fornece a energia potencial característica do sistema extratropical.",
-        "Incorreta: a ausência de contraste térmico elimina justamente o mecanismo indicado na obra.",
-        "Incorreta: aquecimento uniforme de águas tropicais não define a fonte de energia do ciclone extratropical."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45 — ciclones extratropicais",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · sistemas de baixa pressão",
-        "evidence": "O recorte define o ciclone extratropical como centro de baixa pressão que obtém sua energia primordialmente da energia potencial de um contraste horizontal de temperatura, geralmente associado a sistema frontal.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
-      }
-    },
-    {
-      "id": "thu-r3-tackle-tensions-and-attachment",
+      "id": "fri-r1-tackle-hoisting-boca-de-lobo",
       "category": "review",
       "axis": "II",
-      "kind": "Revisão FSRS imediata · nota 0 · aparelhos de laborar",
-      "stem": "Ao içar um peso com uma talha e ao engatar a talha em um cabo sem alça, assinale a combinação correta:",
+      "kind": "Revisão FSRS imediata · nota 0 · correção de conteúdo",
+      "stem": "Ao içar um peso com um aparelho de laborar e ao fixar esse aparelho a um cabo que não possui alça, assinale a combinação correta:",
       "options": [
-        "A arreigada fixa recebe a tensão máxima; o engate é feito por encapeladura singela.",
-        "O tirador recebe a tensão máxima; o engate recomendado é a boca-de-lobo.",
-        "O cadernal móvel recebe tensão nula; o engate é feito por volta de fiel.",
-        "As tensões são necessariamente iguais; o engate é feito por nó direito."
+        "A tensão máxima ocorre no tirador, e a volta mais indicada é o cote.",
+        "A tensão máxima ocorre no tirador, e a ligação mais indicada é a boca-de-lobo.",
+        "A tensão máxima ocorre no chicote fixo, e a ligação mais indicada é a boca-de-lobo.",
+        "A tensão é uniforme em todos os ramos, e a ligação mais indicada é o nó direito."
       ],
       "correct": 1,
-      "explanation": "Durante o içamento, o tirador suporta a tensão máxima e a arreigada fixa, a mínima. Para prender uma talha a cabo sem alça, a regra prática recomenda a boca-de-lobo.",
+      "explanation": "No içamento, a tensão máxima atua no tirador e diminui progressivamente em direção ao chicote fixo. Para prender um aparelho a um cabo sem alça, a boca-de-lobo é a ligação indicada.",
       "comments": [
-        "Incorreta: inverte a distribuição das tensões e indica engate diferente do recomendado.",
-        "Correta: reúne as duas regras práticas do recorte consultado.",
-        "Incorreta: não há tensão nula no cadernal móvel e a volta de fiel não é a recomendação dada.",
-        "Incorreta: as tensões não são necessariamente iguais e nó direito não é o engate prescrito."
+        "Incorreta: identifica corretamente o ramo de maior tensão, mas o cote não substitui a boca-de-lobo indicada para essa ligação.",
+        "Correta: reúne as duas regras apresentadas no recorte — maior tensão no tirador durante o içamento e emprego da boca-de-lobo no cabo sem alça.",
+        "Incorreta: no içamento, o chicote fixo não suporta a tensão máxima; a distribuição decresce do tirador para ele.",
+        "Incorreta: o atrito nas roldanas impede tensão uniforme, e o nó direito não é a ligação indicada para esse fim."
       ],
       "reference": {
         "referenceId": "II-01",
-        "base": "Maurílio M. Fonseca",
+        "base": "Maurílio Magalhães Fonseca",
         "publication": "Arte Naval, v. 1",
-        "edition": "8. ed., MB, 2019",
-        "section": "Capítulo 9, §9.21 — regras práticas dos aparelhos de laborar",
-        "syllabus": "Eixo II — Arte Naval · poleame e aparelhos de laborar",
-        "evidence": "O recorte estabelece que, no içamento, o tirador recebe a tensão máxima e a arreigada fixa a mínima; recomenda a boca-de-lobo para engatar uma talha em cabo sem alça.",
+        "edition": "8ª edição, 2019",
+        "section": "Capítulo 9, seção 9.21 — regras práticas para aparelhos de laborar",
+        "syllabus": "Eixo II — Arte Naval · aparelhos de laborar",
+        "evidence": "O recorte consultado informa que, durante o içamento, a tensão é máxima no tirador e diminui rumo ao chicote fixo; também indica a boca-de-lobo como a melhor forma de ligar o aparelho a um cabo sem alça.",
         "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
       }
     },
     {
-      "id": "thu-r4-coriolis-current-hemispheres",
+      "id": "fri-r2-coriolis-current-hemispheres",
       "category": "review",
       "axis": "III",
-      "kind": "Revisão FSRS vencida · nota 0 · confusão hemisférica",
-      "stem": "Considerando a ação da força de Coriolis sobre correntes superficiais geradas pelo vento, o desvio ocorre:",
+      "kind": "Revisão FSRS imediata · nota 0 · correção de leitura",
+      "stem": "Considerando a deriva superficial produzida pelo vento e o efeito de Coriolis, a corrente de superfície tende a desviar-se, em relação à direção do vento, para:",
       "options": [
-        "para a direita no Hemisfério Sul e para a esquerda no Hemisfério Norte.",
-        "para a esquerda em ambos os hemisférios.",
-        "para a esquerda no Hemisfério Sul e para a direita no Hemisfério Norte.",
-        "sempre na mesma direção do vento, sem desvio lateral."
+        "a direita no Hemisfério Sul e a esquerda no Hemisfério Norte.",
+        "a esquerda em ambos os hemisférios.",
+        "a esquerda no Hemisfério Sul e a direita no Hemisfério Norte.",
+        "a direita em ambos os hemisférios."
       ],
       "correct": 2,
-      "explanation": "A rotação da Terra produz desvio para a esquerda no Hemisfério Sul e para a direita no Hemisfério Norte.",
+      "explanation": "A rotação da Terra desvia a deriva superficial para a esquerda do vento no Hemisfério Sul e para a direita no Hemisfério Norte.",
       "comments": [
-        "Incorreta: os sentidos hemisféricos foram invertidos.",
-        "Incorreta: o sentido do desvio muda entre os hemisférios.",
-        "Correta: esquerda no Sul e direita no Norte.",
-        "Incorreta: a corrente superficial não segue necessariamente a direção exata do vento."
+        "Incorreta: inverte os sentidos próprios de cada hemisfério.",
+        "Incorreta: o sentido do desvio muda com o hemisfério.",
+        "Correta: esquerda no Hemisfério Sul e direita no Hemisfério Norte.",
+        "Incorreta: o desvio não ocorre para a direita em ambos os hemisférios."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Altineu Pires Miguens",
+        "publication": "Navegação: A Ciência e a Arte, v. III",
+        "edition": "DHN",
+        "section": "Oceanografia — correntes de deriva e efeito de Coriolis",
+        "syllabus": "Eixo III — Navegação em águas restritas · correntes",
+        "evidence": "O trecho consultado registra que as correntes superficiais se desviam para a esquerda da direção do vento no Hemisfério Sul e para a direita no Hemisfério Norte, com influência da velocidade e da latitude.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+      }
+    },
+    {
+      "id": "fri-r3-tide-gauge-chart-datum",
+      "category": "review",
+      "axis": "V",
+      "kind": "Revisão FSRS vencida · fragilidade recorrente em marés",
+      "stem": "Em um porto, a referência vertical adotada para o zero da régua de marés deve:",
+      "options": [
+        "coincidir com o nível médio do mar calculado para todo o litoral nacional.",
+        "coincidir com o nível de redução empregado nas sondagens da carta náutica correspondente.",
+        "ser fixada na média das preamares de sizígia.",
+        "ser transferida para o nível da baixa-mar observada a cada dia."
+      ],
+      "correct": 1,
+      "explanation": "O zero da régua de marés coincide com o nível de redução do porto, que é a mesma referência usada para reduzir as sondagens da carta náutica correspondente.",
+      "comments": [
+        "Incorreta: o nível médio não é o zero da régua, e cada porto possui seu próprio nível de redução.",
+        "Correta: mantém uma referência vertical comum entre a observação da maré e as profundidades cartografadas.",
+        "Incorreta: a média das preamares não define o zero da régua.",
+        "Incorreta: a referência é estável e não muda conforme a baixa-mar diária."
+      ],
+      "reference": {
+        "referenceId": "V-03",
+        "base": "Paulo Roberto Valgas Lobo e Carlos Alberto Soares",
+        "publication": "Meteorologia e Oceanografia — Usuário Navegante",
+        "edition": "4ª edição, 2019",
+        "section": "Marés — nível de redução e régua de marés",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · marés e níveis de referência",
+        "evidence": "O recorte consultado afirma que o zero da régua de marés coincide com o nível de redução do porto e que essa mesma referência é usada na redução das sondagens da carta náutica correspondente; cada porto possui nível de redução próprio.",
+        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
+      }
+    },
+    {
+      "id": "fri-r4-smcp-instruction-advice",
+      "category": "review",
+      "axis": "VI",
+      "kind": "Revisão FSRS vencida · marcador de mensagem",
+      "stem": "Sobre os marcadores de mensagem da SMCP, assinale a afirmativa correta:",
+      "options": [
+        "INSTRUCTION apresenta mera recomendação, cabendo sempre ao destinatário decidir livremente.",
+        "ADVICE transmite ordem juridicamente vinculante emitida por qualquer estação.",
+        "INSTRUCTION, quando emitida por autoridade competente, é vinculante, salvo razão de segurança contrária comunicada; ADVICE é recomendação cuja decisão permanece com o destinatário.",
+        "ADVICE e INSTRUCTION são equivalentes e diferem apenas quanto à prioridade no canal."
+      ],
+      "correct": 2,
+      "explanation": "A SMCP distingue a instrução vinculante emitida por autoridade competente da recomendação. Uma razão de segurança que impeça cumprir a instrução deve ser comunicada; no conselho, a decisão final permanece com o destinatário.",
+      "comments": [
+        "Incorreta: descreve ADVICE, não INSTRUCTION.",
+        "Incorreta: ADVICE não é ordem vinculante, e a competência do emissor é relevante para INSTRUCTION.",
+        "Correta: reproduz a diferença operacional entre os dois marcadores e a ressalva de segurança.",
+        "Incorreta: os marcadores identificam naturezas distintas da mensagem, não simples prioridade de radiotelefonia."
+      ],
+      "reference": {
+        "referenceId": "VI-01",
+        "base": "International Maritime Organization",
+        "publication": "IMO Standard Marine Communication Phrases",
+        "edition": "Resolução A.918(22), 2001",
+        "section": "Introdução — Message Markers: INSTRUCTION e ADVICE",
+        "syllabus": "Eixo VI — Comunicações · SMCP",
+        "evidence": "O trecho consultado define INSTRUCTION como mensagem vinculante quando emitida por autoridade competente, ressalvada razão de segurança contrária comunicada, e ADVICE como recomendação cuja decisão final cabe ao destinatário.",
+        "url": "https://drive.google.com/file/d/1nEnUGi3L9FcPy42aOtSPRoTLmKcqQZtU/view"
+      }
+    },
+    {
+      "id": "fri-c1-speed-over-ground-resultant",
+      "category": "current",
+      "axis": "III",
+      "kind": "Conteúdo atual · navegação estimada",
+      "stem": "Na navegação estimada, a velocidade no fundo de um navio corresponde:",
+      "options": [
+        "à velocidade do navio em relação à superfície, sem considerar a corrente.",
+        "à resultante vetorial da velocidade do navio em relação à água com a velocidade da corrente.",
+        "somente à componente longitudinal da corrente.",
+        "à velocidade indicada no odômetro, corrigida apenas pelo abatimento do vento."
+      ],
+      "correct": 1,
+      "explanation": "A velocidade no fundo expressa o movimento real do navio em relação ao fundo e resulta da composição vetorial da velocidade do navio em relação à água com a corrente.",
+      "comments": [
+        "Incorreta: essa formulação descreve a velocidade do navio relativa à superfície, não a velocidade no fundo.",
+        "Correta: a composição vetorial incorpora módulo e direção do movimento próprio e da corrente.",
+        "Incorreta: a corrente pode produzir componentes longitudinais e transversais.",
+        "Incorreta: a definição não se limita à indicação do odômetro nem à ação do vento."
       ],
       "reference": {
         "referenceId": "III-02",
         "base": "Altineu Pires Miguens",
         "publication": "Navegação: A Ciência e a Arte, v. I",
-        "edition": "2ª revisão atualizada, DHN, 2023",
-        "section": "Capítulos 10–11 — correntes oceânicas e efeito de Coriolis",
-        "syllabus": "Eixo III — Navegação Restrita · marés, correntes e ação da rotação terrestre",
-        "evidence": "O recorte consultado explica que Coriolis desvia as correntes superficiais para a esquerda do vento no Hemisfério Sul e para a direita no Hemisfério Norte; a intensidade depende da velocidade e da latitude.",
+        "edition": "DHN",
+        "section": "Capítulo 5, seção 5.5 — termos empregados na navegação estimada",
+        "syllabus": "Eixo III — Navegação em águas restritas · navegação estimada e correntes",
+        "evidence": "O recorte consultado define velocidade no fundo como a distância percorrida por hora em relação ao fundo e a apresenta como a resultante da velocidade do navio em relação à superfície com a velocidade da corrente.",
         "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
       }
     },
     {
-      "id": "thu-c1-pilot-boarding-point",
+      "id": "fri-c2-current-course-direction",
       "category": "current",
-      "axis": "IV",
-      "kind": "Conteúdo atual · praticagem · ponto de embarque",
-      "stem": "Ao estabelecer o ponto de embarque ou desembarque do prático, a autoridade competente deve considerar, entre outros fatores:",
+      "axis": "III",
+      "kind": "Conteúdo atual · navegação estimada",
+      "stem": "O rumo da corrente é expresso pela direção:",
       "options": [
-        "apenas a menor distância possível do berço, ainda que não haja espaço para a troca comandante–prático.",
-        "um local seguro, suficientemente afastado do início do ato de praticagem e com tempo e espaço marítimo para a troca comandante–prático.",
-        "obrigatoriamente o limite externo do mar territorial, sem considerar as condições locais.",
-        "somente a conveniência comercial do armador, independentemente da segurança do embarque."
+        "de onde a corrente vem, contada a partir do norte magnético.",
+        "para onde a corrente flui, contada no sentido horário de 000° a 360° a partir do norte verdadeiro.",
+        "de onde a corrente vem, contada no sentido anti-horário a partir do sul verdadeiro.",
+        "para onde o vento sopra, contada a partir do norte verdadeiro."
       ],
       "correct": 1,
-      "explanation": "O ponto deve permitir embarque e desembarque seguros, situar-se a distância adequada do início do ato de praticagem e deixar tempo e espaço marítimo suficientes para a troca de informações.",
+      "explanation": "Diferentemente da convenção usada para nomear o vento, o rumo da corrente indica para onde a água se desloca e é referido ao norte verdadeiro, de 000° a 360°.",
       "comments": [
-        "Incorreta: proximidade do berço não substitui segurança nem tempo para a troca operacional.",
-        "Correta: reúne os três critérios expressamente indicados na recomendação.",
-        "Incorreta: a recomendação não fixa o limite do mar territorial como posição obrigatória.",
-        "Incorreta: a autoridade deve priorizar condições seguras, não apenas conveniência comercial."
+        "Incorreta: corrente é indicada pelo destino do escoamento e, na definição consultada, em referência verdadeira.",
+        "Correta: fornece sentido do escoamento, origem angular e convenção de contagem.",
+        "Incorreta: inverte o sentido do escoamento e a convenção angular.",
+        "Incorreta: confunde corrente marítima com direção do vento."
       ],
       "reference": {
-        "referenceId": "IV-18",
-        "base": "International Maritime Organization",
-        "publication": "Resolution A.960(23) — Recommendations on training and certification and on operational procedures for maritime pilots other than deep-sea pilots",
-        "edition": "Adotada em 5 de dezembro de 2003",
-        "section": "Anexo 2, §3 — Pilot boarding point",
-        "syllabus": "Eixo IV — Legislação · praticagem e procedimentos operacionais",
-        "evidence": "O recorte determina que a autoridade competente estabeleça e divulgue pontos seguros de embarque e desembarque, suficientemente afastados do início do ato de praticagem e com tempo e espaço marítimo para a troca comandante–prático.",
-        "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"
+        "referenceId": "III-02",
+        "base": "Altineu Pires Miguens",
+        "publication": "Navegação: A Ciência e a Arte, v. I",
+        "edition": "DHN",
+        "section": "Capítulo 5, seção 5.5 — termos empregados na navegação estimada",
+        "syllabus": "Eixo III — Navegação em águas restritas · direção e velocidade da corrente",
+        "evidence": "O trecho consultado define rumo da corrente como a direção para a qual a corrente flui, expressa de 000° a 360° no sentido horário a partir do norte verdadeiro.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
       }
     },
     {
-      "id": "thu-c2-requesting-pilot-eta-updates",
+      "id": "fri-c3-advance-delay-current",
       "category": "current",
-      "axis": "IV",
-      "kind": "Conteúdo atual · praticagem · solicitação do prático",
-      "stem": "Para favorecer um serviço de praticagem eficiente, o navio deve transmitir a hora estimada de chegada ou saída:",
+      "axis": "III",
+      "kind": "Conteúdo atual · efeitos da corrente",
+      "stem": "Um navio mantém velocidade de 10 nós em relação à água, mas apresenta 12 nós no fundo. Simultaneamente, a corrente possui componente transversal. Nessa situação, os efeitos longitudinais e transversais da corrente são denominados, respectivamente:",
       "options": [
-        "somente depois de atingir o ponto de embarque do prático.",
-        "com antecedência e mantê-la atualizada quando houver alteração.",
-        "apenas ao agente, sem comunicação à autoridade de praticagem.",
-        "uma única vez, sendo vedadas correções posteriores."
+        "atraso e caimento.",
+        "avanço e caimento.",
+        "avanço e abatimento pelo vento.",
+        "atraso e guinada."
       ],
       "correct": 1,
-      "explanation": "A autoridade deve estabelecer procedimentos de solicitação, e o navio deve fornecer ETA ou ETD com antecedência suficiente e atualizá-la sempre que necessário.",
+      "explanation": "Como a velocidade no fundo supera a velocidade do navio em relação à água, há avanço. A componente transversal do efeito da corrente recebe o nome de caimento.",
       "comments": [
-        "Incorreta: esperar o ponto de embarque elimina a antecedência necessária ao planejamento do serviço.",
-        "Correta: antecedência e atualizações frequentes são requisitos operacionais destacados no recorte.",
-        "Incorreta: a informação deve chegar ao serviço ou à autoridade pelos procedimentos estabelecidos.",
-        "Incorreta: alterações devem ser comunicadas; a estimativa não é imutável."
+        "Incorreta: atraso ocorre quando a velocidade no fundo é menor que a velocidade do navio.",
+        "Correta: 12 nós no fundo contra 10 nós na água caracteriza avanço; o efeito transversal da corrente é caimento.",
+        "Incorreta: a primeira parte está correta, mas abatimento é termo associado ao vento, não à componente transversal da corrente nesse recorte.",
+        "Incorreta: não há atraso, e guinada não é o termo definido para o deslocamento transversal acumulado pela corrente."
       ],
       "reference": {
-        "referenceId": "IV-18",
-        "base": "International Maritime Organization",
-        "publication": "Resolution A.960(23) — Recommendations on training and certification and on operational procedures for maritime pilots other than deep-sea pilots",
-        "edition": "Adotada em 5 de dezembro de 2003",
-        "section": "Anexo 2, §4 — Procedures for requesting pilot",
-        "syllabus": "Eixo IV — Legislação · solicitação e coordenação da praticagem",
-        "evidence": "O recorte estabelece procedimentos para solicitar o prático e registra que um serviço eficiente requer o envio antecipado da ETA ou ETD, com atualizações frequentes, além do estabelecimento de contato VHF tão cedo quanto possível.",
-        "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"
+        "referenceId": "III-02",
+        "base": "Altineu Pires Miguens",
+        "publication": "Navegação: A Ciência e a Arte, v. I",
+        "edition": "DHN",
+        "section": "Capítulo 5, seção 5.5 — avanço, atraso e caimento",
+        "syllabus": "Eixo III — Navegação em águas restritas · efeitos da corrente",
+        "evidence": "O recorte consultado denomina avanço a situação em que a velocidade no fundo excede a velocidade do navio, atraso a situação inversa e caimento a componente transversal do efeito da corrente.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
       }
     },
     {
-      "id": "thu-c3-pilot-refusal-danger-report",
-      "category": "current",
-      "axis": "IV",
-      "kind": "Conteúdo atual · praticagem · recusa por risco",
-      "stem": "Segundo a recomendação da IMO, se o prático considerar que o navio representa perigo para a navegação ou para o meio ambiente, ele pode:",
-      "options": [
-        "recusar o ato de praticagem, devendo comunicar imediatamente a recusa e o motivo à autoridade competente.",
-        "recusar o ato sem registrar ou comunicar a causa.",
-        "assumir o comando do navio e dispensar o comandante.",
-        "prosseguir obrigatoriamente, pois não lhe é reconhecido direito de recusa."
-      ],
-      "correct": 0,
-      "explanation": "É reconhecido ao prático o direito de recusar quando o navio oferece perigo à navegação ou ao meio ambiente, com comunicação imediata da recusa e de sua razão.",
-      "comments": [
-        "Correta: reproduz o direito de recusa e o dever de informar imediatamente a causa.",
-        "Incorreta: a razão deve ser comunicada à autoridade competente.",
-        "Incorreta: o prático não substitui juridicamente o comandante pelo simples exercício da praticagem.",
-        "Incorreta: a recomendação reconhece expressamente o direito de recusa nessa situação."
-      ],
-      "reference": {
-        "referenceId": "IV-18",
-        "base": "International Maritime Organization",
-        "publication": "Resolution A.960(23) — Recommendations on training and certification and on operational procedures for maritime pilots other than deep-sea pilots",
-        "edition": "Adotada em 5 de dezembro de 2003",
-        "section": "Anexo 2, §8 — Refusal of pilotage services",
-        "syllabus": "Eixo IV — Legislação · segurança do ato de praticagem",
-        "evidence": "O recorte reconhece ao prático o direito de recusar o ato quando o navio representa perigo para a navegação ou para o meio ambiente e exige que a recusa e sua razão sejam imediatamente informadas à autoridade competente.",
-        "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"
-      }
-    },
-    {
-      "id": "thu-t1-smcp-response-instruction-advice",
+      "id": "fri-t1-current-force-speed-squared",
       "category": "rotation",
-      "axis": "VI",
-      "kind": "Rotação · comunicações · resposta a INSTRUCTION e ADVICE",
-      "stem": "Ao responder afirmativamente a uma mensagem SMCP marcada como INSTRUCTION ou ADVICE, o interlocutor deve:",
+      "axis": "I",
+      "kind": "Rotação · forças ambientais na manobra",
+      "stem": "Mantidos constantes os demais fatores, se a velocidade média da corrente incidente sobre um navio dobra, as forças longitudinal e lateral e o momento de guinada devidos à corrente tendem a:",
       "options": [
-        "dizer apenas “Yes”, sem repetir o conteúdo.",
-        "usar “I will/can...” e repetir por extenso a instrução ou o conselho.",
-        "responder com “Received” e encerrar a comunicação.",
-        "trocar o marcador por INFORMATION antes de confirmar."
+        "permanecer constantes.",
+        "dobrar.",
+        "quadruplicar.",
+        "aumentar oito vezes."
       ],
-      "correct": 1,
-      "explanation": "A confirmação positiva deve usar “I will/can...” seguida da repetição integral da instrução ou do conselho, reduzindo ambiguidades operacionais.",
+      "correct": 2,
+      "explanation": "As expressões das ações de corrente são proporcionais ao quadrado da velocidade média da corrente. Portanto, ao dobrar a velocidade, o fator passa de V² para (2V)² = 4V².",
       "comments": [
-        "Incorreta: uma confirmação isolada não demonstra que o conteúdo foi corretamente compreendido.",
-        "Correta: é a forma prevista nas SMCP para resposta afirmativa a INSTRUCTION ou ADVICE.",
-        "Incorreta: “Received” não substitui a repetição integral prevista para esses marcadores.",
-        "Incorreta: o marcador original não deve ser alterado para confirmar a mensagem."
+        "Incorreta: as ações ambientais variam com a velocidade da corrente.",
+        "Incorreta: seria uma relação linear, mas o modelo usa o quadrado da velocidade.",
+        "Correta: dobrar a velocidade produz fator quatro, se coeficientes e demais parâmetros permanecerem constantes.",
+        "Incorreta: fator oito corresponderia a uma relação cúbica, que não é a indicada."
       ],
       "reference": {
-        "referenceId": "VI-01",
-        "base": "International Maritime Organization",
-        "publication": "IMO Standard Marine Communication Phrases — Resolution A.918(22)",
-        "edition": "Adotada em 29 de novembro de 2001",
-        "section": "General, §4.5 — Responses to INSTRUCTION and ADVICE",
-        "syllabus": "Eixo VI — Comunicações · SMCP e marcadores de mensagem",
-        "evidence": "O recorte determina que a resposta afirmativa a INSTRUCTION ou ADVICE use “I will/can...” seguida da instrução ou do conselho repetido integralmente; a resposta negativa usa “I will not/cannot...” com a mesma repetição.",
-        "url": "https://drive.google.com/file/d/1nEnUGi3L9FcPy42aOtSPRoTLmKcqQZtU/view"
+        "referenceId": "I-08",
+        "base": "Sergio Murilo Santos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1ª edição, CONAPRA, 2021",
+        "section": "Capítulo 8, seção 8.3.1 — forças e momento devidos à corrente",
+        "syllabus": "Eixo I — Manobrabilidade · forças ambientais",
+        "evidence": "O trecho consultado apresenta as forças longitudinal e lateral e o momento de guinada devidos à corrente como proporcionais ao quadrado da velocidade média da corrente.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
       }
     },
     {
-      "id": "thu-t2-smcp-correction-procedure",
+      "id": "fri-t2-current-coefficients-ukc",
       "category": "rotation",
-      "axis": "VI",
-      "kind": "Rotação · comunicações · correção de mensagem",
-      "stem": "Durante uma transmissão SMCP, o oficial percebe que informou velocidade incorreta. Qual procedimento deve empregar para corrigir a mensagem?",
+      "axis": "I",
+      "kind": "Rotação · águas rasas e corrente",
+      "stem": "Na estimativa das ações da corrente sobre um navio em águas restritas, os coeficientes hidrodinâmicos dependem principalmente:",
       "options": [
-        "Prosseguir normalmente e corrigir apenas ao final da viagem.",
-        "Dizer “Mistake”, depois “Correction” e transmitir a parte corrigida.",
-        "Repetir toda a mensagem sem indicar que houve erro.",
-        "Dizer apenas “No” e encerrar a transmissão."
+        "apenas do deslocamento e da potência propulsora.",
+        "somente da velocidade da corrente e do período de encontro.",
+        "da forma do casco, calado, trim, ângulo de incidência da corrente e folga abaixo da quilha.",
+        "exclusivamente da área vélica e da intensidade do vento aparente."
       ],
-      "correct": 1,
-      "explanation": "A correção deve ser explicitamente sinalizada: “Mistake”, seguida de “Correction” e da informação correta.",
+      "correct": 2,
+      "explanation": "Os coeficientes das forças e do momento de corrente variam com a geometria e a condição do navio, o ângulo de incidência e a folga abaixo da quilha, cujo efeito pode ser particularmente forte em águas rasas.",
       "comments": [
-        "Incorreta: erro operacional deve ser corrigido imediatamente.",
-        "Correta: essa sequência distingue claramente o conteúdo errado da correção.",
-        "Incorreta: repetir sem marcador pode preservar a ambiguidade sobre qual versão vale.",
-        "Incorreta: “No” não identifica nem substitui a informação corrigida."
+        "Incorreta: deslocamento e potência não esgotam os fatores que governam os coeficientes de corrente.",
+        "Incorreta: a velocidade participa das forças, mas os coeficientes dependem de vários parâmetros geométricos e ambientais.",
+        "Correta: reúne os fatores explicitados no recorte, inclusive a influência marcante da folga abaixo da quilha.",
+        "Incorreta: área vélica e vento aparente se relacionam às ações aerodinâmicas, não aos coeficientes hidrodinâmicos de corrente."
       ],
       "reference": {
-        "referenceId": "VI-01",
-        "base": "International Maritime Organization",
-        "publication": "IMO Standard Marine Communication Phrases — Resolution A.918(22)",
-        "edition": "Adotada em 29 de novembro de 2001",
-        "section": "General, §7 — Corrections",
-        "syllabus": "Eixo VI — Comunicações · correção e clareza na SMCP",
-        "evidence": "O recorte orienta dizer “Mistake” quando houver erro, seguido de “Correction” e da parte corrigida; o exemplo substitui uma velocidade informada como 14 nós por 12 nós.",
-        "url": "https://drive.google.com/file/d/1nEnUGi3L9FcPy42aOtSPRoTLmKcqQZtU/view"
+        "referenceId": "I-08",
+        "base": "Sergio Murilo Santos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1ª edição, CONAPRA, 2021",
+        "section": "Capítulo 8, seção 8.3.1 — coeficientes de corrente",
+        "syllabus": "Eixo I — Manobrabilidade · corrente em águas rasas e restritas",
+        "evidence": "O recorte consultado relaciona os coeficientes à forma do casco, calado, trim, ângulo da corrente e folga abaixo da quilha, destacando a forte influência desta última e os prejuízos ao controle causados por gradientes e circulações em águas restritas.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
       }
     },
     {
-      "id": "thu-o1-pscpp2006-q2-zulu-tug",
+      "id": "fri-o1-pscpp2011-q25-turning-curve",
       "category": "official",
-      "axis": "VI",
-      "kind": "Questão oficial histórica · Código Internacional de Sinais",
-      "stem": "Bandeira retangular nas cores preto, amarelo, azul e encarnado em quatro triângulos formados pelas diagonais, sendo preto o triângulo junto à tralha, amarelo o superior, azul o da extremidade e encarnado o inferior, de acordo com o Código Internacional de Sinais, significa:",
+      "axis": "I",
+      "kind": "Questão oficial histórica · assinale a incorreta",
+      "stem": "Com relação aos efeitos do leme e à curva de giro de um navio, assinale a opção INCORRETA:",
       "options": [
-        "A embarcação dirige-se para um perigo.",
-        "Pare de executar suas intenções e observe meus sinais.",
-        "Pare imediatamente.",
-        "A embarcação solicita um rebocador.",
-        "A embarcação solicita assistência médica."
+        "Quando se carrega o leme com o navio dando adiante, a velocidade diminui, o navio abate para o bordo oposto ao da guinada, assume um ângulo de deriva e, em alguns casos, aderna.",
+        "O avanço diminui quando aumenta o ângulo do leme e aumenta quando cresce a velocidade do navio.",
+        "O tempo de giro diminui quando aumentam o ângulo do leme e a velocidade do navio.",
+        "O ângulo de deriva aumenta com o ângulo do leme, porém diminui quando aumenta a velocidade do navio.",
+        "A velocidade angular é nula no início, atinge o máximo antes dos 90° de guinada e depois se reduz ligeiramente até tornar-se constante; em geral, o primeiro quadrante é percorrido em menos tempo que os seguintes."
       ],
       "correct": 3,
-      "explanation": "A descrição corresponde à bandeira Zulu (Z), cujo significado isolado no Código Internacional de Sinais é “Necessito de um rebocador”.",
+      "explanation": "A opção D é a incorreta. O ângulo de deriva aumenta com o ângulo do leme, mas, segundo a referência indicada, é independente da velocidade do navio. As demais proposições descrevem efeitos e tendências apresentados para a curva de giro.",
       "comments": [
-        "Incorreta: “Você está correndo para um perigo” corresponde ao sinal uniforme U.",
-        "Incorreta: “Pare de executar suas intenções e observe meus sinais” corresponde ao sinal X.",
-        "Incorreta: “Pare sua embarcação imediatamente” corresponde ao sinal L.",
-        "Correta: o sinal uniforme Z significa que a embarcação necessita de um rebocador.",
-        "Incorreta: pedido de assistência médica corresponde ao sinal W."
+        "Correta como afirmação: descreve redução de velocidade, abatimento inicial, estabelecimento do ângulo de deriva e possível adernamento.",
+        "Correta como afirmação: maior ângulo de leme reduz o avanço, enquanto maior velocidade o aumenta.",
+        "Correta como afirmação: maior ângulo de leme ou maior velocidade reduz o tempo necessário para o giro.",
+        "Incorreta — gabarito: o ângulo de deriva não diminui com o aumento da velocidade; a obra o trata como independente dela.",
+        "Correta como afirmação: resume a evolução típica da velocidade angular ao longo da curva de giro."
       ],
       "reference": {
-        "referenceId": "VI-03",
-        "base": "International Maritime Organization",
-        "publication": "International Code of Signals",
-        "edition": "2005 Edition",
-        "section": "Chapter XI — Single-letter signals · signal Z",
-        "syllabus": "Eixo VI — Comunicações · Código Internacional de Sinais",
-        "evidence": "O recorte consultado identifica o sinal uniforme Z como “I require a tug”; no mesmo quadro, U indica perigo, W assistência médica, X interrupção das intenções e L parada imediata.",
-        "url": "https://drive.google.com/file/d/1KqhwaBEb2t1A5RwCrT7HNUlOkwnZHbtL/view",
+        "referenceId": "II-01",
+        "base": "Diretoria de Portos e Costas / Maurílio Magalhães Fonseca",
+        "publication": "PSCPP 2011 — Prova Amarela / Arte Naval, v. 1",
+        "edition": "Prova de 2011; obra-base: 8ª edição, 2019",
+        "section": "Questão 25; Arte Naval, capítulo 12, seção 12.56.3 — efeitos do leme",
+        "syllabus": "Eixos I e II — Manobrabilidade e Arte Naval · curva de giro",
+        "evidence": "A prova oficial identifica a alternativa D como gabarito. No recorte da obra-base, o ângulo de deriva aumenta com o ângulo do leme, diminui com menor calado e é considerado independente da velocidade; os demais comportamentos enunciados são apresentados na seção sobre efeitos do leme.",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view",
         "origin": {
-          "exam": "PSCPP 2006",
-          "year": 2006,
-          "question": 2,
+          "exam": "PSCPP 2011 — Prova Amarela",
+          "year": 2011,
+          "question": 25,
           "answer": "D",
-          "adaptation": "Atualização ortográfica e expansão das abreviações, sem alteração do significado, das cinco alternativas ou do gabarito.",
-          "url": "https://drive.google.com/file/d/1_6AvrqlquyvlPVQ4ERooU0NCKVFzs6tc/view"
+          "adaptation": "Texto atualizado ortograficamente e frase duplicada na alternativa C removida, sem alteração do conteúdo ou do gabarito.",
+          "url": "https://drive.google.com/file/d/1Fdz2o1xtzIkg1KONqP95HemlINDJcv_1/view"
         }
       }
     }
