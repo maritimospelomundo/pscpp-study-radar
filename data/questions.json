@@ -1,333 +1,226 @@
 {
-  "roundId": "cumulative-cyclones-current-corrections-2026-10-10",
-  "label": "Simulado cumulativo de 10 de outubro de 2026",
-  "title": "Ciclones, corrente e correção da curva de giro",
+  "roundId": "sunday-fronts-overdue-corrections-2026-10-11",
+  "label": "Rodada adaptativa de 11 de outubro de 2026",
+  "title": "Revisões vencidas, depressões extratropicais e RIPEAM",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Correção imediata de avanço e atraso e da questão oficial sobre curva de giro · Revisões de classificação de ciclones e cross flow · Estrutura dos ciclones tropicais, subtropicais e extratropicais · Proficiência continuada do prático e fadiga",
+  "path": "Correção dominical de números na SMCP, profundidade de prova, conceito de em movimento e altura significativa · Formação, onda frontal e oclusão de depressões extratropicais · Rebocadores ASD e proficiência do prático · Questão oficial de luzes",
   "method": "4–3–2–1",
-  "mixPlan": {
-    "review": 4,
-    "current": 3,
-    "rotation": 2,
-    "official": 1
-  },
+  "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
   "questions": [
     {
-      "id": "sat-r1-advance-delay-correction",
+      "id": "sun-r1-smcp-numbers-one-five-zero",
       "category": "review",
-      "axis": "III",
-      "kind": "Revisão FSRS imediata · nota 0 · correção de leitura",
-      "stem": "Um navio percorre, no mesmo intervalo, distância maior em relação ao fundo do que em relação à superfície. Além disso, a corrente produz deslocamento transversal à derrota estimada. Os efeitos longitudinal e transversal são denominados, respectivamente:",
-      "options": [
-        "atraso e caimento.",
-        "avanço e caimento.",
-        "avanço e abatimento pelo vento.",
-        "atraso e guinada."
-      ],
-      "correct": 1,
-      "explanation": "Há avanço quando a distância percorrida no fundo supera a percorrida na superfície, equivalendo a velocidade no fundo maior que a velocidade do navio. A componente transversal do efeito da corrente é o caimento.",
-      "comments": [
-        "Incorreta: atraso ocorre quando a distância ou velocidade no fundo é menor.",
-        "Correta: maior progresso no fundo caracteriza avanço, e o deslocamento transversal caracteriza caimento.",
-        "Incorreta: abatimento é o ângulo entre os rumos na superfície e no fundo; o termo pedido para a componente transversal é caimento.",
-        "Incorreta: não há atraso, e guinada não é a decomposição transversal do efeito acumulado da corrente."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte, v. I",
-        "edition": "DHN",
-        "section": "Capítulo 5, seção 5.5 — caimento, avanço e atraso",
-        "syllabus": "Eixo III — Navegação em águas restritas · navegação estimada e correntes",
-        "evidence": "O recorte consultado decompõe o efeito da corrente em avanço ou atraso e caimento: há avanço quando a distância e a velocidade no fundo superam as correspondentes na superfície, e atraso na situação inversa.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
-    },
-    {
-      "id": "sat-r2-tropical-cyclone-sixty-four-knots",
-      "category": "review",
-      "axis": "V",
-      "kind": "Revisão FSRS vencida · nota 0 · erro de leitura",
-      "stem": "Pela classificação baseada na média do vento máximo sustentado à superfície durante um minuto, um ciclone tropical com exatamente 64 nós é classificado como:",
-      "options": [
-        "depressão tropical.",
-        "tempestade tropical.",
-        "furacão.",
-        "ciclone subtropical."
-      ],
+      "axis": "VI",
+      "kind": "Revisão FSRS vencida · nota 0 · confusão de pronúncia",
+      "stem": "Em uma comunicação radiotelefônica padronizada pela SMCP, como deve ser transmitida a velocidade de 150 nós?",
+      "options": ["One hundred and fifty knots.", "One fifty knots.", "One-five-zero knots.", "Fifteen-zero knots."],
       "correct": 2,
-      "explanation": "O limite inferior da classe furacão é 64 nós. A tempestade tropical vai de 34 nós até valor inferior a 64 nós.",
-      "comments": [
-        "Incorreta: depressão tropical possui vento máximo inferior a 34 nós.",
-        "Incorreta: a faixa de tempestade tropical termina antes de 64 nós.",
-        "Correta: 64 nós já satisfaz o limite inferior da classe furacão.",
-        "Incorreta: subtropical descreve outra estrutura do sistema, não a classe pedida para um ciclone tropical."
-      ],
+      "explanation": "Na SMCP, os números são pronunciados algarismo por algarismo; portanto, 150 é transmitido como “one-five-zero”. A exceção indicada para números inteiros aplica-se a ordens de leme, não a uma velocidade.",
+      "comments": ["Incorreta: a forma cardinal comum não segue a regra de algarismos separados da SMCP.", "Incorreta: omite o algarismo zero e agrupa parte do número.", "Correta: os três algarismos são pronunciados separadamente, na ordem em que aparecem.", "Incorreta: agrupa 15 e não pronuncia cada algarismo separadamente."],
       "reference": {
-        "referenceId": "V-01",
-        "base": "Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45, seção 45.3.2 — classificação dos ciclones tropicais",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · ciclones tropicais",
-        "evidence": "O trecho consultado classifica como depressão tropical o sistema abaixo de 34 nós, como tempestade tropical o intervalo de 34 a menos de 64 nós e como furacão o sistema com vento máximo sustentado igual ou superior a 64 nós.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
+        "referenceId": "VI-01",
+        "base": "IMO",
+        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
+        "edition": "A.918(22), 2001",
+        "section": "General, item 10 — Numbers",
+        "syllabus": "Eixo VI — Comunicações · fraseologia e pronúncia numérica",
+        "evidence": "O recorte consultado determina que números sejam falados em algarismos separados e oferece 150 como exemplo: one-five-zero; ressalva específica é feita para ângulos de leme.",
+        "url": "https://drive.google.com/file/d/1nEnUGi3L9FcPy42aOtSPRoTLmKcqQZtU/view"
       }
     },
     {
-      "id": "sat-r3-extratropical-cyclone-energy",
-      "category": "review",
-      "axis": "V",
-      "kind": "Revisão FSRS vencida · nota 0 · correção de conteúdo",
-      "stem": "A principal fonte de energia de um ciclone extratropical é:",
-      "options": [
-        "o calor latente liberado exclusivamente sobre águas tropicais quentes.",
-        "a energia potencial associada ao contraste horizontal de temperatura.",
-        "a rotação de um núcleo quente sem associação frontal.",
-        "o aquecimento radiativo uniforme da superfície oceânica."
-      ],
-      "correct": 1,
-      "explanation": "O ciclone extratropical obtém energia primordialmente do contraste horizontal de temperatura e costuma estar associado a sistemas frontais.",
-      "comments": [
-        "Incorreta: descreve de modo incompleto o mecanismo convectivo típico de sistemas tropicais.",
-        "Correta: o gradiente horizontal de temperatura fornece a energia potencial característica do ciclone extratropical.",
-        "Incorreta: núcleo quente e ausência de frente são características do ciclone tropical.",
-        "Incorreta: aquecimento uniforme reduz contraste horizontal e não constitui o mecanismo indicado."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45, seção 45.3.2 — ciclone extratropical",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · depressões extratropicais",
-        "evidence": "O recorte consultado define o ciclone extratropical como centro de baixa pressão que extrai energia primordialmente da energia potencial decorrente de contraste horizontal de temperatura e que geralmente se associa a um sistema frontal.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
-      }
-    },
-    {
-      "id": "sat-r4-current-crossflow-restricted-waters",
+      "id": "sun-r2-trial-depth-four-draughts",
       "category": "review",
       "axis": "I",
-      "kind": "Revisão FSRS vencida · nota 1 · forças de corrente",
-      "stem": "Em águas rasas ou restritas, com o navio em baixa velocidade e sujeito a corrente intensa com gradientes e circulações, o ângulo relativo de entrada da corrente tende a aproximar-se de 90°, predominando:",
-      "options": [
-        "o efeito de cross flow.",
-        "apenas a resistência longitudinal de águas profundas.",
-        "a eliminação do momento de guinada.",
-        "a independência entre corrente e controlabilidade."
-      ],
+      "kind": "Revisão FSRS vencida · nota 0 · limite numérico",
+      "stem": "Para que uma prova de manobrabilidade seja realizada, preferencialmente, em água profunda e sem restrições, a MSC/Circ.1053 recomenda que a profundidade da água:",
+      "options": ["seja igual a duas vezes o calado máximo.", "exceda quatro vezes o calado médio do navio.", "seja igual a quatro vezes o calado médio.", "exceda seis vezes o calado de verão."],
+      "correct": 1,
+      "explanation": "A orientação é que a profundidade exceda quatro vezes o calado médio, reduzindo a influência da interação com o fundo sobre o desempenho observado.",
+      "comments": ["Incorreta: o recorte não adota duas vezes o calado máximo.", "Correta: a profundidade deve exceder quatro vezes o calado médio.", "Incorreta: o requisito é exceder, e não apenas igualar, quatro vezes o calado médio.", "Incorreta: não se estabelece o limite de seis vezes o calado de verão."],
+      "reference": {
+        "referenceId": "I-06",
+        "base": "IMO",
+        "publication": "Explanatory Notes to the Standards for Ship Manoeuvrability",
+        "edition": "MSC/Circ.1053, 2002",
+        "section": "Capítulo 2, item 2.1.2 — Deep, unrestricted water",
+        "syllabus": "Eixo I — Manobrabilidade · condições padronizadas das provas",
+        "evidence": "O trecho consultado explica que fundo, margens e navios que passam afetam fortemente a manobrabilidade e prescreve que a profundidade da água exceda quatro vezes o calado médio.",
+        "url": "https://drive.google.com/file/d/18-iPKtK3TOFSi08gL_AYxix7pox04UF3/view"
+      }
+    },
+    {
+      "id": "sun-r3-underway-without-making-way",
+      "category": "review",
+      "axis": "III",
+      "kind": "Revisão FSRS vencida · nota 0 · distinção conceitual",
+      "stem": "Um navio permanece sob máquinas, sem seguimento sobre a água, e não está fundeado, amarrado à terra nem encalhado. Para os efeitos do RIPEAM, ele está:",
+      "options": ["em movimento, embora sem seguimento.", "fundeado, porque não tem seguimento.", "sem governo, por estar parado.", "amarrado à terra, por equivalência regulamentar."],
       "correct": 0,
-      "explanation": "Nessas condições, o ângulo relativo próximo de 90° caracteriza predominância do cross flow. Correntes com gradientes e circulações podem prejudicar significativamente a controlabilidade.",
-      "comments": [
-        "Correta: o escoamento relativo quase transversal produz o efeito predominante de cross flow.",
-        "Incorreta: a situação descrita não se reduz à resistência longitudinal típica de águas profundas.",
-        "Incorreta: a ação transversal pode gerar momento de guinada, não eliminá-lo.",
-        "Incorreta: a obra ressalta justamente o prejuízo à controlabilidade em águas restritas."
-      ],
+      "explanation": "“Em movimento” é a condição da embarcação que não está fundeada, amarrada à terra nem encalhada. A definição não exige seguimento sobre a água.",
+      "comments": ["Correta: a definição regulamentar independe de haver seguimento.", "Incorreta: estar parado não equivale a estar fundeado.", "Incorreta: ausência de seguimento não caracteriza, por si só, perda de capacidade de manobra.", "Incorreta: não existe essa equivalência; amarração à terra é uma condição factual."],
       "reference": {
-        "referenceId": "I-08",
-        "base": "Edson Mesquita dos Santos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1ª edição, CONAPRA, 2021",
-        "section": "Capítulo 8, seção 8.3 — ação da corrente",
-        "syllabus": "Eixo I — Manobrabilidade · forças ambientais e águas restritas",
-        "evidence": "O recorte consultado explica que, em águas rasas, restritas ou canais, correntes intensas com gradientes e circulações prejudicam o controle; em baixa velocidade, o ângulo relativo prevalecente fica próximo de 90°, caracterizando cross flow.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+        "referenceId": "III-16",
+        "base": "IMO / Marinha do Brasil",
+        "publication": "COLREG - Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte A, Regra 3(i) — Definições gerais",
+        "syllabus": "Eixo III — Navegação restrita · RIPEAM, definições",
+        "evidence": "O texto consultado define como em movimento toda embarcação que não esteja fundeada, amarrada à terra ou encalhada; a definição não condiciona o estado à existência de seguimento.",
+        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
       }
     },
     {
-      "id": "sat-c1-cyclone-classification-structure",
-      "category": "current",
+      "id": "sun-r4-significant-wave-height",
+      "category": "review",
       "axis": "V",
-      "kind": "Conteúdo atual · classificação dos ciclones",
-      "stem": "Para diferenciar ciclones tropicais, subtropicais e extratropicais, o critério mais determinante é:",
-      "options": [
-        "a latitude instantânea do centro, isoladamente.",
-        "a estrutura vertical e as características físicas do sistema.",
-        "a distância do sistema ao litoral.",
-        "o nome atribuído pelo serviço meteorológico."
-      ],
-      "correct": 1,
-      "explanation": "Embora os nomes se relacionem às faixas onde os sistemas ocorrem com maior frequência, a diferenciação é mais correlacionada à estrutura vertical e às características do ciclone do que à posição geográfica momentânea.",
-      "comments": [
-        "Incorreta: um sistema pode transitar ou até se formar fora da faixa sugerida por sua denominação.",
-        "Correta: a estrutura e o mecanismo físico prevalecem sobre a latitude isolada.",
-        "Incorreta: proximidade do litoral não classifica o tipo de ciclone.",
-        "Incorreta: o nome resulta da classificação, não constitui critério físico."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45, seção 45.3.2 — depressões extratropicais, subtropicais e tropicais",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · classificação dos ciclones",
-        "evidence": "O trecho consultado informa que os ciclones ocorrem mais frequentemente nas faixas que lhes dão nome, mas sua diferenciação é mais correlacionada com a estrutura vertical; sistemas podem transitar ou surgir em regiões diversas da nomenclatura.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
-      }
-    },
-    {
-      "id": "sat-c2-tropical-cyclone-characteristics",
-      "category": "current",
-      "axis": "V",
-      "kind": "Conteúdo atual · estrutura do ciclone tropical",
-      "stem": "Assinale a combinação que caracteriza um ciclone tropical:",
-      "options": [
-        "Núcleo frio, associação frontal e convecção desorganizada.",
-        "Núcleo quente, ausência de associação frontal, convecção profunda organizada e circulação fechada à superfície.",
-        "Núcleo quente, frente polar ativa e circulação aberta à superfície.",
-        "Núcleo frio, ausência de vento fechado e origem obrigatória em altas latitudes."
-      ],
-      "correct": 1,
-      "explanation": "O ciclone tropical é um centro de baixa pressão de núcleo quente, não frontal, com convecção profunda organizada e circulação fechada de vento à superfície em torno de centro definido.",
-      "comments": [
-        "Incorreta: núcleo frio e associação frontal se afastam da definição de ciclone tropical.",
-        "Correta: reúne os elementos estruturais apresentados na definição.",
-        "Incorreta: a associação a frente polar contradiz o caráter não frontal.",
-        "Incorreta: a definição exige circulação fechada à superfície e origem tropical ou subtropical."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45, seção 45.3.2 — ciclone tropical",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · estrutura dos ciclones tropicais",
-        "evidence": "O recorte consultado define ciclone tropical como baixa pressão sinótica de núcleo quente, não associada a sistema frontal, originada sobre águas tropicais ou subtropicais, com convecção profunda organizada e circulação fechada à superfície.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
-      }
-    },
-    {
-      "id": "sat-c3-subtropical-cyclone-characteristics",
-      "category": "current",
-      "axis": "V",
-      "kind": "Conteúdo atual · estrutura do ciclone subtropical",
-      "stem": "Em comparação com um ciclone tropical, um ciclone subtropical tende a apresentar:",
-      "options": [
-        "ventos máximos mais próximos do centro e convecção mais simétrica.",
-        "associação frontal obrigatória e ausência de circulação ciclônica.",
-        "ventos máximos relativamente mais afastados do centro e campo de ventos e convecção menos simétricos.",
-        "somente vento inferior a 34 nós, sem possibilidade de tempestade subtropical."
-      ],
+      "kind": "Revisão FSRS vencida · nota 0 · definição estatística",
+      "stem": "Em um registro suficientemente longo de ondas, a altura significativa é definida como:",
+      "options": ["a maior altura individual observada.", "a média de todas as alturas registradas.", "a média do terço de ondas mais altas.", "a média do décimo de ondas mais baixas."],
       "correct": 2,
-      "explanation": "O ciclone subtropical reúne características tropicais e extratropicais; seus ventos máximos costumam ficar relativamente mais afastados do centro, frequentemente além de 60 milhas náuticas, e sua distribuição é menos simétrica.",
-      "comments": [
-        "Incorreta: inverte as diferenças descritas em relação ao ciclone tropical.",
-        "Incorreta: o sistema subtropical definido é não frontal e possui circulação ciclônica.",
-        "Correta: reproduz a disposição típica dos ventos e da convecção do sistema subtropical.",
-        "Incorreta: há depressão e tempestade subtropical; esta alcança a faixa de 34 a menos de 64 nós."
-      ],
+      "explanation": "A altura significativa é a média das alturas do terço mais alto da população de ondas, e não a onda máxima nem a média do conjunto completo.",
+      "comments": ["Incorreta: uma onda máxima isolada não define a altura significativa.", "Incorreta: a média total inclui também as ondas menores.", "Correta: a definição estatística usa a média do terço de ondas mais altas.", "Incorreta: a seleção é do terço superior, não do décimo inferior."],
+      "reference": {
+        "referenceId": "V-04",
+        "base": "Edson Mesquita dos Santos",
+        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
+        "edition": "1. ed., 2021",
+        "section": "Capítulo 4 — distribuição estatística das ondas",
+        "syllabus": "Eixo V — Meteorologia e Oceanografia · ondas e estado do mar",
+        "evidence": "O recorte consultado identifica a altura significativa como a média das alturas do terço de ondas mais altas e a apresenta como parâmetro-padrão para caracterizar a altura do mar.",
+        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
+      }
+    },
+    {
+      "id": "sun-c1-extratropical-formation-condition",
+      "category": "current",
+      "axis": "V",
+      "kind": "Avanço coerente · formação de depressões extratropicais",
+      "stem": "Qual condição é apresentada como essencial à formação de uma depressão extratropical?",
+      "options": ["Uma massa de ar homogênea sobre mar quente, sem contraste térmico.", "Massas de ar quente e frio adjacentes, com temperaturas e umidades diferentes.", "Apenas forte convecção equatorial, sem sistema frontal.", "Uma alta polar estacionária isolada de qualquer massa subtropical."],
+      "correct": 1,
+      "explanation": "A ciclogênese extratropical depende do contraste entre massas adjacentes de ar quente e frio, com diferenças de temperatura e umidade e movimento relativo.",
+      "comments": ["Incorreta: homogeneidade e ausência de contraste retiram o mecanismo descrito.", "Correta: o contraste entre massas adjacentes quente e fria é a condição essencial indicada.", "Incorreta: convecção tropical não frontal descreve outro mecanismo.", "Incorreta: o isolamento elimina a interação frontal necessária."],
       "reference": {
         "referenceId": "V-01",
         "base": "Altineu Pires Miguens",
         "publication": "Navegação: A Ciência e a Arte, v. III",
         "edition": "DHN",
-        "section": "Capítulo 45, seção 45.3.2 — ciclone subtropical",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · ciclones subtropicais",
-        "evidence": "O trecho consultado caracteriza o ciclone subtropical como sistema não frontal com atributos tropicais e extratropicais, ventos máximos relativamente afastados do centro — em geral além de 60 milhas náuticas — e campo de ventos e convecção menos simétricos.",
+        "section": "Capítulo 45, item 45.3.2 — formação das depressões extratropicais",
+        "syllabus": "Eixo V — Meteorologia e Oceanografia · sistemas atmosféricos",
+        "evidence": "O trecho consultado afirma que a condição essencial é a existência de massas adjacentes de ar quente e frio; sua junção, com diferenças de temperatura e umidade e deslocamentos opostos, dá origem ao ciclone extratropical.",
         "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
       }
     },
     {
-      "id": "sat-t1-a960-continued-proficiency",
+      "id": "sun-c2-frontal-wave-development",
+      "category": "current",
+      "axis": "V",
+      "kind": "Avanço coerente · onda frontal",
+      "stem": "Durante o desenvolvimento de uma depressão extratropical no Hemisfério Sul, a persistência da perturbação deforma a frente polar e estabelece circulação ciclônica:",
+      "options": ["horária, com uma seção comportando-se como frente quente e a adjacente como frente fria.", "anti-horária, mantendo toda a frente estacionária e sem setor quente.", "horária, mas sem formação de centro de baixa pressão.", "anti-horária, com a frente quente avançando sempre mais depressa que a fria."],
+      "correct": 0,
+      "explanation": "No Hemisfério Sul, a circulação ciclônica é horária. A deformação produz uma onda frontal, na qual se distinguem uma frente quente e uma frente fria.",
+      "comments": ["Correta: reúne o sentido da circulação no Hemisfério Sul e a diferenciação das duas seções frontais.", "Incorreta: o sentido está invertido e a onda frontal deixa de ser estacionária.", "Incorreta: no pico da onda forma-se um centro de baixa pressão.", "Incorreta: além de inverter o sentido, troca a relação de velocidades; a frente fria é a mais rápida."],
+      "reference": {
+        "referenceId": "V-01",
+        "base": "Altineu Pires Miguens",
+        "publication": "Navegação: A Ciência e a Arte, v. III",
+        "edition": "DHN",
+        "section": "Capítulo 45, item 45.3.2 — onda frontal e circulação ciclônica",
+        "syllabus": "Eixo V — Meteorologia e Oceanografia · sistemas frontais",
+        "evidence": "O recorte consultado descreve a deformação da frente polar e das isóbaras, estabelece circulação ciclônica horária no Hemisfério Sul e identifica seções que passam a atuar como frentes quente e fria.",
+        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
+      }
+    },
+    {
+      "id": "sun-c3-occlusion-filling",
+      "category": "current",
+      "axis": "V",
+      "kind": "Avanço coerente · oclusão e dissipação",
+      "stem": "Após a frente fria alcançar a frente quente e a oclusão continuar a se estender, qual evolução é esperada para a depressão extratropical?",
+      "options": ["Ampliação do setor quente e intensificação indefinida da baixa.", "Desaparecimento da língua de ar quente, enfraquecimento da baixa e retardamento do movimento frontal.", "Transformação imediata em ciclone tropical de núcleo quente.", "Aceleração da frente quente até ultrapassar a frente fria."],
+      "correct": 1,
+      "explanation": "Com o avanço da oclusão, o setor quente desaparece, a circulação ciclônica perde intensidade, o centro de baixa enfraquece e o movimento frontal se retarda, encaminhando o sistema à dissipação.",
+      "comments": ["Incorreta: a língua de ar quente se estreita e depois desaparece.", "Correta: corresponde à fase de enfraquecimento subsequente à oclusão.", "Incorreta: o texto não estabelece conversão automática em ciclone tropical.", "Incorreta: é a frente fria que alcança a quente, não o inverso."],
+      "reference": {
+        "referenceId": "V-01",
+        "base": "Altineu Pires Miguens",
+        "publication": "Navegação: A Ciência e a Arte, v. III",
+        "edition": "DHN",
+        "section": "Capítulo 45, item 45.3.2 — oclusão e estágio final",
+        "syllabus": "Eixo V — Meteorologia e Oceanografia · ciclo de vida das depressões",
+        "evidence": "O trecho consultado informa que, prolongada a oclusão, a língua de ar quente desaparece, a circulação e o centro de baixa enfraquecem e o movimento frontal se retarda antes da dissipação.",
+        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
+      }
+    },
+    {
+      "id": "sun-t1-asd-direct-indirect-effectiveness",
+      "category": "rotation",
+      "axis": "II",
+      "kind": "Rotação semanal · rebocadores ASD",
+      "stem": "Comparado a um rebocador trator Voith Schneider, um rebocador ASD empregado como rebocador de popa por cabo tende, segundo a referência, a ser:",
+      "options": ["mais efetivo no modo indireto e menos efetivo na tração direta.", "menos efetivo no modo indireto, mas possivelmente mais efetivo na tração direta.", "igualmente efetivo em todos os modos, independentemente do ponto de reboque.", "inadequado tanto para controle de rumo quanto para controle de velocidade."],
+      "correct": 1,
+      "explanation": "A referência qualifica o ASD como, em geral, um pouco menos efetivo no modo indireto do que o trator VS, podendo ser um pouco mais efetivo na tração direta.",
+      "comments": ["Incorreta: inverte a comparação apresentada.", "Correta: reproduz a distinção entre desempenho indireto e tração direta.", "Incorreta: tipo de rebocador, modo e posição do ponto de reboque afetam o desempenho.", "Incorreta: o ASD de popa é efetivo para controlar velocidade e rumo."],
+      "reference": {
+        "referenceId": "II-09",
+        "base": "Henk Hensen",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4. ed., 2021",
+        "section": "Capítulo 2 — ASD tugs e métodos de assistência",
+        "syllabus": "Eixo II — Arte Naval · capacidades e limitações dos rebocadores",
+        "evidence": "O recorte consultado compara ASD e tratores VS: o ASD de popa é efetivo no controle de velocidade e rumo, geralmente um pouco menos efetivo no modo indireto e possivelmente mais efetivo na tração direta.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+      }
+    },
+    {
+      "id": "sun-t2-a960-regain-familiarity",
       "category": "rotation",
       "axis": "IV",
-      "kind": "Rotação · proficiência continuada do prático",
-      "stem": "Segundo a Resolução IMO A.960(23), em intervalos regulares não superiores a cinco anos, a autoridade competente de praticagem deve verificar se o prático:",
-      "options": [
-        "mantém apenas a aptidão médica, dispensadas atualizações locais e normativas.",
-        "mantém conhecimento navegacional recente da área, aptidão médica e conhecimento das normas aplicáveis.",
-        "realizou obrigatoriamente nova formação inicial completa em modelo tripulado.",
-        "cumpriu exclusivamente prova escrita internacional padronizada."
-      ],
+      "kind": "Rotação semanal · proficiência continuada",
+      "stem": "Um prático retorna ao serviço após ausência e já não possui experiência recente na zona de praticagem. Segundo a Resolução IMO A.960(23), a autoridade competente deve:",
+      "options": ["autorizar o retorno irrestrito com base apenas na validade formal do certificado.", "satisfazer-se de que o prático recupere a familiaridade com a área ao retornar.", "cancelar definitivamente a habilitação, independentemente da duração da ausência.", "limitar-se a exigir novo exame médico, sem verificar conhecimento local."],
       "correct": 1,
-      "explanation": "A verificação periódica abrange conhecimento local recente, manutenção dos padrões de aptidão médica e conhecimento atualizado das normas internacionais, nacionais e locais pertinentes.",
-      "comments": [
-        "Incorreta: a aptidão médica é apenas um dos três elementos exigidos.",
-        "Correta: reúne os três grupos expressamente previstos para a proficiência continuada.",
-        "Incorreta: a resolução não exige repetição integral da formação inicial a cada ciclo.",
-        "Incorreta: o conhecimento pode ser comprovado por diferentes métodos, não apenas por prova escrita internacional."
-      ],
+      "explanation": "A recomendação específica é que a autoridade competente se assegure de que o prático recupere a familiaridade com a área quando a ausência tiver causado falta de experiência recente.",
+      "comments": ["Incorreta: a validade formal não substitui a verificação da familiaridade local.", "Correta: é a providência expressamente recomendada para o retorno.", "Incorreta: a resolução não determina cancelamento automático.", "Incorreta: aptidão médica é requisito distinto e não elimina a necessidade de experiência local recente."],
       "reference": {
         "referenceId": "IV-18",
-        "base": "International Maritime Organization",
-        "publication": "Recommendations on Training and Certification and on Operational Procedures for Maritime Pilots other than Deep-Sea Pilots",
-        "edition": "Resolução A.960(23), 2003",
-        "section": "Anexo 1, seção 6 — Continued proficiency",
+        "base": "IMO",
+        "publication": "Training, Certification and Operational Procedures for Maritime Pilots",
+        "edition": "A.960(23), 2003",
+        "section": "Anexo 1, item 6.3 — continuidade da proficiência",
         "syllabus": "Eixo IV — Legislação · formação, certificação e proficiência de práticos",
-        "evidence": "O recorte consultado determina verificação pela autoridade competente em intervalos não superiores a cinco anos quanto a conhecimento navegacional recente da área, aptidão médica e conhecimento atualizado das leis e requisitos pertinentes.",
+        "evidence": "O item 6.3 consultado recomenda que, quando a ausência deixar o prático sem experiência recente na área, a autoridade de praticagem se assegure de que ele recupere a familiaridade ao retornar.",
         "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"
       }
     },
     {
-      "id": "sat-t2-fatigue-sleep-debt",
-      "category": "rotation",
-      "axis": "VII",
-      "kind": "Rotação · fadiga e desempenho",
-      "stem": "Nas diretrizes da IMO sobre fadiga, dívida de sono é:",
-      "options": [
-        "a sonolência sentida apenas nos primeiros minutos após despertar.",
-        "o sono insuficiente acumulado ao longo de vários períodos consecutivos de 24 horas.",
-        "qualquer repouso realizado fora do horário noturno.",
-        "a diferença entre horas de trabalho contratadas e efetivamente realizadas."
-      ],
-      "correct": 1,
-      "explanation": "Dívida de sono é o déficit acumulado por dormir menos que a necessidade individual em sucessivos períodos de 24 horas. Ela reduz alerta e desempenho e pode diminuir a percepção da própria fadiga.",
-      "comments": [
-        "Incorreta: essa descrição corresponde à inércia do sono, especialmente após despertar abrupto.",
-        "Correta: é a definição apresentada pelas diretrizes da IMO.",
-        "Incorreta: sono diurno pode ser necessário em escalas de serviço e não constitui, por si só, dívida de sono.",
-        "Incorreta: trata-se de déficit fisiológico de sono, não de saldo administrativo de trabalho."
-      ],
-      "reference": {
-        "referenceId": "VII-05",
-        "base": "International Maritime Organization",
-        "publication": "Guidelines on Fatigue",
-        "edition": "MSC.1/Circ.1598, 2019",
-        "section": "Anexo, módulo 1, parágrafo 22 — Sleep debt",
-        "syllabus": "Eixo VII — Conhecimentos Gerais · fadiga e fatores humanos",
-        "evidence": "O recorte consultado define dívida de sono como sono insuficiente acumulado em múltiplos períodos consecutivos de 24 horas e informa que ela afeta alerta e desempenho, podendo reduzir a capacidade de avaliar a própria fadiga.",
-        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
-      }
-    },
-    {
-      "id": "sat-o1-pscpp2011-q25-turning-curve-correction",
+      "id": "sun-o1-pscpp2011-q55-constrained-draught",
       "category": "official",
-      "axis": "I",
-      "kind": "Questão oficial histórica · reaplicação corretiva · nota 0",
-      "stem": "Com relação aos efeitos do leme e à curva de giro de um navio, assinale a opção INCORRETA:",
-      "options": [
-        "Quando se carrega o leme com o navio dando adiante, a velocidade diminui, o navio abate para o bordo oposto ao da guinada, assume um ângulo de deriva e, em alguns casos, aderna.",
-        "O avanço diminui quando aumenta o ângulo do leme e aumenta quando cresce a velocidade do navio.",
-        "O tempo de giro diminui quando aumentam o ângulo do leme e a velocidade do navio.",
-        "O ângulo de deriva aumenta com o ângulo do leme, porém diminui quando aumenta a velocidade do navio.",
-        "A velocidade angular é nula no início, atinge o máximo antes dos 90° de guinada e depois se reduz ligeiramente até tornar-se constante; em geral, o primeiro quadrante é percorrido em menos tempo que os seguintes."
-      ],
-      "correct": 3,
-      "explanation": "A opção D é a incorreta. O ângulo de deriva aumenta com o ângulo do leme, mas a obra o considera independente da velocidade do navio. As demais proposições reproduzem tendências apresentadas para os efeitos do leme e a curva de giro.",
-      "comments": [
-        "Correta como afirmação: descreve a perda de velocidade, o abatimento inicial, o ângulo de deriva e o possível adernamento.",
-        "Correta como afirmação: maior ângulo de leme reduz o avanço, enquanto maior velocidade o aumenta.",
-        "Correta como afirmação: maior ângulo de leme ou maior velocidade reduz o tempo da evolução.",
-        "Incorreta — gabarito: o ângulo de deriva não diminui com a velocidade; a referência o trata como independente dela.",
-        "Correta como afirmação: descreve a evolução típica da velocidade angular ao longo da curva de giro."
-      ],
+      "axis": "III",
+      "kind": "Questão oficial histórica · transcrição com atualização ortográfica mínima",
+      "stem": "Assinale a resposta correta. Considerando o prescrito no COLREG, uma embarcação exibindo uma luz de mastro à vante, uma segunda luz de mastro a ré e mais alta do que a de vante, luzes de bordos, uma luz de alcançado e, onde melhor possam ser vistas, três luzes circulares encarnadas dispostas em uma linha vertical, é uma embarcação em movimento:",
+      "options": ["com capacidade de manobra restrita, não engajada em operações de remoção de minas.", "engajada em operações submarinas ou de dragagem.", "engajada em serviço de praticagem.", "mas sem governo.", "restrita devido ao seu calado."],
+      "correct": 4,
+      "explanation": "As luzes usuais de uma embarcação de propulsão mecânica em movimento, acrescidas de três luzes circulares encarnadas em linha vertical, identificam a embarcação restrita devido ao seu calado. Gabarito oficial: E.",
+      "comments": ["Incorreta: embarcação com capacidade de manobra restrita exibe encarnada-branca-encarnada.", "Incorreta: dragagem ou operação submarina usa os sinais de capacidade de manobra restrita e, quando aplicável, sinais adicionais do bordo obstruído e livre.", "Incorreta: praticagem é identificada por branca sobre encarnada.", "Incorreta: embarcação sem governo exibe duas luzes circulares encarnadas, não três.", "Correta: a Regra 28 prevê três luzes circulares encarnadas em linha vertical, além das luzes da embarcação de propulsão mecânica."],
       "reference": {
-        "referenceId": "II-01",
-        "base": "Diretoria de Portos e Costas / Maurílio Magalhães Fonseca",
-        "publication": "PSCPP 2011 — Prova Amarela / Arte Naval, v. 1",
-        "edition": "Prova de 2011; obra-base: 8ª edição, 2019",
-        "section": "Questão 25; Arte Naval, capítulo 12, seção 12.56.3 — efeitos do leme",
-        "syllabus": "Eixos I e II — Manobrabilidade e Arte Naval · curva de giro",
-        "evidence": "A prova oficial apresenta a alternativa D como resposta. A obra-base informa que o ângulo de deriva aumenta com o ângulo do leme e com a diminuição do calado, mas é independente da velocidade; os demais comportamentos constam da seção sobre efeitos do leme.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view",
+        "referenceId": "III-16",
+        "base": "DPC / IMO",
+        "publication": "COLREG - Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte C, Regras 23 e 28",
+        "syllabus": "Eixo III — Navegação restrita · RIPEAM, luzes e marcas",
+        "evidence": "A Regra 28 consultada permite à embarcação restrita devido ao calado exibir três luzes circulares encarnadas em linha vertical, além das luzes prescritas na Regra 23 para embarcação de propulsão mecânica.",
+        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view",
         "origin": {
           "exam": "PSCPP 2011 — Prova Amarela",
           "year": 2011,
-          "question": 25,
-          "answer": "D",
-          "adaptation": "Reaplicação após erro de leitura; ortografia atualizada e frase duplicada na alternativa C removida, sem alteração do conteúdo ou do gabarito.",
+          "question": 55,
+          "answer": "E",
+          "adaptation": "Transcrição da questão oficial, com atualização ortográfica e tipográfica mínima, sem alteração da solução.",
           "url": "https://drive.google.com/file/d/1Fdz2o1xtzIkg1KONqP95HemlINDJcv_1/view"
         }
       }
