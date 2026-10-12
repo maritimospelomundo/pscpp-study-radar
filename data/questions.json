@@ -1,169 +1,37 @@
 {
-  "roundId": "sunday-fronts-overdue-corrections-2026-10-11",
-  "label": "Rodada adaptativa de 11 de outubro de 2026",
-  "title": "Revisões vencidas, depressões extratropicais e RIPEAM",
+  "roundId": "pivot-point-ripeam-corrections-2026-10-12",
+  "label": "Rodada adaptativa de 12 de outubro de 2026",
+  "title": "Ponto pivô, curva de giro e correções prioritárias",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Correção dominical de números na SMCP, profundidade de prova, conceito de em movimento e altura significativa · Formação, onda frontal e oclusão de depressões extratropicais · Rebocadores ASD e proficiência do prático · Questão oficial de luzes",
+  "path": "Correção do desempenho direto e indireto de rebocadores ASD · Revisões de avanço e atraso, aparelhos de laborar e Coriolis · Ponto pivô e fases da curva de giro · Regra 9 do RIPEAM · Questão oficial sobre efeitos do leme",
   "method": "4–3–2–1",
-  "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
+  "mixPlan": {
+    "review": 4,
+    "current": 3,
+    "rotation": 2,
+    "official": 1
+  },
   "questions": [
     {
-      "id": "sun-r1-smcp-numbers-one-five-zero",
+      "id": "mon-r1-asd-direct-indirect-correction",
       "category": "review",
-      "axis": "VI",
-      "kind": "Revisão FSRS vencida · nota 0 · confusão de pronúncia",
-      "stem": "Em uma comunicação radiotelefônica padronizada pela SMCP, como deve ser transmitida a velocidade de 150 nós?",
-      "options": ["One hundred and fifty knots.", "One fifty knots.", "One-five-zero knots.", "Fifteen-zero knots."],
-      "correct": 2,
-      "explanation": "Na SMCP, os números são pronunciados algarismo por algarismo; portanto, 150 é transmitido como “one-five-zero”. A exceção indicada para números inteiros aplica-se a ordens de leme, não a uma velocidade.",
-      "comments": ["Incorreta: a forma cardinal comum não segue a regra de algarismos separados da SMCP.", "Incorreta: omite o algarismo zero e agrupa parte do número.", "Correta: os três algarismos são pronunciados separadamente, na ordem em que aparecem.", "Incorreta: agrupa 15 e não pronuncia cada algarismo separadamente."],
-      "reference": {
-        "referenceId": "VI-01",
-        "base": "IMO",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "A.918(22), 2001",
-        "section": "General, item 10 — Numbers",
-        "syllabus": "Eixo VI — Comunicações · fraseologia e pronúncia numérica",
-        "evidence": "O recorte consultado determina que números sejam falados em algarismos separados e oferece 150 como exemplo: one-five-zero; ressalva específica é feita para ângulos de leme.",
-        "url": "https://drive.google.com/file/d/1nEnUGi3L9FcPy42aOtSPRoTLmKcqQZtU/view"
-      }
-    },
-    {
-      "id": "sun-r2-trial-depth-four-draughts",
-      "category": "review",
-      "axis": "I",
-      "kind": "Revisão FSRS vencida · nota 0 · limite numérico",
-      "stem": "Para que uma prova de manobrabilidade seja realizada, preferencialmente, em água profunda e sem restrições, a MSC/Circ.1053 recomenda que a profundidade da água:",
-      "options": ["seja igual a duas vezes o calado máximo.", "exceda quatro vezes o calado médio do navio.", "seja igual a quatro vezes o calado médio.", "exceda seis vezes o calado de verão."],
-      "correct": 1,
-      "explanation": "A orientação é que a profundidade exceda quatro vezes o calado médio, reduzindo a influência da interação com o fundo sobre o desempenho observado.",
-      "comments": ["Incorreta: o recorte não adota duas vezes o calado máximo.", "Correta: a profundidade deve exceder quatro vezes o calado médio.", "Incorreta: o requisito é exceder, e não apenas igualar, quatro vezes o calado médio.", "Incorreta: não se estabelece o limite de seis vezes o calado de verão."],
-      "reference": {
-        "referenceId": "I-06",
-        "base": "IMO",
-        "publication": "Explanatory Notes to the Standards for Ship Manoeuvrability",
-        "edition": "MSC/Circ.1053, 2002",
-        "section": "Capítulo 2, item 2.1.2 — Deep, unrestricted water",
-        "syllabus": "Eixo I — Manobrabilidade · condições padronizadas das provas",
-        "evidence": "O trecho consultado explica que fundo, margens e navios que passam afetam fortemente a manobrabilidade e prescreve que a profundidade da água exceda quatro vezes o calado médio.",
-        "url": "https://drive.google.com/file/d/18-iPKtK3TOFSi08gL_AYxix7pox04UF3/view"
-      }
-    },
-    {
-      "id": "sun-r3-underway-without-making-way",
-      "category": "review",
-      "axis": "III",
-      "kind": "Revisão FSRS vencida · nota 0 · distinção conceitual",
-      "stem": "Um navio permanece sob máquinas, sem seguimento sobre a água, e não está fundeado, amarrado à terra nem encalhado. Para os efeitos do RIPEAM, ele está:",
-      "options": ["em movimento, embora sem seguimento.", "fundeado, porque não tem seguimento.", "sem governo, por estar parado.", "amarrado à terra, por equivalência regulamentar."],
-      "correct": 0,
-      "explanation": "“Em movimento” é a condição da embarcação que não está fundeada, amarrada à terra nem encalhada. A definição não exige seguimento sobre a água.",
-      "comments": ["Correta: a definição regulamentar independe de haver seguimento.", "Incorreta: estar parado não equivale a estar fundeado.", "Incorreta: ausência de seguimento não caracteriza, por si só, perda de capacidade de manobra.", "Incorreta: não existe essa equivalência; amarração à terra é uma condição factual."],
-      "reference": {
-        "referenceId": "III-16",
-        "base": "IMO / Marinha do Brasil",
-        "publication": "COLREG - Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte A, Regra 3(i) — Definições gerais",
-        "syllabus": "Eixo III — Navegação restrita · RIPEAM, definições",
-        "evidence": "O texto consultado define como em movimento toda embarcação que não esteja fundeada, amarrada à terra ou encalhada; a definição não condiciona o estado à existência de seguimento.",
-        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
-      }
-    },
-    {
-      "id": "sun-r4-significant-wave-height",
-      "category": "review",
-      "axis": "V",
-      "kind": "Revisão FSRS vencida · nota 0 · definição estatística",
-      "stem": "Em um registro suficientemente longo de ondas, a altura significativa é definida como:",
-      "options": ["a maior altura individual observada.", "a média de todas as alturas registradas.", "a média do terço de ondas mais altas.", "a média do décimo de ondas mais baixas."],
-      "correct": 2,
-      "explanation": "A altura significativa é a média das alturas do terço mais alto da população de ondas, e não a onda máxima nem a média do conjunto completo.",
-      "comments": ["Incorreta: uma onda máxima isolada não define a altura significativa.", "Incorreta: a média total inclui também as ondas menores.", "Correta: a definição estatística usa a média do terço de ondas mais altas.", "Incorreta: a seleção é do terço superior, não do décimo inferior."],
-      "reference": {
-        "referenceId": "V-04",
-        "base": "Edson Mesquita dos Santos",
-        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
-        "edition": "1. ed., 2021",
-        "section": "Capítulo 4 — distribuição estatística das ondas",
-        "syllabus": "Eixo V — Meteorologia e Oceanografia · ondas e estado do mar",
-        "evidence": "O recorte consultado identifica a altura significativa como a média das alturas do terço de ondas mais altas e a apresenta como parâmetro-padrão para caracterizar a altura do mar.",
-        "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"
-      }
-    },
-    {
-      "id": "sun-c1-extratropical-formation-condition",
-      "category": "current",
-      "axis": "V",
-      "kind": "Avanço coerente · formação de depressões extratropicais",
-      "stem": "Qual condição é apresentada como essencial à formação de uma depressão extratropical?",
-      "options": ["Uma massa de ar homogênea sobre mar quente, sem contraste térmico.", "Massas de ar quente e frio adjacentes, com temperaturas e umidades diferentes.", "Apenas forte convecção equatorial, sem sistema frontal.", "Uma alta polar estacionária isolada de qualquer massa subtropical."],
-      "correct": 1,
-      "explanation": "A ciclogênese extratropical depende do contraste entre massas adjacentes de ar quente e frio, com diferenças de temperatura e umidade e movimento relativo.",
-      "comments": ["Incorreta: homogeneidade e ausência de contraste retiram o mecanismo descrito.", "Correta: o contraste entre massas adjacentes quente e fria é a condição essencial indicada.", "Incorreta: convecção tropical não frontal descreve outro mecanismo.", "Incorreta: o isolamento elimina a interação frontal necessária."],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45, item 45.3.2 — formação das depressões extratropicais",
-        "syllabus": "Eixo V — Meteorologia e Oceanografia · sistemas atmosféricos",
-        "evidence": "O trecho consultado afirma que a condição essencial é a existência de massas adjacentes de ar quente e frio; sua junção, com diferenças de temperatura e umidade e deslocamentos opostos, dá origem ao ciclone extratropical.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
-      }
-    },
-    {
-      "id": "sun-c2-frontal-wave-development",
-      "category": "current",
-      "axis": "V",
-      "kind": "Avanço coerente · onda frontal",
-      "stem": "Durante o desenvolvimento de uma depressão extratropical no Hemisfério Sul, a persistência da perturbação deforma a frente polar e estabelece circulação ciclônica:",
-      "options": ["horária, com uma seção comportando-se como frente quente e a adjacente como frente fria.", "anti-horária, mantendo toda a frente estacionária e sem setor quente.", "horária, mas sem formação de centro de baixa pressão.", "anti-horária, com a frente quente avançando sempre mais depressa que a fria."],
-      "correct": 0,
-      "explanation": "No Hemisfério Sul, a circulação ciclônica é horária. A deformação produz uma onda frontal, na qual se distinguem uma frente quente e uma frente fria.",
-      "comments": ["Correta: reúne o sentido da circulação no Hemisfério Sul e a diferenciação das duas seções frontais.", "Incorreta: o sentido está invertido e a onda frontal deixa de ser estacionária.", "Incorreta: no pico da onda forma-se um centro de baixa pressão.", "Incorreta: além de inverter o sentido, troca a relação de velocidades; a frente fria é a mais rápida."],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45, item 45.3.2 — onda frontal e circulação ciclônica",
-        "syllabus": "Eixo V — Meteorologia e Oceanografia · sistemas frontais",
-        "evidence": "O recorte consultado descreve a deformação da frente polar e das isóbaras, estabelece circulação ciclônica horária no Hemisfério Sul e identifica seções que passam a atuar como frentes quente e fria.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
-      }
-    },
-    {
-      "id": "sun-c3-occlusion-filling",
-      "category": "current",
-      "axis": "V",
-      "kind": "Avanço coerente · oclusão e dissipação",
-      "stem": "Após a frente fria alcançar a frente quente e a oclusão continuar a se estender, qual evolução é esperada para a depressão extratropical?",
-      "options": ["Ampliação do setor quente e intensificação indefinida da baixa.", "Desaparecimento da língua de ar quente, enfraquecimento da baixa e retardamento do movimento frontal.", "Transformação imediata em ciclone tropical de núcleo quente.", "Aceleração da frente quente até ultrapassar a frente fria."],
-      "correct": 1,
-      "explanation": "Com o avanço da oclusão, o setor quente desaparece, a circulação ciclônica perde intensidade, o centro de baixa enfraquece e o movimento frontal se retarda, encaminhando o sistema à dissipação.",
-      "comments": ["Incorreta: a língua de ar quente se estreita e depois desaparece.", "Correta: corresponde à fase de enfraquecimento subsequente à oclusão.", "Incorreta: o texto não estabelece conversão automática em ciclone tropical.", "Incorreta: é a frente fria que alcança a quente, não o inverso."],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45, item 45.3.2 — oclusão e estágio final",
-        "syllabus": "Eixo V — Meteorologia e Oceanografia · ciclo de vida das depressões",
-        "evidence": "O trecho consultado informa que, prolongada a oclusão, a língua de ar quente desaparece, a circulação e o centro de baixa enfraquecem e o movimento frontal se retarda antes da dissipação.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
-      }
-    },
-    {
-      "id": "sun-t1-asd-direct-indirect-effectiveness",
-      "category": "rotation",
       "axis": "II",
-      "kind": "Rotação semanal · rebocadores ASD",
-      "stem": "Comparado a um rebocador trator Voith Schneider, um rebocador ASD empregado como rebocador de popa por cabo tende, segundo a referência, a ser:",
-      "options": ["mais efetivo no modo indireto e menos efetivo na tração direta.", "menos efetivo no modo indireto, mas possivelmente mais efetivo na tração direta.", "igualmente efetivo em todos os modos, independentemente do ponto de reboque.", "inadequado tanto para controle de rumo quanto para controle de velocidade."],
-      "correct": 1,
-      "explanation": "A referência qualifica o ASD como, em geral, um pouco menos efetivo no modo indireto do que o trator VS, podendo ser um pouco mais efetivo na tração direta.",
-      "comments": ["Incorreta: inverte a comparação apresentada.", "Correta: reproduz a distinção entre desempenho indireto e tração direta.", "Incorreta: tipo de rebocador, modo e posição do ponto de reboque afetam o desempenho.", "Incorreta: o ASD de popa é efetivo para controlar velocidade e rumo."],
+      "kind": "Revisão FSRS imediata · nota 0 · lacuna de conteúdo",
+      "stem": "Comparado a um rebocador trator Voith Schneider, um rebocador ASD empregado como rebocador de popa por cabo tende, segundo a referência, a apresentar:",
+      "options": [
+        "maior efetividade no modo indireto e menor efetividade na tração direta.",
+        "efetividade idêntica nos modos direto e indireto, qualquer que seja o ponto de reboque.",
+        "efetividade geralmente um pouco menor no modo indireto, mas possivelmente maior na tração direta.",
+        "inaptidão para controlar o rumo e a velocidade do navio assistido."
+      ],
+      "correct": 2,
+      "explanation": "O ASD de popa por cabo é efetivo no controle de rumo e velocidade. Comparado ao trator VS, tende a ser um pouco menos efetivo no modo indireto, mas pode ser um pouco mais efetivo na tração direta.",
+      "comments": [
+        "Incorreta: inverte a comparação apresentada na obra.",
+        "Incorreta: o modo de operação e a posição do ponto de reboque influenciam o desempenho.",
+        "Correta: distingue adequadamente a assistência indireta da tração direta.",
+        "Incorreta: a obra reconhece sua efetividade para controle de rumo e velocidade."
+      ],
       "reference": {
         "referenceId": "II-09",
         "base": "Henk Hensen",
@@ -171,56 +39,295 @@
         "edition": "4. ed., 2021",
         "section": "Capítulo 2 — ASD tugs e métodos de assistência",
         "syllabus": "Eixo II — Arte Naval · capacidades e limitações dos rebocadores",
-        "evidence": "O recorte consultado compara ASD e tratores VS: o ASD de popa é efetivo no controle de velocidade e rumo, geralmente um pouco menos efetivo no modo indireto e possivelmente mais efetivo na tração direta.",
+        "evidence": "O recorte consultado afirma que o ASD operando pela popa é efetivo para controle de velocidade e rumo; sua efetividade no modo indireto é geralmente um pouco menor que a de tratores VS, podendo ser um pouco maior na tração direta.",
         "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
       }
     },
     {
-      "id": "sun-t2-a960-regain-familiarity",
-      "category": "rotation",
-      "axis": "IV",
-      "kind": "Rotação semanal · proficiência continuada",
-      "stem": "Um prático retorna ao serviço após ausência e já não possui experiência recente na zona de praticagem. Segundo a Resolução IMO A.960(23), a autoridade competente deve:",
-      "options": ["autorizar o retorno irrestrito com base apenas na validade formal do certificado.", "satisfazer-se de que o prático recupere a familiaridade com a área ao retornar.", "cancelar definitivamente a habilitação, independentemente da duração da ausência.", "limitar-se a exigir novo exame médico, sem verificar conhecimento local."],
+      "id": "mon-r2-advance-delay-correction",
+      "category": "review",
+      "axis": "III",
+      "kind": "Revisão FSRS vencida · nota 0 · erro de leitura",
+      "stem": "Ao comparar, no mesmo instante, a posição observada com a estimada, verificou-se que a distância percorrida no fundo foi menor que a percorrida na superfície. A componente longitudinal do efeito da corrente é denominada:",
+      "options": [
+        "avanço.",
+        "atraso.",
+        "caimento.",
+        "abatimento."
+      ],
       "correct": 1,
-      "explanation": "A recomendação específica é que a autoridade competente se assegure de que o prático recupere a familiaridade com a área quando a ausência tiver causado falta de experiência recente.",
-      "comments": ["Incorreta: a validade formal não substitui a verificação da familiaridade local.", "Correta: é a providência expressamente recomendada para o retorno.", "Incorreta: a resolução não determina cancelamento automático.", "Incorreta: aptidão médica é requisito distinto e não elimina a necessidade de experiência local recente."],
+      "explanation": "Há atraso quando a distância percorrida no fundo é menor que a percorrida na superfície, equivalendo a velocidade no fundo menor que a velocidade do navio.",
+      "comments": [
+        "Incorreta: avanço ocorre quando o progresso no fundo é maior.",
+        "Correta: menor distância no fundo caracteriza atraso.",
+        "Incorreta: caimento é a componente transversal da diferença entre as posições.",
+        "Incorreta: abatimento é o ângulo entre os rumos na superfície e no fundo."
+      ],
       "reference": {
-        "referenceId": "IV-18",
-        "base": "IMO",
-        "publication": "Training, Certification and Operational Procedures for Maritime Pilots",
-        "edition": "A.960(23), 2003",
-        "section": "Anexo 1, item 6.3 — continuidade da proficiência",
-        "syllabus": "Eixo IV — Legislação · formação, certificação e proficiência de práticos",
-        "evidence": "O item 6.3 consultado recomenda que, quando a ausência deixar o prático sem experiência recente na área, a autoridade de praticagem se assegure de que ele recupere a familiaridade ao retornar.",
-        "url": "https://drive.google.com/file/d/1b5pNr3v2Qxb5erppPkYUHPng5VGcimK-/view"
+        "referenceId": "III-02",
+        "base": "Altineu Pires Miguens",
+        "publication": "Navegação: A Ciência e a Arte, v. I",
+        "edition": "2ª revisão atualizada, DHN, 2023",
+        "section": "Capítulo 5, seção 5.5 — caimento, avanço e atraso",
+        "syllabus": "Eixo III — Navegação restrita · navegação estimada e correntes",
+        "evidence": "O trecho consultado decompõe o efeito da corrente em componente longitudinal, avanço ou atraso, e componente transversal, caimento; define atraso quando a distância e a velocidade no fundo são menores que as correspondentes na superfície.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
       }
     },
     {
-      "id": "sun-o1-pscpp2011-q55-constrained-draught",
-      "category": "official",
+      "id": "mon-r3-tackle-tension-bight-hitch",
+      "category": "review",
+      "axis": "II",
+      "kind": "Revisão FSRS vencida · nota 0 · aparelhos de laborar",
+      "stem": "Ao içar um peso com uma talha e ao engatar a talha em um cabo que não possui alça, qual combinação está correta?",
+      "options": [
+        "Tensão máxima na arreigada fixa; engate por encapeladura singela.",
+        "Tensão máxima no tirador; engate pela boca-de-lobo.",
+        "Tensão nula no cadernal móvel; engate por volta de fiel.",
+        "Tensões necessariamente iguais; engate por nó direito."
+      ],
+      "correct": 1,
+      "explanation": "No içamento, a tensão máxima ocorre no tirador e diminui até a arreigada fixa. Para engatar a talha em cabo sem alça, a regra prática recomenda a boca-de-lobo.",
+      "comments": [
+        "Incorreta: inverte a distribuição das tensões e escolhe engate diverso do recomendado.",
+        "Correta: reúne as duas regras práticas da obra.",
+        "Incorreta: o cadernal móvel não fica sem tensão, e a volta de fiel não é a recomendação citada.",
+        "Incorreta: as tensões variam ao longo do aparelho, e nó direito não é o engate prescrito."
+      ],
+      "reference": {
+        "referenceId": "II-01",
+        "base": "Maurílio M. Fonseca",
+        "publication": "Arte Naval, v. 1",
+        "edition": "8. ed., MB, 2019",
+        "section": "Capítulo 9, §9.21 — regras práticas dos aparelhos de laborar",
+        "syllabus": "Eixo II — Arte Naval · poleame e aparelhos de laborar",
+        "evidence": "O recorte consultado estabelece que, ao içar, o tirador recebe a tensão máxima e a arreigada fixa a mínima; também recomenda a boca-de-lobo para engatar uma talha em cabo sem alça.",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
+      }
+    },
+    {
+      "id": "mon-r4-coriolis-wind-current-correction",
+      "category": "review",
       "axis": "III",
-      "kind": "Questão oficial histórica · transcrição com atualização ortográfica mínima",
-      "stem": "Assinale a resposta correta. Considerando o prescrito no COLREG, uma embarcação exibindo uma luz de mastro à vante, uma segunda luz de mastro a ré e mais alta do que a de vante, luzes de bordos, uma luz de alcançado e, onde melhor possam ser vistas, três luzes circulares encarnadas dispostas em uma linha vertical, é uma embarcação em movimento:",
-      "options": ["com capacidade de manobra restrita, não engajada em operações de remoção de minas.", "engajada em operações submarinas ou de dragagem.", "engajada em serviço de praticagem.", "mas sem governo.", "restrita devido ao seu calado."],
-      "correct": 4,
-      "explanation": "As luzes usuais de uma embarcação de propulsão mecânica em movimento, acrescidas de três luzes circulares encarnadas em linha vertical, identificam a embarcação restrita devido ao seu calado. Gabarito oficial: E.",
-      "comments": ["Incorreta: embarcação com capacidade de manobra restrita exibe encarnada-branca-encarnada.", "Incorreta: dragagem ou operação submarina usa os sinais de capacidade de manobra restrita e, quando aplicável, sinais adicionais do bordo obstruído e livre.", "Incorreta: praticagem é identificada por branca sobre encarnada.", "Incorreta: embarcação sem governo exibe duas luzes circulares encarnadas, não três.", "Correta: a Regra 28 prevê três luzes circulares encarnadas em linha vertical, além das luzes da embarcação de propulsão mecânica."],
+      "kind": "Revisão FSRS vencida · nota 0 · confusão hemisférica",
+      "stem": "Sobre a ação de Coriolis nas correntes geradas pelo vento na camada superficial, assinale a alternativa correta:",
+      "options": [
+        "O desvio ocorre para a direita do vento no Hemisfério Sul e para a esquerda no Hemisfério Norte.",
+        "O desvio ocorre para a esquerda do vento nos dois hemisférios.",
+        "O desvio ocorre para a esquerda do vento no Hemisfério Sul e para a direita no Hemisfério Norte.",
+        "Não há desvio lateral; a corrente segue exatamente a direção do vento."
+      ],
+      "correct": 2,
+      "explanation": "A rotação da Terra desvia as correntes superficiais geradas pelo vento para a esquerda no Hemisfério Sul e para a direita no Hemisfério Norte.",
+      "comments": [
+        "Incorreta: os sentidos hemisféricos estão invertidos.",
+        "Incorreta: o sentido do desvio muda entre os hemisférios.",
+        "Correta: esquerda no Sul e direita no Norte.",
+        "Incorreta: a corrente superficial não acompanha necessariamente a direção exata do vento."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Altineu Pires Miguens",
+        "publication": "Navegação: A Ciência e a Arte, v. I",
+        "edition": "2ª revisão atualizada, DHN, 2023",
+        "section": "Capítulo 10, seção 10.3.3 — circulação pelo efeito do vento",
+        "syllabus": "Eixo III — Navegação restrita · correntes oceânicas e rotação terrestre",
+        "evidence": "O trecho consultado explica que Coriolis desvia as correntes superficiais geradas pelo vento para a esquerda no Hemisfério Sul e para a direita no Norte; a intensidade depende da velocidade da partícula e da latitude.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+      }
+    },
+    {
+      "id": "mon-c1-pivot-point-definition",
+      "category": "current",
+      "axis": "I",
+      "kind": "Avanço coerente · conceito de ponto pivô",
+      "stem": "Em uma embarcação forçada a mudar de aproamento, o ponto pivô é definido cinematicamente como o ponto situado no eixo longitudinal onde:",
+      "options": [
+        "a velocidade longitudinal é sempre máxima.",
+        "não existe movimento ou velocidade lateral.",
+        "a força do leme é necessariamente nula.",
+        "o centro de gravidade coincide sempre com o centro geométrico."
+      ],
+      "correct": 1,
+      "explanation": "O ponto pivô é um ponto cinemático flutuante do eixo longitudinal no qual a velocidade lateral é nula durante a mudança de aproamento.",
+      "comments": [
+        "Incorreta: a definição não depende de velocidade longitudinal máxima.",
+        "Correta: a ausência de velocidade lateral caracteriza o ponto pivô.",
+        "Incorreta: a força do leme pode existir; o critério é cinemático.",
+        "Incorreta: ponto pivô, centro de gravidade e centro geométrico não são necessariamente coincidentes."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Edson Mesquita dos Santos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 6, seção 6.2 — o ponto pivô",
+        "syllabus": "Eixo I — Manobrabilidade · curva de giro e movimento lateral",
+        "evidence": "O recorte consultado define o ponto pivô como ponto cinemático não estacionário no eixo longitudinal no qual não há movimento ou velocidade lateral durante a mudança de aproamento.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
+    },
+    {
+      "id": "mon-c2-pivot-point-ahead-location",
+      "category": "current",
+      "axis": "I",
+      "kind": "Avanço coerente · posição do ponto pivô",
+      "stem": "Durante uma curva sob controle do leme, com o navio movimentando-se para vante, a posição aparente do ponto pivô para um observador embarcado fica, para a maioria dos navios:",
+      "options": [
+        "um pouco a ré da proa, aproximadamente a um quinto do comprimento contado da proa.",
+        "exatamente no centro de gravidade em qualquer condição de carregamento.",
+        "sempre fora do casco, por ante-a-vante da proa.",
+        "entre a popa e o meio do navio, independentemente do sentido do movimento."
+      ],
+      "correct": 0,
+      "explanation": "Com seguimento para vante durante a curva, o navio parece pivotear sobre um ponto pouco a ré da proa. A referência indica, para a maioria dos navios, cerca de 1/5 do comprimento a partir da proa.",
+      "comments": [
+        "Correta: corresponde à posição típica indicada para movimento a vante.",
+        "Incorreta: a posição varia com o navio e sua condição de carregamento.",
+        "Incorreta: forças ambientais podem deslocá-lo para fora, mas isso não define a condição típica.",
+        "Incorreta: essa região é associada ao movimento a ré em determinada configuração, não a qualquer movimento."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Edson Mesquita dos Santos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 6, seção 6.2 — posição do ponto pivô",
+        "syllabus": "Eixo I — Manobrabilidade · curva de giro e ponto pivô",
+        "evidence": "O recorte consultado informa que, girando com movimento a vante, o navio aparenta pivotear pouco a ré da proa e cita a posição típica de cerca de 1/5 do comprimento a partir da proa.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
+    },
+    {
+      "id": "mon-c3-turning-phase-three",
+      "category": "current",
+      "axis": "I",
+      "kind": "Avanço coerente · fases da curva de giro",
+      "stem": "Na terceira fase da curva de giro de um navio, espera-se que:",
+      "options": [
+        "o leme ainda não tenha iniciado sua deflexão.",
+        "as acelerações coexistam com velocidades ainda crescentes, sem equilíbrio de forças.",
+        "se estabeleça o equilíbrio final de forças, com taxa de guinada e raio de curva constantes.",
+        "a velocidade lateral seja nula em todos os pontos do casco."
+      ],
+      "correct": 2,
+      "explanation": "A terceira fase corresponde ao regime permanente: as forças entram em equilíbrio, a taxa de guinada torna-se constante e a trajetória se acomoda em uma curva de raio constante.",
+      "comments": [
+        "Incorreta: a deflexão do leme inicia a primeira fase.",
+        "Incorreta: essa descrição corresponde à fase transitória.",
+        "Correta: caracteriza o movimento circular uniforme da fase final.",
+        "Incorreta: somente no ponto pivô a velocidade lateral é nula; outras partes do casco têm movimento lateral."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Edson Mesquita dos Santos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 6, seção 6.3.3 — terceira fase do giro",
+        "syllabus": "Eixo I — Manobrabilidade · desenvolvimento da curva de giro",
+        "evidence": "O recorte consultado descreve a terceira fase como o estabelecimento do equilíbrio final das forças, com taxa constante de guinada, ângulo de ataque constante e trajetória de raio constante.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
+    },
+    {
+      "id": "mon-t1-narrow-channel-starboard-side",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Rotação semanal · RIPEAM, Regra 9",
+      "stem": "Uma embarcação navegando ao longo de um canal estreito ou via de acesso deve manter-se:",
+      "options": [
+        "sobre o eixo do canal, qualquer que seja o tráfego.",
+        "tão próxima quanto possível e seguro do limite exterior a seu boreste.",
+        "junto ao limite exterior a bombordo, para facilitar ultrapassagens.",
+        "no bordo de sotavento, independentemente dos limites do canal."
+      ],
+      "correct": 1,
+      "explanation": "A Regra 9(a) determina que a embarcação se mantenha tão próxima quanto possível e seguro do limite exterior do canal ou da via de acesso situado a seu boreste.",
+      "comments": [
+        "Incorreta: a regra não prescreve permanência no eixo.",
+        "Correta: reproduz a obrigação da Regra 9(a).",
+        "Incorreta: o bordo regulamentar é boreste, nas condições indicadas.",
+        "Incorreta: sotavento não substitui o critério da Regra 9."
+      ],
       "reference": {
         "referenceId": "III-16",
-        "base": "DPC / IMO",
+        "base": "IMO / Marinha do Brasil",
         "publication": "COLREG - Consolidated Edition 2018",
         "edition": "2018",
-        "section": "Parte C, Regras 23 e 28",
-        "syllabus": "Eixo III — Navegação restrita · RIPEAM, luzes e marcas",
-        "evidence": "A Regra 28 consultada permite à embarcação restrita devido ao calado exibir três luzes circulares encarnadas em linha vertical, além das luzes prescritas na Regra 23 para embarcação de propulsão mecânica.",
-        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view",
+        "section": "Parte B, Regra 9(a) — canais estreitos",
+        "syllabus": "Eixo III — Navegação restrita · RIPEAM e canais estreitos",
+        "evidence": "O texto consultado determina que a embarcação navegando ao longo de canal estreito ou via de acesso se mantenha tão próxima quanto possível e seguro do limite exterior que estiver a seu boreste.",
+        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
+      }
+    },
+    {
+      "id": "mon-t2-narrow-channel-crossing",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Rotação semanal · RIPEAM, cruzamento de canal",
+      "stem": "Uma embarcação pretende cruzar um canal estreito, mas sua manobra interferiria na passagem de outra que só pode navegar com segurança dentro do canal. Nesse caso, a embarcação que cruza:",
+      "options": [
+        "pode prosseguir, porque tem preferência sobre quem navega longitudinalmente.",
+        "não deve cruzar enquanto sua manobra interferir naquela passagem.",
+        "deve cruzar apenas pela popa da outra, sem qualquer outra avaliação.",
+        "pode prosseguir desde que emita cinco apitos curtos."
+      ],
+      "correct": 1,
+      "explanation": "A Regra 9(d) proíbe o cruzamento quando ele interferir na passagem de embarcação que só possa navegar com segurança dentro do canal ou via de acesso.",
+      "comments": [
+        "Incorreta: não existe essa preferência para quem cruza.",
+        "Correta: é a restrição expressa na Regra 9(d).",
+        "Incorreta: passar pela popa não autoriza automaticamente uma interferência.",
+        "Incorreta: cinco apitos exprimem dúvida ou advertência e não concedem direito de passagem."
+      ],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "IMO / Marinha do Brasil",
+        "publication": "COLREG - Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte B, Regra 9(d) — cruzamento de canais estreitos",
+        "syllabus": "Eixo III — Navegação restrita · RIPEAM e canais estreitos",
+        "evidence": "O recorte consultado proíbe cruzar canal estreito ou via de acesso quando o cruzamento interferir na passagem de embarcação que só possa navegar com segurança dentro deles.",
+        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
+      }
+    },
+    {
+      "id": "mon-o1-pscpp2011-q25-correction",
+      "category": "official",
+      "axis": "I",
+      "kind": "Questão oficial histórica · reaplicação corretiva · assinale a incorreta",
+      "stem": "Com relação aos efeitos do leme e à curva de giro de um navio, assinale a opção INCORRETA:",
+      "options": [
+        "Quando se carrega o leme com o navio dando adiante, a velocidade diminui, o navio abate para o bordo oposto ao da guinada, assume um ângulo de deriva e, em alguns casos, aderna.",
+        "O avanço diminui quando aumenta o ângulo do leme e aumenta quando cresce a velocidade do navio.",
+        "O tempo de giro diminui quando aumentam o ângulo do leme e a velocidade do navio.",
+        "O ângulo de deriva aumenta com o ângulo do leme, porém diminui quando aumenta a velocidade do navio.",
+        "A velocidade angular é nula no início, atinge o máximo antes dos 90° de guinada e depois se reduz ligeiramente até tornar-se constante; em geral, o primeiro quadrante é percorrido em menos tempo que os seguintes."
+      ],
+      "correct": 3,
+      "explanation": "A alternativa D é a incorreta. O ângulo de deriva aumenta com o ângulo do leme, mas a obra-base o considera independente da velocidade do navio. Gabarito oficial: D.",
+      "comments": [
+        "Correta como afirmação: descreve redução de velocidade, abatimento inicial, estabelecimento do ângulo de deriva e possível adernamento.",
+        "Correta como afirmação: maior ângulo de leme reduz o avanço, enquanto maior velocidade o aumenta.",
+        "Correta como afirmação: maior ângulo de leme ou maior velocidade reduz o tempo necessário para o giro.",
+        "Incorreta — gabarito: o ângulo de deriva não diminui com o aumento da velocidade; a obra o trata como independente dela.",
+        "Correta como afirmação: resume a evolução típica da velocidade angular ao longo da curva de giro."
+      ],
+      "reference": {
+        "referenceId": "II-01",
+        "base": "Diretoria de Portos e Costas / Maurílio M. Fonseca",
+        "publication": "PSCPP 2011 — Prova Amarela / Arte Naval, v. 1",
+        "edition": "Prova de 2011; obra-base: 8. ed., MB, 2019",
+        "section": "Questão 25; Arte Naval, capítulo 12, seção 12.56.3 — efeitos do leme",
+        "syllabus": "Eixos I e II — Manobrabilidade e Arte Naval · curva de giro",
+        "evidence": "A prova oficial registra a questão e o gabarito D. No recorte da obra-base, o ângulo de deriva aumenta com o ângulo do leme e é considerado independente da velocidade; os demais comportamentos são apresentados na seção sobre efeitos do leme.",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view",
         "origin": {
           "exam": "PSCPP 2011 — Prova Amarela",
           "year": 2011,
-          "question": 55,
-          "answer": "E",
-          "adaptation": "Transcrição da questão oficial, com atualização ortográfica e tipográfica mínima, sem alteração da solução.",
+          "question": 25,
+          "answer": "D",
+          "adaptation": "Texto atualizado ortograficamente e repetição da alternativa C removida, sem alteração do conteúdo ou do gabarito.",
           "url": "https://drive.google.com/file/d/1Fdz2o1xtzIkg1KONqP95HemlINDJcv_1/view"
         }
       }
