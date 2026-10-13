@@ -1,336 +1,131 @@
 {
-  "roundId": "pivot-point-ripeam-corrections-2026-10-12",
-  "label": "Rodada adaptativa de 12 de outubro de 2026",
-  "title": "Ponto pivô, curva de giro e correções prioritárias",
+  "roundId": "fog-twin-screw-corrections-2026-10-13",
+  "label": "Rodada adaptativa de 13 de outubro de 2026",
+  "title": "Nevoeiros, dois hélices e correções da curva de giro",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Correção do desempenho direto e indireto de rebocadores ASD · Revisões de avanço e atraso, aparelhos de laborar e Coriolis · Ponto pivô e fases da curva de giro · Regra 9 do RIPEAM · Questão oficial sobre efeitos do leme",
+  "path": "Correções de ponto pivô, ângulo de deriva, ciclones e SMCP · Formação e classificação de nevoeiros · Manobra de navios de dois hélices · Reaplicação oficial sobre efeitos do leme",
   "method": "4–3–2–1",
-  "mixPlan": {
-    "review": 4,
-    "current": 3,
-    "rotation": 2,
-    "official": 1
-  },
+  "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
   "questions": [
     {
-      "id": "mon-r1-asd-direct-indirect-correction",
+      "id": "tue-r1-pivot-point-definition-correction",
       "category": "review",
-      "axis": "II",
-      "kind": "Revisão FSRS imediata · nota 0 · lacuna de conteúdo",
-      "stem": "Comparado a um rebocador trator Voith Schneider, um rebocador ASD empregado como rebocador de popa por cabo tende, segundo a referência, a apresentar:",
-      "options": [
-        "maior efetividade no modo indireto e menor efetividade na tração direta.",
-        "efetividade idêntica nos modos direto e indireto, qualquer que seja o ponto de reboque.",
-        "efetividade geralmente um pouco menor no modo indireto, mas possivelmente maior na tração direta.",
-        "inaptidão para controlar o rumo e a velocidade do navio assistido."
-      ],
+      "axis": "I",
+      "kind": "Revisão FSRS imediata · nota 0 · confusão conceitual",
+      "stem": "Durante uma guinada, qual descrição caracteriza corretamente o ponto pivô do navio?",
+      "options": ["É um ponto fixo no centro de gravidade, independentemente da condição de movimento.", "É o ponto do eixo longitudinal onde a velocidade angular é máxima.", "É um ponto cinemático, não estacionário, do eixo longitudinal, no qual a velocidade lateral é nula.", "É o centro de pressão do leme, determinado apenas pelo ângulo de leme aplicado."],
       "correct": 2,
-      "explanation": "O ASD de popa por cabo é efetivo no controle de rumo e velocidade. Comparado ao trator VS, tende a ser um pouco menos efetivo no modo indireto, mas pode ser um pouco mais efetivo na tração direta.",
-      "comments": [
-        "Incorreta: inverte a comparação apresentada na obra.",
-        "Incorreta: o modo de operação e a posição do ponto de reboque influenciam o desempenho.",
-        "Correta: distingue adequadamente a assistência indireta da tração direta.",
-        "Incorreta: a obra reconhece sua efetividade para controle de rumo e velocidade."
-      ],
-      "reference": {
-        "referenceId": "II-09",
-        "base": "Henk Hensen",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulo 2 — ASD tugs e métodos de assistência",
-        "syllabus": "Eixo II — Arte Naval · capacidades e limitações dos rebocadores",
-        "evidence": "O recorte consultado afirma que o ASD operando pela popa é efetivo para controle de velocidade e rumo; sua efetividade no modo indireto é geralmente um pouco menor que a de tratores VS, podendo ser um pouco maior na tração direta.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
-      }
+      "explanation": "O ponto pivô é definido cinematicamente no eixo longitudinal pela ausência de velocidade lateral naquele ponto. Sua posição varia com o movimento e com as forças atuantes.",
+      "comments": ["Incorreta: o ponto pivô não é fixo nem coincide necessariamente com o centro de gravidade.", "Incorreta: a definição não utiliza a velocidade angular máxima.", "Correta: reúne os elementos cinemáticos essenciais — ponto móvel no eixo longitudinal e velocidade lateral nula.", "Incorreta: centro de pressão do leme e ponto pivô são conceitos diferentes."],
+      "reference": {"referenceId": "I-08", "base": "Edson Mesquita dos Santos", "publication": "A Manobrabilidade do Navio no Século 21", "edition": "1. ed., CONAPRA, 2021", "section": "Capítulo 6, seção 6.2 — o ponto pivô", "syllabus": "Eixo I — Manobrabilidade · curva de giro e movimento lateral", "evidence": "O recorte consultado define o ponto pivô como ponto cinemático não estacionário situado no eixo longitudinal, no qual não há movimento ou velocidade lateral durante a mudança de aproamento.", "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"}
     },
     {
-      "id": "mon-r2-advance-delay-correction",
+      "id": "tue-r2-drift-angle-speed-correction",
       "category": "review",
-      "axis": "III",
+      "axis": "II",
+      "kind": "Revisão FSRS imediata · nota 0 · confusão na questão oficial",
+      "stem": "Segundo as considerações práticas de Arte Naval sobre a curva de giro, o ângulo de deriva:",
+      "options": ["diminui com o aumento do ângulo do leme e cresce com a velocidade.", "aumenta com o ângulo do leme e é considerado independente da velocidade do navio.", "é independente do ângulo do leme e diminui com o calado.", "permanece nulo após estabelecida a parte circular da trajetória."],
+      "correct": 1,
+      "explanation": "A obra-base afirma que o ângulo de deriva aumenta com o ângulo do leme e com a diminuição do calado, mas é independente da velocidade do navio.",
+      "comments": ["Incorreta: inverte a relação com o ângulo do leme e atribui influência indevida à velocidade.", "Correta: reproduz as relações indicadas no recorte consultado.", "Incorreta: o ângulo do leme influencia o ângulo de deriva; a diminuição do calado tende a aumentá-lo.", "Incorreta: o navio segue a curva com ângulo de deriva diferente de zero."],
+      "reference": {"referenceId": "II-01", "base": "Maurílio M. Fonseca", "publication": "Arte Naval, v. 1", "edition": "8. ed., MB, 2019", "section": "Capítulo 12, seção 12.56.3 — considerações práticas da curva de giro", "syllabus": "Eixos I e II — Manobrabilidade e Arte Naval · efeitos do leme e curva de giro", "evidence": "No recorte consultado, o ângulo de deriva aumenta com o ângulo do leme e com a diminuição do calado, sendo tratado como independente da velocidade do navio.", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"}
+    },
+    {
+      "id": "tue-r3-tropical-cyclone-threshold-correction",
+      "category": "review",
+      "axis": "V",
       "kind": "Revisão FSRS vencida · nota 0 · erro de leitura",
-      "stem": "Ao comparar, no mesmo instante, a posição observada com a estimada, verificou-se que a distância percorrida no fundo foi menor que a percorrida na superfície. A componente longitudinal do efeito da corrente é denominada:",
-      "options": [
-        "avanço.",
-        "atraso.",
-        "caimento.",
-        "abatimento."
-      ],
-      "correct": 1,
-      "explanation": "Há atraso quando a distância percorrida no fundo é menor que a percorrida na superfície, equivalendo a velocidade no fundo menor que a velocidade do navio.",
-      "comments": [
-        "Incorreta: avanço ocorre quando o progresso no fundo é maior.",
-        "Correta: menor distância no fundo caracteriza atraso.",
-        "Incorreta: caimento é a componente transversal da diferença entre as posições.",
-        "Incorreta: abatimento é o ângulo entre os rumos na superfície e no fundo."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte, v. I",
-        "edition": "2ª revisão atualizada, DHN, 2023",
-        "section": "Capítulo 5, seção 5.5 — caimento, avanço e atraso",
-        "syllabus": "Eixo III — Navegação restrita · navegação estimada e correntes",
-        "evidence": "O trecho consultado decompõe o efeito da corrente em componente longitudinal, avanço ou atraso, e componente transversal, caimento; define atraso quando a distância e a velocidade no fundo são menores que as correspondentes na superfície.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
-    },
-    {
-      "id": "mon-r3-tackle-tension-bight-hitch",
-      "category": "review",
-      "axis": "II",
-      "kind": "Revisão FSRS vencida · nota 0 · aparelhos de laborar",
-      "stem": "Ao içar um peso com uma talha e ao engatar a talha em um cabo que não possui alça, qual combinação está correta?",
-      "options": [
-        "Tensão máxima na arreigada fixa; engate por encapeladura singela.",
-        "Tensão máxima no tirador; engate pela boca-de-lobo.",
-        "Tensão nula no cadernal móvel; engate por volta de fiel.",
-        "Tensões necessariamente iguais; engate por nó direito."
-      ],
-      "correct": 1,
-      "explanation": "No içamento, a tensão máxima ocorre no tirador e diminui até a arreigada fixa. Para engatar a talha em cabo sem alça, a regra prática recomenda a boca-de-lobo.",
-      "comments": [
-        "Incorreta: inverte a distribuição das tensões e escolhe engate diverso do recomendado.",
-        "Correta: reúne as duas regras práticas da obra.",
-        "Incorreta: o cadernal móvel não fica sem tensão, e a volta de fiel não é a recomendação citada.",
-        "Incorreta: as tensões variam ao longo do aparelho, e nó direito não é o engate prescrito."
-      ],
-      "reference": {
-        "referenceId": "II-01",
-        "base": "Maurílio M. Fonseca",
-        "publication": "Arte Naval, v. 1",
-        "edition": "8. ed., MB, 2019",
-        "section": "Capítulo 9, §9.21 — regras práticas dos aparelhos de laborar",
-        "syllabus": "Eixo II — Arte Naval · poleame e aparelhos de laborar",
-        "evidence": "O recorte consultado estabelece que, ao içar, o tirador recebe a tensão máxima e a arreigada fixa a mínima; também recomenda a boca-de-lobo para engatar uma talha em cabo sem alça.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
-      }
-    },
-    {
-      "id": "mon-r4-coriolis-wind-current-correction",
-      "category": "review",
-      "axis": "III",
-      "kind": "Revisão FSRS vencida · nota 0 · confusão hemisférica",
-      "stem": "Sobre a ação de Coriolis nas correntes geradas pelo vento na camada superficial, assinale a alternativa correta:",
-      "options": [
-        "O desvio ocorre para a direita do vento no Hemisfério Sul e para a esquerda no Hemisfério Norte.",
-        "O desvio ocorre para a esquerda do vento nos dois hemisférios.",
-        "O desvio ocorre para a esquerda do vento no Hemisfério Sul e para a direita no Hemisfério Norte.",
-        "Não há desvio lateral; a corrente segue exatamente a direção do vento."
-      ],
+      "stem": "Na classificação apresentada por Miguens, um ciclone tropical com vento máximo sustentado à superfície, médio em um minuto, de exatamente 64 nós é classificado como:",
+      "options": ["depressão tropical.", "tempestade tropical.", "furacão.", "ciclone subtropical, necessariamente."],
       "correct": 2,
-      "explanation": "A rotação da Terra desvia as correntes superficiais geradas pelo vento para a esquerda no Hemisfério Sul e para a direita no Hemisfério Norte.",
-      "comments": [
-        "Incorreta: os sentidos hemisféricos estão invertidos.",
-        "Incorreta: o sentido do desvio muda entre os hemisférios.",
-        "Correta: esquerda no Sul e direita no Norte.",
-        "Incorreta: a corrente superficial não acompanha necessariamente a direção exata do vento."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte, v. I",
-        "edition": "2ª revisão atualizada, DHN, 2023",
-        "section": "Capítulo 10, seção 10.3.3 — circulação pelo efeito do vento",
-        "syllabus": "Eixo III — Navegação restrita · correntes oceânicas e rotação terrestre",
-        "evidence": "O trecho consultado explica que Coriolis desvia as correntes superficiais geradas pelo vento para a esquerda no Hemisfério Sul e para a direita no Norte; a intensidade depende da velocidade da partícula e da latitude.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
+      "explanation": "Furacão corresponde a vento máximo sustentado igual ou superior a 64 nós. Tempestade tropical vai de 34 nós, inclusive, até menos de 64 nós.",
+      "comments": ["Incorreta: depressão tropical possui vento inferior a 34 nós.", "Incorreta: a faixa de tempestade tropical termina antes de 64 nós.", "Correta: o limite inferior da classe furacão é inclusivo em 64 nós.", "Incorreta: a classificação tropical não se converte automaticamente em subtropical nesse limiar."],
+      "reference": {"referenceId": "V-01", "base": "Altineu Pires Miguens", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN", "section": "Capítulo 45 — classificação dos ciclones tropicais", "syllabus": "Eixo V — Meteorologia · sistemas atmosféricos e ciclones", "evidence": "O recorte consultado classifica depressão tropical abaixo de 34 nós, tempestade tropical de 34 até menos de 64 nós e furacão com vento sustentado igual ou superior a 64 nós.", "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"}
     },
     {
-      "id": "mon-c1-pivot-point-definition",
-      "category": "current",
-      "axis": "I",
-      "kind": "Avanço coerente · conceito de ponto pivô",
-      "stem": "Em uma embarcação forçada a mudar de aproamento, o ponto pivô é definido cinematicamente como o ponto situado no eixo longitudinal onde:",
-      "options": [
-        "a velocidade longitudinal é sempre máxima.",
-        "não existe movimento ou velocidade lateral.",
-        "a força do leme é necessariamente nula.",
-        "o centro de gravidade coincide sempre com o centro geométrico."
-      ],
-      "correct": 1,
-      "explanation": "O ponto pivô é um ponto cinemático flutuante do eixo longitudinal no qual a velocidade lateral é nula durante a mudança de aproamento.",
-      "comments": [
-        "Incorreta: a definição não depende de velocidade longitudinal máxima.",
-        "Correta: a ausência de velocidade lateral caracteriza o ponto pivô.",
-        "Incorreta: a força do leme pode existir; o critério é cinemático.",
-        "Incorreta: ponto pivô, centro de gravidade e centro geométrico não são necessariamente coincidentes."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Edson Mesquita dos Santos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 6, seção 6.2 — o ponto pivô",
-        "syllabus": "Eixo I — Manobrabilidade · curva de giro e movimento lateral",
-        "evidence": "O recorte consultado define o ponto pivô como ponto cinemático não estacionário no eixo longitudinal no qual não há movimento ou velocidade lateral durante a mudança de aproamento.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
-    },
-    {
-      "id": "mon-c2-pivot-point-ahead-location",
-      "category": "current",
-      "axis": "I",
-      "kind": "Avanço coerente · posição do ponto pivô",
-      "stem": "Durante uma curva sob controle do leme, com o navio movimentando-se para vante, a posição aparente do ponto pivô para um observador embarcado fica, para a maioria dos navios:",
-      "options": [
-        "um pouco a ré da proa, aproximadamente a um quinto do comprimento contado da proa.",
-        "exatamente no centro de gravidade em qualquer condição de carregamento.",
-        "sempre fora do casco, por ante-a-vante da proa.",
-        "entre a popa e o meio do navio, independentemente do sentido do movimento."
-      ],
+      "id": "tue-r4-smcp-instruction-advice-correction",
+      "category": "review",
+      "axis": "VI",
+      "kind": "Revisão FSRS vencida · nota 0 · confusão entre marcadores",
+      "stem": "Nas IMO SMCP, qual distinção entre os marcadores INSTRUCTION e ADVICE está correta?",
+      "options": ["INSTRUCTION pressupõe autoridade e vinculação legal, salvo razão de segurança conflitante; ADVICE é recomendação cuja decisão permanece com o destinatário.", "ADVICE é juridicamente obrigatório, enquanto INSTRUCTION é mera recomendação operacional.", "Ambos são obrigatórios e diferem apenas quanto ao idioma empregado na mensagem.", "Nenhum deles pode ser usado por estação VTS em comunicação terra-navio."],
       "correct": 0,
-      "explanation": "Com seguimento para vante durante a curva, o navio parece pivotear sobre um ponto pouco a ré da proa. A referência indica, para a maioria dos navios, cerca de 1/5 do comprimento a partir da proa.",
-      "comments": [
-        "Correta: corresponde à posição típica indicada para movimento a vante.",
-        "Incorreta: a posição varia com o navio e sua condição de carregamento.",
-        "Incorreta: forças ambientais podem deslocá-lo para fora, mas isso não define a condição típica.",
-        "Incorreta: essa região é associada ao movimento a ré em determinada configuração, não a qualquer movimento."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Edson Mesquita dos Santos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 6, seção 6.2 — posição do ponto pivô",
-        "syllabus": "Eixo I — Manobrabilidade · curva de giro e ponto pivô",
-        "evidence": "O recorte consultado informa que, girando com movimento a vante, o navio aparenta pivotear pouco a ré da proa e cita a posição típica de cerca de 1/5 do comprimento a partir da proa.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
+      "explanation": "INSTRUCTION identifica mensagem emitida por quem possui autoridade e deve ser cumprida, salvo razão de segurança conflitante a ser informada. ADVICE identifica recomendação, cabendo ao destinatário decidir, após considerá-la cuidadosamente.",
+      "comments": ["Correta: distingue autoridade e força vinculante de INSTRUCTION da natureza recomendatória de ADVICE.", "Incorreta: troca os significados dos dois marcadores.", "Incorreta: a diferença é material, não linguística.", "Incorreta: o próprio recorte cita uma estação VTS como exemplo de emissor autorizado de INSTRUCTION."],
+      "reference": {"referenceId": "VI-01", "base": "International Maritime Organization", "publication": "IMO Standard Marine Communication Phrases (SMCP)", "edition": "A.918(22), 2001", "section": "Parte A1/6 — Application of Message Markers", "syllabus": "Eixo VI — Comunicações · SMCP, Partes A e B", "evidence": "O recorte consultado define INSTRUCTION como mensagem baseada em autoridade e legalmente vinculante, ressalvada razão de segurança conflitante, e ADVICE como recomendação cuja aceitação permanece sob decisão do destinatário.", "url": "https://drive.google.com/file/d/1nEnUGi3L9FcPy42aOtSPRoTLmKcqQZtU/view"}
     },
     {
-      "id": "mon-c3-turning-phase-three",
+      "id": "tue-c1-fog-formation-processes",
       "category": "current",
-      "axis": "I",
-      "kind": "Avanço coerente · fases da curva de giro",
-      "stem": "Na terceira fase da curva de giro de um navio, espera-se que:",
-      "options": [
-        "o leme ainda não tenha iniciado sua deflexão.",
-        "as acelerações coexistam com velocidades ainda crescentes, sem equilíbrio de forças.",
-        "se estabeleça o equilíbrio final de forças, com taxa de guinada e raio de curva constantes.",
-        "a velocidade lateral seja nula em todos os pontos do casco."
-      ],
+      "axis": "V",
+      "kind": "Avanço coerente · processos de formação de nevoeiro",
+      "stem": "Quais processos podem levar o ar úmido superficial à saturação e produzir nevoeiro, segundo Miguens?",
+      "options": ["Somente aumento da pressão e subsidência.", "Resfriamento do ar ou aumento da evaporação.", "Apenas convecção profunda e precipitação intensa.", "Somente mistura turbulenta causada por vento forte."],
+      "correct": 1,
+      "explanation": "O recorte apresenta dois processos básicos: resfriamento do ar úmido superficial e aumento da evaporação, ambos capazes de produzir saturação e condensação.",
+      "comments": ["Incorreta: pressão e subsidência não são os dois mecanismos básicos indicados.", "Correta: reúne as duas vias de formação descritas na obra.", "Incorreta: convecção profunda não é requisito geral para nevoeiro.", "Incorreta: ventos fortes tendem a dissipar ou elevar o nevoeiro, e não constituem o único processo de formação."],
+      "reference": {"referenceId": "V-01", "base": "Altineu Pires Miguens", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN", "section": "Capítulo 45, seção 45.2.6 — visibilidade: nevoeiro e névoa seca", "syllabus": "Eixo V — Meteorologia · fenômenos que reduzem a visibilidade", "evidence": "O recorte consultado indica resfriamento e aumento da evaporação como os dois processos capazes de saturar o ar úmido superficial e produzir nevoeiro.", "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"}
+    },
+    {
+      "id": "tue-c2-radiation-fog-condition",
+      "category": "current",
+      "axis": "V",
+      "kind": "Avanço coerente · nevoeiro de radiação",
+      "stem": "Qual cenário é característico da formação de nevoeiro de radiação?",
+      "options": ["Ar muito frio deslocando-se sobre mar sensivelmente mais quente.", "Ar quente e úmido deslocando-se sobre mar mais frio.", "Resfriamento noturno do solo, que resfria o ar em contato com a superfície.", "Ascensão de ar úmido por uma encosta, com resfriamento adiabático."],
       "correct": 2,
-      "explanation": "A terceira fase corresponde ao regime permanente: as forças entram em equilíbrio, a taxa de guinada torna-se constante e a trajetória se acomoda em uma curva de raio constante.",
-      "comments": [
-        "Incorreta: a deflexão do leme inicia a primeira fase.",
-        "Incorreta: essa descrição corresponde à fase transitória.",
-        "Correta: caracteriza o movimento circular uniforme da fase final.",
-        "Incorreta: somente no ponto pivô a velocidade lateral é nula; outras partes do casco têm movimento lateral."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Edson Mesquita dos Santos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 6, seção 6.3.3 — terceira fase do giro",
-        "syllabus": "Eixo I — Manobrabilidade · desenvolvimento da curva de giro",
-        "evidence": "O recorte consultado descreve a terceira fase como o estabelecimento do equilíbrio final das forças, com taxa constante de guinada, ângulo de ataque constante e trajetória de raio constante.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
+      "explanation": "O nevoeiro de radiação decorre do contato do ar com o solo resfriado durante a noite.",
+      "comments": ["Incorreta: descreve nevoeiro de vapor ou fumaça do mar.", "Incorreta: descreve nevoeiro de advecção.", "Correta: o resfriamento radiativo noturno do solo caracteriza esse tipo.", "Incorreta: descreve nevoeiro orográfico ou de encosta."],
+      "reference": {"referenceId": "V-01", "base": "Altineu Pires Miguens", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN", "section": "Capítulo 45, seção 45.2.6 — nevoeiros de resfriamento", "syllabus": "Eixo V — Meteorologia · nevoeiros de resfriamento", "evidence": "O recorte consultado associa o nevoeiro de radiação ao contato do ar com o solo resfriado durante a noite.", "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"}
     },
     {
-      "id": "mon-t1-narrow-channel-starboard-side",
+      "id": "tue-c3-advection-fog-condition",
+      "category": "current",
+      "axis": "V",
+      "kind": "Avanço coerente · nevoeiro de advecção",
+      "stem": "O nevoeiro de advecção tende a formar-se quando:",
+      "options": ["uma chuva quente evapora em uma massa de ar mais fria.", "o ar muito frio passa sobre água muito mais quente.", "o ar úmido sobe uma encosta e se resfria adiabaticamente.", "ar quente e úmido em movimento passa sobre uma superfície mais fria."],
+      "correct": 3,
+      "explanation": "O nevoeiro de advecção é produzido pelo resfriamento de ar quente e úmido que se desloca sobre solo ou mar mais frio.",
+      "comments": ["Incorreta: corresponde ao mecanismo de nevoeiro frontal.", "Incorreta: corresponde ao nevoeiro de vapor ou fumaça do mar.", "Incorreta: corresponde ao nevoeiro orográfico.", "Correta: descreve a advecção de ar quente e úmido sobre superfície fria."],
+      "reference": {"referenceId": "V-01", "base": "Altineu Pires Miguens", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN", "section": "Capítulo 45, seção 45.2.6 — nevoeiros de resfriamento", "syllabus": "Eixo V — Meteorologia · nevoeiro de advecção", "evidence": "O recorte consultado caracteriza o nevoeiro de advecção pelo contato de ar quente e úmido em movimento com uma superfície mais fria sobre a qual se desloca.", "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"}
+    },
+    {
+      "id": "tue-t1-twin-screw-tactical-diameter-time",
       "category": "rotation",
-      "axis": "III",
-      "kind": "Rotação semanal · RIPEAM, Regra 9",
-      "stem": "Uma embarcação navegando ao longo de um canal estreito ou via de acesso deve manter-se:",
-      "options": [
-        "sobre o eixo do canal, qualquer que seja o tráfego.",
-        "tão próxima quanto possível e seguro do limite exterior a seu boreste.",
-        "junto ao limite exterior a bombordo, para facilitar ultrapassagens.",
-        "no bordo de sotavento, independentemente dos limites do canal."
-      ],
+      "axis": "II",
+      "kind": "Rotação semanal · Arte Naval e manobra de dois hélices",
+      "stem": "Em um navio de dois hélices já evoluindo, qual efeito é esperado ao parar ou dar atrás com a máquina de dentro da curva?",
+      "options": ["O diâmetro tático aumenta e o tempo de evolução sempre diminui.", "O diâmetro tático diminui, mas o tempo de evolução pode aumentar em relação aos dois hélices adiante.", "O diâmetro tático permanece inalterado e apenas o avanço aumenta.", "A guinada cessa porque o leme perde imediatamente toda a ação."],
       "correct": 1,
-      "explanation": "A Regra 9(a) determina que a embarcação se mantenha tão próxima quanto possível e seguro do limite exterior do canal ou da via de acesso situado a seu boreste.",
-      "comments": [
-        "Incorreta: a regra não prescreve permanência no eixo.",
-        "Correta: reproduz a obrigação da Regra 9(a).",
-        "Incorreta: o bordo regulamentar é boreste, nas condições indicadas.",
-        "Incorreta: sotavento não substitui o critério da Regra 9."
-      ],
-      "reference": {
-        "referenceId": "III-16",
-        "base": "IMO / Marinha do Brasil",
-        "publication": "COLREG - Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte B, Regra 9(a) — canais estreitos",
-        "syllabus": "Eixo III — Navegação restrita · RIPEAM e canais estreitos",
-        "evidence": "O texto consultado determina que a embarcação navegando ao longo de canal estreito ou via de acesso se mantenha tão próxima quanto possível e seguro do limite exterior que estiver a seu boreste.",
-        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
-      }
+      "explanation": "Parar ou inverter a máquina de dentro aumenta o conjugado de rotação e reduz o diâmetro tático, embora a perda de velocidade possa aumentar o tempo de evolução.",
+      "comments": ["Incorreta: o efeito indicado sobre o diâmetro está invertido e o tempo não necessariamente diminui.", "Correta: reúne redução do diâmetro e possível aumento do tempo de evolução.", "Incorreta: a manobra altera o conjugado, a velocidade e o diâmetro tático.", "Incorreta: não há perda instantânea e total de governo nas condições descritas."],
+      "reference": {"referenceId": "II-01", "base": "Maurílio M. Fonseca", "publication": "Arte Naval, v. 1", "edition": "8. ed., MB, 2019", "section": "Capítulo 12, seção 12.56.3 — evolução de navio de dois hélices", "syllabus": "Eixo II — Arte Naval · governo e manobra de navios de dois hélices", "evidence": "O recorte consultado informa que parar ou dar atrás com a máquina de dentro reduz o diâmetro tático pelo aumento do conjugado de rotação, mas pode elevar o tempo de evolução por reduzir a velocidade.", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"}
     },
     {
-      "id": "mon-t2-narrow-channel-crossing",
+      "id": "tue-t2-twin-rudder-propeller-discharge",
       "category": "rotation",
-      "axis": "III",
-      "kind": "Rotação semanal · RIPEAM, cruzamento de canal",
-      "stem": "Uma embarcação pretende cruzar um canal estreito, mas sua manobra interferiria na passagem de outra que só pode navegar com segurança dentro do canal. Nesse caso, a embarcação que cruza:",
-      "options": [
-        "pode prosseguir, porque tem preferência sobre quem navega longitudinalmente.",
-        "não deve cruzar enquanto sua manobra interferir naquela passagem.",
-        "deve cruzar apenas pela popa da outra, sem qualquer outra avaliação.",
-        "pode prosseguir desde que emita cinco apitos curtos."
-      ],
-      "correct": 1,
-      "explanation": "A Regra 9(d) proíbe o cruzamento quando ele interferir na passagem de embarcação que só possa navegar com segurança dentro do canal ou via de acesso.",
-      "comments": [
-        "Incorreta: não existe essa preferência para quem cruza.",
-        "Correta: é a restrição expressa na Regra 9(d).",
-        "Incorreta: passar pela popa não autoriza automaticamente uma interferência.",
-        "Incorreta: cinco apitos exprimem dúvida ou advertência e não concedem direito de passagem."
-      ],
-      "reference": {
-        "referenceId": "III-16",
-        "base": "IMO / Marinha do Brasil",
-        "publication": "COLREG - Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte B, Regra 9(d) — cruzamento de canais estreitos",
-        "syllabus": "Eixo III — Navegação restrita · RIPEAM e canais estreitos",
-        "evidence": "O recorte consultado proíbe cruzar canal estreito ou via de acesso quando o cruzamento interferir na passagem de embarcação que só possa navegar com segurança dentro deles.",
-        "url": "https://drive.google.com/file/d/18YNPzSgQghFHYJkDZ07Z7DUjJ3mWCnc8/view"
-      }
+      "axis": "II",
+      "kind": "Rotação semanal · dois lemes e corrente de descarga",
+      "stem": "Em um navio com dois hélices e dois lemes, colocando-se um hélice adiante e o outro atrás, qual afirmação é correta?",
+      "options": ["O leme atrás do hélice que dá atrás produz sempre a maior força lateral.", "As correntes de descarga anulam a ação dos lemes, impedindo giro sobre a quilha.", "O hélice que dá adiante exerce a maior influência no leme situado em sua descarga, favorecendo o giro para o bordo desejado.", "A combinação só produz movimento longitudinal, sem momento de guinada."],
+      "correct": 2,
+      "explanation": "A corrente de descarga do hélice que dá adiante aumenta fortemente a ação do leme colocado atrás dele. Com combinações adequadas de máquinas e leme, o navio pode girar praticamente sobre a quilha.",
+      "comments": ["Incorreta: a descarga do hélice adiante é a influência predominante sobre o respectivo leme.", "Incorreta: as correntes de descarga reforçam, em vez de anularem, a ação dos lemes.", "Correta: traduz a predominância do hélice adiante e o uso do leme para intensificar o giro.", "Incorreta: a combinação cria momento de guinada e força lateral na popa."],
+      "reference": {"referenceId": "II-01", "base": "Maurílio M. Fonseca", "publication": "Arte Naval, v. 1", "edition": "8. ed., MB, 2019", "section": "Capítulo 12, seção 12.16 — manobra dos navios de dois lemes", "syllabus": "Eixo II — Arte Naval · ação combinada de hélices e lemes", "evidence": "O recorte consultado explica que, com hélices em sentidos opostos, a descarga do hélice adiante exerce maior efeito no leme correspondente e pode ser usada para produzir forte momento de guinada.", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"}
     },
     {
-      "id": "mon-o1-pscpp2011-q25-correction",
+      "id": "tue-o1-pscpp2011-q25-retry",
       "category": "official",
       "axis": "I",
       "kind": "Questão oficial histórica · reaplicação corretiva · assinale a incorreta",
       "stem": "Com relação aos efeitos do leme e à curva de giro de um navio, assinale a opção INCORRETA:",
-      "options": [
-        "Quando se carrega o leme com o navio dando adiante, a velocidade diminui, o navio abate para o bordo oposto ao da guinada, assume um ângulo de deriva e, em alguns casos, aderna.",
-        "O avanço diminui quando aumenta o ângulo do leme e aumenta quando cresce a velocidade do navio.",
-        "O tempo de giro diminui quando aumentam o ângulo do leme e a velocidade do navio.",
-        "O ângulo de deriva aumenta com o ângulo do leme, porém diminui quando aumenta a velocidade do navio.",
-        "A velocidade angular é nula no início, atinge o máximo antes dos 90° de guinada e depois se reduz ligeiramente até tornar-se constante; em geral, o primeiro quadrante é percorrido em menos tempo que os seguintes."
-      ],
+      "options": ["Quando se carrega o leme com o navio dando adiante, a velocidade diminui, o navio abate para o bordo oposto ao da guinada, assume um ângulo de deriva e, em alguns casos, aderna.", "O avanço diminui quando aumenta o ângulo do leme e aumenta quando cresce a velocidade do navio.", "O tempo de giro diminui quando aumentam o ângulo do leme e a velocidade do navio.", "O ângulo de deriva aumenta com o ângulo do leme, porém diminui quando aumenta a velocidade do navio.", "A velocidade angular é nula no início, atinge o máximo antes dos 90° de guinada e depois se reduz ligeiramente até tornar-se constante; em geral, o primeiro quadrante é percorrido em menos tempo que os seguintes."],
       "correct": 3,
       "explanation": "A alternativa D é a incorreta. O ângulo de deriva aumenta com o ângulo do leme, mas a obra-base o considera independente da velocidade do navio. Gabarito oficial: D.",
-      "comments": [
-        "Correta como afirmação: descreve redução de velocidade, abatimento inicial, estabelecimento do ângulo de deriva e possível adernamento.",
-        "Correta como afirmação: maior ângulo de leme reduz o avanço, enquanto maior velocidade o aumenta.",
-        "Correta como afirmação: maior ângulo de leme ou maior velocidade reduz o tempo necessário para o giro.",
-        "Incorreta — gabarito: o ângulo de deriva não diminui com o aumento da velocidade; a obra o trata como independente dela.",
-        "Correta como afirmação: resume a evolução típica da velocidade angular ao longo da curva de giro."
-      ],
-      "reference": {
-        "referenceId": "II-01",
-        "base": "Diretoria de Portos e Costas / Maurílio M. Fonseca",
-        "publication": "PSCPP 2011 — Prova Amarela / Arte Naval, v. 1",
-        "edition": "Prova de 2011; obra-base: 8. ed., MB, 2019",
-        "section": "Questão 25; Arte Naval, capítulo 12, seção 12.56.3 — efeitos do leme",
-        "syllabus": "Eixos I e II — Manobrabilidade e Arte Naval · curva de giro",
-        "evidence": "A prova oficial registra a questão e o gabarito D. No recorte da obra-base, o ângulo de deriva aumenta com o ângulo do leme e é considerado independente da velocidade; os demais comportamentos são apresentados na seção sobre efeitos do leme.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view",
-        "origin": {
-          "exam": "PSCPP 2011 — Prova Amarela",
-          "year": 2011,
-          "question": 25,
-          "answer": "D",
-          "adaptation": "Texto atualizado ortograficamente e repetição da alternativa C removida, sem alteração do conteúdo ou do gabarito.",
-          "url": "https://drive.google.com/file/d/1Fdz2o1xtzIkg1KONqP95HemlINDJcv_1/view"
-        }
-      }
+      "comments": ["Correta como afirmação: descreve redução de velocidade, abatimento inicial, estabelecimento do ângulo de deriva e possível adernamento.", "Correta como afirmação: maior ângulo de leme reduz o avanço, enquanto maior velocidade o aumenta.", "Correta como afirmação: maior ângulo de leme ou maior velocidade reduz o tempo necessário para o giro.", "Incorreta — gabarito: o ângulo de deriva não diminui com o aumento da velocidade; a obra o trata como independente dela.", "Correta como afirmação: resume a evolução típica da velocidade angular ao longo da curva de giro."],
+      "reference": {"referenceId": "II-01", "base": "Diretoria de Portos e Costas / Maurílio M. Fonseca", "publication": "PSCPP 2011 — Prova Amarela / Arte Naval, v. 1", "edition": "Prova de 2011; obra-base: 8. ed., MB, 2019", "section": "Questão 25; Arte Naval, capítulo 12, seção 12.56.3 — efeitos do leme", "syllabus": "Eixos I e II — Manobrabilidade e Arte Naval · curva de giro", "evidence": "A prova oficial apresenta a questão, e o gabarito é D. No recorte da obra-base, o ângulo de deriva aumenta com o ângulo do leme e é independente da velocidade; os demais comportamentos são descritos na seção sobre a curva de giro.", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view", "origin": {"exam": "PSCPP 2011 — Prova Amarela", "year": 2011, "question": 25, "answer": "D", "adaptation": "Reaplicação corretiva; ortografia atualizada e repetição da alternativa C removida, sem alteração do conteúdo ou do gabarito.", "url": "https://drive.google.com/file/d/1Fdz2o1xtzIkg1KONqP95HemlINDJcv_1/view"}}
     }
   ]
 }
