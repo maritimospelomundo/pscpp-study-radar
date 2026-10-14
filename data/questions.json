@@ -1,131 +1,336 @@
 {
-  "roundId": "fog-twin-screw-corrections-2026-10-13",
-  "label": "Rodada adaptativa de 13 de outubro de 2026",
-  "title": "Nevoeiros, dois hélices e correções da curva de giro",
+  "roundId": "towline-safety-brm-2026-10-14",
+  "label": "Rodada adaptativa de 14 de outubro de 2026",
+  "title": "Segurança do cabo de reboque, equipamentos de reboque e BRM",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Correções de ponto pivô, ângulo de deriva, ciclones e SMCP · Formação e classificação de nevoeiros · Manobra de navios de dois hélices · Reaplicação oficial sobre efeitos do leme",
+  "path": "Correções de assistência ASD, navegação estimada, aparelhos de laborar e ciclones · Segurança do cabo e do guincho de reboque · Monitoramento da praticagem pelo BRM · Questão oficial sobre cabo de reboque curto",
   "method": "4–3–2–1",
-  "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
+  "mixPlan": {
+    "review": 4,
+    "current": 3,
+    "rotation": 2,
+    "official": 1
+  },
   "questions": [
     {
-      "id": "tue-r1-pivot-point-definition-correction",
-      "category": "review",
-      "axis": "I",
-      "kind": "Revisão FSRS imediata · nota 0 · confusão conceitual",
-      "stem": "Durante uma guinada, qual descrição caracteriza corretamente o ponto pivô do navio?",
-      "options": ["É um ponto fixo no centro de gravidade, independentemente da condição de movimento.", "É o ponto do eixo longitudinal onde a velocidade angular é máxima.", "É um ponto cinemático, não estacionário, do eixo longitudinal, no qual a velocidade lateral é nula.", "É o centro de pressão do leme, determinado apenas pelo ângulo de leme aplicado."],
-      "correct": 2,
-      "explanation": "O ponto pivô é definido cinematicamente no eixo longitudinal pela ausência de velocidade lateral naquele ponto. Sua posição varia com o movimento e com as forças atuantes.",
-      "comments": ["Incorreta: o ponto pivô não é fixo nem coincide necessariamente com o centro de gravidade.", "Incorreta: a definição não utiliza a velocidade angular máxima.", "Correta: reúne os elementos cinemáticos essenciais — ponto móvel no eixo longitudinal e velocidade lateral nula.", "Incorreta: centro de pressão do leme e ponto pivô são conceitos diferentes."],
-      "reference": {"referenceId": "I-08", "base": "Edson Mesquita dos Santos", "publication": "A Manobrabilidade do Navio no Século 21", "edition": "1. ed., CONAPRA, 2021", "section": "Capítulo 6, seção 6.2 — o ponto pivô", "syllabus": "Eixo I — Manobrabilidade · curva de giro e movimento lateral", "evidence": "O recorte consultado define o ponto pivô como ponto cinemático não estacionário situado no eixo longitudinal, no qual não há movimento ou velocidade lateral durante a mudança de aproamento.", "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"}
-    },
-    {
-      "id": "tue-r2-drift-angle-speed-correction",
+      "id": "wed-r1-asd-direct-indirect-effectiveness",
       "category": "review",
       "axis": "II",
-      "kind": "Revisão FSRS imediata · nota 0 · confusão na questão oficial",
-      "stem": "Segundo as considerações práticas de Arte Naval sobre a curva de giro, o ângulo de deriva:",
-      "options": ["diminui com o aumento do ângulo do leme e cresce com a velocidade.", "aumenta com o ângulo do leme e é considerado independente da velocidade do navio.", "é independente do ângulo do leme e diminui com o calado.", "permanece nulo após estabelecida a parte circular da trajetória."],
+      "kind": "Revisão FSRS vencida · nota 0 · lacuna de conteúdo",
+      "stem": "Um rebocador ASD atua pela popa de um navio com seguimento. Quanto à comparação entre os métodos direto e indireto, assinale a afirmativa correta:",
+      "options": [
+        "O método indireto depende exclusivamente do bollard pull e independe da velocidade do conjunto.",
+        "O método direto tende a ganhar relevância quando o seguimento diminui e a contribuição hidrodinâmica do casco do rebocador se reduz.",
+        "O método indireto somente pode ser usado por rebocadores convencionais de um eixo.",
+        "A mudança do método indireto para o direto exige obrigatoriamente largar e passar novamente o cabo de reboque."
+      ],
       "correct": 1,
-      "explanation": "A obra-base afirma que o ângulo de deriva aumenta com o ângulo do leme e com a diminuição do calado, mas é independente da velocidade do navio.",
-      "comments": ["Incorreta: inverte a relação com o ângulo do leme e atribui influência indevida à velocidade.", "Correta: reproduz as relações indicadas no recorte consultado.", "Incorreta: o ângulo do leme influencia o ângulo de deriva; a diminuição do calado tende a aumentá-lo.", "Incorreta: o navio segue a curva com ângulo de deriva diferente de zero."],
-      "reference": {"referenceId": "II-01", "base": "Maurílio M. Fonseca", "publication": "Arte Naval, v. 1", "edition": "8. ed., MB, 2019", "section": "Capítulo 12, seção 12.56.3 — considerações práticas da curva de giro", "syllabus": "Eixos I e II — Manobrabilidade e Arte Naval · efeitos do leme e curva de giro", "evidence": "No recorte consultado, o ângulo de deriva aumenta com o ângulo do leme e com a diminuição do calado, sendo tratado como independente da velocidade do navio.", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"}
+      "explanation": "No modo indireto, parte importante da força é gerada hidrodinamicamente pelo casco do rebocador e depende do seguimento. Com a redução da velocidade, essa contribuição diminui e o método direto, baseado no empuxo dos propulsores, torna-se mais relevante.",
+      "comments": [
+        "Incorreta: o modo indireto explora forças hidrodinâmicas e sua eficácia varia com a velocidade.",
+        "Correta: menor seguimento reduz a sustentação hidrodinâmica do casco e favorece a assistência direta.",
+        "Incorreta: rebocadores de escolta, inclusive ASD e tratores, podem empregar o modo indireto conforme projeto e condição operacional.",
+        "Incorreta: a transição pode ser realizada mantendo o cabo, desde que a configuração e a manobra do rebocador o permitam."
+      ],
+      "reference": {
+        "referenceId": "II-09",
+        "base": "Henk Hensen",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4. ed., 2021",
+        "section": "Capítulos 2 e 9 — assistência direta e indireta por rebocadores de escolta",
+        "syllabus": "Eixo II — Arte Naval · emprego de rebocadores na manobrabilidade",
+        "evidence": "O recorte consultado distingue a assistência direta, sustentada pelo empuxo, da indireta, que usa forças hidrodinâmicas sobre o casco; a eficácia indireta cai com a redução do seguimento.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+      }
     },
     {
-      "id": "tue-r3-tropical-cyclone-threshold-correction",
+      "id": "wed-r2-advance-caimento-correction",
       "category": "review",
-      "axis": "V",
+      "axis": "III",
       "kind": "Revisão FSRS vencida · nota 0 · erro de leitura",
-      "stem": "Na classificação apresentada por Miguens, um ciclone tropical com vento máximo sustentado à superfície, médio em um minuto, de exatamente 64 nós é classificado como:",
-      "options": ["depressão tropical.", "tempestade tropical.", "furacão.", "ciclone subtropical, necessariamente."],
-      "correct": 2,
-      "explanation": "Furacão corresponde a vento máximo sustentado igual ou superior a 64 nós. Tempestade tropical vai de 34 nós, inclusive, até menos de 64 nós.",
-      "comments": ["Incorreta: depressão tropical possui vento inferior a 34 nós.", "Incorreta: a faixa de tempestade tropical termina antes de 64 nós.", "Correta: o limite inferior da classe furacão é inclusivo em 64 nós.", "Incorreta: a classificação tropical não se converte automaticamente em subtropical nesse limiar."],
-      "reference": {"referenceId": "V-01", "base": "Altineu Pires Miguens", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN", "section": "Capítulo 45 — classificação dos ciclones tropicais", "syllabus": "Eixo V — Meteorologia · sistemas atmosféricos e ciclones", "evidence": "O recorte consultado classifica depressão tropical abaixo de 34 nós, tempestade tropical de 34 até menos de 64 nós e furacão com vento sustentado igual ou superior a 64 nós.", "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"}
+      "stem": "Em relação à derrota estimada, a posição observada de um navio encontra-se adiantada ao longo da rota e deslocada transversalmente para bombordo. Esses dois efeitos são denominados, respectivamente:",
+      "options": [
+        "atraso e abatimento.",
+        "avanço e caimento.",
+        "avanço e deriva angular.",
+        "atraso e caimento."
+      ],
+      "correct": 1,
+      "explanation": "A diferença longitudinal para vante em relação à posição estimada caracteriza avanço; o deslocamento transversal caracteriza caimento.",
+      "comments": [
+        "Incorreta: a posição está adiantada, não atrasada; além disso, o termo usado no recorte para o deslocamento transversal é caimento.",
+        "Correta: identifica o componente longitudinal para vante como avanço e o componente transversal como caimento.",
+        "Incorreta: deriva angular não é o nome dado no recorte à diferença transversal entre as posições estimada e observada.",
+        "Incorreta: caimento está correto para o componente transversal, mas o componente longitudinal é avanço."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Altineu Pires Miguens",
+        "publication": "Navegação: A Ciência e a Arte",
+        "edition": "v. I e III",
+        "section": "Volume I, capítulo 4 — definição de caimento e avanço ou atraso",
+        "syllabus": "Eixo III — Navegação em águas restritas · navegação costeira e estimada",
+        "evidence": "O recorte consultado mostra graficamente a posição real adiantada em relação à estimada como avanço e o deslocamento lateral como caimento; a diferença longitudinal para ré é atraso.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+      }
     },
     {
-      "id": "tue-r4-smcp-instruction-advice-correction",
+      "id": "wed-r3-tackle-tensions-attachment-correction",
       "category": "review",
-      "axis": "VI",
-      "kind": "Revisão FSRS vencida · nota 0 · confusão entre marcadores",
-      "stem": "Nas IMO SMCP, qual distinção entre os marcadores INSTRUCTION e ADVICE está correta?",
-      "options": ["INSTRUCTION pressupõe autoridade e vinculação legal, salvo razão de segurança conflitante; ADVICE é recomendação cuja decisão permanece com o destinatário.", "ADVICE é juridicamente obrigatório, enquanto INSTRUCTION é mera recomendação operacional.", "Ambos são obrigatórios e diferem apenas quanto ao idioma empregado na mensagem.", "Nenhum deles pode ser usado por estação VTS em comunicação terra-navio."],
-      "correct": 0,
-      "explanation": "INSTRUCTION identifica mensagem emitida por quem possui autoridade e deve ser cumprida, salvo razão de segurança conflitante a ser informada. ADVICE identifica recomendação, cabendo ao destinatário decidir, após considerá-la cuidadosamente.",
-      "comments": ["Correta: distingue autoridade e força vinculante de INSTRUCTION da natureza recomendatória de ADVICE.", "Incorreta: troca os significados dos dois marcadores.", "Incorreta: a diferença é material, não linguística.", "Incorreta: o próprio recorte cita uma estação VTS como exemplo de emissor autorizado de INSTRUCTION."],
-      "reference": {"referenceId": "VI-01", "base": "International Maritime Organization", "publication": "IMO Standard Marine Communication Phrases (SMCP)", "edition": "A.918(22), 2001", "section": "Parte A1/6 — Application of Message Markers", "syllabus": "Eixo VI — Comunicações · SMCP, Partes A e B", "evidence": "O recorte consultado define INSTRUCTION como mensagem baseada em autoridade e legalmente vinculante, ressalvada razão de segurança conflitante, e ADVICE como recomendação cuja aceitação permanece sob decisão do destinatário.", "url": "https://drive.google.com/file/d/1nEnUGi3L9FcPy42aOtSPRoTLmKcqQZtU/view"}
-    },
-    {
-      "id": "tue-c1-fog-formation-processes",
-      "category": "current",
-      "axis": "V",
-      "kind": "Avanço coerente · processos de formação de nevoeiro",
-      "stem": "Quais processos podem levar o ar úmido superficial à saturação e produzir nevoeiro, segundo Miguens?",
-      "options": ["Somente aumento da pressão e subsidência.", "Resfriamento do ar ou aumento da evaporação.", "Apenas convecção profunda e precipitação intensa.", "Somente mistura turbulenta causada por vento forte."],
-      "correct": 1,
-      "explanation": "O recorte apresenta dois processos básicos: resfriamento do ar úmido superficial e aumento da evaporação, ambos capazes de produzir saturação e condensação.",
-      "comments": ["Incorreta: pressão e subsidência não são os dois mecanismos básicos indicados.", "Correta: reúne as duas vias de formação descritas na obra.", "Incorreta: convecção profunda não é requisito geral para nevoeiro.", "Incorreta: ventos fortes tendem a dissipar ou elevar o nevoeiro, e não constituem o único processo de formação."],
-      "reference": {"referenceId": "V-01", "base": "Altineu Pires Miguens", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN", "section": "Capítulo 45, seção 45.2.6 — visibilidade: nevoeiro e névoa seca", "syllabus": "Eixo V — Meteorologia · fenômenos que reduzem a visibilidade", "evidence": "O recorte consultado indica resfriamento e aumento da evaporação como os dois processos capazes de saturar o ar úmido superficial e produzir nevoeiro.", "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"}
-    },
-    {
-      "id": "tue-c2-radiation-fog-condition",
-      "category": "current",
-      "axis": "V",
-      "kind": "Avanço coerente · nevoeiro de radiação",
-      "stem": "Qual cenário é característico da formação de nevoeiro de radiação?",
-      "options": ["Ar muito frio deslocando-se sobre mar sensivelmente mais quente.", "Ar quente e úmido deslocando-se sobre mar mais frio.", "Resfriamento noturno do solo, que resfria o ar em contato com a superfície.", "Ascensão de ar úmido por uma encosta, com resfriamento adiabático."],
-      "correct": 2,
-      "explanation": "O nevoeiro de radiação decorre do contato do ar com o solo resfriado durante a noite.",
-      "comments": ["Incorreta: descreve nevoeiro de vapor ou fumaça do mar.", "Incorreta: descreve nevoeiro de advecção.", "Correta: o resfriamento radiativo noturno do solo caracteriza esse tipo.", "Incorreta: descreve nevoeiro orográfico ou de encosta."],
-      "reference": {"referenceId": "V-01", "base": "Altineu Pires Miguens", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN", "section": "Capítulo 45, seção 45.2.6 — nevoeiros de resfriamento", "syllabus": "Eixo V — Meteorologia · nevoeiros de resfriamento", "evidence": "O recorte consultado associa o nevoeiro de radiação ao contato do ar com o solo resfriado durante a noite.", "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"}
-    },
-    {
-      "id": "tue-c3-advection-fog-condition",
-      "category": "current",
-      "axis": "V",
-      "kind": "Avanço coerente · nevoeiro de advecção",
-      "stem": "O nevoeiro de advecção tende a formar-se quando:",
-      "options": ["uma chuva quente evapora em uma massa de ar mais fria.", "o ar muito frio passa sobre água muito mais quente.", "o ar úmido sobe uma encosta e se resfria adiabaticamente.", "ar quente e úmido em movimento passa sobre uma superfície mais fria."],
-      "correct": 3,
-      "explanation": "O nevoeiro de advecção é produzido pelo resfriamento de ar quente e úmido que se desloca sobre solo ou mar mais frio.",
-      "comments": ["Incorreta: corresponde ao mecanismo de nevoeiro frontal.", "Incorreta: corresponde ao nevoeiro de vapor ou fumaça do mar.", "Incorreta: corresponde ao nevoeiro orográfico.", "Correta: descreve a advecção de ar quente e úmido sobre superfície fria."],
-      "reference": {"referenceId": "V-01", "base": "Altineu Pires Miguens", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN", "section": "Capítulo 45, seção 45.2.6 — nevoeiros de resfriamento", "syllabus": "Eixo V — Meteorologia · nevoeiro de advecção", "evidence": "O recorte consultado caracteriza o nevoeiro de advecção pelo contato de ar quente e úmido em movimento com uma superfície mais fria sobre a qual se desloca.", "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"}
-    },
-    {
-      "id": "tue-t1-twin-screw-tactical-diameter-time",
-      "category": "rotation",
       "axis": "II",
-      "kind": "Rotação semanal · Arte Naval e manobra de dois hélices",
-      "stem": "Em um navio de dois hélices já evoluindo, qual efeito é esperado ao parar ou dar atrás com a máquina de dentro da curva?",
-      "options": ["O diâmetro tático aumenta e o tempo de evolução sempre diminui.", "O diâmetro tático diminui, mas o tempo de evolução pode aumentar em relação aos dois hélices adiante.", "O diâmetro tático permanece inalterado e apenas o avanço aumenta.", "A guinada cessa porque o leme perde imediatamente toda a ação."],
-      "correct": 1,
-      "explanation": "Parar ou inverter a máquina de dentro aumenta o conjugado de rotação e reduz o diâmetro tático, embora a perda de velocidade possa aumentar o tempo de evolução.",
-      "comments": ["Incorreta: o efeito indicado sobre o diâmetro está invertido e o tempo não necessariamente diminui.", "Correta: reúne redução do diâmetro e possível aumento do tempo de evolução.", "Incorreta: a manobra altera o conjugado, a velocidade e o diâmetro tático.", "Incorreta: não há perda instantânea e total de governo nas condições descritas."],
-      "reference": {"referenceId": "II-01", "base": "Maurílio M. Fonseca", "publication": "Arte Naval, v. 1", "edition": "8. ed., MB, 2019", "section": "Capítulo 12, seção 12.56.3 — evolução de navio de dois hélices", "syllabus": "Eixo II — Arte Naval · governo e manobra de navios de dois hélices", "evidence": "O recorte consultado informa que parar ou dar atrás com a máquina de dentro reduz o diâmetro tático pelo aumento do conjugado de rotação, mas pode elevar o tempo de evolução por reduzir a velocidade.", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"}
-    },
-    {
-      "id": "tue-t2-twin-rudder-propeller-discharge",
-      "category": "rotation",
-      "axis": "II",
-      "kind": "Rotação semanal · dois lemes e corrente de descarga",
-      "stem": "Em um navio com dois hélices e dois lemes, colocando-se um hélice adiante e o outro atrás, qual afirmação é correta?",
-      "options": ["O leme atrás do hélice que dá atrás produz sempre a maior força lateral.", "As correntes de descarga anulam a ação dos lemes, impedindo giro sobre a quilha.", "O hélice que dá adiante exerce a maior influência no leme situado em sua descarga, favorecendo o giro para o bordo desejado.", "A combinação só produz movimento longitudinal, sem momento de guinada."],
+      "kind": "Revisão FSRS vencida · nota 0 · lacuna de conteúdo",
+      "stem": "Ao içar um peso com uma talha e ao engatar uma talha em cabo sem alça, qual procedimento está de acordo com as regras práticas de bordo?",
+      "options": [
+        "A arreigada fixa recebe a tensão máxima; o engate recomendado é a volta de encapeladura singela.",
+        "O tirador recebe a tensão mínima; o engate recomendado é o cote simples.",
+        "O tirador recebe a tensão máxima; o engate recomendado é a boca-de-lobo.",
+        "Tirador e arreigada fixa recebem sempre tensões iguais; o engate recomendado é o nó direito."
+      ],
       "correct": 2,
-      "explanation": "A corrente de descarga do hélice que dá adiante aumenta fortemente a ação do leme colocado atrás dele. Com combinações adequadas de máquinas e leme, o navio pode girar praticamente sobre a quilha.",
-      "comments": ["Incorreta: a descarga do hélice adiante é a influência predominante sobre o respectivo leme.", "Incorreta: as correntes de descarga reforçam, em vez de anularem, a ação dos lemes.", "Correta: traduz a predominância do hélice adiante e o uso do leme para intensificar o giro.", "Incorreta: a combinação cria momento de guinada e força lateral na popa."],
-      "reference": {"referenceId": "II-01", "base": "Maurílio M. Fonseca", "publication": "Arte Naval, v. 1", "edition": "8. ed., MB, 2019", "section": "Capítulo 12, seção 12.16 — manobra dos navios de dois lemes", "syllabus": "Eixo II — Arte Naval · ação combinada de hélices e lemes", "evidence": "O recorte consultado explica que, com hélices em sentidos opostos, a descarga do hélice adiante exerce maior efeito no leme correspondente e pode ser usada para produzir forte momento de guinada.", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"}
+      "explanation": "Durante o içamento, o tirador suporta a tensão máxima e a arreigada fixa a mínima. Para engatar uma talha em cabo sem alça, a obra recomenda a boca-de-lobo.",
+      "comments": [
+        "Incorreta: no içamento, a tensão máxima está no tirador; a volta indicada para o engate não é a encapeladura singela.",
+        "Incorreta: inverte a distribuição de tensões e indica um engate não recomendado para essa finalidade.",
+        "Correta: reúne as duas regras práticas expressas no recorte consultado.",
+        "Incorreta: as tensões não são sempre iguais, e o nó direito não é o engate prescrito."
+      ],
+      "reference": {
+        "referenceId": "II-01",
+        "base": "Maurílio M. Fonseca",
+        "publication": "Arte Naval, v. 1",
+        "edition": "8. ed., MB, 2019",
+        "section": "Capítulo 9, seção 9.21 — regras práticas dos aparelhos de laborar",
+        "syllabus": "Eixo II — Arte Naval · poleame, aparelhos de laborar e acessórios",
+        "evidence": "O recorte consultado estabelece que, içando, o tirador suporta a tensão máxima e a arreigada fixa a mínima; também indica a boca-de-lobo como melhor modo de engatar a talha em cabo sem alça.",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
+      }
     },
     {
-      "id": "tue-o1-pscpp2011-q25-retry",
+      "id": "wed-r4-extratropical-cyclone-energy-correction",
+      "category": "review",
+      "axis": "V",
+      "kind": "Revisão FSRS vencida · nota 0 · lacuna de conteúdo",
+      "stem": "A fonte primordial de energia de um ciclone extratropical é:",
+      "options": [
+        "o calor latente liberado por convecção simétrica junto ao olho.",
+        "a energia cinética produzida exclusivamente pela força de Coriolis.",
+        "a energia potencial associada ao contraste horizontal de temperatura entre massas de ar.",
+        "o aquecimento uniforme da superfície do mar em águas tropicais."
+      ],
+      "correct": 2,
+      "explanation": "O ciclone extratropical obtém energia primordialmente da energia potencial ligada ao contraste horizontal de temperatura e, em geral, associa-se a um sistema frontal.",
+      "comments": [
+        "Incorreta: essa formulação se aproxima do mecanismo dominante dos ciclones tropicais, não dos extratropicais.",
+        "Incorreta: Coriolis influencia a circulação, mas não constitui a fonte primordial de energia descrita.",
+        "Correta: corresponde à definição do recorte meteorológico consultado.",
+        "Incorreta: o aquecimento uniforme não fornece o contraste baroclínico necessário ao mecanismo descrito."
+      ],
+      "reference": {
+        "referenceId": "V-01",
+        "base": "Altineu Pires Miguens",
+        "publication": "Navegação: A Ciência e a Arte, v. III",
+        "edition": "DHN",
+        "section": "Capítulo 45 — classificação e formação dos ciclones extratropicais",
+        "syllabus": "Eixo V — Meteorologia e Oceanografia · sistemas atmosféricos e ciclones",
+        "evidence": "O recorte consultado define o ciclone extratropical como baixa que extrai energia primordialmente da energia potencial decorrente de contraste horizontal de temperatura e costuma associar-se a sistema frontal.",
+        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
+      }
+    },
+    {
+      "id": "wed-c1-emergency-release-controlled-payout",
+      "category": "current",
+      "axis": "II",
+      "kind": "Avanço coerente · segurança do guincho de reboque",
+      "stem": "Em uma emergência com o cabo de reboque sob carga, qual comportamento é requerido do sistema de liberação do guincho?",
+      "options": [
+        "Bloquear o tambor imediatamente e impedir qualquer saída adicional do cabo.",
+        "Permitir a saída controlada do cabo, evitando o desenrolamento livre e descontrolado do tambor.",
+        "Liberar toda a carga somente depois de restabelecida a alimentação elétrica principal.",
+        "Aumentar automaticamente a força de frenagem até o limite de ruptura do cabo."
+      ],
+      "correct": 1,
+      "explanation": "A liberação deve permitir que o tambor gire e o cabo saia de modo controlado. A rotação livre e descontrolada pode fazer o cabo emperrar e inutilizar a própria função de emergência.",
+      "comments": [
+        "Incorreta: manter o tambor bloqueado pode conservar a condição perigosa de carga transversal ou excessiva.",
+        "Correta: a saída controlada alivia a situação sem criar o risco adicional de tambor em rotação livre.",
+        "Incorreta: a função de emergência deve permanecer disponível mesmo em condição de blackout.",
+        "Incorreta: levar o sistema ao limite de ruptura contraria a finalidade de liberar a carga com segurança."
+      ],
+      "reference": {
+        "referenceId": "II-09",
+        "base": "Henk Hensen",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4. ed., 2021",
+        "section": "Capítulo 7, seções 7.3–7.4 — guinchos e sistemas de segurança do cabo",
+        "syllabus": "Eixo II — Arte Naval · reboque e emprego seguro de rebocadores",
+        "evidence": "O recorte consultado determina que a liberação de emergência permita ao tambor girar e ao cabo sair de forma controlada, com resistência suficiente para evitar desenrolamento livre; também prevê operação em blackout.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+      }
+    },
+    {
+      "id": "wed-c2-snapback-danger-zone",
+      "category": "current",
+      "axis": "II",
+      "kind": "Avanço coerente · risco de snap-back",
+      "stem": "Durante uma faina de reboque, qual conduta melhor controla o risco de snap-back?",
+      "options": [
+        "Permanecer junto ao cabo para perceber visualmente o instante de ruptura.",
+        "Considerar seguros os cabos HMPE porque praticamente não armazenam energia.",
+        "Manter o pessoal afastado da trajetória potencial do cabo tensionado e aproximar-se somente com cautela quando indispensável.",
+        "Presumir que apenas cabos sintéticos longos apresentam retorno perigoso."
+      ],
+      "correct": 2,
+      "explanation": "Cabos sob tensão podem retornar violentamente quando rompem. A medida básica é manter o pessoal fora da trajetória provável e evitar aproximação desnecessária.",
+      "comments": [
+        "Incorreta: a proximidade expõe diretamente o tripulante à energia liberada na ruptura.",
+        "Incorreta: mesmo HMPE pode integrar um sistema com elementos elásticos, como um pendente, capazes de armazenar energia perigosa.",
+        "Correta: traduz a precaução operacional indicada para qualquer cabo tensionado.",
+        "Incorreta: o snap-back pode ocorrer em diferentes materiais e comprimentos, inclusive em cabos de aço."
+      ],
+      "reference": {
+        "referenceId": "II-09",
+        "base": "Henk Hensen",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4. ed., 2021",
+        "section": "Capítulo 7, seção 7.5 — towlines e snap-back",
+        "syllabus": "Eixo II — Arte Naval · reboque, cabos e segurança da faina",
+        "evidence": "O recorte consultado afirma que o snap-back é comum a todos os cabos; materiais sintéticos podem romper sem aviso e com grande energia, razão pela qual se deve permanecer afastado de cabos tensionados.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+      }
+    },
+    {
+      "id": "wed-c3-steep-short-towline-loads",
+      "category": "current",
+      "axis": "II",
+      "kind": "Avanço coerente · geometria e carregamento do cabo de reboque",
+      "stem": "Um rebocador puxa por cabo muito curto e inclinado, entre o convés do rebocador e o aparelho do navio. Mantido o mesmo empuxo horizontal, qual efeito deve ser esperado?",
+      "options": [
+        "A componente horizontal útil aumenta acima do empuxo do rebocador sem acréscimo de carga nos acessórios.",
+        "A força total no cabo e os esforços verticais aumentam, elevando atrito, desgaste e sensibilidade a cargas dinâmicas.",
+        "O cabo absorve melhor os picos dinâmicos quanto menor for seu comprimento.",
+        "A inclinação elimina a necessidade de considerar o SWL dos cabeços e buzinas."
+      ],
+      "correct": 1,
+      "explanation": "A inclinação acentuada aumenta a força total no cabo e as componentes verticais, embora o componente horizontal útil permaneça ligado ao empuxo. Cabos curtos também absorvem pior os movimentos relativos e geram picos maiores.",
+      "comments": [
+        "Incorreta: a geometria não cria empuxo horizontal adicional gratuito; ela aumenta a força total e os esforços nos pontos de passagem.",
+        "Correta: sintetiza os efeitos geométricos, de atrito e de carregamento dinâmico descritos no recorte.",
+        "Incorreta: menor comprimento oferece menor capacidade de absorver movimentos e tende a elevar os picos.",
+        "Incorreta: o SWL dos equipamentos do navio e do rebocador continua sendo limite essencial."
+      ],
+      "reference": {
+        "referenceId": "II-09",
+        "base": "Henk Hensen",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4. ed., 2021",
+        "section": "Capítulo 7, seção 7.5 — cabos curtos, ângulo vertical e cargas dinâmicas",
+        "syllabus": "Eixo II — Arte Naval · reboque e emprego de cabos",
+        "evidence": "O recorte consultado mostra que um cabo curto e inclinado pode apresentar força total muito superior ao empuxo, com grandes componentes verticais, atrito e desgaste; movimentos do rebocador ainda produzem cargas dinâmicas elevadas.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+      }
+    },
+    {
+      "id": "wed-t1-brm-pilotage-plan-monitoring",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Rotação semanal · BRM e praticagem",
+      "stem": "Com o prático embarcado e conduzindo a navegação em águas restritas, qual prática é compatível com o BRM?",
+      "options": [
+        "Encerrar o plano de passagem no ponto de embarque do prático e retomar o planejamento após a atracação.",
+        "Manter o plano até o berço, incluindo embarque e monitoramento das ações do prático, e comparar o progresso real com a derrota planejada.",
+        "Suspender a plotagem da posição enquanto o prático tiver o con.",
+        "Limitar o plano ao trecho conhecido pelo comandante, deixando o restante sem contingências registradas."
+      ],
+      "correct": 1,
+      "explanation": "O plano não termina no embarque do prático: deve prosseguir até o berço, permitindo que comandante e oficial de quarto acompanhem a posição, o movimento e as restrições da passagem.",
+      "comments": [
+        "Incorreta: o planejamento deve cobrir também o trecho de praticagem.",
+        "Correta: preserva continuidade do plano, consciência situacional e monitoramento independente.",
+        "Incorreta: a presença do prático não elimina o dever de acompanhar posição e movimento.",
+        "Incorreta: abortagem e contingências são especialmente relevantes em águas restritas."
+      ],
+      "reference": {
+        "referenceId": "III-01",
+        "base": "A. J. Swift e T. J. Bailey",
+        "publication": "Bridge Team Management: A Practical Guide",
+        "edition": "2. ed., 2004",
+        "section": "Capítulo 7 — Navigating with a pilot on board: planning e monitoring",
+        "syllabus": "Eixo III — Navegação em águas restritas · BRM, planejamento e monitoramento",
+        "evidence": "O recorte consultado afirma que o plano bem elaborado não termina no ponto de embarque do prático: ele segue do mar ao berço, inclui o monitoramento das ações do prático e permite comparar o progresso com a derrota planejada.",
+        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
+      }
+    },
+    {
+      "id": "wed-t2-brm-doubt-pilot-action",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Rotação semanal · intervenção escalonada no BRM",
+      "stem": "O oficial de quarto tem dúvida sobre uma ação ou intenção do prático. Segundo a prática de BRM, deve inicialmente:",
+      "options": [
+        "aguardar a conclusão da manobra para evitar interferência na praticagem.",
+        "alterar o rumo por iniciativa própria, sem comunicar o prático ou o comandante.",
+        "buscar esclarecimento com o prático; persistindo a dúvida, avisar imediatamente o comandante e tomar a ação necessária à segurança.",
+        "registrar a dúvida no diário e transferir toda a responsabilidade ao prático."
+      ],
+      "correct": 2,
+      "explanation": "A resposta deve ser progressiva e imediata: esclarecer a intenção com o prático; se a dúvida permanecer, informar o comandante e agir conforme necessário para proteger o navio.",
+      "comments": [
+        "Incorreta: adiar o esclarecimento pode permitir que a situação evolua para condição insegura.",
+        "Incorreta: uma intervenção não coordenada pode agravar o risco e rompe o fluxo de comunicação da equipe.",
+        "Correta: corresponde ao encadeamento de esclarecimento, escalonamento e ação de segurança.",
+        "Incorreta: a presença do prático não exonera comandante e oficial de quarto de seus deveres."
+      ],
+      "reference": {
+        "referenceId": "III-01",
+        "base": "A. J. Swift e T. J. Bailey",
+        "publication": "Bridge Team Management: A Practical Guide",
+        "edition": "2. ed., 2004",
+        "section": "Capítulo 7 e anexo sobre navegação com prático a bordo",
+        "syllabus": "Eixo III — Navegação em águas restritas · trabalho em equipe e praticagem",
+        "evidence": "O recorte consultado mantém os deveres do comandante e do oficial de quarto, exige cooperação e verificação da posição e orienta pedir esclarecimento ao prático; persistindo a dúvida, o comandante deve ser avisado e a ação necessária deve ser tomada.",
+        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
+      }
+    },
+    {
+      "id": "wed-o1-pscpp2008-q49-short-towline",
       "category": "official",
-      "axis": "I",
-      "kind": "Questão oficial histórica · reaplicação corretiva · assinale a incorreta",
-      "stem": "Com relação aos efeitos do leme e à curva de giro de um navio, assinale a opção INCORRETA:",
-      "options": ["Quando se carrega o leme com o navio dando adiante, a velocidade diminui, o navio abate para o bordo oposto ao da guinada, assume um ângulo de deriva e, em alguns casos, aderna.", "O avanço diminui quando aumenta o ângulo do leme e aumenta quando cresce a velocidade do navio.", "O tempo de giro diminui quando aumentam o ângulo do leme e a velocidade do navio.", "O ângulo de deriva aumenta com o ângulo do leme, porém diminui quando aumenta a velocidade do navio.", "A velocidade angular é nula no início, atinge o máximo antes dos 90° de guinada e depois se reduz ligeiramente até tornar-se constante; em geral, o primeiro quadrante é percorrido em menos tempo que os seguintes."],
+      "axis": "II",
+      "kind": "Questão oficial histórica · assinale a incorreta",
+      "stem": "Quanto às desvantagens do emprego de cabo curto por um rebocador operando no cabo, assinale a opção INCORRETA:",
+      "options": [
+        "Quanto menor o cabo, menor a absorção das forças dinâmicas e maiores os picos de carga.",
+        "A resistência do cabo deve suportar as forças estáticas, que podem ser maiores com cabos curtos.",
+        "Com cabo curto, o atrito pode ser elevado, causando aquecimento e desgaste considerável.",
+        "Quando um rebocador está passado na proa e opera de través enquanto o navio se move a ré, o cabo curto prejudica a segurança do rebocador.",
+        "Quanto menor o cabo, maior pode ser o efeito da descarga dos propulsores, reduzindo a eficiência do rebocador."
+      ],
       "correct": 3,
-      "explanation": "A alternativa D é a incorreta. O ângulo de deriva aumenta com o ângulo do leme, mas a obra-base o considera independente da velocidade do navio. Gabarito oficial: D.",
-      "comments": ["Correta como afirmação: descreve redução de velocidade, abatimento inicial, estabelecimento do ângulo de deriva e possível adernamento.", "Correta como afirmação: maior ângulo de leme reduz o avanço, enquanto maior velocidade o aumenta.", "Correta como afirmação: maior ângulo de leme ou maior velocidade reduz o tempo necessário para o giro.", "Incorreta — gabarito: o ângulo de deriva não diminui com o aumento da velocidade; a obra o trata como independente dela.", "Correta como afirmação: resume a evolução típica da velocidade angular ao longo da curva de giro."],
-      "reference": {"referenceId": "II-01", "base": "Diretoria de Portos e Costas / Maurílio M. Fonseca", "publication": "PSCPP 2011 — Prova Amarela / Arte Naval, v. 1", "edition": "Prova de 2011; obra-base: 8. ed., MB, 2019", "section": "Questão 25; Arte Naval, capítulo 12, seção 12.56.3 — efeitos do leme", "syllabus": "Eixos I e II — Manobrabilidade e Arte Naval · curva de giro", "evidence": "A prova oficial apresenta a questão, e o gabarito é D. No recorte da obra-base, o ângulo de deriva aumenta com o ângulo do leme e é independente da velocidade; os demais comportamentos são descritos na seção sobre a curva de giro.", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view", "origin": {"exam": "PSCPP 2011 — Prova Amarela", "year": 2011, "question": 25, "answer": "D", "adaptation": "Reaplicação corretiva; ortografia atualizada e repetição da alternativa C removida, sem alteração do conteúdo ou do gabarito.", "url": "https://drive.google.com/file/d/1Fdz2o1xtzIkg1KONqP95HemlINDJcv_1/view"}}
+      "explanation": "A alternativa D é a incorreta. Na configuração descrita pela questão oficial, o cabo curto não é apresentado como efeito negativo para a segurança; as demais opções reproduzem desvantagens operacionais dos cabos curtos. Gabarito oficial: D.",
+      "comments": [
+        "Correta como afirmação: menor comprimento reduz a capacidade de absorver movimentos relativos e eleva cargas de pico.",
+        "Correta como afirmação: a geometria inclinada de cabos curtos pode elevar bastante a força total no cabo.",
+        "Correta como afirmação: o grande componente vertical e o atrito nos pontos de passagem aumentam aquecimento e desgaste.",
+        "Incorreta — gabarito: essa configuração não constitui a desvantagem de segurança indicada pelas demais proposições.",
+        "Correta como afirmação: a proximidade favorece a interferência da descarga do rebocador e reduz sua eficiência efetiva."
+      ],
+      "reference": {
+        "referenceId": "II-09",
+        "base": "Diretoria de Portos e Costas / Henk Hensen",
+        "publication": "PSCPP 2008 / Tug Use in Port: A Practical Guide",
+        "edition": "Prova de 2008; obra-base: 4. ed., 2021",
+        "section": "Questão 49; capítulo 7, seção 7.5 — desvantagens do cabo curto",
+        "syllabus": "Eixo II — Arte Naval · reboque e emprego de rebocadores",
+        "evidence": "A prova oficial apresenta cinco afirmações sobre cabos curtos e marca D como gabarito. O recorte da obra-base fundamenta menor absorção dinâmica, aumento de cargas, atrito e desgaste e perda de eficiência por interferência da descarga.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view",
+        "origin": {
+          "exam": "PSCPP 2008",
+          "year": 2008,
+          "question": 49,
+          "answer": "D",
+          "adaptation": "Traduzida para o português e atualizada ortograficamente, preservando as cinco alternativas e o gabarito.",
+          "url": "https://drive.google.com/file/d/1KfllJf4BukeOqCtNlr5uuwNC7xDu45I6/view"
+        }
+      }
     }
   ]
 }
