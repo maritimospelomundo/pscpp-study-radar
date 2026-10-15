@@ -1,9 +1,9 @@
 {
-  "roundId": "towline-safety-brm-2026-10-14",
-  "label": "Rodada adaptativa de 14 de outubro de 2026",
-  "title": "Segurança do cabo de reboque, equipamentos de reboque e BRM",
+  "roundId": "pilotage-law-smcp-ics-2026-10-15",
+  "label": "Rodada adaptativa de 15 de outubro de 2026",
+  "title": "Praticagem, habilitação e comunicações padronizadas",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Correções de assistência ASD, navegação estimada, aparelhos de laborar e ciclones · Segurança do cabo e do guincho de reboque · Monitoramento da praticagem pelo BRM · Questão oficial sobre cabo de reboque curto",
+  "path": "Revisões vencidas de manobrabilidade, RIPEAM, ondas e SMCP · Lei nº 14.813/2024 e atividade de praticagem · Código Internacional de Sinais · Questão oficial de comunicações",
   "method": "4–3–2–1",
   "mixPlan": {
     "review": 4,
@@ -13,322 +13,321 @@
   },
   "questions": [
     {
-      "id": "wed-r1-asd-direct-indirect-effectiveness",
+      "id": "thu-r1-msc137-compliance-methods",
       "category": "review",
-      "axis": "II",
-      "kind": "Revisão FSRS vencida · nota 0 · lacuna de conteúdo",
-      "stem": "Um rebocador ASD atua pela popa de um navio com seguimento. Quanto à comparação entre os métodos direto e indireto, assinale a afirmativa correta:",
+      "axis": "I",
+      "kind": "Revisão FSRS vencida · nota 0 · confusão",
+      "stem": "Segundo a Resolução MSC.137(76), quanto à demonstração de conformidade de um navio com os padrões de manobrabilidade, assinale a afirmativa correta:",
       "options": [
-        "O método indireto depende exclusivamente do bollard pull e independe da velocidade do conjunto.",
-        "O método direto tende a ganhar relevância quando o seguimento diminui e a contribuição hidrodinâmica do casco do rebocador se reduz.",
-        "O método indireto somente pode ser usado por rebocadores convencionais de um eixo.",
-        "A mudança do método indireto para o direto exige obrigatoriamente largar e passar novamente o cabo de reboque."
+        "A conformidade somente pode ser demonstrada por provas em escala real, sendo vedadas previsões na fase de projeto.",
+        "Ensaios de modelo e previsões por modelos matemáticos podem estimar a conformidade no projeto; provas em escala real devem validar os resultados, ressalvada a atuação da Administração diante de previsão deficiente ou divergência substancial.",
+        "Uma previsão favorável na fase de projeto dispensa qualquer prova em escala real, ainda que a Administração identifique divergência substancial.",
+        "Resultados de provas em escala real só podem complementar ensaios de modelo e nunca constituem, isoladamente, método de demonstração de conformidade."
       ],
       "correct": 1,
-      "explanation": "No modo indireto, parte importante da força é gerada hidrodinamicamente pelo casco do rebocador e depende do seguimento. Com a redução da velocidade, essa contribuição diminui e o método direto, baseado no empuxo dos propulsores, torna-se mais relevante.",
+      "explanation": "A MSC.137(76) admite dois caminhos: previsão na fase de projeto por ensaios de modelo e/ou modelos matemáticos, seguida de validação em escala real, ou demonstração diretamente pelos resultados das provas em escala real. A Administração pode intervir quando a previsão for deficiente ou houver divergência substancial.",
       "comments": [
-        "Incorreta: o modo indireto explora forças hidrodinâmicas e sua eficácia varia com a velocidade.",
-        "Correta: menor seguimento reduz a sustentação hidrodinâmica do casco e favorece a assistência direta.",
-        "Incorreta: rebocadores de escolta, inclusive ASD e tratores, podem empregar o modo indireto conforme projeto e condição operacional.",
-        "Incorreta: a transição pode ser realizada mantendo o cabo, desde que a configuração e a manobra do rebocador o permitam."
+        "Incorreta: a resolução admite previsões por ensaios de modelo e modelos matemáticos na fase de projeto.",
+        "Correta: reproduz o primeiro método e as ressalvas expressas no item 2.1.1.",
+        "Incorreta: a prova em escala real é prevista para validar o resultado, e a Administração conserva competência nas situações ressalvadas.",
+        "Incorreta: o item 2.1.2 admite demonstrar conformidade com base nas próprias provas em escala real."
       ],
       "reference": {
-        "referenceId": "II-09",
-        "base": "Henk Hensen",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulos 2 e 9 — assistência direta e indireta por rebocadores de escolta",
-        "syllabus": "Eixo II — Arte Naval · emprego de rebocadores na manobrabilidade",
-        "evidence": "O recorte consultado distingue a assistência direta, sustentada pelo empuxo, da indireta, que usa forças hidrodinâmicas sobre o casco; a eficácia indireta cai com a redução do seguimento.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+        "referenceId": "I-07",
+        "base": "IMO",
+        "publication": "Standards for Ship Manoeuvrability",
+        "edition": "MSC.137(76), 2002",
+        "section": "Anexo, item 2.1 — métodos para demonstrar conformidade",
+        "syllabus": "Eixo I — Manobrabilidade · padrões IMO e provas de manobrabilidade",
+        "evidence": "O recorte consultado admite previsão por ensaios de modelo e/ou modelos matemáticos, com validação em escala real, e também demonstração baseada diretamente nas provas em escala real; registra ainda as ressalvas de previsão deficiente ou divergência substancial.",
+        "url": "https://drive.google.com/file/d/18NKXssIKw_kCdTs3PNU6xrND6GY_a8vf/view"
       }
     },
     {
-      "id": "wed-r2-advance-caimento-correction",
+      "id": "thu-r2-underway-not-making-way",
       "category": "review",
       "axis": "III",
-      "kind": "Revisão FSRS vencida · nota 0 · erro de leitura",
-      "stem": "Em relação à derrota estimada, a posição observada de um navio encontra-se adiantada ao longo da rota e deslocada transversalmente para bombordo. Esses dois efeitos são denominados, respectivamente:",
+      "kind": "Revisão FSRS vencida · distinção conceitual",
+      "stem": "Um navio encontra-se parado em relação à água, com máquinas prontas, sem estar fundeado, encalhado ou amarrado à terra. Para os efeitos do RIPEAM/COLREG, ele está:",
       "options": [
-        "atraso e abatimento.",
-        "avanço e caimento.",
-        "avanço e deriva angular.",
-        "atraso e caimento."
-      ],
-      "correct": 1,
-      "explanation": "A diferença longitudinal para vante em relação à posição estimada caracteriza avanço; o deslocamento transversal caracteriza caimento.",
-      "comments": [
-        "Incorreta: a posição está adiantada, não atrasada; além disso, o termo usado no recorte para o deslocamento transversal é caimento.",
-        "Correta: identifica o componente longitudinal para vante como avanço e o componente transversal como caimento.",
-        "Incorreta: deriva angular não é o nome dado no recorte à diferença transversal entre as posições estimada e observada.",
-        "Incorreta: caimento está correto para o componente transversal, mas o componente longitudinal é avanço."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte",
-        "edition": "v. I e III",
-        "section": "Volume I, capítulo 4 — definição de caimento e avanço ou atraso",
-        "syllabus": "Eixo III — Navegação em águas restritas · navegação costeira e estimada",
-        "evidence": "O recorte consultado mostra graficamente a posição real adiantada em relação à estimada como avanço e o deslocamento lateral como caimento; a diferença longitudinal para ré é atraso.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
-    },
-    {
-      "id": "wed-r3-tackle-tensions-attachment-correction",
-      "category": "review",
-      "axis": "II",
-      "kind": "Revisão FSRS vencida · nota 0 · lacuna de conteúdo",
-      "stem": "Ao içar um peso com uma talha e ao engatar uma talha em cabo sem alça, qual procedimento está de acordo com as regras práticas de bordo?",
-      "options": [
-        "A arreigada fixa recebe a tensão máxima; o engate recomendado é a volta de encapeladura singela.",
-        "O tirador recebe a tensão mínima; o engate recomendado é o cote simples.",
-        "O tirador recebe a tensão máxima; o engate recomendado é a boca-de-lobo.",
-        "Tirador e arreigada fixa recebem sempre tensões iguais; o engate recomendado é o nó direito."
+        "sem seguimento e não em movimento, porque a velocidade em relação à água é nula.",
+        "em movimento e com seguimento, porque as máquinas estão prontas.",
+        "em movimento, porém sem seguimento em relação à água.",
+        "fundeado por equiparação, até que adquira velocidade de governo."
       ],
       "correct": 2,
-      "explanation": "Durante o içamento, o tirador suporta a tensão máxima e a arreigada fixa a mínima. Para engatar uma talha em cabo sem alça, a obra recomenda a boca-de-lobo.",
+      "explanation": "A definição de underway/em movimento é negativa: o navio não está fundeado, amarrado à terra nem encalhado. Isso não implica, por si só, que esteja fazendo seguimento em relação à água.",
       "comments": [
-        "Incorreta: no içamento, a tensão máxima está no tirador; a volta indicada para o engate não é a encapeladura singela.",
-        "Incorreta: inverte a distribuição de tensões e indica um engate não recomendado para essa finalidade.",
-        "Correta: reúne as duas regras práticas expressas no recorte consultado.",
-        "Incorreta: as tensões não são sempre iguais, e o nó direito não é o engate prescrito."
+        "Incorreta: ausência de seguimento não elimina a condição de em movimento definida pela Regra 3(i).",
+        "Incorreta: prontidão de máquinas não prova seguimento em relação à água.",
+        "Correta: o navio satisfaz a definição de em movimento, mas permanece sem seguimento.",
+        "Incorreta: a regra não equipara a fundeio um navio apenas por estar parado na água."
       ],
       "reference": {
-        "referenceId": "II-01",
-        "base": "Maurílio M. Fonseca",
-        "publication": "Arte Naval, v. 1",
-        "edition": "8. ed., MB, 2019",
-        "section": "Capítulo 9, seção 9.21 — regras práticas dos aparelhos de laborar",
-        "syllabus": "Eixo II — Arte Naval · poleame, aparelhos de laborar e acessórios",
-        "evidence": "O recorte consultado estabelece que, içando, o tirador suporta a tensão máxima e a arreigada fixa a mínima; também indica a boca-de-lobo como melhor modo de engatar a talha em cabo sem alça.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
+        "referenceId": "III-16",
+        "base": "IMO",
+        "publication": "COLREG - Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte A, Regra 3(i) — definição de underway",
+        "syllabus": "Eixo III — Navegação Restrita · RIPEAM/COLREG, definições gerais",
+        "evidence": "O recorte consultado define underway como a condição do navio que não está fundeado, amarrado à terra ou encalhado; a definição não exige que esteja fazendo seguimento em relação à água.",
+        "url": "https://drive.google.com/file/d/11JDZbk4anPy9Qhroj-epPnIK_Hy9L-16/view"
       }
     },
     {
-      "id": "wed-r4-extratropical-cyclone-energy-correction",
+      "id": "thu-r3-significant-wave-height",
       "category": "review",
       "axis": "V",
-      "kind": "Revisão FSRS vencida · nota 0 · lacuna de conteúdo",
-      "stem": "A fonte primordial de energia de um ciclone extratropical é:",
+      "kind": "Revisão FSRS vencida · conceito recorrente",
+      "stem": "Em uma sequência observada de ondas irregulares, a altura significativa da onda corresponde, conceitualmente, à:",
       "options": [
-        "o calor latente liberado por convecção simétrica junto ao olho.",
-        "a energia cinética produzida exclusivamente pela força de Coriolis.",
-        "a energia potencial associada ao contraste horizontal de temperatura entre massas de ar.",
-        "o aquecimento uniforme da superfície do mar em águas tropicais."
+        "altura da maior onda individual registrada no período.",
+        "média das alturas de todas as ondas observadas.",
+        "média das alturas do terço de ondas mais altas.",
+        "diferença entre a maior e a menor altura de onda do período."
       ],
       "correct": 2,
-      "explanation": "O ciclone extratropical obtém energia primordialmente da energia potencial ligada ao contraste horizontal de temperatura e, em geral, associa-se a um sistema frontal.",
+      "explanation": "A altura significativa é a média das alturas do terço mais alto da distribuição observada. Não é a onda máxima nem a média simples de todas as ondas.",
       "comments": [
-        "Incorreta: essa formulação se aproxima do mecanismo dominante dos ciclones tropicais, não dos extratropicais.",
-        "Incorreta: Coriolis influencia a circulação, mas não constitui a fonte primordial de energia descrita.",
-        "Correta: corresponde à definição do recorte meteorológico consultado.",
-        "Incorreta: o aquecimento uniforme não fornece o contraste baroclínico necessário ao mecanismo descrito."
+        "Incorreta: a onda máxima é um extremo individual, não a altura significativa.",
+        "Incorreta: a média total inclui as ondas menores e não representa H1/3.",
+        "Correta: essa é a definição estatística apresentada no recorte consultado.",
+        "Incorreta: amplitude entre extremos não define altura significativa."
       ],
       "reference": {
-        "referenceId": "V-01",
-        "base": "Altineu Pires Miguens",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45 — classificação e formação dos ciclones extratropicais",
-        "syllabus": "Eixo V — Meteorologia e Oceanografia · sistemas atmosféricos e ciclones",
-        "evidence": "O recorte consultado define o ciclone extratropical como baixa que extrai energia primordialmente da energia potencial decorrente de contraste horizontal de temperatura e costuma associar-se a sistema frontal.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
+        "referenceId": "V-04",
+        "base": "Edson Mesquita dos Santos",
+        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
+        "edition": "1. ed., 2021",
+        "section": "Distribuição estatística das ondas — altura significativa",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · ondas e parâmetros do estado do mar",
+        "evidence": "O recorte consultado identifica a média do terço de ondas mais altas como a altura significativa da onda e explica sua origem na avaliação visual tradicional do estado do mar."
       }
     },
     {
-      "id": "wed-c1-emergency-release-controlled-payout",
-      "category": "current",
-      "axis": "II",
-      "kind": "Avanço coerente · segurança do guincho de reboque",
-      "stem": "Em uma emergência com o cabo de reboque sob carga, qual comportamento é requerido do sistema de liberação do guincho?",
+      "id": "thu-r4-smcp-correction-numbers",
+      "category": "review",
+      "axis": "VI",
+      "kind": "Revisão FSRS vencida · erro de forma padronizada",
+      "stem": "Durante uma transmissão em inglês, o oficial informou por engano velocidade de 10 nós e deve corrigi-la para 12 nós. Qual formulação está de acordo com a IMO SMCP?",
       "options": [
-        "Bloquear o tambor imediatamente e impedir qualquer saída adicional do cabo.",
-        "Permitir a saída controlada do cabo, evitando o desenrolamento livre e descontrolado do tambor.",
-        "Liberar toda a carga somente depois de restabelecida a alimentação elétrica principal.",
-        "Aumentar automaticamente a força de frenagem até o limite de ruptura do cabo."
-      ],
-      "correct": 1,
-      "explanation": "A liberação deve permitir que o tambor gire e o cabo saia de modo controlado. A rotação livre e descontrolada pode fazer o cabo emperrar e inutilizar a própria função de emergência.",
-      "comments": [
-        "Incorreta: manter o tambor bloqueado pode conservar a condição perigosa de carga transversal ou excessiva.",
-        "Correta: a saída controlada alivia a situação sem criar o risco adicional de tambor em rotação livre.",
-        "Incorreta: a função de emergência deve permanecer disponível mesmo em condição de blackout.",
-        "Incorreta: levar o sistema ao limite de ruptura contraria a finalidade de liberar a carga com segurança."
-      ],
-      "reference": {
-        "referenceId": "II-09",
-        "base": "Henk Hensen",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulo 7, seções 7.3–7.4 — guinchos e sistemas de segurança do cabo",
-        "syllabus": "Eixo II — Arte Naval · reboque e emprego seguro de rebocadores",
-        "evidence": "O recorte consultado determina que a liberação de emergência permita ao tambor girar e ao cabo sair de forma controlada, com resistência suficiente para evitar desenrolamento livre; também prevê operação em blackout.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
-      }
-    },
-    {
-      "id": "wed-c2-snapback-danger-zone",
-      "category": "current",
-      "axis": "II",
-      "kind": "Avanço coerente · risco de snap-back",
-      "stem": "Durante uma faina de reboque, qual conduta melhor controla o risco de snap-back?",
-      "options": [
-        "Permanecer junto ao cabo para perceber visualmente o instante de ruptura.",
-        "Considerar seguros os cabos HMPE porque praticamente não armazenam energia.",
-        "Manter o pessoal afastado da trajetória potencial do cabo tensionado e aproximar-se somente com cautela quando indispensável.",
-        "Presumir que apenas cabos sintéticos longos apresentam retorno perigoso."
+        "My present speed is one-zero knots. Correction, my present speed is one-two knots.",
+        "My present speed is ten knots — sorry — now twelve knots.",
+        "My present speed is one-zero knots — mistake. Correction, my present speed is one-two knots.",
+        "Mistake speed. Amend it from ten to twelve knots."
       ],
       "correct": 2,
-      "explanation": "Cabos sob tensão podem retornar violentamente quando rompem. A medida básica é manter o pessoal fora da trajetória provável e evitar aproximação desnecessária.",
+      "explanation": "A SMCP manda anunciar Mistake e, em seguida, Correction com a parte corrigida. Números comuns são pronunciados dígito a dígito; portanto, 10 e 12 tornam-se one-zero e one-two.",
       "comments": [
-        "Incorreta: a proximidade expõe diretamente o tripulante à energia liberada na ruptura.",
-        "Incorreta: mesmo HMPE pode integrar um sistema com elementos elásticos, como um pendente, capazes de armazenar energia perigosa.",
-        "Correta: traduz a precaução operacional indicada para qualquer cabo tensionado.",
-        "Incorreta: o snap-back pode ocorrer em diferentes materiais e comprimentos, inclusive em cabos de aço."
+        "Incorreta: falta o marcador Mistake antes de Correction.",
+        "Incorreta: sorry e a pronúncia agregada dos números não seguem o procedimento padronizado.",
+        "Correta: contém Mistake, Correction e os números pronunciados em dígitos separados.",
+        "Incorreta: não reproduz a sequência padronizada e agrega os números."
       ],
       "reference": {
-        "referenceId": "II-09",
-        "base": "Henk Hensen",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulo 7, seção 7.5 — towlines e snap-back",
-        "syllabus": "Eixo II — Arte Naval · reboque, cabos e segurança da faina",
-        "evidence": "O recorte consultado afirma que o snap-back é comum a todos os cabos; materiais sintéticos podem romper sem aviso e com grande energia, razão pela qual se deve permanecer afastado de cabos tensionados.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+        "referenceId": "VI-01",
+        "base": "IMO",
+        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
+        "edition": "A.918(22), 2001",
+        "section": "General, itens 7 — Corrections e 10 — Numbers",
+        "syllabus": "Eixo VI — Comunicações · frases-padrão, correções e números",
+        "evidence": "O recorte consultado determina dizer Mistake, seguido de Correction e da parte corrigida; também estabelece que números sejam pronunciados em dígitos separados, salvo exceções como ângulos de leme.",
+        "url": "https://drive.google.com/file/d/1iHoEAH2kIKmqrG6FS9hOEC1dWTojWNYR/view"
       }
     },
     {
-      "id": "wed-c3-steep-short-towline-loads",
+      "id": "thu-c1-pilotage-nature-components",
       "category": "current",
-      "axis": "II",
-      "kind": "Avanço coerente · geometria e carregamento do cabo de reboque",
-      "stem": "Um rebocador puxa por cabo muito curto e inclinado, entre o convés do rebocador e o aparelho do navio. Mantido o mesmo empuxo horizontal, qual efeito deve ser esperado?",
+      "axis": "IV",
+      "kind": "Avanço · Lei nº 14.813/2024 · natureza e composição",
+      "stem": "De acordo com as alterações introduzidas pela Lei nº 14.813/2024 na LESTA, assinale a afirmativa correta sobre o serviço de praticagem:",
       "options": [
-        "A componente horizontal útil aumenta acima do empuxo do rebocador sem acréscimo de carga nos acessórios.",
-        "A força total no cabo e os esforços verticais aumentam, elevando atrito, desgaste e sensibilidade a cargas dinâmicas.",
-        "O cabo absorve melhor os picos dinâmicos quanto menor for seu comprimento.",
-        "A inclinação elimina a necessidade de considerar o SWL dos cabeços e buzinas."
+        "É serviço público prestado exclusivamente por servidores da Autoridade Marítima e se limita à atuação do prático a bordo.",
+        "É atividade privada, de interesse exclusivamente comercial, integrada pelo prático e pela embarcação assistida.",
+        "É atividade essencial, de natureza privada e interesse público voltado à segurança da navegação, à salvaguarda da vida e ao meio ambiente; compreende prático, lancha de prático e atalaia.",
+        "É atividade facultativa nas zonas de praticagem, podendo a disponibilidade permanente ser substituída por escala eventual."
+      ],
+      "correct": 2,
+      "explanation": "A lei caracteriza a praticagem como atividade essencial e de natureza privada, com objetivo de interesse público, exige disponibilidade permanente e define o serviço como o conjunto formado por prático, lancha de prático e atalaia.",
+      "comments": [
+        "Incorreta: a atividade tem natureza privada e não se limita à presença do prático a bordo.",
+        "Incorreta: a lei explicita objetivo de interesse público e não inclui a embarcação assistida como componente do serviço.",
+        "Correta: reúne a natureza, os objetivos e os três componentes previstos nos arts. 12 e 12-A.",
+        "Incorreta: a disponibilidade permanente é requisito legal do serviço nas zonas de praticagem."
+      ],
+      "reference": {
+        "referenceId": "IV-10",
+        "base": "Brasil",
+        "publication": "Lei nº 14.813/2024 - Atividade de Praticagem",
+        "edition": "2024",
+        "section": "Art. 12, §§ 1º a 3º, e art. 12-A da Lei nº 9.537/1997, com redação dada pela Lei nº 14.813/2024",
+        "syllabus": "Eixo IV — Legislação · atividade de praticagem",
+        "evidence": "O recorte oficial consultado qualifica a praticagem como atividade essencial, privada e de interesse público para segurança da navegação, vida e meio ambiente; exige disponibilidade permanente e enumera prático, lancha de prático e atalaia.",
+        "url": "https://www.in.gov.br/en/web/dou/-/lei-n-14.813-de-15-de-janeiro-de-2024-537585076"
+      }
+    },
+    {
+      "id": "thu-c2-pilot-qualification-maintenance",
+      "category": "current",
+      "axis": "IV",
+      "kind": "Avanço · Lei nº 14.813/2024 · manutenção da habilitação",
+      "stem": "A manutenção da habilitação do prático, nos termos da Lei nº 14.813/2024, depende:",
+      "options": [
+        "apenas da renovação periódica do certificado médico, sem exigência de manobras ou cursos.",
+        "do cumprimento de número mínimo de manobras, da realização de cursos de aperfeiçoamento estabelecidos pela Autoridade Marítima e da observância de recomendações internacionais reconhecidas.",
+        "exclusivamente da aprovação anual em prova escrita elaborada pela Autoridade Marítima.",
+        "da livre escolha do prático entre comprovar experiência, frequentar curso ou observar recomendações internacionais."
       ],
       "correct": 1,
-      "explanation": "A inclinação acentuada aumenta a força total no cabo e as componentes verticais, embora o componente horizontal útil permaneça ligado ao empuxo. Cabos curtos também absorvem pior os movimentos relativos e geram picos maiores.",
+      "explanation": "Os requisitos são cumulativos: mínimo de manobras, cursos de aperfeiçoamento determinados pela Autoridade Marítima e observância das recomendações internacionais reconhecidas.",
       "comments": [
-        "Incorreta: a geometria não cria empuxo horizontal adicional gratuito; ela aumenta a força total e os esforços nos pontos de passagem.",
-        "Correta: sintetiza os efeitos geométricos, de atrito e de carregamento dinâmico descritos no recorte.",
-        "Incorreta: menor comprimento oferece menor capacidade de absorver movimentos e tende a elevar os picos.",
-        "Incorreta: o SWL dos equipamentos do navio e do rebocador continua sendo limite essencial."
+        "Incorreta: aptidão médica não substitui os requisitos profissionais expressamente previstos.",
+        "Correta: corresponde ao conjunto cumulativo disposto no art. 13, § 2º.",
+        "Incorreta: a lei não reduz a manutenção da habilitação a uma prova escrita anual.",
+        "Incorreta: não se trata de requisitos alternativos à escolha do interessado."
       ],
       "reference": {
-        "referenceId": "II-09",
-        "base": "Henk Hensen",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulo 7, seção 7.5 — cabos curtos, ângulo vertical e cargas dinâmicas",
-        "syllabus": "Eixo II — Arte Naval · reboque e emprego de cabos",
-        "evidence": "O recorte consultado mostra que um cabo curto e inclinado pode apresentar força total muito superior ao empuxo, com grandes componentes verticais, atrito e desgaste; movimentos do rebocador ainda produzem cargas dinâmicas elevadas.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
+        "referenceId": "IV-10",
+        "base": "Brasil",
+        "publication": "Lei nº 14.813/2024 - Atividade de Praticagem",
+        "edition": "2024",
+        "section": "Art. 13, § 2º, da Lei nº 9.537/1997, com redação dada pela Lei nº 14.813/2024",
+        "syllabus": "Eixo IV — Legislação · habilitação e proficiência do prático",
+        "evidence": "O dispositivo consultado condiciona a manutenção da habilitação ao número mínimo de manobras, a cursos de aperfeiçoamento estabelecidos pela Autoridade Marítima e à observância de recomendações internacionais reconhecidas.",
+        "url": "https://www.in.gov.br/en/web/dou/-/lei-n-14.813-de-15-de-janeiro-de-2024-537585076"
       }
     },
     {
-      "id": "wed-t1-brm-pilotage-plan-monitoring",
+      "id": "thu-c3-pilotage-exemption-certificate",
+      "category": "current",
+      "axis": "IV",
+      "kind": "Avanço · Lei nº 14.813/2024 · isenção de praticagem",
+      "stem": "Entre as condições legais para a emissão de Certificado de Isenção de Praticagem, assinale a opção correta:",
+      "options": [
+        "O comandante pode ser estrangeiro, desde que o navio tenha até 500 AB e opere apenas em navegação interior.",
+        "O certificado é restrito a comandante brasileiro de navio de bandeira brasileira com até 100 m de comprimento e tripulação composta por, no mínimo, dois terços de brasileiros, além dos demais requisitos e da análise de risco.",
+        "A isenção decorre automaticamente da experiência do comandante na zona, independentemente de análise de risco e período de repouso.",
+        "Qualquer embarcação de bandeira brasileira pode obter o certificado, sem limite de comprimento, se mantiver prático de sobreaviso em terra."
+      ],
+      "correct": 1,
+      "explanation": "O art. 13, § 4º, estabelece destinatário e limites específicos: comandante brasileiro, navio brasileiro de até 100 m e tripulação com pelo menos dois terços de brasileiros, além de análise de risco e requisitos de descanso, experiência e prática na zona.",
+      "comments": [
+        "Incorreta: a lei exige comandante brasileiro e fixa o limite por comprimento, não por arqueação bruta nessa hipótese.",
+        "Correta: reúne os requisitos objetivos e reconhece as condições adicionais previstas no dispositivo.",
+        "Incorreta: experiência não torna a emissão automática; a análise de risco e os demais requisitos permanecem necessários.",
+        "Incorreta: existe limite de 100 m e não há substituição legal por prático de sobreaviso em terra."
+      ],
+      "reference": {
+        "referenceId": "IV-10",
+        "base": "Brasil",
+        "publication": "Lei nº 14.813/2024 - Atividade de Praticagem",
+        "edition": "2024",
+        "section": "Art. 13, § 4º, da Lei nº 9.537/1997, com redação dada pela Lei nº 14.813/2024",
+        "syllabus": "Eixo IV — Legislação · Certificado de Isenção de Praticagem",
+        "evidence": "O recorte oficial consultado limita o certificado a comandantes brasileiros de navios brasileiros de até 100 m, com tripulação de ao menos dois terços de brasileiros, e exige análise de risco, repouso e comprovação de experiência e prática.",
+        "url": "https://www.in.gov.br/en/web/dou/-/lei-n-14.813-de-15-de-janeiro-de-2024-537585076"
+      }
+    },
+    {
+      "id": "thu-x1-ics-pilot-tug-signals",
       "category": "rotation",
-      "axis": "III",
-      "kind": "Rotação semanal · BRM e praticagem",
-      "stem": "Com o prático embarcado e conduzindo a navegação em águas restritas, qual prática é compatível com o BRM?",
+      "axis": "VI",
+      "kind": "Rotação · Código Internacional de Sinais · sinais de uma letra",
+      "stem": "No Código Internacional de Sinais, qual sequência associa corretamente as mensagens “Necessito de prático”, “Tenho prático a bordo” e “Necessito de rebocador” aos respectivos sinais de uma letra?",
       "options": [
-        "Encerrar o plano de passagem no ponto de embarque do prático e retomar o planejamento após a atracação.",
-        "Manter o plano até o berço, incluindo embarque e monitoramento das ações do prático, e comparar o progresso real com a derrota planejada.",
-        "Suspender a plotagem da posição enquanto o prático tiver o con.",
-        "Limitar o plano ao trecho conhecido pelo comandante, deixando o restante sem contingências registradas."
+        "G — H — Z",
+        "H — G — T",
+        "P — H — V",
+        "G — P — W"
+      ],
+      "correct": 0,
+      "explanation": "O sinal G significa “Necessito de prático”; H, “Tenho prático a bordo”; e Z, “Necessito de rebocador”. Há usos especiais de P e G em determinadas situações, mas eles não alteram essa sequência geral.",
+      "comments": [
+        "Correta: G, H e Z correspondem, nessa ordem, às três mensagens indicadas.",
+        "Incorreta: inverte G e H, e T não é o sinal geral para solicitar rebocador.",
+        "Incorreta: P tem emprego específico no porto e, por sinal sonoro no mar, em situação definida; V significa necessito de assistência.",
+        "Incorreta: P não significa tenho prático a bordo e W solicita assistência médica."
+      ],
+      "reference": {
+        "referenceId": "VI-03",
+        "base": "IMO",
+        "publication": "International Code of Signals",
+        "edition": "2005",
+        "section": "Capítulo IV — sinais de uma letra: G, H e Z",
+        "syllabus": "Eixo VI — Comunicações · Código Internacional de Sinais",
+        "evidence": "A tabela de sinais de uma letra consultada atribui G à solicitação de prático, H à presença de prático a bordo e Z à solicitação de rebocador.",
+        "url": "https://drive.google.com/file/d/1KqhwaBEb2t1A5RwCrT7HNUlOkwnZHbtL/view"
+      }
+    },
+    {
+      "id": "thu-x2-smcp-request-marker-limit",
+      "category": "rotation",
+      "axis": "VI",
+      "kind": "Rotação · SMCP · marcadores de mensagem",
+      "stem": "Quanto ao marcador de mensagem REQUEST na IMO SMCP, assinale a afirmativa correta:",
+      "options": [
+        "É empregado para emitir ordem legalmente vinculante de navegação por qualquer navio.",
+        "Indica pedido de providência ou fornecimento relativo ao navio, como rebocadores, e não deve ser usado para interferir na navegação ou modificar o COLREG.",
+        "Substitui o marcador WARNING sempre que existir perigo imediato no canal.",
+        "Comunica exclusivamente a intenção imediata de manobra do próprio navio."
       ],
       "correct": 1,
-      "explanation": "O plano não termina no embarque do prático: deve prosseguir até o berço, permitindo que comandante e oficial de quarto acompanhem a posição, o movimento e as restrições da passagem.",
+      "explanation": "REQUEST sinaliza que se pede uma providência, serviço ou fornecimento, como a disponibilização de rebocadores. A SMCP veda seu uso para questões de navegação ou para alterar o COLREG.",
       "comments": [
-        "Incorreta: o planejamento deve cobrir também o trecho de praticagem.",
-        "Correta: preserva continuidade do plano, consciência situacional e monitoramento independente.",
-        "Incorreta: a presença do prático não elimina o dever de acompanhar posição e movimento.",
-        "Incorreta: abortagem e contingências são especialmente relevantes em águas restritas."
+        "Incorreta: ordem vinculante emitida por autoridade competente é enquadrada como INSTRUCTION.",
+        "Correta: corresponde à definição e à limitação expressa do marcador REQUEST.",
+        "Incorreta: perigo é comunicado por WARNING, não por REQUEST.",
+        "Incorreta: ação navegacional imediata pretendida pelo próprio navio é anunciada por INTENTION."
       ],
       "reference": {
-        "referenceId": "III-01",
-        "base": "A. J. Swift e T. J. Bailey",
-        "publication": "Bridge Team Management: A Practical Guide",
-        "edition": "2. ed., 2004",
-        "section": "Capítulo 7 — Navigating with a pilot on board: planning e monitoring",
-        "syllabus": "Eixo III — Navegação em águas restritas · BRM, planejamento e monitoramento",
-        "evidence": "O recorte consultado afirma que o plano bem elaborado não termina no ponto de embarque do prático: ele segue do mar ao berço, inclui o monitoramento das ações do prático e permite comparar o progresso com a derrota planejada.",
-        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
+        "referenceId": "VI-01",
+        "base": "IMO",
+        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
+        "edition": "A.918(22), 2001",
+        "section": "Parte A1/6 — marcador de mensagem REQUEST",
+        "syllabus": "Eixo VI — Comunicações · marcadores de mensagem da SMCP",
+        "evidence": "O recorte consultado define REQUEST como pedido de ação, provisão ou arranjo relativo ao navio, exemplifica a solicitação de rebocadores e proíbe seu emprego em navegação ou para modificar o COLREG.",
+        "url": "https://drive.google.com/file/d/1iHoEAH2kIKmqrG6FS9hOEC1dWTojWNYR/view"
       }
     },
     {
-      "id": "wed-t2-brm-doubt-pilot-action",
-      "category": "rotation",
-      "axis": "III",
-      "kind": "Rotação semanal · intervenção escalonada no BRM",
-      "stem": "O oficial de quarto tem dúvida sobre uma ação ou intenção do prático. Segundo a prática de BRM, deve inicialmente:",
-      "options": [
-        "aguardar a conclusão da manobra para evitar interferência na praticagem.",
-        "alterar o rumo por iniciativa própria, sem comunicar o prático ou o comandante.",
-        "buscar esclarecimento com o prático; persistindo a dúvida, avisar imediatamente o comandante e tomar a ação necessária à segurança.",
-        "registrar a dúvida no diário e transferir toda a responsabilidade ao prático."
-      ],
-      "correct": 2,
-      "explanation": "A resposta deve ser progressiva e imediata: esclarecer a intenção com o prático; se a dúvida permanecer, informar o comandante e agir conforme necessário para proteger o navio.",
-      "comments": [
-        "Incorreta: adiar o esclarecimento pode permitir que a situação evolua para condição insegura.",
-        "Incorreta: uma intervenção não coordenada pode agravar o risco e rompe o fluxo de comunicação da equipe.",
-        "Correta: corresponde ao encadeamento de esclarecimento, escalonamento e ação de segurança.",
-        "Incorreta: a presença do prático não exonera comandante e oficial de quarto de seus deveres."
-      ],
-      "reference": {
-        "referenceId": "III-01",
-        "base": "A. J. Swift e T. J. Bailey",
-        "publication": "Bridge Team Management: A Practical Guide",
-        "edition": "2. ed., 2004",
-        "section": "Capítulo 7 e anexo sobre navegação com prático a bordo",
-        "syllabus": "Eixo III — Navegação em águas restritas · trabalho em equipe e praticagem",
-        "evidence": "O recorte consultado mantém os deveres do comandante e do oficial de quarto, exige cooperação e verificação da posição e orienta pedir esclarecimento ao prático; persistindo a dúvida, o comandante deve ser avisado e a ação necessária deve ser tomada.",
-        "url": "https://drive.google.com/file/d/1zA_fhJ68StKLYd4DWgMpLt9vNIYbOUjO/view"
-      }
-    },
-    {
-      "id": "wed-o1-pscpp2008-q49-short-towline",
+      "id": "thu-o1-pscpp2011-q68-smcp",
       "category": "official",
-      "axis": "II",
-      "kind": "Questão oficial histórica · assinale a incorreta",
-      "stem": "Quanto às desvantagens do emprego de cabo curto por um rebocador operando no cabo, assinale a opção INCORRETA:",
+      "axis": "VI",
+      "kind": "Questão oficial histórica · sequência C/E",
+      "stem": "De acordo com a IMO SMCP, indique com C as frases corretas e com E as erradas e assinale a opção correta: I — My present speed is one-zero knots. Correction, my present speed is one-two knots. II — Stand by on VHF channel one-four until pilot transfer is completed. III — You should anchor in anchorage alfa two. IV — Pilot boat is bearing one-one-five degrees from you. V — Port two-zero. VI — Starboard, steer zero-zero-zero.",
       "options": [
-        "Quanto menor o cabo, menor a absorção das forças dinâmicas e maiores os picos de carga.",
-        "A resistência do cabo deve suportar as forças estáticas, que podem ser maiores com cabos curtos.",
-        "Com cabo curto, o atrito pode ser elevado, causando aquecimento e desgaste considerável.",
-        "Quando um rebocador está passado na proa e opera de través enquanto o navio se move a ré, o cabo curto prejudica a segurança do rebocador.",
-        "Quanto menor o cabo, maior pode ser o efeito da descarga dos propulsores, reduzindo a eficiência do rebocador."
+        "C — E — C — C — C — E",
+        "C — C — E — E — E — C",
+        "E — C — E — C — E — C",
+        "E — C — C — E — C — C",
+        "C — E — E — C — E — E"
       ],
-      "correct": 3,
-      "explanation": "A alternativa D é a incorreta. Na configuração descrita pela questão oficial, o cabo curto não é apresentado como efeito negativo para a segurança; as demais opções reproduzem desvantagens operacionais dos cabos curtos. Gabarito oficial: D.",
+      "correct": 2,
+      "explanation": "A sequência correta é E–C–E–C–E–C, alternativa C. A primeira frase omite Mistake; a terceira usa o condicional should sem o marcador ADVICE; a quinta trata ângulo de leme como dígitos, embora a SMCP determine twenty. As demais seguem as construções padronizadas. Gabarito oficial: C.",
       "comments": [
-        "Correta como afirmação: menor comprimento reduz a capacidade de absorver movimentos relativos e eleva cargas de pico.",
-        "Correta como afirmação: a geometria inclinada de cabos curtos pode elevar bastante a força total no cabo.",
-        "Correta como afirmação: o grande componente vertical e o atrito nos pontos de passagem aumentam aquecimento e desgaste.",
-        "Incorreta — gabarito: essa configuração não constitui a desvantagem de segurança indicada pelas demais proposições.",
-        "Correta como afirmação: a proximidade favorece a interferência da descarga do rebocador e reduz sua eficiência efetiva."
+        "Incorreta: classifica como corretas as frases I, III e V, que violam, respectivamente, os padrões de correção, advice e ângulo de leme.",
+        "Incorreta: a frase I é errada e a IV é correta, ao contrário do indicado nessa sequência.",
+        "Correta: I é E; II é C; III é E; IV é C; V é E; VI é C.",
+        "Incorreta: a frase III é errada, a IV é correta e a V é errada.",
+        "Incorreta: as frases I e II estão classificadas incorretamente e a VI é correta."
       ],
       "reference": {
-        "referenceId": "II-09",
-        "base": "Diretoria de Portos e Costas / Henk Hensen",
-        "publication": "PSCPP 2008 / Tug Use in Port: A Practical Guide",
-        "edition": "Prova de 2008; obra-base: 4. ed., 2021",
-        "section": "Questão 49; capítulo 7, seção 7.5 — desvantagens do cabo curto",
-        "syllabus": "Eixo II — Arte Naval · reboque e emprego de rebocadores",
-        "evidence": "A prova oficial apresenta cinco afirmações sobre cabos curtos e marca D como gabarito. O recorte da obra-base fundamenta menor absorção dinâmica, aumento de cargas, atrito e desgaste e perda de eficiência por interferência da descarga.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view",
+        "referenceId": "VI-01",
+        "base": "Diretoria de Portos e Costas / IMO",
+        "publication": "PSCPP 2011 — Prova Amarela / IMO Standard Marine Communication Phrases",
+        "edition": "Prova de 2011; A.918(22), 2001",
+        "section": "Questão 68; General, itens 6.2, 7, 10, 12 e 18.1; Parte A2/1",
+        "syllabus": "Eixo VI — Comunicações · IMO SMCP",
+        "evidence": "A prova oficial apresenta seis frases e cinco sequências. Os recortes da SMCP confirmam Mistake/Correction, standby em canal VHF, vedação de should, expressão de bearings, exceção para ângulos de leme e ordem de rumo com dígitos separados.",
+        "url": "https://drive.google.com/file/d/1iHoEAH2kIKmqrG6FS9hOEC1dWTojWNYR/view",
         "origin": {
-          "exam": "PSCPP 2008",
-          "year": 2008,
-          "question": 49,
-          "answer": "D",
-          "adaptation": "Traduzida para o português e atualizada ortograficamente, preservando as cinco alternativas e o gabarito.",
-          "url": "https://drive.google.com/file/d/1KfllJf4BukeOqCtNlr5uuwNC7xDu45I6/view"
+          "exam": "PSCPP 2011 — Prova Amarela",
+          "year": 2011,
+          "question": 68,
+          "answer": "C",
+          "adaptation": "Diagramação condensada e enumeração das frases; texto técnico, cinco alternativas e gabarito preservados.",
+          "url": "https://drive.google.com/file/d/1Fdz2o1xtzIkg1KONqP95HemlINDJcv_1/view"
         }
       }
     }
