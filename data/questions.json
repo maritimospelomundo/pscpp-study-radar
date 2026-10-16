@@ -1,333 +1,323 @@
 {
-  "roundId": "pilotage-law-smcp-ics-2026-10-15",
-  "label": "Rodada adaptativa de 15 de outubro de 2026",
-  "title": "Praticagem, habilitação e comunicações padronizadas",
+  "roundId": "currents-tides-manoeuvrability-2026-10-16",
+  "label": "Rodada adaptativa de 16 de outubro de 2026",
+  "title": "Correntes, marés e decisões de manobra",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões vencidas de manobrabilidade, RIPEAM, ondas e SMCP · Lei nº 14.813/2024 e atividade de praticagem · Código Internacional de Sinais · Questão oficial de comunicações",
+  "path": "Revisões vencidas de manobrabilidade, navegação e rebocadores · rumo e velocidade no fundo · marés e giro · questão oficial de marés",
   "method": "4–3–2–1",
-  "mixPlan": {
-    "review": 4,
-    "current": 3,
-    "rotation": 2,
-    "official": 1
-  },
+  "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
   "questions": [
     {
-      "id": "thu-r1-msc137-compliance-methods",
+      "id": "fri-r1-pivot-point-definition",
       "category": "review",
       "axis": "I",
       "kind": "Revisão FSRS vencida · nota 0 · confusão",
-      "stem": "Segundo a Resolução MSC.137(76), quanto à demonstração de conformidade de um navio com os padrões de manobrabilidade, assinale a afirmativa correta:",
+      "stem": "Durante uma guinada, qual definição caracteriza corretamente o ponto pivô do navio?",
       "options": [
-        "A conformidade somente pode ser demonstrada por provas em escala real, sendo vedadas previsões na fase de projeto.",
-        "Ensaios de modelo e previsões por modelos matemáticos podem estimar a conformidade no projeto; provas em escala real devem validar os resultados, ressalvada a atuação da Administração diante de previsão deficiente ou divergência substancial.",
-        "Uma previsão favorável na fase de projeto dispensa qualquer prova em escala real, ainda que a Administração identifique divergência substancial.",
-        "Resultados de provas em escala real só podem complementar ensaios de modelo e nunca constituem, isoladamente, método de demonstração de conformidade."
+        "É um ponto material fixo no centro de gravidade, onde se anulam simultaneamente as velocidades longitudinal e transversal.",
+        "É um ponto cinemático não estacionário, situado no eixo longitudinal, no qual não há velocidade lateral durante a mudança de aproamento.",
+        "É o centro geométrico da curva de giro, situado fora do casco e imóvel em relação ao fundo.",
+        "É o ponto de aplicação da força do leme, cuja posição independe do seguimento e da razão de guinada."
       ],
       "correct": 1,
-      "explanation": "A MSC.137(76) admite dois caminhos: previsão na fase de projeto por ensaios de modelo e/ou modelos matemáticos, seguida de validação em escala real, ou demonstração diretamente pelos resultados das provas em escala real. A Administração pode intervir quando a previsão for deficiente ou houver divergência substancial.",
+      "explanation": "O ponto pivô é cinemático e flutuante: fica no eixo longitudinal e corresponde à seção sem movimento lateral instantâneo quando o navio guina. Sua posição varia com a condição de movimento.",
       "comments": [
-        "Incorreta: a resolução admite previsões por ensaios de modelo e modelos matemáticos na fase de projeto.",
-        "Correta: reproduz o primeiro método e as ressalvas expressas no item 2.1.1.",
-        "Incorreta: a prova em escala real é prevista para validar o resultado, e a Administração conserva competência nas situações ressalvadas.",
-        "Incorreta: o item 2.1.2 admite demonstrar conformidade com base nas próprias provas em escala real."
+        "Incorreta: o ponto pivô não é um ponto material fixo nem coincide necessariamente com o centro de gravidade.",
+        "Correta: reúne a natureza cinemática, a posição no eixo longitudinal e a ausência de velocidade lateral.",
+        "Incorreta: o centro da trajetória está fora do navio; o ponto pivô pertence ao eixo longitudinal do casco.",
+        "Incorreta: não é o ponto de aplicação do leme, e sua posição depende da cinemática da manobra."
       ],
       "reference": {
-        "referenceId": "I-07",
-        "base": "IMO",
-        "publication": "Standards for Ship Manoeuvrability",
-        "edition": "MSC.137(76), 2002",
-        "section": "Anexo, item 2.1 — métodos para demonstrar conformidade",
-        "syllabus": "Eixo I — Manobrabilidade · padrões IMO e provas de manobrabilidade",
-        "evidence": "O recorte consultado admite previsão por ensaios de modelo e/ou modelos matemáticos, com validação em escala real, e também demonstração baseada diretamente nas provas em escala real; registra ainda as ressalvas de previsão deficiente ou divergência substancial.",
-        "url": "https://drive.google.com/file/d/18NKXssIKw_kCdTs3PNU6xrND6GY_a8vf/view"
+        "referenceId": "I-08",
+        "base": "Santos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 6, item 6.2 — O ponto pivô",
+        "syllabus": "Eixo I — Manobrabilidade · ponto pivô e curva de giro",
+        "evidence": "O recorte consultado define o ponto pivô como ponto cinemático não estacionário, situado no eixo longitudinal, onde não existe movimento lateral quando o navio é forçado a mudar o aproamento.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
       }
     },
     {
-      "id": "thu-r2-underway-not-making-way",
+      "id": "fri-r2-current-advance-delay",
       "category": "review",
       "axis": "III",
-      "kind": "Revisão FSRS vencida · distinção conceitual",
-      "stem": "Um navio encontra-se parado em relação à água, com máquinas prontas, sem estar fundeado, encalhado ou amarrado à terra. Para os efeitos do RIPEAM/COLREG, ele está:",
+      "kind": "Revisão FSRS vencida · nota 0 · leitura",
+      "stem": "Comparadas, no mesmo instante, a posição estimada e a posição observada, verificou-se que a distância navegada no fundo foi maior que a distância percorrida na superfície. Segundo Miguens, essa componente do efeito da corrente é denominada:",
       "options": [
-        "sem seguimento e não em movimento, porque a velocidade em relação à água é nula.",
-        "em movimento e com seguimento, porque as máquinas estão prontas.",
-        "em movimento, porém sem seguimento em relação à água.",
-        "fundeado por equiparação, até que adquira velocidade de governo."
+        "Atraso, pois a velocidade no fundo é menor que a velocidade do navio.",
+        "Caimento, pois toda diferença longitudinal é atribuída ao abatimento transversal.",
+        "Avanço, pois a velocidade no fundo é maior que a velocidade do navio.",
+        "Deriva, pois a diferença de distâncias independe da corrente."
       ],
       "correct": 2,
-      "explanation": "A definição de underway/em movimento é negativa: o navio não está fundeado, amarrado à terra nem encalhado. Isso não implica, por si só, que esteja fazendo seguimento em relação à água.",
+      "explanation": "Há avanço quando a distância navegada no fundo supera a distância percorrida na superfície; de modo equivalente, a velocidade no fundo é maior que a velocidade do navio. A situação inversa caracteriza atraso.",
       "comments": [
-        "Incorreta: ausência de seguimento não elimina a condição de em movimento definida pela Regra 3(i).",
-        "Incorreta: prontidão de máquinas não prova seguimento em relação à água.",
-        "Correta: o navio satisfaz a definição de em movimento, mas permanece sem seguimento.",
-        "Incorreta: a regra não equipara a fundeio um navio apenas por estar parado na água."
+        "Incorreta: atraso corresponde à distância no fundo menor e à velocidade no fundo inferior.",
+        "Incorreta: caimento é a componente transversal obtida pela decomposição do efeito total da corrente.",
+        "Correta: é a relação indicada para avanço no recorte consultado.",
+        "Incorreta: a diferença entre as posições no mesmo instante expressa justamente o efeito da corrente."
       ],
       "reference": {
-        "referenceId": "III-16",
-        "base": "IMO",
-        "publication": "COLREG - Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte A, Regra 3(i) — definição de underway",
-        "syllabus": "Eixo III — Navegação Restrita · RIPEAM/COLREG, definições gerais",
-        "evidence": "O recorte consultado define underway como a condição do navio que não está fundeado, amarrado à terra ou encalhado; a definição não exige que esteja fazendo seguimento em relação à água.",
-        "url": "https://drive.google.com/file/d/11JDZbk4anPy9Qhroj-epPnIK_Hy9L-16/view"
+        "referenceId": "III-02",
+        "base": "Miguens",
+        "publication": "Navegação: A Ciência e a Arte",
+        "edition": "v. I, 2ª revisão atualizada, 2023",
+        "section": "Volume I, capítulo 4 — caimento, avanço e atraso",
+        "syllabus": "Eixo III — Navegação Restrita · efeito da corrente e navegação estimada",
+        "evidence": "O trecho lido decompõe o efeito da corrente em caimento e avanço ou atraso; há avanço quando a distância no fundo supera a percorrida na superfície e a velocidade no fundo é maior que a velocidade do navio.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
       }
     },
     {
-      "id": "thu-r3-significant-wave-height",
+      "id": "fri-r3-coriolis-tidal-currents",
       "category": "review",
-      "axis": "V",
-      "kind": "Revisão FSRS vencida · conceito recorrente",
-      "stem": "Em uma sequência observada de ondas irregulares, a altura significativa da onda corresponde, conceitualmente, à:",
+      "axis": "III",
+      "kind": "Revisão FSRS vencida · nota 0 · leitura",
+      "stem": "Em mar aberto, ao considerar a rotação das correntes de maré e o efeito de Coriolis, assinale a afirmativa correta:",
       "options": [
-        "altura da maior onda individual registrada no período.",
-        "média das alturas de todas as ondas observadas.",
-        "média das alturas do terço de ondas mais altas.",
-        "diferença entre a maior e a menor altura de onda do período."
-      ],
-      "correct": 2,
-      "explanation": "A altura significativa é a média das alturas do terço mais alto da distribuição observada. Não é a onda máxima nem a média simples de todas as ondas.",
-      "comments": [
-        "Incorreta: a onda máxima é um extremo individual, não a altura significativa.",
-        "Incorreta: a média total inclui as ondas menores e não representa H1/3.",
-        "Correta: essa é a definição estatística apresentada no recorte consultado.",
-        "Incorreta: amplitude entre extremos não define altura significativa."
-      ],
-      "reference": {
-        "referenceId": "V-04",
-        "base": "Edson Mesquita dos Santos",
-        "publication": "Princípios de Hidrodinâmica e Ação das Ondas sobre o Movimento do Navio",
-        "edition": "1. ed., 2021",
-        "section": "Distribuição estatística das ondas — altura significativa",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · ondas e parâmetros do estado do mar",
-        "evidence": "O recorte consultado identifica a média do terço de ondas mais altas como a altura significativa da onda e explica sua origem na avaliação visual tradicional do estado do mar."
-      }
-    },
-    {
-      "id": "thu-r4-smcp-correction-numbers",
-      "category": "review",
-      "axis": "VI",
-      "kind": "Revisão FSRS vencida · erro de forma padronizada",
-      "stem": "Durante uma transmissão em inglês, o oficial informou por engano velocidade de 10 nós e deve corrigi-la para 12 nós. Qual formulação está de acordo com a IMO SMCP?",
-      "options": [
-        "My present speed is one-zero knots. Correction, my present speed is one-two knots.",
-        "My present speed is ten knots — sorry — now twelve knots.",
-        "My present speed is one-zero knots — mistake. Correction, my present speed is one-two knots.",
-        "Mistake speed. Amend it from ten to twelve knots."
-      ],
-      "correct": 2,
-      "explanation": "A SMCP manda anunciar Mistake e, em seguida, Correction com a parte corrigida. Números comuns são pronunciados dígito a dígito; portanto, 10 e 12 tornam-se one-zero e one-two.",
-      "comments": [
-        "Incorreta: falta o marcador Mistake antes de Correction.",
-        "Incorreta: sorry e a pronúncia agregada dos números não seguem o procedimento padronizado.",
-        "Correta: contém Mistake, Correction e os números pronunciados em dígitos separados.",
-        "Incorreta: não reproduz a sequência padronizada e agrega os números."
-      ],
-      "reference": {
-        "referenceId": "VI-01",
-        "base": "IMO",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "A.918(22), 2001",
-        "section": "General, itens 7 — Corrections e 10 — Numbers",
-        "syllabus": "Eixo VI — Comunicações · frases-padrão, correções e números",
-        "evidence": "O recorte consultado determina dizer Mistake, seguido de Correction e da parte corrigida; também estabelece que números sejam pronunciados em dígitos separados, salvo exceções como ângulos de leme.",
-        "url": "https://drive.google.com/file/d/1iHoEAH2kIKmqrG6FS9hOEC1dWTojWNYR/view"
-      }
-    },
-    {
-      "id": "thu-c1-pilotage-nature-components",
-      "category": "current",
-      "axis": "IV",
-      "kind": "Avanço · Lei nº 14.813/2024 · natureza e composição",
-      "stem": "De acordo com as alterações introduzidas pela Lei nº 14.813/2024 na LESTA, assinale a afirmativa correta sobre o serviço de praticagem:",
-      "options": [
-        "É serviço público prestado exclusivamente por servidores da Autoridade Marítima e se limita à atuação do prático a bordo.",
-        "É atividade privada, de interesse exclusivamente comercial, integrada pelo prático e pela embarcação assistida.",
-        "É atividade essencial, de natureza privada e interesse público voltado à segurança da navegação, à salvaguarda da vida e ao meio ambiente; compreende prático, lancha de prático e atalaia.",
-        "É atividade facultativa nas zonas de praticagem, podendo a disponibilidade permanente ser substituída por escala eventual."
-      ],
-      "correct": 2,
-      "explanation": "A lei caracteriza a praticagem como atividade essencial e de natureza privada, com objetivo de interesse público, exige disponibilidade permanente e define o serviço como o conjunto formado por prático, lancha de prático e atalaia.",
-      "comments": [
-        "Incorreta: a atividade tem natureza privada e não se limita à presença do prático a bordo.",
-        "Incorreta: a lei explicita objetivo de interesse público e não inclui a embarcação assistida como componente do serviço.",
-        "Correta: reúne a natureza, os objetivos e os três componentes previstos nos arts. 12 e 12-A.",
-        "Incorreta: a disponibilidade permanente é requisito legal do serviço nas zonas de praticagem."
-      ],
-      "reference": {
-        "referenceId": "IV-10",
-        "base": "Brasil",
-        "publication": "Lei nº 14.813/2024 - Atividade de Praticagem",
-        "edition": "2024",
-        "section": "Art. 12, §§ 1º a 3º, e art. 12-A da Lei nº 9.537/1997, com redação dada pela Lei nº 14.813/2024",
-        "syllabus": "Eixo IV — Legislação · atividade de praticagem",
-        "evidence": "O recorte oficial consultado qualifica a praticagem como atividade essencial, privada e de interesse público para segurança da navegação, vida e meio ambiente; exige disponibilidade permanente e enumera prático, lancha de prático e atalaia.",
-        "url": "https://www.in.gov.br/en/web/dou/-/lei-n-14.813-de-15-de-janeiro-de-2024-537585076"
-      }
-    },
-    {
-      "id": "thu-c2-pilot-qualification-maintenance",
-      "category": "current",
-      "axis": "IV",
-      "kind": "Avanço · Lei nº 14.813/2024 · manutenção da habilitação",
-      "stem": "A manutenção da habilitação do prático, nos termos da Lei nº 14.813/2024, depende:",
-      "options": [
-        "apenas da renovação periódica do certificado médico, sem exigência de manobras ou cursos.",
-        "do cumprimento de número mínimo de manobras, da realização de cursos de aperfeiçoamento estabelecidos pela Autoridade Marítima e da observância de recomendações internacionais reconhecidas.",
-        "exclusivamente da aprovação anual em prova escrita elaborada pela Autoridade Marítima.",
-        "da livre escolha do prático entre comprovar experiência, frequentar curso ou observar recomendações internacionais."
+        "A corrente é desviada para a esquerda no Hemisfério Norte e para a direita no Hemisfério Sul.",
+        "A corrente é desviada para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul.",
+        "A corrente permanece sempre axial e alternativa, sem rotação ao longo do ciclo.",
+        "O desvio ocorre para a direita em ambos os hemisférios, variando apenas sua intensidade."
       ],
       "correct": 1,
-      "explanation": "Os requisitos são cumulativos: mínimo de manobras, cursos de aperfeiçoamento determinados pela Autoridade Marítima e observância das recomendações internacionais reconhecidas.",
+      "explanation": "O efeito de Coriolis desvia o movimento para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul. Em mar aberto, as correntes de maré podem apresentar caráter rotatório.",
       "comments": [
-        "Incorreta: aptidão médica não substitui os requisitos profissionais expressamente previstos.",
-        "Correta: corresponde ao conjunto cumulativo disposto no art. 13, § 2º.",
-        "Incorreta: a lei não reduz a manutenção da habilitação a uma prova escrita anual.",
-        "Incorreta: não se trata de requisitos alternativos à escolha do interessado."
+        "Incorreta: inverte os sentidos hemisféricos.",
+        "Correta: corresponde ao sentido do desvio de Coriolis indicado no texto.",
+        "Incorreta: corrente axial e alternativa é típica de canais e entradas; em mar aberto pode ser rotatória.",
+        "Incorreta: o sentido do desvio muda entre os hemisférios."
       ],
       "reference": {
-        "referenceId": "IV-10",
-        "base": "Brasil",
-        "publication": "Lei nº 14.813/2024 - Atividade de Praticagem",
-        "edition": "2024",
-        "section": "Art. 13, § 2º, da Lei nº 9.537/1997, com redação dada pela Lei nº 14.813/2024",
-        "syllabus": "Eixo IV — Legislação · habilitação e proficiência do prático",
-        "evidence": "O dispositivo consultado condiciona a manutenção da habilitação ao número mínimo de manobras, a cursos de aperfeiçoamento estabelecidos pela Autoridade Marítima e à observância de recomendações internacionais reconhecidas.",
-        "url": "https://www.in.gov.br/en/web/dou/-/lei-n-14.813-de-15-de-janeiro-de-2024-537585076"
+        "referenceId": "III-02",
+        "base": "Miguens",
+        "publication": "Navegação: A Ciência e a Arte",
+        "edition": "v. I, 2ª revisão atualizada, 2023",
+        "section": "Volume I, capítulo 13 — correntes de maré",
+        "syllabus": "Eixo III — Navegação Restrita · correntes de maré e Coriolis",
+        "evidence": "O recorte consultado diferencia correntes alternativas em canais das correntes rotatórias em mar aberto e registra desvio para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
       }
     },
     {
-      "id": "thu-c3-pilotage-exemption-certificate",
-      "category": "current",
-      "axis": "IV",
-      "kind": "Avanço · Lei nº 14.813/2024 · isenção de praticagem",
-      "stem": "Entre as condições legais para a emissão de Certificado de Isenção de Praticagem, assinale a opção correta:",
+      "id": "fri-r4-escort-direct-indirect-transition",
+      "category": "review",
+      "axis": "II",
+      "kind": "Revisão FSRS vencida · nota 0 · conteúdo",
+      "stem": "Um rebocador de escolta atua no modo indireto durante o início de uma guinada do navio assistido. À medida que a velocidade do navio cai rapidamente, qual transição tende a preservar a eficácia da assistência?",
       "options": [
-        "O comandante pode ser estrangeiro, desde que o navio tenha até 500 AB e opere apenas em navegação interior.",
-        "O certificado é restrito a comandante brasileiro de navio de bandeira brasileira com até 100 m de comprimento e tripulação composta por, no mínimo, dois terços de brasileiros, além dos demais requisitos e da análise de risco.",
-        "A isenção decorre automaticamente da experiência do comandante na zona, independentemente de análise de risco e período de repouso.",
-        "Qualquer embarcação de bandeira brasileira pode obter o certificado, sem limite de comprimento, se mantiver prático de sobreaviso em terra."
+        "Permanecer no modo indireto, pois a sustentação hidrodinâmica aumenta com a redução da velocidade.",
+        "Passar para o modo direto, também referido no contexto como combinação-arresto.",
+        "Folgar definitivamente o cabo e limitar-se ao acompanhamento sem tração.",
+        "Transferir o cabo para a proa do navio assistido antes de qualquer nova atuação."
       ],
       "correct": 1,
-      "explanation": "O art. 13, § 4º, estabelece destinatário e limites específicos: comandante brasileiro, navio brasileiro de até 100 m e tripulação com pelo menos dois terços de brasileiros, além de análise de risco e requisitos de descanso, experiência e prática na zona.",
+      "explanation": "No modo indireto, a força hidrodinâmica depende do escoamento relativo. Com a queda da velocidade durante a curva, o texto recomenda a passagem ao modo direto, ou combinação-arresto, para manter a eficácia.",
       "comments": [
-        "Incorreta: a lei exige comandante brasileiro e fixa o limite por comprimento, não por arqueação bruta nessa hipótese.",
-        "Correta: reúne os requisitos objetivos e reconhece as condições adicionais previstas no dispositivo.",
-        "Incorreta: experiência não torna a emissão automática; a análise de risco e os demais requisitos permanecem necessários.",
-        "Incorreta: existe limite de 100 m e não há substituição legal por prático de sobreaviso em terra."
+        "Incorreta: a sustentação hidrodinâmica diminui quando a velocidade cai.",
+        "Correta: é a transição descrita para a redução rápida da velocidade durante a curva.",
+        "Incorreta: a perda de sustentação não implica abandonar a assistência; muda-se o modo de atuação.",
+        "Incorreta: a fonte não condiciona a transição a essa transferência de cabo."
       ],
       "reference": {
-        "referenceId": "IV-10",
-        "base": "Brasil",
-        "publication": "Lei nº 14.813/2024 - Atividade de Praticagem",
-        "edition": "2024",
-        "section": "Art. 13, § 4º, da Lei nº 9.537/1997, com redação dada pela Lei nº 14.813/2024",
-        "syllabus": "Eixo IV — Legislação · Certificado de Isenção de Praticagem",
-        "evidence": "O recorte oficial consultado limita o certificado a comandantes brasileiros de navios brasileiros de até 100 m, com tripulação de ao menos dois terços de brasileiros, e exige análise de risco, repouso e comprovação de experiência e prática.",
-        "url": "https://www.in.gov.br/en/web/dou/-/lei-n-14.813-de-15-de-janeiro-de-2024-537585076"
+        "referenceId": "II-09",
+        "base": "Hensen",
+        "publication": "Tug Use in Port: A Practical Guide",
+        "edition": "4. ed., 2021",
+        "section": "Capítulo 9 — escort tugs, modos direto e indireto",
+        "syllabus": "Eixo II — Arte Naval · rebocadores de escolta e modos de atuação",
+        "evidence": "O trecho consultado explica que, durante uma curva, a velocidade do navio cai rapidamente e, após breve atuação indireta, o rebocador deve passar ao modo direto ou combinação-arresto para continuar eficaz.",
+        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
       }
     },
     {
-      "id": "thu-x1-ics-pilot-tug-signals",
-      "category": "rotation",
-      "axis": "VI",
-      "kind": "Rotação · Código Internacional de Sinais · sinais de uma letra",
-      "stem": "No Código Internacional de Sinais, qual sequência associa corretamente as mensagens “Necessito de prático”, “Tenho prático a bordo” e “Necessito de rebocador” aos respectivos sinais de uma letra?",
+      "id": "fri-c1-current-direction-convention",
+      "category": "current",
+      "axis": "III",
+      "kind": "Conteúdo atual · direção da corrente",
+      "stem": "Na resolução gráfica ou analítica do triângulo de correntes, a direção da corrente deve ser expressa como:",
       "options": [
-        "G — H — Z",
-        "H — G — T",
-        "P — H — V",
-        "G — P — W"
+        "A direção de onde a água vem, contada de 0° a 180° a partir do norte magnético.",
+        "A direção para onde a água escoa, de 000° a 360° no sentido horário a partir do norte verdadeiro.",
+        "O rumo da proa do navio, corrigido apenas pela declinação magnética.",
+        "O ângulo entre o vento aparente e o rumo no fundo, medido a partir da popa."
+      ],
+      "correct": 1,
+      "explanation": "A convenção náutica para corrente indica para onde a massa d’água se desloca, em graus verdadeiros de 000° a 360°, no sentido horário a partir do norte verdadeiro.",
+      "comments": [
+        "Incorreta: mistura a convenção de origem usada para o vento com referência magnética.",
+        "Correta: reúne sentido, intervalo angular e referência prescritos.",
+        "Incorreta: direção da corrente não é rumo da proa.",
+        "Incorreta: a definição independe do vento aparente."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Miguens",
+        "publication": "Navegação: A Ciência e a Arte",
+        "edition": "v. I, 2ª revisão atualizada, 2023",
+        "section": "Volume I, capítulo 5 — triângulo de correntes",
+        "syllabus": "Eixo III — Navegação Restrita · corrente, rumo e velocidade",
+        "evidence": "O recorte consultado define a direção da corrente como aquela para onde a água escoa, expressa de 000° a 360° no sentido horário, a partir do norte verdadeiro.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+      }
+    },
+    {
+      "id": "fri-c2-course-over-ground",
+      "category": "current",
+      "axis": "III",
+      "kind": "Conteúdo atual · rumo no fundo",
+      "stem": "Um navio governa determinado rumo na superfície e sofre a ação de uma corrente. O rumo no fundo corresponde:",
+      "options": [
+        "À direção efetivamente navegada entre a partida e a chegada, resultante do rumo na superfície combinado com a corrente.",
+        "Sempre ao rumo indicado pela agulha, qualquer que seja o efeito da corrente.",
+        "À direção da corrente isoladamente, independentemente da propulsão do navio.",
+        "Ao rumo planejado antes da derrota, ainda que a trajetória real dele se afaste."
       ],
       "correct": 0,
-      "explanation": "O sinal G significa “Necessito de prático”; H, “Tenho prático a bordo”; e Z, “Necessito de rebocador”. Há usos especiais de P e G em determinadas situações, mas eles não alteram essa sequência geral.",
+      "explanation": "Rumo no fundo é a direção da trajetória efetiva sobre o fundo. Ele resulta da composição vetorial do movimento do navio na água com o movimento da água.",
       "comments": [
-        "Correta: G, H e Z correspondem, nessa ordem, às três mensagens indicadas.",
-        "Incorreta: inverte G e H, e T não é o sinal geral para solicitar rebocador.",
-        "Incorreta: P tem emprego específico no porto e, por sinal sonoro no mar, em situação definida; V significa necessito de assistência.",
-        "Incorreta: P não significa tenho prático a bordo e W solicita assistência médica."
+        "Correta: descreve a trajetória real e sua composição com a corrente.",
+        "Incorreta: o rumo indicado não incorpora, por si só, o transporte causado pela corrente.",
+        "Incorreta: a trajetória resulta da soma vetorial, não apenas da corrente.",
+        "Incorreta: rumo planejado e rumo efetivamente seguido podem divergir."
       ],
       "reference": {
-        "referenceId": "VI-03",
-        "base": "IMO",
-        "publication": "International Code of Signals",
-        "edition": "2005",
-        "section": "Capítulo IV — sinais de uma letra: G, H e Z",
-        "syllabus": "Eixo VI — Comunicações · Código Internacional de Sinais",
-        "evidence": "A tabela de sinais de uma letra consultada atribui G à solicitação de prático, H à presença de prático a bordo e Z à solicitação de rebocador.",
-        "url": "https://drive.google.com/file/d/1KqhwaBEb2t1A5RwCrT7HNUlOkwnZHbtL/view"
+        "referenceId": "III-02",
+        "base": "Miguens",
+        "publication": "Navegação: A Ciência e a Arte",
+        "edition": "v. I, 2ª revisão atualizada, 2023",
+        "section": "Volume I, capítulo 4 — rumo no fundo",
+        "syllabus": "Eixo III — Navegação Restrita · rumo no fundo e efeito da corrente",
+        "evidence": "O trecho lido define rumo no fundo como a direção efetivamente navegada entre os pontos de partida e chegada, resultante do rumo na superfície e da direção da corrente.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
       }
     },
     {
-      "id": "thu-x2-smcp-request-marker-limit",
-      "category": "rotation",
-      "axis": "VI",
-      "kind": "Rotação · SMCP · marcadores de mensagem",
-      "stem": "Quanto ao marcador de mensagem REQUEST na IMO SMCP, assinale a afirmativa correta:",
+      "id": "fri-c3-ground-speed-and-soa",
+      "category": "current",
+      "axis": "III",
+      "kind": "Conteúdo atual · velocidades de navegação",
+      "stem": "No planejamento e controle da derrota, qual associação está correta?",
       "options": [
-        "É empregado para emitir ordem legalmente vinculante de navegação por qualquer navio.",
-        "Indica pedido de providência ou fornecimento relativo ao navio, como rebocadores, e não deve ser usado para interferir na navegação ou modificar o COLREG.",
-        "Substitui o marcador WARNING sempre que existir perigo imediato no canal.",
-        "Comunica exclusivamente a intenção imediata de manobra do próprio navio."
+        "Velocidade no fundo é a velocidade planejada para calcular ETA; velocidade de avanço é sempre a medida instantânea do GPS.",
+        "Velocidade no fundo é a velocidade efetiva ao longo da trajetória em relação ao fundo; velocidade de avanço é a velocidade planejada de progresso usada, entre outros fins, para ETA e ETD.",
+        "Velocidade no fundo e velocidade de avanço são necessariamente iguais, mesmo quando há corrente.",
+        "Velocidade de avanço é a intensidade da corrente; velocidade no fundo é a velocidade do navio em relação à água."
       ],
       "correct": 1,
-      "explanation": "REQUEST sinaliza que se pede uma providência, serviço ou fornecimento, como a disponibilização de rebocadores. A SMCP veda seu uso para questões de navegação ou para alterar o COLREG.",
+      "explanation": "A velocidade no fundo descreve o movimento efetivo em relação ao leito. A velocidade de avanço, ou SOA, é o valor planejado de progresso na derrota, utilizado no cálculo de horários previstos.",
       "comments": [
-        "Incorreta: ordem vinculante emitida por autoridade competente é enquadrada como INSTRUCTION.",
-        "Correta: corresponde à definição e à limitação expressa do marcador REQUEST.",
-        "Incorreta: perigo é comunicado por WARNING, não por REQUEST.",
-        "Incorreta: ação navegacional imediata pretendida pelo próprio navio é anunciada por INTENTION."
+        "Incorreta: troca as funções das duas grandezas.",
+        "Correta: distingue a velocidade efetiva sobre o fundo da velocidade planejada para o progresso.",
+        "Incorreta: corrente e decisões de planejamento podem produzir valores diferentes.",
+        "Incorreta: velocidade de avanço não é a corrente, e velocidade no fundo não é a velocidade relativa à água."
       ],
       "reference": {
-        "referenceId": "VI-01",
-        "base": "IMO",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "A.918(22), 2001",
-        "section": "Parte A1/6 — marcador de mensagem REQUEST",
-        "syllabus": "Eixo VI — Comunicações · marcadores de mensagem da SMCP",
-        "evidence": "O recorte consultado define REQUEST como pedido de ação, provisão ou arranjo relativo ao navio, exemplifica a solicitação de rebocadores e proíbe seu emprego em navegação ou para modificar o COLREG.",
-        "url": "https://drive.google.com/file/d/1iHoEAH2kIKmqrG6FS9hOEC1dWTojWNYR/view"
+        "referenceId": "III-02",
+        "base": "Miguens",
+        "publication": "Navegação: A Ciência e a Arte",
+        "edition": "v. I, 2ª revisão atualizada, 2023",
+        "section": "Volume I, capítulo 4 — velocidade no fundo e velocidade de avanço",
+        "syllabus": "Eixo III — Navegação Restrita · planejamento e controle da derrota",
+        "evidence": "O recorte consultado define velocidade no fundo como a velocidade efetiva ao longo da trajetória relativamente ao fundo e velocidade de avanço como a velocidade planejada de progresso, base para ETA e ETD.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
       }
     },
     {
-      "id": "thu-o1-pscpp2011-q68-smcp",
-      "category": "official",
-      "axis": "VI",
-      "kind": "Questão oficial histórica · sequência C/E",
-      "stem": "De acordo com a IMO SMCP, indique com C as frases corretas e com E as erradas e assinale a opção correta: I — My present speed is one-zero knots. Correction, my present speed is one-two knots. II — Stand by on VHF channel one-four until pilot transfer is completed. III — You should anchor in anchorage alfa two. IV — Pilot boat is bearing one-one-five degrees from you. V — Port two-zero. VI — Starboard, steer zero-zero-zero.",
+      "id": "fri-t1-turning-ability-measures",
+      "category": "rotation",
+      "axis": "I",
+      "kind": "Rotação · manobrabilidade",
+      "stem": "Mantidas comparáveis as condições de ensaio, qual resultado indica maior habilidade do navio para executar uma curva?",
       "options": [
-        "C — E — C — C — C — E",
-        "C — C — E — E — E — C",
-        "E — C — E — C — E — C",
-        "E — C — C — E — C — C",
-        "C — E — E — C — E — E"
+        "Maior avanço e maior diâmetro tático.",
+        "Menor avanço e menor diâmetro tático.",
+        "Maior transferência e razão de guinada nula.",
+        "Menor ângulo de leme e maior head reach."
       ],
-      "correct": 2,
-      "explanation": "A sequência correta é E–C–E–C–E–C, alternativa C. A primeira frase omite Mistake; a terceira usa o condicional should sem o marcador ADVICE; a quinta trata ângulo de leme como dígitos, embora a SMCP determine twenty. As demais seguem as construções padronizadas. Gabarito oficial: C.",
+      "correct": 1,
+      "explanation": "A habilidade de executar uma curva aumenta quando o navio precisa de menos distância longitudinal e transversal para estabelecer o giro; portanto, menores avanço e diâmetro tático indicam melhor desempenho.",
       "comments": [
-        "Incorreta: classifica como corretas as frases I, III e V, que violam, respectivamente, os padrões de correção, advice e ângulo de leme.",
-        "Incorreta: a frase I é errada e a IV é correta, ao contrário do indicado nessa sequência.",
-        "Correta: I é E; II é C; III é E; IV é C; V é E; VI é C.",
-        "Incorreta: a frase III é errada, a IV é correta e a V é errada.",
-        "Incorreta: as frases I e II estão classificadas incorretamente e a VI é correta."
+        "Incorreta: valores maiores representam maior espaço necessário para a manobra.",
+        "Correta: é a relação expressa na obra para maior capacidade de giro.",
+        "Incorreta: razão de guinada nula não caracteriza curva estabelecida.",
+        "Incorreta: head reach é parâmetro de parada, e a combinação não mede diretamente a habilidade de giro."
       ],
       "reference": {
-        "referenceId": "VI-01",
-        "base": "Diretoria de Portos e Costas / IMO",
-        "publication": "PSCPP 2011 — Prova Amarela / IMO Standard Marine Communication Phrases",
-        "edition": "Prova de 2011; A.918(22), 2001",
-        "section": "Questão 68; General, itens 6.2, 7, 10, 12 e 18.1; Parte A2/1",
-        "syllabus": "Eixo VI — Comunicações · IMO SMCP",
-        "evidence": "A prova oficial apresenta seis frases e cinco sequências. Os recortes da SMCP confirmam Mistake/Correction, standby em canal VHF, vedação de should, expressão de bearings, exceção para ângulos de leme e ordem de rumo com dígitos separados.",
-        "url": "https://drive.google.com/file/d/1iHoEAH2kIKmqrG6FS9hOEC1dWTojWNYR/view",
+        "referenceId": "I-08",
+        "base": "Santos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 6, item 6.1 — definições da curva de giro",
+        "syllabus": "Eixo I — Manobrabilidade · curva de giro",
+        "evidence": "O recorte consultado afirma que a capacidade de executar uma curva é medida com todo o leme e que, quanto maior essa capacidade, menores são o avanço e o diâmetro tático.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
+    },
+    {
+      "id": "fri-t2-spring-neap-mean-level",
+      "category": "rotation",
+      "axis": "V",
+      "kind": "Rotação · oceanografia",
+      "stem": "Ao comparar as marés de sizígia com as de quadratura em um mesmo porto, assinale a afirmativa correta:",
+      "options": [
+        "Na sizígia, a amplitude é maior; o nível médio permanece o mesmo ao longo do ciclo lunar.",
+        "Na quadratura, a amplitude é maior porque Sol e Lua estão alinhados.",
+        "O nível médio sobe na sizígia e desce na quadratura, acompanhando a amplitude.",
+        "A amplitude é invariável, modificando-se apenas o horário das preamares."
+      ],
+      "correct": 0,
+      "explanation": "Na lua nova e na lua cheia, a ação combinada dos astros produz marés de sizígia com maior amplitude. O nível médio do porto não se altera por essa alternância do ciclo lunar.",
+      "comments": [
+        "Correta: distingue a variação de amplitude da constância do nível médio.",
+        "Incorreta: o alinhamento ocorre nas fases associadas à sizígia, não à quadratura.",
+        "Incorreta: varia a separação entre preamar e baixa-mar, não o nível médio definido para o porto.",
+        "Incorreta: a amplitude varia de modo característico ao longo do ciclo lunar."
+      ],
+      "reference": {
+        "referenceId": "V-03",
+        "base": "Lobo & Soares",
+        "publication": "Meteorologia e Oceanografia",
+        "edition": "4. ed., 2019",
+        "section": "Parte II, capítulo IX — marés de sizígia e quadratura",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · marés",
+        "evidence": "O trecho consultado mostra preamares mais altas e baixa-mares mais baixas na sizígia, com maior amplitude, e registra que o nível médio permanece constante no ciclo lunar.",
+        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
+      }
+    },
+    {
+      "id": "fri-o1-pscpp2008-q26-tides",
+      "category": "official",
+      "axis": "V",
+      "kind": "Questão oficial histórica · marés",
+      "stem": "As marés influenciam a navegação costeira e a elaboração das cartas náuticas. Considere as afirmativas: I — as Cartas de Correntes de Marés referem-se às marés do próprio dia e podem ser usadas diariamente; II — as alturas diárias são simétricas em relação ao nível médio, na quadratura e na sizígia; III — o nível médio destacado no cabeçalho das Tábuas das Marés orienta quanto ao valor da amplitude de sizígia; IV — intensidades distintas de enchente e vazante, observadas em diferentes portos, decorrem das características geográficas; V — o nível de referência do zero da régua das marés está associado à carta náutica do porto. Segundo o gabarito oficial da prova, quais afirmativas são verdadeiras?",
+      "options": ["I e II.", "II e IV.", "III, IV e V.", "I, III e V.", "II, III e V."],
+      "correct": 4,
+      "explanation": "O gabarito oficial assinala a alternativa E: II, III e V. O texto-base confirma a simetria em torno do nível médio, usa o nível médio do cabeçalho como orientação para a maré de sizígia e associa o zero da régua ao nível de redução da carta náutica.",
+      "comments": [
+        "Incorreta segundo o gabarito oficial: a afirmativa I não integra o conjunto correto.",
+        "Incorreta segundo o gabarito oficial: inclui IV e omite III e V.",
+        "Incorreta segundo o gabarito oficial: inclui IV e omite II.",
+        "Incorreta segundo o gabarito oficial: inclui I e omite II.",
+        "Correta segundo o gabarito oficial: II, III e V."
+      ],
+      "reference": {
+        "referenceId": "V-03",
+        "base": "Diretoria de Portos e Costas / Lobo & Soares",
+        "publication": "PSCPP 2008 / Meteorologia e Oceanografia",
+        "edition": "Prova de 2008; 4. ed., 2019",
+        "section": "Questão 26; Parte II, capítulos IX e X",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · marés e correntes de maré",
+        "evidence": "O livro consultado define a simetria das oscilações em relação ao nível médio, registra o uso do nível médio do cabeçalho como orientação para a sizígia e afirma que o zero da régua coincide com o nível de redução do porto; a prova oficial marca a alternativa E.",
+        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view",
         "origin": {
-          "exam": "PSCPP 2011 — Prova Amarela",
-          "year": 2011,
-          "question": 68,
-          "answer": "C",
-          "adaptation": "Diagramação condensada e enumeração das frases; texto técnico, cinco alternativas e gabarito preservados.",
-          "url": "https://drive.google.com/file/d/1Fdz2o1xtzIkg1KONqP95HemlINDJcv_1/view"
+          "exam": "PSCPP 2008",
+          "year": 2008,
+          "question": 26,
+          "answer": "E",
+          "adaptation": "Ortografia atualizada e enunciado condensado; cinco alternativas e gabarito oficial preservados.",
+          "url": "https://drive.google.com/file/d/1KfllJf4BukeOqCtNlr5uuwNC7xDu45I6/view"
         }
       }
     }
