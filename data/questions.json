@@ -1,31 +1,36 @@
 {
-  "roundId": "currents-tides-manoeuvrability-2026-10-16",
-  "label": "Rodada adaptativa de 16 de outubro de 2026",
-  "title": "Correntes, marés e decisões de manobra",
+  "roundId": "cumulative-fatigue-errors-2026-10-17",
+  "label": "Simulado cumulativo de 17 de outubro de 2026",
+  "title": "Fadiga operacional, sono e correção de erros",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões vencidas de manobrabilidade, navegação e rebocadores · rumo e velocidade no fundo · marés e giro · questão oficial de marés",
+  "path": "Revisões vencidas de manobrabilidade, rebocadores e navegação · sono restaurador, inércia do sono e microssonos · meteorologia e SMCP · correção oficial de marés",
   "method": "4–3–2–1",
-  "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
+  "mixPlan": {
+    "review": 4,
+    "current": 3,
+    "rotation": 2,
+    "official": 1
+  },
   "questions": [
     {
-      "id": "fri-r1-pivot-point-definition",
+      "id": "sat-20261017-r1-pivot-point-recovery",
       "category": "review",
       "axis": "I",
       "kind": "Revisão FSRS vencida · nota 0 · confusão",
-      "stem": "Durante uma guinada, qual definição caracteriza corretamente o ponto pivô do navio?",
+      "stem": "Um navio guina com seguimento a vante. Para identificar cinematicamente o ponto pivô naquele instante, deve-se procurar:",
       "options": [
-        "É um ponto material fixo no centro de gravidade, onde se anulam simultaneamente as velocidades longitudinal e transversal.",
-        "É um ponto cinemático não estacionário, situado no eixo longitudinal, no qual não há velocidade lateral durante a mudança de aproamento.",
-        "É o centro geométrico da curva de giro, situado fora do casco e imóvel em relação ao fundo.",
-        "É o ponto de aplicação da força do leme, cuja posição independe do seguimento e da razão de guinada."
+        "O ponto do eixo longitudinal no qual a velocidade lateral instantânea é nula.",
+        "O centro de gravidade, pois nele se anulam sempre as velocidades longitudinal e lateral.",
+        "O centro da trajetória circular, necessariamente situado dentro do casco.",
+        "O ponto de aplicação da força do leme, cuja posição é fixa para qualquer condição de carregamento."
       ],
-      "correct": 1,
-      "explanation": "O ponto pivô é cinemático e flutuante: fica no eixo longitudinal e corresponde à seção sem movimento lateral instantâneo quando o navio guina. Sua posição varia com a condição de movimento.",
+      "correct": 0,
+      "explanation": "O ponto pivô é um ponto cinemático não estacionário no eixo longitudinal. Ele corresponde à seção em que não há velocidade lateral instantânea durante a mudança de aproamento.",
       "comments": [
-        "Incorreta: o ponto pivô não é um ponto material fixo nem coincide necessariamente com o centro de gravidade.",
-        "Correta: reúne a natureza cinemática, a posição no eixo longitudinal e a ausência de velocidade lateral.",
-        "Incorreta: o centro da trajetória está fora do navio; o ponto pivô pertence ao eixo longitudinal do casco.",
-        "Incorreta: não é o ponto de aplicação do leme, e sua posição depende da cinemática da manobra."
+        "Correta: a ausência de velocidade lateral no eixo longitudinal caracteriza o ponto pivô.",
+        "Incorreta: o ponto pivô não coincide necessariamente com o centro de gravidade e não é materialmente fixo.",
+        "Incorreta: o centro da trajetória não é o ponto pivô e não precisa estar no casco.",
+        "Incorreta: o ponto pivô não é o ponto de aplicação da força do leme e varia com a cinemática e a condição do navio."
       ],
       "reference": {
         "referenceId": "I-08",
@@ -34,265 +39,271 @@
         "edition": "1. ed., CONAPRA, 2021",
         "section": "Capítulo 6, item 6.2 — O ponto pivô",
         "syllabus": "Eixo I — Manobrabilidade · ponto pivô e curva de giro",
-        "evidence": "O recorte consultado define o ponto pivô como ponto cinemático não estacionário, situado no eixo longitudinal, onde não existe movimento lateral quando o navio é forçado a mudar o aproamento.",
+        "evidence": "O recorte consultado define o ponto pivô como ponto cinemático não estacionário, situado no eixo longitudinal, onde não existe movimento ou velocidade lateral durante a mudança de aproamento.",
         "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
       }
     },
     {
-      "id": "fri-r2-current-advance-delay",
-      "category": "review",
-      "axis": "III",
-      "kind": "Revisão FSRS vencida · nota 0 · leitura",
-      "stem": "Comparadas, no mesmo instante, a posição estimada e a posição observada, verificou-se que a distância navegada no fundo foi maior que a distância percorrida na superfície. Segundo Miguens, essa componente do efeito da corrente é denominada:",
-      "options": [
-        "Atraso, pois a velocidade no fundo é menor que a velocidade do navio.",
-        "Caimento, pois toda diferença longitudinal é atribuída ao abatimento transversal.",
-        "Avanço, pois a velocidade no fundo é maior que a velocidade do navio.",
-        "Deriva, pois a diferença de distâncias independe da corrente."
-      ],
-      "correct": 2,
-      "explanation": "Há avanço quando a distância navegada no fundo supera a distância percorrida na superfície; de modo equivalente, a velocidade no fundo é maior que a velocidade do navio. A situação inversa caracteriza atraso.",
-      "comments": [
-        "Incorreta: atraso corresponde à distância no fundo menor e à velocidade no fundo inferior.",
-        "Incorreta: caimento é a componente transversal obtida pela decomposição do efeito total da corrente.",
-        "Correta: é a relação indicada para avanço no recorte consultado.",
-        "Incorreta: a diferença entre as posições no mesmo instante expressa justamente o efeito da corrente."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Miguens",
-        "publication": "Navegação: A Ciência e a Arte",
-        "edition": "v. I, 2ª revisão atualizada, 2023",
-        "section": "Volume I, capítulo 4 — caimento, avanço e atraso",
-        "syllabus": "Eixo III — Navegação Restrita · efeito da corrente e navegação estimada",
-        "evidence": "O trecho lido decompõe o efeito da corrente em caimento e avanço ou atraso; há avanço quando a distância no fundo supera a percorrida na superfície e a velocidade no fundo é maior que a velocidade do navio.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
-    },
-    {
-      "id": "fri-r3-coriolis-tidal-currents",
-      "category": "review",
-      "axis": "III",
-      "kind": "Revisão FSRS vencida · nota 0 · leitura",
-      "stem": "Em mar aberto, ao considerar a rotação das correntes de maré e o efeito de Coriolis, assinale a afirmativa correta:",
-      "options": [
-        "A corrente é desviada para a esquerda no Hemisfério Norte e para a direita no Hemisfério Sul.",
-        "A corrente é desviada para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul.",
-        "A corrente permanece sempre axial e alternativa, sem rotação ao longo do ciclo.",
-        "O desvio ocorre para a direita em ambos os hemisférios, variando apenas sua intensidade."
-      ],
-      "correct": 1,
-      "explanation": "O efeito de Coriolis desvia o movimento para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul. Em mar aberto, as correntes de maré podem apresentar caráter rotatório.",
-      "comments": [
-        "Incorreta: inverte os sentidos hemisféricos.",
-        "Correta: corresponde ao sentido do desvio de Coriolis indicado no texto.",
-        "Incorreta: corrente axial e alternativa é típica de canais e entradas; em mar aberto pode ser rotatória.",
-        "Incorreta: o sentido do desvio muda entre os hemisférios."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Miguens",
-        "publication": "Navegação: A Ciência e a Arte",
-        "edition": "v. I, 2ª revisão atualizada, 2023",
-        "section": "Volume I, capítulo 13 — correntes de maré",
-        "syllabus": "Eixo III — Navegação Restrita · correntes de maré e Coriolis",
-        "evidence": "O recorte consultado diferencia correntes alternativas em canais das correntes rotatórias em mar aberto e registra desvio para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
-    },
-    {
-      "id": "fri-r4-escort-direct-indirect-transition",
+      "id": "sat-20261017-r2-asd-direct-indirect",
       "category": "review",
       "axis": "II",
       "kind": "Revisão FSRS vencida · nota 0 · conteúdo",
-      "stem": "Um rebocador de escolta atua no modo indireto durante o início de uma guinada do navio assistido. À medida que a velocidade do navio cai rapidamente, qual transição tende a preservar a eficácia da assistência?",
+      "stem": "Ao comparar um rebocador ASD convencional com um rebocador trator VS, qual relação de desempenho é indicada por Hensen?",
       "options": [
-        "Permanecer no modo indireto, pois a sustentação hidrodinâmica aumenta com a redução da velocidade.",
-        "Passar para o modo direto, também referido no contexto como combinação-arresto.",
-        "Folgar definitivamente o cabo e limitar-se ao acompanhamento sem tração.",
-        "Transferir o cabo para a proa do navio assistido antes de qualquer nova atuação."
+        "O ASD é sempre superior nos modos direto e indireto, independentemente da velocidade.",
+        "O ASD tende a ser mais eficaz no modo indireto e menos eficaz na tração direta.",
+        "O ASD pode ser algo menos eficaz no modo indireto, mas algo mais eficaz na tração direta.",
+        "Os dois tipos têm desempenho necessariamente idêntico, pois utilizam propulsores azimutais."
       ],
-      "correct": 1,
-      "explanation": "No modo indireto, a força hidrodinâmica depende do escoamento relativo. Com a queda da velocidade durante a curva, o texto recomenda a passagem ao modo direto, ou combinação-arresto, para manter a eficácia.",
+      "correct": 2,
+      "explanation": "Hensen ressalva que o ASD pode apresentar eficácia indireta um pouco menor que a do trator VS, enquanto pode ser um pouco mais eficaz na tração direta.",
       "comments": [
-        "Incorreta: a sustentação hidrodinâmica diminui quando a velocidade cai.",
-        "Correta: é a transição descrita para a redução rápida da velocidade durante a curva.",
-        "Incorreta: a perda de sustentação não implica abandonar a assistência; muda-se o modo de atuação.",
-        "Incorreta: a fonte não condiciona a transição a essa transferência de cabo."
+        "Incorreta: a fonte não atribui superioridade universal ao ASD.",
+        "Incorreta: inverte a comparação apresentada.",
+        "Correta: reproduz a diferença relativa entre a atuação indireta e a tração direta.",
+        "Incorreta: configuração, casco, skeg e posição de reboque produzem diferenças de desempenho."
       ],
       "reference": {
         "referenceId": "II-09",
         "base": "Hensen",
         "publication": "Tug Use in Port: A Practical Guide",
         "edition": "4. ed., 2021",
-        "section": "Capítulo 9 — escort tugs, modos direto e indireto",
-        "syllabus": "Eixo II — Arte Naval · rebocadores de escolta e modos de atuação",
-        "evidence": "O trecho consultado explica que, durante uma curva, a velocidade do navio cai rapidamente e, após breve atuação indireta, o rebocador deve passar ao modo direto ou combinação-arresto para continuar eficaz.",
+        "section": "Capítulo 2 — ASD tugs e métodos de assistência",
+        "syllabus": "Eixo II — Arte Naval · tipos, capacidades e limitações de rebocadores",
+        "evidence": "O trecho consultado informa que o ASD, comparado ao trator VS, é geralmente um pouco menos eficaz no modo indireto, mas pode ser um pouco mais eficaz na tração direta.",
         "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
       }
     },
     {
-      "id": "fri-c1-current-direction-convention",
-      "category": "current",
-      "axis": "III",
-      "kind": "Conteúdo atual · direção da corrente",
-      "stem": "Na resolução gráfica ou analítica do triângulo de correntes, a direção da corrente deve ser expressa como:",
+      "id": "sat-20261017-r3-tackle-mechanical-advantage",
+      "category": "review",
+      "axis": "II",
+      "kind": "Revisão FSRS vencida · nota 0 · conteúdo",
+      "stem": "Desprezadas as resistências passivas, um aparelho possui n roldanas. Qual regra fornece sua multiplicação de potência teórica m?",
       "options": [
-        "A direção de onde a água vem, contada de 0° a 180° a partir do norte magnético.",
-        "A direção para onde a água escoa, de 000° a 360° no sentido horário a partir do norte verdadeiro.",
-        "O rumo da proa do navio, corrigido apenas pela declinação magnética.",
-        "O ângulo entre o vento aparente e o rumo no fundo, medido a partir da popa."
+        "m = n + 1 quando o tirador sai do cadernal fixo, e m = n quando sai do móvel.",
+        "m = n em qualquer caso, pois a posição de saída do tirador não altera a potência.",
+        "m = 2n quando o tirador sai do fixo, e m = n/2 quando sai do móvel.",
+        "m = n quando o tirador sai do cadernal fixo, e m = n + 1 quando sai do móvel."
+      ],
+      "correct": 3,
+      "explanation": "Na idealização apresentada em Arte Naval, a multiplicação teórica é igual ao número de roldanas quando o tirador sai do cadernal fixo e igual a n + 1 quando sai do cadernal móvel.",
+      "comments": [
+        "Incorreta: troca as duas condições de saída do tirador.",
+        "Incorreta: a saída pelo cadernal móvel acrescenta uma unidade à multiplicação teórica.",
+        "Incorreta: essas relações não constam da regra apresentada.",
+        "Correta: aplica exatamente a distinção entre saída pelo cadernal fixo e pelo móvel."
+      ],
+      "reference": {
+        "referenceId": "II-01",
+        "base": "Fonseca",
+        "publication": "Arte Naval, v. 1",
+        "edition": "8. ed., MB, 2019",
+        "section": "Capítulo 9, item 9.22 — Problemas de aparelhos",
+        "syllabus": "Eixo II — Arte Naval · poleame, aparelhos de laborar e multiplicação de potência",
+        "evidence": "O recorte consultado estabelece m = n quando o tirador sai do cadernal fixo e m = n + 1 quando o tirador sai do cadernal móvel; também separa essa regra ideal das resistências passivas.",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
+      }
+    },
+    {
+      "id": "sat-20261017-r4-current-delay",
+      "category": "review",
+      "axis": "III",
+      "kind": "Revisão FSRS vencida · nota 0 · leitura",
+      "stem": "No mesmo instante, a distância percorrida pelo navio em relação ao fundo é menor que a distância percorrida em relação à superfície. Segundo Miguens, essa componente longitudinal do efeito da corrente é denominada:",
+      "options": [
+        "Avanço, porque a velocidade no fundo é maior que a velocidade do navio.",
+        "Atraso, porque a velocidade no fundo é menor que a velocidade do navio.",
+        "Caimento, porque toda diferença de distância é transversal ao rumo no fundo.",
+        "Abatimento, porque representa sempre a diferença entre duas distâncias."
       ],
       "correct": 1,
-      "explanation": "A convenção náutica para corrente indica para onde a massa d’água se desloca, em graus verdadeiros de 000° a 360°, no sentido horário a partir do norte verdadeiro.",
+      "explanation": "Há atraso quando a distância percorrida no fundo é menor que a distância na superfície, equivalendo a velocidade no fundo inferior à velocidade do navio.",
       "comments": [
-        "Incorreta: mistura a convenção de origem usada para o vento com referência magnética.",
-        "Correta: reúne sentido, intervalo angular e referência prescritos.",
-        "Incorreta: direção da corrente não é rumo da proa.",
-        "Incorreta: a definição independe do vento aparente."
+        "Incorreta: avanço ocorre na relação oposta, com distância e velocidade no fundo maiores.",
+        "Correta: é a condição definida para o atraso.",
+        "Incorreta: caimento é a componente transversal do efeito da corrente.",
+        "Incorreta: abatimento é o ângulo entre o rumo na superfície e o rumo no fundo."
       ],
       "reference": {
         "referenceId": "III-02",
         "base": "Miguens",
         "publication": "Navegação: A Ciência e a Arte",
         "edition": "v. I, 2ª revisão atualizada, 2023",
-        "section": "Volume I, capítulo 5 — triângulo de correntes",
-        "syllabus": "Eixo III — Navegação Restrita · corrente, rumo e velocidade",
-        "evidence": "O recorte consultado define a direção da corrente como aquela para onde a água escoa, expressa de 000° a 360° no sentido horário, a partir do norte verdadeiro.",
+        "section": "Volume I, capítulo 5 — caimento, avanço e atraso",
+        "syllabus": "Eixo III — Navegação Restrita · efeito da corrente e navegação estimada",
+        "evidence": "O recorte consultado decompõe o efeito da corrente em avanço ou atraso e caimento; define atraso quando a distância percorrida no fundo é menor que a percorrida na superfície, isto é, quando a velocidade no fundo é menor.",
         "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
       }
     },
     {
-      "id": "fri-c2-course-over-ground",
+      "id": "sat-20261017-c1-restorative-sleep",
       "category": "current",
-      "axis": "III",
-      "kind": "Conteúdo atual · rumo no fundo",
-      "stem": "Um navio governa determinado rumo na superfície e sofre a ação de uma corrente. O rumo no fundo corresponde:",
+      "axis": "VII",
+      "kind": "Conteúdo atual · sono restaurador",
+      "stem": "Segundo as Guidelines on Fatigue da IMO, quais características devem ser consideradas em conjunto para que o sono seja mais eficaz na recuperação?",
       "options": [
-        "À direção efetivamente navegada entre a partida e a chegada, resultante do rumo na superfície combinado com a corrente.",
-        "Sempre ao rumo indicado pela agulha, qualquer que seja o efeito da corrente.",
-        "À direção da corrente isoladamente, independentemente da propulsão do navio.",
-        "Ao rumo planejado antes da derrota, ainda que a trajetória real dele se afaste."
+        "Quantidade, qualidade e continuidade.",
+        "Duração, cafeína e atividade física.",
+        "Horário, alimentação e antiguidade na função.",
+        "Profundidade, sonhos e ausência de qualquer despertar."
       ],
       "correct": 0,
-      "explanation": "Rumo no fundo é a direção da trajetória efetiva sobre o fundo. Ele resulta da composição vetorial do movimento do navio na água com o movimento da água.",
+      "explanation": "A IMO reúne três características: quantidade suficiente, qualidade com ciclos adequados e continuidade, pois a fragmentação reduz o valor restaurador do sono.",
       "comments": [
-        "Correta: descreve a trajetória real e sua composição com a corrente.",
-        "Incorreta: o rumo indicado não incorpora, por si só, o transporte causado pela corrente.",
-        "Incorreta: a trajetória resulta da soma vetorial, não apenas da corrente.",
-        "Incorreta: rumo planejado e rumo efetivamente seguido podem divergir."
+        "Correta: são as três características expressamente enumeradas pela diretriz.",
+        "Incorreta: cafeína e atividade física não integram a tríade definidora do sono eficaz.",
+        "Incorreta: esses fatores podem influenciar o descanso, mas não são a tríade indicada.",
+        "Incorreta: a fonte trata de qualidade e continuidade, não de sonhos como critério."
       ],
       "reference": {
-        "referenceId": "III-02",
-        "base": "Miguens",
-        "publication": "Navegação: A Ciência e a Arte",
-        "edition": "v. I, 2ª revisão atualizada, 2023",
-        "section": "Volume I, capítulo 4 — rumo no fundo",
-        "syllabus": "Eixo III — Navegação Restrita · rumo no fundo e efeito da corrente",
-        "evidence": "O trecho lido define rumo no fundo como a direção efetivamente navegada entre os pontos de partida e chegada, resultante do rumo na superfície e da direção da corrente.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+        "referenceId": "VII-05",
+        "base": "IMO",
+        "publication": "Guidelines on Fatigue",
+        "edition": "MSC.1/Circ.1598, 2019",
+        "section": "Módulo 1, parágrafo 20 — Sleep",
+        "syllabus": "Eixo VII — Conhecimentos Gerais · fadiga, sono e desempenho humano",
+        "evidence": "O recorte consultado enumera quantidade, qualidade e continuidade como as três características do sono mais eficaz e explica que ciclos fragmentados reduzem seu valor restaurador.",
+        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
       }
     },
     {
-      "id": "fri-c3-ground-speed-and-soa",
+      "id": "sat-20261017-c2-sleep-inertia",
       "category": "current",
-      "axis": "III",
-      "kind": "Conteúdo atual · velocidades de navegação",
-      "stem": "No planejamento e controle da derrota, qual associação está correta?",
+      "axis": "VII",
+      "kind": "Conteúdo atual · inércia do sono",
+      "stem": "Um oficial é acordado abruptamente de sono profundo e, logo depois, apresenta desorientação, memória de curto prazo prejudicada e decisão lenta. A condição descrita é:",
       "options": [
-        "Velocidade no fundo é a velocidade planejada para calcular ETA; velocidade de avanço é sempre a medida instantânea do GPS.",
-        "Velocidade no fundo é a velocidade efetiva ao longo da trajetória em relação ao fundo; velocidade de avanço é a velocidade planejada de progresso usada, entre outros fins, para ETA e ETD.",
-        "Velocidade no fundo e velocidade de avanço são necessariamente iguais, mesmo quando há corrente.",
-        "Velocidade de avanço é a intensidade da corrente; velocidade no fundo é a velocidade do navio em relação à água."
+        "Dívida de sono, que só surge após vários períodos de 24 horas.",
+        "Inércia do sono, que pode persistir por mais de 30 minutos.",
+        "Janela de baixa circadiana, limitada ao intervalo entre 15h e 17h.",
+        "Microssono, definido como cochilo voluntário antes do serviço."
       ],
       "correct": 1,
-      "explanation": "A velocidade no fundo descreve o movimento efetivo em relação ao leito. A velocidade de avanço, ou SOA, é o valor planejado de progresso na derrota, utilizado no cálculo de horários previstos.",
+      "explanation": "A dificuldade de transição após despertar, sobretudo do sono profundo, caracteriza a inércia do sono. Ela pode causar torpor, desorientação e prejuízo cognitivo por mais de 30 minutos.",
       "comments": [
-        "Incorreta: troca as funções das duas grandezas.",
-        "Correta: distingue a velocidade efetiva sobre o fundo da velocidade planejada para o progresso.",
-        "Incorreta: corrente e decisões de planejamento podem produzir valores diferentes.",
-        "Incorreta: velocidade de avanço não é a corrente, e velocidade no fundo não é a velocidade relativa à água."
+        "Incorreta: dívida de sono é a insuficiência acumulada ao longo de períodos sucessivos.",
+        "Correta: reúne causa, manifestações e duração descritas na diretriz.",
+        "Incorreta: a principal janela de baixa circadiana indicada ocorre tipicamente entre 3h e 5h.",
+        "Incorreta: microssono é episódio breve, involuntário e espontâneo durante a vigília."
       ],
       "reference": {
-        "referenceId": "III-02",
-        "base": "Miguens",
-        "publication": "Navegação: A Ciência e a Arte",
-        "edition": "v. I, 2ª revisão atualizada, 2023",
-        "section": "Volume I, capítulo 4 — velocidade no fundo e velocidade de avanço",
-        "syllabus": "Eixo III — Navegação Restrita · planejamento e controle da derrota",
-        "evidence": "O recorte consultado define velocidade no fundo como a velocidade efetiva ao longo da trajetória relativamente ao fundo e velocidade de avanço como a velocidade planejada de progresso, base para ETA e ETD.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+        "referenceId": "VII-05",
+        "base": "IMO",
+        "publication": "Guidelines on Fatigue",
+        "edition": "MSC.1/Circ.1598, 2019",
+        "section": "Módulo 1, parágrafo 23 — Sleep inertia",
+        "syllabus": "Eixo VII — Conhecimentos Gerais · fadiga, sono e desempenho humano",
+        "evidence": "O recorte consultado define a inércia do sono após despertar, associa-a a torpor, desorientação e prejuízo da memória de curto prazo e da decisão, e registra que pode durar mais de 30 minutos.",
+        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
       }
     },
     {
-      "id": "fri-t1-turning-ability-measures",
-      "category": "rotation",
-      "axis": "I",
-      "kind": "Rotação · manobrabilidade",
-      "stem": "Mantidas comparáveis as condições de ensaio, qual resultado indica maior habilidade do navio para executar uma curva?",
+      "id": "sat-20261017-c3-microsleep-risk",
+      "category": "current",
+      "axis": "VII",
+      "kind": "Conteúdo atual · microssonos",
+      "stem": "Durante um quarto noturno, qual situação melhor caracteriza um microssono e seu risco operacional?",
       "options": [
-        "Maior avanço e maior diâmetro tático.",
-        "Menor avanço e menor diâmetro tático.",
-        "Maior transferência e razão de guinada nula.",
-        "Menor ângulo de leme e maior head reach."
+        "Pausa planejada de poucos minutos, na qual a percepção do ambiente permanece integral.",
+        "Sono profundo contínuo, obtido fora do serviço e sem relação com dívida de sono.",
+        "Episódio breve, involuntário e espontâneo em que o cérebro deixa de processar temporariamente informações visuais e sonoras.",
+        "Redução voluntária da atenção que ocorre apenas após uso de medicamentos sedativos."
       ],
-      "correct": 1,
-      "explanation": "A habilidade de executar uma curva aumenta quando o navio precisa de menos distância longitudinal e transversal para estabelecer o giro; portanto, menores avanço e diâmetro tático indicam melhor desempenho.",
+      "correct": 2,
+      "explanation": "Microssonos são episódios breves e não controlados durante o trabalho. Neles, o cérebro se desliga do ambiente; dívida de sono e serviço em baixa circadiana elevam a probabilidade.",
       "comments": [
-        "Incorreta: valores maiores representam maior espaço necessário para a manobra.",
-        "Correta: é a relação expressa na obra para maior capacidade de giro.",
-        "Incorreta: razão de guinada nula não caracteriza curva estabelecida.",
-        "Incorreta: head reach é parâmetro de parada, e a combinação não mede diretamente a habilidade de giro."
+        "Incorreta: uma pausa planejada não é microssono.",
+        "Incorreta: o fenômeno ocorre durante a vigília e se relaciona à privação de sono.",
+        "Correta: corresponde à definição e ao mecanismo descritos pela IMO.",
+        "Incorreta: o episódio é involuntário e não depende exclusivamente de sedativos."
       ],
       "reference": {
-        "referenceId": "I-08",
-        "base": "Santos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 6, item 6.1 — definições da curva de giro",
-        "syllabus": "Eixo I — Manobrabilidade · curva de giro",
-        "evidence": "O recorte consultado afirma que a capacidade de executar uma curva é medida com todo o leme e que, quanto maior essa capacidade, menores são o avanço e o diâmetro tático.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+        "referenceId": "VII-05",
+        "base": "IMO",
+        "publication": "Guidelines on Fatigue",
+        "edition": "MSC.1/Circ.1598, 2019",
+        "section": "Módulo 1, parágrafos 44 e 45 — effects and signs of fatigue",
+        "syllabus": "Eixo VII — Conhecimentos Gerais · fadiga, microssonos e segurança operacional",
+        "evidence": "O recorte consultado define microssonos como episódios breves, incontrolados e espontâneos durante o trabalho, nos quais o cérebro deixa de processar estímulos visuais e sonoros; a dívida de sono e a baixa circadiana aumentam o risco.",
+        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
       }
     },
     {
-      "id": "fri-t2-spring-neap-mean-level",
+      "id": "sat-20261017-t1-extratropical-energy",
       "category": "rotation",
       "axis": "V",
-      "kind": "Rotação · oceanografia",
-      "stem": "Ao comparar as marés de sizígia com as de quadratura em um mesmo porto, assinale a afirmativa correta:",
+      "kind": "Rotação · meteorologia",
+      "stem": "Qual é a fonte primordial de energia de um ciclone extratropical, segundo Miguens?",
       "options": [
-        "Na sizígia, a amplitude é maior; o nível médio permanece o mesmo ao longo do ciclo lunar.",
-        "Na quadratura, a amplitude é maior porque Sol e Lua estão alinhados.",
-        "O nível médio sobe na sizígia e desce na quadratura, acompanhando a amplitude.",
-        "A amplitude é invariável, modificando-se apenas o horário das preamares."
+        "O calor latente liberado exclusivamente por convecção profunda simétrica junto ao olho.",
+        "A energia potencial decorrente do contraste horizontal de temperatura, em geral associada a um sistema frontal.",
+        "O atrito do vento com a superfície do mar, independentemente de massas de ar.",
+        "A força de Coriolis isoladamente, sem contraste térmico ou frente associada."
       ],
-      "correct": 0,
-      "explanation": "Na lua nova e na lua cheia, a ação combinada dos astros produz marés de sizígia com maior amplitude. O nível médio do porto não se altera por essa alternância do ciclo lunar.",
+      "correct": 1,
+      "explanation": "O ciclone extratropical obtém sua energia primordial do contraste horizontal de temperatura, normalmente associado à presença de frentes.",
       "comments": [
-        "Correta: distingue a variação de amplitude da constância do nível médio.",
-        "Incorreta: o alinhamento ocorre nas fases associadas à sizígia, não à quadratura.",
-        "Incorreta: varia a separação entre preamar e baixa-mar, não o nível médio definido para o porto.",
-        "Incorreta: a amplitude varia de modo característico ao longo do ciclo lunar."
+        "Incorreta: essa descrição aproxima-se do mecanismo e da estrutura de ciclones tropicais.",
+        "Correta: é a fonte de energia indicada no texto consultado.",
+        "Incorreta: o atrito não é a fonte primordial de energia do sistema.",
+        "Incorreta: Coriolis influencia a circulação, mas não substitui o contraste térmico como fonte energética."
       ],
       "reference": {
-        "referenceId": "V-03",
-        "base": "Lobo & Soares",
-        "publication": "Meteorologia e Oceanografia",
-        "edition": "4. ed., 2019",
-        "section": "Parte II, capítulo IX — marés de sizígia e quadratura",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · marés",
-        "evidence": "O trecho consultado mostra preamares mais altas e baixa-mares mais baixas na sizígia, com maior amplitude, e registra que o nível médio permanece constante no ciclo lunar.",
-        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view"
+        "referenceId": "V-01",
+        "base": "Miguens",
+        "publication": "Navegação: A Ciência e a Arte, v. III",
+        "edition": "DHN",
+        "section": "Capítulo 45 — ciclones extratropicais",
+        "syllabus": "Eixo V — Meteorologia/Oceanografia · sistemas de pressão e frentes",
+        "evidence": "O recorte consultado define o ciclone extratropical como centro de baixa pressão que extrai energia primordialmente da energia potencial produzida por contraste horizontal de temperatura, geralmente associado a sistema frontal.",
+        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
       }
     },
     {
-      "id": "fri-o1-pscpp2008-q26-tides",
+      "id": "sat-20261017-t2-smcp-instruction-advice",
+      "category": "rotation",
+      "axis": "VI",
+      "kind": "Rotação · comunicações SMCP",
+      "stem": "Em uma comunicação VTS, qual distinção entre os marcadores INSTRUCTION e ADVICE está correta?",
+      "options": [
+        "INSTRUCTION expressa recomendação opcional; ADVICE é juridicamente vinculante.",
+        "Ambos são juridicamente vinculantes e só diferem pela prioridade de transmissão.",
+        "INSTRUCTION pressupõe autoridade e deve ser cumprida salvo razão de segurança conflitante; ADVICE é recomendação cuja decisão permanece com o destinatário.",
+        "ADVICE informa apenas fatos observados; INSTRUCTION anuncia exclusivamente a intenção de manobra do próprio navio."
+      ],
+      "correct": 2,
+      "explanation": "INSTRUCTION veicula determinação de uma autoridade competente; eventual impedimento de segurança deve ser informado. ADVICE influencia por recomendação e a decisão final continua com o destinatário.",
+      "comments": [
+        "Incorreta: inverte a natureza dos dois marcadores.",
+        "Incorreta: ADVICE não é necessariamente vinculante.",
+        "Correta: preserva a autoridade exigida para INSTRUCTION e a decisão do destinatário em ADVICE.",
+        "Incorreta: fatos observados correspondem a INFORMATION; ação pretendida, a INTENTION."
+      ],
+      "reference": {
+        "referenceId": "VI-01",
+        "base": "IMO",
+        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
+        "edition": "A.918(22), 2001",
+        "section": "Parte A1/6 — Application of Message Markers",
+        "syllabus": "Eixo VI — Comunicações · SMCP, marcadores de mensagem",
+        "evidence": "O recorte consultado exige autoridade para INSTRUCTION e o trata como vinculante salvo razão de segurança conflitante comunicada; ADVICE é recomendação cuja aceitação permanece a cargo do destinatário.",
+        "url": "https://drive.google.com/file/d/1iHoEAH2kIKmqrG6FS9hOEC1dWTojWNYR/view"
+      }
+    },
+    {
+      "id": "sat-20261017-o1-pscpp2008-q26-correction",
       "category": "official",
       "axis": "V",
-      "kind": "Questão oficial histórica · marés",
+      "kind": "Questão oficial histórica · correção imediata de marés",
       "stem": "As marés influenciam a navegação costeira e a elaboração das cartas náuticas. Considere as afirmativas: I — as Cartas de Correntes de Marés referem-se às marés do próprio dia e podem ser usadas diariamente; II — as alturas diárias são simétricas em relação ao nível médio, na quadratura e na sizígia; III — o nível médio destacado no cabeçalho das Tábuas das Marés orienta quanto ao valor da amplitude de sizígia; IV — intensidades distintas de enchente e vazante, observadas em diferentes portos, decorrem das características geográficas; V — o nível de referência do zero da régua das marés está associado à carta náutica do porto. Segundo o gabarito oficial da prova, quais afirmativas são verdadeiras?",
-      "options": ["I e II.", "II e IV.", "III, IV e V.", "I, III e V.", "II, III e V."],
+      "options": [
+        "I e II.",
+        "II e IV.",
+        "III, IV e V.",
+        "I, III e V.",
+        "II, III e V."
+      ],
       "correct": 4,
       "explanation": "O gabarito oficial assinala a alternativa E: II, III e V. O texto-base confirma a simetria em torno do nível médio, usa o nível médio do cabeçalho como orientação para a maré de sizígia e associa o zero da régua ao nível de redução da carta náutica.",
       "comments": [
