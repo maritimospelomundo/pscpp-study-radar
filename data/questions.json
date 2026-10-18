@@ -1,336 +1,111 @@
 {
-  "roundId": "cumulative-fatigue-errors-2026-10-17",
-  "label": "Simulado cumulativo de 17 de outubro de 2026",
-  "title": "Fadiga operacional, sono e correção de erros",
+  "roundId": "sunday-fatigue-controls-overdue-2026-10-18",
+  "label": "Rodada adaptativa de 18 de outubro de 2026",
+  "title": "Controles de fadiga e correção de erros vencidos",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões vencidas de manobrabilidade, rebocadores e navegação · sono restaurador, inércia do sono e microssonos · meteorologia e SMCP · correção oficial de marés",
+  "path": "Revisões vencidas de rebocadores, navegação, aparelhos e meteorologia · descanso, pausas e cochilos controlados · ondas e SMCP · correção oficial de marés",
   "method": "4–3–2–1",
-  "mixPlan": {
-    "review": 4,
-    "current": 3,
-    "rotation": 2,
-    "official": 1
-  },
+  "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
   "questions": [
     {
-      "id": "sat-20261017-r1-pivot-point-recovery",
-      "category": "review",
-      "axis": "I",
-      "kind": "Revisão FSRS vencida · nota 0 · confusão",
-      "stem": "Um navio guina com seguimento a vante. Para identificar cinematicamente o ponto pivô naquele instante, deve-se procurar:",
-      "options": [
-        "O ponto do eixo longitudinal no qual a velocidade lateral instantânea é nula.",
-        "O centro de gravidade, pois nele se anulam sempre as velocidades longitudinal e lateral.",
-        "O centro da trajetória circular, necessariamente situado dentro do casco.",
-        "O ponto de aplicação da força do leme, cuja posição é fixa para qualquer condição de carregamento."
-      ],
+      "id": "sun-20261018-r1-asd-performance-recovery",
+      "category": "review", "axis": "II", "kind": "Revisão FSRS vencida · nota 0 · confusão",
+      "stem": "Na comparação geral entre um rebocador ASD convencional e um rebocador trator VS, qual afirmação traduz corretamente a ressalva apresentada por Hensen?",
+      "options": ["O ASD tende a ser um pouco menos eficaz no modo indireto, mas pode ser um pouco mais eficaz na tração direta.", "O ASD é sempre mais eficaz nos modos direto e indireto porque seus propulsores ficam a ré.", "O trator VS perde toda a capacidade de governo quando passa do modo direto para o indireto.", "Os dois tipos têm desempenho necessariamente idêntico, desde que possuam o mesmo bollard pull estático."],
       "correct": 0,
-      "explanation": "O ponto pivô é um ponto cinemático não estacionário no eixo longitudinal. Ele corresponde à seção em que não há velocidade lateral instantânea durante a mudança de aproamento.",
-      "comments": [
-        "Correta: a ausência de velocidade lateral no eixo longitudinal caracteriza o ponto pivô.",
-        "Incorreta: o ponto pivô não coincide necessariamente com o centro de gravidade e não é materialmente fixo.",
-        "Incorreta: o centro da trajetória não é o ponto pivô e não precisa estar no casco.",
-        "Incorreta: o ponto pivô não é o ponto de aplicação da força do leme e varia com a cinemática e a condição do navio."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Santos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 6, item 6.2 — O ponto pivô",
-        "syllabus": "Eixo I — Manobrabilidade · ponto pivô e curva de giro",
-        "evidence": "O recorte consultado define o ponto pivô como ponto cinemático não estacionário, situado no eixo longitudinal, onde não existe movimento ou velocidade lateral durante a mudança de aproamento.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
+      "explanation": "Hensen faz uma comparação relativa, não absoluta: o ASD convencional costuma ficar um pouco abaixo do trator VS no modo indireto, enquanto pode apresentar pequena vantagem na tração direta.",
+      "comments": ["Correta: reproduz a relação comparativa indicada no trecho consultado.", "Incorreta: posição dos propulsores não torna o ASD universalmente superior nos dois modos.", "Incorreta: o texto não afirma perda total de governo do trator VS no modo indireto.", "Incorreta: bollard pull estático igual não elimina diferenças de configuração e eficácia dinâmica."],
+      "reference": {"referenceId": "II-09", "base": "Hensen", "publication": "Tug Use in Port: A Practical Guide", "edition": "4. ed., 2021", "section": "Capítulo 2 — ASD tugs e métodos de assistência", "syllabus": "Eixo II — Arte Naval · tipos, capacidades e limitações de rebocadores", "evidence": "O recorte consultado informa que o ASD, comparado ao trator VS, é geralmente um pouco menos eficaz no modo indireto, mas pode ser um pouco mais eficaz na tração direta.", "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"}
     },
     {
-      "id": "sat-20261017-r2-asd-direct-indirect",
-      "category": "review",
-      "axis": "II",
-      "kind": "Revisão FSRS vencida · nota 0 · conteúdo",
-      "stem": "Ao comparar um rebocador ASD convencional com um rebocador trator VS, qual relação de desempenho é indicada por Hensen?",
-      "options": [
-        "O ASD é sempre superior nos modos direto e indireto, independentemente da velocidade.",
-        "O ASD tende a ser mais eficaz no modo indireto e menos eficaz na tração direta.",
-        "O ASD pode ser algo menos eficaz no modo indireto, mas algo mais eficaz na tração direta.",
-        "Os dois tipos têm desempenho necessariamente idêntico, pois utilizam propulsores azimutais."
-      ],
-      "correct": 2,
-      "explanation": "Hensen ressalva que o ASD pode apresentar eficácia indireta um pouco menor que a do trator VS, enquanto pode ser um pouco mais eficaz na tração direta.",
-      "comments": [
-        "Incorreta: a fonte não atribui superioridade universal ao ASD.",
-        "Incorreta: inverte a comparação apresentada.",
-        "Correta: reproduz a diferença relativa entre a atuação indireta e a tração direta.",
-        "Incorreta: configuração, casco, skeg e posição de reboque produzem diferenças de desempenho."
-      ],
-      "reference": {
-        "referenceId": "II-09",
-        "base": "Hensen",
-        "publication": "Tug Use in Port: A Practical Guide",
-        "edition": "4. ed., 2021",
-        "section": "Capítulo 2 — ASD tugs e métodos de assistência",
-        "syllabus": "Eixo II — Arte Naval · tipos, capacidades e limitações de rebocadores",
-        "evidence": "O trecho consultado informa que o ASD, comparado ao trator VS, é geralmente um pouco menos eficaz no modo indireto, mas pode ser um pouco mais eficaz na tração direta.",
-        "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"
-      }
-    },
-    {
-      "id": "sat-20261017-r3-tackle-mechanical-advantage",
-      "category": "review",
-      "axis": "II",
-      "kind": "Revisão FSRS vencida · nota 0 · conteúdo",
-      "stem": "Desprezadas as resistências passivas, um aparelho possui n roldanas. Qual regra fornece sua multiplicação de potência teórica m?",
-      "options": [
-        "m = n + 1 quando o tirador sai do cadernal fixo, e m = n quando sai do móvel.",
-        "m = n em qualquer caso, pois a posição de saída do tirador não altera a potência.",
-        "m = 2n quando o tirador sai do fixo, e m = n/2 quando sai do móvel.",
-        "m = n quando o tirador sai do cadernal fixo, e m = n + 1 quando sai do móvel."
-      ],
-      "correct": 3,
-      "explanation": "Na idealização apresentada em Arte Naval, a multiplicação teórica é igual ao número de roldanas quando o tirador sai do cadernal fixo e igual a n + 1 quando sai do cadernal móvel.",
-      "comments": [
-        "Incorreta: troca as duas condições de saída do tirador.",
-        "Incorreta: a saída pelo cadernal móvel acrescenta uma unidade à multiplicação teórica.",
-        "Incorreta: essas relações não constam da regra apresentada.",
-        "Correta: aplica exatamente a distinção entre saída pelo cadernal fixo e pelo móvel."
-      ],
-      "reference": {
-        "referenceId": "II-01",
-        "base": "Fonseca",
-        "publication": "Arte Naval, v. 1",
-        "edition": "8. ed., MB, 2019",
-        "section": "Capítulo 9, item 9.22 — Problemas de aparelhos",
-        "syllabus": "Eixo II — Arte Naval · poleame, aparelhos de laborar e multiplicação de potência",
-        "evidence": "O recorte consultado estabelece m = n quando o tirador sai do cadernal fixo e m = n + 1 quando o tirador sai do cadernal móvel; também separa essa regra ideal das resistências passivas.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
-      }
-    },
-    {
-      "id": "sat-20261017-r4-current-delay",
-      "category": "review",
-      "axis": "III",
-      "kind": "Revisão FSRS vencida · nota 0 · leitura",
-      "stem": "No mesmo instante, a distância percorrida pelo navio em relação ao fundo é menor que a distância percorrida em relação à superfície. Segundo Miguens, essa componente longitudinal do efeito da corrente é denominada:",
-      "options": [
-        "Avanço, porque a velocidade no fundo é maior que a velocidade do navio.",
-        "Atraso, porque a velocidade no fundo é menor que a velocidade do navio.",
-        "Caimento, porque toda diferença de distância é transversal ao rumo no fundo.",
-        "Abatimento, porque representa sempre a diferença entre duas distâncias."
-      ],
+      "id": "sun-20261018-r2-current-advance-delay",
+      "category": "review", "axis": "III", "kind": "Revisão FSRS vencida · nota 0 · conteúdo",
+      "stem": "Em determinado intervalo, a velocidade no fundo de um navio é menor que sua velocidade em relação à superfície. Quanto à componente longitudinal do efeito da corrente, ocorre:",
+      "options": ["Avanço, porque a corrente aumenta a distância percorrida no fundo.", "Atraso, porque a distância percorrida no fundo fica menor que a percorrida na superfície.", "Caimento exclusivamente transversal, sem componente longitudinal.", "Abatimento devido apenas ao vento, independentemente da corrente."],
       "correct": 1,
-      "explanation": "Há atraso quando a distância percorrida no fundo é menor que a distância na superfície, equivalendo a velocidade no fundo inferior à velocidade do navio.",
-      "comments": [
-        "Incorreta: avanço ocorre na relação oposta, com distância e velocidade no fundo maiores.",
-        "Correta: é a condição definida para o atraso.",
-        "Incorreta: caimento é a componente transversal do efeito da corrente.",
-        "Incorreta: abatimento é o ângulo entre o rumo na superfície e o rumo no fundo."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Miguens",
-        "publication": "Navegação: A Ciência e a Arte",
-        "edition": "v. I, 2ª revisão atualizada, 2023",
-        "section": "Volume I, capítulo 5 — caimento, avanço e atraso",
-        "syllabus": "Eixo III — Navegação Restrita · efeito da corrente e navegação estimada",
-        "evidence": "O recorte consultado decompõe o efeito da corrente em avanço ou atraso e caimento; define atraso quando a distância percorrida no fundo é menor que a percorrida na superfície, isto é, quando a velocidade no fundo é menor.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
+      "explanation": "Miguens denomina atraso a situação em que a velocidade — e, no mesmo intervalo, a distância — no fundo é menor que a correspondente na superfície. Avanço é a situação inversa.",
+      "comments": ["Incorreta: avanço exige distância ou velocidade no fundo maior que a de superfície.", "Correta: velocidade no fundo menor caracteriza atraso na componente longitudinal.", "Incorreta: caimento é a componente lateral; o enunciado descreve diferença longitudinal.", "Incorreta: a classificação pedida decorre do efeito da corrente, não exclusivamente do vento."],
+      "reference": {"referenceId": "III-02", "base": "Miguens", "publication": "Navegação: A Ciência e a Arte", "edition": "v. I, 2ª revisão atualizada, 2023", "section": "Volume I, capítulo 5 — caimento, avanço e atraso", "syllabus": "Eixo III — Navegação Restrita · efeito da corrente e navegação estimada", "evidence": "O recorte consultado decompõe o efeito da corrente em avanço ou atraso e caimento; define atraso quando a distância percorrida no fundo é menor que a percorrida na superfície, isto é, quando a velocidade no fundo é menor.", "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"}
     },
     {
-      "id": "sat-20261017-c1-restorative-sleep",
-      "category": "current",
-      "axis": "VII",
-      "kind": "Conteúdo atual · sono restaurador",
-      "stem": "Segundo as Guidelines on Fatigue da IMO, quais características devem ser consideradas em conjunto para que o sono seja mais eficaz na recuperação?",
-      "options": [
-        "Quantidade, qualidade e continuidade.",
-        "Duração, cafeína e atividade física.",
-        "Horário, alimentação e antiguidade na função.",
-        "Profundidade, sonhos e ausência de qualquer despertar."
-      ],
-      "correct": 0,
-      "explanation": "A IMO reúne três características: quantidade suficiente, qualidade com ciclos adequados e continuidade, pois a fragmentação reduz o valor restaurador do sono.",
-      "comments": [
-        "Correta: são as três características expressamente enumeradas pela diretriz.",
-        "Incorreta: cafeína e atividade física não integram a tríade definidora do sono eficaz.",
-        "Incorreta: esses fatores podem influenciar o descanso, mas não são a tríade indicada.",
-        "Incorreta: a fonte trata de qualidade e continuidade, não de sonhos como critério."
-      ],
-      "reference": {
-        "referenceId": "VII-05",
-        "base": "IMO",
-        "publication": "Guidelines on Fatigue",
-        "edition": "MSC.1/Circ.1598, 2019",
-        "section": "Módulo 1, parágrafo 20 — Sleep",
-        "syllabus": "Eixo VII — Conhecimentos Gerais · fadiga, sono e desempenho humano",
-        "evidence": "O recorte consultado enumera quantidade, qualidade e continuidade como as três características do sono mais eficaz e explica que ciclos fragmentados reduzem seu valor restaurador.",
-        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
-      }
-    },
-    {
-      "id": "sat-20261017-c2-sleep-inertia",
-      "category": "current",
-      "axis": "VII",
-      "kind": "Conteúdo atual · inércia do sono",
-      "stem": "Um oficial é acordado abruptamente de sono profundo e, logo depois, apresenta desorientação, memória de curto prazo prejudicada e decisão lenta. A condição descrita é:",
-      "options": [
-        "Dívida de sono, que só surge após vários períodos de 24 horas.",
-        "Inércia do sono, que pode persistir por mais de 30 minutos.",
-        "Janela de baixa circadiana, limitada ao intervalo entre 15h e 17h.",
-        "Microssono, definido como cochilo voluntário antes do serviço."
-      ],
-      "correct": 1,
-      "explanation": "A dificuldade de transição após despertar, sobretudo do sono profundo, caracteriza a inércia do sono. Ela pode causar torpor, desorientação e prejuízo cognitivo por mais de 30 minutos.",
-      "comments": [
-        "Incorreta: dívida de sono é a insuficiência acumulada ao longo de períodos sucessivos.",
-        "Correta: reúne causa, manifestações e duração descritas na diretriz.",
-        "Incorreta: a principal janela de baixa circadiana indicada ocorre tipicamente entre 3h e 5h.",
-        "Incorreta: microssono é episódio breve, involuntário e espontâneo durante a vigília."
-      ],
-      "reference": {
-        "referenceId": "VII-05",
-        "base": "IMO",
-        "publication": "Guidelines on Fatigue",
-        "edition": "MSC.1/Circ.1598, 2019",
-        "section": "Módulo 1, parágrafo 23 — Sleep inertia",
-        "syllabus": "Eixo VII — Conhecimentos Gerais · fadiga, sono e desempenho humano",
-        "evidence": "O recorte consultado define a inércia do sono após despertar, associa-a a torpor, desorientação e prejuízo da memória de curto prazo e da decisão, e registra que pode durar mais de 30 minutos.",
-        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
-      }
-    },
-    {
-      "id": "sat-20261017-c3-microsleep-risk",
-      "category": "current",
-      "axis": "VII",
-      "kind": "Conteúdo atual · microssonos",
-      "stem": "Durante um quarto noturno, qual situação melhor caracteriza um microssono e seu risco operacional?",
-      "options": [
-        "Pausa planejada de poucos minutos, na qual a percepção do ambiente permanece integral.",
-        "Sono profundo contínuo, obtido fora do serviço e sem relação com dívida de sono.",
-        "Episódio breve, involuntário e espontâneo em que o cérebro deixa de processar temporariamente informações visuais e sonoras.",
-        "Redução voluntária da atenção que ocorre apenas após uso de medicamentos sedativos."
-      ],
+      "id": "sun-20261018-r3-tackle-fixed-moving",
+      "category": "review", "axis": "II", "kind": "Revisão FSRS vencida · nota 0 · confusão",
+      "stem": "Desprezadas as resistências passivas, um aparelho tem n roldanas. Como varia sua multiplicação de potência teórica m conforme a saída do tirador?",
+      "options": ["m = n + 1 no cadernal fixo e m = n no cadernal móvel.", "m = n em ambos os casos, pois apenas o número de roldanas importa.", "m = n no cadernal fixo e m = n + 1 no cadernal móvel.", "m = 2n no cadernal fixo e m = n/2 no cadernal móvel."],
       "correct": 2,
-      "explanation": "Microssonos são episódios breves e não controlados durante o trabalho. Neles, o cérebro se desliga do ambiente; dívida de sono e serviço em baixa circadiana elevam a probabilidade.",
-      "comments": [
-        "Incorreta: uma pausa planejada não é microssono.",
-        "Incorreta: o fenômeno ocorre durante a vigília e se relaciona à privação de sono.",
-        "Correta: corresponde à definição e ao mecanismo descritos pela IMO.",
-        "Incorreta: o episódio é involuntário e não depende exclusivamente de sedativos."
-      ],
-      "reference": {
-        "referenceId": "VII-05",
-        "base": "IMO",
-        "publication": "Guidelines on Fatigue",
-        "edition": "MSC.1/Circ.1598, 2019",
-        "section": "Módulo 1, parágrafos 44 e 45 — effects and signs of fatigue",
-        "syllabus": "Eixo VII — Conhecimentos Gerais · fadiga, microssonos e segurança operacional",
-        "evidence": "O recorte consultado define microssonos como episódios breves, incontrolados e espontâneos durante o trabalho, nos quais o cérebro deixa de processar estímulos visuais e sonoros; a dívida de sono e a baixa circadiana aumentam o risco.",
-        "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"
-      }
+      "explanation": "Na condição ideal descrita em Arte Naval, m = n quando o tirador sai do cadernal fixo e m = n + 1 quando sai do cadernal móvel.",
+      "comments": ["Incorreta: inverte as duas relações estabelecidas no texto.", "Incorreta: a saída do tirador altera o número de pernadas efetivamente úteis.", "Correta: aplica as expressões ideais às duas disposições do tirador.", "Incorreta: essas relações não correspondem à regra do aparelho descrita na fonte."],
+      "reference": {"referenceId": "II-01", "base": "Fonseca", "publication": "Arte Naval, v. 1", "edition": "8. ed., MB, 2019", "section": "Capítulo 9, item 9.22 — Problemas de aparelhos", "syllabus": "Eixo II — Arte Naval · poleame, aparelhos de laborar e multiplicação de potência", "evidence": "O recorte consultado estabelece m = n quando o tirador sai do cadernal fixo e m = n + 1 quando o tirador sai do cadernal móvel; também separa essa regra ideal das resistências passivas.", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"}
     },
     {
-      "id": "sat-20261017-t1-extratropical-energy",
-      "category": "rotation",
-      "axis": "V",
-      "kind": "Rotação · meteorologia",
-      "stem": "Qual é a fonte primordial de energia de um ciclone extratropical, segundo Miguens?",
-      "options": [
-        "O calor latente liberado exclusivamente por convecção profunda simétrica junto ao olho.",
-        "A energia potencial decorrente do contraste horizontal de temperatura, em geral associada a um sistema frontal.",
-        "O atrito do vento com a superfície do mar, independentemente de massas de ar.",
-        "A força de Coriolis isoladamente, sem contraste térmico ou frente associada."
-      ],
-      "correct": 1,
-      "explanation": "O ciclone extratropical obtém sua energia primordial do contraste horizontal de temperatura, normalmente associado à presença de frentes.",
-      "comments": [
-        "Incorreta: essa descrição aproxima-se do mecanismo e da estrutura de ciclones tropicais.",
-        "Correta: é a fonte de energia indicada no texto consultado.",
-        "Incorreta: o atrito não é a fonte primordial de energia do sistema.",
-        "Incorreta: Coriolis influencia a circulação, mas não substitui o contraste térmico como fonte energética."
-      ],
-      "reference": {
-        "referenceId": "V-01",
-        "base": "Miguens",
-        "publication": "Navegação: A Ciência e a Arte, v. III",
-        "edition": "DHN",
-        "section": "Capítulo 45 — ciclones extratropicais",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · sistemas de pressão e frentes",
-        "evidence": "O recorte consultado define o ciclone extratropical como centro de baixa pressão que extrai energia primordialmente da energia potencial produzida por contraste horizontal de temperatura, geralmente associado a sistema frontal.",
-        "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"
-      }
-    },
-    {
-      "id": "sat-20261017-t2-smcp-instruction-advice",
-      "category": "rotation",
-      "axis": "VI",
-      "kind": "Rotação · comunicações SMCP",
-      "stem": "Em uma comunicação VTS, qual distinção entre os marcadores INSTRUCTION e ADVICE está correta?",
-      "options": [
-        "INSTRUCTION expressa recomendação opcional; ADVICE é juridicamente vinculante.",
-        "Ambos são juridicamente vinculantes e só diferem pela prioridade de transmissão.",
-        "INSTRUCTION pressupõe autoridade e deve ser cumprida salvo razão de segurança conflitante; ADVICE é recomendação cuja decisão permanece com o destinatário.",
-        "ADVICE informa apenas fatos observados; INSTRUCTION anuncia exclusivamente a intenção de manobra do próprio navio."
-      ],
+      "id": "sun-20261018-r4-extratropical-energy",
+      "category": "review", "axis": "V", "kind": "Revisão FSRS vencida · nota 0 · conteúdo",
+      "stem": "A fonte primordial de energia de um ciclone extratropical está associada principalmente:",
+      "options": ["Ao calor latente liberado sobre águas tropicais muito quentes, sem contraste frontal.", "À rotação da Terra isoladamente, sem gradientes térmicos horizontais.", "À energia potencial produzida pelo contraste horizontal de temperatura, em geral ligada a um sistema frontal.", "À maré barométrica gerada pelo ciclo diário de pressão."],
       "correct": 2,
-      "explanation": "INSTRUCTION veicula determinação de uma autoridade competente; eventual impedimento de segurança deve ser informado. ADVICE influencia por recomendação e a decisão final continua com o destinatário.",
-      "comments": [
-        "Incorreta: inverte a natureza dos dois marcadores.",
-        "Incorreta: ADVICE não é necessariamente vinculante.",
-        "Correta: preserva a autoridade exigida para INSTRUCTION e a decisão do destinatário em ADVICE.",
-        "Incorreta: fatos observados correspondem a INFORMATION; ação pretendida, a INTENTION."
-      ],
-      "reference": {
-        "referenceId": "VI-01",
-        "base": "IMO",
-        "publication": "IMO Standard Marine Communication Phrases (SMCP)",
-        "edition": "A.918(22), 2001",
-        "section": "Parte A1/6 — Application of Message Markers",
-        "syllabus": "Eixo VI — Comunicações · SMCP, marcadores de mensagem",
-        "evidence": "O recorte consultado exige autoridade para INSTRUCTION e o trata como vinculante salvo razão de segurança conflitante comunicada; ADVICE é recomendação cuja aceitação permanece a cargo do destinatário.",
-        "url": "https://drive.google.com/file/d/1iHoEAH2kIKmqrG6FS9hOEC1dWTojWNYR/view"
-      }
+      "explanation": "O ciclone extratropical obtém sua energia primordial da energia potencial ligada ao contraste horizontal de temperatura e, por isso, costuma estar associado a sistemas frontais.",
+      "comments": ["Incorreta: descreve mecanismo dominante de ciclones tropicais, não a fonte primordial indicada para os extratropicais.", "Incorreta: a rotação influencia a dinâmica, mas não substitui o contraste térmico como fonte de energia.", "Correta: relaciona gradiente térmico horizontal, energia potencial e frentes.", "Incorreta: maré barométrica não é apresentada como fonte energética desses ciclones."],
+      "reference": {"referenceId": "V-01", "base": "Miguens", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN", "section": "Capítulo 45 — ciclones extratropicais", "syllabus": "Eixo V — Meteorologia/Oceanografia · sistemas de pressão e frentes", "evidence": "O recorte consultado define o ciclone extratropical como centro de baixa pressão que extrai energia primordialmente da energia potencial produzida por contraste horizontal de temperatura, geralmente associado a sistema frontal.", "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"}
     },
     {
-      "id": "sat-20261017-o1-pscpp2008-q26-correction",
-      "category": "official",
-      "axis": "V",
-      "kind": "Questão oficial histórica · correção imediata de marés",
+      "id": "sun-20261018-c1-rest-means-rest",
+      "category": "current", "axis": "VII", "kind": "Avanço controlado · gestão da fadiga",
+      "stem": "Uma empresa concede ao tripulante o período regulamentar de descanso, mas o emprega rotineiramente em tarefas administrativas nesse mesmo intervalo. À luz das Guidelines on Fatigue da IMO, a medida é:",
+      "options": ["Adequada, porque tarefas sem esforço físico equivalem a descanso.", "Adequada se o período total a bordo permanecer inalterado.", "Inadequada, pois descanso deve significar descanso e não pode ser substituído por outro trabalho; isso exige recursos e guarnição compatíveis.", "Inadequada apenas quando a tarefa administrativa durar mais de quatro horas."],
+      "correct": 2,
+      "explanation": "A orientação é explícita: descanso deve ser efetivamente destinado ao descanso, não a outra forma de trabalho. A organização precisa sustentar isso com guarnição, recursos, processos e políticas adequados.",
+      "comments": ["Incorreta: ausência de esforço físico não transforma trabalho administrativo em descanso.", "Incorreta: o problema é a utilização do intervalo, não apenas o tempo total a bordo.", "Correta: reúne o princípio e a obrigação organizacional que o viabiliza.", "Incorreta: o trecho consultado não estabelece tolerância de quatro horas."],
+      "reference": {"referenceId": "VII-05", "base": "IMO", "publication": "Guidelines on Fatigue", "edition": "MSC.1/Circ.1598, 2019", "section": "Módulo 2 — Developing a fatigue management policy and procedures", "syllabus": "Eixo VII — Conhecimentos Gerais · gestão da fadiga e períodos de descanso", "evidence": "O recorte consultado afirma que descanso deve significar descanso, e não substituição por outra modalidade de trabalho, e vincula sua efetividade a guarnição, recursos, processos e políticas apropriados.", "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"}
+    },
+    {
+      "id": "sun-20261018-c2-short-breaks-task-rotation",
+      "category": "current", "axis": "VII", "kind": "Avanço controlado · contramedidas operacionais",
+      "stem": "Durante tarefa prolongada e monótona no passadiço, qual medida está de acordo com as contramedidas de fadiga indicadas pela IMO?",
+      "options": ["Eliminar pausas para reduzir o tempo total de exposição à tarefa.", "Planejar pausas curtas e, quando possível, alternar ou substituir tarefas para reduzir o efeito do tempo contínuo na atividade.", "Manter a mesma pessoa na tarefa até o fim, pois a familiaridade elimina a queda de alerta.", "Usar somente cafeína, já que pausas curtas não afetam desempenho nem alerta."],
+      "correct": 1,
+      "explanation": "Pausas curtas podem melhorar desempenho e alerta. A alternância ou substituição de tarefas também reduz o efeito do tempo contínuo dedicado à mesma atividade.",
+      "comments": ["Incorreta: retirar pausas aumenta a exposição contínua e contraria a medida recomendada.", "Correta: combina as duas medidas operacionais descritas no trecho consultado.", "Incorreta: familiaridade não elimina a degradação associada ao tempo na tarefa.", "Incorreta: a fonte reconhece benefício das pausas curtas e não prescreve cafeína como solução única."],
+      "reference": {"referenceId": "VII-05", "base": "IMO", "publication": "Guidelines on Fatigue", "edition": "MSC.1/Circ.1598, 2019", "section": "Módulo 2 — Short breaks and task rotation", "syllabus": "Eixo VII — Conhecimentos Gerais · fadiga, tempo na tarefa e contramedidas", "evidence": "O recorte consultado registra que pausas curtas beneficiam desempenho e alerta e que rotações ou substituições de tarefas podem reduzir o efeito do tempo contínuo na mesma atividade.", "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"}
+    },
+    {
+      "id": "sun-20261018-c3-nap-sleep-inertia-control",
+      "category": "current", "axis": "VII", "kind": "Avanço controlado · cochilos e prontidão",
+      "stem": "Ao empregar cochilos como contramedida à fadiga antes de uma atividade crítica, qual conduta é tecnicamente mais adequada?",
+      "options": ["Proibir cochilos, porque a inércia do sono sempre supera qualquer benefício.", "Permitir o cochilo e iniciar imediatamente a tarefa crítica ao despertar, sem período de recuperação.", "Usar o cochilo como contramedida eficaz, planejando tempo para dissipar a possível inércia do sono antes da tarefa crítica.", "Substituir permanentemente o sono principal por vários cochilos curtos."],
+      "correct": 2,
+      "explanation": "A IMO reconhece o cochilo como contramedida eficaz, com benefícios para desempenho e alerta. O planejamento deve considerar a inércia do sono e prever recuperação antes de tarefa crítica.",
+      "comments": ["Incorreta: a fonte afirma que os benefícios do cochilo superam os riscos quando estes são geridos.", "Incorreta: iniciar tarefa crítica imediatamente ignora a possível inércia do sono.", "Correta: preserva o benefício do cochilo e controla o risco transitório após o despertar.", "Incorreta: cochilos complementam a gestão da fadiga e não substituem indefinidamente o sono recuperador principal."],
+      "reference": {"referenceId": "VII-05", "base": "IMO", "publication": "Guidelines on Fatigue", "edition": "MSC.1/Circ.1598, 2019", "section": "Módulo 2 — Napping as a fatigue countermeasure", "syllabus": "Eixo VII — Conhecimentos Gerais · cochilos, inércia do sono e prontidão", "evidence": "O recorte consultado apresenta cochilos como contramedida eficaz, associa-os à melhora de desempenho e alerta e orienta que a inércia do sono e o tempo de recuperação sejam considerados no planejamento.", "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"}
+    },
+    {
+      "id": "sun-20261018-t1-significant-wave-height",
+      "category": "rotation", "axis": "V", "kind": "Rotação semanal · ondas oceânicas",
+      "stem": "Em um registro de ondas ordenadas por altura, a altura significativa Hs corresponde:",
+      "options": ["À média de todas as ondas observadas no período.", "À maior onda isolada do registro.", "À média do terço de ondas de maior altura.", "À diferença entre a maior e a menor onda do registro."],
+      "correct": 2,
+      "explanation": "A altura significativa é definida como a média das alturas do terço superior das ondas do registro, sendo um parâmetro usual para representar o estado do mar.",
+      "comments": ["Incorreta: a média de todas as ondas é inferior e não define Hs.", "Incorreta: uma máxima isolada não representa a média do terço superior.", "Correta: esta é a definição estatística de altura significativa na fonte consultada.", "Incorreta: amplitude total do conjunto não corresponde a Hs."],
+      "reference": {"referenceId": "V-04", "base": "Santos", "publication": "Hidrodinâmica e Ondas Oceânicas", "edition": "1. ed., CONAPRA, 2021", "section": "Ondas irregulares — altura significativa", "syllabus": "Eixo V — Meteorologia/Oceanografia · ondas e estado do mar", "evidence": "O recorte consultado define a altura significativa como a média das alturas do terço das maiores ondas e a apresenta como parâmetro comum para descrever a altura do mar.", "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"}
+    },
+    {
+      "id": "sun-20261018-t2-smcp-response-markers",
+      "category": "rotation", "axis": "VI", "kind": "Rotação semanal · comunicações SMCP",
+      "stem": "Após receber uma mensagem VTS marcada como INSTRUCTION ou ADVICE, qual formato de resposta é previsto pela SMCP para indicar possibilidade de cumprimento?",
+      "options": ["Responder apenas ROGER, sem repetir a ação solicitada.", "Responder I will/can... ou I will not/cannot..., repetindo integralmente a ação pertinente.", "Responder MAYDAY seguido da posição do navio.", "Responder STAND BY em todos os casos, mesmo quando a ação puder ser cumprida de imediato."],
+      "correct": 1,
+      "explanation": "A SMCP prevê resposta afirmativa ou negativa com I will/can ou I will not/cannot e a repetição completa da ação, evitando ambiguidade sobre o que será ou não cumprido.",
+      "comments": ["Incorreta: ROGER isolado não explicita a capacidade nem a ação que será executada.", "Correta: corresponde ao padrão de resposta previsto para INSTRUCTION e ADVICE.", "Incorreta: MAYDAY é sinal de perigo e não resposta ordinária a instrução ou conselho.", "Incorreta: STAND BY não substitui a confirmação explícita quando já é possível responder."],
+      "reference": {"referenceId": "VI-01", "base": "IMO", "publication": "IMO Standard Marine Communication Phrases (SMCP)", "edition": "A.918(22), 2001", "section": "Parte A1/6 — Application of Message Markers", "syllabus": "Eixo VI — Comunicações · SMCP, marcadores e respostas padronizadas", "evidence": "O recorte consultado determina que a resposta a INSTRUCTION ou ADVICE indique I will/can ou I will not/cannot e repita por extenso a frase relativa à ação, reduzindo ambiguidades.", "url": "https://drive.google.com/file/d/1iHoEAH2kIKmqrG6FS9hOEC1dWTojWNYR/view"}
+    },
+    {
+      "id": "sun-20261018-o1-pscpp2008-q26-persisted",
+      "category": "official", "axis": "V", "kind": "Questão oficial histórica · pendência preservada · marés",
       "stem": "As marés influenciam a navegação costeira e a elaboração das cartas náuticas. Considere as afirmativas: I — as Cartas de Correntes de Marés referem-se às marés do próprio dia e podem ser usadas diariamente; II — as alturas diárias são simétricas em relação ao nível médio, na quadratura e na sizígia; III — o nível médio destacado no cabeçalho das Tábuas das Marés orienta quanto ao valor da amplitude de sizígia; IV — intensidades distintas de enchente e vazante, observadas em diferentes portos, decorrem das características geográficas; V — o nível de referência do zero da régua das marés está associado à carta náutica do porto. Segundo o gabarito oficial da prova, quais afirmativas são verdadeiras?",
-      "options": [
-        "I e II.",
-        "II e IV.",
-        "III, IV e V.",
-        "I, III e V.",
-        "II, III e V."
-      ],
+      "options": ["I e II.", "II e IV.", "III, IV e V.", "I, III e V.", "II, III e V."],
       "correct": 4,
       "explanation": "O gabarito oficial assinala a alternativa E: II, III e V. O texto-base confirma a simetria em torno do nível médio, usa o nível médio do cabeçalho como orientação para a maré de sizígia e associa o zero da régua ao nível de redução da carta náutica.",
-      "comments": [
-        "Incorreta segundo o gabarito oficial: a afirmativa I não integra o conjunto correto.",
-        "Incorreta segundo o gabarito oficial: inclui IV e omite III e V.",
-        "Incorreta segundo o gabarito oficial: inclui IV e omite II.",
-        "Incorreta segundo o gabarito oficial: inclui I e omite II.",
-        "Correta segundo o gabarito oficial: II, III e V."
-      ],
-      "reference": {
-        "referenceId": "V-03",
-        "base": "Diretoria de Portos e Costas / Lobo & Soares",
-        "publication": "PSCPP 2008 / Meteorologia e Oceanografia",
-        "edition": "Prova de 2008; 4. ed., 2019",
-        "section": "Questão 26; Parte II, capítulos IX e X",
-        "syllabus": "Eixo V — Meteorologia/Oceanografia · marés e correntes de maré",
-        "evidence": "O livro consultado define a simetria das oscilações em relação ao nível médio, registra o uso do nível médio do cabeçalho como orientação para a sizígia e afirma que o zero da régua coincide com o nível de redução do porto; a prova oficial marca a alternativa E.",
-        "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view",
-        "origin": {
-          "exam": "PSCPP 2008",
-          "year": 2008,
-          "question": 26,
-          "answer": "E",
-          "adaptation": "Ortografia atualizada e enunciado condensado; cinco alternativas e gabarito oficial preservados.",
-          "url": "https://drive.google.com/file/d/1KfllJf4BukeOqCtNlr5uuwNC7xDu45I6/view"
-        }
-      }
+      "comments": ["Incorreta segundo o gabarito oficial: a afirmativa I não integra o conjunto correto.", "Incorreta segundo o gabarito oficial: inclui IV e omite III e V.", "Incorreta segundo o gabarito oficial: inclui IV e omite II.", "Incorreta segundo o gabarito oficial: inclui I e omite II.", "Correta segundo o gabarito oficial: II, III e V."],
+      "reference": {"referenceId": "V-03", "base": "Diretoria de Portos e Costas / Lobo & Soares", "publication": "PSCPP 2008 / Meteorologia e Oceanografia", "edition": "Prova de 2008; 4. ed., 2019", "section": "Questão 26; Parte II, capítulos IX e X", "syllabus": "Eixo V — Meteorologia/Oceanografia · marés e correntes de maré", "evidence": "O livro consultado define a simetria das oscilações em relação ao nível médio, registra o uso do nível médio do cabeçalho como orientação para a sizígia e afirma que o zero da régua coincide com o nível de redução do porto; a prova oficial marca a alternativa E.", "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view", "origin": {"exam": "PSCPP 2008", "year": 2008, "question": 26, "answer": "E", "adaptation": "Ortografia atualizada e enunciado condensado; cinco alternativas e gabarito oficial preservados. Mantida nesta rodada porque permaneceu sem resposta na rodada anterior.", "url": "https://drive.google.com/file/d/1KfllJf4BukeOqCtNlr5uuwNC7xDu45I6/view"}}
     }
   ]
 }
