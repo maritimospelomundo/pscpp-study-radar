@@ -1,111 +1,336 @@
 {
-  "roundId": "sunday-fatigue-controls-overdue-2026-10-18",
-  "label": "Rodada adaptativa de 18 de outubro de 2026",
-  "title": "Controles de fadiga e correção de erros vencidos",
+  "roundId": "directional-stability-tackles-colreg-2026-10-19",
+  "label": "Rodada adaptativa de 19 de outubro de 2026",
+  "title": "Estabilidade direcional, aparelhos de laborar e RIPEAM",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Revisões vencidas de rebocadores, navegação, aparelhos e meteorologia · descanso, pausas e cochilos controlados · ondas e SMCP · correção oficial de marés",
+  "path": "Manobrabilidade: interpretação dos ensaios de estabilidade · consolidação de aparelhos de laborar · revisões de corrente e giro · RIPEAM",
   "method": "4–3–2–1",
-  "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
+  "mixPlan": {
+    "review": 4,
+    "current": 3,
+    "rotation": 2,
+    "official": 1
+  },
   "questions": [
     {
-      "id": "sun-20261018-r1-asd-performance-recovery",
-      "category": "review", "axis": "II", "kind": "Revisão FSRS vencida · nota 0 · confusão",
-      "stem": "Na comparação geral entre um rebocador ASD convencional e um rebocador trator VS, qual afirmação traduz corretamente a ressalva apresentada por Hensen?",
-      "options": ["O ASD tende a ser um pouco menos eficaz no modo indireto, mas pode ser um pouco mais eficaz na tração direta.", "O ASD é sempre mais eficaz nos modos direto e indireto porque seus propulsores ficam a ré.", "O trator VS perde toda a capacidade de governo quando passa do modo direto para o indireto.", "Os dois tipos têm desempenho necessariamente idêntico, desde que possuam o mesmo bollard pull estático."],
+      "id": "mon-20261019-r1-tackle-moving-block",
+      "category": "review",
+      "axis": "II",
+      "kind": "Revisão corretiva · nota 0 · conteúdo",
+      "stem": "Uma talha dobrada, com quatro roldanas, tem o tirador saindo do cadernal móvel. Desprezando atritos, rigidez do cabo e peso do aparelho, qual força no tirador equilibra uma carga de 10 kN?",
+      "options": [
+        "2,5 kN.",
+        "5,0 kN.",
+        "2,0 kN.",
+        "10,0 kN."
+      ],
+      "correct": 2,
+      "explanation": "Quando o tirador sai do cadernal móvel, a multiplicação teórica é n + 1. Com quatro roldanas, m = 5; portanto, F = 10/5 = 2,0 kN.",
+      "comments": [
+        "Incorreta: 10/4 corresponde ao tirador saindo do cadernal fixo.",
+        "Incorreta: pressupõe multiplicação 2, própria de outra configuração.",
+        "Correta: a configuração descrita proporciona multiplicação teórica 5.",
+        "Incorreta: despreza a multiplicação de força da talha, tratando-a como um simples retorno."
+      ],
+      "reference": {
+        "referenceId": "II-01",
+        "base": "Fonseca, Maurílio M.",
+        "publication": "Arte Naval, v. 1",
+        "edition": "Exemplar consultado: 6. ed., SDM, 2002; catálogo PSCPP: 8. ed., MB, 2019",
+        "section": "Capítulo 9, arts. 9.14(c), 9.15 e 9.22",
+        "syllabus": "Eixo II — Arte Naval · poleame e aparelhos de laborar",
+        "evidence": "O exemplar consultado distingue a talha dobrada com multiplicação 4, quando o tirador sai do cadernal fixo, e 5, quando sai do móvel; o art. 9.22 expressa m = n + 1 nessa segunda configuração.",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
+      }
+    },
+    {
+      "id": "mon-20261019-r2-coriolis-relative-direction",
+      "category": "review",
+      "axis": "III",
+      "kind": "Revisão FSRS vencida · hemisférios e leitura",
+      "stem": "Uma corrente de maré tem movimento inicialmente dirigido para leste, no Hemisfério Sul. Considerando apenas a tendência de desvio associada ao efeito de Coriolis, para que lado de sua direção de movimento tende a ser desviada?",
+      "options": [
+        "Para a direita, isto é, para sul.",
+        "Para a esquerda, isto é, para norte.",
+        "Para a esquerda, isto é, para sul.",
+        "Para a direita, isto é, para norte."
+      ],
+      "correct": 1,
+      "explanation": "No Hemisfério Sul, a tendência de Coriolis é para a esquerda da direção do movimento. Para um movimento para leste, a esquerda corresponde ao norte. Isso não equivale a prever sozinho o rumo real da corrente.",
+      "comments": [
+        "Incorreta: aplica a tendência do Hemisfério Norte.",
+        "Correta: combina o hemisfério com a orientação relativa correta.",
+        "Incorreta: identifica corretamente o lado relativo, mas troca sua correspondência geográfica.",
+        "Incorreta: norte fica à esquerda de quem se move para leste, e não à direita."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Miguens, Altineu Pires",
+        "publication": "Navegação: A Ciência e a Arte",
+        "edition": "Volume I, 2ª revisão atualizada, DHN, 2023",
+        "section": "Volume I, capítulo 10, item 10.2.1 — Correntes de maré",
+        "syllabus": "Eixo III — Navegação em águas restritas · marés e correntes",
+        "evidence": "O texto atribui ao efeito de Coriolis a tendência de desviar as correntes de maré para a direita no Hemisfério Norte e para a esquerda no Sul; também ressalta a atuação conjunta de outras forças.",
+        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
+      }
+    },
+    {
+      "id": "mon-20261019-r3-crossflow-regime",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão FSRS vencida · nota 1 · escoamento cruzado",
+      "stem": "Em qual situação o princípio do arrasto por escoamento cruzado é particularmente aplicável à modelagem da manobra, conforme Santos?",
+      "options": [
+        "Velocidade longitudinal muito superior à lateral e ângulo de deriva praticamente nulo.",
+        "Navio em alta velocidade longitudinal, sem movimento lateral, em qualquer profundidade.",
+        "Navio cuja única alteração seja o aumento das rotações do propulsor, mantendo deriva nula.",
+        "Velocidade lateral próxima da longitudinal e ângulo de deriva elevado, geralmente acima de 25°."
+      ],
+      "correct": 3,
+      "explanation": "O recorte associa o escoamento cruzado à manobra em velocidades muito baixas, com componente lateral comparável à longitudinal e ângulo de deriva elevado.",
+      "comments": [
+        "Incorreta: descreve uma situação de pequeno ângulo de deriva, oposta ao regime destacado.",
+        "Incorreta: a ausência de velocidade lateral não caracteriza o regime de escoamento cruzado descrito.",
+        "Incorreta: aumento de rotação, isoladamente, não estabelece o regime de deriva elevada.",
+        "Correta: reúne as condições explicitadas no início do item 3.8."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Santos, Edson Mesquita dos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 3, item 3.8 — Escoamento cruzado",
+        "syllabus": "Eixo I — Manobrabilidade · escoamento cruzado e baixas velocidades",
+        "evidence": "O início do item 3.8 aplica o princípio do arrasto cruzado quando a velocidade lateral é próxima da longitudinal e o ângulo de deriva é alto, geralmente maior que 25 graus.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
+    },
+    {
+      "id": "mon-20261019-r4-turning-transverse-distances",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão FSRS vencida · parâmetros da curva de giro",
+      "stem": "Em uma prova de giro, o centro do navio apresenta afastamento transversal de 300 m em relação à direção inicial quando a mudança de aproamento atinge 90°, e de 520 m quando atinge 180°. Esses dois valores representam, respectivamente:",
+      "options": [
+        "Transferência e diâmetro tático.",
+        "Avanço e transferência.",
+        "Diâmetro tático e diâmetro de giro permanente.",
+        "Transferência máxima e avanço máximo."
+      ],
       "correct": 0,
-      "explanation": "Hensen faz uma comparação relativa, não absoluta: o ASD convencional costuma ficar um pouco abaixo do trator VS no modo indireto, enquanto pode apresentar pequena vantagem na tração direta.",
-      "comments": ["Correta: reproduz a relação comparativa indicada no trecho consultado.", "Incorreta: posição dos propulsores não torna o ASD universalmente superior nos dois modos.", "Incorreta: o texto não afirma perda total de governo do trator VS no modo indireto.", "Incorreta: bollard pull estático igual não elimina diferenças de configuração e eficácia dinâmica."],
-      "reference": {"referenceId": "II-09", "base": "Hensen", "publication": "Tug Use in Port: A Practical Guide", "edition": "4. ed., 2021", "section": "Capítulo 2 — ASD tugs e métodos de assistência", "syllabus": "Eixo II — Arte Naval · tipos, capacidades e limitações de rebocadores", "evidence": "O recorte consultado informa que o ASD, comparado ao trator VS, é geralmente um pouco menos eficaz no modo indireto, mas pode ser um pouco mais eficaz na tração direta.", "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view"}
+      "explanation": "A transferência é o afastamento transversal medido aos 90° de mudança de aproamento; o diâmetro tático é o afastamento transversal aos 180°. Não se deve confundir nenhum deles com o avanço longitudinal.",
+      "comments": [
+        "Correta: associa cada afastamento ao ângulo de mudança de aproamento correspondente.",
+        "Incorreta: avanço é uma distância longitudinal; o primeiro valor fornecido é transversal.",
+        "Incorreta: o primeiro valor foi medido aos 90°, e o segundo não define necessariamente o círculo de giro permanente.",
+        "Incorreta: os dados não são apresentados como máximos da trajetória e ambos são transversais."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Santos, Edson Mesquita dos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 6, item 6.1 — Definições da curva de giro",
+        "syllabus": "Eixo I — Manobrabilidade · avanço, transferência e diâmetro tático",
+        "evidence": "Santos define transferência como a distância transversal aos 90° e diâmetro tático como a distância transversal aos 180°, sempre tomando a direção inicial e o centro do navio como referências.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
     },
     {
-      "id": "sun-20261018-r2-current-advance-delay",
-      "category": "review", "axis": "III", "kind": "Revisão FSRS vencida · nota 0 · conteúdo",
-      "stem": "Em determinado intervalo, a velocidade no fundo de um navio é menor que sua velocidade em relação à superfície. Quanto à componente longitudinal do efeito da corrente, ocorre:",
-      "options": ["Avanço, porque a corrente aumenta a distância percorrida no fundo.", "Atraso, porque a distância percorrida no fundo fica menor que a percorrida na superfície.", "Caimento exclusivamente transversal, sem componente longitudinal.", "Abatimento devido apenas ao vento, independentemente da corrente."],
+      "id": "mon-20261019-c1-spiral-transient-false-loop",
+      "category": "current",
+      "axis": "I",
+      "kind": "Aprofundamento · validade do ensaio em espiral",
+      "stem": "Na análise de uma prova de espiral direta, aparece um laço no gráfico de razão de guinada versus ângulo do leme. Entretanto, a equipe alterou o leme antes de a razão de guinada atingir um valor constante em cada etapa. Qual conclusão é tecnicamente adequada?",
+      "options": [
+        "O laço basta para comprovar instabilidade, mesmo que as medidas tenham sido transitórias.",
+        "É necessário repetir as medições dando tempo para atingir equilíbrio, pois a sequência apressada pode produzir falsa indicação de instabilidade.",
+        "Aumentar a frequência de mudanças do leme elimina o efeito transitório e confirma a estabilidade.",
+        "O resultado permite calcular diretamente o diâmetro tático, dispensando a prova de giro."
+      ],
       "correct": 1,
-      "explanation": "Miguens denomina atraso a situação em que a velocidade — e, no mesmo intervalo, a distância — no fundo é menor que a correspondente na superfície. Avanço é a situação inversa.",
-      "comments": ["Incorreta: avanço exige distância ou velocidade no fundo maior que a de superfície.", "Correta: velocidade no fundo menor caracteriza atraso na componente longitudinal.", "Incorreta: caimento é a componente lateral; o enunciado descreve diferença longitudinal.", "Incorreta: a classificação pedida decorre do efeito da corrente, não exclusivamente do vento."],
-      "reference": {"referenceId": "III-02", "base": "Miguens", "publication": "Navegação: A Ciência e a Arte", "edition": "v. I, 2ª revisão atualizada, 2023", "section": "Volume I, capítulo 5 — caimento, avanço e atraso", "syllabus": "Eixo III — Navegação Restrita · efeito da corrente e navegação estimada", "evidence": "O recorte consultado decompõe o efeito da corrente em avanço ou atraso e caimento; define atraso quando a distância percorrida no fundo é menor que a percorrida na superfície, isto é, quando a velocidade no fundo é menor.", "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"}
+      "explanation": "O ensaio em espiral exige condições de equilíbrio após cada alteração de leme. Santos mostra que intervalos insuficientes podem gerar um laço aparente mesmo em navio estável; a interpretação precisa considerar a execução do teste.",
+      "comments": [
+        "Incorreta: a conclusão pressupõe que os pontos representem condições de equilíbrio, o que não ocorreu.",
+        "Correta: trata a causa do possível laço aparente antes de classificar o navio.",
+        "Incorreta: mudanças ainda mais frequentes reduzem o tempo disponível para alcançar equilíbrio.",
+        "Incorreta: a curva espiral caracteriza estabilidade direcional; não fornece diretamente o diâmetro tático."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Santos, Edson Mesquita dos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 4, item 4.9.1 — Procedimentos e interpretação da espiral direta",
+        "syllabus": "Eixo I — Manobrabilidade · estabilidade em linha reta e ensaio de Dieudonné",
+        "evidence": "O texto exige tempo suficiente para equilíbrio após cada mudança de leme e apresenta resultados em que intervalos limitados produzem um laço aparente, enquanto a espera sem limite revela um navio estável.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
     },
     {
-      "id": "sun-20261018-r3-tackle-fixed-moving",
-      "category": "review", "axis": "II", "kind": "Revisão FSRS vencida · nota 0 · confusão",
-      "stem": "Desprezadas as resistências passivas, um aparelho tem n roldanas. Como varia sua multiplicação de potência teórica m conforme a saída do tirador?",
-      "options": ["m = n + 1 no cadernal fixo e m = n no cadernal móvel.", "m = n em ambos os casos, pois apenas o número de roldanas importa.", "m = n no cadernal fixo e m = n + 1 no cadernal móvel.", "m = 2n no cadernal fixo e m = n/2 no cadernal móvel."],
+      "id": "mon-20261019-c2-bech-controlled-variable",
+      "category": "current",
+      "axis": "I",
+      "kind": "Aprofundamento · ensaio de Bech",
+      "stem": "Durante um ensaio de espiral reversa, a equipe deseja obter um ponto da curva correspondente à razão de guinada de 0,5°/s. Como deve proceder?",
+      "options": [
+        "Fixar o leme em 0,5° e registrar a razão de guinada resultante, sem corrigir o leme.",
+        "Manter o aproamento constante e medir o deslocamento lateral do centro do navio.",
+        "Manter a razão de guinada especificada por pequenos ajustes do leme e registrar o ângulo médio necessário.",
+        "Alternar o leme entre os bordos a cada mudança de aproamento de 10° e medir o overshoot."
+      ],
       "correct": 2,
-      "explanation": "Na condição ideal descrita em Arte Naval, m = n quando o tirador sai do cadernal fixo e m = n + 1 quando sai do cadernal móvel.",
-      "comments": ["Incorreta: inverte as duas relações estabelecidas no texto.", "Incorreta: a saída do tirador altera o número de pernadas efetivamente úteis.", "Correta: aplica as expressões ideais às duas disposições do tirador.", "Incorreta: essas relações não correspondem à regra do aparelho descrita na fonte."],
-      "reference": {"referenceId": "II-01", "base": "Fonseca", "publication": "Arte Naval, v. 1", "edition": "8. ed., MB, 2019", "section": "Capítulo 9, item 9.22 — Problemas de aparelhos", "syllabus": "Eixo II — Arte Naval · poleame, aparelhos de laborar e multiplicação de potência", "evidence": "O recorte consultado estabelece m = n quando o tirador sai do cadernal fixo e m = n + 1 quando o tirador sai do cadernal móvel; também separa essa regra ideal das resistências passivas.", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"}
+      "explanation": "Na espiral reversa de Bech, impõe-se uma razão de guinada constante e mede-se o ângulo médio de leme necessário para mantê-la. As pequenas correções do leme fazem parte desse procedimento.",
+      "comments": [
+        "Incorreta: troca a grandeza controlada e ainda confunde graus com graus por segundo.",
+        "Incorreta: manter aproamento constante significa razão de guinada nula, diferente do ponto solicitado.",
+        "Correta: descreve a variável controlada e a grandeza medida no ensaio reverso.",
+        "Incorreta: descreve a lógica de uma manobra de zigue-zague, não a espiral reversa."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Santos, Edson Mesquita dos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 4, item 4.11 — Curva espiral de Bech",
+        "syllabus": "Eixo I — Manobrabilidade · espiral reversa",
+        "evidence": "Santos descreve a condução do navio a uma razão de guinada constante, usando como exemplo 0,5 grau por segundo, e a medição do ângulo médio resultante das pequenas correções de leme.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
     },
     {
-      "id": "sun-20261018-r4-extratropical-energy",
-      "category": "review", "axis": "V", "kind": "Revisão FSRS vencida · nota 0 · conteúdo",
-      "stem": "A fonte primordial de energia de um ciclone extratropical está associada principalmente:",
-      "options": ["Ao calor latente liberado sobre águas tropicais muito quentes, sem contraste frontal.", "À rotação da Terra isoladamente, sem gradientes térmicos horizontais.", "À energia potencial produzida pelo contraste horizontal de temperatura, em geral ligada a um sistema frontal.", "À maré barométrica gerada pelo ciclo diário de pressão."],
-      "correct": 2,
-      "explanation": "O ciclone extratropical obtém sua energia primordial da energia potencial ligada ao contraste horizontal de temperatura e, por isso, costuma estar associado a sistemas frontais.",
-      "comments": ["Incorreta: descreve mecanismo dominante de ciclones tropicais, não a fonte primordial indicada para os extratropicais.", "Incorreta: a rotação influencia a dinâmica, mas não substitui o contraste térmico como fonte de energia.", "Correta: relaciona gradiente térmico horizontal, energia potencial e frentes.", "Incorreta: maré barométrica não é apresentada como fonte energética desses ciclones."],
-      "reference": {"referenceId": "V-01", "base": "Miguens", "publication": "Navegação: A Ciência e a Arte, v. III", "edition": "DHN", "section": "Capítulo 45 — ciclones extratropicais", "syllabus": "Eixo V — Meteorologia/Oceanografia · sistemas de pressão e frentes", "evidence": "O recorte consultado define o ciclone extratropical como centro de baixa pressão que extrai energia primordialmente da energia potencial produzida por contraste horizontal de temperatura, geralmente associado a sistema frontal.", "url": "https://drive.google.com/file/d/1HZooKPJmjYS4yBtjpzl__2-GGmbL3pi9/view"}
+      "id": "mon-20261019-c3-pullout-asymmetry",
+      "category": "current",
+      "axis": "I",
+      "kind": "Aprofundamento · interpretação do pull-out",
+      "stem": "Um navio é submetido ao pull-out após guinadas estabilizadas para ambos os bordos. Com o leme na mesma posição de referência, as razões de guinada finais convergem para um único valor pequeno, diferente de zero. Segundo a ressalva de Santos sobre assimetria, qual interpretação é correta?",
+      "options": [
+        "Pode haver assimetria; a convergência para um valor final único não deve ser confundida automaticamente com instabilidade direcional.",
+        "Qualquer valor final diferente de zero comprova instabilidade, mesmo que seja o mesmo nos dois testes.",
+        "O resultado demonstra que os dois bordos apresentam razões residuais distintas e, portanto, divergentes.",
+        "O pull-out determina sozinho o grau numérico de instabilidade e substitui integralmente as curvas espirais."
+      ],
+      "correct": 0,
+      "explanation": "Santos ressalva que, havendo assimetria, um navio estável pode apresentar razão final não nula, mas única. No caso instável descrito, permanecem razões residuais distintas conforme o bordo de início. O pull-out não quantifica o grau de estabilidade.",
+      "comments": [
+        "Correta: preserva a ressalva de assimetria e o critério de convergência dos resultados.",
+        "Incorreta: ignora que a assimetria pode deslocar o valor final comum.",
+        "Incorreta: contradiz o dado do enunciado: os valores convergiram.",
+        "Incorreta: o texto reserva às curvas espirais a informação sobre o grau de estabilidade ou instabilidade."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Santos, Edson Mesquita dos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "section": "Capítulo 4, item 4.12 — Manobra de pull-out",
+        "syllabus": "Eixo I — Manobrabilidade · alívio do leme e estabilidade direcional",
+        "evidence": "O trecho manda realizar o pull-out pelos dois bordos para verificar assimetria; ressalva razão final não nula, porém única, no caso assimétrico estável, e razões residuais distintas no instável. Afirma ainda que o teste não informa o grau de estabilidade.",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
+      }
     },
     {
-      "id": "sun-20261018-c1-rest-means-rest",
-      "category": "current", "axis": "VII", "kind": "Avanço controlado · gestão da fadiga",
-      "stem": "Uma empresa concede ao tripulante o período regulamentar de descanso, mas o emprega rotineiramente em tarefas administrativas nesse mesmo intervalo. À luz das Guidelines on Fatigue da IMO, a medida é:",
-      "options": ["Adequada, porque tarefas sem esforço físico equivalem a descanso.", "Adequada se o período total a bordo permanecer inalterado.", "Inadequada, pois descanso deve significar descanso e não pode ser substituído por outro trabalho; isso exige recursos e guarnição compatíveis.", "Inadequada apenas quando a tarefa administrativa durar mais de quatro horas."],
-      "correct": 2,
-      "explanation": "A orientação é explícita: descanso deve ser efetivamente destinado ao descanso, não a outra forma de trabalho. A organização precisa sustentar isso com guarnição, recursos, processos e políticas adequados.",
-      "comments": ["Incorreta: ausência de esforço físico não transforma trabalho administrativo em descanso.", "Incorreta: o problema é a utilização do intervalo, não apenas o tempo total a bordo.", "Correta: reúne o princípio e a obrigação organizacional que o viabiliza.", "Incorreta: o trecho consultado não estabelece tolerância de quatro horas."],
-      "reference": {"referenceId": "VII-05", "base": "IMO", "publication": "Guidelines on Fatigue", "edition": "MSC.1/Circ.1598, 2019", "section": "Módulo 2 — Developing a fatigue management policy and procedures", "syllabus": "Eixo VII — Conhecimentos Gerais · gestão da fadiga e períodos de descanso", "evidence": "O recorte consultado afirma que descanso deve significar descanso, e não substituição por outra modalidade de trabalho, e vincula sua efetividade a guarnição, recursos, processos e políticas apropriados.", "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"}
+      "id": "mon-20261019-t1-colreg-action-monitoring",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Intercalação · RIPEAM",
+      "stem": "Dois navios se aproximam com risco de abalroamento. Um deles executa, com antecedência, uma alteração de rumo ampla e perceptível que aparenta resultar em passagem segura. Conforme o RIPEAM, quando pode encerrar a verificação da eficácia dessa manobra em relação ao outro navio?",
+      "options": [
+        "Assim que terminar de carregar o leme.",
+        "Assim que a primeira marcação após a guinada variar.",
+        "Quando o outro navio confirmar a manobra pelo VHF, ainda que permaneça próximo.",
+        "Somente quando o outro navio estiver finalmente passado e safo."
+      ],
+      "correct": 3,
+      "explanation": "A execução da manobra não encerra sua avaliação. A Regra 8(d) exige verificar cuidadosamente sua eficácia até o outro navio estar finalmente passado e safo.",
+      "comments": [
+        "Incorreta: a ordem ou execução de leme não comprova o resultado da manobra.",
+        "Incorreta: uma única marcação não substitui o acompanhamento até a passagem segura.",
+        "Incorreta: uma confirmação por rádio não elimina o dever de acompanhamento.",
+        "Correta: corresponde ao limite temporal exigido pela Regra 8(d)."
+      ],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "IMO",
+        "publication": "COLREG - Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte B, Regra 8(d)",
+        "syllabus": "Eixo III — Navegação em águas restritas · manobras para evitar abalroamento",
+        "evidence": "A edição consolidada de 2018 consultada no Drive exige passagem a distância segura e verificação cuidadosa da eficácia da ação até o outro navio estar finalmente passado e safo.",
+        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
+      }
     },
     {
-      "id": "sun-20261018-c2-short-breaks-task-rotation",
-      "category": "current", "axis": "VII", "kind": "Avanço controlado · contramedidas operacionais",
-      "stem": "Durante tarefa prolongada e monótona no passadiço, qual medida está de acordo com as contramedidas de fadiga indicadas pela IMO?",
-      "options": ["Eliminar pausas para reduzir o tempo total de exposição à tarefa.", "Planejar pausas curtas e, quando possível, alternar ou substituir tarefas para reduzir o efeito do tempo contínuo na atividade.", "Manter a mesma pessoa na tarefa até o fim, pois a familiaridade elimina a queda de alerta.", "Usar somente cafeína, já que pausas curtas não afetam desempenho nem alerta."],
+      "id": "mon-20261019-t2-colreg-standon-duty",
+      "category": "rotation",
+      "axis": "III",
+      "kind": "Intercalação · RIPEAM",
+      "stem": "Dois navios de propulsão mecânica, à vista um do outro, encontram-se em situação de rumos cruzados. O navio que deveria manter rumo e velocidade percebe que está tão próximo que a ação isolada do navio obrigado a manobrar já não pode evitar o abalroamento. O que lhe cabe fazer?",
+      "options": [
+        "Manter obrigatoriamente rumo e velocidade até receber autorização do outro navio.",
+        "Executar a manobra que melhor auxilie a evitar o abalroamento, sem liberar o outro navio de sua obrigação.",
+        "Aguardar cinco apitos curtos do outro navio para poder alterar seu movimento.",
+        "Assumir a obrigação exclusiva de manobra, liberando o outro navio de manter-se fora de seu caminho."
+      ],
       "correct": 1,
-      "explanation": "Pausas curtas podem melhorar desempenho e alerta. A alternância ou substituição de tarefas também reduz o efeito do tempo contínuo dedicado à mesma atividade.",
-      "comments": ["Incorreta: retirar pausas aumenta a exposição contínua e contraria a medida recomendada.", "Correta: combina as duas medidas operacionais descritas no trecho consultado.", "Incorreta: familiaridade não elimina a degradação associada ao tempo na tarefa.", "Incorreta: a fonte reconhece benefício das pausas curtas e não prescreve cafeína como solução única."],
-      "reference": {"referenceId": "VII-05", "base": "IMO", "publication": "Guidelines on Fatigue", "edition": "MSC.1/Circ.1598, 2019", "section": "Módulo 2 — Short breaks and task rotation", "syllabus": "Eixo VII — Conhecimentos Gerais · fadiga, tempo na tarefa e contramedidas", "evidence": "O recorte consultado registra que pausas curtas beneficiam desempenho e alerta e que rotações ou substituições de tarefas podem reduzir o efeito do tempo contínuo na mesma atividade.", "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"}
+      "explanation": "Nessa fase, a Regra 17(b) estabelece dever de agir para melhor auxiliar a evitar o abalroamento. A Regra 17(d) mantém a obrigação do navio que deveria se manter fora do caminho.",
+      "comments": [
+        "Incorreta: a manutenção de rumo e velocidade não é absoluta na situação de extrema proximidade descrita.",
+        "Correta: combina o dever de ação nessa fase com a permanência da obrigação do outro navio.",
+        "Incorreta: o dever de agir não depende de receber esse sinal.",
+        "Incorreta: a ação do navio que mantinha rumo e velocidade não exonera o navio obrigado a manobrar."
+      ],
+      "reference": {
+        "referenceId": "III-16",
+        "base": "IMO",
+        "publication": "COLREG - Consolidated Edition 2018",
+        "edition": "2018",
+        "section": "Parte B, Regra 17(b) e (d)",
+        "syllabus": "Eixo III — Navegação em águas restritas · ação da embarcação que mantém rumo e velocidade",
+        "evidence": "O texto da Regra 17 torna obrigatória a ação que melhor ajude a evitar o abalroamento quando a ação isolada do navio obrigado a manobrar não basta, sem exonerar esse navio.",
+        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
+      }
     },
     {
-      "id": "sun-20261018-c3-nap-sleep-inertia-control",
-      "category": "current", "axis": "VII", "kind": "Avanço controlado · cochilos e prontidão",
-      "stem": "Ao empregar cochilos como contramedida à fadiga antes de uma atividade crítica, qual conduta é tecnicamente mais adequada?",
-      "options": ["Proibir cochilos, porque a inércia do sono sempre supera qualquer benefício.", "Permitir o cochilo e iniciar imediatamente a tarefa crítica ao despertar, sem período de recuperação.", "Usar o cochilo como contramedida eficaz, planejando tempo para dissipar a possível inércia do sono antes da tarefa crítica.", "Substituir permanentemente o sono principal por vários cochilos curtos."],
-      "correct": 2,
-      "explanation": "A IMO reconhece o cochilo como contramedida eficaz, com benefícios para desempenho e alerta. O planejamento deve considerar a inércia do sono e prever recuperação antes de tarefa crítica.",
-      "comments": ["Incorreta: a fonte afirma que os benefícios do cochilo superam os riscos quando estes são geridos.", "Incorreta: iniciar tarefa crítica imediatamente ignora a possível inércia do sono.", "Correta: preserva o benefício do cochilo e controla o risco transitório após o despertar.", "Incorreta: cochilos complementam a gestão da fadiga e não substituem indefinidamente o sono recuperador principal."],
-      "reference": {"referenceId": "VII-05", "base": "IMO", "publication": "Guidelines on Fatigue", "edition": "MSC.1/Circ.1598, 2019", "section": "Módulo 2 — Napping as a fatigue countermeasure", "syllabus": "Eixo VII — Conhecimentos Gerais · cochilos, inércia do sono e prontidão", "evidence": "O recorte consultado apresenta cochilos como contramedida eficaz, associa-os à melhora de desempenho e alerta e orienta que a inércia do sono e o tempo de recuperação sejam considerados no planejamento.", "url": "https://drive.google.com/file/d/1P_TWOSXtWMPNAN0RrPUOnO9mg7e2xklC/view"}
-    },
-    {
-      "id": "sun-20261018-t1-significant-wave-height",
-      "category": "rotation", "axis": "V", "kind": "Rotação semanal · ondas oceânicas",
-      "stem": "Em um registro de ondas ordenadas por altura, a altura significativa Hs corresponde:",
-      "options": ["À média de todas as ondas observadas no período.", "À maior onda isolada do registro.", "À média do terço de ondas de maior altura.", "À diferença entre a maior e a menor onda do registro."],
-      "correct": 2,
-      "explanation": "A altura significativa é definida como a média das alturas do terço superior das ondas do registro, sendo um parâmetro usual para representar o estado do mar.",
-      "comments": ["Incorreta: a média de todas as ondas é inferior e não define Hs.", "Incorreta: uma máxima isolada não representa a média do terço superior.", "Correta: esta é a definição estatística de altura significativa na fonte consultada.", "Incorreta: amplitude total do conjunto não corresponde a Hs."],
-      "reference": {"referenceId": "V-04", "base": "Santos", "publication": "Hidrodinâmica e Ondas Oceânicas", "edition": "1. ed., CONAPRA, 2021", "section": "Ondas irregulares — altura significativa", "syllabus": "Eixo V — Meteorologia/Oceanografia · ondas e estado do mar", "evidence": "O recorte consultado define a altura significativa como a média das alturas do terço das maiores ondas e a apresenta como parâmetro comum para descrever a altura do mar.", "url": "https://drive.google.com/file/d/1T8Uz2TQsf7S-tQrS4GAYZjoHDPfWgCuI/view"}
-    },
-    {
-      "id": "sun-20261018-t2-smcp-response-markers",
-      "category": "rotation", "axis": "VI", "kind": "Rotação semanal · comunicações SMCP",
-      "stem": "Após receber uma mensagem VTS marcada como INSTRUCTION ou ADVICE, qual formato de resposta é previsto pela SMCP para indicar possibilidade de cumprimento?",
-      "options": ["Responder apenas ROGER, sem repetir a ação solicitada.", "Responder I will/can... ou I will not/cannot..., repetindo integralmente a ação pertinente.", "Responder MAYDAY seguido da posição do navio.", "Responder STAND BY em todos os casos, mesmo quando a ação puder ser cumprida de imediato."],
-      "correct": 1,
-      "explanation": "A SMCP prevê resposta afirmativa ou negativa com I will/can ou I will not/cannot e a repetição completa da ação, evitando ambiguidade sobre o que será ou não cumprido.",
-      "comments": ["Incorreta: ROGER isolado não explicita a capacidade nem a ação que será executada.", "Correta: corresponde ao padrão de resposta previsto para INSTRUCTION e ADVICE.", "Incorreta: MAYDAY é sinal de perigo e não resposta ordinária a instrução ou conselho.", "Incorreta: STAND BY não substitui a confirmação explícita quando já é possível responder."],
-      "reference": {"referenceId": "VI-01", "base": "IMO", "publication": "IMO Standard Marine Communication Phrases (SMCP)", "edition": "A.918(22), 2001", "section": "Parte A1/6 — Application of Message Markers", "syllabus": "Eixo VI — Comunicações · SMCP, marcadores e respostas padronizadas", "evidence": "O recorte consultado determina que a resposta a INSTRUCTION ou ADVICE indique I will/can ou I will not/cannot e repita por extenso a frase relativa à ação, reduzindo ambiguidades.", "url": "https://drive.google.com/file/d/1iHoEAH2kIKmqrG6FS9hOEC1dWTojWNYR/view"}
-    },
-    {
-      "id": "sun-20261018-o1-pscpp2008-q26-persisted",
-      "category": "official", "axis": "V", "kind": "Questão oficial histórica · pendência preservada · marés",
-      "stem": "As marés influenciam a navegação costeira e a elaboração das cartas náuticas. Considere as afirmativas: I — as Cartas de Correntes de Marés referem-se às marés do próprio dia e podem ser usadas diariamente; II — as alturas diárias são simétricas em relação ao nível médio, na quadratura e na sizígia; III — o nível médio destacado no cabeçalho das Tábuas das Marés orienta quanto ao valor da amplitude de sizígia; IV — intensidades distintas de enchente e vazante, observadas em diferentes portos, decorrem das características geográficas; V — o nível de referência do zero da régua das marés está associado à carta náutica do porto. Segundo o gabarito oficial da prova, quais afirmativas são verdadeiras?",
-      "options": ["I e II.", "II e IV.", "III, IV e V.", "I, III e V.", "II, III e V."],
-      "correct": 4,
-      "explanation": "O gabarito oficial assinala a alternativa E: II, III e V. O texto-base confirma a simetria em torno do nível médio, usa o nível médio do cabeçalho como orientação para a maré de sizígia e associa o zero da régua ao nível de redução da carta náutica.",
-      "comments": ["Incorreta segundo o gabarito oficial: a afirmativa I não integra o conjunto correto.", "Incorreta segundo o gabarito oficial: inclui IV e omite III e V.", "Incorreta segundo o gabarito oficial: inclui IV e omite II.", "Incorreta segundo o gabarito oficial: inclui I e omite II.", "Correta segundo o gabarito oficial: II, III e V."],
-      "reference": {"referenceId": "V-03", "base": "Diretoria de Portos e Costas / Lobo & Soares", "publication": "PSCPP 2008 / Meteorologia e Oceanografia", "edition": "Prova de 2008; 4. ed., 2019", "section": "Questão 26; Parte II, capítulos IX e X", "syllabus": "Eixo V — Meteorologia/Oceanografia · marés e correntes de maré", "evidence": "O livro consultado define a simetria das oscilações em relação ao nível médio, registra o uso do nível médio do cabeçalho como orientação para a sizígia e afirma que o zero da régua coincide com o nível de redução do porto; a prova oficial marca a alternativa E.", "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view", "origin": {"exam": "PSCPP 2008", "year": 2008, "question": 26, "answer": "E", "adaptation": "Ortografia atualizada e enunciado condensado; cinco alternativas e gabarito oficial preservados. Mantida nesta rodada porque permaneceu sem resposta na rodada anterior.", "url": "https://drive.google.com/file/d/1KfllJf4BukeOqCtNlr5uuwNC7xDu45I6/view"}}
+      "id": "mon-20261019-o1-pscpp2008-q72",
+      "category": "official",
+      "axis": "II",
+      "kind": "Questão oficial histórica · PSCPP 2008 · questão 72",
+      "stem": "Coloque V (verdadeiro) ou F (falso) nas afirmativas abaixo, que tratam de regras práticas na utilização de aparelhos de laborar, assinalando, a seguir, a opção correta:\n\n( ) aplicar, sempre que possível, o cadernal onde gurne o tirador no peso que se deseja alar.\n( ) para diminuir o esforço sobre o cadernal fixo, fazer, se possível, a arreigada fixa fora do mesmo cadernal.\n( ) içando um peso, o tirador suporta a tensão mínima e a arreigada fixa a tensão máxima; arriando, será o contrário.\n( ) o melhor modo de engatar uma talha em um cabo que não tenha alça é pela volta de encapeladura singela.\n( ) o que se ganha em força, perde-se em tempo, pois tem-se um comprimento maior que alar no tirador.",
+      "options": [
+        "(V) (F) (V) (V) (V)",
+        "(F) (F) (V) (F) (V)",
+        "(F) (V) (F) (V) (F)",
+        "(V) (V) (F) (F) (V)",
+        "(V) (F) (V) (F) (F)"
+      ],
+      "correct": 3,
+      "explanation": "A sequência é V–V–F–F–V, alternativa D do gabarito. No içamento com resistências passivas, o tirador suporta a tensão máxima e a arreigada fixa a mínima; para engatar a talha em cabo sem alça, a regra prática indica boca-de-lobo. As demais afirmativas reproduzem as regras práticas consultadas.",
+      "comments": [
+        "Incorreta: a segunda afirmativa é verdadeira; a terceira inverte as tensões e a quarta indica a volta errada.",
+        "Incorreta: a primeira e a segunda são verdadeiras, e a terceira é falsa.",
+        "Incorreta: a primeira e a quinta são verdadeiras; a quarta é falsa.",
+        "Correta: V–V–F–F–V, em acordo com o gabarito e com as regras práticas de Arte Naval.",
+        "Incorreta: a segunda e a quinta são verdadeiras, e a terceira é falsa."
+      ],
+      "reference": {
+        "referenceId": "II-01",
+        "base": "Fonseca, Maurílio M.",
+        "publication": "Arte Naval, v. 1",
+        "edition": "Exemplar consultado: 6. ed., SDM, 2002; catálogo PSCPP: 8. ed., MB, 2019",
+        "section": "Capítulo 9, art. 9.21 — Regras práticas; PSCPP 2008, questão 72",
+        "syllabus": "Eixo II — Arte Naval · regras práticas dos aparelhos de laborar",
+        "evidence": "O art. 9.21 confirma as afirmativas primeira, segunda e quinta, fixa tensão máxima no tirador durante o içamento e recomenda boca-de-lobo para cabo sem alça. A prova consultada marca D.",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view",
+        "origin": {
+          "exam": "PSCPP 2008",
+          "year": 2008,
+          "question": 72,
+          "answer": "D",
+          "adaptation": "Questão original, com cinco alternativas e gabarito preservados; apenas disposição visual normalizada. Retomada do erro registrado em 06/10 e da dificuldade em aparelhos observada em 18/10.",
+          "url": "https://drive.google.com/file/d/14RLZewUiDcRYbg76OVZGahAH2lYPJEWk/view"
+        }
+      }
     }
   ]
 }
