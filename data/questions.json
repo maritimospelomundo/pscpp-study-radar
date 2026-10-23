@@ -1,9 +1,9 @@
 {
-  "roundId": "directional-stability-tackles-colreg-2026-10-19",
-  "label": "Rodada adaptativa de 19 de outubro de 2026",
-  "title": "Estabilidade direcional, aparelhos de laborar e RIPEAM",
+  "roundId": "radar-relative-motion-manoeuvrability-2026-10-23",
+  "label": "Rodada adaptativa de 23 de outubro de 2026",
+  "title": "Movimento relativo no radar, manobrabilidade e aparelhos de laborar",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Manobrabilidade: interpretação dos ensaios de estabilidade · consolidação de aparelhos de laborar · revisões de corrente e giro · RIPEAM",
+  "path": "Navegação radar: movimento relativo, PMA e diagrama de velocidades · consolidação de manobrabilidade · correção de aparelhos de laborar",
   "method": "4–3–2–1",
   "mixPlan": {
     "review": 4,
@@ -13,289 +13,289 @@
   },
   "questions": [
     {
-      "id": "mon-20261019-r1-tackle-moving-block",
+      "id": "fri-20261023-r1-pivot-point-flow",
       "category": "review",
-      "axis": "II",
-      "kind": "Revisão corretiva · nota 0 · conteúdo",
-      "stem": "Uma talha dobrada, com quatro roldanas, tem o tirador saindo do cadernal móvel. Desprezando atritos, rigidez do cabo e peso do aparelho, qual força no tirador equilibra uma carga de 10 kN?",
+      "axis": "I",
+      "kind": "Revisão corretiva · nota 0 histórica · ponto pivô",
+      "stem": "Um navio com seguimento avante executa uma curva sob ação do leme, sem força ambiental lateral relevante. Qual descrição do ponto pivô é tecnicamente correta?",
       "options": [
-        "2,5 kN.",
-        "5,0 kN.",
-        "2,0 kN.",
-        "10,0 kN."
+        "É um ponto fixo no centro de gravidade, independentemente do raio de giro e do ângulo de deriva.",
+        "É a seção em que o escoamento relativo fica aproximadamente paralelo ao eixo longitudinal; em muitos navios com seguimento avante situa-se pouco a ré da proa.",
+        "Coincide sempre com a roda de proa, pois a popa é a única parte que apresenta velocidade transversal.",
+        "Fica necessariamente fora do casco, mesmo sem abatimento produzido por forças ambientais."
+      ],
+      "correct": 1,
+      "explanation": "O ponto pivô resulta da combinação entre translação lateral e rotação. Na seção que o contém, o ângulo de ataque é nulo e o escoamento relativo fica aproximadamente paralelo ao eixo longitudinal. Sua posição não é fixa.",
+      "comments": [
+        "Incorreta: Santos relaciona a posição ao raio de giro e ao ângulo de deriva, não a fixa no centro de gravidade.",
+        "Correta: descreve a característica cinemática e a localização típica com seguimento avante.",
+        "Incorreta: a velocidade transversal varia ao longo do comprimento e o ponto pivô não coincide obrigatoriamente com a roda de proa.",
+        "Incorreta: forças ambientais podem deslocá-lo para fora do casco, mas isso não é condição necessária."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Santos, Edson Mesquita dos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view",
+        "section": "Capítulo 6, item 6.2 — Ponto pivô",
+        "syllabus": "Eixo I — Manobrabilidade · curva de giro e ponto pivô",
+        "evidence": "O item define a posição do ponto pivô por uma relação entre raio de giro e ângulo de deriva; informa que nessa seção o ângulo de ataque é zero e que, com movimento avante sob leme, o ponto costuma aparecer pouco a ré da proa."
+      }
+    },
+    {
+      "id": "fri-20261023-r2-current-crossflow-restricted",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão FSRS · corrente e escoamento cruzado",
+      "stem": "Em um canal curvo, um navio desloca-se a baixa velocidade longitudinal e encontra corrente forte, com gradiente de velocidade e grande componente transversal relativa ao casco. Qual efeito deve receber atenção predominante?",
+      "options": [
+        "Somente a resistência friccional longitudinal, porque a baixa velocidade elimina forças laterais.",
+        "A sustentação de pequeno ângulo de ataque, sem momento de guinada apreciável.",
+        "O arrasto por escoamento cruzado, capaz de produzir força lateral e momento de guinada significativos.",
+        "Exclusivamente a cavitação do propulsor, independentemente da folga abaixo da quilha."
       ],
       "correct": 2,
-      "explanation": "Quando o tirador sai do cadernal móvel, a multiplicação teórica é n + 1. Com quatro roldanas, m = 5; portanto, F = 10/5 = 2,0 kN.",
+      "explanation": "Em águas restritas, curvas de canal e baixas velocidades, correntes fortes e não uniformes podem impor ângulo de entrada relativo próximo de 90°. Nesse regime, o escoamento cruzado domina.",
       "comments": [
-        "Incorreta: 10/4 corresponde ao tirador saindo do cadernal fixo.",
-        "Incorreta: pressupõe multiplicação 2, própria de outra configuração.",
-        "Correta: a configuração descrita proporciona multiplicação teórica 5.",
-        "Incorreta: despreza a multiplicação de força da talha, tratando-a como um simples retorno."
+        "Incorreta: a baixa velocidade longitudinal pode tornar a componente transversal relativamente mais importante.",
+        "Incorreta: o cenário descreve grande ângulo de entrada, não o regime linear de pequeno ângulo.",
+        "Correta: corresponde ao regime destacado por Santos para águas rasas ou restritas.",
+        "Incorreta: cavitação não é a consequência principal descrita, e a folga abaixo da quilha influencia os coeficientes de corrente."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Santos, Edson Mesquita dos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view",
+        "section": "Capítulo 8, itens 8.3 e 8.3.1 — Corrente e forças da corrente",
+        "syllabus": "Eixo I — Manobrabilidade · ação da corrente sobre o navio",
+        "evidence": "O recorte afirma que correntes são especialmente importantes em águas rasas ou restritas, canais e curvas, sobretudo a baixa velocidade; o ângulo relativo pode aproximar-se de 90 graus e predomina o escoamento cruzado."
+      }
+    },
+    {
+      "id": "fri-20261023-r3-shallow-water-signs",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão cumulativa · águas rasas",
+      "stem": "Ao entrar progressivamente em águas rasas, mantendo a mesma ordem de máquina, qual conjunto de sinais é compatível com o comportamento descrito por Santos?",
+      "options": [
+        "Respostas de controle mais lentas, possível queda de RPM e velocidade, e tendência de aumento do diâmetro tático.",
+        "Respostas de controle mais rápidas, aumento garantido da velocidade e redução universal da distância de parada.",
+        "RPM invariável, desaparecimento das vibrações e eficiência do leme sempre maior.",
+        "Aumento da velocidade, ausência de alteração de trim e diâmetro tático obrigatoriamente menor."
+      ],
+      "correct": 0,
+      "explanation": "Águas rasas podem tornar as respostas mais lentas, reduzir RPM e velocidade e aumentar o diâmetro tático. Distância e tempo de parada geralmente aumentam, embora a magnitude dependa do navio.",
+      "comments": [
+        "Correta: reúne sinais listados no início do capítulo sobre águas rasas.",
+        "Incorreta: inverte as tendências e transforma comportamento dependente do navio em regra universal.",
+        "Incorreta: Santos menciona possível queda de RPM, vibrações repentinas e redução da eficiência do leme.",
+        "Incorreta: são possíveis perda de velocidade e alterações de trim; o diâmetro tático pode aumentar."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Santos, Edson Mesquita dos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view",
+        "section": "Capítulo 9, itens 9.2 e 9.3 — Sinais de águas rasas e avaliação do Esso Osaka",
+        "syllabus": "Eixo I — Manobrabilidade · efeitos de águas rasas",
+        "evidence": "O texto enumera respostas mais lentas, reduções possíveis de RPM e velocidade e aumento do diâmetro tático; os ensaios do Esso Osaka confirmam aumento do diâmetro com menor razão profundidade/calado."
+      }
+    },
+    {
+      "id": "fri-20261023-r4-speed-tactical-diameter",
+      "category": "review",
+      "axis": "I",
+      "kind": "Revisão cumulativa · curva de giro",
+      "stem": "Para um navio mercante que inicia curvas de giro em diferentes velocidades, mantendo em cada ensaio a condição de máquina estabelecida, qual interpretação é a mais adequada?",
+      "options": [
+        "O diâmetro tático aumenta sempre na mesma proporção que a velocidade inicial.",
+        "A razão de guinada final independe da velocidade inicial, mas o diâmetro tático dobra quando a velocidade dobra.",
+        "Velocidade inicial e razão de guinada final não influenciam nem a geometria nem a duração do giro.",
+        "A velocidade inicial tende a influenciar pouco o diâmetro tático, mas influencia fortemente a razão de guinada final e, portanto, o tempo de execução do giro."
+      ],
+      "correct": 3,
+      "explanation": "O diâmetro tático de navios mercantes varia pouco com a velocidade inicial quando a condição de máquina é mantida. A razão de guinada final, porém, cresce com a velocidade, reduzindo a duração do giro.",
+      "comments": [
+        "Incorreta: não há proporcionalidade direta geral entre velocidade e diâmetro tático.",
+        "Incorreta: o texto aponta forte dependência da razão de guinada final em relação à velocidade.",
+        "Incorreta: a duração do giro é afetada pela razão de guinada.",
+        "Correta: distingue o pequeno efeito sobre o diâmetro do forte efeito sobre a razão de guinada e o tempo."
+      ],
+      "reference": {
+        "referenceId": "I-08",
+        "base": "Santos, Edson Mesquita dos",
+        "publication": "A Manobrabilidade do Navio no Século 21",
+        "edition": "1. ed., CONAPRA, 2021",
+        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view",
+        "section": "Capítulo 6, item 6.9 — Influência da redução da velocidade no diâmetro tático",
+        "syllabus": "Eixo I — Manobrabilidade · curva de giro",
+        "evidence": "O item informa que a velocidade inicial tem pouca influência no diâmetro tático, mantida a condição de máquina, mas que a razão de guinada final depende fortemente da velocidade e altera a duração do giro."
+      }
+    },
+    {
+      "id": "fri-20261023-c1-radar-relative-vector",
+      "category": "current",
+      "axis": "III",
+      "kind": "Avanço · movimento relativo no radar",
+      "stem": "Na apresentação radar em movimento relativo, as posições sucessivas de um alvo formam uma linha reta. O que a direção e o espaçamento temporal dessa linha fornecem diretamente?",
+      "options": [
+        "O rumo verdadeiro e a velocidade verdadeira do alvo, sem necessidade de outros dados.",
+        "Somente a marcação verdadeira do alvo, pois a velocidade relativa não pode ser obtida graficamente.",
+        "A direção e a velocidade do movimento relativo do alvo em relação ao próprio navio.",
+        "O rumo de superfície e a velocidade no fundo do próprio navio."
+      ],
+      "correct": 2,
+      "explanation": "A plotagem fornece a direção do movimento relativo (DMR) e a velocidade do movimento relativo (VMR). Ela não revela, isoladamente, o rumo e a velocidade verdadeiros do alvo.",
+      "comments": [
+        "Incorreta: rumo e velocidade verdadeiros exigem combinar o vetor relativo com o vetor do próprio navio.",
+        "Incorreta: a VMR é obtida pela distância relativa percorrida no intervalo de tempo.",
+        "Correta: são as duas grandezas definidoras do movimento relativo.",
+        "Incorreta: esses são dados do próprio navio e não resultam diretamente da linha do alvo."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Miguens, Altineu Pires",
+        "publication": "Navegação: A Ciência e a Arte",
+        "edition": "Volume I, edição consultada no Drive",
+        "url": "https://drive.google.com/file/d/1zgyVeWHx7Z-G7mF-TcHwhXsC26Tfa0gV/view",
+        "section": "Volume I, capítulo 14, item 14.4.1 — Movimento relativo",
+        "syllabus": "Eixo III — Navegação em águas restritas · item 25.3.8, uso do radar para evitar colisão",
+        "evidence": "O recorte define o movimento relativo por DMR e VMR e explica que as posições sucessivas no PPI formam uma plotagem relativa, distinta do movimento verdadeiro do alvo."
+      }
+    },
+    {
+      "id": "fri-20261023-c2-radar-pma-geometry",
+      "category": "current",
+      "axis": "III",
+      "kind": "Avanço · ponto de maior aproximação",
+      "stem": "Em uma plotagem relativa, o ponto do próprio navio é a referência fixa R e a reta das posições sucessivas do alvo representa sua DMR. Como se obtém geometricamente o ponto de maior aproximação (PMA)?",
+      "options": [
+        "Prolongando a marcação inicial até interceptar o rumo verdadeiro do alvo.",
+        "Traçando de R uma perpendicular à linha da DMR; a interseção é o PMA.",
+        "Traçando de R uma paralela à DMR; o primeiro ponto observado é o PMA.",
+        "Unindo R ao último ponto observado e dividindo o segmento ao meio."
+      ],
+      "correct": 1,
+      "explanation": "A menor distância entre o ponto de referência e a linha do movimento relativo é a perpendicular. Sua interseção com a DMR define o PMA.",
+      "comments": [
+        "Incorreta: a marcação inicial não define, sozinha, a menor distância futura.",
+        "Correta: aplica diretamente a construção geométrica indicada no recorte.",
+        "Incorreta: uma paralela não fornece a menor distância à linha de movimento.",
+        "Incorreta: o ponto médio entre observações não tem relação necessária com o PMA."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Miguens, Altineu Pires",
+        "publication": "Navegação: A Ciência e a Arte",
+        "edition": "Volume I, edição consultada no Drive",
+        "url": "https://drive.google.com/file/d/1zgyVeWHx7Z-G7mF-TcHwhXsC26Tfa0gV/view",
+        "section": "Volume I, capítulo 14, item 14.4.1 — Plotagem relativa e PMA",
+        "syllabus": "Eixo III — Navegação em águas restritas · item 25.3.8, uso do radar para evitar colisão",
+        "evidence": "Miguens define o PMA como a interseção da linha de movimento relativo com a perpendicular baixada do ponto fixo de referência R."
+      }
+    },
+    {
+      "id": "fri-20261023-c3-radar-velocity-triangle",
+      "category": "current",
+      "axis": "III",
+      "kind": "Avanço · diagrama de velocidades",
+      "stem": "Após obter a DMR e a VMR de um alvo, o oficial deseja determinar seu rumo e velocidade verdadeiros. Qual procedimento completa corretamente a solução gráfica?",
+      "options": [
+        "Combinar o vetor do movimento do próprio navio com o vetor relativo em um triângulo de velocidades, obtendo o vetor verdadeiro do alvo.",
+        "Usar apenas a perpendicular do PMA, porque ela já contém o rumo verdadeiro do alvo.",
+        "Converter a marcação relativa inicial em verdadeira e adotá-la como rumo do alvo.",
+        "Medir a distância final do alvo e dividi-la pela velocidade do próprio navio."
+      ],
+      "correct": 0,
+      "explanation": "O movimento verdadeiro do alvo é obtido no diagrama vetorial pela combinação do vetor verdadeiro do próprio navio com o vetor relativo.",
+      "comments": [
+        "Correta: corresponde ao triângulo de velocidades descrito por Miguens.",
+        "Incorreta: a perpendicular fornece a menor distância, não o rumo verdadeiro do alvo.",
+        "Incorreta: marcação é linha de visada e não equivale ao rumo do alvo.",
+        "Incorreta: o cálculo mistura grandezas sem representar o movimento relativo."
+      ],
+      "reference": {
+        "referenceId": "III-02",
+        "base": "Miguens, Altineu Pires",
+        "publication": "Navegação: A Ciência e a Arte",
+        "edition": "Volume I, edição consultada no Drive",
+        "url": "https://drive.google.com/file/d/1zgyVeWHx7Z-G7mF-TcHwhXsC26Tfa0gV/view",
+        "section": "Volume I, capítulo 14, item 14.4.1 — Diagrama de velocidades",
+        "syllabus": "Eixo III — Navegação em águas restritas · item 25.3.8, uso do radar para evitar colisão",
+        "evidence": "O capítulo relaciona DMR e VMR aos vetores verdadeiros dos dois navios por meio do triângulo de velocidades; cálculos vetoriais adicionais são necessários para obter o movimento verdadeiro do alvo."
+      }
+    },
+    {
+      "id": "fri-20261023-t1-fixed-block-return",
+      "category": "rotation",
+      "axis": "II",
+      "kind": "Intercalação · aparelhos de laborar",
+      "stem": "Um cabo gurne em um único moitão fixo, idealmente sem atrito, usado apenas para permitir que o operador ale para baixo enquanto a carga sobe. Qual é a função mecânica desse arranjo?",
+      "options": [
+        "Dobrar a força aplicada, porque duas pernadas sustentam diretamente o peso.",
+        "Triplicar a força aplicada, desde que o tirador fique a bordo.",
+        "Reduzir à metade o percurso do tirador e duplicar a velocidade da carga.",
+        "Mudar a direção da força, sem multiplicação de potência."
+      ],
+      "correct": 3,
+      "explanation": "Um moitão fixo isolado funciona como retorno: altera a direção da força, mas, no modelo ideal, não produz ganho mecânico.",
+      "comments": [
+        "Incorreta: o moitão está fixo e não constitui conjunto móvel sustentado por duas pernadas.",
+        "Incorreta: não há três pernadas ativas nem multiplicação três.",
+        "Incorreta: o deslocamento ideal da carga é igual ao comprimento alado, em sentido oposto.",
+        "Correta: essa é a definição de retorno na teoria dos aparelhos de laborar."
       ],
       "reference": {
         "referenceId": "II-01",
         "base": "Fonseca, Maurílio M.",
         "publication": "Arte Naval, v. 1",
         "edition": "Exemplar consultado: 6. ed., SDM, 2002; catálogo PSCPP: 8. ed., MB, 2019",
-        "section": "Capítulo 9, arts. 9.14(c), 9.15 e 9.22",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view",
+        "section": "Capítulo 9, arts. 9.13 e 9.15(a) — Definições e moitão fixo",
         "syllabus": "Eixo II — Arte Naval · poleame e aparelhos de laborar",
-        "evidence": "O exemplar consultado distingue a talha dobrada com multiplicação 4, quando o tirador sai do cadernal fixo, e 5, quando sai do móvel; o art. 9.22 expressa m = n + 1 nessa segunda configuração.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view"
+        "evidence": "O texto chama de retorno a peça que apenas muda a direção do cabo, sem multiplicação de potência, e demonstra no moitão fixo ideal que a força aplicada equilibra peso igual."
       }
     },
     {
-      "id": "mon-20261019-r2-coriolis-relative-direction",
-      "category": "review",
-      "axis": "III",
-      "kind": "Revisão FSRS vencida · hemisférios e leitura",
-      "stem": "Uma corrente de maré tem movimento inicialmente dirigido para leste, no Hemisfério Sul. Considerando apenas a tendência de desvio associada ao efeito de Coriolis, para que lado de sua direção de movimento tende a ser desviada?",
-      "options": [
-        "Para a direita, isto é, para sul.",
-        "Para a esquerda, isto é, para norte.",
-        "Para a esquerda, isto é, para sul.",
-        "Para a direita, isto é, para norte."
-      ],
-      "correct": 1,
-      "explanation": "No Hemisfério Sul, a tendência de Coriolis é para a esquerda da direção do movimento. Para um movimento para leste, a esquerda corresponde ao norte. Isso não equivale a prever sozinho o rumo real da corrente.",
-      "comments": [
-        "Incorreta: aplica a tendência do Hemisfério Norte.",
-        "Correta: combina o hemisfério com a orientação relativa correta.",
-        "Incorreta: identifica corretamente o lado relativo, mas troca sua correspondência geográfica.",
-        "Incorreta: norte fica à esquerda de quem se move para leste, e não à direita."
-      ],
-      "reference": {
-        "referenceId": "III-02",
-        "base": "Miguens, Altineu Pires",
-        "publication": "Navegação: A Ciência e a Arte",
-        "edition": "Volume I, 2ª revisão atualizada, DHN, 2023",
-        "section": "Volume I, capítulo 10, item 10.2.1 — Correntes de maré",
-        "syllabus": "Eixo III — Navegação em águas restritas · marés e correntes",
-        "evidence": "O texto atribui ao efeito de Coriolis a tendência de desviar as correntes de maré para a direita no Hemisfério Norte e para a esquerda no Sul; também ressalta a atuação conjunta de outras forças.",
-        "url": "https://drive.google.com/file/d/1xuS96LOLZ1FaU4AOtiP5YFaHDgwI4c_C/view"
-      }
-    },
-    {
-      "id": "mon-20261019-r3-crossflow-regime",
-      "category": "review",
-      "axis": "I",
-      "kind": "Revisão FSRS vencida · nota 1 · escoamento cruzado",
-      "stem": "Em qual situação o princípio do arrasto por escoamento cruzado é particularmente aplicável à modelagem da manobra, conforme Santos?",
-      "options": [
-        "Velocidade longitudinal muito superior à lateral e ângulo de deriva praticamente nulo.",
-        "Navio em alta velocidade longitudinal, sem movimento lateral, em qualquer profundidade.",
-        "Navio cuja única alteração seja o aumento das rotações do propulsor, mantendo deriva nula.",
-        "Velocidade lateral próxima da longitudinal e ângulo de deriva elevado, geralmente acima de 25°."
-      ],
-      "correct": 3,
-      "explanation": "O recorte associa o escoamento cruzado à manobra em velocidades muito baixas, com componente lateral comparável à longitudinal e ângulo de deriva elevado.",
-      "comments": [
-        "Incorreta: descreve uma situação de pequeno ângulo de deriva, oposta ao regime destacado.",
-        "Incorreta: a ausência de velocidade lateral não caracteriza o regime de escoamento cruzado descrito.",
-        "Incorreta: aumento de rotação, isoladamente, não estabelece o regime de deriva elevada.",
-        "Correta: reúne as condições explicitadas no início do item 3.8."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Santos, Edson Mesquita dos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 3, item 3.8 — Escoamento cruzado",
-        "syllabus": "Eixo I — Manobrabilidade · escoamento cruzado e baixas velocidades",
-        "evidence": "O início do item 3.8 aplica o princípio do arrasto cruzado quando a velocidade lateral é próxima da longitudinal e o ângulo de deriva é alto, geralmente maior que 25 graus.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
-    },
-    {
-      "id": "mon-20261019-r4-turning-transverse-distances",
-      "category": "review",
-      "axis": "I",
-      "kind": "Revisão FSRS vencida · parâmetros da curva de giro",
-      "stem": "Em uma prova de giro, o centro do navio apresenta afastamento transversal de 300 m em relação à direção inicial quando a mudança de aproamento atinge 90°, e de 520 m quando atinge 180°. Esses dois valores representam, respectivamente:",
-      "options": [
-        "Transferência e diâmetro tático.",
-        "Avanço e transferência.",
-        "Diâmetro tático e diâmetro de giro permanente.",
-        "Transferência máxima e avanço máximo."
-      ],
-      "correct": 0,
-      "explanation": "A transferência é o afastamento transversal medido aos 90° de mudança de aproamento; o diâmetro tático é o afastamento transversal aos 180°. Não se deve confundir nenhum deles com o avanço longitudinal.",
-      "comments": [
-        "Correta: associa cada afastamento ao ângulo de mudança de aproamento correspondente.",
-        "Incorreta: avanço é uma distância longitudinal; o primeiro valor fornecido é transversal.",
-        "Incorreta: o primeiro valor foi medido aos 90°, e o segundo não define necessariamente o círculo de giro permanente.",
-        "Incorreta: os dados não são apresentados como máximos da trajetória e ambos são transversais."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Santos, Edson Mesquita dos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 6, item 6.1 — Definições da curva de giro",
-        "syllabus": "Eixo I — Manobrabilidade · avanço, transferência e diâmetro tático",
-        "evidence": "Santos define transferência como a distância transversal aos 90° e diâmetro tático como a distância transversal aos 180°, sempre tomando a direção inicial e o centro do navio como referências.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
-    },
-    {
-      "id": "mon-20261019-c1-spiral-transient-false-loop",
-      "category": "current",
-      "axis": "I",
-      "kind": "Aprofundamento · validade do ensaio em espiral",
-      "stem": "Na análise de uma prova de espiral direta, aparece um laço no gráfico de razão de guinada versus ângulo do leme. Entretanto, a equipe alterou o leme antes de a razão de guinada atingir um valor constante em cada etapa. Qual conclusão é tecnicamente adequada?",
-      "options": [
-        "O laço basta para comprovar instabilidade, mesmo que as medidas tenham sido transitórias.",
-        "É necessário repetir as medições dando tempo para atingir equilíbrio, pois a sequência apressada pode produzir falsa indicação de instabilidade.",
-        "Aumentar a frequência de mudanças do leme elimina o efeito transitório e confirma a estabilidade.",
-        "O resultado permite calcular diretamente o diâmetro tático, dispensando a prova de giro."
-      ],
-      "correct": 1,
-      "explanation": "O ensaio em espiral exige condições de equilíbrio após cada alteração de leme. Santos mostra que intervalos insuficientes podem gerar um laço aparente mesmo em navio estável; a interpretação precisa considerar a execução do teste.",
-      "comments": [
-        "Incorreta: a conclusão pressupõe que os pontos representem condições de equilíbrio, o que não ocorreu.",
-        "Correta: trata a causa do possível laço aparente antes de classificar o navio.",
-        "Incorreta: mudanças ainda mais frequentes reduzem o tempo disponível para alcançar equilíbrio.",
-        "Incorreta: a curva espiral caracteriza estabilidade direcional; não fornece diretamente o diâmetro tático."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Santos, Edson Mesquita dos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 4, item 4.9.1 — Procedimentos e interpretação da espiral direta",
-        "syllabus": "Eixo I — Manobrabilidade · estabilidade em linha reta e ensaio de Dieudonné",
-        "evidence": "O texto exige tempo suficiente para equilíbrio após cada mudança de leme e apresenta resultados em que intervalos limitados produzem um laço aparente, enquanto a espera sem limite revela um navio estável.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
-    },
-    {
-      "id": "mon-20261019-c2-bech-controlled-variable",
-      "category": "current",
-      "axis": "I",
-      "kind": "Aprofundamento · ensaio de Bech",
-      "stem": "Durante um ensaio de espiral reversa, a equipe deseja obter um ponto da curva correspondente à razão de guinada de 0,5°/s. Como deve proceder?",
-      "options": [
-        "Fixar o leme em 0,5° e registrar a razão de guinada resultante, sem corrigir o leme.",
-        "Manter o aproamento constante e medir o deslocamento lateral do centro do navio.",
-        "Manter a razão de guinada especificada por pequenos ajustes do leme e registrar o ângulo médio necessário.",
-        "Alternar o leme entre os bordos a cada mudança de aproamento de 10° e medir o overshoot."
-      ],
-      "correct": 2,
-      "explanation": "Na espiral reversa de Bech, impõe-se uma razão de guinada constante e mede-se o ângulo médio de leme necessário para mantê-la. As pequenas correções do leme fazem parte desse procedimento.",
-      "comments": [
-        "Incorreta: troca a grandeza controlada e ainda confunde graus com graus por segundo.",
-        "Incorreta: manter aproamento constante significa razão de guinada nula, diferente do ponto solicitado.",
-        "Correta: descreve a variável controlada e a grandeza medida no ensaio reverso.",
-        "Incorreta: descreve a lógica de uma manobra de zigue-zague, não a espiral reversa."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Santos, Edson Mesquita dos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 4, item 4.11 — Curva espiral de Bech",
-        "syllabus": "Eixo I — Manobrabilidade · espiral reversa",
-        "evidence": "Santos descreve a condução do navio a uma razão de guinada constante, usando como exemplo 0,5 grau por segundo, e a medição do ângulo médio resultante das pequenas correções de leme.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
-    },
-    {
-      "id": "mon-20261019-c3-pullout-asymmetry",
-      "category": "current",
-      "axis": "I",
-      "kind": "Aprofundamento · interpretação do pull-out",
-      "stem": "Um navio é submetido ao pull-out após guinadas estabilizadas para ambos os bordos. Com o leme na mesma posição de referência, as razões de guinada finais convergem para um único valor pequeno, diferente de zero. Segundo a ressalva de Santos sobre assimetria, qual interpretação é correta?",
-      "options": [
-        "Pode haver assimetria; a convergência para um valor final único não deve ser confundida automaticamente com instabilidade direcional.",
-        "Qualquer valor final diferente de zero comprova instabilidade, mesmo que seja o mesmo nos dois testes.",
-        "O resultado demonstra que os dois bordos apresentam razões residuais distintas e, portanto, divergentes.",
-        "O pull-out determina sozinho o grau numérico de instabilidade e substitui integralmente as curvas espirais."
-      ],
-      "correct": 0,
-      "explanation": "Santos ressalva que, havendo assimetria, um navio estável pode apresentar razão final não nula, mas única. No caso instável descrito, permanecem razões residuais distintas conforme o bordo de início. O pull-out não quantifica o grau de estabilidade.",
-      "comments": [
-        "Correta: preserva a ressalva de assimetria e o critério de convergência dos resultados.",
-        "Incorreta: ignora que a assimetria pode deslocar o valor final comum.",
-        "Incorreta: contradiz o dado do enunciado: os valores convergiram.",
-        "Incorreta: o texto reserva às curvas espirais a informação sobre o grau de estabilidade ou instabilidade."
-      ],
-      "reference": {
-        "referenceId": "I-08",
-        "base": "Santos, Edson Mesquita dos",
-        "publication": "A Manobrabilidade do Navio no Século 21",
-        "edition": "1. ed., CONAPRA, 2021",
-        "section": "Capítulo 4, item 4.12 — Manobra de pull-out",
-        "syllabus": "Eixo I — Manobrabilidade · alívio do leme e estabilidade direcional",
-        "evidence": "O trecho manda realizar o pull-out pelos dois bordos para verificar assimetria; ressalva razão final não nula, porém única, no caso assimétrico estável, e razões residuais distintas no instável. Afirma ainda que o teste não informa o grau de estabilidade.",
-        "url": "https://drive.google.com/file/d/1Bo-JTL4XB03i9GRFktJB3R-SAQuMQse3/view"
-      }
-    },
-    {
-      "id": "mon-20261019-t1-colreg-action-monitoring",
+      "id": "fri-20261023-t2-single-luff-moving-fall",
       "category": "rotation",
-      "axis": "III",
-      "kind": "Intercalação · RIPEAM",
-      "stem": "Dois navios se aproximam com risco de abalroamento. Um deles executa, com antecedência, uma alteração de rumo ampla e perceptível que aparenta resultar em passagem segura. Conforme o RIPEAM, quando pode encerrar a verificação da eficácia dessa manobra em relação ao outro navio?",
+      "axis": "II",
+      "kind": "Intercalação · multiplicação teórica",
+      "stem": "Uma talha singela é formada por um cadernal de dois gornes e um moitão. Desprezando atrito e peso do aparelho, qual configuração fornece multiplicação teórica igual a quatro?",
       "options": [
-        "Assim que terminar de carregar o leme.",
-        "Assim que a primeira marcação após a guinada variar.",
-        "Quando o outro navio confirmar a manobra pelo VHF, ainda que permaneça próximo.",
-        "Somente quando o outro navio estiver finalmente passado e safo."
-      ],
-      "correct": 3,
-      "explanation": "A execução da manobra não encerra sua avaliação. A Regra 8(d) exige verificar cuidadosamente sua eficácia até o outro navio estar finalmente passado e safo.",
-      "comments": [
-        "Incorreta: a ordem ou execução de leme não comprova o resultado da manobra.",
-        "Incorreta: uma única marcação não substitui o acompanhamento até a passagem segura.",
-        "Incorreta: uma confirmação por rádio não elimina o dever de acompanhamento.",
-        "Correta: corresponde ao limite temporal exigido pela Regra 8(d)."
-      ],
-      "reference": {
-        "referenceId": "III-16",
-        "base": "IMO",
-        "publication": "COLREG - Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte B, Regra 8(d)",
-        "syllabus": "Eixo III — Navegação em águas restritas · manobras para evitar abalroamento",
-        "evidence": "A edição consolidada de 2018 consultada no Drive exige passagem a distância segura e verificação cuidadosa da eficácia da ação até o outro navio estar finalmente passado e safo.",
-        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
-      }
-    },
-    {
-      "id": "mon-20261019-t2-colreg-standon-duty",
-      "category": "rotation",
-      "axis": "III",
-      "kind": "Intercalação · RIPEAM",
-      "stem": "Dois navios de propulsão mecânica, à vista um do outro, encontram-se em situação de rumos cruzados. O navio que deveria manter rumo e velocidade percebe que está tão próximo que a ação isolada do navio obrigado a manobrar já não pode evitar o abalroamento. O que lhe cabe fazer?",
-      "options": [
-        "Manter obrigatoriamente rumo e velocidade até receber autorização do outro navio.",
-        "Executar a manobra que melhor auxilie a evitar o abalroamento, sem liberar o outro navio de sua obrigação.",
-        "Aguardar cinco apitos curtos do outro navio para poder alterar seu movimento.",
-        "Assumir a obrigação exclusiva de manobra, liberando o outro navio de manter-se fora de seu caminho."
+        "Tirador saindo do cadernal fixo.",
+        "Tirador saindo do cadernal móvel.",
+        "Uso apenas do moitão fixo como retorno.",
+        "Retirada de uma das roldanas do cadernal."
       ],
       "correct": 1,
-      "explanation": "Nessa fase, a Regra 17(b) estabelece dever de agir para melhor auxiliar a evitar o abalroamento. A Regra 17(d) mantém a obrigação do navio que deveria se manter fora do caminho.",
+      "explanation": "Na talha singela, o tirador saindo do cadernal fixo fornece multiplicação três; saindo do móvel, acrescenta-se uma pernada ativa e a multiplicação passa a quatro.",
       "comments": [
-        "Incorreta: a manutenção de rumo e velocidade não é absoluta na situação de extrema proximidade descrita.",
-        "Correta: combina o dever de ação nessa fase com a permanência da obrigação do outro navio.",
-        "Incorreta: o dever de agir não depende de receber esse sinal.",
-        "Incorreta: a ação do navio que mantinha rumo e velocidade não exonera o navio obrigado a manobrar."
+        "Incorreta: nessa configuração a multiplicação indicada é três.",
+        "Correta: o tirador no conjunto móvel acrescenta a quarta pernada ativa.",
+        "Incorreta: um retorno ideal não multiplica a força.",
+        "Incorreta: reduzir o número de roldanas não cria a quarta pernada ativa."
       ],
       "reference": {
-        "referenceId": "III-16",
-        "base": "IMO",
-        "publication": "COLREG - Consolidated Edition 2018",
-        "edition": "2018",
-        "section": "Parte B, Regra 17(b) e (d)",
-        "syllabus": "Eixo III — Navegação em águas restritas · ação da embarcação que mantém rumo e velocidade",
-        "evidence": "O texto da Regra 17 torna obrigatória a ação que melhor ajude a evitar o abalroamento quando a ação isolada do navio obrigado a manobrar não basta, sem exonerar esse navio.",
-        "url": "https://www.imo.org/en/about/conventions/pages/colreg.aspx"
+        "referenceId": "II-01",
+        "base": "Fonseca, Maurílio M.",
+        "publication": "Arte Naval, v. 1",
+        "edition": "Exemplar consultado: 6. ed., SDM, 2002; catálogo PSCPP: 8. ed., MB, 2019",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view",
+        "section": "Capítulo 9, arts. 9.14(b) e 9.15 — Talha singela",
+        "syllabus": "Eixo II — Arte Naval · poleame e aparelhos de laborar",
+        "evidence": "O exemplar define a talha singela como cadernal de dois gornes mais moitão e atribui multiplicação três quando o tirador sai do fixo e quatro quando sai do móvel."
       }
     },
     {
-      "id": "mon-20261019-o1-pscpp2008-q72",
+      "id": "fri-20261023-o1-pscpp2008-q72-retry",
       "category": "official",
       "axis": "II",
-      "kind": "Questão oficial histórica · PSCPP 2008 · questão 72",
+      "kind": "Questão oficial histórica · PSCPP 2008 · questão 72 · retomada do erro",
       "stem": "Coloque V (verdadeiro) ou F (falso) nas afirmativas abaixo, que tratam de regras práticas na utilização de aparelhos de laborar, assinalando, a seguir, a opção correta:\n\n( ) aplicar, sempre que possível, o cadernal onde gurne o tirador no peso que se deseja alar.\n( ) para diminuir o esforço sobre o cadernal fixo, fazer, se possível, a arreigada fixa fora do mesmo cadernal.\n( ) içando um peso, o tirador suporta a tensão mínima e a arreigada fixa a tensão máxima; arriando, será o contrário.\n( ) o melhor modo de engatar uma talha em um cabo que não tenha alça é pela volta de encapeladura singela.\n( ) o que se ganha em força, perde-se em tempo, pois tem-se um comprimento maior que alar no tirador.",
       "options": [
         "(V) (F) (V) (V) (V)",
@@ -305,12 +305,12 @@
         "(V) (F) (V) (F) (F)"
       ],
       "correct": 3,
-      "explanation": "A sequência é V–V–F–F–V, alternativa D do gabarito. No içamento com resistências passivas, o tirador suporta a tensão máxima e a arreigada fixa a mínima; para engatar a talha em cabo sem alça, a regra prática indica boca-de-lobo. As demais afirmativas reproduzem as regras práticas consultadas.",
+      "explanation": "A sequência é V–V–F–F–V, alternativa D. No içamento, o tirador suporta a tensão máxima; para engatar uma talha em cabo sem alça, a regra indica boca-de-lobo. As demais afirmações reproduzem as regras consultadas.",
       "comments": [
-        "Incorreta: a segunda afirmativa é verdadeira; a terceira inverte as tensões e a quarta indica a volta errada.",
+        "Incorreta: a segunda é verdadeira; a terceira inverte as tensões e a quarta indica volta diferente da recomendada.",
         "Incorreta: a primeira e a segunda são verdadeiras, e a terceira é falsa.",
-        "Incorreta: a primeira e a quinta são verdadeiras; a quarta é falsa.",
-        "Correta: V–V–F–F–V, em acordo com o gabarito e com as regras práticas de Arte Naval.",
+        "Incorreta: a primeira e a quinta são verdadeiras, e a quarta é falsa.",
+        "Correta: V–V–F–F–V, conforme a prova, o gabarito e o art. 9.21.",
         "Incorreta: a segunda e a quinta são verdadeiras, e a terceira é falsa."
       ],
       "reference": {
@@ -318,16 +318,16 @@
         "base": "Fonseca, Maurílio M.",
         "publication": "Arte Naval, v. 1",
         "edition": "Exemplar consultado: 6. ed., SDM, 2002; catálogo PSCPP: 8. ed., MB, 2019",
+        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view",
         "section": "Capítulo 9, art. 9.21 — Regras práticas; PSCPP 2008, questão 72",
         "syllabus": "Eixo II — Arte Naval · regras práticas dos aparelhos de laborar",
-        "evidence": "O art. 9.21 confirma as afirmativas primeira, segunda e quinta, fixa tensão máxima no tirador durante o içamento e recomenda boca-de-lobo para cabo sem alça. A prova consultada marca D.",
-        "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view",
+        "evidence": "O art. 9.21 confirma a primeira, a segunda e a quinta afirmações, fixa tensão máxima no tirador durante o içamento e recomenda boca-de-lobo para cabo sem alça. A prova consultada marca D.",
         "origin": {
           "exam": "PSCPP 2008",
           "year": 2008,
           "question": 72,
           "answer": "D",
-          "adaptation": "Questão original, com cinco alternativas e gabarito preservados; apenas disposição visual normalizada. Retomada do erro registrado em 06/10 e da dificuldade em aparelhos observada em 18/10.",
+          "adaptation": "Questão original, com cinco alternativas e gabarito preservados; apenas disposição visual normalizada. Retomada porque a resposta de 23/10/2026 foi incorreta.",
           "url": "https://drive.google.com/file/d/14RLZewUiDcRYbg76OVZGahAH2lYPJEWk/view"
         }
       }
