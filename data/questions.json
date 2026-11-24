@@ -1,110 +1,111 @@
 {
-  "roundId": "radar-anchor-pma-meteorology-2026-11-17",
-  "label": "Rodada adaptativa de 17 de novembro de 2026",
-  "title": "Suspender o ferro, corrigir o tempo até o PMA e consolidar brisas costeiras",
+  "roundId": "tackle-pma-tugs-fog-2026-11-24",
+  "label": "Rodada adaptativa de 24 de novembro de 2026",
+  "title": "Corrigir aparelhos de laborar e PMA, avançar no emprego de rebocadores e formar nevoeiros",
   "publication": "Bibliografia oficial PSCPP/DPC",
-  "path": "Arte Naval: vozes e sequência de suspender o ferro · correção dirigida de aparelhos de laborar e tempo até o PMA · alternância meteorológica",
+  "path": "Arte Naval: correção dirigida de aparelhos de laborar · Navegação radar: tempo até o PMA · rebocadores em linha · nevoeiro de advecção",
   "method": "4–3–2–1",
   "mixPlan": {"review": 4, "current": 3, "rotation": 2, "official": 1},
   "questions": [
     {
-      "id": "tue-20261117-r1-tackle-tension-correction", "category": "review", "axis": "II",
-      "kind": "Revisão FSRS · nota 0 · aparelhos de laborar",
-      "stem": "Uma talha real está içando uma carga em velocidade moderada. Considerando as resistências passivas nas roldanas, como se distribuem as tensões no cabo?",
-      "options": ["A tensão é máxima no tirador e diminui em direção à arreigada fixa.", "A tensão é mínima no tirador e aumenta em direção à arreigada fixa.", "Todas as pernadas mantêm a mesma tensão, porque pertencem ao mesmo cabo.", "A tensão máxima ocorre sempre no cadernal móvel, independentemente do sentido do movimento."],
-      "correct": 0,
-      "explanation": "No içamento, a tensão máxima está no tirador e diminui até a arreigada fixa. No arriamento, a distribuição se inverte.",
-      "comments": ["Correta: é a regra prática para o içamento com atrito nas roldanas.", "Incorreta: descreve a inversão que ocorre no arriamento, não no içamento.", "Incorreta: a igualdade de tensões só vale no modelo estático idealizado; as resistências passivas criam um gradiente durante o movimento.", "Incorreta: a posição da maior tensão depende do sentido do movimento e do caminho do cabo, não apenas do cadernal móvel."],
-      "reference": {"referenceId": "II-01", "base": "Fonseca, Maurílio M.", "publication": "Arte Naval, v. 1", "edition": "Exemplar consultado: 6. ed., SDM, 2002; catálogo PSCPP: 8. ed., MB, 2019", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view", "section": "Capítulo 9, arts. 9.17 e 9.21(3) — distribuição de esforços e regras práticas", "syllabus": "Eixo II — Arte Naval · poleame e aparelhos de laborar", "evidence": "O recorte consultado estabelece que, ao içar, a tensão máxima fica no tirador e diminui até a arreigada fixa; ao arriar, a tensão máxima passa para a arreigada fixa."}
-    },
-    {
-      "id": "tue-20261117-r2-tcpa-method-correction", "category": "review", "axis": "III",
-      "kind": "Revisão FSRS · nota 0 · método do PMA",
-      "stem": "Na plotagem de movimento relativo, depois de definida a DMR e localizado o PMA, quais grandezas devem ser usadas para calcular o tempo restante até o PMA?",
-      "options": ["A distância da última posição relativa ao PMA, medida ao longo da DMR, e a VMR.", "A distância do PMA ao centro da rosa e a velocidade verdadeira do próprio navio.", "A distância instantânea entre os navios e a velocidade verdadeira do alvo.", "Somente a variação de marcação entre as duas últimas observações."],
-      "correct": 0,
-      "explanation": "O tempo até o PMA é obtido dividindo o percurso relativo ainda restante — da última posição relativa ao PMA, ao longo da DMR — pela velocidade do movimento relativo.",
-      "comments": ["Correta: distância e velocidade pertencem ao mesmo movimento relativo.", "Incorreta: a distância do PMA ao centro representa o DCPA e não o percurso restante.", "Incorreta: mistura uma distância relativa com a velocidade verdadeira do alvo.", "Incorreta: a variação de marcação, isoladamente, não fornece o tempo até a maior aproximação."],
-      "reference": {"referenceId": "III-02", "base": "Miguens, Altineu Pires", "publication": "Navegação: A Ciência e a Arte", "edition": "Volume I, edição consultada no Drive", "url": "https://drive.google.com/file/d/1zgyVeWHx7Z-G7mF-TcHwhXsC26Tfa0gV/view", "section": "Volume I, capítulo 14, item 14.4.4, problema 1 — cálculo da hora do PMA", "syllabus": "Eixo III — Navegação em águas restritas · item 25.3.8, uso do radar para evitar colisão", "evidence": "No problema resolvido, o autor mede a distância entre a última posição relativa e o PMA, usa a VMR para obter o tempo restante e soma esse intervalo ao horário da observação."}
-    },
-    {
-      "id": "tue-20261117-r3-tcpa-arithmetic-correction", "category": "review", "axis": "III",
-      "kind": "Revisão FSRS · nota 0 · cálculo do PMA",
-      "stem": "Às 08h42, um alvo está a 3,2 milhas do PMA, medidas ao longo da DMR. A VMR é 16 nós. Em que horário ocorrerá o PMA?",
-      "options": ["08h45", "08h50", "08h54", "09h02"], "correct": 2,
-      "explanation": "O intervalo é 3,2/16 hora = 0,2 hora = 12 minutos. Somado a 08h42, resulta em 08h54.",
-      "comments": ["Incorreta: três minutos corresponderiam a apenas 0,8 milha a 16 nós.", "Incorreta: oito minutos corresponderiam a cerca de 2,13 milhas.", "Correta: 3,2 milhas a 16 nós exigem 12 minutos.", "Incorreta: vinte minutos corresponderiam a aproximadamente 5,33 milhas."],
-      "reference": {"referenceId": "III-02", "base": "Miguens, Altineu Pires", "publication": "Navegação: A Ciência e a Arte", "edition": "Volume I, edição consultada no Drive", "url": "https://drive.google.com/file/d/1zgyVeWHx7Z-G7mF-TcHwhXsC26Tfa0gV/view", "section": "Volume I, capítulo 14, item 14.4.4 — resolução de problemas de movimento relativo", "syllabus": "Eixo III — Navegação em águas restritas · item 25.3.8, uso do radar para evitar colisão", "evidence": "O exemplo consultado determina o tempo até o PMA dividindo a distância relativa restante pela VMR e adicionando o resultado ao horário da última posição."}
-    },
-    {
-      "id": "tue-20261117-r4-fixed-end-off-block", "category": "review", "axis": "II",
-      "kind": "Revisão cumulativa · aparelhos de laborar · arreigada fixa",
-      "stem": "Para reduzir o esforço suportado pelo cadernal fixo de um aparelho de laborar, qual providência é recomendada quando a instalação permitir?",
-      "options": ["Fazer a arreigada fixa no próprio cadernal fixo e bloquear o tirador.", "Fazer a arreigada fixa em um ponto vizinho, fora do cadernal fixo.", "Passar o tirador por uma patesca de retorno de 180°.", "Transferir a arreigada fixa para o cadernal móvel e inverter a carga."],
+      "id": "tue-20261124-r1-tackle-tension-retrieval", "category": "review", "axis": "II",
+      "kind": "Revisão FSRS · nota 0 · distribuição de tensões",
+      "stem": "Uma talha real iça uma carga em velocidade moderada. Consideradas as resistências passivas nas roldanas, qual pernada suporta a maior tensão?",
+      "options": ["A arreigada fixa, porque está presa a um ponto resistente.", "O tirador, diminuindo a tensão deste para a arreigada fixa.", "A pernada mais próxima do cadernal móvel, qualquer que seja o sentido do movimento.", "Todas as pernadas, em igualdade, porque pertencem ao mesmo cabo."],
       "correct": 1,
-      "explanation": "Retirar a arreigada fixa do cadernal faz com que ele deixe de suportar a tensão daquela pernada, diminuindo o esforço total no cadernal fixo.",
-      "comments": ["Incorreta: manter a arreigada no cadernal conserva uma pernada adicional atuando sobre ele.", "Correta: é a providência expressamente recomendada no art. 9.17 e reiterada no art. 9.21.", "Incorreta: a patesca introduz resistência e aumenta a força a aplicar; não remove a pernada do cadernal fixo.", "Incorreta: a regra recomenda um ponto vizinho ao cadernal fixo, não a transferência indiscriminada ao cadernal móvel."],
-      "reference": {"referenceId": "II-01", "base": "Fonseca, Maurílio M.", "publication": "Arte Naval, v. 1", "edition": "Exemplar consultado: 6. ed., SDM, 2002; catálogo PSCPP: 8. ed., MB, 2019", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view", "section": "Capítulo 9, arts. 9.17 e 9.21(2) — arreigada fixa fora do cadernal", "syllabus": "Eixo II — Arte Naval · poleame e aparelhos de laborar", "evidence": "O texto explica que o cadernal da arreigada suporta uma pernada adicional e orienta, quando possível, fazer a arreigada em ponto vizinho para reduzir esse esforço."}
+      "explanation": "Ao içar, a tensão máxima ocorre no tirador e diminui em direção à arreigada fixa. No arriamento, a distribuição se inverte.",
+      "comments": ["Incorreta: essa extremidade recebe a maior tensão no arriamento, não no içamento.", "Correta: reproduz a regra prática para içamento com atrito nas roldanas.", "Incorreta: o gradiente depende do sentido de movimento e do caminho do cabo.", "Incorreta: a igualdade de tensões pertence ao modelo estático ideal sem resistências passivas."],
+      "reference": {"referenceId": "II-01", "base": "Fonseca, Maurílio M.", "publication": "Arte Naval, v. 1", "edition": "Exemplar consultado: 6. ed., SDM, 2002; catálogo PSCPP: 8. ed., MB, 2019", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view", "section": "Capítulo 9, art. 9.17 — distribuição de esforços", "syllabus": "Eixo II — Arte Naval · poleame e aparelhos de laborar", "evidence": "O exemplo consultado mostra que, no içamento real, o esforço é máximo no tirador e mínimo na arreigada fixa; no arriamento, ocorre o contrário."}
     },
     {
-      "id": "tue-20261117-c1-anchor-chain-a-pique", "category": "current", "axis": "II",
-      "kind": "Avanço · suspender o ferro · voz de informação",
-      "stem": "Durante a manobra de suspender, a informação \"amarra a pique\" indica que a amarra está:",
-      "options": ["Paralela ao estai de vante do mastro.", "Perpendicular à superfície das águas.", "Dizendo para vante, paralela ao plano diametral.", "Sem tensão, com o navio não portando por ela."],
+      "id": "tue-20261124-r2-tackle-fixed-block-load", "category": "review", "axis": "II",
+      "kind": "Revisão FSRS · nota 0 · esforço no cadernal fixo",
+      "stem": "Quando a instalação permitir, qual medida reduz diretamente o esforço suportado pelo cadernal fixo de um aparelho de laborar?",
+      "options": ["Transferir a arreigada fixa para um ponto vizinho, fora do cadernal.", "Bloquear o tirador e manter a arreigada no próprio cadernal.", "Adicionar uma patesca de retorno de 180° ao tirador.", "Aumentar a velocidade de içamento para reduzir o tempo sob carga."],
+      "correct": 0,
+      "explanation": "O cadernal onde está a arreigada suporta uma pernada adicional. Fazê-la em ponto vizinho retira desse cadernal a tensão correspondente àquela pernada.",
+      "comments": ["Correta: é a providência indicada para diminuir o esforço no cadernal.", "Incorreta: mantém a pernada adicional atuando sobre o cadernal.", "Incorreta: o retorno introduz resistência passiva e não retira a arreigada do cadernal.", "Incorreta: velocidades maiores aumentam as tensões nas pernadas."],
+      "reference": {"referenceId": "II-01", "base": "Fonseca, Maurílio M.", "publication": "Arte Naval, v. 1", "edition": "Exemplar consultado: 6. ed., SDM, 2002; catálogo PSCPP: 8. ed., MB, 2019", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view", "section": "Capítulo 9, arts. 9.17 e 9.21 — arreigada fixa", "syllabus": "Eixo II — Arte Naval · poleame e aparelhos de laborar", "evidence": "O texto afirma que o cadernal da arreigada suporta uma pernada a mais e recomenda, quando conveniente, fazer a arreigada em ponto vizinho para reduzir o esforço."}
+    },
+    {
+      "id": "tue-20261124-r3-tcpa-arithmetic-retrieval", "category": "review", "axis": "III",
+      "kind": "Revisão FSRS · nota 0 · cálculo da hora do PMA",
+      "stem": "Às 13h33, a última posição relativa de um alvo está a 1,3 milha do PMA ao longo da DMR. A VMR é 16 nós. Arredondando ao minuto inteiro, quando ocorrerá o PMA?",
+      "options": ["13h35", "13h38", "13h41", "13h49"],
       "correct": 1,
-      "explanation": "A voz \"amarra a pique\" informa que a direção da amarra está perpendicular à superfície da água.",
-      "comments": ["Incorreta: essa condição é informada como \"amarra a pique de estai\".", "Correta: é a definição literal da voz \"amarra a pique\".", "Incorreta: nessa condição a voz é \"amarra dizendo para vante\".", "Incorreta: portar ou não portar descreve o esforço do navio sobre a amarra, não sua direção."],
-      "reference": {"referenceId": "II-01", "base": "Fonseca, Maurílio M.", "publication": "Arte Naval, v. 1", "edition": "Exemplar consultado: 6. ed., SDM, 2002; catálogo PSCPP: 8. ed., MB, 2019", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view", "section": "Capítulo 10, art. 10.35(c)(2) — amarra em relação ao navio", "syllabus": "Eixo II — Arte Naval · aparelho de fundear e suspender", "evidence": "O recorte define \"amarra a pique\" como a condição em que a direção da amarra é perpendicular à superfície das águas e distingue essa voz de \"a pique de estai\"."}
+      "explanation": "O intervalo é 1,3/16 hora, aproximadamente 4,875 minutos, arredondado para 5 minutos. Assim, o PMA ocorrerá às 13h38.",
+      "comments": ["Incorreta: dois minutos corresponderiam a cerca de 0,53 milha nessa VMR.", "Correta: cinco minutos somados a 13h33 resultam em 13h38.", "Incorreta: oito minutos corresponderiam a cerca de 2,13 milhas.", "Incorreta: dezesseis minutos confundem a velocidade de 16 nós com um intervalo de tempo."],
+      "reference": {"referenceId": "III-02", "base": "Miguens, Altineu Pires", "publication": "Navegação: A Ciência e a Arte", "edition": "Volume I, edição consultada no Drive", "url": "https://drive.google.com/file/d/1zgyVeWHx7Z-G7mF-TcHwhXsC26Tfa0gV/view", "section": "Volume I, capítulo 14, item 14.4.4, problema 2 — hora do PMA", "syllabus": "Eixo III — Navegação em águas restritas · uso do radar para evitar colisão", "evidence": "No problema consultado, a distância M2–PMA é 1,3 milha, a VMR é 16 nós e o tempo arredondado é 5 minutos, levando de 13h33 a 13h38."}
     },
     {
-      "id": "tue-20261117-c2-anchor-position-reports", "category": "current", "axis": "II",
-      "kind": "Avanço · suspender o ferro · posição do ferro",
-      "stem": "Qual sequência de informações corresponde à subida normal do ferro, desde a saída do fundo até sua chegada ao escovém?",
-      "options": ["A olho — arrancou — pelos cabelos — no escovém — em cima.", "Arrancou — pelos cabelos — a olho — em cima — no escovém.", "Arrancou — a olho — pelos cabelos — em cima — no escovém.", "Pelos cabelos — a olho — arrancou — no escovém — em cima."],
+      "id": "tue-20261124-r4-tcpa-compatible-quantities", "category": "review", "axis": "III",
+      "kind": "Revisão corretiva · nota 0 · leitura do diagrama relativo",
+      "stem": "Para calcular o tempo restante até o PMA sem misturar movimentos distintos, qual par de grandezas deve ser empregado?",
+      "options": ["Distância do PMA ao centro da rosa e velocidade verdadeira do próprio navio.", "Distância instantânea entre os navios e velocidade verdadeira do alvo.", "Distância da última posição relativa ao PMA, ao longo da DMR, e VMR.", "Variação de marcação e velocidade verdadeira do próprio navio."],
       "correct": 2,
-      "explanation": "O ferro primeiro arranca do fundo; depois o anete aparece à superfície (a olho), a cruz sai da água (pelos cabelos), o anete chega ao escovém (em cima) e, por fim, o ferro fica alojado no escovém.",
-      "comments": ["Incorreta: coloca \"a olho\" antes de o ferro deixar o fundo e inverte as duas últimas posições.", "Incorreta: a cruz não sai da água antes de o anete surgir à superfície.", "Correta: reproduz a progressão das vozes de informação do art. 10.35.", "Incorreta: começa por uma fase posterior e termina com \"em cima\" após o alojamento no escovém."],
-      "reference": {"referenceId": "II-01", "base": "Fonseca, Maurílio M.", "publication": "Arte Naval, v. 1", "edition": "Exemplar consultado: 6. ed., SDM, 2002; catálogo PSCPP: 8. ed., MB, 2019", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view", "section": "Capítulo 10, art. 10.35(c)(3) — posição do ferro", "syllabus": "Eixo II — Arte Naval · aparelho de fundear e suspender", "evidence": "O texto define, nessa ordem operacional, as informações \"arrancou\", \"a olho\", \"pelos cabelos\", \"em cima\" e \"no escovém\" conforme o ferro sobe."}
+      "explanation": "A distância restante deve pertencer à trajetória relativa e ser dividida pela velocidade do mesmo movimento, a VMR.",
+      "comments": ["Incorreta: a distância do PMA ao centro é a distância de maior aproximação, não o percurso restante.", "Incorreta: combina uma distância relativa com a velocidade verdadeira do alvo.", "Correta: as duas grandezas descrevem o mesmo movimento relativo.", "Incorreta: a variação de marcação, isoladamente, não fornece o intervalo até o PMA."],
+      "reference": {"referenceId": "III-02", "base": "Miguens, Altineu Pires", "publication": "Navegação: A Ciência e a Arte", "edition": "Volume I, edição consultada no Drive", "url": "https://drive.google.com/file/d/1zgyVeWHx7Z-G7mF-TcHwhXsC26Tfa0gV/view", "section": "Volume I, capítulo 14, item 14.4.4 — resolução de problemas de movimento relativo", "syllabus": "Eixo III — Navegação em águas restritas · uso do radar para evitar colisão", "evidence": "Os problemas resolvidos medem, ao longo da plotagem relativa, a distância da última posição ao PMA e a dividem pela VMR para determinar o tempo restante."}
     },
     {
-      "id": "tue-20261117-c3-ready-to-weigh-sequence", "category": "current", "axis": "II",
-      "kind": "Avanço · suspender o ferro · preparação da máquina",
-      "stem": "Na preparação para suspender o ferro, imediatamente antes de informar ao passadiço \"pronto para suspender\", qual verificação operacional é prevista?",
-      "options": ["Largar o ferro novamente pelo freio para confirmar o livre movimento da amarra.", "Recolher três ou quatro elos para verificar o funcionamento e reapertar o freio.", "Desengrenar a coroa e manter mordente e boças passados.", "Içar o ferro até ficar a olho e só então testar a máquina de suspender."],
+      "id": "tue-20261124-c1-tug-line-narrow-waters", "category": "current", "axis": "II",
+      "kind": "Avanço · rebocadores · reboque em linha",
+      "stem": "Qual vantagem operacional caracteriza o método de assistência com rebocadores rebocando em linha durante o trânsito para o berço?",
+      "options": ["Exige ampla bacia de evolução para cada mudança de rumo.", "Pode ser empregado em águas estreitas, inclusive na passagem de pontes e entrada de eclusas.", "Dispensa o cabo de reboque porque o rebocador trabalha apenas empurrando.", "Só é aplicável a rebocadores azimutais operando sem seguimento do navio."],
       "correct": 1,
-      "explanation": "Depois de engrenar a coroa e liberar mordente, boças e freio, recolhem-se três ou quatro elos para testar o conjunto; o freio é novamente apertado antes da informação de prontidão.",
-      "comments": ["Incorreta: a preparação não prevê largar novamente o ferro como teste.", "Correta: é a verificação indicada imediatamente antes da voz de prontidão.", "Incorreta: o procedimento manda ligar a embreagem da coroa e liberar os dispositivos de retenção para o teste.", "Incorreta: a máquina é testada antes do início efetivo do recolhimento e muito antes de o ferro ficar a olho."],
-      "reference": {"referenceId": "II-01", "base": "Fonseca, Maurílio M.", "publication": "Arte Naval, v. 1", "edition": "Exemplar consultado: 6. ed., SDM, 2002; catálogo PSCPP: 8. ed., MB, 2019", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view", "section": "Capítulo 10, art. 10.37(6) a (9) — preparação para suspender", "syllabus": "Eixo II — Arte Naval · aparelho de fundear e suspender", "evidence": "A sequência consultada manda engrenar a coroa, liberar mordente, boças e freio, recolher três ou quatro elos para verificar o funcionamento, reapertar o freio e então informar \"pronto para suspender\"."}
+      "explanation": "O reboque em linha pode ser usado em águas estreitas, razão pela qual é aplicado em pontes estreitas, eclusas e diques secos.",
+      "comments": ["Incorreta: a vantagem descrita é justamente operar onde o espaço de manobra é limitado.", "Correta: corresponde ao emprego indicado no capítulo sobre métodos de assistência.", "Incorreta: o método depende da linha de reboque; trabalho apenas de empurrar descreve outra configuração.", "Incorreta: o método é tradicional com rebocadores convencionais e também pode usar outros tipos."],
+      "reference": {"referenceId": "II-09", "base": "Hensen, Henk", "publication": "Tug Use in Port: A Practical Guide", "edition": "4. ed., 2021", "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view", "section": "Capítulo 3, item 3.2.1 — tugs towing on a line during transit towards a berth and while mooring", "syllabus": "Eixo II — Arte Naval · emprego de rebocadores na manobrabilidade", "evidence": "O recorte consultado aponta como vantagem do método sua utilização em águas estreitas e cita pontes estreitas, eclusas e diques secos."}
     },
     {
-      "id": "tue-20261117-t1-sea-breeze-afternoon", "category": "rotation", "axis": "V",
-      "kind": "Intercalação · meteorologia · brisa marítima",
-      "stem": "À tarde, sob condições favoráveis à circulação térmica costeira, qual combinação caracteriza a brisa marítima em baixos níveis?",
-      "options": ["Vento do continente para o mar, com subsidência sobre o continente.", "Vento do mar para o continente, com ascensão sobre o continente.", "Vento do mar para o continente, com ascensão sobre o mar.", "Vento paralelo à costa, sem ramo vertical associado."],
-      "correct": 1,
-      "explanation": "O continente aquecido apresenta pressão relativamente mais baixa; o ar escoa em baixos níveis do mar para terra e ascende sobre o continente.",
-      "comments": ["Incorreta: descreve a direção da brisa terrestre, típica após o resfriamento noturno do continente.", "Correta: reúne a direção de superfície e o ramo ascendente da célula da tarde.", "Incorreta: na brisa marítima, a subsidência ocorre sobre o mar e a ascensão sobre o continente.", "Incorreta: a circulação térmica costeira possui componentes horizontal e vertical."],
-      "reference": {"referenceId": "V-03", "base": "Lobo, Paulo Roberto Valgas; Soares, Carlos Alberto", "publication": "Meteorologia e Oceanografia", "edition": "4. ed., 2019", "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view", "section": "Volume I, capítulo 3, item 3.1 — brisas marítimas e terrestres", "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · circulação atmosférica local", "evidence": "O recorte descreve, à tarde, baixa pressão e ascensão sobre o continente e vento de baixos níveis do mar para a costa, com a TSM praticamente constante."}
-    },
-    {
-      "id": "tue-20261117-t2-land-breeze-morning", "category": "rotation", "axis": "V",
-      "kind": "Intercalação · meteorologia · brisa terrestre",
-      "stem": "Após o resfriamento noturno do continente, qual configuração favorece a brisa terrestre pela madrugada e manhã?",
-      "options": ["Pressão mais alta sobre o continente e escoamento de superfície da costa para o mar.", "Pressão mais baixa sobre o continente e escoamento de superfície do mar para a costa.", "Pressões iguais entre continente e mar, com vento determinado apenas por Coriolis.", "Pressão mais alta sobre o mar e ascensão obrigatória sobre o continente frio."],
+      "id": "tue-20261124-c2-tug-cross-lines-response", "category": "current", "axis": "II",
+      "kind": "Avanço · rebocadores · cross lines",
+      "stem": "Ao passar por uma ponte estreita, o rebocador de vante recebe duas linhas cruzadas. Qual efeito operacional é esperado desse arranjo?",
+      "options": ["Reação rápida do rebocador com pequena necessidade de espaço de manobra.", "Aumento deliberado do tempo de resposta para amortecer toda ordem de máquina.", "Impossibilidade de alterar a direção da força sem largar uma das linhas.", "Conversão automática do rebocador convencional em escolta indireta de alta velocidade."],
       "correct": 0,
-      "explanation": "O continente resfriado fica relativamente mais frio e com pressão superficial mais alta; o escoamento em baixos níveis dirige-se da costa para o mar.",
-      "comments": ["Correta: corresponde à célula da brisa terrestre descrita no recorte.", "Incorreta: é a configuração típica da brisa marítima da tarde.", "Incorreta: o contraste térmico produz gradiente horizontal de pressão; a circulação não depende apenas de Coriolis.", "Incorreta: o ramo ascendente ocorre sobre o mar relativamente mais quente, não sobre o continente resfriado."],
-      "reference": {"referenceId": "V-03", "base": "Lobo, Paulo Roberto Valgas; Soares, Carlos Alberto", "publication": "Meteorologia e Oceanografia", "edition": "4. ed., 2019", "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view", "section": "Volume I, capítulo 3, item 3.1 — brisas marítimas e terrestres", "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · circulação atmosférica local", "evidence": "O texto atribui a brisa terrestre ao resfriamento noturno do continente, com pressão superficial relativamente mais alta em terra e vento da costa para o mar pela madrugada e manhã."}
+      "explanation": "As cross lines permitem ao rebocador de vante reagir rapidamente e operar com pouco espaço de manobra.",
+      "comments": ["Correta: resume a finalidade operacional descrita para o arranjo.", "Incorreta: o arranjo busca reduzir, não aumentar, o tempo de resposta.", "Incorreta: as duas linhas ampliam o controle imediato do rebocador nessa passagem.", "Incorreta: o arranjo de linhas não altera o tipo propulsivo nem cria capacidade de escolta indireta."],
+      "reference": {"referenceId": "II-09", "base": "Hensen, Henk", "publication": "Tug Use in Port: A Practical Guide", "edition": "4. ed., 2021", "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view", "section": "Capítulo 3, item 3.2.1 e figura 3.13 — cross lines em passagem estreita", "syllabus": "Eixo II — Arte Naval · emprego de rebocadores na manobrabilidade", "evidence": "O texto informa que o rebocador de vante pode usar duas cross lines ou gate lines, reagindo muito rapidamente e necessitando de pouco espaço de manobra."}
     },
     {
-      "id": "tue-20261117-o1-pscpp2008-q72", "category": "official", "axis": "II",
-      "kind": "Questão oficial histórica · PSCPP 2008 · questão 72",
-      "stem": "Coloque V (verdadeiro) ou F (falso) nas afirmativas abaixo, que tratam de regras práticas na utilização de aparelhos de laborar, assinalando, a seguir, a opção correta: I) aplicar, sempre que possível, o cadernal onde gurne o tirador no peso que se deseja alar; II) para diminuir o esforço sobre o cadernal fixo, fazer, se possível, a arreigada fixa fora do mesmo cadernal; III) içando um peso, o tirador suporta a tensão mínima e a arreigada fixa a tensão máxima; arriando, será o contrário; IV) o melhor modo de engatar uma talha em um cabo que não tenha alça é pela volta de encapeladura singela; V) o que se ganha em força, perde-se em tempo, pois tem-se um comprimento maior que alar no tirador.",
-      "options": ["V – F – V – V – V", "F – F – V – F – V", "F – V – F – V – F", "V – V – F – F – V", "V – F – V – F – F"],
-      "correct": 3,
-      "explanation": "O gabarito oficial é D: V – V – F – F – V. A terceira afirmativa inverte a distribuição de tensões no içamento, e a quarta substitui indevidamente a boca-de-lobo por encapeladura singela.",
-      "comments": ["Incorreta: considera verdadeiras as afirmativas III e IV, ambas contrariadas pelas regras práticas.", "Incorreta: torna falsas as duas primeiras regras e mantém verdadeira a inversão das tensões.", "Incorreta: erra as afirmativas I, IV e V, além de não reproduzir o conjunto correto.", "Correta: corresponde ao gabarito oficial e às regras do art. 9.21.", "Incorreta: torna falsas as afirmativas II e V e mantém verdadeira a afirmativa III."],
-      "reference": {"referenceId": "II-01", "base": "Fonseca, Maurílio M.", "publication": "Arte Naval, v. 1", "edition": "Exemplar consultado: 6. ed., SDM, 2002; catálogo PSCPP: 8. ed., MB, 2019", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view", "section": "Capítulo 9, art. 9.21 — regras práticas; PSCPP 2008, questão 72", "syllabus": "Eixo II — Arte Naval · poleame e aparelhos de laborar", "evidence": "O art. 9.21 confirma a aplicação do cadernal do tirador na carga, a arreigada fora do cadernal fixo, a tensão máxima no tirador ao içar, a boca-de-lobo para engatar a talha e a troca de força por maior comprimento a alar; a prova oficial marca a alternativa D.", "origin": {"exam": "PSCPP 2008", "year": 2008, "question": 72, "answer": "D", "adaptation": "Questão original com cinco alternativas; disposição e ortografia normalizadas, sem alterar conteúdo ou gabarito.", "url": "https://drive.google.com/file/d/14RLZewUiDcRYbg76OVZGahAH2lYPJEWk/view"}}
+      "id": "tue-20261124-c3-tug-multiple-roles", "category": "current", "axis": "II",
+      "kind": "Avanço · rebocadores · distribuição de funções",
+      "stem": "Quando mais de dois rebocadores participam da atracação pelo método descrito, qual distribuição de funções é usual?",
+      "options": ["Todos permanecem em linha na proa, deixando a popa sem assistência.", "Os de vante e de ré ficam em linha para controlar a velocidade de aproximação; os demais empurram no costado.", "Todos trabalham exclusivamente em push-pull, sem rebocadores em linha.", "Os de vante e de ré apenas empurram, enquanto os demais controlam a aproximação em linha."],
+      "correct": 1,
+      "explanation": "Com mais de dois rebocadores, os de vante e de ré normalmente permanecem em linha para controlar a aproximação ao berço, enquanto os outros empurram no costado.",
+      "comments": ["Incorreta: não corresponde à distribuição equilibrada de controle longitudinal e lateral.", "Correta: reproduz a organização indicada para a aproximação ao berço.", "Incorreta: o recorte mantém rebocadores em linha e combina métodos.", "Incorreta: inverte as funções usuais descritas."],
+      "reference": {"referenceId": "II-09", "base": "Hensen, Henk", "publication": "Tug Use in Port: A Practical Guide", "edition": "4. ed., 2021", "url": "https://drive.google.com/file/d/16elfAOkgdVRsPz-y1QECyGoaqnrMqnHe/view", "section": "Capítulo 3, item 3.2.1 — combinação de rebocadores durante a atracação", "syllabus": "Eixo II — Arte Naval · emprego de rebocadores na manobrabilidade", "evidence": "O trecho consultado indica que, com mais de dois rebocadores, os de vante e de ré normalmente ficam em linha para controlar a velocidade de aproximação, e os demais empurram no costado."}
+    },
+    {
+      "id": "tue-20261124-t1-advection-fog-formation", "category": "rotation", "axis": "V",
+      "kind": "Intercalação · meteorologia · nevoeiro de advecção",
+      "stem": "Qual cenário é mais favorável à formação de nevoeiro de advecção sobre o mar?",
+      "options": ["Ar frio e seco deslocando-se sobre uma superfície marítima mais quente.", "Ar quente e úmido deslocando-se horizontalmente sobre superfície bem mais fria, com vento fraco.", "Ar quente e seco estacionário sobre mar de mesma temperatura, sob vento forte.", "Ar saturado ascendendo rapidamente até grande altitude, sem contato com a superfície."],
+      "correct": 1,
+      "explanation": "No nevoeiro de advecção, ar quente e úmido passa sobre superfície mais fria; a camada inferior resfria até o ponto de orvalho e um vento fraco favorece a mistura e a intensificação.",
+      "comments": ["Incorreta: o cenário tende a aquecer o ar por baixo e não reúne as condições descritas.", "Correta: reúne deslocamento horizontal, contraste térmico, umidade e vento fraco.", "Incorreta: faltam resfriamento até o ponto de orvalho e umidade suficiente; vento forte favorece dissipação.", "Incorreta: descreve formação de nuvem em altitude, não nevoeiro junto à superfície."],
+      "reference": {"referenceId": "V-03", "base": "Lobo, Paulo Roberto Valgas; Soares, Carlos Alberto", "publication": "Meteorologia e Oceanografia", "edition": "4. ed., 2019", "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view", "section": "Capítulo I, item 3.1 — névoa úmida e nevoeiro", "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · visibilidade no mar e nevoeiros", "evidence": "O recorte define o nevoeiro de advecção como o deslocamento de ar quente e úmido sobre superfície mais fria; o resfriamento até o ponto de orvalho e vento fraco favorecem sua formação e intensificação."}
+    },
+    {
+      "id": "tue-20261124-t2-fog-surface-distinction", "category": "rotation", "axis": "V",
+      "kind": "Intercalação · meteorologia · nevoeiro e nuvem",
+      "stem": "Qual característica distingue operacionalmente o nevoeiro de uma nuvem segundo o recorte estudado?",
+      "options": ["O nevoeiro forma-se junto à superfície e reduz diretamente a visibilidade horizontal.", "O nevoeiro só se forma sobre continentes, enquanto nuvens só se formam sobre o mar.", "O nevoeiro exige convecção profunda e grande crescimento vertical.", "O nevoeiro é constituído por ar não saturado e não envolve condensação."],
+      "correct": 0,
+      "explanation": "O nevoeiro resulta de condensação na camada junto à superfície, afetando intensamente a visibilidade horizontal.",
+      "comments": ["Correta: é a distinção prática central para o navegante.", "Incorreta: há nevoeiros continentais e marítimos.", "Incorreta: convecção profunda está associada a nuvens de grande desenvolvimento, não ao nevoeiro superficial.", "Incorreta: a formação exige saturação e condensação do excesso de vapor d'água."],
+      "reference": {"referenceId": "V-03", "base": "Lobo, Paulo Roberto Valgas; Soares, Carlos Alberto", "publication": "Meteorologia e Oceanografia", "edition": "4. ed., 2019", "url": "https://drive.google.com/file/d/1E-cR4gS2HtyP4UZjX2TmJ5R0zxpY0Q3y/view", "section": "Capítulo I, item 3.1 — visibilidade no mar", "syllabus": "Eixo V — Meteorologia, Oceanografia e Navegação · visibilidade no mar e nevoeiros", "evidence": "O texto distingue o nevoeiro pela condensação na camada atmosférica junto à superfície, condição que afeta consideravelmente a visibilidade horizontal."}
+    },
+    {
+      "id": "tue-20261124-o1-pscpp2008-q2", "category": "official", "axis": "II",
+      "kind": "Questão oficial histórica · PSCPP 2008 · questão 2",
+      "stem": "Aboçar uma espia, o tirador de uma talha ou, de modo geral, qualquer cabo, é uma técnica, ou recurso, de uso muito comum a bordo, sendo empregado:",
+      "options": ["Para impedir que o cabo, ou espia, cavalgue as voltas dadas na saia do cabrestante, à medida que ele for virando.", "Para morder a talha, quando o peso que se quer içar é demasiado para que o tirador seja aguentado à mão, enquanto se dá a volta nele.", "Quando, estando o cabo ou espia sob tensão, deseja-se mudar o ponto de amarração ou amarrá-lo em outra direção.", "Quando se deseja alcear qualquer volta aguentando o chicote ou um seio ao vivo do próprio cabo, se houver receio de que possa recorrer ou desfazer-se.", "Para unir dois cabos pelos chicotes, ou um chicote a um olhal, mão ou alça; para dar volta à boça de uma embarcação miúda na mão do cabo de cabeço de uma surriola."],
+      "correct": 2,
+      "explanation": "O gabarito oficial é C. Aboçar permite sustentar temporariamente um cabo sob tensão para transferir seu ponto de amarração ou mudar sua direção.",
+      "comments": ["Incorreta: descreve um problema de disposição das voltas no cabrestante, não a finalidade geral de aboçar.", "Incorreta: confunde aboçar com morder ou dar volta no tirador da talha.", "Correta: corresponde ao emprego definido e ao gabarito oficial.", "Incorreta: descreve alcear uma volta, técnica distinta.", "Incorreta: descreve aplicações de nós e voltas para união ou amarração, não o ato de aboçar."],
+      "reference": {"referenceId": "II-01", "base": "Fonseca, Maurílio M.", "publication": "Arte Naval, v. 1", "edition": "Exemplar consultado: 6. ed., SDM, 2002; catálogo PSCPP: 8. ed., MB, 2019", "url": "https://drive.google.com/file/d/1uPzlgW8a5hzIFHmN73HDPQ7RFRyu6iOA/view", "section": "Capítulo 8 — trabalhos do marinheiro; PSCPP 2008, questão 2", "syllabus": "Eixo II — Arte Naval · trabalhos marinheiros e manobra de cabos", "evidence": "A obra consultada trata o aboçamento como retenção temporária de cabo sob tensão para permitir a transferência da amarração; a prova oficial assinala a alternativa C.", "origin": {"exam": "PSCPP 2008", "year": 2008, "question": 2, "answer": "C", "adaptation": "Questão original com cinco alternativas; ortografia e pontuação normalizadas, sem alterar conteúdo ou gabarito.", "url": "https://drive.google.com/file/d/14RLZewUiDcRYbg76OVZGahAH2lYPJEWk/view"}}
     }
   ]
 }
